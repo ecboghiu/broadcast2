@@ -1,0 +1,6 @@
+function corr = GiveCorrelationVector(prob, ins, outs)
+
+corr = zeros(3+2+2+3*2+3*2+2*2+3*2*
+
+end
+
