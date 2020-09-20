@@ -1,61 +1,19 @@
-function funcoutput = criticalvisibility_old(meas, channel, ins, outs) 
-    % ins is something like {[1,2,3],[1,2],[1,2]} giving the 
-    % inputs of each party. cell 1 is for party A, cell 2 is for party B
-    % and cell 3 is for party C. Similarly outs is something of the
-    % form {[1,2],[1,2],[1,2,3,4]} each cell element giving the different
-    % outputs of each party.
-    % in practice we only care about the NUMBER of inputs or outputs
-    % and never about what they are exactly
-    
-    ins = [3,2,2,1];
-    outs = [2,2,2,1];
-    
+function funcoutput = criticalvisibilityInstrumental(meas, channels, ins, outs)  
     party_for_det_points = 1; % this is party 'A'
     nrinputsofA  = ins(party_for_det_points);
     nroutputsofA = outs(party_for_det_points);
     
     nr_det_points = nroutputsofA^nrinputsofA;
-    fprintf('nrdetpointsold = %d\n',nr_det_points);
- 
+    %fprintf('nrdetpointsold = %d\n',nr_det_points);
 
     alpha = sdpvar(1); % alpha will be the visibility
-    finalstate = final_state(ini_state(alpha),channel);
+
     visibility_constraints = [alpha >= 0, alpha <= 1];
-
-
     q = sdpvar(nr_det_points * prod([ins,outs])/nrinputsofA/nroutputsofA, 1);    
 
-    
-    % alternative to what follows: define an index function which to 
-    % every element i of array q assigns the element (lam,y,z,b,c) where
-    % we interpret (lam,y,z,b,c) is a decomposition of i according to
-    % i = c+b*2+z*2*2+y*2*2*2+lam*2*2*2*2
-    % this can be easily achieved with something like reshape but I chose
-    % cells for this
     positivityconstraints = [];
-%     qmatrix = {{{{{{{{0}}}}}}}};
-%     idx = 1;
-%     for lam = 1:nr_det_points
-%        for y = ins{2}
-%            for z = ins{3}
-%                for w = ins{4}
-%                    for b = outs{2}
-%                    for c = outs{3}
-%                        for d = outs{4}
-%                        qmatrix{lam}{y}{z}{w}{b}{c}{d} = q(idx);
-%                        positivityconstraints = [positivityconstraints, ...
-%                                                 q(idx) >= 0, q(idx) <= 1];
-%                        idx = idx + 1;
-%                        end
-%                    end
-%                    end
-%                end
-%            end
-%        end
-%     end
-varnumbers = [nr_det_points, ins(2:end), outs(2:end)];
+    varnumbers = [nr_det_points, ins(2:end), outs(2:end)];
     loopvars = ind2subv(varnumbers, 1:prod(varnumbers,'all'));
-    
     idx = 1;
     for i=1:size(loopvars,1)
         lam = loopvars(i,1);
@@ -69,29 +27,10 @@ varnumbers = [nr_det_points, ins(2:end), outs(2:end)];
         qmatrix{lam}{y}{z}{w}{b}{c}{d} = q(idx);
         positivityconstraints = [positivityconstraints, ...
                                 q(idx) >= 0, q(idx) <= 1];
-        
         idx = idx + 1;
     end
     
-
-
-    fprintf('pos nr old: %d\n',length(positivityconstraints));
-    
-    %normalizationconstraint = [q(1)>=0];
-%     summ = 0;
-%     for lam = 1:nr_det_points
-%        for y = ins{2}
-%            for z = ins{3}
-%                for b = outs{2}
-%                    for c = outs{3}
-%                        summ = summ + qmatrix{lam}{y}{z}{b}{c};
-%                    end
-%                end
-%            end
-%        end
-%     end
-%     normalizationconstraint = [summ == 1];
-
+    %fprintf('pos nr old: %d\n',length(positivityconstraints));
 
     % non signalling constraints
     nonsignalling_constraintsB = [];
@@ -111,19 +50,23 @@ varnumbers = [nr_det_points, ins(2:end), outs(2:end)];
                 %fprintf('b y z1 z2: %d %d %d %d\n',b,y,z1,z2);
                 summ1 = 0;
                 for idx3 = 1:outs(3)
-                    summ1 = summ1 + qmatrix{lam}{y}{z1}{1}{b}{idx3}{1};
+                    for d = 1:outs(4)
+                        summ1 = summ1 + qmatrix{lam}{y}{z1}{w}{b}{idx3}{d};
+                    end
                 end
                 
                 summ2 = 0;
                 for idx3 = 1:outs(3)
-                    summ2 = summ2 + qmatrix{lam}{y}{z2}{1}{b}{idx3}{1};
+                    for d = 1:outs(4)
+                        summ2 = summ2 + qmatrix{lam}{y}{z2}{w}{b}{idx3}{d};
+                    end
                 end
                 nonsignalling_constraintsB = [nonsignalling_constraintsB,
                                             summ1 == summ2];
             end
         end
     end
-    fprintf('nr NSB old: %d\n',length(nonsignalling_constraintsB));
+    %fprintf('nr NSB old: %d\n',length(nonsignalling_constraintsB));
 
     %non signaling for charlie:
     nonsignalling_constraintsC = [];
@@ -140,35 +83,33 @@ varnumbers = [nr_det_points, ins(2:end), outs(2:end)];
                 y2 = combinations(idx2,2);
                 summ1 = 0;
                 for idx3 = 1:outs(2)
-                    summ1 = summ1 + qmatrix{lam}{y1}{z}{1}{idx3}{c}{1};
+                    for d = 1:outs(4)
+                        summ1 = summ1 + qmatrix{lam}{y1}{z}{w}{idx3}{c}{d};
+                    end
                 end
                 %fprintf('c z y1 y2: %d %d %d %d\n',c,z,y1,y2);
                 summ2 = 0;
                 for idx3 = 1:outs(2)
-                    summ2 = summ2 + qmatrix{lam}{y2}{z}{1}{idx3}{c}{1};
+                    for d = 1:outs(4)
+                        summ2 = summ2 + qmatrix{lam}{y2}{z}{w}{idx3}{c}{d};
+                    end
                 end
                 nonsignalling_constraintsC = [nonsignalling_constraintsC,
                                         summ1 == summ2];
             end
         end
     end
-    fprintf('nr NSC old: %d\n',length(nonsignalling_constraintsC));
-                ins = {[1,2,3],[1,2],[1,2],[1]};
-outs = {[1,2],[1,2],[1,2],[1]};
-    
-    
+    %fprintf('nr NSC old: %d\n',length(nonsignalling_constraintsC));
     
     % probability constraints
-    det = givedetstratA(length(outs{1}),length(ins{1}));
+    det = givedetstratA(outs(1),ins(1));
 
     probability_constraints = [];
     probability_constraints_inp_out = [];
-    
-    o
-    coordstructure = [outs2(1), outs2(2), outs2(3), outs2(4)];
-    cartproductOUT = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
-coordstructure = [ins2(1), ins2(2), ins2(3), ins2(4)];
-    cartproductIN = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+
+    cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
+    cartproductIN  = ind2subv(ins,  1:prod(ins,'all'));
+
     for i1 = 1:length(cartproductOUT)
        for i2 = 1:length(cartproductIN)
           a = cartproductOUT(i1,1);
@@ -185,7 +126,7 @@ coordstructure = [ins2(1), ins2(2), ins2(3), ins2(4)];
           for aux = 1:nr_det_points
               summ = summ + det(aux,x,a) * qmatrix{aux}{y}{z}{w}{b}{c}{d};
           end
-
+          finalstate = final_state(ini_state(alpha),channels{w}{d});
           probability = prob(finalstate,meas,[a,b,c],[x,y,z]);
           probability_constraints = [probability_constraints, ...
                                         summ == probability];
@@ -193,7 +134,93 @@ coordstructure = [ins2(1), ins2(2), ins2(3), ins2(4)];
               [probability_constraints_inp_out, [a;b;c;d;x;y;z;w]];
        end
     end
+    
+    % nonsignaling for instrument
+    % nonsignaling D not influenced by B1 and B2 (or B and C)
+    nonsignalling_constraintsBC = [];
+     for lam = 1:nr_det_points
+        coordstructure = [outs(4) ins(4)];
+        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        for idx = 1:size(product,1)
+            d = product(idx,1);
+            w = product(idx,2);
+            
+            inputstructure = [ins(2), ins(3)];
+            YZWinputsCartesianProduct = ind2subv(inputstructure, 1:prod(inputstructure,'all'));
+            combinations = nchoosek(1:size(YZWinputsCartesianProduct,1),2);
+            for index = 1:size(combinations,1)
+                idx1 = combinations(index,1);
+                idx2 = combinations(index,2);
+                
+                y1 = YZWinputsCartesianProduct(idx1,1);
+                z1 = YZWinputsCartesianProduct(idx1,2);
+                
+                y2 = YZWinputsCartesianProduct(idx2,1);
+                z2 = YZWinputsCartesianProduct(idx2,2);
+                
+                summ1 = 0;
+                for b = 1:outs(2)
+                    for c = 1:outs(3)
+                        summ1 = summ1 + qmatrix{lam}{y1}{z1}{w}{b}{c}{d};
+                    end
+                end
+                summ2 = 0;
+                for b = 1:outs(2)
+                    for c = 1:outs(3)
+                        summ2 = summ2 + qmatrix{lam}{y2}{z2}{w}{b}{c}{d};
+                    end
+                end
+                nonsignalling_constraintsBC = [nonsignalling_constraintsBC, ...
+                                        summ1 == summ2];
+            end
+        end
+     end
 
+    % nonsignaling of partial normalization
+    nonsignalling_constraintsBCD = [];
+    % if I sum over all outputs this shouldn't depend on any input,
+    % only on the hidden variable
+    for lam = 1:nr_det_points          
+        inputstructure = [ins(2) ins(3) ins(4)];
+        YZWinputsCartesianProduct = ind2subv(inputstructure, 1:prod(inputstructure,'all'));
+        combinations = nchoosek(1:size(YZWinputsCartesianProduct,1),2);
+        for index = 1:size(combinations,1)
+            idx1 = combinations(index,1);
+            idx2 = combinations(index,2);
+
+            y1 = YZWinputsCartesianProduct(idx1,1);
+            z1 = YZWinputsCartesianProduct(idx1,2);
+            w1 = YZWinputsCartesianProduct(idx1,3);
+
+            y2 = YZWinputsCartesianProduct(idx2,1);
+            z2 = YZWinputsCartesianProduct(idx2,2);
+            w2 = YZWinputsCartesianProduct(idx2,3);
+
+            summ1 = 0;
+            for b = 1:outs(2)
+                for c = 1:outs(3)
+                    for d = 1:outs(4)
+                        summ1 = summ1 + qmatrix{lam}{y1}{z1}{w1}{b}{c}{d};
+                    end
+                end
+            end
+            summ2 = 0;
+            for b = 1:outs(2)
+                for c = 1:outs(3)
+                    for d = 1:outs(4)
+                        summ2 = summ2 + qmatrix{lam}{y2}{z2}{w2}{b}{c}{d};
+                    end
+                end
+            end
+            nonsignalling_constraintsBCD = [nonsignalling_constraintsBCD, ...
+                                    summ1 == summ2];
+        end
+    end     
+     
+     
+     
+    
+     
     objective = alpha;
     
     constraints = [probability_constraints:'probability', ...
@@ -201,7 +228,9 @@ coordstructure = [ins2(1), ins2(2), ins2(3), ins2(4)];
                 positivityconstraints(1):'pos1', ...
                 positivityconstraints(2:end):'positivity', ...
                 nonsignalling_constraintsB:'nonsignallingB',...
-                nonsignalling_constraintsC:'nonsignallingC'];
+                nonsignalling_constraintsC:'nonsignallingC',...
+                nonsignalling_constraintsBC:'nonsignallingBC',...
+                nonsignalling_constraintsBCD:'nonsignallingBCD'];
 
     optsol = optimize(constraints, -objective, ...
         sdpsettings('solver','mosek', ...
@@ -216,14 +245,10 @@ coordstructure = [ins2(1), ins2(2), ins2(3), ins2(4)];
         dualvals(i) = value(dual(probability_constraints(i)));
     end
     
-    bellcoeffs = zeros(max(ins{1}),max(ins{2}),max(ins{3}),max(ins{4}), ...
-                    max(outs{1}),max(outs{2}),max(outs{3}),max(outs{4}));
-                
-    finalprob = zeros(max(ins{1}),max(ins{2}),max(ins{3}),max(ins{4}), ...
-                    max(outs{1}),max(outs{2}),max(outs{3}),max(outs{4}));
-
+    dimcell = num2cell([ins outs]);
+    bellcoeffs = zeros(dimcell{:});           
+    finalprob  = zeros(dimcell{:});
     finalAlpha = value(alpha);
-    stateWithNewAlpha = final_state(ini_state(finalAlpha),channel);
     for idx=1:length(probability_constraints_inp_out(1,:))
         vec = probability_constraints_inp_out(:,idx);
         a = vec(1);
@@ -235,8 +260,9 @@ coordstructure = [ins2(1), ins2(2), ins2(3), ins2(4)];
         z = vec(7);
         w = vec(8);
 
+        finalstate = final_state(ini_state(value(alpha)),channels{w}{d});
         bellcoeffs(x,y,z,w,a,b,c,d) = dualvals(idx);
-        finalprob(x,y,z,w,a,b,c,d) = prob(stateWithNewAlpha,meas,[a,b,c],[x,y,z]);
+        finalprob(x,y,z,w,a,b,c,d) = prob(finalstate,meas,[a,b,c],[x,y,z]);
     end
     
     funcoutput = cell(1);
