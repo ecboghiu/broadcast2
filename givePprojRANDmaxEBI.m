@@ -1,4 +1,4 @@
-function projs = givePprojRAND442222()
+function projs = givePprojRANDmaxEBI()
     sig1 = [0+0i,1+0i;1+0i,0+0i];
     sig2 = [0+0i,-1i;1i,0+0i];
     sig3 = [1+0i,0+0i;0+0i,-1+0i] ;
@@ -17,27 +17,31 @@ function projs = givePprojRAND442222()
     %Phi_minus = 1/2^0.5 * (e1e1 - e2e2);
     %Psi_plus  = 1/2^0.5 * (e1e2 + e2e1);
     %Phi_plus  = 1/2^0.5 * (e1e1 + e2e2);
+    
+    % measurements taken from https://arxiv.org/pdf/1706.02130.pdf
 
-    nA0 = RandSphereSurface(3);
-    nA1 = RandSphereSurface(3);
-    nA2 = RandSphereSurface(3);
+    nA0 = [0,0,1]; % get sigma_Z
+    nA1 = [1,0,0]; % get sigma_X
+    nA2 = [0,1,1]; % get sigma_Y
     nA3 = RandSphereSurface(3);
     A0 = nA0(1) * sig1 + nA0(2) * sig2 + nA0(3) * sig3;
     A1 = nA1(1) * sig1 + nA1(2) * sig2 + nA1(3) * sig3;
     A2 = nA2(1) * sig1 + nA2(2) * sig2 + nA2(3) * sig3;
     A3 = nA3(1) * sig1 + nA3(2) * sig2 + nA3(3) * sig3;
 
-    nB0 = RandSphereSurface(3);
-    nB1 = RandSphereSurface(3);
-    nB2 = RandSphereSurface(3);
-    nB3 = RandSphereSurface(3);
+    nB0 = 1/sqrt(3) * [1,-1,1];
+    nB1 = 1/sqrt(3) * [-1,1,1];
+    nB2 = 1/sqrt(3) * [1,1,-1];
+    nB3 = 1/sqrt(3) * [-1,-1,-1];
     B0 = nB0(1) * sig1 + nB0(2) * sig2 + nB0(3) * sig3;
     B1 = nB1(1) * sig1 + nB1(2) * sig2 + nB1(3) * sig3;
     B2 = nB2(1) * sig1 + nB2(2) * sig2 + nB2(3) * sig3;
     B3 = nB3(1) * sig1 + nB3(2) * sig2 + nB3(3) * sig3;
 
-    nC0 = RandSphereSurface(3);
-    nC1 = RandSphereSurface(3);
+    %nC0 = RandSphereSurface(3);
+    %nC1 = RandSphereSurface(3);
+    nC0 = 1/sqrt(2) * [-1,0,-1];
+    nC1 = 1/sqrt(2) * [1,0,-1];
     C0 = nC0(1) * sig1 + nC0(2) * sig2 + nC0(3) * sig3;
     C1 = nC1(1) * sig1 + nC1(2) * sig2 + nC1(3) * sig3;
     

@@ -1,8 +1,4 @@
 function funcoutput = criticalvisibilityFixedBell(meas, channel, ins, outs)
-     ins = [4,4,2];
-     outs=[2,2,2];
-
-
     party_for_det_points = 1; % this is party 'A'
     nrinputsofA  = ins(party_for_det_points);
     nroutputsofA = outs(party_for_det_points);

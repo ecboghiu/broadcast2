@@ -1,4 +1,4 @@
-function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1) 
+function funcoutput = ClassicalOptInequality2(bellcoeffs,ins, outs) 
     % ins is something like {[1,2,3],[1,2],[1,2]} giving the 
     % inputs of each party. cell 1 is for party A, cell 2 is for party B
     % and cell 3 is for party C. Similarly outs is something of the
@@ -8,23 +8,18 @@ function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1)
     % and never about what they are exactly
     
     % TODO Fix this
-    ins = {1:ins1(1),1:ins1(2),1:ins1(3)};
-    outs = {1:outs1(1),1:outs1(2),1:outs1(3)};
     
     party_for_det_points = 1; % this is party 'A'
-    nrinputsofA = length(ins{party_for_det_points});
-    nroutputsofA = length(outs{party_for_det_points});
-    nr_det_points = 1;
-    for i=1:nrinputsofA
-       nr_det_points = nr_det_points*nroutputsofA; 
-    end
+    nrinputsofA  = ins(party_for_det_points);
+    nroutputsofA = outs(party_for_det_points);
+    
+    nr_det_points = nroutputsofA^nrinputsofA;
  
 %     alpha = sdpvar(1); % alpha will be the visibility
 %     finalstate = final_state(ini_state(alpha),channel);
 %     visibility_constraints = [alpha >= 0, alpha <= 1];
     
-    q = sdpvar(nr_det_points*length(ins{2})*length(ins{3})* ...
-                             length(outs{2})*length(outs{3}),1);
+    q = sdpvar(nr_det_points*ins(2)*ins(3)*outs(2)*outs(3),1);
                          
 
     % alternative to what follows: define an index function which to 
@@ -37,10 +32,10 @@ function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1)
     qmatrix = {{{{{{0}}}}}};
     idx = 1;
     for lam = 1:nr_det_points
-       for y = ins{2}
-           for z = ins{3}
-               for b = outs{2}
-                   for c = outs{3}
+       for y = 1:ins(2)
+           for z = 1:ins(3)
+               for b = 1:outs(2)
+                   for c = 1:outs(3)
                        qmatrix{lam}{y}{z}{b}{c} = q(idx);
                        positivityconstraints = [positivityconstraints, ...
                                                 q(idx) >= 0];
@@ -57,22 +52,22 @@ function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1)
     
     % non signaling for bob:
     for lam = 1:nr_det_points
-        [Out,In] = meshgrid(outs{2},ins{2});
-        prod = [Out(:) In(:)];
-        for idx = 1:length(prod(:,1))
-            b = prod(idx,1);
-            y = prod(idx,2);
-            combinations = nchoosek(ins{3},2);
-            for idx2 = 1:length(combinations(:,1))
+        coordstructure = [outs(2) ins(2)];
+        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        for idx = 1:size(product,1)
+            b = product(idx,1);
+            y = product(idx,2);
+            combinations = nchoosek(1:ins(3),2);
+            for idx2 = 1:size(combinations,1)
                 z1 = combinations(idx2,1);
                 z2 = combinations(idx2,2);
                 summ1 = 0;
-                for idx3 = outs{3}
+                for idx3 = 1:outs(3)
                     summ1 = summ1 + qmatrix{lam}{y}{z1}{b}{idx3};
                 end
                 
                 summ2 = 0;
-                for idx3 = outs{3}
+                for idx3 = 1:outs(3)
                     summ2 = summ2 + qmatrix{lam}{y}{z2}{b}{idx3};
                 end
                 nonsignalling_constraints = [nonsignalling_constraints, ...
@@ -82,22 +77,21 @@ function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1)
     end
     %non signaling for charlie:
     for lam = 1:nr_det_points
-        [Out,In] = meshgrid(outs{3},ins{3});
-        prod = [Out(:) In(:)];
-        for idx = 1:length(prod(:,1))
-            c = prod(idx,1);
-            z = prod(idx,2);
-
-            combinations = nchoosek(ins{2},2);
-            for idx2 = 1:length(combinations(:,1))
+        coordstructure = [outs(3) ins(3)];
+        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        for idx = 1:size(product,1)
+            c = product(idx,1);
+            z = product(idx,2);
+            combinations = nchoosek(1:ins(2),2);
+            for idx2 = 1:size(combinations,1)
                 y1 = combinations(idx2,1);
                 y2 = combinations(idx2,2);
                 summ1 = 0;
-                for idx3 = outs{2}
+                for idx3 = 1:outs(2)
                     summ1 = summ1 + qmatrix{lam}{y1}{z}{idx3}{c};
                 end
                 summ2 = 0;
-                for idx3 = outs{2}
+                for idx3 = 1:outs(2)
                     summ2 = summ2 + qmatrix{lam}{y2}{z}{idx3}{c};
                 end
                 nonsignalling_constraints = [nonsignalling_constraints, ...
@@ -107,7 +101,7 @@ function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1)
     end
 
     % probability constraints
-    det = givedetstratA(length(outs{1}),length(ins{1}));
+    det = givedetstratA(outs(1),ins(1));
 
 
 %     probability_constraints = [];
@@ -140,14 +134,17 @@ function funcoutput = ClassicalOptInequality2(bellcoeffs,ins1, outs1)
 %     end
 
     
-    [X,Y,Z] = meshgrid(outs{1},outs{2},outs{3});
-    cartproductOUT = [X(:) Y(:) Z(:)];
-    [X,Y,Z] = meshgrid(ins{1},ins{2},ins{3});
-    cartproductIN = [X(:) Y(:) Z(:)];
+%     [X,Y,Z] = meshgrid(outs{1},outs{2},outs{3});
+%     cartproductOUT = [X(:) Y(:) Z(:)];
+%     [X,Y,Z] = meshgrid(ins{1},ins{2},ins{3});
+%     cartproductIN = [X(:) Y(:) Z(:)];
+    
+    cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
+    cartproductIN  = ind2subv(ins,  1:prod(ins,'all'));
     
     objective = 0;
-    for i1 = 1:length(cartproductOUT)
-       for i2 = 1:length(cartproductIN)
+    for i1 = 1:size(cartproductOUT,1)
+       for i2 = 1:size(cartproductIN,1)
           a = cartproductOUT(i1,1);
           b = cartproductOUT(i1,2);
           c = cartproductOUT(i1,3);

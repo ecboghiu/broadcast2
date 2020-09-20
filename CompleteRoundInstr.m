@@ -1,4 +1,4 @@
-function out = CompleteRoundFixedBell(bellcoeffsFIRST, belllocalboundFIRST, ins, outs)
+function out = CompleteRoundInstr(bellcoeffsFIRST, belllocalboundFIRST, ins, outs)
 
 abschangealpha = 1e6;
 

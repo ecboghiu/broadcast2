@@ -1,11 +1,11 @@
-function out = VisibilityOfBellIneq(bellcoeffs, bellLocalbound, meas, channel, ins1, outs1)
-if isa(ins1,'cell') || isa(outs1,'cell')
-   ins = [length(ins1{1}),length(ins1{2}),length(ins1{3})];
-   outs = [length(outs1{1}),length(outs1{2}),length(outs1{3})];
-else
-    ins = ins1;
-    outs = outs1;
-end
+function out = VisibilityOfBellIneq(bellcoeffs, bellLocalbound, meas, channel, ins, outs)
+% if isa(ins1,'cell') || isa(outs1,'cell')
+%    ins = [length(ins1{1}),length(ins1{2}),length(ins1{3})];
+%    outs = [length(outs1{1}),length(outs1{2}),length(outs1{3})];
+% else
+%     ins = ins1;
+%     outs = outs1;
+% end
 
 
 alpha = sdpvar(1,1);

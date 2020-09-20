@@ -15,12 +15,12 @@ function [ChoiMap,optobj] = SeeSawOverChannel(alpha, bellcoeffs, Pproj, ins, out
     choi = sdpvar(choidim,choidim,'hermitian','complex');
 
     summ = 0;
-    for x=ins{1}
-        for y=ins{2}
-            for z=ins{3}
-                for a=outs{1}
-                    for b=outs{2}
-                        for c=outs{3}
+    for x=1:ins(1)
+        for y=1:ins(2)
+            for z=1:ins(3)
+                for a=1:outs(1)
+                    for b=1:outs(2)
+                        for c=1:outs(3)
                             term = Tensor(Pproj{1}{x}{a}, ...
                                             Pproj{2}{y}{b},...
                                             Pproj{3}{z}{c});

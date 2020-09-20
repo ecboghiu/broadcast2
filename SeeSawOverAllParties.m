@@ -11,7 +11,10 @@ function [finalPproj,finalobj,finalchannel] = SeeSawOverAllParties(inistate, bel
     partyidx = 1;
     channel = inichannel;
     state = final_state(ini_state(alpha),channel);%inistate;
-    probability = zeros(max(ins{1}),max(ins{2}),max(ins{3}), max(outs{1}),max(outs{2}),max(outs{3}));
+    
+    dims = num2cell([ins,outs]);
+    probability = zeros(dims{:}); % call as probability(x,y,z,a,b,c) for 3 parties
+
     while abschange>ABS_TOL && iteration <= MAX_ITER
         if partyidx < nrparties+1
             [newPproj,newobjval] = SeeSawOverASingleParty(partyidx,state, bellcoeffs, Pproj, ins, outs);
@@ -30,19 +33,19 @@ function [finalPproj,finalobj,finalchannel] = SeeSawOverAllParties(inistate, bel
             state = final_state(ini_state(alpha),channel);
             
             
-            for x=ins{1}
-            for y=ins{2}
-            for z=ins{3}
-            for a=outs{1}
-            for b=outs{2}
-            for c=outs{3}
+    for x=1:ins(1)
+        for y=1:ins(2)
+            for z=1:ins(3)
+                for a=1:outs(1)
+                    for b=1:outs(2)
+                        for c=1:outs(3)
             probability(x,y,z,a,b,c)=prob(state,Pproj,[a,b,c],[x,y,z]);
-            end
-            end
-            end
-            end
-            end
-            end
+                        end 
+                    end 
+                end 
+            end 
+        end 
+    end 
             checkThatProbSumsToOne(probability, ins, outs);
             
             abschange = abs(newobjval-objval);

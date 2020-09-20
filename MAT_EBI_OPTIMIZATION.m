@@ -24,4 +24,4 @@ OurEBIInProb = ToProbabilityNotationIneqSym(OurEBI,ins,outs);
 EBIbellcoeffs = GetBellCoeffsFromProbSymIneq(OurEBIInProb,ins,outs);
 
 localMaximum = ClassicalOptInequality2(EBIbellcoeffs,ins,outs);
-disp(localMaximum{1});
+disp(localMaximum);

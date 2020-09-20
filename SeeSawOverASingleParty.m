@@ -1,9 +1,9 @@
 function [newPproj,alpha] = SeeSawOverASingleParty(partyidx, state, bellcoeffs, Pproj, ins, outs)
     chosenPartyMeasurements = {{}};
     positivityconstraints  = [];
-    dimofProjector = length(outs{partyidx});
-    for x=ins{partyidx}
-        for a=outs{partyidx}
+    dimofProjector = outs(partyidx);
+    for x=1:ins(partyidx)
+        for a=1:outs(partyidx)
             chosenPartyMeasurements{x}{a} = sdpvar(dimofProjector,dimofProjector,'hermitian','complex');
             positivityconstraints = [positivityconstraints, ...
                 chosenPartyMeasurements{x}{a} >= 0];
@@ -13,9 +13,9 @@ function [newPproj,alpha] = SeeSawOverASingleParty(partyidx, state, bellcoeffs, 
     
     % POVM constraints
     povmconstraints = [];
-    for x=ins{partyidx}
+    for x=1:ins(partyidx)
         summ = 0;
-        for a=outs{partyidx}
+        for a=1:outs(partyidx)
             summ = summ + chosenPartyMeasurements{x}{a};
         end
         povmconstraints = [povmconstraints, summ == eye(dimofProjector)];
@@ -23,12 +23,12 @@ function [newPproj,alpha] = SeeSawOverASingleParty(partyidx, state, bellcoeffs, 
     end
 
     summ = 0;
-    for x=ins{1}
-        for y=ins{2}
-            for z=ins{3}
-                for a=outs{1}
-                    for b=outs{2}
-                        for c=outs{3}
+    for x=1:ins(1)
+        for y=1:ins(2)
+            for z=1:ins(3)
+                for a=1:outs(1)
+                    for b=1:outs(2)
+                        for c=1:outs(3)
                             if partyidx == 1
                                term = Tensor(chosenPartyMeasurements{x}{a}, ...
                                             Pproj{2}{y}{b},...
@@ -63,8 +63,8 @@ function [newPproj,alpha] = SeeSawOverASingleParty(partyidx, state, bellcoeffs, 
     'savesolverinput',0,'savesolveroutput',0,'debug',0));
 
     newPproj = Pproj;
-    for x=ins{partyidx}
-        for a=outs{partyidx}
+    for x=1:ins(partyidx)
+        for a=1:outs(partyidx)
             newPproj{partyidx}{x}{a} = value(chosenPartyMeasurements{x}{a});
         end
     end
