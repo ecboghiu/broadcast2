@@ -12,7 +12,7 @@ function output = SeeSawOverChannelInstr(alpha, bellcoeffs, Pproj, ins, outs)
     outputdimspace = 4;
     choidim = inputdimspace*outputdimspace;
     
-
+    choi = cell(ins(4),outs(4));
     constraints = [];
     for w = 1:ins(4)
         for d = 1:outs(4)
@@ -28,28 +28,32 @@ function output = SeeSawOverChannelInstr(alpha, bellcoeffs, Pproj, ins, outs)
         end
         % after joining all the kraus operators we get a valid channel
         % which is a Choi map and which satisfies the following identity
-        constraints = [constraints, PartialTrace(summ, 2, [dimA, dimB1*dimB2]) == idB];
+        constraints = [constraints, PartialTrace(summ, 2, [dimB, dimB1*dimB2]) == idB];
     end
 
-    state_small = ini_state(alpha);
-    state_small_reshaped = reshape(state_small, 2,2,2,2);
+%     state_small = ini_state(alpha);
+%     state_small_reshaped = reshape(state_small, 2,2,2,2);
     
     summ = 0;
     for w=1:ins(4)
     for d=1:outs(4)
-        state = 0;
-        for i=1:dimA
-        for j=1:dimB
-        for k=1:dimA
-        for l=1:dimB
-            scnd = PartialTrace( choi{w}{d} * Tensor( ketbra(j,l,dimB).', idB1B2),...
-                                1, [dimB,dimB1*dimB2] );
-            state = state + state_small_reshaped(i,j,k,l) * ...
-                            Tensor(ketbra(i,k,dimA),scnd);
-        end
-        end
-        end
-        end
+%         state = 0;
+%         for i=1:dimA
+%         for k=1:dimA
+%             
+%         for j=1:dimB
+%         for l=1:dimB
+%            % rho = rho_ijkl |ij><kl| 
+%            % sum_ijkl rho_ijkl |i><k| x tr_B [ Choi^w_d * ( |j><l|.T x Id_B1B2 )  ]
+%             scnd = PartialTrace( choi{w}{d} * Tensor( ketbra(j,l,dimB).', idB1B2),...
+%                                 1, [dimB,dimB1*dimB2] );
+%             state = state + state_small_reshaped(i,j,k,l) * ...
+%                             Tensor(ketbra(i,k,dimA),scnd);
+%         end
+%         end
+%         end
+%         end
+        state = final_state(ini_state(alpha), choi{w}{d});
         
         for x=1:ins(1)
             for y=1:ins(2)
@@ -71,7 +75,6 @@ function output = SeeSawOverChannelInstr(alpha, bellcoeffs, Pproj, ins, outs)
     end        
     end
     objective = real(trace(summ));
-    disp(objective)
     
 
     
@@ -79,9 +82,16 @@ function output = SeeSawOverChannelInstr(alpha, bellcoeffs, Pproj, ins, outs)
         sdpsettings('solver','mosek', ...
     'verbose',0,'dualize',0, ...
     'showprogress',0,...
-    'savesolverinput',1,'savesolveroutput',1,'debug',1));
+    'savesolverinput',0,'savesolveroutput',0,'debug',0));
+    
+    
+    for w=1:ins(4)
+        for d=1:outs(4)
+            channels{w}{d}=value(choi{w}{d});
+        end
+    end
     
     output = cell(1);
-    output{1} = value(choi);
+    output{1} = channels;
     output{2} = value(objective);
 end

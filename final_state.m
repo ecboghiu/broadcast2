@@ -12,7 +12,7 @@ function state = final_state(inistate,channel)
             for k=1:dimA
                 for l=1:dimB
                     state = state + reshaped_state(i,j,k,l) * ...
-              kron( ketbra(i,k,dimA), ApplyMap(ketbra(j,l,dimB),channel));
+                                    kron( ketbra(i,k,dimA), ApplyMap(ketbra(j,l,dimB),channel));
                 end 
             end
         end
