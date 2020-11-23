@@ -1,6 +1,6 @@
 function [summ, scaling] = dispBellCoeffsCorrelators(bellcoeffs,ins,outs) 
-    cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
-    cartproductIN  = ind2subv(ins,  1:prod(ins, 'all'));
+    cartproductOUT = ind2subv(outs, 1:prod(outs(:)));
+    cartproductIN  = ind2subv(ins,  1:prod(ins(:)));
     
     summ = 0;
     for i1 = 1:size(cartproductOUT,1)

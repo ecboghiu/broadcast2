@@ -19,9 +19,10 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellco
     alpha = sdpvar(1); % alpha will be the visibility
 
     tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
-    q_coords = ind2subv(tempdims, 1:prod(tempdims,'all'));
+
+    q_coords = ind2subv(tempdims, 1:prod(tempdims(:)));
     tempdims_cell = num2cell(tempdims);
-    qarray = sdpvar(prod(tempdims,'all'));
+    qarray = sdpvar(prod(tempdims(:)));
     q = cell(tempdims_cell{:});
     for idx = 1:size(q_coords,1)
         coords = num2cell(q_coords(idx,:));
@@ -32,7 +33,8 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellco
     %visibility_constraints = [visibility_constraints,alpha <= 1];
     
     positivityconstraints = [];
-    for i=1:prod(size(q),'all')
+	auxsizeq=size(q);
+    for i=1:prod(auxsizeq(:))
         positivityconstraints = [positivityconstraints, qarray(i) >= 0];
     end
     
@@ -43,7 +45,7 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellco
     % non signaling for bob:
     for lam = 1:nr_det_points
         coordstructure = [nr_outputs_per_party(2), nr_inputs_per_party(2)];
-        all_b_and_y = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        all_b_and_y = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for slice = 1:size(all_b_and_y,1)
             b = all_b_and_y(slice,1);
             y = all_b_and_y(slice,2);
@@ -67,7 +69,7 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellco
     nonsignalling_constraintsC = [];
     for lam = 1:nr_det_points
         coordstructure = [nr_outputs_per_party(3), nr_inputs_per_party(3)];
-        all_b_and_y = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        all_b_and_y = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for slice = 1:size(all_b_and_y,1)
             c = all_b_and_y(slice,1);
             z = all_b_and_y(slice,2);
@@ -92,7 +94,7 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellco
     nonsignalling_constraintsBC = [];
     for lam = 1:nr_det_points          
         inputstructure = [nr_inputs_per_party(2), nr_inputs_per_party(3)];
-        all_y_and_z = ind2subv(inputstructure, 1:prod(inputstructure,'all'));
+        all_y_and_z = ind2subv(inputstructure, 1:prod(inputstructure(:)));
         
         slice = 1;
         y1 = all_y_and_z(slice,1);
@@ -123,9 +125,9 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellco
     objective = 0;
     normalization_constraints = [];
     %productstructure = [nr_inputs_per_party, nr_outputs_per_party];
-    settings_combinations = ind2subv(nr_inputs_per_party, 1:prod(nr_inputs_per_party,'all'));
-    outputs_combinations = ind2subv(nr_outputs_per_party, 1:prod(nr_outputs_per_party,'all'));
-    %cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure,'all'));
+    settings_combinations = ind2subv(nr_inputs_per_party, 1:prod(nr_inputs_per_party(:)));
+    outputs_combinations = ind2subv(nr_outputs_per_party, 1:prod(nr_outputs_per_party(:)));
+    %cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure(:)));
     for slice_settings = 1:size(settings_combinations,1)
         xyz_cell = num2cell(settings_combinations(slice_settings,:));
         normalization_summ = 0;

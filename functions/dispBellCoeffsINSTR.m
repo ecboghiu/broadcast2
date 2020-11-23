@@ -1,7 +1,7 @@
 function summ = dispBellCoeffsINSTR(bellcoeffs,ins,outs)
     summ = 0;
     structure = [ins,outs];
-    loopvars = ind2subv(structure, 1:prod(structure,'all'));
+    loopvars = ind2subv(structure, 1:prod(structure(:)));
     for idx = 1:size(loopvars,1)
         ascell = num2cell(loopvars(idx,:));
         x = loopvars(idx,1);

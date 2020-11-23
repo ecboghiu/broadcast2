@@ -15,7 +15,7 @@ function det = givedetstratA(out,in)
     
     % AlternaCtive way to do the above:
     %outs=[2,2,2,2];
-    %cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
+    %cartproductOUT = ind2subv(outs, 1:prod(outs(:)));
     
     det = zeros(detpoints,nrOfIns,nrOfOuts);
     

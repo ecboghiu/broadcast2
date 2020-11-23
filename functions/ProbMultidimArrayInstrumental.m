@@ -24,7 +24,7 @@ function probability_ndarray = ProbMultidimArrayInstrumental(inistate,povms,lamb
     probability_ndarray = reshape(probability_ndarray, dims{:});
         
     
-    allinputoutputcombinations = ind2subv(aux, 1:prod(aux,'all'));
+    allinputoutputcombinations = ind2subv(aux, 1:prod(aux(:)));
     for slice=1:size(allinputoutputcombinations,1)
         % TODO CHANGE THIS
         ins = num2cell(allinputoutputcombinations(slice,1:3)); % after nrparties we have the w

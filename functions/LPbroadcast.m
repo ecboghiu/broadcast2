@@ -16,7 +16,7 @@ party_for_det_points = 1; % this is party 'A'
 
     positivityconstraints = [];
     varnumbers = [nr_det_points, ins(2:end), outs(2:end)];
-    loopvars = ind2subv(varnumbers, 1:prod(varnumbers,'all'));
+    loopvars = ind2subv(varnumbers, 1:prod(varnumbers(:)));
     idx = 1;
     for i=1:size(loopvars,1)
         lam = loopvars(i,1);
@@ -38,7 +38,7 @@ party_for_det_points = 1; % this is party 'A'
     % non signaling for bob:
     for lam = 1:nr_det_points
         coordstructure = [outs(2), ins(2)];
-        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        product = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for idx = 1:length(product(:,1))
             b = product(idx,1);
             y = product(idx,2);
@@ -70,7 +70,7 @@ party_for_det_points = 1; % this is party 'A'
     nonsignalling_constraintsC = [];
     for lam = 1:nr_det_points
         coordstructure = [outs(3), ins(3)];
-        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        product = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for idx = 1:length(product(:,1))
             c = product(idx,1);
             z = product(idx,2);
@@ -105,7 +105,7 @@ party_for_det_points = 1; % this is party 'A'
     % only on the hidden variable
     for lam = 1:nr_det_points          
         inputstructure = [ins(2) ins(3)];
-        YZWinputsCartesianProduct = ind2subv(inputstructure, 1:prod(inputstructure,'all'));
+        YZWinputsCartesianProduct = ind2subv(inputstructure, 1:prod(inputstructure(:)));
         combinations = nchoosek(1:size(YZWinputsCartesianProduct,1),2);
         for index = 1:size(combinations,1)
             idx1 = combinations(index,1);
@@ -144,8 +144,8 @@ party_for_det_points = 1; % this is party 'A'
     probability_constraints = [];
     probability_constraints_inp_out = [];
 
-    cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
-    cartproductIN  = ind2subv(ins,  1:prod(ins,'all'));
+    cartproductOUT = ind2subv(outs, 1:prod(outs(:)));
+    cartproductIN  = ind2subv(ins,  1:prod(ins(:)));
 
     for i1 = 1:length(cartproductOUT)
        for i2 = 1:length(cartproductIN)

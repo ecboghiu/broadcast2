@@ -2,8 +2,8 @@ function flag=checkThatProbSumsToOne(prob,ins,outs)
 flag = true;
 tol  = 1e-3;
 
-cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
-cartproductIN  = ind2subv(ins,  1:prod(ins,'all'));
+cartproductOUT = ind2subv(outs, 1:prod(outs(:)));
+cartproductIN  = ind2subv(ins,  1:prod(ins(:)));
 for i2 = 1:length(cartproductIN)
     inputs = cartproductIN(i2,:);
     summ = 0;

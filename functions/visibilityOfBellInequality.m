@@ -12,12 +12,15 @@ vis_constraints = [alpha>=0, alpha<=1];
 p_noisy = (1-alpha)*p_entangled + alpha*p_uniform;
 % objective = sum(bellcoeffs .* p_noisy, size(bellcoeffs));
 % aux = bellcoeffs .* p_noisy;
-% while prod(size(aux),'all') ~= 1
+% auxsize=size(aux);
+% while prod(auxsize(:)) ~= 1
 %    aux = sum(aux); 
 % end
 
 objective = 0;
-coords = ind2subv(size(bellcoeffs), 1:prod(size(bellcoeffs),'all'));
+auxsize=size(bellcoeffs);
+prod(auxsize(:))
+coords = ind2subv(size(bellcoeffs), 1:prod(auxsize(:)));
 for idx = 1:size(coords,1)
     coords_choice = num2cell(coords(idx,:));
     objective = objective + bellcoeffs(coords_choice{:}) * p_noisy(coords_choice{:});

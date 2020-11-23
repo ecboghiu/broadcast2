@@ -19,7 +19,7 @@ newcelldims = num2cell([newdims,newdims]);
 out = zeros(newcelldims{:}); 
 
 coordstructure = [dims, dims];
-cartesianproduct = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+cartesianproduct = ind2subv(coordstructure, 1:prod(coordstructure(:)));
 for idx = 1:size(cartesianproduct,1)
     coords = num2cell(cartesianproduct(idx,:));
     coords_new = coords;

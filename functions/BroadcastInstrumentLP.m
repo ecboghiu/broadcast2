@@ -36,9 +36,9 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     alpha = sdpvar(1); % alpha will be the visibility
 
     tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
-    q_coords = ind2subv(tempdims, 1:prod(tempdims,'all'));
+    q_coords = ind2subv(tempdims, 1:prod(tempdims(:)));
     tempdims_cell = num2cell(tempdims);
-    qarray = sdpvar(prod(tempdims,'all'),1);
+    qarray = sdpvar(prod(tempdims(:)),1);
     q = cell(tempdims_cell{:});
     for idx = 1:size(q_coords,1)
         coords = num2cell(q_coords(idx,:));
@@ -52,7 +52,8 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     %visibility_constraints = [visibility_constraints,alpha <= 1];
     
     positivityconstraints = [];
-    for i=1:prod(size(q),'all')
+	auxsize=size(q);
+    for i=1:prod(auxsize(:))
         positivityconstraints = [positivityconstraints, qarray(i) >= 0];
     end
     
@@ -63,7 +64,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     % non signaling for bob:
     for lam = 1:nr_det_points
         coordstructure = [nr_outputs_per_party(2), nr_inputs_per_party(2), nr_inputs_per_party(4), nr_outputs_per_party(4)];
-        all_b_and_y_and_w = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        all_b_and_y_and_w = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for slice = 1:size(all_b_and_y_and_w,1)
             b = all_b_and_y_and_w(slice,1);
             y = all_b_and_y_and_w(slice,2);
@@ -93,7 +94,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     nonsignalling_constraintsC = [];
     for lam = 1:nr_det_points
         coordstructure = [nr_outputs_per_party(3), nr_inputs_per_party(3), nr_inputs_per_party(4), nr_outputs_per_party(4)];
-        all_c_and_z_and_w = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        all_c_and_z_and_w = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for slice = 1:size(all_c_and_z_and_w,1)
             c = all_c_and_z_and_w(slice,1);
             z = all_c_and_z_and_w(slice,2);
@@ -125,7 +126,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     nonsignalling_constraintsBCD = [];
      for lam = 1:nr_det_points
         coordstructure = [nr_outputs_per_party(4) nr_inputs_per_party(4)];
-        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        product = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for idx = 1:size(product,1)
             d = product(idx,1);
             w = product(idx,2);
@@ -138,7 +139,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
             end
             
             inputstructure = [nr_inputs_per_party(2), nr_inputs_per_party(3)];
-            YZinputsCartesianProduct = ind2subv(inputstructure, 1:prod(inputstructure,'all'));
+            YZinputsCartesianProduct = ind2subv(inputstructure, 1:prod(inputstructure(:)));
             for index = 2:size(YZinputsCartesianProduct,1)
                 y2 = YZinputsCartesianProduct(index,1);
                 z2 = YZinputsCartesianProduct(index,2);
@@ -159,7 +160,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     nonsignalling_constraintsBC = [];
     for lam = 1:nr_det_points          
         inputstructure = [nr_inputs_per_party(2), nr_inputs_per_party(3), nr_inputs_per_party(4)];
-        all_y_and_z_and_w = ind2subv(inputstructure, 1:prod(inputstructure,'all'));
+        all_y_and_z_and_w = ind2subv(inputstructure, 1:prod(inputstructure(:)));
         
         slice = 1;
         y1 = all_y_and_z_and_w(slice,1);
@@ -197,7 +198,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     
     probability_constraints = [];
     productstructure = [nr_inputs_per_party, nr_outputs_per_party];
-    cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure,'all'));
+    cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure(:)));
     for idx = 1:size(cartesianproduct_forprobconstraints,1)
         coords_cell = num2cell(cartesianproduct_forprobconstraints(idx,:));
         summ = 0;
@@ -250,5 +251,6 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     bellcoeffs = -clean(bellcoeffs, 1e-6);
     final_alpha = value(alpha);
     dual_alpha = 0;
-    %fprintf("lam4 · (p1-p2) = %f\n", sum(bellcoeffs .* (p1-p2),'all'));
+	% aux=bellcoeffs .* (p1-p2);
+    %fprintf("lam4 · (p1-p2) = %f\n", sum(aux(:)));
 end

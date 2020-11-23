@@ -29,7 +29,7 @@ function [newPovms,finalAlpha,problemStatus] = SeeSawOverASingleParty(partyidx, 
 
 %     %% Define the objective function.
 %     coords_structure = [ins, outs];
-%     coords = ind2subv(coords_structure, 1:prod(coords_structure,'all'));
+%     coords = ind2subv(coords_structure, 1:prod(coords_structure(:)));
 %     summ = 0;
 %     for row=1:size(coords,1)
 %        settings = num2cell(coords(row,1:nrparties));

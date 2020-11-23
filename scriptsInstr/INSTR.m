@@ -9,8 +9,8 @@ addpath(newdir3);
 
 party_ins = [3,2,2];
 party_outs = [2,2,2];
-instr_ins = [4];
-instr_outs = [1];
+instr_ins = [2];
+instr_outs = [4];
 ins = [party_ins, instr_ins];
 outs = [party_outs, instr_outs];
 dims_in = [2];
@@ -74,10 +74,13 @@ while meta_iteration < MAX_ITER_META
         fprintf("Visibility given initial measurements and channels: %f\n", alpha);
         
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+        aux_bpent = bellcoeffs .* (p_entangled);
+        aux_bpuni = bellcoeffs .* (p_uniform);
+        aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
         fprintf("With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: %f, %f, %f, %f\n", ...
-            sum(bellcoeffs .* (p_entangled),'all'), ...
-            sum(bellcoeffs .* (p_uniform),'all'), ...
-            sum(bellcoeffs .* (p_entangled-p_uniform),'all'), ...
+            sum(aux_bpent(:)), ...
+            sum(aux_bpuni(:)), ...
+            sum(aux_bdiff(:)), ...
             localbound);
 
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
@@ -95,6 +98,7 @@ while meta_iteration < MAX_ITER_META
     list_of_alphas = [];
     list_of_povms = {};
     list_of_channels = {};
+    list_of_bellcoeffs = {};
     while (AbsDeltaAlpha>ALPHA_CONVERGENCE_THRESHOLD && ...
             iteration<MAX_ITER && ...
             abs(alpha-0)>ALHPA_TOL_DIST_TO_1 && ...
@@ -114,10 +118,14 @@ while meta_iteration < MAX_ITER_META
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels);
         [newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+
+        aux_bpent = bellcoeffs .* (p_entangled);
+        aux_bpuni = bellcoeffs .* (p_uniform);
+        aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
         fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound: %f, %f, %f, %f\n", ...
-            sum(bellcoeffs .* (p_entangled),'all'), ...
-            sum(bellcoeffs .* (p_uniform),'all'), ...
-            sum(bellcoeffs .* (p_entangled-p_uniform),'all'), ...
+            sum(aux_bpent(:)), ...
+            sum(aux_bpuni(:)), ...
+            sum(aux_bdiff(:)), ...
             localbound);
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
         if LPstatus ~= 0
@@ -128,6 +136,7 @@ while meta_iteration < MAX_ITER_META
             list_of_alphas = [list_of_alphas, 0];
             list_of_povms{iteration} = 0;
             list_of_channels{iteration} = 0;
+            list_of_bellcoeffs{iteration} = 0;
         else
             alpha = newalpha;
             list_of_alphas = [list_of_alphas, alpha];
@@ -140,6 +149,7 @@ while meta_iteration < MAX_ITER_META
             end
             list_of_povms{iteration} = POVMs;
             list_of_channels{iteration} = channels;
+            list_of_bellcoeffs{iteration} = bellcoeffs;
             iteration = iteration + 1;
                 
             AbsDeltaAlpha = abs(alpha-oldalpha);
@@ -153,6 +163,7 @@ while meta_iteration < MAX_ITER_META
            best_alpha = alpha;
            best_povm =  list_of_povms{end};
            best_channels = list_of_channels{end};
+           best_bellcoeffs = list_of_bellcoeffs{end};
         end
         %final_round_alpha = [final_round_alpha, list_of_alphas(end)];
         %final_round_povm{length(final_round_alpha)} = list_of_povms{end};

@@ -45,7 +45,7 @@ function funcoutput = ClassicalOptInequality(bellcoeffs, ins, outs)
     % non signaling for bob:
     for lam = 1:nr_det_points
         coordstructure = [outs(2) ins(2)];
-        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        product = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for idx = 1:size(product,1)
             b = product(idx,1);
             y = product(idx,2);
@@ -70,7 +70,7 @@ function funcoutput = ClassicalOptInequality(bellcoeffs, ins, outs)
     %non signaling for charlie:
     for lam = 1:nr_det_points
         coordstructure = [outs(3) ins(3)];
-        product = ind2subv(coordstructure, 1:prod(coordstructure,'all'));
+        product = ind2subv(coordstructure, 1:prod(coordstructure(:)));
         for idx = 1:size(product,1)
             c = product(idx,1);
             z = product(idx,2);
@@ -157,8 +157,8 @@ function funcoutput = ClassicalOptInequality(bellcoeffs, ins, outs)
     % objective
     detA = givedetstratA(outs(1),ins(1));
     
-    cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
-    cartproductIN  = ind2subv(ins,  1:prod(ins,'all'));
+    cartproductOUT = ind2subv(outs, 1:prod(outs(:)));
+    cartproductIN  = ind2subv(ins,  1:prod(ins(:)));
     
     objective = 0;
     for i1 = 1:length(cartproductOUT)

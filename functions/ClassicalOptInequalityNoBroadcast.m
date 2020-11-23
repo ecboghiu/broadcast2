@@ -14,8 +14,8 @@ function funcoutput = ClassicalOptInequalityNoBroadcast(bellcoeffs)
                          
     positivityconstraints = [q >= 0];
 
-    cartproductOUT = ind2subv(outs, 1:prod(outs,'all'));
-    cartproductIN  = ind2subv(ins,  1:prod(ins,'all'));
+    cartproductOUT = ind2subv(outs, 1:prod(outs(:)));
+    cartproductIN  = ind2subv(ins,  1:prod(ins(:)));
     
     dets = {};
     for party=1:nrparties

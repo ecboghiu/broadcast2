@@ -13,7 +13,7 @@ function probability_ndarray = ProbMultidimArray(state,povms)
     probability_ndarray = zeros(dims{:});
         
     aux = [inputs_per_party, outputs_per_party];
-    allinputoutputcombinations = ind2subv(aux, 1:prod(aux,'all'));
+    allinputoutputcombinations = ind2subv(aux, 1:prod(aux(:)));
     for slice=1:size(allinputoutputcombinations,1)
         ins = num2cell(allinputoutputcombinations(slice,1:nrparties));
         outs = num2cell(allinputoutputcombinations(slice,nrparties+1:end));
