@@ -9,7 +9,7 @@ addpath(newdir3);
 
 party_ins = [3,2,2];
 party_outs = [2,2,2];
-instr_ins = [2];
+instr_ins = [1];
 instr_outs = [4];
 ins = [party_ins, instr_ins];
 outs = [party_outs, instr_outs];
@@ -118,17 +118,21 @@ while meta_iteration < MAX_ITER_META
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels);
         [newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
-
+        if newalpha > 0.7
+           error("Check wtf is wrong here"); 
+        end
+        
         aux_bpent = bellcoeffs .* (p_entangled);
         aux_bpuni = bellcoeffs .* (p_uniform);
         aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
-        fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound: %f, %f, %f, %f\n", ...
+        fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha: %f, %f, %f, %f, %f\n", ...
             sum(aux_bpent(:)), ...
             sum(aux_bpuni(:)), ...
             sum(aux_bdiff(:)), ...
-            localbound);
+            localbound, ...
+            newalpha);
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
-        if LPstatus ~= 0
+        if LPstatus ~= 0 && newalpha >= 1-1e-3
             %disp('LP not solved correctly');
             fprintf("LP not solved correctly. Trying another set of initial points.\n");
             break;

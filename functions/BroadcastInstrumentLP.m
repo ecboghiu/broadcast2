@@ -48,7 +48,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
     
     %q = sdpvar(nr_det_points, inputs_cell{2:end}, outputs_cell{2:end});
     
-    visibility_constraints = [alpha >= 0];
+    visibility_constraints = [alpha >= 0, alpha <= 1];
     %visibility_constraints = [visibility_constraints,alpha <= 1];
     
     positivityconstraints = [];
