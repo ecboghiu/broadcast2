@@ -55,8 +55,6 @@ function state = ApplyMapToBipartition(inistate,channel,placement)
     else
        error("Wrong 'placement' value."); 
     end
-    
-
 end
 
 

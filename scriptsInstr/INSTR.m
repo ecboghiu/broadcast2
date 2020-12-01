@@ -25,6 +25,7 @@ diaryname=strcat('mydiary',Scenario,'.txt');
 diary(diaryname);
 
 semilla = sum(100*clock);
+semilla = 208887;
 fprintf("Fixing random seed = %d\n", uint32(semilla));
 rng(semilla,'twister');
 
@@ -125,14 +126,15 @@ while meta_iteration < MAX_ITER_META
         aux_bpent = bellcoeffs .* (p_entangled);
         aux_bpuni = bellcoeffs .* (p_uniform);
         aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
-        fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha: %f, %f, %f, %f, %f\n", ...
+        fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: %f, %f, %f, %f, %f, %d\n", ...
             sum(aux_bpent(:)), ...
             sum(aux_bpuni(:)), ...
             sum(aux_bdiff(:)), ...
             localbound, ...
-            newalpha);
+            newalpha, ...
+            LPstatus);
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
-        if LPstatus ~= 0 && newalpha >= 1-1e-3
+        if LPstatus ~= 0 || newalpha >= 1-1e-3
             %disp('LP not solved correctly');
             fprintf("LP not solved correctly. Trying another set of initial points.\n");
             break;
