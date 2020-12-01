@@ -10773,3 +10773,4 @@ bellcoeffs(:,:,2,1,2,2,2,4) =
      0     0
      0     0
 
+if system_dependent('IsDebugMode')==1, dbquit; end
