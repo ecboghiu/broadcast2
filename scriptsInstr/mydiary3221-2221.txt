@@ -1,0 +1,289 @@
+Fixing random seed = 208887
+
+Round 1.
+Visibility given initial measurements and channels: 0.119049
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.119049, -0.880951, 1.000000, -0.000000
+iter=1, partyidx=1, bellineqvalue=0.195657, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.202813, abschangeobjval=0.00715694
+iter=3, partyidx=3, bellineqvalue=0.301046, abschangeobjval=0.0982325
+iter=4, channelq=~, bellineqvalue=1.198017, abschangeobjval=0.896971
+iter=5, partyidx=1, bellineqvalue=1.198019, abschangeobjval=1.69202e-06
+iter=6, partyidx=2, bellineqvalue=1.198115, abschangeobjval=9.60295e-05
+iter=7, partyidx=3, bellineqvalue=1.198115, abschangeobjval=1.71914e-07
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.294730, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.294730, abschangeobjval=5.17463e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, 0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 2.
+Visibility given initial measurements and channels: 0.080770
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.080770, -0.919230, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=0.319227, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.334619, abschangeobjval=0.0153919
+iter=3, partyidx=2, bellineqvalue=0.473685, abschangeobjval=0.139066
+iter=4, partyidx=3, bellineqvalue=0.473685, abschangeobjval=7.1751e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.307306, abschangeobjval=0.0144129
+iter=3, channelq=~, bellineqvalue=0.307306, abschangeobjval=6.44317e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 3.
+Visibility given initial measurements and channels: 0.105528
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.105528, -0.894472, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=1.195951, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.368790, abschangeobjval=0.172839
+iter=3, partyidx=2, bellineqvalue=1.487674, abschangeobjval=0.118885
+iter=4, partyidx=3, bellineqvalue=1.487674, abschangeobjval=2.23425e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.293713, abschangeobjval=0.000820234
+iter=3, channelq=~, bellineqvalue=0.293713, abschangeobjval=1.12143e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 4.
+Visibility given initial measurements and channels: 0.195898
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.195898, -0.804102, 1.000000, 0.000000
+iter=1, partyidx=2, bellineqvalue=0.216220, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.325141, abschangeobjval=0.108921
+iter=3, channelq=~, bellineqvalue=0.538524, abschangeobjval=0.213383
+iter=4, partyidx=1, bellineqvalue=0.583825, abschangeobjval=0.045301
+iter=5, partyidx=2, bellineqvalue=0.588619, abschangeobjval=0.00479388
+iter=6, partyidx=3, bellineqvalue=0.588644, abschangeobjval=2.43366e-05
+iter=7, channelq=~, bellineqvalue=0.588644, abschangeobjval=2.26605e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.422650, -0.577350, 1.000000, -0.000000, 0.422650, 0
+Visibility after optimizing over POVMs and channels: 0.422650
+iter=1, partyidx=3, bellineqvalue=0.422650, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.422650, abschangeobjval=5.12898e-10
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.422650, -0.577350, 1.000000, -0.000000, 0.422650, 0
+Visibility after optimizing over POVMs and channels: 0.422650
+Best visibility: 0.422650
+
+Round 5.
+Visibility given initial measurements and channels: 0.084456
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.084456, -0.915544, 1.000000, -0.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/lmi2sedumistruct>recursive_sdp_fix', 'C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\lmi2sedumistruct.m', 518)" style="font-weight:bold">lmi/lmi2sedumistruct>recursive_sdp_fix</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\lmi2sedumistruct.m',518,0)">line 518</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/lmi2sedumistruct', 'C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\lmi2sedumistruct.m', 268)" style="font-weight:bold">lmi/lmi2sedumistruct</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\lmi2sedumistruct.m',268,0)">line 268</a>)
+    [F_struc,K,KCut,schur_funs,schur_data,schur_variables] = recursive_sdp_fix(F,F_struc,K,KCut,schur_funs,schur_data,schur_variables,sdp_con,nvars,8,1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compileinterfacedata', 'C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m', 737)" style="font-weight:bold">compileinterfacedata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m',737,0)">line 737</a>)
+[F_struc,K,KCut,schur_funs,schur_data,schur_variables] = lmi2sedumistruct(F);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m', 249)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m',249,0)">line 249</a>)
+[interfacedata,recoverdata,solver,diagnostic,F,Fremoved,ForiginalQuadratics] = compileinterfacedata(F,[],logdetStruct,h,options,0,solving_parametric);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASinglePartyInstrumental', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASinglePartyInstrumental.m', 98)" style="font-weight:bold">SeeSawOverASinglePartyInstrumental</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASinglePartyInstrumental.m',98,0)">line 98</a>)
+    sol = optimize(constraints, -objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllPartiesInstrumental', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllPartiesInstrumental.m', 24)" style="font-weight:bold">SeeSawOverAllPartiesInstrumental</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllPartiesInstrumental.m',24,0)">line 24</a>)
+            [povms,newobjval,problemStatus] = SeeSawOverASinglePartyInstrumental(partyidx, initialState, bellcoeffs, povms, channels, ins, outs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 112)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',112,0)">line 112</a>)
+        [POVMs,finalObj,channels] = SeeSawOverAllPartiesInstrumental(bellcoeffs, NoisyWernerState(0), POVMs, channels, ins, outs);
+} 
+povms=best_povm
+
+povms =
+
+  1×3 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×3 cell}    {1×2 cell}    {1×2 cell}
+
+BlochAllObs(povms)
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3221-2221
+Fixing random seed = 208887
+
+Round 1.
+Visibility given initial measurements and channels: 0.119049
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.119049, -0.880951, 1.000000, -0.000000
+iter=1, partyidx=1, bellineqvalue=0.195657, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.202813, abschangeobjval=0.00715694
+iter=3, partyidx=3, bellineqvalue=0.301046, abschangeobjval=0.0982325
+iter=4, channelq=~, bellineqvalue=1.198017, abschangeobjval=0.896971
+iter=5, partyidx=1, bellineqvalue=1.198019, abschangeobjval=1.69202e-06
+iter=6, partyidx=2, bellineqvalue=1.198115, abschangeobjval=9.60295e-05
+iter=7, partyidx=3, bellineqvalue=1.198115, abschangeobjval=1.71914e-07
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.294730, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.294730, abschangeobjval=5.17463e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, 0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 2.
+Visibility given initial measurements and channels: 0.080770
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.080770, -0.919230, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=0.319227, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.334619, abschangeobjval=0.0153919
+iter=3, partyidx=2, bellineqvalue=0.473685, abschangeobjval=0.139066
+iter=4, partyidx=3, bellineqvalue=0.473685, abschangeobjval=7.1751e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.307306, abschangeobjval=0.0144129
+iter=3, channelq=~, bellineqvalue=0.307306, abschangeobjval=6.44317e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 3.
+Visibility given initial measurements and channels: 0.105528
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.105528, -0.894472, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=1.195951, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.368790, abschangeobjval=0.172839
+iter=3, partyidx=2, bellineqvalue=1.487674, abschangeobjval=0.118885
+iter=4, partyidx=3, bellineqvalue=1.487674, abschangeobjval=2.23425e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.293713, abschangeobjval=0.000820234
+iter=3, channelq=~, bellineqvalue=0.293713, abschangeobjval=1.12143e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 4.
+Visibility given initial measurements and channels: 0.195898
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.195898, -0.804102, 1.000000, 0.000000
+iter=1, partyidx=2, bellineqvalue=0.216220, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.325141, abschangeobjval=0.108921
+iter=3, channelq=~, bellineqvalue=0.538524, abschangeobjval=0.213383
+iter=4, partyidx=1, bellineqvalue=0.583825, abschangeobjval=0.045301
+iter=5, partyidx=2, bellineqvalue=0.588619, abschangeobjval=0.00479388
+iter=6, partyidx=3, bellineqvalue=0.588644, abschangeobjval=2.43366e-05
+iter=7, channelq=~, bellineqvalue=0.588644, abschangeobjval=2.26605e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.422650, -0.577350, 1.000000, -0.000000, 0.422650, 0
+Visibility after optimizing over POVMs and channels: 0.422650
+iter=1, partyidx=3, bellineqvalue=0.422650, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.422650, abschangeobjval=5.12898e-10
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.422650, -0.577350, 1.000000, -0.000000, 0.422650, 0
+Visibility after optimizing over POVMs and channels: 0.422650
+Best visibility: 0.422650
+
+Round 5.
+Visibility given initial measurements and channels: 0.084456
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.084456, -0.915544, 1.000000, -0.000000
+iter=1, partyidx=1, bellineqvalue=0.340929, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.353598, abschangeobjval=0.0126684
+iter=3, partyidx=3, bellineqvalue=0.375598, abschangeobjval=0.022001
+iter=4, channelq=~, bellineqvalue=0.521978, abschangeobjval=0.146379
+iter=5, partyidx=1, bellineqvalue=0.522195, abschangeobjval=0.000217615
+iter=6, partyidx=2, bellineqvalue=0.522319, abschangeobjval=0.000123445
+iter=7, partyidx=3, bellineqvalue=0.522319, abschangeobjval=2.51453e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1.6107e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.422650
+
+Round 6.
+Visibility given initial measurements and channels: 0.092168
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.092168, -0.907832, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=0.673561, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.682640, abschangeobjval=0.00907895
+iter=3, partyidx=2, bellineqvalue=0.700368, abschangeobjval=0.0177275
+iter=4, partyidx=3, bellineqvalue=0.700368, abschangeobjval=8.48021e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1.25072e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, -0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.422650
+
+Round 7.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: -0.000000, -0.000000, 0.000000, -0.000000
+Visibility given initial measurements and channels: 0.169074
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.169074, -0.830926, 1.000000, 0.000000
+iter=1, partyidx=1, bellineqvalue=0.232418, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.256967, abschangeobjval=0.0245482
+iter=3, partyidx=3, bellineqvalue=0.353767, abschangeobjval=0.0968003
+iter=4, channelq=~, bellineqvalue=0.589273, abschangeobjval=0.235506
+iter=5, partyidx=1, bellineqvalue=0.589280, abschangeobjval=7.28748e-06
+iter=6, partyidx=2, bellineqvalue=0.589280, abschangeobjval=1.29467e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292820, -0.707180, 1.000000, -0.000000, 0.292820, 0
+Visibility after optimizing over POVMs and channels: 0.292820
+iter=1, partyidx=2, bellineqvalue=0.315974, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.316086, abschangeobjval=0.000111762
+iter=3, channelq=~, bellineqvalue=0.316086, abschangeobjval=4.55682e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.000011, 0.000001, 0.000009, 0.000000, 0.477027, 1
+LP not solved correctly. Trying another set of initial points.
+Best visibility: 0.422650
+
+Round 8.
+Visibility given initial measurements and channels: 0.119158
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.119158, -0.880842, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=0.649963, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.650590, abschangeobjval=0.000626934
+iter=3, partyidx=2, bellineqvalue=0.650590, abschangeobjval=6.35717e-09
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292466, -0.707534, 1.000000, -0.000000, 0.292466, 0
+Visibility after optimizing over POVMs and channels: 0.292466
+iter=1, partyidx=2, bellineqvalue=0.292623, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.293228, abschangeobjval=0.000605164
+iter=3, channelq=~, bellineqvalue=0.293228, abschangeobjval=1.26518e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, 0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=8.04757e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.000022, 0.000003, 0.000019, -0.000006, 0.674932, 1
+LP not solved correctly. Trying another set of initial points.
+Best visibility: 0.422650
+
+Round 9.
+Visibility given initial measurements and channels: 0.176442
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.176442, -0.823558, 1.000000, -0.000000
+iter=1, partyidx=2, bellineqvalue=0.256148, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.292210, abschangeobjval=0.0360628
+iter=3, channelq=~, bellineqvalue=0.386666, abschangeobjval=0.0944561
+iter=4, partyidx=1, bellineqvalue=0.414600, abschangeobjval=0.027934
+iter=5, partyidx=2, bellineqvalue=0.415151, abschangeobjval=0.00055041
+iter=6, partyidx=3, bellineqvalue=0.419209, abschangeobjval=0.00405786
+iter=7, channelq=~, bellineqvalue=0.422085, abschangeobjval=0.00287651
+iter=8, partyidx=1, bellineqvalue=0.422098, abschangeobjval=1.29731e-05
+iter=9, partyidx=2, bellineqvalue=0.422184, abschangeobjval=8.53396e-05
+iter=10, partyidx=3, bellineqvalue=0.423845, abschangeobjval=0.00166189
+iter=11, channelq=~, bellineqvalue=0.424923, abschangeobjval=0.0010776
+iter=12, partyidx=1, bellineqvalue=0.424924, abschangeobjval=7.42703e-07
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292850, -0.707150, 1.000000, 0.000000, 0.292850, 0
+Visibility after optimizing over POVMs and channels: 0.292850
+iter=1, partyidx=3, bellineqvalue=0.294033, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.296123, abschangeobjval=0.00209039
+iter=3, partyidx=1, bellineqvalue=0.296123, abschangeobjval=2.63917e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292873, -0.707127, 1.000000, 0.000000, 0.292873, 0
+Visibility after optimizing over POVMs and channels: 0.292873
+iter=1, channelq=~, bellineqvalue=0.292873, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292873, abschangeobjval=3.40306e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292873, -0.707127, 1.000000, -0.000000, 0.292873, 0
+Visibility after optimizing over POVMs and channels: 0.292873
+Best visibility: 0.422650
+
+Round 10.
+Visibility given initial measurements and channels: 0.024080
+With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: 0.024080, -0.975920, 1.000000, -0.000000
+iter=1, channelq=~, bellineqvalue=0.267192, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.196208, abschangeobjval=0.929016
+iter=3, partyidx=2, bellineqvalue=1.264428, abschangeobjval=0.0682196
+iter=4, partyidx=3, bellineqvalue=1.264428, abschangeobjval=1.01437e-08
+With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: 0.292893, -0.707107, 1.000000, 0.000000, 0.292893, 0
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292

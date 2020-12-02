@@ -97,7 +97,7 @@ function [newchannel,newobjval,problemStatus] = SeeSawOverChannelInstrumental(in
     instr = 1; % NUMBER OF INSTRUMENTS
     for w=1:instr_ins(1)
         for d=1:instr_outs(1)
-            channels{instr}{w}{d}=value(choi{w}{d});
+            channels{instr}{w}{d}=CleanAlmostZeroEigs(value(choi{w}{d}),1e-10);
         end
     end
     

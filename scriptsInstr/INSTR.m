@@ -10,11 +10,12 @@ addpath(newdir3);
 party_ins = [3,2,2];
 party_outs = [2,2,2];
 instr_ins = [1];
-instr_outs = [4];
-ins = [party_ins, instr_ins];
-outs = [party_outs, instr_outs];
+instr_outs = [1];
 dims_in = [2];
 dims_out = [4];
+ins = [party_ins, instr_ins];
+outs = [party_outs, instr_outs];
+
 
 aux_ins = string([party_ins, instr_ins]);
 aux_outs = string([party_outs, instr_outs]);
@@ -78,7 +79,7 @@ while meta_iteration < MAX_ITER_META
         aux_bpent = bellcoeffs .* (p_entangled);
         aux_bpuni = bellcoeffs .* (p_uniform);
         aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
-        fprintf("With ini meas/channel: sÂ·p1, sÂ·p2, sÂ·(p1-p2), localbound: %f, %f, %f, %f\n", ...
+        fprintf("With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: %f, %f, %f, %f\n", ...
             sum(aux_bpent(:)), ...
             sum(aux_bpuni(:)), ...
             sum(aux_bdiff(:)), ...
@@ -117,6 +118,14 @@ while meta_iteration < MAX_ITER_META
         oldalpha = alpha;
         p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), POVMs, channels);
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels);
+ 
+        aux_ins_coords = ind2subv(ins, 1:prod(ins));
+        for aux=1:size(aux_ins_coords,1)
+           aux_ins_cell=num2cell(aux_ins_coords(aux,:));
+           probvec = p_entangled(aux_ins_cell{:},:,:,:,:);
+           assert(abs(sum(probvec(:))-1)<1e-5,"Probability not normalized");
+        end
+        
         [newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
         if newalpha > 0.7
@@ -126,7 +135,7 @@ while meta_iteration < MAX_ITER_META
         aux_bpent = bellcoeffs .* (p_entangled);
         aux_bpuni = bellcoeffs .* (p_uniform);
         aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
-        fprintf("With optimized meas/channel: sÂ·p1, sÂ·p2, sÂ·(p1-p2), localbound, alpha, LPstatus: %f, %f, %f, %f, %f, %d\n", ...
+        fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: %f, %f, %f, %f, %f, %d\n", ...
             sum(aux_bpent(:)), ...
             sum(aux_bpuni(:)), ...
             sum(aux_bdiff(:)), ...

@@ -12,7 +12,6 @@ function BlochPlotObs(obs)
     % taken from https://www.youtube.com/watch?v=qysCuvPdX6E
     
     figure(1)
-    clf('reset')
     hold on
     
     
