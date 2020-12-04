@@ -92,13 +92,15 @@ function [newchannel,newobjval,problemStatus] = SeeSawOverChannelInstrumental(in
 
     
     sol = optimize(constraints, -objective, ...
-        sdpsettings('solver','mosek','verbose',0));
+                    sdpsettings('solver','mosek','verbose',0));
     channels = {{{}}};
     instr = 1; % NUMBER OF INSTRUMENTS
-    for w=1:instr_ins(1)
-        for d=1:instr_outs(1)
-            channels{instr}{w}{d}=CleanAlmostZeroEigs(value(choi{w}{d}),1e-10);
-        end
+    for instrument=1:instr
+       for w=1:instr_ins(1)
+          for d=1:instr_outs(1)
+              channels{instr}{w}{d} = value(choi{w}{d});
+          end
+       end
     end
     
     % FOR DEBUGGING add assertions

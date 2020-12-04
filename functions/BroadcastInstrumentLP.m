@@ -199,7 +199,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
             summ = summ + det_strategy(lam, coords_cell{1}, coords_cell{nrparties+1}) ... 
                 * q{lam, coords_cell{2:nrparties}, coords_cell{nrparties+2:end}};
         end
-        cleanprob = clean(noisy_prob(coords_cell{:}), 1e-5);
+        %cleanprob = clean(noisy_prob(coords_cell{:}), 1e-12);
         probability_constraints = [probability_constraints, summ == noisy_prob(coords_cell{:})];
     end
     
@@ -240,7 +240,7 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
         bellcoeffs(coords_cell{:}) = -value(dual(probability_constraints(index)));
         index = index + 1;
     end
-    bellcoeffs = clean(bellcoeffs, 1e-16);
+    %bellcoeffs = clean(bellcoeffs, 1e-16);
     final_alpha = value(alpha);
     if final_alpha>0.7
         LPstatus = 1;
@@ -248,6 +248,4 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastInstrumentLP(p1
        error("alpha value is not good!");
     end
     dual_alpha = 0;
-	% aux=bellcoeffs .* (p1-p2);
-    %fprintf("lam4 · (p1-p2) = %f\n", sum(aux(:)));
 end

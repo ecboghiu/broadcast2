@@ -1,3 +1,4 @@
+%% Working directories
 mydir  = pwd;
 idcs   = strfind(mydir,filesep);
 newdir = mydir(1:idcs(end)-1);
@@ -7,6 +8,7 @@ addpath(newdir);
 addpath(newdir2);
 addpath(newdir3);
 
+%% Fix the scenario
 party_ins = [3,2,2];
 party_outs = [2,2,2];
 instr_ins = [1];
@@ -16,28 +18,31 @@ dims_out = [4];
 ins = [party_ins, instr_ins];
 outs = [party_outs, instr_outs];
 
-
+%% To print the scenario.
 aux_ins = string([party_ins, instr_ins]);
 aux_outs = string([party_outs, instr_outs]);
 Scenario=strcat(aux_ins{:},'-',aux_outs{:});
-%Scenario = '3223-2222';
 fprintf("Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = %s\n", Scenario);
 diaryname=strcat('mydiary',Scenario,'.txt');
 diary(diaryname);
 
+%% Fix the rng seed
 semilla = sum(100*clock);
-semilla = 208887;
+semilla = 208887; % Fix it for debugging
+semilla = 1;
 fprintf("Fixing random seed = %d\n", uint32(semilla));
 rng(semilla,'twister');
 
+%% How many total rounds
 MAX_ITER_META = 1000;
 
+
+%% The MAIN loop
 final_round_alpha = [];
 final_round_povm = {};
 final_round_channels = {};
 
 latest_alpha_meta = 0;
-
 best_alpha = 0;
 
 meta_iteration = 1;
@@ -49,6 +54,7 @@ while meta_iteration < MAX_ITER_META
     alpha = 0;
     ALHPA_TOL_DIST_TO_1 = 1e-3;
     LPstatus = 0;
+    %% Loop through initial conditions until they are good
     while abs(alpha-0)<ALHPA_TOL_DIST_TO_1 || LPstatus~=0
         %% Initialize the POVMs.
         %iniP_proj = givePprojRAND2();  % This uses QETLAB's RandomPOVM()
@@ -88,6 +94,7 @@ while meta_iteration < MAX_ITER_META
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
     end
 
+    %% Given initial conditions with ineq, do SDP and then LP again etc.
     % Parameters for stopping conditions for the next loop.
     ALPHA_CONVERGENCE_THRESHOLD = 1e-6;
     MAX_ITER = 500;
@@ -119,17 +126,25 @@ while meta_iteration < MAX_ITER_META
         p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), POVMs, channels);
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels);
  
-        aux_ins_coords = ind2subv(ins, 1:prod(ins));
-        for aux=1:size(aux_ins_coords,1)
-           aux_ins_cell=num2cell(aux_ins_coords(aux,:));
-           probvec = p_entangled(aux_ins_cell{:},:,:,:,:);
-           assert(abs(sum(probvec(:))-1)<1e-5,"Probability not normalized");
-        end
+%         flag_some_prob_not_normalized = false;
+%         tol_prob_normalization = 1e-7;
+%         aux_ins_coords = ind2subv(ins, 1:prod(ins));
+%         for aux=1:size(aux_ins_coords,1)
+%            aux_ins_cell=num2cell(aux_ins_coords(aux,:));
+%            probvec = p_entangled(aux_ins_cell{:},:,:,:,:);
+%            if abs(sum(probvec(:))-1)>tol_prob_normalization
+%                flag_some_prob_not_normalized = true;
+%                break;
+%            end
+%         end
+%         if flag_some_prob_not_normalized
+%             warning("Probability not normalized to precision. Example sum(prob)-1: %g,", sum(probvec(:))-1);
+%         end
         
         [newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
         if newalpha > 0.7
-           error("Check wtf is wrong here"); 
+           error("Check what is wrong here"); 
         end
         
         aux_bpent = bellcoeffs .* (p_entangled);
@@ -145,9 +160,8 @@ while meta_iteration < MAX_ITER_META
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
         if LPstatus ~= 0 || newalpha >= 1-1e-3
             %disp('LP not solved correctly');
-            fprintf("LP not solved correctly. Trying another set of initial points.\n");
+            warning("LP not solved correctly. Trying another set of initial points. LpStatus=%f, alpha=%f", LPstatus, newalpha);
             break;
-            %error('Check why infeasible problem.'); 
             list_of_alphas = [list_of_alphas, 0];
             list_of_povms{iteration} = 0;
             list_of_channels{iteration} = 0;
@@ -171,7 +185,6 @@ while meta_iteration < MAX_ITER_META
 
             fprintf("Visibility after optimizing over POVMs and channels: %f\n", alpha);
         end
-        %alpha = outputcritvis{1} + 0.01;
     end
     if ~isempty(list_of_alphas)
         if alpha > best_alpha
@@ -180,48 +193,10 @@ while meta_iteration < MAX_ITER_META
            best_channels = list_of_channels{end};
            best_bellcoeffs = list_of_bellcoeffs{end};
         end
-        %final_round_alpha = [final_round_alpha, list_of_alphas(end)];
-        %final_round_povm{length(final_round_alpha)} = list_of_povms{end};
-        %final_round_channels{length(final_round_alpha)} = list_of_channels{end};
-        %latest_alpha_meta = final_round_alpha(end);
         fprintf("Best visibility: %f\n", best_alpha);
     end
-    meta_iteration = meta_iteration + 1;
     
+    meta_iteration = meta_iteration + 1;
 end
 
-%best_alpha = max(final_round_alpha);
-%index = find(final_round_alpha == best_alpha);
-%best_povm = final_round_povm(index);
-%best_channels = final_round_channels(index);
-
 save(strcat('matlabworkspace_asini',Scenario,'.mat'));
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
-
-%save 'data_optimal0.577Standard'
-% 
-% LBoundOurEBI = ClassicalOptInequality2(bellcoeffs,ins,outs);
-% fprintf('LBoundOurEBI: %f\n', LBoundOurEBI);
-% 
-% inputstate = final_state(ini_state(alpha), channel);
-% mixingstate = eye(size(inputstate))/size(inputstate,1);
-% val=evaluate_bell_ineq_INSTR(bellcoeffs, 0, inputstate, Pproj, ins, outs);
-% val
-% 
-% vis=VisibilityOfBellIneqWithNoChannel(bellcoeffs, LBoundOurEBI, Pproj, inputstate, mixingstate, ins, outs);
-% vis
-% 
-% correlatorineq = dispBellCoeffsCorrelators(bellcoeffs,ins,outs);
-% correlatorineq = simplify(vpa(correlatorineq,6));
-% 
-% probineq = ToProbabilityNotationIneqSym(correlatorineq,ins,outs);
-% [bellcoeffsagain, ineqconstant] = GetBellCoeffsFromProbSymIneq(probineq,ins,outs);
-% 
-% [C,T] = coeffs(correlatorineq);
-% 
-% ineqconstant+evaluate_bell_ineq_INSTR(bellcoeffsagain, ineqconstant, final_state(ini_state(0.577), channel), Pproj, ins, outs)
-% 
-% LBoundOurEBI2 = ClassicalOptInequality2(bellcoeffsagain,ins,outs)
-% fprintf("local bounds before and after: %f %f\n", LBoundOurEBI, LBoundOurEBI2);

@@ -40,5 +40,5 @@ function probability_ndarray = ProbMultidimArrayInstrumental(inistate,povms,lamb
         state_w_d = ApplyMapToBipartition(inistate,lambda_w_d{instr}{w}{d},"right");
         probability_ndarray(ins{:},w,outs{:},d) = real(trace(tensor*state_w_d));
     end
-    probability_ndarray = clean(probability_ndarray, 1e-6);
+    %probability_ndarray = clean(probability_ndarray, 1e-6);
 end
