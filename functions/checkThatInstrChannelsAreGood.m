@@ -16,11 +16,11 @@ for instr = 1:length(instr_ins)
         for d=1:instr_outs(instr)
             channel = channel + ChoiMatrix(channels_w_d{instr}{w}{d});
             if ~IsPSD(channels_w_d{instr}{w}{d},tol)
-              warning("POVM not positive! min eig %g", min(eig(povms{p}{x}{a})));
+              warning("POVM not positive! min eig %g", min(eig(channels_w_d{instr}{w}{d})));
             end
         end
         if ~IsPSD(channel,tol)
-           warning("POVM not positive! min eig %g", min(eig(povms{p}{x}{a})));
+           warning("POVM not positive! min eig %g", min(eig(channel)));
         end
         tracedoutput = PartialTrace(channel, [2], [dims_in(instr), dims_out(instr)]);      
    end
