@@ -1,12 +1,53 @@
-function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inputs_per_party,nr_outputs_per_party)
-    % IMPORTANT alpha is defined as (1-alpha)*p1 + (alpha)*p2
-    % usually p1 is the entangled, and p2 the uniform, so this
-    % program minimizes alpha using this convention
-    % if p1 and p2 are both local then all alpha are good, it will give 0
-    % if p1 and p2 are both nonlocal the program is infeasible
-    % ideally p1 should be nonlocal, which should give something between 0
-    % and 1
+function [alpha, bellcoeffs] = BroadcastSlowLP(p1,p2,nr_inputs_per_party,nr_outputs_per_party)
 
+
+
+[LPstatus, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outputs_per_party);
+
+[L0, bellcoeffs] = SlowLP(p1,p2,0,nr_inputs_per_party,nr_outputs_per_party);
+[L1, bellcoeffs] = SlowLP(p1,p2,1,nr_inputs_per_party,nr_outputs_per_party);
+if L0 == 0 && L1 == 0
+    alpha = 0;
+    warning("Both points are inside the local set!");
+    return;
+end
+if L0 == 1 && L1 == 1
+    warning("Both points are outside the local set!");
+    return;
+end
+if L0 == 0 && L1 == 1
+    alpha = 0;
+    warning("Better to switch around p1 and p2 (so p1 is outside broadcast-local set)");
+    return;
+end
+if L0 == 1 && L1 == 0
+    alpha = aux_midpoint(0,1);
+    l1 = L0;
+
+    precision = 1;
+    tol = 1e-4;
+    while precision>tol
+        l0 = l1;
+        [l1, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outputs_per_party);
+    
+        if l1 == l0
+           alpha =  
+        end
+        if LPstatus == 1
+            alpha = aux_midpoint(0,alpha);
+        else
+           alpha = aux_midpoint(alpha,1); 
+        end
+    end
+    
+end
+end
+
+function out=aux_midpoint(x,y)
+out=(x+y)/2;
+end
+
+function [LPstatus, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outputs_per_party)
     dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
     
     assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
@@ -15,7 +56,7 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
         LPstatus = 1000;
         aux_cell = num2cell(dims_p);
         bellcoeffs = zeros(aux_cell{:});
-        final_alpha = 0;
+
         return;
     end
     
@@ -30,7 +71,6 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
     
     nr_det_points = nroutputsofA^nrinputsofA;
   
-    alpha = sdpvar(1); % alpha will be the visibility
 
     tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
     q_coords = ind2subv(tempdims, 1:prod(tempdims(:)));
@@ -41,8 +81,6 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
         coords = num2cell(q_coords(idx,:));
         q{coords{:}} = qarray(idx);
     end
-    
-    visibility_constraints = [alpha >= 0];
 
     positivityconstraints = [];
 	auxsize=size(q);
@@ -204,7 +242,7 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
     
     %% Solving the SDP
     
-    objective = alpha;
+    objective = 0;
             
     constraints = [positivityconstraints, ...
         visibility_constraints, ...
@@ -217,21 +255,20 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
         sdpsettings('solver','mosek','verbose',0));
 
     LPstatus = optsol.problem;
-    if LPstatus ~= 0
-       disp(optsol)
-       warning('Check why the problem is not successfully solved.');
-    end
     
     dimcell = num2cell([nr_inputs_per_party,nr_outputs_per_party]);
     bellcoeffs = zeros(dimcell{:});           
-
-    for index = 1:size(cartesianproduct_forprobconstraints,1)
-        % Here I need to make sure that say, index = 6, corresponds to the
-        % same (x,y,z,a,b,c) tuple that it did when defining the
-        % probability constraints. I make sure of that by using the same
-        % array for looping, 'cartesianproduct_forprobconstraints'
-        coords_cell = num2cell(cartesianproduct_forprobconstraints(index,:));
-        bellcoeffs(coords_cell{:}) = -value(dual(probability_constraints(index)));
+    
+    if LPstatus == 0
+        for index = 1:size(cartesianproduct_forprobconstraints,1)
+            % Here I need to make sure that say, index = 6, corresponds to the
+            % same (x,y,z,a,b,c) tuple that it did when defining the
+            % probability constraints. I make sure of that by using the same
+            % array for looping, 'cartesianproduct_forprobconstraints'
+            coords_cell = num2cell(cartesianproduct_forprobconstraints(index,:));
+            bellcoeffs(coords_cell{:}) = -value(dual(probability_constraints(index)));
+        end
     end
-    final_alpha = value(alpha);
+
 end
+
