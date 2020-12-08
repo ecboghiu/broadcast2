@@ -98,21 +98,10 @@ function [newchannel,newobjval,problemStatus] = SeeSawOverChannelInstrumental(in
     for instrument=1:instr
        for w=1:instr_ins(1)
           for d=1:instr_outs(1)
+              %channels{instr}{w}{d} = cleanChannel(value(choi{w}{d}),inputdimspace,outputdimspace,1e-10);
               channels{instr}{w}{d} = value(choi{w}{d});
           end
        end
-    end
-    
-    % FOR DEBUGGING add assertions
-    psd_tol = 1e-6;
-    for w=1:instr_ins(1)
-        summ_w = 0;
-        for d=1:instr_outs(1)
-            summ_w = summ_w + channels{instr}{w}{d};
-            assert(IsPSD(channels{instr}{w}{d}+psd_tol*eye(size(channels{instr}{w}{d},1))),"Not PSD!");
-        end
-        assert(IsPSD(summ_w+psd_tol*eye(size(channels{instr}{w}{d},1))),"Not PSD!");
-        assert(IsPSD(PartialTrace(summ_w, 2, [dimB, dimB1*dimB2]) - idB + psd_tol*eye(2)),"Not choi");
     end
     
     newchannel = channels;

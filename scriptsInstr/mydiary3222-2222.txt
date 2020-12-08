@@ -1,0 +1,2894 @@
+Fixing random seed = 1
+
+Round 1.
+Visibility given initial measurements and channels: 0.150744
+With ini meas/channel: s·p1=0.150744, s·p2=-0.849256, s·(p1-p2)=1.000000, localbound=3.798581
+Function check, alpha1=0.000000 alpha2=0.150744 diff=-0.150744
+iter=1, partyidx=3, bellineqvalue=0.171291, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.001886, abschangeobjval=0.830594
+iter=3, partyidx=1, bellineqvalue=1.251410, abschangeobjval=0.249524
+iter=4, partyidx=2, bellineqvalue=1.927732, abschangeobjval=0.676322
+iter=5, partyidx=3, bellineqvalue=1.927732, abschangeobjval=3.46933e-07
+[Warning: POVM not positive! min eig -1.93242e-08] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkThatInstrChannelsAreGood', 'C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m', 23)" style="font-weight:bold">checkThatInstrChannelsAreGood</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m',23,0)">line 23</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 128)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',128,0)">line 128</a>)] 
+With optimized meas/channel: s·p1=0.292893, s·p2=-0.707107, s·(p1-p2)=1.000000, localbound=0.303416, alpha=0.292893, LPstatus=0.000000
+Function check, alpha1=0.000000 alpha2=0.292893 diff=-0.292893
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=2.88035e-09
+[Warning: POVM not positive! min eig -1.93242e-08] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkThatInstrChannelsAreGood', 'C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m', 23)" style="font-weight:bold">checkThatInstrChannelsAreGood</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m',23,0)">line 23</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 128)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',128,0)">line 128</a>)] 
+With optimized meas/channel: s·p1=0.000000, s·p2=0.000000, s·(p1-p2)=0.000000, localbound=-0.000000, alpha=0.000000, LPstatus=1.000000
+Function check, alpha1=0.000000 alpha2=0.000000 diff=0.000000
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+Best visibility: 0.292893
+
+Round 2.
+Visibility given initial measurements and channels: 0.191019
+With ini meas/channel: s·p1=0.191019, s·p2=-0.808981, s·(p1-p2)=1.000000, localbound=0.241330
+Function check, alpha1=0.000000 alpha2=0.191019 diff=-0.191019
+iter=1, partyidx=3, bellineqvalue=0.327982, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.809969, abschangeobjval=0.481987
+iter=3, partyidx=1, bellineqvalue=0.827524, abschangeobjval=0.0175546
+iter=4, partyidx=2, bellineqvalue=0.827524, abschangeobjval=2.22517e-08
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/subsref>subsref1d', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m', 193)" style="font-weight:bold">sdpvar/subsref>subsref1d</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m',193,0)">line 193</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/subsref', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m', 50)" style="font-weight:bold">sdpvar/subsref</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m',50,0)">line 50</a>)
+                    y = subsref1d(X,Y(1).subs{1},Y);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ClassicalOptInequality_fromLPBroadcast_INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m', 37)" style="font-weight:bold">ClassicalOptInequality_fromLPBroadcast_INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',37,0)">line 37</a>)
+        positivityconstraints = [positivityconstraints, qarray(i) >= 0];
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 152)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',152,0)">line 152</a>)
+        localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',249,1)">249 </a>    dual_alpha = 0;
+dims_p
+
+dims_p =
+
+     3     2     2     2     2     2     2     2
+
+nr_inputs_per_party
+
+nr_inputs_per_party =
+
+     3     2     2     2
+
+nr_outputs_per_party
+
+nr_outputs_per_party =
+
+     2     2     2     2
+
+dims_p = [nr_inputs_per_party(:), nr_outputs_per_party(:)];
+dims_p
+
+dims_p =
+
+     3     2
+     2     2
+     2     2
+     2     2
+
+dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
+dims_p
+
+dims_p =
+
+     3     2     2     2     2     2     2     2
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+nrparties
+{Undefined function or variable 'nrparties'.
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',249,1)">249 </a>    dual_alpha = 0;
+if system_dependent('IsDebugMode')==1, dbquit all; end
+ins
+
+ins =
+
+     3     2     2     2
+
+inputs_per_party
+{Undefined function or variable 'inputs_per_party'.
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/plus', 'C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\plus.m', 83)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\plus.m',83,0)">line 83</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/horzcat', 'C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\horzcat.m', 28)" style="font-weight:bold">lmi/horzcat</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\horzcat.m',28,0)">line 28</a>)
+        F = F + H;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 202)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',202,0)">line 202</a>)
+        probability_constraints = [probability_constraints, summ == noisy_prob(coords_cell{:})];
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 86)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',86,0)">line 86</a>)
+        [alpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+nrparties
+
+nrparties =
+
+     3
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+Cm=channels{1}{1}{1}
+
+Cm =
+
+  Columns 1 through 4
+
+   0.0824 + 0.0000i  -0.0102 + 0.0132i  -0.0076 - 0.0060i  -0.0013 - 0.0129i
+  -0.0102 - 0.0132i   0.0890 + 0.0000i  -0.0146 + 0.0075i   0.0334 + 0.0142i
+  -0.0076 + 0.0060i  -0.0146 - 0.0075i   0.0614 + 0.0000i  -0.0347 - 0.0188i
+  -0.0013 + 0.0129i   0.0334 - 0.0142i  -0.0347 + 0.0188i   0.1873 + 0.0000i
+   0.0513 - 0.0356i  -0.0078 + 0.0103i  -0.0194 + 0.0031i   0.0148 - 0.0196i
+   0.0014 - 0.0110i   0.0212 - 0.0308i   0.0070 + 0.0013i  -0.0368 + 0.0069i
+  -0.0068 + 0.0189i  -0.0098 - 0.0215i   0.0162 - 0.0014i  -0.0061 - 0.0509i
+   0.0057 - 0.0037i  -0.0166 + 0.0328i   0.0201 - 0.0188i  -0.0534 + 0.0310i
+
+  Columns 5 through 8
+
+   0.0513 + 0.0356i   0.0014 + 0.0110i  -0.0068 - 0.0189i   0.0057 + 0.0037i
+  -0.0078 - 0.0103i   0.0212 + 0.0308i  -0.0098 + 0.0215i  -0.0166 - 0.0328i
+  -0.0194 - 0.0031i   0.0070 - 0.0013i   0.0162 + 0.0014i   0.0201 + 0.0188i
+   0.0148 + 0.0196i  -0.0368 - 0.0069i  -0.0061 + 0.0509i  -0.0534 - 0.0310i
+   0.1680 + 0.0000i   0.0153 - 0.0019i  -0.0144 - 0.0078i  -0.0049 + 0.0007i
+   0.0153 + 0.0019i   0.1017 + 0.0000i   0.0001 - 0.0054i  -0.0029 - 0.0001i
+  -0.0144 + 0.0078i   0.0001 + 0.0054i   0.1279 + 0.0000i   0.0102 + 0.0102i
+  -0.0049 - 0.0007i  -0.0029 + 0.0001i   0.0102 - 0.0102i   0.0934 + 0.0000i
+
+Cm
+
+Cm =
+
+  Columns 1 through 4
+
+   0.0824 + 0.0000i  -0.0102 + 0.0132i  -0.0076 - 0.0060i  -0.0013 - 0.0129i
+  -0.0102 - 0.0132i   0.0890 + 0.0000i  -0.0146 + 0.0075i   0.0334 + 0.0142i
+  -0.0076 + 0.0060i  -0.0146 - 0.0075i   0.0614 + 0.0000i  -0.0347 - 0.0188i
+  -0.0013 + 0.0129i   0.0334 - 0.0142i  -0.0347 + 0.0188i   0.1873 + 0.0000i
+   0.0513 - 0.0356i  -0.0078 + 0.0103i  -0.0194 + 0.0031i   0.0148 - 0.0196i
+   0.0014 - 0.0110i   0.0212 - 0.0308i   0.0070 + 0.0013i  -0.0368 + 0.0069i
+  -0.0068 + 0.0189i  -0.0098 - 0.0215i   0.0162 - 0.0014i  -0.0061 - 0.0509i
+   0.0057 - 0.0037i  -0.0166 + 0.0328i   0.0201 - 0.0188i  -0.0534 + 0.0310i
+
+  Columns 5 through 8
+
+   0.0513 + 0.0356i   0.0014 + 0.0110i  -0.0068 - 0.0189i   0.0057 + 0.0037i
+  -0.0078 - 0.0103i   0.0212 + 0.0308i  -0.0098 + 0.0215i  -0.0166 - 0.0328i
+  -0.0194 - 0.0031i   0.0070 - 0.0013i   0.0162 + 0.0014i   0.0201 + 0.0188i
+   0.0148 + 0.0196i  -0.0368 - 0.0069i  -0.0061 + 0.0509i  -0.0534 - 0.0310i
+   0.1680 + 0.0000i   0.0153 - 0.0019i  -0.0144 - 0.0078i  -0.0049 + 0.0007i
+   0.0153 + 0.0019i   0.1017 + 0.0000i   0.0001 - 0.0054i  -0.0029 - 0.0001i
+  -0.0144 + 0.0078i   0.0001 + 0.0054i   0.1279 + 0.0000i   0.0102 + 0.0102i
+  -0.0049 - 0.0007i  -0.0029 + 0.0001i   0.0102 - 0.0102i   0.0934 + 0.0000i
+
+eig(Cm)
+
+ans =
+
+    0.0332
+    0.0359
+    0.0461
+    0.0514
+    0.1118
+    0.1421
+    0.2178
+    0.2731
+
+channels{1}{1}{2}
+
+ans =
+
+  Columns 1 through 4
+
+   0.2013 + 0.0000i   0.0018 - 0.0013i  -0.0351 - 0.0186i  -0.0006 - 0.0000i
+   0.0018 + 0.0013i   0.1982 + 0.0000i  -0.0004 - 0.0006i  -0.0338 - 0.0178i
+  -0.0351 + 0.0186i  -0.0004 + 0.0006i   0.0904 + 0.0000i   0.0005 - 0.0005i
+  -0.0006 + 0.0000i  -0.0338 + 0.0178i   0.0005 + 0.0005i   0.0899 + 0.0000i
+  -0.0548 + 0.0359i   0.0001 + 0.0013i   0.0388 - 0.0020i   0.0003 - 0.0004i
+  -0.0011 - 0.0001i  -0.0537 + 0.0345i   0.0002 + 0.0002i   0.0386 - 0.0017i
+   0.0272 - 0.0334i  -0.0002 - 0.0004i   0.0359 - 0.0167i   0.0001 + 0.0001i
+   0.0001 + 0.0000i   0.0278 - 0.0334i  -0.0004 + 0.0001i   0.0372 - 0.0170i
+
+  Columns 5 through 8
+
+  -0.0548 - 0.0359i  -0.0011 + 0.0001i   0.0272 + 0.0334i   0.0001 - 0.0000i
+   0.0001 - 0.0013i  -0.0537 - 0.0345i  -0.0002 + 0.0004i   0.0278 + 0.0334i
+   0.0388 + 0.0020i   0.0002 - 0.0002i   0.0359 + 0.0167i  -0.0004 - 0.0001i
+   0.0003 + 0.0004i   0.0386 + 0.0017i   0.0001 - 0.0001i   0.0372 + 0.0170i
+   0.0912 + 0.0000i   0.0005 - 0.0004i   0.0228 + 0.0120i   0.0001 + 0.0000i
+   0.0005 + 0.0004i   0.0902 + 0.0000i   0.0000 + 0.0000i   0.0230 + 0.0121i
+   0.0228 - 0.0120i   0.0000 - 0.0000i   0.1635 + 0.0000i   0.0005 - 0.0004i
+   0.0001 - 0.0000i   0.0230 - 0.0121i   0.0005 + 0.0004i   0.1640 + 0.0000i
+
+c=channels{1}{1}{2}
+
+c =
+
+  Columns 1 through 4
+
+   0.2013 + 0.0000i   0.0018 - 0.0013i  -0.0351 - 0.0186i  -0.0006 - 0.0000i
+   0.0018 + 0.0013i   0.1982 + 0.0000i  -0.0004 - 0.0006i  -0.0338 - 0.0178i
+  -0.0351 + 0.0186i  -0.0004 + 0.0006i   0.0904 + 0.0000i   0.0005 - 0.0005i
+  -0.0006 + 0.0000i  -0.0338 + 0.0178i   0.0005 + 0.0005i   0.0899 + 0.0000i
+  -0.0548 + 0.0359i   0.0001 + 0.0013i   0.0388 - 0.0020i   0.0003 - 0.0004i
+  -0.0011 - 0.0001i  -0.0537 + 0.0345i   0.0002 + 0.0002i   0.0386 - 0.0017i
+   0.0272 - 0.0334i  -0.0002 - 0.0004i   0.0359 - 0.0167i   0.0001 + 0.0001i
+   0.0001 + 0.0000i   0.0278 - 0.0334i  -0.0004 + 0.0001i   0.0372 - 0.0170i
+
+  Columns 5 through 8
+
+  -0.0548 - 0.0359i  -0.0011 + 0.0001i   0.0272 + 0.0334i   0.0001 - 0.0000i
+   0.0001 - 0.0013i  -0.0537 - 0.0345i  -0.0002 + 0.0004i   0.0278 + 0.0334i
+   0.0388 + 0.0020i   0.0002 - 0.0002i   0.0359 + 0.0167i  -0.0004 - 0.0001i
+   0.0003 + 0.0004i   0.0386 + 0.0017i   0.0001 - 0.0001i   0.0372 + 0.0170i
+   0.0912 + 0.0000i   0.0005 - 0.0004i   0.0228 + 0.0120i   0.0001 + 0.0000i
+   0.0005 + 0.0004i   0.0902 + 0.0000i   0.0000 + 0.0000i   0.0230 + 0.0121i
+   0.0228 - 0.0120i   0.0000 - 0.0000i   0.1635 + 0.0000i   0.0005 - 0.0004i
+   0.0001 - 0.0000i   0.0230 - 0.0121i   0.0005 + 0.0004i   0.1640 + 0.0000i
+
+eig(c)
+
+ans =
+
+    0.0451
+    0.0456
+    0.0522
+    0.0535
+    0.1954
+    0.1972
+    0.2462
+    0.2536
+
+[A,B]=eig(c)
+
+A =
+
+  Columns 1 through 4
+
+   0.0274 - 0.1710i  -0.0654 + 0.3699i  -0.1237 - 0.0093i  -0.2446 - 0.0147i
+   0.2116 + 0.3089i   0.0948 + 0.1426i   0.1570 + 0.1885i  -0.0828 - 0.0962i
+   0.0116 + 0.0428i  -0.0278 - 0.0941i  -0.3663 + 0.1489i  -0.7128 + 0.2976i
+  -0.0918 - 0.0514i  -0.0380 - 0.0259i   0.7018 + 0.3169i  -0.3613 - 0.1584i
+  -0.1371 - 0.3299i   0.2885 + 0.7185i   0.0677 - 0.0310i   0.1285 - 0.0552i
+   0.7061 + 0.3194i   0.3244 + 0.1519i  -0.1250 - 0.0553i   0.0615 + 0.0282i
+   0.0926 + 0.0858i  -0.1966 - 0.1888i   0.1190 - 0.1257i   0.2318 - 0.2505i
+  -0.2695 + 0.0000i  -0.1257 + 0.0000i  -0.3478 + 0.0000i   0.1758 + 0.0000i
+
+  Columns 5 through 8
+
+   0.0508 + 0.0590i   0.0253 + 0.0217i  -0.3975 + 0.0049i   0.7669 - 0.0070i
+   0.0073 - 0.0248i  -0.0065 + 0.0700i   0.5911 + 0.4913i   0.3052 + 0.2544i
+   0.3699 - 0.1102i   0.1364 - 0.0416i   0.0971 - 0.0637i  -0.1943 + 0.1218i
+  -0.1407 - 0.0538i   0.3668 + 0.1417i  -0.2160 - 0.0277i  -0.1148 - 0.0155i
+   0.2804 - 0.0977i   0.1046 - 0.0354i   0.1420 - 0.1012i  -0.2776 + 0.2000i
+  -0.1113 - 0.0365i   0.2861 + 0.0974i  -0.3334 - 0.0273i  -0.1750 - 0.0150i
+   0.6220 - 0.4932i   0.2397 - 0.1888i  -0.0732 + 0.0616i   0.1317 - 0.1168i
+  -0.2994 + 0.0000i   0.7889 + 0.0000i   0.1970 + 0.0000i   0.0948 + 0.0000i
+
+
+B =
+
+    0.0451         0         0         0         0         0         0         0
+         0    0.0456         0         0         0         0         0         0
+         0         0    0.0522         0         0         0         0         0
+         0         0         0    0.0535         0         0         0         0
+         0         0         0         0    0.1954         0         0         0
+         0         0         0         0         0    0.1972         0         0
+         0         0         0         0         0         0    0.2462         0
+         0         0         0         0         0         0         0    0.2536
+
+ishermitian(c)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+B
+
+B =
+
+    0.0451         0         0         0         0         0         0         0
+         0    0.0456         0         0         0         0         0         0
+         0         0    0.0522         0         0         0         0         0
+         0         0         0    0.0535         0         0         0         0
+         0         0         0         0    0.1954         0         0         0
+         0         0         0         0         0    0.1972         0         0
+         0         0         0         0         0         0    0.2462         0
+         0         0         0         0         0         0         0    0.2536
+
+diag(B)
+
+ans =
+
+    0.0451
+    0.0456
+    0.0522
+    0.0535
+    0.1954
+    0.1972
+    0.2462
+    0.2536
+
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+if system_dependent('IsDebugMode')==1, dbquit; end
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+Visibility given initial measurements and channels: 0.150744
+With ini meas/channel: s·p1=0.150744, s·p2=-0.849256, s·(p1-p2)=1.000000, localbound=3.798581
+Function check, alpha1=0.000000 alpha2=0.150744 diff=-0.150744
+iter=1, partyidx=3, bellineqvalue=0.171291, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.001886, abschangeobjval=0.830594
+iter=3, partyidx=1, bellineqvalue=2.647960, abschangeobjval=1.64607
+iter=4, partyidx=2, bellineqvalue=4.405786, abschangeobjval=1.75783
+iter=5, partyidx=3, bellineqvalue=5.406374, abschangeobjval=1.00059
+iter=6, channelq=~, bellineqvalue=1.825470, abschangeobjval=3.5809
+iter=7, partyidx=1, bellineqvalue=1.661404, abschangeobjval=0.164066
+iter=8, partyidx=2, bellineqvalue=2.803074, abschangeobjval=1.14167
+iter=9, partyidx=3, bellineqvalue=3.006085, abschangeobjval=0.203011
+iter=10, channelq=~, bellineqvalue=1.580712, abschangeobjval=1.42537
+iter=11, partyidx=1, bellineqvalue=2.260929, abschangeobjval=0.680217
+iter=12, partyidx=2, bellineqvalue=3.427763, abschangeobjval=1.16683
+iter=13, partyidx=3, bellineqvalue=3.879713, abschangeobjval=0.45195
+iter=14, channelq=~, bellineqvalue=0.938790, abschangeobjval=2.94092
+iter=15, partyidx=1, bellineqvalue=1.931144, abschangeobjval=0.992354
+{Operation terminated by user during blkdiagmex
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('blkdiag', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\elmat\blkdiag.m', 36)" style="font-weight:bold">blkdiag</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\elmat\blkdiag.m',36,0)">line 36</a>)
+    y = blkdiagmex(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('appendYALMIPvariables', 'C:\Program Files\MATLAB\YALMIP-master\extras\appendYALMIPvariables.m', 28)" style="font-weight:bold">appendYALMIPvariables</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\appendYALMIPvariables.m',28,0)">line 28</a>)
+        mt=blkdiag(mt,newmt);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\sdpvar.m', 731)" style="font-weight:bold">sdpvar</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\sdpvar.m',731,0)">line 731</a>)
+appendYALMIPvariables(lmi_variables,mt,variabletype,hashed_monoms,current_hash);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASinglePartyInstrumental', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASinglePartyInstrumental.m', 26)" style="font-weight:bold">SeeSawOverASinglePartyInstrumental</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASinglePartyInstrumental.m',26,0)">line 26</a>)
+            chosenPartyMeasurements{x}{a} = sdpvar(dimofProjector,dimofProjector,'hermitian','complex');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllPartiesInstrumental', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllPartiesInstrumental.m', 24)" style="font-weight:bold">SeeSawOverAllPartiesInstrumental</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllPartiesInstrumental.m',24,0)">line 24</a>)
+            [povms,newobjval,problemStatus] = SeeSawOverASinglePartyInstrumental(partyidx, initialState, bellcoeffs, povms, channels, ins, outs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 124)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',124,0)">line 124</a>)
+        [POVMs,finalObj,channels] = SeeSawOverAllPartiesInstrumental(bellcoeffs, NoisyWernerState(0), POVMs, channels, ins, outs);
+} 
+clear all
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 1
+
+Round 1.
+Visibility given initial measurements and channels: 0.150744
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/addfactors', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\addfactors.m', 18)" style="font-weight:bold">sdpvar/addfactors</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\addfactors.m',18,0)">line 18</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/plus', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m', 284)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m',284,0)">line 284</a>)
+        y = addfactors(y,X,Y);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ClassicalOptInequality_fromLPBroadcast_INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m', 164)" style="font-weight:bold">ClassicalOptInequality_fromLPBroadcast_INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',164,0)">line 164</a>)
+                        summ2 = summ2 + q{lam,y2,z2,w2,b,c,d};
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 88)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',88,0)">line 88</a>)
+        localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 211619
+
+Round 1.
+Visibility given initial measurements and channels: 0.194054
+With ini meas/channel: s·p1=0.194054, s·p2=-0.805946, s·(p1-p2)=1.000000, localbound=1.101395
+Function check, alpha1=0.000000 alpha2=0.194054 diff=-0.194054
+iter=1, partyidx=1, bellineqvalue=0.330303, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.333834, abschangeobjval=0.00353023
+iter=3, partyidx=3, bellineqvalue=0.403887, abschangeobjval=0.0700535
+iter=4, channelq=~, bellineqvalue=3.930346, abschangeobjval=3.52646
+iter=5, partyidx=1, bellineqvalue=3.930347, abschangeobjval=9.42114e-08
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ProbMultidimArrayInstrumental', 'C:\Users\Emi\Documents\Code\broadcast2\functions\ProbMultidimArrayInstrumental.m', 10)" style="font-weight:bold">ProbMultidimArrayInstrumental</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ProbMultidimArrayInstrumental.m',10,0)">line 10</a>)
+    inputs_per_party = ins(1:3);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 133)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',133,0)">line 133</a>)
+        p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), POVMs, channels);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',133,0)
+INSTR
+{Error: <a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',133,90)">File: INSTR.m Line: 133 Column: 90
+</a>Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',133,90)
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 210612
+
+Round 1.
+Visibility given initial measurements and channels: 0.225603
+With ini meas/channel: s·p1=0.225603, s·p2=-0.774397, s·(p1-p2)=1.000000, localbound=0.642681
+Function check, alpha1=0.000000 alpha2=0.225603 diff=-0.225603
+iter=1, partyidx=3, bellineqvalue=0.290835, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.421667, abschangeobjval=0.130832
+iter=3, partyidx=1, bellineqvalue=0.425821, abschangeobjval=0.00415408
+iter=4, partyidx=2, bellineqvalue=0.427301, abschangeobjval=0.00148033
+iter=5, partyidx=3, bellineqvalue=0.428494, abschangeobjval=0.00119257
+iter=6, channelq=~, bellineqvalue=0.428621, abschangeobjval=0.000127019
+iter=7, partyidx=1, bellineqvalue=0.428621, abschangeobjval=6.03705e-10
+With optimized meas/channel: s·p1=0.000000, s·p2=0.000000, s·(p1-p2)=-0.000000, localbound=-0.000000, alpha=0.000000, LPstatus=1.000000
+Function check, alpha1=0.000000 alpha2=0.000000 diff=0.000000
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+
+Round 2.
+Visibility given initial measurements and channels: 0.095576
+With ini meas/channel: s·p1=0.095576, s·p2=-0.904424, s·(p1-p2)=1.000000, localbound=0.220887
+Function check, alpha1=0.000000 alpha2=0.095576 diff=-0.095576
+iter=1, channelq=~, bellineqvalue=0.157275, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.242981, abschangeobjval=0.085706
+iter=3, partyidx=2, bellineqvalue=0.419603, abschangeobjval=0.176622
+iter=4, partyidx=3, bellineqvalue=0.437564, abschangeobjval=0.0179616
+iter=5, channelq=~, bellineqvalue=0.437564, abschangeobjval=1.29695e-09
+With optimized meas/channel: s·p1=0.292893, s·p2=-0.707107, s·(p1-p2)=1.000000, localbound=0.021700, alpha=0.292893, LPstatus=0.000000
+Function check, alpha1=0.271193 alpha2=0.292893 diff=-0.021700
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=3.31973e-08
+With optimized meas/channel: s·p1=0.292893, s·p2=-0.707107, s·(p1-p2)=1.000000, localbound=0.012637, alpha=0.292893, LPstatus=0.000000
+Function check, alpha1=0.280256 alpha2=0.292893 diff=-0.012637
+Visibility after optimizing over POVMs and channels: 0.292893
+Best visibility: 0.292893
+
+Round 3.
+Visibility given initial measurements and channels: 0.116025
+With ini meas/channel: s·p1=0.116025, s·p2=-0.883975, s·(p1-p2)=1.000000, localbound=2.090806
+Function check, alpha1=0.000000 alpha2=0.116025 diff=-0.116025
+iter=1, channelq=~, bellineqvalue=1.451858, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.846563, abschangeobjval=0.394705
+iter=3, partyidx=2, bellineqvalue=2.052047, abschangeobjval=0.205484
+iter=4, partyidx=3, bellineqvalue=2.052048, abschangeobjval=6.00324e-08
+[Warning: POVM not positive! min eig -1.61496e-08] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkThatInstrChannelsAreGood', 'C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m', 23)" style="font-weight:bold">checkThatInstrChannelsAreGood</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m',23,0)">line 23</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 128)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',128,0)">line 128</a>)] 
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/subsref>subsref1d', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m', 260)" style="font-weight:bold">sdpvar/subsref>subsref1d</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m',260,0)">line 260</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/subsref', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m', 50)" style="font-weight:bold">sdpvar/subsref</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\subsref.m',50,0)">line 50</a>)
+                    y = subsref1d(X,Y(1).subs{1},Y);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ClassicalOptInequality_fromLPBroadcast_INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m', 37)" style="font-weight:bold">ClassicalOptInequality_fromLPBroadcast_INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',37,0)">line 37</a>)
+        positivityconstraints = [positivityconstraints, qarray(i) >= 0];
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 152)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',152,0)">line 152</a>)
+        localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 211189
+
+Round 1.
+Visibility given initial measurements and channels: 0.066779
+With ini meas/channel: s·p1=0.066779, s·p2=-0.933221, s·(p1-p2)=1.000000, localbound=0.829801
+Function check, alpha1=0.000000 alpha2=0.066779 diff=-0.066779
+iter=1, partyidx=3, bellineqvalue=0.087750, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.420726, abschangeobjval=0.332976
+iter=3, partyidx=1, bellineqvalue=0.744385, abschangeobjval=0.323659
+iter=4, partyidx=2, bellineqvalue=0.745148, abschangeobjval=0.000763082
+iter=5, partyidx=3, bellineqvalue=0.745148, abschangeobjval=3.21417e-08
+With optimized meas/channel: s·p1=0.292893, s·p2=-0.707107, s·(p1-p2)=1.000000, localbound=0.384701, alpha=0.292893, LPstatus=0.000000
+Function check, alpha1=0.000000 alpha2=0.292893 diff=-0.292893
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=2.82173e-10
+With optimized meas/channel: s·p1=0.000000, s·p2=0.000000, s·(p1-p2)=-0.000000, localbound=-0.000000, alpha=0.000000, LPstatus=1.000000
+Function check, alpha1=0.000000 alpha2=0.000000 diff=0.000000
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+Best visibility: 0.292893
+
+Round 2.
+Visibility given initial measurements and channels: 0.195566
+With ini meas/channel: s·p1=0.195566, s·p2=-0.804434, s·(p1-p2)=1.000000, localbound=0.627707
+Function check, alpha1=0.000000 alpha2=0.195566 diff=-0.195566
+iter=1, partyidx=3, bellineqvalue=0.230166, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.579165, abschangeobjval=0.349
+iter=3, partyidx=1, bellineqvalue=0.727452, abschangeobjval=0.148286
+iter=4, partyidx=2, bellineqvalue=0.727452, abschangeobjval=2.34772e-08
+With optimized meas/channel: s·p1=0.292892, s·p2=-0.707108, s·(p1-p2)=1.000000, localbound=3.054704, alpha=0.292892, LPstatus=0.000000
+Function check, alpha1=0.000000 alpha2=0.292892 diff=-0.292892
+Visibility after optimizing over POVMs and channels: 0.292892
+iter=1, partyidx=1, bellineqvalue=0.292892, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.295430, abschangeobjval=0.00253819
+iter=3, partyidx=3, bellineqvalue=0.295432, abschangeobjval=1.50157e-06
+iter=4, channelq=~, bellineqvalue=0.295432, abschangeobjval=3.84211e-09
+With optimized meas/channel: s·p1=0.292893, s·p2=-0.707107, s·(p1-p2)=1.000000, localbound=0.199570, alpha=0.292893, LPstatus=0.000000
+Function check, alpha1=0.093323 alpha2=0.292893 diff=-0.199570
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=8.67426e-09
+With optimized meas/channel: s·p1=0.000000, s·p2=0.000000, s·(p1-p2)=0.000000, localbound=-0.000000, alpha=0.000000, LPstatus=1.000000
+Function check, alpha1=0.000000 alpha2=0.000000 diff=0.000000
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+Best visibility: 0.292893
+
+Round 3.
+Visibility given initial measurements and channels: 0.183289
+With ini meas/channel: s·p1=0.183289, s·p2=-0.816711, s·(p1-p2)=1.000000, localbound=0.513662
+Function check, alpha1=0.000000 alpha2=0.183289 diff=-0.183289
+iter=1, partyidx=2, bellineqvalue=0.249966, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.277653, abschangeobjval=0.0276872
+iter=3, channelq=~, bellineqvalue=0.384410, abschangeobjval=0.106757
+iter=4, partyidx=1, bellineqvalue=0.506798, abschangeobjval=0.122388
+iter=5, partyidx=2, bellineqvalue=0.506799, abschangeobjval=5.68088e-07
+With optimized meas/channel: s·p1=0.292893, s·p2=-0.707107, s·(p1-p2)=1.000000, localbound=0.192081, alpha=0.292893, LPstatus=0.000000
+Function check, alpha1=0.100812 alpha2=0.292893 diff=-0.192081
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.293059, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.293060, abschangeobjval=8.32038e-07
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/plus', 'C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\plus.m', 83)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\plus.m',83,0)">line 83</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/horzcat', 'C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\horzcat.m', 28)" style="font-weight:bold">lmi/horzcat</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@lmi\horzcat.m',28,0)">line 28</a>)
+        F = F + H;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 109)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',109,0)">line 109</a>)
+                nonsignalling_constraintsC = [nonsignalling_constraintsC, summ1 == summ2];
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 151)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',151,0)">line 151</a>)
+        [newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 214307
+
+Round 1.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p1=-0.000000, s·p2=-0.000000, s·(p1-p2)=0.000000, localbound=0.000001
+Function check, alpha1=1.000000 alpha2=-0.000000 diff=1.000000
+Visibility given initial measurements and channels: 0.011171
+With ini meas/channel: s·p1=0.011171, s·p2=-0.988827, s·(p1-p2)=0.999998, localbound=2.778731
+Function check, alpha1=0.000000 alpha2=0.011171 diff=-0.011171
+iter=1, partyidx=1, bellineqvalue=0.176237, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.190162, abschangeobjval=0.0139246
+iter=3, partyidx=3, bellineqvalue=0.324535, abschangeobjval=0.134373
+iter=4, channelq=~, bellineqvalue=1.604905, abschangeobjval=1.28037
+iter=5, partyidx=1, bellineqvalue=1.661324, abschangeobjval=0.0564183
+iter=6, partyidx=2, bellineqvalue=1.717065, abschangeobjval=0.0557418
+iter=7, partyidx=3, bellineqvalue=1.725047, abschangeobjval=0.00798197
+iter=8, channelq=~, bellineqvalue=1.726380, abschangeobjval=0.00133267
+iter=9, partyidx=1, bellineqvalue=1.726380, abschangeobjval=1.17211e-09
+    yalmipversion: '20200930'
+    matlabversion: '9.4.0.813654 (R2018a)'
+       yalmiptime: 0.2084
+       solvertime: 0.0026
+             info: 'Infeasible problem (MOSEK)'
+          problem: 1
+
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',227,1)">227 </a>         warning('Check why the problem is not successfully solved.');
+if system_dependent('IsDebugMode')==1, dbquit all; end
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 211895
+
+Round 1.
+Visibility given initial measurements and channels: 0.174953
+With ini meas/channel: s·p1=0.174953, s·p2=-0.825046, s·(p1-p2)=1.000000, localbound=0.345231
+Function check, alpha1=0.000000 alpha2=0.174953 diff=-0.174953
+iter=1, partyidx=3, bellineqvalue=0.264180, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.552164, abschangeobjval=0.287984
+iter=3, partyidx=1, bellineqvalue=0.714280, abschangeobjval=0.162117
+iter=4, partyidx=2, bellineqvalue=0.714280, abschangeobjval=4.56896e-09
+    yalmipversion: '20200930'
+    matlabversion: '9.4.0.813654 (R2018a)'
+       yalmiptime: 0.2165
+       solvertime: 0.0025
+             info: 'Infeasible problem (MOSEK)'
+          problem: 1
+
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',226,1)">226 </a>         warning('Check why the problem is not successfully solved.');
+dims_p
+
+dims_p =
+
+     3     2     2     2     2     2     2     2
+
+norm( p1(:) - p2(:) )
+
+ans =
+
+    1.4039
+
+nrparties
+
+nrparties =
+
+     4
+
+nr_inputs_per_party
+
+nr_inputs_per_party =
+
+     3     2     2     2
+
+dims_p(1:nrparties)
+
+ans =
+
+     3     2     2     2
+
+dims_p(nrparties+1:end)
+
+ans =
+
+     2     2     2     2
+
+tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
+tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)]
+
+tempdims =
+
+     8     2     2     2     2     2     2
+
+q_coords
+
+q_coords =
+
+     1     1     1     1     1     1     1
+     2     1     1     1     1     1     1
+     3     1     1     1     1     1     1
+     4     1     1     1     1     1     1
+     5     1     1     1     1     1     1
+     6     1     1     1     1     1     1
+     7     1     1     1     1     1     1
+     8     1     1     1     1     1     1
+     1     2     1     1     1     1     1
+     2     2     1     1     1     1     1
+     3     2     1     1     1     1     1
+     4     2     1     1     1     1     1
+     5     2     1     1     1     1     1
+     6     2     1     1     1     1     1
+     7     2     1     1     1     1     1
+     8     2     1     1     1     1     1
+     1     1     2     1     1     1     1
+     2     1     2     1     1     1     1
+     3     1     2     1     1     1     1
+     4     1     2     1     1     1     1
+     5     1     2     1     1     1     1
+     6     1     2     1     1     1     1
+     7     1     2     1     1     1     1
+     8     1     2     1     1     1     1
+     1     2     2     1     1     1     1
+     2     2     2     1     1     1     1
+     3     2     2     1     1     1     1
+     4     2     2     1     1     1     1
+     5     2     2     1     1     1     1
+     6     2     2     1     1     1     1
+     7     2     2     1     1     1     1
+     8     2     2     1     1     1     1
+     1     1     1     2     1     1     1
+     2     1     1     2     1     1     1
+     3     1     1     2     1     1     1
+     4     1     1     2     1     1     1
+     5     1     1     2     1     1     1
+     6     1     1     2     1     1     1
+     7     1     1     2     1     1     1
+     8     1     1     2     1     1     1
+     1     2     1     2     1     1     1
+     2     2     1     2     1     1     1
+     3     2     1     2     1     1     1
+     4     2     1     2     1     1     1
+     5     2     1     2     1     1     1
+     6     2     1     2     1     1     1
+     7     2     1     2     1     1     1
+     8     2     1     2     1     1     1
+     1     1     2     2     1     1     1
+     2     1     2     2     1     1     1
+     3     1     2     2     1     1     1
+     4     1     2     2     1     1     1
+     5     1     2     2     1     1     1
+     6     1     2     2     1     1     1
+     7     1     2     2     1     1     1
+     8     1     2     2     1     1     1
+     1     2     2     2     1     1     1
+     2     2     2     2     1     1     1
+     3     2     2     2     1     1     1
+     4     2     2     2     1     1     1
+     5     2     2     2     1     1     1
+     6     2     2     2     1     1     1
+     7     2     2     2     1     1     1
+     8     2     2     2     1     1     1
+     1     1     1     1     2     1     1
+     2     1     1     1     2     1     1
+     3     1     1     1     2     1     1
+     4     1     1     1     2     1     1
+     5     1     1     1     2     1     1
+     6     1     1     1     2     1     1
+     7     1     1     1     2     1     1
+     8     1     1     1     2     1     1
+     1     2     1     1     2     1     1
+     2     2     1     1     2     1     1
+     3     2     1     1     2     1     1
+     4     2     1     1     2     1     1
+     5     2     1     1     2     1     1
+     6     2     1     1     2     1     1
+     7     2     1     1     2     1     1
+     8     2     1     1     2     1     1
+     1     1     2     1     2     1     1
+     2     1     2     1     2     1     1
+     3     1     2     1     2     1     1
+     4     1     2     1     2     1     1
+     5     1     2     1     2     1     1
+     6     1     2     1     2     1     1
+     7     1     2     1     2     1     1
+     8     1     2     1     2     1     1
+     1     2     2     1     2     1     1
+     2     2     2     1     2     1     1
+     3     2     2     1     2     1     1
+     4     2     2     1     2     1     1
+     5     2     2     1     2     1     1
+     6     2     2     1     2     1     1
+     7     2     2     1     2     1     1
+     8     2     2     1     2     1     1
+     1     1     1     2     2     1     1
+     2     1     1     2     2     1     1
+     3     1     1     2     2     1     1
+     4     1     1     2     2     1     1
+     5     1     1     2     2     1     1
+     6     1     1     2     2     1     1
+     7     1     1     2     2     1     1
+     8     1     1     2     2     1     1
+     1     2     1     2     2     1     1
+     2     2     1     2     2     1     1
+     3     2     1     2     2     1     1
+     4     2     1     2     2     1     1
+     5     2     1     2     2     1     1
+     6     2     1     2     2     1     1
+     7     2     1     2     2     1     1
+     8     2     1     2     2     1     1
+     1     1     2     2     2     1     1
+     2     1     2     2     2     1     1
+     3     1     2     2     2     1     1
+     4     1     2     2     2     1     1
+     5     1     2     2     2     1     1
+     6     1     2     2     2     1     1
+     7     1     2     2     2     1     1
+     8     1     2     2     2     1     1
+     1     2     2     2     2     1     1
+     2     2     2     2     2     1     1
+     3     2     2     2     2     1     1
+     4     2     2     2     2     1     1
+     5     2     2     2     2     1     1
+     6     2     2     2     2     1     1
+     7     2     2     2     2     1     1
+     8     2     2     2     2     1     1
+     1     1     1     1     1     2     1
+     2     1     1     1     1     2     1
+     3     1     1     1     1     2     1
+     4     1     1     1     1     2     1
+     5     1     1     1     1     2     1
+     6     1     1     1     1     2     1
+     7     1     1     1     1     2     1
+     8     1     1     1     1     2     1
+     1     2     1     1     1     2     1
+     2     2     1     1     1     2     1
+     3     2     1     1     1     2     1
+     4     2     1     1     1     2     1
+     5     2     1     1     1     2     1
+     6     2     1     1     1     2     1
+     7     2     1     1     1     2     1
+     8     2     1     1     1     2     1
+     1     1     2     1     1     2     1
+     2     1     2     1     1     2     1
+     3     1     2     1     1     2     1
+     4     1     2     1     1     2     1
+     5     1     2     1     1     2     1
+     6     1     2     1     1     2     1
+     7     1     2     1     1     2     1
+     8     1     2     1     1     2     1
+     1     2     2     1     1     2     1
+     2     2     2     1     1     2     1
+     3     2     2     1     1     2     1
+     4     2     2     1     1     2     1
+     5     2     2     1     1     2     1
+     6     2     2     1     1     2     1
+     7     2     2     1     1     2     1
+     8     2     2     1     1     2     1
+     1     1     1     2     1     2     1
+     2     1     1     2     1     2     1
+     3     1     1     2     1     2     1
+     4     1     1     2     1     2     1
+     5     1     1     2     1     2     1
+     6     1     1     2     1     2     1
+     7     1     1     2     1     2     1
+     8     1     1     2     1     2     1
+     1     2     1     2     1     2     1
+     2     2     1     2     1     2     1
+     3     2     1     2     1     2     1
+     4     2     1     2     1     2     1
+     5     2     1     2     1     2     1
+     6     2     1     2     1     2     1
+     7     2     1     2     1     2     1
+     8     2     1     2     1     2     1
+     1     1     2     2     1     2     1
+     2     1     2     2     1     2     1
+     3     1     2     2     1     2     1
+     4     1     2     2     1     2     1
+     5     1     2     2     1     2     1
+     6     1     2     2     1     2     1
+     7     1     2     2     1     2     1
+     8     1     2     2     1     2     1
+     1     2     2     2     1     2     1
+     2     2     2     2     1     2     1
+     3     2     2     2     1     2     1
+     4     2     2     2     1     2     1
+     5     2     2     2     1     2     1
+     6     2     2     2     1     2     1
+     7     2     2     2     1     2     1
+     8     2     2     2     1     2     1
+     1     1     1     1     2     2     1
+     2     1     1     1     2     2     1
+     3     1     1     1     2     2     1
+     4     1     1     1     2     2     1
+     5     1     1     1     2     2     1
+     6     1     1     1     2     2     1
+     7     1     1     1     2     2     1
+     8     1     1     1     2     2     1
+     1     2     1     1     2     2     1
+     2     2     1     1     2     2     1
+     3     2     1     1     2     2     1
+     4     2     1     1     2     2     1
+     5     2     1     1     2     2     1
+     6     2     1     1     2     2     1
+     7     2     1     1     2     2     1
+     8     2     1     1     2     2     1
+     1     1     2     1     2     2     1
+     2     1     2     1     2     2     1
+     3     1     2     1     2     2     1
+     4     1     2     1     2     2     1
+     5     1     2     1     2     2     1
+     6     1     2     1     2     2     1
+     7     1     2     1     2     2     1
+     8     1     2     1     2     2     1
+     1     2     2     1     2     2     1
+     2     2     2     1     2     2     1
+     3     2     2     1     2     2     1
+     4     2     2     1     2     2     1
+     5     2     2     1     2     2     1
+     6     2     2     1     2     2     1
+     7     2     2     1     2     2     1
+     8     2     2     1     2     2     1
+     1     1     1     2     2     2     1
+     2     1     1     2     2     2     1
+     3     1     1     2     2     2     1
+     4     1     1     2     2     2     1
+     5     1     1     2     2     2     1
+     6     1     1     2     2     2     1
+     7     1     1     2     2     2     1
+     8     1     1     2     2     2     1
+     1     2     1     2     2     2     1
+     2     2     1     2     2     2     1
+     3     2     1     2     2     2     1
+     4     2     1     2     2     2     1
+     5     2     1     2     2     2     1
+     6     2     1     2     2     2     1
+     7     2     1     2     2     2     1
+     8     2     1     2     2     2     1
+     1     1     2     2     2     2     1
+     2     1     2     2     2     2     1
+     3     1     2     2     2     2     1
+     4     1     2     2     2     2     1
+     5     1     2     2     2     2     1
+     6     1     2     2     2     2     1
+     7     1     2     2     2     2     1
+     8     1     2     2     2     2     1
+     1     2     2     2     2     2     1
+     2     2     2     2     2     2     1
+     3     2     2     2     2     2     1
+     4     2     2     2     2     2     1
+     5     2     2     2     2     2     1
+     6     2     2     2     2     2     1
+     7     2     2     2     2     2     1
+     8     2     2     2     2     2     1
+     1     1     1     1     1     1     2
+     2     1     1     1     1     1     2
+     3     1     1     1     1     1     2
+     4     1     1     1     1     1     2
+     5     1     1     1     1     1     2
+     6     1     1     1     1     1     2
+     7     1     1     1     1     1     2
+     8     1     1     1     1     1     2
+     1     2     1     1     1     1     2
+     2     2     1     1     1     1     2
+     3     2     1     1     1     1     2
+     4     2     1     1     1     1     2
+     5     2     1     1     1     1     2
+     6     2     1     1     1     1     2
+     7     2     1     1     1     1     2
+     8     2     1     1     1     1     2
+     1     1     2     1     1     1     2
+     2     1     2     1     1     1     2
+     3     1     2     1     1     1     2
+     4     1     2     1     1     1     2
+     5     1     2     1     1     1     2
+     6     1     2     1     1     1     2
+     7     1     2     1     1     1     2
+     8     1     2     1     1     1     2
+     1     2     2     1     1     1     2
+     2     2     2     1     1     1     2
+     3     2     2     1     1     1     2
+     4     2     2     1     1     1     2
+     5     2     2     1     1     1     2
+     6     2     2     1     1     1     2
+     7     2     2     1     1     1     2
+     8     2     2     1     1     1     2
+     1     1     1     2     1     1     2
+     2     1     1     2     1     1     2
+     3     1     1     2     1     1     2
+     4     1     1     2     1     1     2
+     5     1     1     2     1     1     2
+     6     1     1     2     1     1     2
+     7     1     1     2     1     1     2
+     8     1     1     2     1     1     2
+     1     2     1     2     1     1     2
+     2     2     1     2     1     1     2
+     3     2     1     2     1     1     2
+     4     2     1     2     1     1     2
+     5     2     1     2     1     1     2
+     6     2     1     2     1     1     2
+     7     2     1     2     1     1     2
+     8     2     1     2     1     1     2
+     1     1     2     2     1     1     2
+     2     1     2     2     1     1     2
+     3     1     2     2     1     1     2
+     4     1     2     2     1     1     2
+     5     1     2     2     1     1     2
+     6     1     2     2     1     1     2
+     7     1     2     2     1     1     2
+     8     1     2     2     1     1     2
+     1     2     2     2     1     1     2
+     2     2     2     2     1     1     2
+     3     2     2     2     1     1     2
+     4     2     2     2     1     1     2
+     5     2     2     2     1     1     2
+     6     2     2     2     1     1     2
+     7     2     2     2     1     1     2
+     8     2     2     2     1     1     2
+     1     1     1     1     2     1     2
+     2     1     1     1     2     1     2
+     3     1     1     1     2     1     2
+     4     1     1     1     2     1     2
+     5     1     1     1     2     1     2
+     6     1     1     1     2     1     2
+     7     1     1     1     2     1     2
+     8     1     1     1     2     1     2
+     1     2     1     1     2     1     2
+     2     2     1     1     2     1     2
+     3     2     1     1     2     1     2
+     4     2     1     1     2     1     2
+     5     2     1     1     2     1     2
+     6     2     1     1     2     1     2
+     7     2     1     1     2     1     2
+     8     2     1     1     2     1     2
+     1     1     2     1     2     1     2
+     2     1     2     1     2     1     2
+     3     1     2     1     2     1     2
+     4     1     2     1     2     1     2
+     5     1     2     1     2     1     2
+     6     1     2     1     2     1     2
+     7     1     2     1     2     1     2
+     8     1     2     1     2     1     2
+     1     2     2     1     2     1     2
+     2     2     2     1     2     1     2
+     3     2     2     1     2     1     2
+     4     2     2     1     2     1     2
+     5     2     2     1     2     1     2
+     6     2     2     1     2     1     2
+     7     2     2     1     2     1     2
+     8     2     2     1     2     1     2
+     1     1     1     2     2     1     2
+     2     1     1     2     2     1     2
+     3     1     1     2     2     1     2
+     4     1     1     2     2     1     2
+     5     1     1     2     2     1     2
+     6     1     1     2     2     1     2
+     7     1     1     2     2     1     2
+     8     1     1     2     2     1     2
+     1     2     1     2     2     1     2
+     2     2     1     2     2     1     2
+     3     2     1     2     2     1     2
+     4     2     1     2     2     1     2
+     5     2     1     2     2     1     2
+     6     2     1     2     2     1     2
+     7     2     1     2     2     1     2
+     8     2     1     2     2     1     2
+     1     1     2     2     2     1     2
+     2     1     2     2     2     1     2
+     3     1     2     2     2     1     2
+     4     1     2     2     2     1     2
+     5     1     2     2     2     1     2
+     6     1     2     2     2     1     2
+     7     1     2     2     2     1     2
+     8     1     2     2     2     1     2
+     1     2     2     2     2     1     2
+     2     2     2     2     2     1     2
+     3     2     2     2     2     1     2
+     4     2     2     2     2     1     2
+     5     2     2     2     2     1     2
+     6     2     2     2     2     1     2
+     7     2     2     2     2     1     2
+     8     2     2     2     2     1     2
+     1     1     1     1     1     2     2
+     2     1     1     1     1     2     2
+     3     1     1     1     1     2     2
+     4     1     1     1     1     2     2
+     5     1     1     1     1     2     2
+     6     1     1     1     1     2     2
+     7     1     1     1     1     2     2
+     8     1     1     1     1     2     2
+     1     2     1     1     1     2     2
+     2     2     1     1     1     2     2
+     3     2     1     1     1     2     2
+     4     2     1     1     1     2     2
+     5     2     1     1     1     2     2
+     6     2     1     1     1     2     2
+     7     2     1     1     1     2     2
+     8     2     1     1     1     2     2
+     1     1     2     1     1     2     2
+     2     1     2     1     1     2     2
+     3     1     2     1     1     2     2
+     4     1     2     1     1     2     2
+     5     1     2     1     1     2     2
+     6     1     2     1     1     2     2
+     7     1     2     1     1     2     2
+     8     1     2     1     1     2     2
+     1     2     2     1     1     2     2
+     2     2     2     1     1     2     2
+     3     2     2     1     1     2     2
+     4     2     2     1     1     2     2
+     5     2     2     1     1     2     2
+     6     2     2     1     1     2     2
+     7     2     2     1     1     2     2
+     8     2     2     1     1     2     2
+     1     1     1     2     1     2     2
+     2     1     1     2     1     2     2
+     3     1     1     2     1     2     2
+     4     1     1     2     1     2     2
+     5     1     1     2     1     2     2
+     6     1     1     2     1     2     2
+     7     1     1     2     1     2     2
+     8     1     1     2     1     2     2
+     1     2     1     2     1     2     2
+     2     2     1     2     1     2     2
+     3     2     1     2     1     2     2
+     4     2     1     2     1     2     2
+     5     2     1     2     1     2     2
+     6     2     1     2     1     2     2
+     7     2     1     2     1     2     2
+     8     2     1     2     1     2     2
+     1     1     2     2     1     2     2
+     2     1     2     2     1     2     2
+     3     1     2     2     1     2     2
+     4     1     2     2     1     2     2
+     5     1     2     2     1     2     2
+     6     1     2     2     1     2     2
+     7     1     2     2     1     2     2
+     8     1     2     2     1     2     2
+     1     2     2     2     1     2     2
+     2     2     2     2     1     2     2
+     3     2     2     2     1     2     2
+     4     2     2     2     1     2     2
+     5     2     2     2     1     2     2
+     6     2     2     2     1     2     2
+     7     2     2     2     1     2     2
+     8     2     2     2     1     2     2
+     1     1     1     1     2     2     2
+     2     1     1     1     2     2     2
+     3     1     1     1     2     2     2
+     4     1     1     1     2     2     2
+     5     1     1     1     2     2     2
+     6     1     1     1     2     2     2
+     7     1     1     1     2     2     2
+     8     1     1     1     2     2     2
+     1     2     1     1     2     2     2
+     2     2     1     1     2     2     2
+     3     2     1     1     2     2     2
+     4     2     1     1     2     2     2
+     5     2     1     1     2     2     2
+     6     2     1     1     2     2     2
+     7     2     1     1     2     2     2
+     8     2     1     1     2     2     2
+     1     1     2     1     2     2     2
+     2     1     2     1     2     2     2
+     3     1     2     1     2     2     2
+     4     1     2     1     2     2     2
+     5     1     2     1     2     2     2
+     6     1     2     1     2     2     2
+     7     1     2     1     2     2     2
+     8     1     2     1     2     2     2
+     1     2     2     1     2     2     2
+     2     2     2     1     2     2     2
+     3     2     2     1     2     2     2
+     4     2     2     1     2     2     2
+     5     2     2     1     2     2     2
+     6     2     2     1     2     2     2
+     7     2     2     1     2     2     2
+     8     2     2     1     2     2     2
+     1     1     1     2     2     2     2
+     2     1     1     2     2     2     2
+     3     1     1     2     2     2     2
+     4     1     1     2     2     2     2
+     5     1     1     2     2     2     2
+     6     1     1     2     2     2     2
+     7     1     1     2     2     2     2
+     8     1     1     2     2     2     2
+     1     2     1     2     2     2     2
+     2     2     1     2     2     2     2
+     3     2     1     2     2     2     2
+     4     2     1     2     2     2     2
+     5     2     1     2     2     2     2
+     6     2     1     2     2     2     2
+     7     2     1     2     2     2     2
+     8     2     1     2     2     2     2
+     1     1     2     2     2     2     2
+     2     1     2     2     2     2     2
+     3     1     2     2     2     2     2
+     4     1     2     2     2     2     2
+     5     1     2     2     2     2     2
+     6     1     2     2     2     2     2
+     7     1     2     2     2     2     2
+     8     1     2     2     2     2     2
+     1     2     2     2     2     2     2
+     2     2     2     2     2     2     2
+     3     2     2     2     2     2     2
+     4     2     2     2     2     2     2
+     5     2     2     2     2     2     2
+     6     2     2     2     2     2     2
+     7     2     2     2     2     2     2
+     8     2     2     2     2     2     2
+
+tempdims
+
+tempdims =
+
+     8     2     2     2     2     2     2
+
+prod(tempdims(:))
+
+ans =
+
+   512
+
+sdpvar(4,1)
+Linear matrix variable 4x1 (full, real, 4 variables)
+Coeffiecient range: 1 to 1
+q_coords
+
+q_coords =
+
+     1     1     1     1     1     1     1
+     2     1     1     1     1     1     1
+     3     1     1     1     1     1     1
+     4     1     1     1     1     1     1
+     5     1     1     1     1     1     1
+     6     1     1     1     1     1     1
+     7     1     1     1     1     1     1
+     8     1     1     1     1     1     1
+     1     2     1     1     1     1     1
+     2     2     1     1     1     1     1
+     3     2     1     1     1     1     1
+     4     2     1     1     1     1     1
+     5     2     1     1     1     1     1
+     6     2     1     1     1     1     1
+     7     2     1     1     1     1     1
+     8     2     1     1     1     1     1
+     1     1     2     1     1     1     1
+     2     1     2     1     1     1     1
+     3     1     2     1     1     1     1
+     4     1     2     1     1     1     1
+     5     1     2     1     1     1     1
+     6     1     2     1     1     1     1
+     7     1     2     1     1     1     1
+     8     1     2     1     1     1     1
+     1     2     2     1     1     1     1
+     2     2     2     1     1     1     1
+     3     2     2     1     1     1     1
+     4     2     2     1     1     1     1
+     5     2     2     1     1     1     1
+     6     2     2     1     1     1     1
+     7     2     2     1     1     1     1
+     8     2     2     1     1     1     1
+     1     1     1     2     1     1     1
+     2     1     1     2     1     1     1
+     3     1     1     2     1     1     1
+     4     1     1     2     1     1     1
+     5     1     1     2     1     1     1
+     6     1     1     2     1     1     1
+     7     1     1     2     1     1     1
+     8     1     1     2     1     1     1
+     1     2     1     2     1     1     1
+     2     2     1     2     1     1     1
+     3     2     1     2     1     1     1
+     4     2     1     2     1     1     1
+     5     2     1     2     1     1     1
+     6     2     1     2     1     1     1
+     7     2     1     2     1     1     1
+     8     2     1     2     1     1     1
+     1     1     2     2     1     1     1
+     2     1     2     2     1     1     1
+     3     1     2     2     1     1     1
+     4     1     2     2     1     1     1
+     5     1     2     2     1     1     1
+     6     1     2     2     1     1     1
+     7     1     2     2     1     1     1
+     8     1     2     2     1     1     1
+     1     2     2     2     1     1     1
+     2     2     2     2     1     1     1
+     3     2     2     2     1     1     1
+     4     2     2     2     1     1     1
+     5     2     2     2     1     1     1
+     6     2     2     2     1     1     1
+     7     2     2     2     1     1     1
+     8     2     2     2     1     1     1
+     1     1     1     1     2     1     1
+     2     1     1     1     2     1     1
+     3     1     1     1     2     1     1
+     4     1     1     1     2     1     1
+     5     1     1     1     2     1     1
+     6     1     1     1     2     1     1
+     7     1     1     1     2     1     1
+     8     1     1     1     2     1     1
+     1     2     1     1     2     1     1
+     2     2     1     1     2     1     1
+     3     2     1     1     2     1     1
+     4     2     1     1     2     1     1
+     5     2     1     1     2     1     1
+     6     2     1     1     2     1     1
+     7     2     1     1     2     1     1
+     8     2     1     1     2     1     1
+     1     1     2     1     2     1     1
+     2     1     2     1     2     1     1
+     3     1     2     1     2     1     1
+     4     1     2     1     2     1     1
+     5     1     2     1     2     1     1
+     6     1     2     1     2     1     1
+     7     1     2     1     2     1     1
+     8     1     2     1     2     1     1
+     1     2     2     1     2     1     1
+     2     2     2     1     2     1     1
+     3     2     2     1     2     1     1
+     4     2     2     1     2     1     1
+     5     2     2     1     2     1     1
+     6     2     2     1     2     1     1
+     7     2     2     1     2     1     1
+     8     2     2     1     2     1     1
+     1     1     1     2     2     1     1
+     2     1     1     2     2     1     1
+     3     1     1     2     2     1     1
+     4     1     1     2     2     1     1
+     5     1     1     2     2     1     1
+     6     1     1     2     2     1     1
+     7     1     1     2     2     1     1
+     8     1     1     2     2     1     1
+     1     2     1     2     2     1     1
+     2     2     1     2     2     1     1
+     3     2     1     2     2     1     1
+     4     2     1     2     2     1     1
+     5     2     1     2     2     1     1
+     6     2     1     2     2     1     1
+     7     2     1     2     2     1     1
+     8     2     1     2     2     1     1
+     1     1     2     2     2     1     1
+     2     1     2     2     2     1     1
+     3     1     2     2     2     1     1
+     4     1     2     2     2     1     1
+     5     1     2     2     2     1     1
+     6     1     2     2     2     1     1
+     7     1     2     2     2     1     1
+     8     1     2     2     2     1     1
+     1     2     2     2     2     1     1
+     2     2     2     2     2     1     1
+     3     2     2     2     2     1     1
+     4     2     2     2     2     1     1
+     5     2     2     2     2     1     1
+     6     2     2     2     2     1     1
+     7     2     2     2     2     1     1
+     8     2     2     2     2     1     1
+     1     1     1     1     1     2     1
+     2     1     1     1     1     2     1
+     3     1     1     1     1     2     1
+     4     1     1     1     1     2     1
+     5     1     1     1     1     2     1
+     6     1     1     1     1     2     1
+     7     1     1     1     1     2     1
+     8     1     1     1     1     2     1
+     1     2     1     1     1     2     1
+     2     2     1     1     1     2     1
+     3     2     1     1     1     2     1
+     4     2     1     1     1     2     1
+     5     2     1     1     1     2     1
+     6     2     1     1     1     2     1
+     7     2     1     1     1     2     1
+     8     2     1     1     1     2     1
+     1     1     2     1     1     2     1
+     2     1     2     1     1     2     1
+     3     1     2     1     1     2     1
+     4     1     2     1     1     2     1
+     5     1     2     1     1     2     1
+     6     1     2     1     1     2     1
+     7     1     2     1     1     2     1
+     8     1     2     1     1     2     1
+     1     2     2     1     1     2     1
+     2     2     2     1     1     2     1
+     3     2     2     1     1     2     1
+     4     2     2     1     1     2     1
+     5     2     2     1     1     2     1
+     6     2     2     1     1     2     1
+     7     2     2     1     1     2     1
+     8     2     2     1     1     2     1
+     1     1     1     2     1     2     1
+     2     1     1     2     1     2     1
+     3     1     1     2     1     2     1
+     4     1     1     2     1     2     1
+     5     1     1     2     1     2     1
+     6     1     1     2     1     2     1
+     7     1     1     2     1     2     1
+     8     1     1     2     1     2     1
+     1     2     1     2     1     2     1
+     2     2     1     2     1     2     1
+     3     2     1     2     1     2     1
+     4     2     1     2     1     2     1
+     5     2     1     2     1     2     1
+     6     2     1     2     1     2     1
+     7     2     1     2     1     2     1
+     8     2     1     2     1     2     1
+     1     1     2     2     1     2     1
+     2     1     2     2     1     2     1
+     3     1     2     2     1     2     1
+     4     1     2     2     1     2     1
+     5     1     2     2     1     2     1
+     6     1     2     2     1     2     1
+     7     1     2     2     1     2     1
+     8     1     2     2     1     2     1
+     1     2     2     2     1     2     1
+     2     2     2     2     1     2     1
+     3     2     2     2     1     2     1
+     4     2     2     2     1     2     1
+     5     2     2     2     1     2     1
+     6     2     2     2     1     2     1
+     7     2     2     2     1     2     1
+     8     2     2     2     1     2     1
+     1     1     1     1     2     2     1
+     2     1     1     1     2     2     1
+     3     1     1     1     2     2     1
+     4     1     1     1     2     2     1
+     5     1     1     1     2     2     1
+     6     1     1     1     2     2     1
+     7     1     1     1     2     2     1
+     8     1     1     1     2     2     1
+     1     2     1     1     2     2     1
+     2     2     1     1     2     2     1
+     3     2     1     1     2     2     1
+     4     2     1     1     2     2     1
+     5     2     1     1     2     2     1
+     6     2     1     1     2     2     1
+     7     2     1     1     2     2     1
+     8     2     1     1     2     2     1
+     1     1     2     1     2     2     1
+     2     1     2     1     2     2     1
+     3     1     2     1     2     2     1
+     4     1     2     1     2     2     1
+     5     1     2     1     2     2     1
+     6     1     2     1     2     2     1
+     7     1     2     1     2     2     1
+     8     1     2     1     2     2     1
+     1     2     2     1     2     2     1
+     2     2     2     1     2     2     1
+     3     2     2     1     2     2     1
+     4     2     2     1     2     2     1
+     5     2     2     1     2     2     1
+     6     2     2     1     2     2     1
+     7     2     2     1     2     2     1
+     8     2     2     1     2     2     1
+     1     1     1     2     2     2     1
+     2     1     1     2     2     2     1
+     3     1     1     2     2     2     1
+     4     1     1     2     2     2     1
+     5     1     1     2     2     2     1
+     6     1     1     2     2     2     1
+     7     1     1     2     2     2     1
+     8     1     1     2     2     2     1
+     1     2     1     2     2     2     1
+     2     2     1     2     2     2     1
+     3     2     1     2     2     2     1
+     4     2     1     2     2     2     1
+     5     2     1     2     2     2     1
+     6     2     1     2     2     2     1
+     7     2     1     2     2     2     1
+     8     2     1     2     2     2     1
+     1     1     2     2     2     2     1
+     2     1     2     2     2     2     1
+     3     1     2     2     2     2     1
+     4     1     2     2     2     2     1
+     5     1     2     2     2     2     1
+     6     1     2     2     2     2     1
+     7     1     2     2     2     2     1
+     8     1     2     2     2     2     1
+     1     2     2     2     2     2     1
+     2     2     2     2     2     2     1
+     3     2     2     2     2     2     1
+     4     2     2     2     2     2     1
+     5     2     2     2     2     2     1
+     6     2     2     2     2     2     1
+     7     2     2     2     2     2     1
+     8     2     2     2     2     2     1
+     1     1     1     1     1     1     2
+     2     1     1     1     1     1     2
+     3     1     1     1     1     1     2
+     4     1     1     1     1     1     2
+     5     1     1     1     1     1     2
+     6     1     1     1     1     1     2
+     7     1     1     1     1     1     2
+     8     1     1     1     1     1     2
+     1     2     1     1     1     1     2
+     2     2     1     1     1     1     2
+     3     2     1     1     1     1     2
+     4     2     1     1     1     1     2
+     5     2     1     1     1     1     2
+     6     2     1     1     1     1     2
+     7     2     1     1     1     1     2
+     8     2     1     1     1     1     2
+     1     1     2     1     1     1     2
+     2     1     2     1     1     1     2
+     3     1     2     1     1     1     2
+     4     1     2     1     1     1     2
+     5     1     2     1     1     1     2
+     6     1     2     1     1     1     2
+     7     1     2     1     1     1     2
+     8     1     2     1     1     1     2
+     1     2     2     1     1     1     2
+     2     2     2     1     1     1     2
+     3     2     2     1     1     1     2
+     4     2     2     1     1     1     2
+     5     2     2     1     1     1     2
+     6     2     2     1     1     1     2
+     7     2     2     1     1     1     2
+     8     2     2     1     1     1     2
+     1     1     1     2     1     1     2
+     2     1     1     2     1     1     2
+     3     1     1     2     1     1     2
+     4     1     1     2     1     1     2
+     5     1     1     2     1     1     2
+     6     1     1     2     1     1     2
+     7     1     1     2     1     1     2
+     8     1     1     2     1     1     2
+     1     2     1     2     1     1     2
+     2     2     1     2     1     1     2
+     3     2     1     2     1     1     2
+     4     2     1     2     1     1     2
+     5     2     1     2     1     1     2
+     6     2     1     2     1     1     2
+     7     2     1     2     1     1     2
+     8     2     1     2     1     1     2
+     1     1     2     2     1     1     2
+     2     1     2     2     1     1     2
+     3     1     2     2     1     1     2
+     4     1     2     2     1     1     2
+     5     1     2     2     1     1     2
+     6     1     2     2     1     1     2
+     7     1     2     2     1     1     2
+     8     1     2     2     1     1     2
+     1     2     2     2     1     1     2
+     2     2     2     2     1     1     2
+     3     2     2     2     1     1     2
+     4     2     2     2     1     1     2
+     5     2     2     2     1     1     2
+     6     2     2     2     1     1     2
+     7     2     2     2     1     1     2
+     8     2     2     2     1     1     2
+     1     1     1     1     2     1     2
+     2     1     1     1     2     1     2
+     3     1     1     1     2     1     2
+     4     1     1     1     2     1     2
+     5     1     1     1     2     1     2
+     6     1     1     1     2     1     2
+     7     1     1     1     2     1     2
+     8     1     1     1     2     1     2
+     1     2     1     1     2     1     2
+     2     2     1     1     2     1     2
+     3     2     1     1     2     1     2
+     4     2     1     1     2     1     2
+     5     2     1     1     2     1     2
+     6     2     1     1     2     1     2
+     7     2     1     1     2     1     2
+     8     2     1     1     2     1     2
+     1     1     2     1     2     1     2
+     2     1     2     1     2     1     2
+     3     1     2     1     2     1     2
+     4     1     2     1     2     1     2
+     5     1     2     1     2     1     2
+     6     1     2     1     2     1     2
+     7     1     2     1     2     1     2
+     8     1     2     1     2     1     2
+     1     2     2     1     2     1     2
+     2     2     2     1     2     1     2
+     3     2     2     1     2     1     2
+     4     2     2     1     2     1     2
+     5     2     2     1     2     1     2
+     6     2     2     1     2     1     2
+     7     2     2     1     2     1     2
+     8     2     2     1     2     1     2
+     1     1     1     2     2     1     2
+     2     1     1     2     2     1     2
+     3     1     1     2     2     1     2
+     4     1     1     2     2     1     2
+     5     1     1     2     2     1     2
+     6     1     1     2     2     1     2
+     7     1     1     2     2     1     2
+     8     1     1     2     2     1     2
+     1     2     1     2     2     1     2
+     2     2     1     2     2     1     2
+     3     2     1     2     2     1     2
+     4     2     1     2     2     1     2
+     5     2     1     2     2     1     2
+     6     2     1     2     2     1     2
+     7     2     1     2     2     1     2
+     8     2     1     2     2     1     2
+     1     1     2     2     2     1     2
+     2     1     2     2     2     1     2
+     3     1     2     2     2     1     2
+     4     1     2     2     2     1     2
+     5     1     2     2     2     1     2
+     6     1     2     2     2     1     2
+     7     1     2     2     2     1     2
+     8     1     2     2     2     1     2
+     1     2     2     2     2     1     2
+     2     2     2     2     2     1     2
+     3     2     2     2     2     1     2
+     4     2     2     2     2     1     2
+     5     2     2     2     2     1     2
+     6     2     2     2     2     1     2
+     7     2     2     2     2     1     2
+     8     2     2     2     2     1     2
+     1     1     1     1     1     2     2
+     2     1     1     1     1     2     2
+     3     1     1     1     1     2     2
+     4     1     1     1     1     2     2
+     5     1     1     1     1     2     2
+     6     1     1     1     1     2     2
+     7     1     1     1     1     2     2
+     8     1     1     1     1     2     2
+     1     2     1     1     1     2     2
+     2     2     1     1     1     2     2
+     3     2     1     1     1     2     2
+     4     2     1     1     1     2     2
+     5     2     1     1     1     2     2
+     6     2     1     1     1     2     2
+     7     2     1     1     1     2     2
+     8     2     1     1     1     2     2
+     1     1     2     1     1     2     2
+     2     1     2     1     1     2     2
+     3     1     2     1     1     2     2
+     4     1     2     1     1     2     2
+     5     1     2     1     1     2     2
+     6     1     2     1     1     2     2
+     7     1     2     1     1     2     2
+     8     1     2     1     1     2     2
+     1     2     2     1     1     2     2
+     2     2     2     1     1     2     2
+     3     2     2     1     1     2     2
+     4     2     2     1     1     2     2
+     5     2     2     1     1     2     2
+     6     2     2     1     1     2     2
+     7     2     2     1     1     2     2
+     8     2     2     1     1     2     2
+     1     1     1     2     1     2     2
+     2     1     1     2     1     2     2
+     3     1     1     2     1     2     2
+     4     1     1     2     1     2     2
+     5     1     1     2     1     2     2
+     6     1     1     2     1     2     2
+     7     1     1     2     1     2     2
+     8     1     1     2     1     2     2
+     1     2     1     2     1     2     2
+     2     2     1     2     1     2     2
+     3     2     1     2     1     2     2
+     4     2     1     2     1     2     2
+     5     2     1     2     1     2     2
+     6     2     1     2     1     2     2
+     7     2     1     2     1     2     2
+     8     2     1     2     1     2     2
+     1     1     2     2     1     2     2
+     2     1     2     2     1     2     2
+     3     1     2     2     1     2     2
+     4     1     2     2     1     2     2
+     5     1     2     2     1     2     2
+     6     1     2     2     1     2     2
+     7     1     2     2     1     2     2
+     8     1     2     2     1     2     2
+     1     2     2     2     1     2     2
+     2     2     2     2     1     2     2
+     3     2     2     2     1     2     2
+     4     2     2     2     1     2     2
+     5     2     2     2     1     2     2
+     6     2     2     2     1     2     2
+     7     2     2     2     1     2     2
+     8     2     2     2     1     2     2
+     1     1     1     1     2     2     2
+     2     1     1     1     2     2     2
+     3     1     1     1     2     2     2
+     4     1     1     1     2     2     2
+     5     1     1     1     2     2     2
+     6     1     1     1     2     2     2
+     7     1     1     1     2     2     2
+     8     1     1     1     2     2     2
+     1     2     1     1     2     2     2
+     2     2     1     1     2     2     2
+     3     2     1     1     2     2     2
+     4     2     1     1     2     2     2
+     5     2     1     1     2     2     2
+     6     2     1     1     2     2     2
+     7     2     1     1     2     2     2
+     8     2     1     1     2     2     2
+     1     1     2     1     2     2     2
+     2     1     2     1     2     2     2
+     3     1     2     1     2     2     2
+     4     1     2     1     2     2     2
+     5     1     2     1     2     2     2
+     6     1     2     1     2     2     2
+     7     1     2     1     2     2     2
+     8     1     2     1     2     2     2
+     1     2     2     1     2     2     2
+     2     2     2     1     2     2     2
+     3     2     2     1     2     2     2
+     4     2     2     1     2     2     2
+     5     2     2     1     2     2     2
+     6     2     2     1     2     2     2
+     7     2     2     1     2     2     2
+     8     2     2     1     2     2     2
+     1     1     1     2     2     2     2
+     2     1     1     2     2     2     2
+     3     1     1     2     2     2     2
+     4     1     1     2     2     2     2
+     5     1     1     2     2     2     2
+     6     1     1     2     2     2     2
+     7     1     1     2     2     2     2
+     8     1     1     2     2     2     2
+     1     2     1     2     2     2     2
+     2     2     1     2     2     2     2
+     3     2     1     2     2     2     2
+     4     2     1     2     2     2     2
+     5     2     1     2     2     2     2
+     6     2     1     2     2     2     2
+     7     2     1     2     2     2     2
+     8     2     1     2     2     2     2
+     1     1     2     2     2     2     2
+     2     1     2     2     2     2     2
+     3     1     2     2     2     2     2
+     4     1     2     2     2     2     2
+     5     1     2     2     2     2     2
+     6     1     2     2     2     2     2
+     7     1     2     2     2     2     2
+     8     1     2     2     2     2     2
+     1     2     2     2     2     2     2
+     2     2     2     2     2     2     2
+     3     2     2     2     2     2     2
+     4     2     2     2     2     2     2
+     5     2     2     2     2     2     2
+     6     2     2     2     2     2     2
+     7     2     2     2     2     2     2
+     8     2     2     2     2     2     2
+
+q
+
+  7-D <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+q(:,:,1,1,1,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,1,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,1,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,1,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,2,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,2,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,2,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,2,1,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,1,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,1,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,1,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,1,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,2,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,2,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,2,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,2,2,1) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,1,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,1,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,1,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,1,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,2,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,2,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,2,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,2,1,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,1,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,1,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,1,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,1,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,1,2,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,1,2,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,1,2,2,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+
+q(:,:,2,2,2,2,2) = 
+
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+    {1×1 sdpvar}    {1×1 sdpvar}
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+auxsize
+{Undefined function or variable 'auxsize'.
+} 
+size(q)
+{Undefined function or variable 'q'.
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 211585
+
+Round 1.
+Visibility given initial measurements and channels: 0.103062
+With ini meas/channel: s·p1=0.103062, s·p2=-0.896938, s·(p1-p2)=1.000000, localbound=2.241146
+Function check, alpha1=0.000000 alpha2=0.103062 diff=-0.103062
+iter=1, channelq=~, bellineqvalue=2.044048, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=2.155219, abschangeobjval=0.111171
+iter=3, partyidx=2, bellineqvalue=2.195923, abschangeobjval=0.040704
+iter=4, partyidx=3, bellineqvalue=2.195923, abschangeobjval=2.69718e-07
+[Warning: POVM not positive! min eig -1.15176e-08] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkThatInstrChannelsAreGood', 'C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m', 23)" style="font-weight:bold">checkThatInstrChannelsAreGood</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\checkThatInstrChannelsAreGood.m',23,0)">line 23</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 128)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',128,0)">line 128</a>)] 
+    yalmipversion: '20200930'
+    matlabversion: '9.4.0.813654 (R2018a)'
+       yalmiptime: 0.2235
+       solvertime: 0.0025
+             info: 'Infeasible problem (MOSEK)'
+          problem: 1
+
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',222,1)">222 </a>         warning('Check why the problem is not successfully solved.');
+positivityconstraints
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|     ID|                    Constraint|   Coefficient range|
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|     #1|   Element-wise inequality 1x1|              1 to 1|
+|     #2|   Element-wise inequality 1x1|              1 to 1|
+|     #3|   Element-wise inequality 1x1|              1 to 1|
+|     #4|   Element-wise inequality 1x1|              1 to 1|
+|     #5|   Element-wise inequality 1x1|              1 to 1|
+|     #6|   Element-wise inequality 1x1|              1 to 1|
+|     #7|   Element-wise inequality 1x1|              1 to 1|
+|     #8|   Element-wise inequality 1x1|              1 to 1|
+|     #9|   Element-wise inequality 1x1|              1 to 1|
+|    #10|   Element-wise inequality 1x1|              1 to 1|
+|    #11|   Element-wise inequality 1x1|              1 to 1|
+|    #12|   Element-wise inequality 1x1|              1 to 1|
+|    #13|   Element-wise inequality 1x1|              1 to 1|
+|    #14|   Element-wise inequality 1x1|              1 to 1|
+|    #15|   Element-wise inequality 1x1|              1 to 1|
+|    #16|   Element-wise inequality 1x1|              1 to 1|
+|    #17|   Element-wise inequality 1x1|              1 to 1|
+|    #18|   Element-wise inequality 1x1|              1 to 1|
+|    #19|   Element-wise inequality 1x1|              1 to 1|
+|    #20|   Element-wise inequality 1x1|              1 to 1|
+|    #21|   Element-wise inequality 1x1|              1 to 1|
+|    #22|   Element-wise inequality 1x1|              1 to 1|
+|    #23|   Element-wise inequality 1x1|              1 to 1|
+|    #24|   Element-wise inequality 1x1|              1 to 1|
+|    #25|   Element-wise inequality 1x1|              1 to 1|
+|    #26|   Element-wise inequality 1x1|              1 to 1|
+|    #27|   Element-wise inequality 1x1|              1 to 1|
+|    #28|   Element-wise inequality 1x1|              1 to 1|
+|    #29|   Element-wise inequality 1x1|              1 to 1|
+|    #30|   Element-wise inequality 1x1|              1 to 1|
+|    #31|   Element-wise inequality 1x1|              1 to 1|
+|    #32|   Element-wise inequality 1x1|              1 to 1|
+|    #33|   Element-wise inequality 1x1|              1 to 1|
+|    #34|   Element-wise inequality 1x1|              1 to 1|
+|    #35|   Element-wise inequality 1x1|              1 to 1|
+|    #36|   Element-wise inequality 1x1|              1 to 1|
+|    #37|   Element-wise inequality 1x1|              1 to 1|
+|    #38|   Element-wise inequality 1x1|              1 to 1|
+|    #39|   Element-wise inequality 1x1|              1 to 1|
+|    #40|   Element-wise inequality 1x1|              1 to 1|
+|    #41|   Element-wise inequality 1x1|              1 to 1|
+|    #42|   Element-wise inequality 1x1|              1 to 1|
+|    #43|   Element-wise inequality 1x1|              1 to 1|
+|    #44|   Element-wise inequality 1x1|              1 to 1|
+|    #45|   Element-wise inequality 1x1|              1 to 1|
+|    #46|   Element-wise inequality 1x1|              1 to 1|
+|    #47|   Element-wise inequality 1x1|              1 to 1|
+|    #48|   Element-wise inequality 1x1|              1 to 1|
+|    #49|   Element-wise inequality 1x1|              1 to 1|
+|    #50|   Element-wise inequality 1x1|              1 to 1|
+|    #51|   Element-wise inequality 1x1|              1 to 1|
+|    #52|   Element-wise inequality 1x1|              1 to 1|
+|    #53|   Element-wise inequality 1x1|              1 to 1|
+|    #54|   Element-wise inequality 1x1|              1 to 1|
+|    #55|   Element-wise inequality 1x1|              1 to 1|
+|    #56|   Element-wise inequality 1x1|              1 to 1|
+|    #57|   Element-wise inequality 1x1|              1 to 1|
+|    #58|   Element-wise inequality 1x1|              1 to 1|
+|    #59|   Element-wise inequality 1x1|              1 to 1|
+|    #60|   Element-wise inequality 1x1|              1 to 1|
+|    #61|   Element-wise inequality 1x1|              1 to 1|
+|    #62|   Element-wise inequality 1x1|              1 to 1|
+|    #63|   Element-wise inequality 1x1|              1 to 1|
+|    #64|   Element-wise inequality 1x1|              1 to 1|
+|    #65|   Element-wise inequality 1x1|              1 to 1|
+|    #66|   Element-wise inequality 1x1|              1 to 1|
+|    #67|   Element-wise inequality 1x1|              1 to 1|
+|    #68|   Element-wise inequality 1x1|              1 to 1|
+|    #69|   Element-wise inequality 1x1|              1 to 1|
+|    #70|   Element-wise inequality 1x1|              1 to 1|
+|    #71|   Element-wise inequality 1x1|              1 to 1|
+|    #72|   Element-wise inequality 1x1|              1 to 1|
+|    #73|   Element-wise inequality 1x1|              1 to 1|
+|    #74|   Element-wise inequality 1x1|              1 to 1|
+|    #75|   Element-wise inequality 1x1|              1 to 1|
+|    #76|   Element-wise inequality 1x1|              1 to 1|
+|    #77|   Element-wise inequality 1x1|              1 to 1|
+|    #78|   Element-wise inequality 1x1|              1 to 1|
+|    #79|   Element-wise inequality 1x1|              1 to 1|
+|    #80|   Element-wise inequality 1x1|              1 to 1|
+|    #81|   Element-wise inequality 1x1|              1 to 1|
+|    #82|   Element-wise inequality 1x1|              1 to 1|
+|    #83|   Element-wise inequality 1x1|              1 to 1|
+|    #84|   Element-wise inequality 1x1|              1 to 1|
+|    #85|   Element-wise inequality 1x1|              1 to 1|
+|    #86|   Element-wise inequality 1x1|              1 to 1|
+|    #87|   Element-wise inequality 1x1|              1 to 1|
+|    #88|   Element-wise inequality 1x1|              1 to 1|
+|    #89|   Element-wise inequality 1x1|              1 to 1|
+|    #90|   Element-wise inequality 1x1|              1 to 1|
+|    #91|   Element-wise inequality 1x1|              1 to 1|
+|    #92|   Element-wise inequality 1x1|              1 to 1|
+|    #93|   Element-wise inequality 1x1|              1 to 1|
+|    #94|   Element-wise inequality 1x1|              1 to 1|
+|    #95|   Element-wise inequality 1x1|              1 to 1|
+|    #96|   Element-wise inequality 1x1|              1 to 1|
+|    #97|   Element-wise inequality 1x1|              1 to 1|
+|    #98|   Element-wise inequality 1x1|              1 to 1|
+|    #99|   Element-wise inequality 1x1|              1 to 1|
+|   #100|   Element-wise inequality 1x1|              1 to 1|
+|   #101|   Element-wise inequality 1x1|              1 to 1|
+|   #102|   Element-wise inequality 1x1|              1 to 1|
+|   #103|   Element-wise inequality 1x1|              1 to 1|
+|   #104|   Element-wise inequality 1x1|              1 to 1|
+|   #105|   Element-wise inequality 1x1|              1 to 1|
+|   #106|   Element-wise inequality 1x1|              1 to 1|
+|   #107|   Element-wise inequality 1x1|              1 to 1|
+|   #108|   Element-wise inequality 1x1|              1 to 1|
+|   #109|   Element-wise inequality 1x1|              1 to 1|
+|   #110|   Element-wise inequality 1x1|              1 to 1|
+|   #111|   Element-wise inequality 1x1|              1 to 1|
+|   #112|   Element-wise inequality 1x1|              1 to 1|
+|   #113|   Element-wise inequality 1x1|              1 to 1|
+|   #114|   Element-wise inequality 1x1|              1 to 1|
+|   #115|   Element-wise inequality 1x1|              1 to 1|
+|   #116|   Element-wise inequality 1x1|              1 to 1|
+|   #117|   Element-wise inequality 1x1|              1 to 1|
+|   #118|   Element-wise inequality 1x1|              1 to 1|
+|   #119|   Element-wise inequality 1x1|              1 to 1|
+|   #120|   Element-wise inequality 1x1|              1 to 1|
+|   #121|   Element-wise inequality 1x1|              1 to 1|
+|   #122|   Element-wise inequality 1x1|              1 to 1|
+|   #123|   Element-wise inequality 1x1|              1 to 1|
+|   #124|   Element-wise inequality 1x1|              1 to 1|
+|   #125|   Element-wise inequality 1x1|              1 to 1|
+|   #126|   Element-wise inequality 1x1|              1 to 1|
+|   #127|   Element-wise inequality 1x1|              1 to 1|
+|   #128|   Element-wise inequality 1x1|              1 to 1|
+|   #129|   Element-wise inequality 1x1|              1 to 1|
+|   #130|   Element-wise inequality 1x1|              1 to 1|
+|   #131|   Element-wise inequality 1x1|              1 to 1|
+|   #132|   Element-wise inequality 1x1|              1 to 1|
+|   #133|   Element-wise inequality 1x1|              1 to 1|
+|   #134|   Element-wise inequality 1x1|              1 to 1|
+|   #135|   Element-wise inequality 1x1|              1 to 1|
+|   #136|   Element-wise inequality 1x1|              1 to 1|
+|   #137|   Element-wise inequality 1x1|              1 to 1|
+|   #138|   Element-wise inequality 1x1|              1 to 1|
+|   #139|   Element-wise inequality 1x1|              1 to 1|
+|   #140|   Element-wise inequality 1x1|              1 to 1|
+|   #141|   Element-wise inequality 1x1|              1 to 1|
+|   #142|   Element-wise inequality 1x1|              1 to 1|
+|   #143|   Element-wise inequality 1x1|              1 to 1|
+|   #144|   Element-wise inequality 1x1|              1 to 1|
+|   #145|   Element-wise inequality 1x1|              1 to 1|
+|   #146|   Element-wise inequality 1x1|              1 to 1|
+|   #147|   Element-wise inequality 1x1|              1 to 1|
+|   #148|   Element-wise inequality 1x1|              1 to 1|
+|   #149|   Element-wise inequality 1x1|              1 to 1|
+|   #150|   Element-wise inequality 1x1|              1 to 1|
+|   #151|   Element-wise inequality 1x1|              1 to 1|
+|   #152|   Element-wise inequality 1x1|              1 to 1|
+|   #153|   Element-wise inequality 1x1|              1 to 1|
+|   #154|   Element-wise inequality 1x1|              1 to 1|
+|   #155|   Element-wise inequality 1x1|              1 to 1|
+|   #156|   Element-wise inequality 1x1|              1 to 1|
+|   #157|   Element-wise inequality 1x1|              1 to 1|
+|   #158|   Element-wise inequality 1x1|              1 to 1|
+|   #159|   Element-wise inequality 1x1|              1 to 1|
+|   #160|   Element-wise inequality 1x1|              1 to 1|
+|   #161|   Element-wise inequality 1x1|              1 to 1|
+|   #162|   Element-wise inequality 1x1|              1 to 1|
+|   #163|   Element-wise inequality 1x1|              1 to 1|
+|   #164|   Element-wise inequality 1x1|              1 to 1|
+|   #165|   Element-wise inequality 1x1|              1 to 1|
+|   #166|   Element-wise inequality 1x1|              1 to 1|
+|   #167|   Element-wise inequality 1x1|              1 to 1|
+|   #168|   Element-wise inequality 1x1|              1 to 1|
+|   #169|   Element-wise inequality 1x1|              1 to 1|
+|   #170|   Element-wise inequality 1x1|              1 to 1|
+|   #171|   Element-wise inequality 1x1|              1 to 1|
+|   #172|   Element-wise inequality 1x1|              1 to 1|
+|   #173|   Element-wise inequality 1x1|              1 to 1|
+|   #174|   Element-wise inequality 1x1|              1 to 1|
+|   #175|   Element-wise inequality 1x1|              1 to 1|
+|   #176|   Element-wise inequality 1x1|              1 to 1|
+|   #177|   Element-wise inequality 1x1|              1 to 1|
+|   #178|   Element-wise inequality 1x1|              1 to 1|
+|   #179|   Element-wise inequality 1x1|              1 to 1|
+|   #180|   Element-wise inequality 1x1|              1 to 1|
+|   #181|   Element-wise inequality 1x1|              1 to 1|
+|   #182|   Element-wise inequality 1x1|              1 to 1|
+|   #183|   Element-wise inequality 1x1|              1 to 1|
+|   #184|   Element-wise inequality 1x1|              1 to 1|
+|   #185|   Element-wise inequality 1x1|              1 to 1|
+|   #186|   Element-wise inequality 1x1|              1 to 1|
+|   #187|   Element-wise inequality 1x1|              1 to 1|
+|   #188|   Element-wise inequality 1x1|              1 to 1|
+|   #189|   Element-wise inequality 1x1|              1 to 1|
+|   #190|   Element-wise inequality 1x1|              1 to 1|
+|   #191|   Element-wise inequality 1x1|              1 to 1|
+|   #192|   Element-wise inequality 1x1|              1 to 1|
+|   #193|   Element-wise inequality 1x1|              1 to 1|
+|   #194|   Element-wise inequality 1x1|              1 to 1|
+|   #195|   Element-wise inequality 1x1|              1 to 1|
+|   #196|   Element-wise inequality 1x1|              1 to 1|
+|   #197|   Element-wise inequality 1x1|              1 to 1|
+|   #198|   Element-wise inequality 1x1|              1 to 1|
+|   #199|   Element-wise inequality 1x1|              1 to 1|
+|   #200|   Element-wise inequality 1x1|              1 to 1|
+|   #201|   Element-wise inequality 1x1|              1 to 1|
+|   #202|   Element-wise inequality 1x1|              1 to 1|
+|   #203|   Element-wise inequality 1x1|              1 to 1|
+|   #204|   Element-wise inequality 1x1|              1 to 1|
+|   #205|   Element-wise inequality 1x1|              1 to 1|
+|   #206|   Element-wise inequality 1x1|              1 to 1|
+|   #207|   Element-wise inequality 1x1|              1 to 1|
+|   #208|   Element-wise inequality 1x1|              1 to 1|
+|   #209|   Element-wise inequality 1x1|              1 to 1|
+|   #210|   Element-wise inequality 1x1|              1 to 1|
+|   #211|   Element-wise inequality 1x1|              1 to 1|
+|   #212|   Element-wise inequality 1x1|              1 to 1|
+|   #213|   Element-wise inequality 1x1|              1 to 1|
+|   #214|   Element-wise inequality 1x1|              1 to 1|
+|   #215|   Element-wise inequality 1x1|              1 to 1|
+|   #216|   Element-wise inequality 1x1|              1 to 1|
+|   #217|   Element-wise inequality 1x1|              1 to 1|
+|   #218|   Element-wise inequality 1x1|              1 to 1|
+|   #219|   Element-wise inequality 1x1|              1 to 1|
+|   #220|   Element-wise inequality 1x1|              1 to 1|
+|   #221|   Element-wise inequality 1x1|              1 to 1|
+|   #222|   Element-wise inequality 1x1|              1 to 1|
+|   #223|   Element-wise inequality 1x1|              1 to 1|
+|   #224|   Element-wise inequality 1x1|              1 to 1|
+|   #225|   Element-wise inequality 1x1|              1 to 1|
+|   #226|   Element-wise inequality 1x1|              1 to 1|
+|   #227|   Element-wise inequality 1x1|              1 to 1|
+|   #228|   Element-wise inequality 1x1|              1 to 1|
+|   #229|   Element-wise inequality 1x1|              1 to 1|
+|   #230|   Element-wise inequality 1x1|              1 to 1|
+|   #231|   Element-wise inequality 1x1|              1 to 1|
+|   #232|   Element-wise inequality 1x1|              1 to 1|
+|   #233|   Element-wise inequality 1x1|              1 to 1|
+|   #234|   Element-wise inequality 1x1|              1 to 1|
+|   #235|   Element-wise inequality 1x1|              1 to 1|
+|   #236|   Element-wise inequality 1x1|              1 to 1|
+|   #237|   Element-wise inequality 1x1|              1 to 1|
+|   #238|   Element-wise inequality 1x1|              1 to 1|
+|   #239|   Element-wise inequality 1x1|              1 to 1|
+|   #240|   Element-wise inequality 1x1|              1 to 1|
+|   #241|   Element-wise inequality 1x1|              1 to 1|
+|   #242|   Element-wise inequality 1x1|              1 to 1|
+|   #243|   Element-wise inequality 1x1|              1 to 1|
+|   #244|   Element-wise inequality 1x1|              1 to 1|
+|   #245|   Element-wise inequality 1x1|              1 to 1|
+|   #246|   Element-wise inequality 1x1|              1 to 1|
+|   #247|   Element-wise inequality 1x1|              1 to 1|
+|   #248|   Element-wise inequality 1x1|              1 to 1|
+|   #249|   Element-wise inequality 1x1|              1 to 1|
+|   #250|   Element-wise inequality 1x1|              1 to 1|
+|   #251|   Element-wise inequality 1x1|              1 to 1|
+|   #252|   Element-wise inequality 1x1|              1 to 1|
+|   #253|   Element-wise inequality 1x1|              1 to 1|
+|   #254|   Element-wise inequality 1x1|              1 to 1|
+|   #255|   Element-wise inequality 1x1|              1 to 1|
+|   #256|   Element-wise inequality 1x1|              1 to 1|
+|   #257|   Element-wise inequality 1x1|              1 to 1|
+|   #258|   Element-wise inequality 1x1|              1 to 1|
+|   #259|   Element-wise inequality 1x1|              1 to 1|
+|   #260|   Element-wise inequality 1x1|              1 to 1|
+|   #261|   Element-wise inequality 1x1|              1 to 1|
+|   #262|   Element-wise inequality 1x1|              1 to 1|
+|   #263|   Element-wise inequality 1x1|              1 to 1|
+|   #264|   Element-wise inequality 1x1|              1 to 1|
+|   #265|   Element-wise inequality 1x1|              1 to 1|
+|   #266|   Element-wise inequality 1x1|              1 to 1|
+|   #267|   Element-wise inequality 1x1|              1 to 1|
+|   #268|   Element-wise inequality 1x1|              1 to 1|
+|   #269|   Element-wise inequality 1x1|              1 to 1|
+|   #270|   Element-wise inequality 1x1|              1 to 1|
+|   #271|   Element-wise inequality 1x1|              1 to 1|
+|   #272|   Element-wise inequality 1x1|              1 to 1|
+|   #273|   Element-wise inequality 1x1|              1 to 1|
+|   #274|   Element-wise inequality 1x1|              1 to 1|
+|   #275|   Element-wise inequality 1x1|              1 to 1|
+|   #276|   Element-wise inequality 1x1|              1 to 1|
+|   #277|   Element-wise inequality 1x1|              1 to 1|
+|   #278|   Element-wise inequality 1x1|              1 to 1|
+|   #279|   Element-wise inequality 1x1|              1 to 1|
+|   #280|   Element-wise inequality 1x1|              1 to 1|
+|   #281|   Element-wise inequality 1x1|              1 to 1|
+|   #282|   Element-wise inequality 1x1|              1 to 1|
+|   #283|   Element-wise inequality 1x1|              1 to 1|
+|   #284|   Element-wise inequality 1x1|              1 to 1|
+|   #285|   Element-wise inequality 1x1|              1 to 1|
+|   #286|   Element-wise inequality 1x1|              1 to 1|
+|   #287|   Element-wise inequality 1x1|              1 to 1|
+|   #288|   Element-wise inequality 1x1|              1 to 1|
+|   #289|   Element-wise inequality 1x1|              1 to 1|
+|   #290|   Element-wise inequality 1x1|              1 to 1|
+|   #291|   Element-wise inequality 1x1|              1 to 1|
+|   #292|   Element-wise inequality 1x1|              1 to 1|
+|   #293|   Element-wise inequality 1x1|              1 to 1|
+|   #294|   Element-wise inequality 1x1|              1 to 1|
+|   #295|   Element-wise inequality 1x1|              1 to 1|
+|   #296|   Element-wise inequality 1x1|              1 to 1|
+|   #297|   Element-wise inequality 1x1|              1 to 1|
+|   #298|   Element-wise inequality 1x1|              1 to 1|
+|   #299|   Element-wise inequality 1x1|              1 to 1|
+|   #300|   Element-wise inequality 1x1|              1 to 1|
+|   #301|   Element-wise inequality 1x1|              1 to 1|
+|   #302|   Element-wise inequality 1x1|              1 to 1|
+|   #303|   Element-wise inequality 1x1|              1 to 1|
+|   #304|   Element-wise inequality 1x1|              1 to 1|
+|   #305|   Element-wise inequality 1x1|              1 to 1|
+|   #306|   Element-wise inequality 1x1|              1 to 1|
+|   #307|   Element-wise inequality 1x1|              1 to 1|
+|   #308|   Element-wise inequality 1x1|              1 to 1|
+|   #309|   Element-wise inequality 1x1|              1 to 1|
+|   #310|   Element-wise inequality 1x1|              1 to 1|
+|   #311|   Element-wise inequality 1x1|              1 to 1|
+|   #312|   Element-wise inequality 1x1|              1 to 1|
+|   #313|   Element-wise inequality 1x1|              1 to 1|
+|   #314|   Element-wise inequality 1x1|              1 to 1|
+|   #315|   Element-wise inequality 1x1|              1 to 1|
+|   #316|   Element-wise inequality 1x1|              1 to 1|
+|   #317|   Element-wise inequality 1x1|              1 to 1|
+|   #318|   Element-wise inequality 1x1|              1 to 1|
+|   #319|   Element-wise inequality 1x1|              1 to 1|
+|   #320|   Element-wise inequality 1x1|              1 to 1|
+|   #321|   Element-wise inequality 1x1|              1 to 1|
+|   #322|   Element-wise inequality 1x1|              1 to 1|
+|   #323|   Element-wise inequality 1x1|              1 to 1|
+|   #324|   Element-wise inequality 1x1|              1 to 1|
+|   #325|   Element-wise inequality 1x1|              1 to 1|
+|   #326|   Element-wise inequality 1x1|              1 to 1|
+|   #327|   Element-wise inequality 1x1|              1 to 1|
+|   #328|   Element-wise inequality 1x1|              1 to 1|
+|   #329|   Element-wise inequality 1x1|              1 to 1|
+|   #330|   Element-wise inequality 1x1|              1 to 1|
+|   #331|   Element-wise inequality 1x1|              1 to 1|
+|   #332|   Element-wise inequality 1x1|              1 to 1|
+|   #333|   Element-wise inequality 1x1|              1 to 1|
+|   #334|   Element-wise inequality 1x1|              1 to 1|
+|   #335|   Element-wise inequality 1x1|              1 to 1|
+|   #336|   Element-wise inequality 1x1|              1 to 1|
+|   #337|   Element-wise inequality 1x1|              1 to 1|
+|   #338|   Element-wise inequality 1x1|              1 to 1|
+|   #339|   Element-wise inequality 1x1|              1 to 1|
+|   #340|   Element-wise inequality 1x1|              1 to 1|
+|   #341|   Element-wise inequality 1x1|              1 to 1|
+|   #342|   Element-wise inequality 1x1|              1 to 1|
+|   #343|   Element-wise inequality 1x1|              1 to 1|
+|   #344|   Element-wise inequality 1x1|              1 to 1|
+|   #345|   Element-wise inequality 1x1|              1 to 1|
+|   #346|   Element-wise inequality 1x1|              1 to 1|
+|   #347|   Element-wise inequality 1x1|              1 to 1|
+|   #348|   Element-wise inequality 1x1|              1 to 1|
+|   #349|   Element-wise inequality 1x1|              1 to 1|
+|   #350|   Element-wise inequality 1x1|              1 to 1|
+|   #351|   Element-wise inequality 1x1|              1 to 1|
+|   #352|   Element-wise inequality 1x1|              1 to 1|
+|   #353|   Element-wise inequality 1x1|              1 to 1|
+|   #354|   Element-wise inequality 1x1|              1 to 1|
+|   #355|   Element-wise inequality 1x1|              1 to 1|
+|   #356|   Element-wise inequality 1x1|              1 to 1|
+|   #357|   Element-wise inequality 1x1|              1 to 1|
+|   #358|   Element-wise inequality 1x1|              1 to 1|
+|   #359|   Element-wise inequality 1x1|              1 to 1|
+|   #360|   Element-wise inequality 1x1|              1 to 1|
+|   #361|   Element-wise inequality 1x1|              1 to 1|
+|   #362|   Element-wise inequality 1x1|              1 to 1|
+|   #363|   Element-wise inequality 1x1|              1 to 1|
+|   #364|   Element-wise inequality 1x1|              1 to 1|
+|   #365|   Element-wise inequality 1x1|              1 to 1|
+|   #366|   Element-wise inequality 1x1|              1 to 1|
+|   #367|   Element-wise inequality 1x1|              1 to 1|
+|   #368|   Element-wise inequality 1x1|              1 to 1|
+|   #369|   Element-wise inequality 1x1|              1 to 1|
+|   #370|   Element-wise inequality 1x1|              1 to 1|
+|   #371|   Element-wise inequality 1x1|              1 to 1|
+|   #372|   Element-wise inequality 1x1|              1 to 1|
+|   #373|   Element-wise inequality 1x1|              1 to 1|
+|   #374|   Element-wise inequality 1x1|              1 to 1|
+|   #375|   Element-wise inequality 1x1|              1 to 1|
+|   #376|   Element-wise inequality 1x1|              1 to 1|
+|   #377|   Element-wise inequality 1x1|              1 to 1|
+|   #378|   Element-wise inequality 1x1|              1 to 1|
+|   #379|   Element-wise inequality 1x1|              1 to 1|
+|   #380|   Element-wise inequality 1x1|              1 to 1|
+|   #381|   Element-wise inequality 1x1|              1 to 1|
+|   #382|   Element-wise inequality 1x1|              1 to 1|
+|   #383|   Element-wise inequality 1x1|              1 to 1|
+|   #384|   Element-wise inequality 1x1|              1 to 1|
+|   #385|   Element-wise inequality 1x1|              1 to 1|
+|   #386|   Element-wise inequality 1x1|              1 to 1|
+|   #387|   Element-wise inequality 1x1|              1 to 1|
+|   #388|   Element-wise inequality 1x1|              1 to 1|
+|   #389|   Element-wise inequality 1x1|              1 to 1|
+|   #390|   Element-wise inequality 1x1|              1 to 1|
+|   #391|   Element-wise inequality 1x1|              1 to 1|
+|   #392|   Element-wise inequality 1x1|              1 to 1|
+|   #393|   Element-wise inequality 1x1|              1 to 1|
+|   #394|   Element-wise inequality 1x1|              1 to 1|
+|   #395|   Element-wise inequality 1x1|              1 to 1|
+|   #396|   Element-wise inequality 1x1|              1 to 1|
+|   #397|   Element-wise inequality 1x1|              1 to 1|
+|   #398|   Element-wise inequality 1x1|              1 to 1|
+|   #399|   Element-wise inequality 1x1|              1 to 1|
+|   #400|   Element-wise inequality 1x1|              1 to 1|
+|   #401|   Element-wise inequality 1x1|              1 to 1|
+|   #402|   Element-wise inequality 1x1|              1 to 1|
+|   #403|   Element-wise inequality 1x1|              1 to 1|
+|   #404|   Element-wise inequality 1x1|              1 to 1|
+|   #405|   Element-wise inequality 1x1|              1 to 1|
+|   #406|   Element-wise inequality 1x1|              1 to 1|
+|   #407|   Element-wise inequality 1x1|              1 to 1|
+|   #408|   Element-wise inequality 1x1|              1 to 1|
+|   #409|   Element-wise inequality 1x1|              1 to 1|
+|   #410|   Element-wise inequality 1x1|              1 to 1|
+|   #411|   Element-wise inequality 1x1|              1 to 1|
+|   #412|   Element-wise inequality 1x1|              1 to 1|
+|   #413|   Element-wise inequality 1x1|              1 to 1|
+|   #414|   Element-wise inequality 1x1|              1 to 1|
+|   #415|   Element-wise inequality 1x1|              1 to 1|
+|   #416|   Element-wise inequality 1x1|              1 to 1|
+|   #417|   Element-wise inequality 1x1|              1 to 1|
+|   #418|   Element-wise inequality 1x1|              1 to 1|
+|   #419|   Element-wise inequality 1x1|              1 to 1|
+|   #420|   Element-wise inequality 1x1|              1 to 1|
+|   #421|   Element-wise inequality 1x1|              1 to 1|
+|   #422|   Element-wise inequality 1x1|              1 to 1|
+|   #423|   Element-wise inequality 1x1|              1 to 1|
+|   #424|   Element-wise inequality 1x1|              1 to 1|
+|   #425|   Element-wise inequality 1x1|              1 to 1|
+|   #426|   Element-wise inequality 1x1|              1 to 1|
+|   #427|   Element-wise inequality 1x1|              1 to 1|
+|   #428|   Element-wise inequality 1x1|              1 to 1|
+|   #429|   Element-wise inequality 1x1|              1 to 1|
+|   #430|   Element-wise inequality 1x1|              1 to 1|
+|   #431|   Element-wise inequality 1x1|              1 to 1|
+|   #432|   Element-wise inequality 1x1|              1 to 1|
+|   #433|   Element-wise inequality 1x1|              1 to 1|
+|   #434|   Element-wise inequality 1x1|              1 to 1|
+|   #435|   Element-wise inequality 1x1|              1 to 1|
+|   #436|   Element-wise inequality 1x1|              1 to 1|
+|   #437|   Element-wise inequality 1x1|              1 to 1|
+|   #438|   Element-wise inequality 1x1|              1 to 1|
+|   #439|   Element-wise inequality 1x1|              1 to 1|
+|   #440|   Element-wise inequality 1x1|              1 to 1|
+|   #441|   Element-wise inequality 1x1|              1 to 1|
+|   #442|   Element-wise inequality 1x1|              1 to 1|
+|   #443|   Element-wise inequality 1x1|              1 to 1|
+|   #444|   Element-wise inequality 1x1|              1 to 1|
+|   #445|   Element-wise inequality 1x1|              1 to 1|
+|   #446|   Element-wise inequality 1x1|              1 to 1|
+|   #447|   Element-wise inequality 1x1|              1 to 1|
+|   #448|   Element-wise inequality 1x1|              1 to 1|
+|   #449|   Element-wise inequality 1x1|              1 to 1|
+|   #450|   Element-wise inequality 1x1|              1 to 1|
+|   #451|   Element-wise inequality 1x1|              1 to 1|
+|   #452|   Element-wise inequality 1x1|              1 to 1|
+|   #453|   Element-wise inequality 1x1|              1 to 1|
+|   #454|   Element-wise inequality 1x1|              1 to 1|
+|   #455|   Element-wise inequality 1x1|              1 to 1|
+|   #456|   Element-wise inequality 1x1|              1 to 1|
+|   #457|   Element-wise inequality 1x1|              1 to 1|
+|   #458|   Element-wise inequality 1x1|              1 to 1|
+|   #459|   Element-wise inequality 1x1|              1 to 1|
+|   #460|   Element-wise inequality 1x1|              1 to 1|
+|   #461|   Element-wise inequality 1x1|              1 to 1|
+|   #462|   Element-wise inequality 1x1|              1 to 1|
+|   #463|   Element-wise inequality 1x1|              1 to 1|
+|   #464|   Element-wise inequality 1x1|              1 to 1|
+|   #465|   Element-wise inequality 1x1|              1 to 1|
+|   #466|   Element-wise inequality 1x1|              1 to 1|
+|   #467|   Element-wise inequality 1x1|              1 to 1|
+|   #468|   Element-wise inequality 1x1|              1 to 1|
+|   #469|   Element-wise inequality 1x1|              1 to 1|
+|   #470|   Element-wise inequality 1x1|              1 to 1|
+|   #471|   Element-wise inequality 1x1|              1 to 1|
+|   #472|   Element-wise inequality 1x1|              1 to 1|
+|   #473|   Element-wise inequality 1x1|              1 to 1|
+|   #474|   Element-wise inequality 1x1|              1 to 1|
+|   #475|   Element-wise inequality 1x1|              1 to 1|
+|   #476|   Element-wise inequality 1x1|              1 to 1|
+|   #477|   Element-wise inequality 1x1|              1 to 1|
+|   #478|   Element-wise inequality 1x1|              1 to 1|
+|   #479|   Element-wise inequality 1x1|              1 to 1|
+|   #480|   Element-wise inequality 1x1|              1 to 1|
+|   #481|   Element-wise inequality 1x1|              1 to 1|
+|   #482|   Element-wise inequality 1x1|              1 to 1|
+|   #483|   Element-wise inequality 1x1|              1 to 1|
+|   #484|   Element-wise inequality 1x1|              1 to 1|
+|   #485|   Element-wise inequality 1x1|              1 to 1|
+|   #486|   Element-wise inequality 1x1|              1 to 1|
+|   #487|   Element-wise inequality 1x1|              1 to 1|
+|   #488|   Element-wise inequality 1x1|              1 to 1|
+|   #489|   Element-wise inequality 1x1|              1 to 1|
+|   #490|   Element-wise inequality 1x1|              1 to 1|
+|   #491|   Element-wise inequality 1x1|              1 to 1|
+|   #492|   Element-wise inequality 1x1|              1 to 1|
+|   #493|   Element-wise inequality 1x1|              1 to 1|
+|   #494|   Element-wise inequality 1x1|              1 to 1|
+|   #495|   Element-wise inequality 1x1|              1 to 1|
+|   #496|   Element-wise inequality 1x1|              1 to 1|
+|   #497|   Element-wise inequality 1x1|              1 to 1|
+|   #498|   Element-wise inequality 1x1|              1 to 1|
+|   #499|   Element-wise inequality 1x1|              1 to 1|
+|   #500|   Element-wise inequality 1x1|              1 to 1|
+|   #501|   Element-wise inequality 1x1|              1 to 1|
+|   #502|   Element-wise inequality 1x1|              1 to 1|
+|   #503|   Element-wise inequality 1x1|              1 to 1|
+|   #504|   Element-wise inequality 1x1|              1 to 1|
+|   #505|   Element-wise inequality 1x1|              1 to 1|
+|   #506|   Element-wise inequality 1x1|              1 to 1|
+|   #507|   Element-wise inequality 1x1|              1 to 1|
+|   #508|   Element-wise inequality 1x1|              1 to 1|
+|   #509|   Element-wise inequality 1x1|              1 to 1|
+|   #510|   Element-wise inequality 1x1|              1 to 1|
+|   #511|   Element-wise inequality 1x1|              1 to 1|
+|   #512|   Element-wise inequality 1x1|              1 to 1|
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+auxsize=size(q);
+auxsize
+
+auxsize =
+
+     8     2     2     2     2     2     2
+
+prod(auxsize(:))
+
+ans =
+
+   512
+
+prod(tempdims(:))
+
+ans =
+
+   512
+
+all_b_y_and_w_d
+
+all_b_y_and_w_d =
+
+     1     1     1     1
+     2     1     1     1
+     1     2     1     1
+     2     2     1     1
+     1     1     2     1
+     2     1     2     1
+     1     2     2     1
+     2     2     2     1
+     1     1     1     2
+     2     1     1     2
+     1     2     1     2
+     2     2     1     2
+     1     1     2     2
+     2     1     2     2
+     1     2     2     2
+     2     2     2     2
+
+all_c_z_and_w_d
+
+all_c_z_and_w_d =
+
+     1     1     1     1
+     2     1     1     1
+     1     2     1     1
+     2     2     1     1
+     1     1     2     1
+     2     1     2     1
+     1     2     2     1
+     2     2     2     1
+     1     1     1     2
+     2     1     1     2
+     1     2     1     2
+     2     2     1     2
+     1     1     2     2
+     2     1     2     2
+     1     2     2     2
+     2     2     2     2
+
+YZinputsCartesianProduct
+
+YZinputsCartesianProduct =
+
+     1     1
+     2     1
+     1     2
+     2     2
+
+coords_cell
+
+coords_cell =
+
+  1×8 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {[3]}    {[2]}    {[2]}    {[2]}    {[2]}    {[2]}    {[2]}    {[2]}
+
+coords_cell = num2cell(cartesianproduct_forprobconstraints(5,:));
+coords_cell
+
+coords_cell =
+
+  1×8 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {[2]}    {[2]}    {[1]}    {[1]}    {[1]}    {[1]}    {[1]}    {[1]}
+
+coords_cell{1}
+
+ans =
+
+     2
+
+coords_cell{nrparties+1}
+
+ans =
+
+     1
+
+coords_cell{2:nrparties}
+
+ans =
+
+     2
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+lam, coords_cell{2:nrparties}, coords_cell{nrparties+2:end}
+
+lam =
+
+     8
+
+
+ans =
+
+     2
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+[lam, coords_cell{2:nrparties}, coords_cell{nrparties+2:end}]
+
+ans =
+
+     8     2     1     1     1     1     1
+
+[coords_cell{:}]
+
+ans =
+
+     2     2     1     1     1     1     1     1
+
+    noisy_prob = (1-alpha) * p1 + (alpha) * p2;
+    
+    probability_constraints = [];
+    productstructure = [nr_inputs_per_party, nr_outputs_per_party];
+    cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure(:)));
+    for idx = 1:size(cartesianproduct_forprobconstraints,1)
+        coords_cell = num2cell(cartesianproduct_forprobconstraints(idx,:));
+        summ = 0;
+        for lam = 1:nr_det_points
+            % for 3 parties, same as det_strategy(lam,x,a) * q(lam,y,z,b,c);
+            summ = summ + det_strategy(lam, coords_cell{1}, coords_cell{nrparties+1}) ... 
+                * q{lam, coords_cell{2:nrparties}, coords_cell{nrparties+2:end}};
+        end
+        %cleanprob = clean(noisy_prob(coords_cell{:}), 1e-12);
+        probability_constraints = [probability_constraints, summ == noisy_prob(coords_cell{:})];
+    end
+coords_cell
+
+coords_cell =
+
+  1×8 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {[3]}    {[2]}    {[2]}    {[2]}    {[2]}    {[2]}    {[2]}    {[2]}
+
+[coords_cell{:}]
+
+ans =
+
+     3     2     2     2     2     2     2     2
+
+noisy_prob
+Multi-dimensional SDPVAR object 3x2x2x2x2x2x2x2
+sdisplay(noisy_prob(coords_cell{:}))
+-4.82250118476e-09+6.5097464255e-12*alpha
+if system_dependent('IsDebugMode')==1, dbquit all; end
+clear all
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 214894
+
+Round 1.
+{Output argument "final_alpha" (and maybe others) not assigned during call to "BroadcastInstrumentLP".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 86)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',86,0)">line 86</a>)
+        [alpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',86,0)
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 214139
+
+Round 1.
+{Undefined function 'dual' for input arguments of type 'sdpvar'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 237)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',237,0)">line 237</a>)
+    final_alpha = value(dual(alpha));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 86)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',86,0)">line 86</a>)
+        [alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',237,0)
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 215518
+
+Round 1.
+Visibility given initial measurements and channels: 0.087092
+{Undefined function or variable 'p1'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ClassicalOptInequality_fromLPBroadcast_INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m', 12)" style="font-weight:bold">ClassicalOptInequality_fromLPBroadcast_INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',12,0)">line 12</a>)
+    assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 88)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',88,0)">line 88</a>)
+        localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',12,0)
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222

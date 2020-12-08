@@ -1,10 +1,14 @@
 function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, nr_inputs_per_party, nr_outputs_per_party) 
-    % IMPORTANT I use the convention where the probabilities are called as
-    % p(x,y,z,a,b,c) instead of p(a,b,c,x,y,z)
-    dims_p = size(bellcoeffs);
-    
-%    assert(mod(length(dims_p),2) == 0, "The bellcoeffs array should have equal number of inputs and outputs.");
+    % IMPORTANT alpha is defined as (1-alpha)*p1 + (alpha)*p2
+    % usually p1 is the entangled, and p2 the uniform, so this
+    % program minimizes alpha using this convention
+    % if p1 and p2 are both local then all alpha are good, it will give 0
+    % if p1 and p2 are both nonlocal the program is infeasible
+    % ideally p1 should be nonlocal, which should give something between 0
+    % and 1
 
+    dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
+    
     nrparties = length(nr_inputs_per_party);
     
     %nr_inputs_per_party = dims_p(1:nrparties);
@@ -21,7 +25,7 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
     tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
     q_coords = ind2subv(tempdims, 1:prod(tempdims(:)));
     tempdims_cell = num2cell(tempdims);
-    qarray = sdpvar(prod(tempdims(:)));
+    qarray = sdpvar(prod(tempdims(:)),1);
     q = cell(tempdims_cell{:});
     for idx = 1:size(q_coords,1)
         coords = num2cell(q_coords(idx,:));
@@ -29,71 +33,70 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
     end
     
     visibility_constraints = [alpha >= 0];
-    %visibility_constraints = [visibility_constraints,alpha <= 1];
-    
+
     positivityconstraints = [];
-	auxsizeq=size(q);
-    for i=1:prod(auxsizeq(:))
+	auxsize=size(q);
+    for i=1:prod(auxsize(:))
         positivityconstraints = [positivityconstraints, qarray(i) >= 0];
     end
     
     
     %% Non signalling constraints
     
-    nonsignalling_constraintsB = [];
+    % Note that we are imposing that q(bd|yzw lam)=q(bd|y w lam) (no z
+    % dependence) but we don't yet marginalize over d. This is because if
+    % the previous is true, then clearly \sum_d q(bd|yw lam) = q(b| y w
+    % lam) is not dependent on z. The condition "q(bd|yzw lam) indep of z" is
+    % stronger than "q(b|yzw lam) indep of z"
+    
+    nonsignalling_constraintsBD = [];
     % non signaling for bob:
     for lam = 1:nr_det_points
-        coordstructure = [nr_outputs_per_party(2), nr_inputs_per_party(2), nr_inputs_per_party(4)];
-        all_b_and_y_and_w = ind2subv(coordstructure, 1:prod(coordstructure(:)));
-        for slice = 1:size(all_b_and_y_and_w,1)
-            b = all_b_and_y_and_w(slice,1);
-            y = all_b_and_y_and_w(slice,2);
-            w = all_b_and_y_and_w(slice,3);
-            % choose z = 1
+        coordstructure = [nr_outputs_per_party(2), nr_inputs_per_party(2), nr_inputs_per_party(4), nr_outputs_per_party(4)];
+        all_b_y_and_w_d = ind2subv(coordstructure, 1:prod(coordstructure(:)));
+        for slice = 1:size(all_b_y_and_w_d,1)
+            b = all_b_y_and_w_d(slice,1);
+            y = all_b_y_and_w_d(slice,2);
+            w = all_b_y_and_w_d(slice,3);
+            d = all_b_y_and_w_d(slice,4);
+            % choose z = 1 for summ1
             summ1 = 0;
             for c = 1:nr_outputs_per_party(3)
-                for d = 1:nr_outputs_per_party(4)
-                    summ1 = summ1 + q{lam,y,1,w,b,c,d};
-                end
+               summ1 = summ1 + q{lam,y,1,w,b,c,d};
             end
             % the marginal for z != 1 should be equal to z=1
-            for z=2:nr_inputs_per_party(3)
+            for z = 2:nr_inputs_per_party(3)
                 summ2 = 0;
                 for c = 1:nr_outputs_per_party(3)
-                    for d = 1:nr_outputs_per_party(4)
-                        summ2 = summ2 + q{lam,y,z,w,b,c,d};
-                    end
+                   summ2 = summ2 + q{lam,y,z,w,b,c,d};
                 end
-                nonsignalling_constraintsB = [nonsignalling_constraintsB, summ1 == summ2];
+                nonsignalling_constraintsBD = [nonsignalling_constraintsBD, summ1 == summ2];
             end
         end
     end
 
     %non signaling for charlie:
-    nonsignalling_constraintsC = [];
+    nonsignalling_constraintsCD = [];
     for lam = 1:nr_det_points
-        coordstructure = [nr_outputs_per_party(3), nr_inputs_per_party(3), nr_inputs_per_party(4)];
-        all_c_and_z_and_w = ind2subv(coordstructure, 1:prod(coordstructure(:)));
-        for slice = 1:size(all_c_and_z_and_w,1)
-            c = all_c_and_z_and_w(slice,1);
-            z = all_c_and_z_and_w(slice,2);
-            w = all_c_and_z_and_w(slice,3);
+        coordstructure = [nr_outputs_per_party(3), nr_inputs_per_party(3), nr_inputs_per_party(4), nr_outputs_per_party(4)];
+        all_c_z_and_w_d = ind2subv(coordstructure, 1:prod(coordstructure(:)));
+        for slice = 1:size(all_c_z_and_w_d,1)
+            c = all_c_z_and_w_d(slice,1);
+            z = all_c_z_and_w_d(slice,2);
+            w = all_c_z_and_w_d(slice,3);
+            d = all_c_z_and_w_d(slice,4);
             % choose y = 1
             summ1 = 0;
             for b = 1:nr_outputs_per_party(2)
-                for d = 1:nr_outputs_per_party(4)
-                    summ1 = summ1 + q{lam,1,z,w,b,c,d};
-                end
+               summ1 = summ1 + q{lam,1,z,w,b,c,d};
             end
             % the marginal for z' != 1 should be equal to z=1
             for y=2:nr_inputs_per_party(2)
                 summ2 = 0;
                 for b = 1:nr_outputs_per_party(2)
-                    for d = 1:nr_outputs_per_party(4)
-                        summ2 = summ2 + q{lam,y,z,w,b,c,d};
-                    end
+                   summ2 = summ2 + q{lam,y,z,w,b,c,d};
                 end
-                nonsignalling_constraintsC = [nonsignalling_constraintsC, summ1 == summ2];
+                nonsignalling_constraintsCD = [nonsignalling_constraintsCD, summ1 == summ2];
             end
         end
     end
@@ -101,13 +104,13 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
     %non signaling between the instrument and bob and charlie
     % nonsignaling for instrument
     % nonsignaling D not influenced by B1 and B2 (or B and C)
-    nonsignalling_constraintsBCD = [];
+    nonsignalling_constraintsD = [];
      for lam = 1:nr_det_points
-        coordstructure = [nr_outputs_per_party(4) nr_inputs_per_party(4)];
-        product = ind2subv(coordstructure, 1:prod(coordstructure(:)));
-        for idx = 1:size(product,1)
-            d = product(idx,1);
-            w = product(idx,2);
+        coordstructure = [nr_outputs_per_party(4), nr_inputs_per_party(4)];
+        all_d_and_w = ind2subv(coordstructure, 1:prod(coordstructure(:)));
+        for idx = 1:size(all_d_and_w,1)
+            d = all_d_and_w(idx,1);
+            w = all_d_and_w(idx,2);
             
             summ1 = 0;
             for b = 1:nr_outputs_per_party(2)
@@ -127,7 +130,7 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
                         summ2 = summ2 + q{lam,y2,z2,w,b,c,d};
                     end
                 end
-                nonsignalling_constraintsBCD = [nonsignalling_constraintsBCD, ...
+                nonsignalling_constraintsD = [nonsignalling_constraintsD, ...
                                         summ1 == summ2];
             end
         end
@@ -135,7 +138,7 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
      
     % partial normalization nonsignaling (summing over bcd should not depend
     % on the inputs)   
-    nonsignalling_constraintsBC = [];
+    nonsignalling_constraintsBCD = [];
     for lam = 1:nr_det_points          
         inputstructure = [nr_inputs_per_party(2), nr_inputs_per_party(3), nr_inputs_per_party(4)];
         all_y_and_z_and_w = ind2subv(inputstructure, 1:prod(inputstructure(:)));
@@ -165,7 +168,8 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
                     end
                 end
             end
-            nonsignalling_constraintsBC = [nonsignalling_constraintsBC, summ1 == summ2];
+            nonsignalling_constraintsBCD = [nonsignalling_constraintsBCD, ...
+                                                summ1 == summ2];
         end
     end
     
@@ -198,14 +202,13 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
             
     constraints = [positivityconstraints, ...
         visibility_constraints, ...
-        normalization_constraints, ...
-        nonsignalling_constraintsB, ...
-        nonsignalling_constraintsC, ...
-        nonsignalling_constraintsBC, ...
+        nonsignalling_constraintsBD, ...
+        nonsignalling_constraintsCD, ...
+        nonsignalling_constraintsD, ...
         nonsignalling_constraintsBCD];
     
     optsol = optimize(constraints, -objective, ...
-        sdpsettings('solver','mosek','verbose',0,'showprogress',0, 'debug', 0, 'warning',0));
+                sdpsettings('solver','mosek','verbose',0));
     
 %                       'mosek.MSK_DPAR_INTPNT_TOL_INFEAS', 1e-6,...
 %                       'mosek.MSK_DPAR_INTPNT_CO_TOL_INFEAS',1e-6));

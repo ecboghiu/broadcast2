@@ -11,8 +11,8 @@ addpath(newdir3);
 %% Fix the scenario
 party_ins = [3,2,2];
 party_outs = [2,2,2];
-instr_ins = [1];
-instr_outs = [1];
+instr_ins = [2];
+instr_outs = [2];
 dims_in = [2];
 dims_out = [4];
 ins = [party_ins, instr_ins];
@@ -28,8 +28,8 @@ diary(diaryname);
 
 %% Fix the rng seed
 semilla = sum(100*clock);
-semilla = 208887; % Fix it for debugging
-semilla = 1;
+%semilla = 208887; % Fix it for debugging
+%semilla = 1;
 fprintf("Fixing random seed = %d\n", uint32(semilla));
 rng(semilla,'twister');
 
@@ -55,7 +55,7 @@ while meta_iteration < MAX_ITER_META
     ALHPA_TOL_DIST_TO_1 = 1e-3;
     LPstatus = 0;
     %% Loop through initial conditions until they are good
-    while abs(alpha-0)<ALHPA_TOL_DIST_TO_1 || LPstatus~=0
+    while abs(alpha-0)<ALHPA_TOL_DIST_TO_1 || abs(alpha-1)<ALHPA_TOL_DIST_TO_1 || LPstatus~=0 
         %% Initialize the POVMs.
         %iniP_proj = givePprojRAND2();  % This uses QETLAB's RandomPOVM()
         iniPovms = givePprojRANDgeneral(party_ins);  % This generates random directions -as 
@@ -72,26 +72,32 @@ while meta_iteration < MAX_ITER_META
         iniChannel = giveINSTRRandomIsometryFamily(instr_ins, instr_outs, dims_in, dims_out);
         %iniChannel = {give_Joe_U()};  % The optimal choice from the paper
 
-        assert(checkPOVMsAreGood(iniPovms,party_ins,party_outs), 'Problem with POVMs');
-        assert(checkThatInstrChannelsAreGood(iniChannel, instr_ins, instr_outs, dims_in, dims_out), 'Problem with the channel');
+        if ~checkPOVMsAreGood(iniPovms,party_ins,party_outs)
+           warning('Problem with POVMs\n');
+        end
+        if ~checkThatInstrChannelsAreGood(iniChannel, instr_ins, instr_outs, dims_in, dims_out)
+           warning('Problem with the channel\n');
+        end
+
         
         %% Run the LP with broadcast-local constraints.
-        p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), iniPovms, iniChannel);
-        p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), iniPovms, iniChannel);
-        [alpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), iniPovms, iniChannel, ins, outs);
+        p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), iniPovms, iniChannel, ins, outs);
+        [alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         fprintf("Visibility given initial measurements and channels: %f\n", alpha);
-        
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
         aux_bpent = bellcoeffs .* (p_entangled);
         aux_bpuni = bellcoeffs .* (p_uniform);
         aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
-        fprintf("With ini meas/channel: s·p1, s·p2, s·(p1-p2), localbound: %f, %f, %f, %f\n", ...
+        fprintf("With ini meas/channel: s·p1=%f, s·p2=%f, s·(p1-p2)=%f, localbound=%f\n", ...
             sum(aux_bpent(:)), ...
             sum(aux_bpuni(:)), ...
             sum(aux_bdiff(:)), ...
             localbound);
-
-        %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
+        fprintf("Function check, alpha1=%f alpha2=%f diff=%f\n", ...
+            visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform), ...
+            alpha,  ...
+            visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform) - alpha);
     end
 
     %% Given initial conditions with ineq, do SDP and then LP again etc.
@@ -115,33 +121,34 @@ while meta_iteration < MAX_ITER_META
         %[localbound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellcoeffs);
         %fprintf("Local bound of bell inequality: %f\n", localbound);
 
-        %[POVMs,finalObj,channels] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(alpha), POVMs, channels);
         [POVMs,finalObj,channels] = SeeSawOverAllPartiesInstrumental(bellcoeffs, NoisyWernerState(0), POVMs, channels, ins, outs);
-        assert(checkPOVMsAreGood(POVMs,party_ins,party_outs),'Problem with POVMs');
-        assert(checkThatInstrChannelsAreGood(channels, instr_ins, instr_outs, dims_in, dims_out), 'Problem with the channel'); % TODO FIX {instr}
-        
+        if ~checkPOVMsAreGood(POVMs,party_ins,party_outs)
+           warning('Problem with POVMs\n');
+        end
+        if ~checkThatInstrChannelsAreGood(channels, instr_ins, instr_outs, dims_in, dims_out)
+           warning('Problem with the channel\n');
+        end
 
-        %outputcritvis = criticalvisibility_std(Pproj, channel, ins, outs);
         oldalpha = alpha;
-        p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), POVMs, channels);
-        p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels);
+        p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), POVMs, channels, ins, outs);
+        p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels, ins, outs);
  
-%         flag_some_prob_not_normalized = false;
-%         tol_prob_normalization = 1e-7;
-%         aux_ins_coords = ind2subv(ins, 1:prod(ins));
-%         for aux=1:size(aux_ins_coords,1)
-%            aux_ins_cell=num2cell(aux_ins_coords(aux,:));
-%            probvec = p_entangled(aux_ins_cell{:},:,:,:,:);
-%            if abs(sum(probvec(:))-1)>tol_prob_normalization
-%                flag_some_prob_not_normalized = true;
-%                break;
-%            end
-%         end
-%         if flag_some_prob_not_normalized
-%             warning("Probability not normalized to precision. Example sum(prob)-1: %g,", sum(probvec(:))-1);
-%         end
+        flag_some_prob_not_normalized = false;
+        tol_prob_normalization = 1e-7;
+        aux_ins_coords = ind2subv(ins, 1:prod(ins));
+        for aux=1:size(aux_ins_coords,1)
+           aux_ins_cell=num2cell(aux_ins_coords(aux,:));
+           probvec = p_entangled(aux_ins_cell{:},:,:,:,:);
+           if abs(sum(probvec(:))-1)>tol_prob_normalization
+               flag_some_prob_not_normalized = true;
+               break;
+           end
+        end
+        if flag_some_prob_not_normalized
+            warning("Probability not normalized to precision. Example sum(prob)-1: %g\n,", sum(probvec(:))-1);
+        end
         
-        [newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        [newalpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
         if newalpha > 0.7
            error("Check what is wrong here"); 
@@ -150,17 +157,21 @@ while meta_iteration < MAX_ITER_META
         aux_bpent = bellcoeffs .* (p_entangled);
         aux_bpuni = bellcoeffs .* (p_uniform);
         aux_bdiff = bellcoeffs .* (p_entangled-p_uniform);
-        fprintf("With optimized meas/channel: s·p1, s·p2, s·(p1-p2), localbound, alpha, LPstatus: %f, %f, %f, %f, %f, %d\n", ...
+        fprintf("With optimized meas/channel: s·p1=%f, s·p2=%f, s·(p1-p2)=%f, localbound=%f, alpha=%f, LPstatus=%f\n", ...
             sum(aux_bpent(:)), ...
             sum(aux_bpuni(:)), ...
             sum(aux_bdiff(:)), ...
             localbound, ...
             newalpha, ...
             LPstatus);
+        fprintf("Function check, alpha1=%f alpha2=%f diff=%f\n", ...
+            visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform), ...
+            newalpha,  ...
+            visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform) - newalpha);
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
         if LPstatus ~= 0 || newalpha >= 1-1e-3
             %disp('LP not solved correctly');
-            warning("LP not solved correctly. Trying another set of initial points. LpStatus=%f, alpha=%f", LPstatus, newalpha);
+            warning("LP not solved correctly. Trying another set of initial points. LpStatus=%f, alpha=%f\n", LPstatus, newalpha);
             break;
             list_of_alphas = [list_of_alphas, 0];
             list_of_povms{iteration} = 0;

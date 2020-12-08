@@ -1,12 +1,15 @@
-function probability_ndarray = ProbMultidimArrayInstrumental(inistate,povms,lambda_w_d)
+function probability_ndarray = ProbMultidimArrayInstrumental(inistate,povms,lambda_w_d,ins,outs)
     % povms is called as povms{party}{input}{output}
-    nrparties = max(size(povms));
-    inputs_per_party = zeros(1,nrparties);
-    outputs_per_party = zeros(1,nrparties);
-    for p=1:nrparties
-        inputs_per_party(p) = max(size(povms{p}));
-        outputs_per_party(p) = max(size(povms{p}{1}));
-    end
+%     nrparties = max(size(povms));
+%     inputs_per_party = zeros(1,nrparties);
+%     outputs_per_party = zeros(1,nrparties);
+%     for p=1:nrparties
+%         inputs_per_party(p) = max(size(povms{p}));
+%         outputs_per_party(p) = max(size(povms{p}{1}));
+%     end
+    inputs_per_party = ins(1:3);
+    outputs_per_party = outs(1:3);
+    nrparties = length(inputs_per_party);
     
     % the channel is called as lambda_w_d{instr}{w}{d}
     nrinstrs = max(size(lambda_w_d));
@@ -16,6 +19,7 @@ function probability_ndarray = ProbMultidimArrayInstrumental(inistate,povms,lamb
         instr_ins(inst) = max(size(lambda_w_d{inst}));
         instr_outs(inst) = max(size(lambda_w_d{inst}{1}));
     end
+    
     
     % Define a zero multidim where to place the probability distribution
     aux = [inputs_per_party, instr_ins, outputs_per_party, instr_outs];

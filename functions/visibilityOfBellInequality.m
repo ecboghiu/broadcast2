@@ -19,7 +19,6 @@ p_noisy = (1-alpha)*p_entangled + alpha*p_uniform;
 
 objective = 0;
 auxsize=size(bellcoeffs);
-prod(auxsize(:))
 coords = ind2subv(size(bellcoeffs), 1:prod(auxsize(:)));
 for idx = 1:size(coords,1)
     coords_choice = num2cell(coords(idx,:));
