@@ -2892,3 +2892,17 @@ Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback
 opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',12,0)
 INSTR
 Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 3222-2222
+Fixing random seed = 211353
+
+Round 1.
+Visibility given initial measurements and channels: 0.146294
+{Undefined function or variable 'probability_constraints'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ClassicalOptInequality_fromLPBroadcast_INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m', 205)" style="font-weight:bold">ClassicalOptInequality_fromLPBroadcast_INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',205,0)">line 205</a>)
+        probability_constraints, ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 88)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',88,0)">line 88</a>)
+        localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\ClassicalOptInequality_fromLPBroadcast_INSTR.m',205,0)
+diary off
