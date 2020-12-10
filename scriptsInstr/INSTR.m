@@ -83,7 +83,8 @@ while meta_iteration < MAX_ITER_META
         %% Run the LP with broadcast-local constraints.
         p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), iniPovms, iniChannel, ins, outs);
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), iniPovms, iniChannel, ins, outs);
-        [alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        %[alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        [alpha, bellcoeffs] = BroadcastSlowLP(p_entangled, p_uniform, ins, outs);
         fprintf("Visibility given initial measurements and channels: %f\n", alpha);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
         aux_bpent = bellcoeffs .* (p_entangled);
@@ -148,7 +149,8 @@ while meta_iteration < MAX_ITER_META
             warning("Probability not normalized to precision. Example sum(prob)-1: %g\n,", sum(probvec(:))-1);
         end
         
-        [newalpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        %[newalpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        [newalpha, bellcoeffs] = BroadcastSlowLP(p_entangled, p_uniform, ins, outs);
         localbound = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, ins, outs);
         if newalpha > 0.7
            error("Check what is wrong here"); 

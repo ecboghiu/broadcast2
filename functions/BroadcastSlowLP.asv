@@ -1,12 +1,84 @@
-function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(bellcoeffs, nr_inputs_per_party, nr_outputs_per_party) 
-    % IMPORTANT alpha is defined as (1-alpha)*p1 + (alpha)*p2
-    % usually p1 is the entangled, and p2 the uniform, so this
-    % program minimizes alpha using this convention
-    % if p1 and p2 are both local then all alpha are good, it will give 0
-    % if p1 and p2 are both nonlocal the program is infeasible
-    % ideally p1 should be nonlocal, which should give something between 0
-    % and 1
+function [alpha, bellcoeffs] = BroadcastSlowLP(p1,p2,nr_inputs_per_party,nr_outputs_per_party)
 
+% for this code p1 should be outside the local set and p2 inside
+dims_p = [nr_inputs_per_party, 
+assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
+if norm( p1(:) - p2(:) ) < 1e-6
+    warning("The probabilities should not be almost equal.")
+    LPstatus = 1000;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
+    return;
+end
+
+
+[L1, ~] = SlowLP(p1, nr_inputs_per_party, nr_outputs_per_party);
+[L2, ~] = SlowLP(p2, nr_inputs_per_party, nr_outputs_per_party);
+if L1 == 0 && L2 == 0
+    alpha = 0;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
+    warning("Both points are inside the local set!");
+    return;
+end
+if L1 == 1 && L2 == 1
+    alpha = 0;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
+    warning("Both points are outside the local set!");
+    return;
+end
+if L1 == 0 && L2 == 1
+    alpha = 0;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
+    warning("Better to switch around p1 and p2 (so p1 is outside the broadcast-local set)");
+    return;
+end
+if L1 == 1 && L2 == 0
+    
+    a1 = 0;
+    a2 = 1;
+    am = (a1+a2)/2;
+    
+    l1 = 1;
+    l2 = 0;
+    noisy_prob = (1-am) * p1 + (am) * p2;
+    [lm, bellcoeffs] = SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party);
+
+
+    precision = 1;
+    tol = 1e-3;
+    while precision>tol        
+        if lm == l1
+            a1 = am;
+            a2 = a2;
+            am = (a1+a2)/2; 
+            l1 = lm;
+            l2 = l2;
+            alpha_prev = a1;
+        else
+            a1 = a1;
+            a2 = am;
+            am = (a1+a2)/2; 
+            l1 = l1;
+            l2 = lm;
+            alpha_prev = a2;
+        end
+        
+        noisy_prob = (1-am) * p1 + (am) * p2;
+        [lm, bellcoeffs] = SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party);
+        fprintf("LP bisection progress: am=%f lm=%f\n", am, lm);
+        
+        precision = abs(alpha_prev-am);
+    end
+end
+
+alpha = am;
+% bellcoeffs is already calculated
+end
+
+function [LPstatus, bellcoeffs] = SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party)
     dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
     
     nrparties = length(nr_inputs_per_party);
@@ -20,7 +92,6 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
     
     nr_det_points = nroutputsofA^nrinputsofA;
   
-    alpha = sdpvar(1); % alpha will be the visibility
 
     tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
     q_coords = ind2subv(tempdims, 1:prod(tempdims(:)));
@@ -31,8 +102,6 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
         coords = num2cell(q_coords(idx,:));
         q{coords{:}} = qarray(idx);
     end
-    
-    visibility_constraints = [alpha >= 0];
 
     positivityconstraints = [];
 	auxsize=size(q);
@@ -175,52 +244,49 @@ function [local_bound, LPstatus] = ClassicalOptInequality_fromLPBroadcast_INSTR(
     
     %% Probability constraints
     det_strategy = givedetstratA(nr_outputs_per_party(1),nr_inputs_per_party(1));
-
-    objective = 0;
-    normalization_constraints = [];
-    %productstructure = [nr_inputs_per_party, nr_outputs_per_party];
-    settings_combinations = ind2subv(nr_inputs_per_party, 1:prod(nr_inputs_per_party(:)));
-    outputs_combinations = ind2subv(nr_outputs_per_party, 1:prod(nr_outputs_per_party(:)));
-    %cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure(:)));
-    for slice_settings = 1:size(settings_combinations,1)
-        xyz_cell = num2cell(settings_combinations(slice_settings,:));
-        normalization_summ = 0;
-        for slice_outputs = 1:size(outputs_combinations, 1)
-            abc_cell = num2cell(outputs_combinations(slice_outputs,:));
-            summ = 0;
-            for lam = 1:nr_det_points
-                % for 3 parties, same as det_strategy(lam,x,a) * q(lam,y,z,b,c);
-                summ = summ + det_strategy(lam, xyz_cell{1}, abc_cell{1}) ... 
-                            * q{lam, xyz_cell{2:end}, abc_cell{2:end}};
-            end
-            objective = objective + bellcoeffs(xyz_cell{:}, abc_cell{:}) * summ;
-            normalization_summ = normalization_summ + summ;
+    
+    probability_constraints = [];
+    productstructure = [nr_inputs_per_party, nr_outputs_per_party];
+    cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure(:)));
+    for idx = 1:size(cartesianproduct_forprobconstraints,1)
+        coords_cell = num2cell(cartesianproduct_forprobconstraints(idx,:));
+        summ = 0;
+        for lam = 1:nr_det_points
+            % for 3 parties, same as det_strategy(lam,x,a) * q(lam,y,z,b,c);
+            summ = summ + det_strategy(lam, coords_cell{1}, coords_cell{nrparties+1}) ... 
+                * q{lam, coords_cell{2:nrparties}, coords_cell{nrparties+2:end}};
         end
-        normalization_constraints = [normalization_constraints, normalization_summ == 1];
+        probability_constraints = [probability_constraints, summ == noisy_prob(coords_cell{:})];
     end
+    
     %% Solving the SDP
+    
+    objective = 0;
             
     constraints = [positivityconstraints, ...
-        visibility_constraints, ...
+        probability_constraints, ...
         nonsignalling_constraintsBD, ...
         nonsignalling_constraintsCD, ...
         nonsignalling_constraintsD, ...
-        nonsignalling_constraintsBCD, ...
-        normalization_constraints];
-    
-    optsol = optimize(constraints, -objective, ...
-                sdpsettings('solver','mosek','verbose',0));
-    
-%                       'mosek.MSK_DPAR_INTPNT_TOL_INFEAS', 1e-6,...
-%                       'mosek.MSK_DPAR_INTPNT_CO_TOL_INFEAS',1e-6));
-%     optsol = optimize(constraints, objective, ...
-%         sdpsettings('solver','gurobi','verbose',1,'showprogress',1, 'debug', 1, 'warning',1));    
-%   
+        nonsignalling_constraintsBCD];
+    optsol = optimize(constraints, objective, ...
+        sdpsettings('solver','mosek','verbose',0));
+
     LPstatus = optsol.problem;
-    if LPstatus ~= 0
-        disp(optsol)
-        warning('! Check why the problem is not successfully solved.');
-    end    
-    local_bound = value(objective);
+    
+    dimcell = num2cell([nr_inputs_per_party,nr_outputs_per_party]);
+    bellcoeffs = zeros(dimcell{:});           
+    
+    if LPstatus == 0
+        for index = 1:size(cartesianproduct_forprobconstraints,1)
+            % Here I need to make sure that say, index = 6, corresponds to the
+            % same (x,y,z,a,b,c) tuple that it did when defining the
+            % probability constraints. I make sure of that by using the same
+            % array for looping, 'cartesianproduct_forprobconstraints'
+            coords_cell = num2cell(cartesianproduct_forprobconstraints(index,:));
+            bellcoeffs(coords_cell{:}) = -value(dual(probability_constraints(index)));
+        end
+    end
+
 end
 

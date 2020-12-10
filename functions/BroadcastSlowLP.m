@@ -1,64 +1,90 @@
 function [alpha, bellcoeffs] = BroadcastSlowLP(p1,p2,nr_inputs_per_party,nr_outputs_per_party)
 
-
-
-[LPstatus, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outputs_per_party);
-
-[L0, bellcoeffs] = SlowLP(p1,p2,0,nr_inputs_per_party,nr_outputs_per_party);
-[L1, bellcoeffs] = SlowLP(p1,p2,1,nr_inputs_per_party,nr_outputs_per_party);
-if L0 == 0 && L1 == 0
+% for this code p1 should be outside the local set and p2 inside
+dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
+assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
+if norm( p1(:) - p2(:) ) < 1e-6
+    warning("The probabilities should not be almost equal.")
+    LPstatus = 1000;
     alpha = 0;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
+    return;
+end
+
+
+[L1, ~] = SlowLP(p1, nr_inputs_per_party, nr_outputs_per_party);
+[L2, ~] = SlowLP(p2, nr_inputs_per_party, nr_outputs_per_party);
+if L1 == 0 && L2 == 0
+    alpha = 0;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
     warning("Both points are inside the local set!");
     return;
 end
-if L0 == 1 && L1 == 1
+if L1 == 1 && L2 == 1
+    alpha = 0;
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
     warning("Both points are outside the local set!");
     return;
 end
-if L0 == 0 && L1 == 1
+if L1 == 0 && L2 == 1
     alpha = 0;
-    warning("Better to switch around p1 and p2 (so p1 is outside broadcast-local set)");
+    aux_cell = num2cell(dims_p);
+    bellcoeffs = zeros(aux_cell{:});
+    warning("Better to switch around p1 and p2 (so p1 is outside the broadcast-local set)");
     return;
 end
-if L0 == 1 && L1 == 0
-    alpha = aux_midpoint(0,1);
-    l1 = L0;
+if L1 == 1 && L2 == 0
+    
+    a1 = 0;
+    a2 = 1;
+    am = (a1+a2)/2;
+    
+    l1 = 1;
+    l2 = 0;
+    noisy_prob = (1-am) * p1 + (am) * p2;
+    [lm, ~] = SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party);
+
 
     precision = 1;
-    tol = 1e-4;
-    while precision>tol
-        l0 = l1;
-        [l1, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outputs_per_party);
-    
-        if l1 == l0
-           alpha =  
-        end
-        if LPstatus == 1
-            alpha = aux_midpoint(0,alpha);
+    tol = 1e-3;
+    while precision>tol        
+        if lm == l1
+            a1 = am;
+            a2 = a2;
+            am = (a1+a2)/2; 
+            l1 = lm;
+            l2 = l2;
+            alpha_prev = a1;
         else
-           alpha = aux_midpoint(alpha,1); 
+            a1 = a1;
+            a2 = am;
+            am = (a1+a2)/2; 
+            l1 = l1;
+            l2 = lm;
+            alpha_prev = a2;
         end
+        
+        noisy_prob = (1-am) * p1 + (am) * p2;
+        [lm, bellcoeffs_temp] = SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party);
+        fprintf("LP bisection progress: am=%g lm=%g\n", am, lm);
+        if lm == 0
+            bellcoeffs = bellcoeffs_temp;
+            dispBellCoeffsINSTR(bellcoeffs,nr_inputs_per_party,nr_outputs_per_party)
+        end
+
+        precision = abs(alpha_prev-am);
     end
-    
-end
 end
 
-function out=aux_midpoint(x,y)
-out=(x+y)/2;
+alpha = am;
+% bellcoeffs is already calculated
 end
 
-function [LPstatus, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outputs_per_party)
+function [LPstatus, bellcoeffs] = SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party)
     dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
-    
-    assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
-    if norm( p1(:) - p2(:) ) < 1e-6
-        warning("The probabilities should not be almost equal.")
-        LPstatus = 1000;
-        aux_cell = num2cell(dims_p);
-        bellcoeffs = zeros(aux_cell{:});
-
-        return;
-    end
     
     nrparties = length(nr_inputs_per_party);
     
@@ -223,8 +249,6 @@ function [LPstatus, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outp
     
     %% Probability constraints
     det_strategy = givedetstratA(nr_outputs_per_party(1),nr_inputs_per_party(1));
-
-    noisy_prob = (1-alpha) * p1 + (alpha) * p2;
     
     probability_constraints = [];
     productstructure = [nr_inputs_per_party, nr_outputs_per_party];
@@ -245,7 +269,6 @@ function [LPstatus, bellcoeffs] = SlowLP(p1,p2,alpha,nr_inputs_per_party,nr_outp
     objective = 0;
             
     constraints = [positivityconstraints, ...
-        visibility_constraints, ...
         probability_constraints, ...
         nonsignalling_constraintsBD, ...
         nonsignalling_constraintsCD, ...
