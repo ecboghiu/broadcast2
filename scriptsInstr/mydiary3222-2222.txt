@@ -54963,4 +54963,62 @@ Visibility after optimizing over POVMs and channels: 0.000000
 Best visibility: 0.422650
 
 Round 4.
-Visibility given
+Visibility given initial measurements and channels: 0.160707
+Visibility given initial measurements and channels: 0.231461
+iter=1, partyidx=1, bellineqvalue=0.304969, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.329052, abschangeobjval=0.0240826
+iter=3, partyidx=3, bellineqvalue=0.345297, abschangeobjval=0.016245
+iter=4, channelq=~, bellineqvalue=1.105779, abschangeobjval=0.760483
+iter=5, partyidx=1, bellineqvalue=1.105912, abschangeobjval=0.000132636
+iter=6, partyidx=2, bellineqvalue=1.105912, abschangeobjval=4.06385e-08
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.293005, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.293005, abschangeobjval=7.72369e-07
+    yalmipversion: '20200930'
+    matlabversion: '9.4.0.813654 (R2018a)'
+       yalmiptime: 0.1235
+       solvertime: 0.0025
+             info: 'Infeasible problem (MOSEK)'
+          problem: 1
+
+[Warning: The LP with the visibility not successfully solved.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 225)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',225,0)">line 225</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 168)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',168,0)">line 168</a>)] 
+If cleaning didn't help, check the validity of the POVMs and channels.
+Now applying bisection algorithm.
+LP bisection progress: am=0.25 lm=1
+LP bisection progress: am=0.375 lm=0
+LP bisection progress: am=0.3125 lm=0
+LP bisection progress: am=0.28125 lm=1
+LP bisection progress: am=0.296875 lm=0
+LP bisection progress: am=0.289063 lm=1
+LP bisection progress: am=0.292969 lm=0
+LP bisection progress: am=0.291016 lm=1
+LP bisection progress: am=0.291992 lm=1
+Visibility after optimizing over POVMs and channels: 0.000000
+Best visibility: 0.422650
+
+Round 5.
+Visibility given initial measurements and channels: 0.021086
+Visibility given initial measurements and channels: 0.130981
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m', 469)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m',469,0)">line 469</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 216)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',216,0)">line 216</a>)
+    optsol = optimize(constraints, objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 88)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',88,0)">line 88</a>)
+        [alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+INSTR-3221-2221
+{Attempt to execute SCRIPT INSTR as a function:
+C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m
+} 
+INSTR.3221.2221
+ INSTR.3221.2221
+      
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
