@@ -3,7 +3,7 @@ function [alpha, bellcoeffs] = BroadcastSlowLP(p1,p2,nr_inputs_per_party,nr_outp
 % for this code p1 should be outside the local set and p2 inside
 dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
 assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
-if norm( p1(:) - p2(:) ) < 1e-6
+if norm( p1(:) - p2(:) ) < 1e-3
     warning("The probabilities should not be almost equal.")
     LPstatus = 1000;
     alpha = 0;
@@ -72,7 +72,6 @@ if L1 == 1 && L2 == 0
         fprintf("LP bisection progress: am=%g lm=%g\n", am, lm);
         if lm == 0
             bellcoeffs = bellcoeffs_temp;
-            dispBellCoeffsINSTR(bellcoeffs,nr_inputs_per_party,nr_outputs_per_party)
         end
 
         precision = abs(alpha_prev-am);

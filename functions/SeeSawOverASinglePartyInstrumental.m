@@ -107,10 +107,6 @@ function [newPproj,bellineqvalue,problemStatus] = SeeSawOverASinglePartyInstrume
             newPproj{partyidx}{x}{a} = value(chosenPartyMeasurements{x}{a});
         end
     end
-    %for x=ins{partyidx}
-    %    fprintf("result for p=%d x=%d\n", partyidx, x);
-    %    disp([newPproj{partyidx}{x}{1},newPproj{partyidx}{x}{2},newPproj{partyidx}{x}{1}+newPproj{partyidx}{x}{2}]); 
-    %end
     
     bellineqvalue = value(objective);
 end

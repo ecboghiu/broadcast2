@@ -215,16 +215,18 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
         nonsignalling_constraintsBCD];
     optsol = optimize(constraints, objective, ...
         sdpsettings('solver','mosek','verbose',0));
-
-    LPstatus = optsol.problem;
-    if LPstatus ~= 0
-       disp(optsol)
-       warning('Check why the problem is not successfully solved.');
-    end
     
     dimcell = num2cell([nr_inputs_per_party,nr_outputs_per_party]);
     bellcoeffs = zeros(dimcell{:});           
 
+    LPstatus = optsol.problem;
+    if LPstatus ~= 0
+       disp(optsol)
+       warning('The LP with the visibility not successfully solved.');
+       final_alpha = 0;
+       return;
+    end
+    
     for index = 1:size(cartesianproduct_forprobconstraints,1)
         % Here I need to make sure that say, index = 6, corresponds to the
         % same (x,y,z,a,b,c) tuple that it did when defining the

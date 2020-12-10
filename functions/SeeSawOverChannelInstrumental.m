@@ -98,7 +98,6 @@ function [newchannel,newobjval,problemStatus] = SeeSawOverChannelInstrumental(in
     for instrument=1:instr
        for w=1:instr_ins(1)
           for d=1:instr_outs(1)
-              %channels{instr}{w}{d} = cleanChannel(value(choi{w}{d}),inputdimspace,outputdimspace,1e-10);
               channels{instr}{w}{d} = value(choi{w}{d});
           end
        end

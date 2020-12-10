@@ -1,28 +1,29 @@
-function out = cleanChannel(channel, dim_in, dim_out, tol)
-tol_psd = tol;
-tol_cleansmallnumbers = 1e-12;
+function out = cleanChannel(channel, d1, d2)
+if ~IsPSD(channel)
+    Cm = ChoiMatrix(channel);  % input must be in choi form
 
-% input must be in choi form
-Cm = clean( ChoiMatrix(channel) , tol_cleansmallnumbers);
-% Cm = (Cm + Cm')/2; % make hermitian
+    % d1 = in
+    % d2 = out
+    two_C = kron(PartialTrace(Cm, 2, [d1, d2]), eye(d2)/d2);
+    onetwo_C = trace(Cm)*eye(d1*d2)/(d1*d2);
 
-d1 = dim_in;
-d2 = dim_out;
+    Cprime = Cm - two_C + onetwo_C;
+    Cprimeprime = Cprime*d1/trace(Cprime);
 
-two_C = kron(PartialTrace(Cm, 2, [d1, d2]), eye(d2)/d2);
-onetwo_C = trace(Cm)*eye(d1*d2)/(d1*d2);
+    smallesteig = min(eig(Cprimeprime));
+    if smallesteig < 0
+        eta = abs(smallesteig)/(abs(smallesteig)+1/d2);
+        out = (1-eta) * Cprimeprime + eta * eye(d1*d2)/d2;
+    else
+        out = Cprimeprime;
+    end
 
-Cprime = Cm - two_C + onetwo_C;
-Cprimeprime = Cprime*d1/trace(Cm);
-
-[eigvec,eigvals] = eig(Cprimeprime);
-
-smallesteig = min(clean(diag(eigvals),tol_cleansmallnumbers));
-if smallesteig < 0
-    psdCdiag = (1-abs(smallesteig)) * diag(eigvals) + abs(smallesteig) * eye(d1*d2)/d2;
-    out = eigvec^-1 * psdCdiag * eigvec;
+    assert(norm(PartialTrace(out,2,[d1,d2])-eye(d1),'fro')<1e-12,"Choi matrix condition not satisfied");
+    assert(IsPSD(out),"Choi matrix not positive");
+    fprintf("after cleaning: %f smallest_eig=%f\n", norm(out-channel, 'fro'), smallesteig);
+    
 else
-    out = Cprimeprime;
+    out=channel;
 end
 
 end
