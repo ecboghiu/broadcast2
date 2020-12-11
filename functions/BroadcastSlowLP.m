@@ -2,13 +2,14 @@ function [alpha, bellcoeffs] = BroadcastSlowLP(p1,p2,nr_inputs_per_party,nr_outp
 
 % for this code p1 should be outside the local set and p2 inside
 dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
+aux_cell = num2cell(dims_p);
 assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
+alpha = 0;
+am = 0;
+bellcoeffs = zeros(aux_cell{:});
 if norm( p1(:) - p2(:) ) < 1e-3
     warning("The probabilities should not be almost equal.")
     LPstatus = 1000;
-    alpha = 0;
-    aux_cell = num2cell(dims_p);
-    bellcoeffs = zeros(aux_cell{:});
     return;
 end
 
@@ -72,6 +73,8 @@ if L1 == 1 && L2 == 0
         fprintf("LP bisection progress: am=%g lm=%g\n", am, lm);
         if lm == 0
             bellcoeffs = bellcoeffs_temp;
+        else
+            bellcoeffs = zeros(aux_cell{:});
         end
 
         precision = abs(alpha_prev-am);
@@ -268,11 +271,11 @@ function [LPstatus, bellcoeffs] = SlowLP(noisy_prob, nr_inputs_per_party, nr_out
     objective = 0;
             
     constraints = [positivityconstraints, ...
-        probability_constraints, ...
-        nonsignalling_constraintsBD, ...
-        nonsignalling_constraintsCD, ...
-        nonsignalling_constraintsD, ...
-        nonsignalling_constraintsBCD];
+                    probability_constraints, ...
+                    nonsignalling_constraintsBD, ...
+                    nonsignalling_constraintsCD, ...
+                    nonsignalling_constraintsD, ...
+                    nonsignalling_constraintsBCD];
     optsol = optimize(constraints, objective, ...
         sdpsettings('solver','mosek','verbose',0));
 

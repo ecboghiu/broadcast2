@@ -21,7 +21,7 @@ outs = [party_outs, instr_outs];
 %% To print the scenario.
 aux_ins = string([party_ins, instr_ins]);
 aux_outs = string([party_outs, instr_outs]);
-Scenario=strcat(aux_ins{:},'-',aux_outs{:});
+Scenario=strcat(aux_ins{:},'_',aux_outs{:});
 fprintf("Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = %s\n", Scenario);
 diaryname=strcat('mydiary',Scenario,'.txt');
 diary(diaryname);
@@ -166,6 +166,7 @@ while meta_iteration < MAX_ITER_META
         end
         
         [newalpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+        fprintf("tentative newalpha=%f, sum(bellcoeffs)=%f, LPstatus=%f\n", newalpha, sum(bellcoeffs(:)), LPstatus);
         if LPstatus ~= 0
             cleaning_tol = 1e-12;
             iter = 1;
@@ -245,9 +246,10 @@ while meta_iteration < MAX_ITER_META
            best_index = best_index + 1;
         end
         fprintf("Best visibility: %f\n", best_alpha);
+        save(strcat('matlabworkspace_',Scenario,'.mat'));
     end
     
     meta_iteration = meta_iteration + 1;
 end
 
-save(strcat('matlabworkspace_asini',Scenario,'.mat'));
+save(strcat('matlabworkspace_',Scenario,'.mat'));

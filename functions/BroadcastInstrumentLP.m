@@ -6,7 +6,7 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
     % if p1 and p2 are both nonlocal the program is infeasible
     % ideally p1 should be nonlocal, which should give something between 0
     % and 1
-
+    LPstatus = 1;
     dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
     
     assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
