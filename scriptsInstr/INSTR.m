@@ -30,6 +30,7 @@ diary(diaryname);
 semilla = sum(100*clock);
 %semilla = 216391; % Fix it for debugging
 %semilla = 1;
+semilla = 1;
 fprintf("Fixing random seed = %g\n", uint32(semilla));
 rng(semilla,'twister');
 
@@ -151,6 +152,7 @@ while meta_iteration < MAX_ITER_META
         p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), POVMs, channels, ins, outs);
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), POVMs, channels, ins, outs);
  
+        %% Check probs are good
         flag_some_prob_not_normalized = false;
         tol_prob_normalization = 1e-7;
         aux_ins_coords = ind2subv(ins, 1:prod(ins));
@@ -167,11 +169,12 @@ while meta_iteration < MAX_ITER_META
         
         [newalpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
         fprintf("tentative newalpha=%f, sum(bellcoeffs)=%f, LPstatus=%f\n", newalpha, sum(bellcoeffs(:)), LPstatus);
+        %% First try cleaning the numbers and then do bisection if it doesn't work
         if LPstatus ~= 0
             cleaning_tol = 1e-12;
             iter = 1;
-            while LPstatus ~= 0 && iter < 9 && newalpha > 0.7
-               fprintf("Using clean(p,%g). Previous LPstatus: %d\n", cleaning_tol, LPstatus);
+            while LPstatus ~= 0 && iter < 9
+               fprintf("LP using clean(probs,%g).\n", cleaning_tol);
                [newalpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP( ...
                    clean(p_entangled,cleaning_tol), ...
                    clean(p_uniform,cleaning_tol), ...
@@ -179,16 +182,23 @@ while meta_iteration < MAX_ITER_META
                cleaning_tol = cleaning_tol * 10;
                iter = iter + 1;
             end
-            fprintf("If cleaning didn't help, check the validity of the POVMs and channels.\n");
-            fprintf("Now applying bisection algorithm.\n");
-            [probablybad_newalpha,bellcoeffs] = BroadcastSlowLP( ...
-                   p_entangled, ...
-                   p_uniform, ...
-                   ins, outs);
-            if 0 < probablybad_newalpha && probablybad_newalpha < 0.8
-               LPstatus = 0; 
+            if LPstatus ~= 0 || newalpha-(1-1/3)>1e-4
+                fprintf("Cleaning didn't help. Now applying bisection algorithm.\n");
+                [probablybad_newalpha,bellcoeffs] = BroadcastSlowLP( ...
+                       p_entangled, ...
+                       p_uniform, ...
+                       ins, outs);
+                if 0 < probablybad_newalpha && probablybad_newalpha < 0.8
+                   LPstatus = 0; 
+                end
+                newalpha = 0; %% TODO FIX this, sometimes the alpha I get is bad...
+            else
+                fprintf("Result after cleaning numbers: alpha=%f, LPstatus=%f\n", newalpha, LPstatus);
+                if newalpha-(1-1/3)>1e-4
+                   fprintf("The visibility shouldn't be higher than 0.666 because there is no entanglement in that range. \nTherefore there must be some numerical error so we discard this result.\");
+                   newalpha = 0;
+                end
             end
-            newalpha = 0; %% TODO FIX this, sometimes the alpha I get is bad...
         end
         
 %         aux_bpent = bellcoeffs .* (p_entangled);
@@ -208,7 +218,7 @@ while meta_iteration < MAX_ITER_META
         %    visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform) - newalpha);
         
         %fprintf("Visibility after optimizing: %f\n", visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform));
-        if LPstatus ~= 0 || newalpha >= 1-1e-3
+        if LPstatus ~= 0 || abs(alpha-1)>0.9
             %disp('LP not solved correctly');
             warning("LP not solved correctly. Trying another set of initial points. LpStatus=%f, alpha=%f\n", LPstatus, newalpha);
             break;
@@ -244,8 +254,38 @@ while meta_iteration < MAX_ITER_META
            best_bellcoeffs = list_of_bellcoeffs{end};
            best_everything{best_index} = {best_alpha, best_povm, best_channels, best_bellcoeffs};
            best_index = best_index + 1;
+           
+           fprintf("New best found. Details:\n\n");
+           fprintf("Bell expression in probability notation:\n");
+           disp(dispBellCoeffsINSTR(best_everything{end}{4},ins,outs));
+           fprintf("Instrument channels in Krauss form:\n");
+           fprintf("Instrument 1. dims_in=%d, dims_out=%d\n", dims_in, dims_out);
+           for w=1:instr_ins(1)
+               k = 0;
+               for d=1:instr_outs(1)
+                   k = k + best_everything{end}{3}{1}{w}{d};
+               end
+               fprintf("w=%d, Spectrum of sum_d Lambda^w_d:\n", w);
+               disp(eig(k).');
+           end
+           fprintf("POVMS (imporant: display info only good for qubits)\n", dims_in, dims_out);
+           for party=1:length(party_ins)
+               for x=1:ins(party)
+                   obs_x = 0;
+                   for a=1:outs(party)
+                       % IMPORTANT ONLY WORKS FOR 2 OUTPUTS!!!!
+                       obs_x = obs_x + (-1)^(a+1) * best_everything{end}{2}{party}{x}{a};
+                   end
+                   bloch = BlochComponents(obs_x);
+                   bloch = num2cell(bloch(2:4));
+                   [azimuth,elevation,r] = cart2sph(bloch{:});
+                   azimuth = azimuth*180/pi;
+                   elevation = elevation*180/pi;
+                   fprintf("Party: %d, input:%d, obs: (azimuth[º],elevation[º],r)=(%f,%f,%f)\n", party, x, azimuth, elevation, r);
+               end
+           end          
         end
-        fprintf("Best visibility: %f\n", best_alpha);
+        fprintf("\n Best visibility so far: %f\n", best_alpha);
         save(strcat('matlabworkspace_',Scenario,'.mat'));
     end
     

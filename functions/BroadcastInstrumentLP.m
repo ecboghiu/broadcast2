@@ -221,8 +221,7 @@ function [final_alpha,bellcoeffs,LPstatus] = BroadcastInstrumentLP(p1,p2,nr_inpu
 
     LPstatus = optsol.problem;
     if LPstatus ~= 0
-       disp(optsol)
-       warning('The LP with the visibility not successfully solved.');
+       warning('The visibility-broadcast-LP not solved. Info: "%s"', optsol.info);
        final_alpha = 0;
        return;
     end
