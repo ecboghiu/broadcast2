@@ -13687,3 +13687,1133 @@ In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Prob
 In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 88)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',88,0)">line 88</a>)
         p_uniform   = ProbMultidimArrayInstrumental(NoisyWernerState(1), iniPovms, iniChannel, ins, outs);
 } 
+Fixing random seed = 1
+
+Round 1.
+Visibility given initial measurements and channels: 0.150744
+Visibility given initial measurements and channels: 0.267033
+iter=1, channelq=~, bellineqvalue=0.516314, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.537401, abschangeobjval=0.0210874
+iter=3, partyidx=2, bellineqvalue=0.537401, abschangeobjval=1.47451e-08
+tentative newalpha=0.286027, sum(bellcoeffs)=-7.419603, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.286027
+iter=1, channelq=~, bellineqvalue=0.290772, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.290772, abschangeobjval=3.78412e-09
+tentative newalpha=0.286028, sum(bellcoeffs)=-7.238846, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.286028
+New best found. Details:
+
+Bell expression in probability notation:
+0.016*p_1111_1112 - 0.018*p_1111_1111 - 0.0387*p_1111_1121 + 0.0258*p_1111_1122 + 0.0264*p_1111_1212 - 0.0466*p_1111_1221 + 0.0166*p_1111_1222 - 0.0384*p_1111_2111 + 0.0349*p_1111_2112 - 0.0341*p_1111_2121 + 0.0419*p_1111_2122 - 0.131*p_1111_2211 + 0.043*p_1111_2212 + 0.0359*p_1111_2222 - 0.0306*p_1111_3111 + 0.0466*p_1111_3112 - 0.0535*p_1111_3121 + 0.0537*p_1111_3122 - 0.12*p_1111_3211 + 0.0547*p_1111_3212 - 0.108*p_1111_3221 + 0.0476*p_1111_3222 - 0.017*p_1112_1111 - 0.0188*p_1112_1112 - 0.0288*p_1112_1121 - 0.0134*p_1112_1122 - 0.0266*p_1112_1211 + 0.00415*p_1112_1212 - 0.0574*p_1112_1221 + 0.00544*p_1112_1222 - 0.0392*p_1112_2111 - 0.123*p_1112_2112 - 0.0426*p_1112_2121 - 0.146*p_1112_2122 - 0.0347*p_1112_2211 - 0.0558*p_1112_2212 - 0.115*p_1112_2221 - 0.0773*p_1112_2222 - 0.0283*p_1112_3111 + 0.163*p_1112_3112 - 0.0317*p_1112_3121 - 0.0678*p_1112_3122 - 0.0637*p_1112_3211 + 0.135*p_1112_3212 - 0.134*p_1112_3221 - 0.00399*p_1112_3222 - 0.0191*p_1121_1111 + 0.0116*p_1121_1112 + 0.00164*p_1121_1121 + 0.00177*p_1121_1122 - 0.264*p_1121_1211 + 0.00232*p_1121_1212 + 0.0122*p_1121_1222 - 0.0319*p_1121_2111 + 0.0348*p_1121_2112 - 0.0362*p_1121_2121 + 0.0277*p_1121_2122 + 0.0288*p_1121_2212 - 0.158*p_1121_2221 + 0.0358*p_1121_2222 - 0.0229*p_1121_3111 + 0.0465*p_1121_3112 - 0.0861*p_1121_3121 + 0.0395*p_1121_3122 + 0.0404*p_1121_3212 - 0.0026*p_1121_3221 + 0.0475*p_1121_3222 - 0.0176*p_1122_1111 - 0.0125*p_1122_1112 - 0.00575*p_1122_1121 - 0.0179*p_1122_1122 - 0.0252*p_1122_1211 + 0.00723*p_1122_1212 + 0.00556*p_1122_1221 + 0.00594*p_1122_1222 - 0.0539*p_1122_2111 + 0.138*p_1122_2112 + 0.162*p_1122_2122 + 0.111*p_1122_2212 - 0.18*p_1122_2221 + 0.132*p_1122_2222 - 0.0428*p_1122_3111 - 0.103*p_1122_3112 - 0.0394*p_1122_3121 + 0.128*p_1122_3122 - 0.07*p_1122_3211 - 0.0357*p_1122_3212 - 0.19*p_1122_3221 + 0.103*p_1122_3222 - 0.0181*p_1211_1111 + 0.016*p_1211_1112 - 0.0388*p_1211_1121 + 0.0258*p_1211_1122 - 0.0275*p_1211_1211 + 0.0264*p_1211_1212 - 0.0764*p_1211_1221 + 0.0166*p_1211_1222 - 0.0386*p_1211_2111 + 0.035*p_1211_2112 - 0.0342*p_1211_2121 + 0.0419*p_1211_2122 + 0.0177*p_1211_2211 + 0.0431*p_1211_2212 - 0.111*p_1211_2221 + 0.0361*p_1211_2222 - 0.0304*p_1211_3111 + 0.0466*p_1211_3112 - 0.0532*p_1211_3121 + 0.0537*p_1211_3122 + 0.0177*p_1211_3211 + 0.0547*p_1211_3212 - 0.227*p_1211_3221 + 0.0477*p_1211_3222 - 0.0171*p_1212_1111 - 0.0417*p_1212_1112 - 0.0289*p_1212_1121 - 0.0359*p_1212_1122 - 0.0119*p_1212_1211 - 0.0667*p_1212_1212 - 0.0192*p_1212_1221 - 0.0645*p_1212_1222 - 0.0395*p_1212_2111 - 0.213*p_1212_2112 - 0.0426*p_1212_2121 - 0.239*p_1212_2122 - 0.0341*p_1212_2211 - 0.337*p_1212_2212 - 0.0634*p_1212_2221 - 0.364*p_1212_2222 - 0.028*p_1212_3111 + 0.21*p_1212_3112 - 0.0315*p_1212_3121 - 0.154*p_1212_3122 + 0.278*p_1212_3212 - 0.303*p_1212_3221 - 0.274*p_1212_3222 - 0.0192*p_1221_1111 + 0.0116*p_1221_1112 + 0.00155*p_1221_1121 + 0.00181*p_1221_1122 + 2.68e-4*p_1221_1211 + 0.00242*p_1221_1212 + 0.049*p_1221_1221 + 0.0122*p_1221_1222 - 0.0321*p_1221_2111 + 0.0348*p_1221_2112 - 0.0365*p_1221_2121 + 0.0278*p_1221_2122 + 0.0289*p_1221_2212 - 0.469*p_1221_2221 + 0.0359*p_1221_2222 - 0.0228*p_1221_3111 + 0.0466*p_1221_3112 - 0.0855*p_1221_3121 + 0.0395*p_1221_3122 - 0.00536*p_1221_3211 + 0.0406*p_1221_3212 + 0.0476*p_1221_3222 - 0.0177*p_1222_1111 - 0.0349*p_1222_1112 - 0.00592*p_1222_1121 - 0.0406*p_1222_1122 + 6.46e-4*p_1222_1211 - 0.0624*p_1222_1212 + 0.00787*p_1222_1221 - 0.0646*p_1222_1222 - 0.0542*p_1222_2111 + 0.183*p_1222_2112 + 0.209*p_1222_2122 + 0.25*p_1222_2212 - 0.148*p_1222_2221 + 0.278*p_1222_2222 - 0.0426*p_1222_3111 - 0.192*p_1222_3112 - 0.0391*p_1222_3121 + 0.171*p_1222_3122 - 0.0168*p_1222_3211 - 0.314*p_1222_3212 - 0.303*p_1222_3221 + 0.237*p_1222_3222 - 0.0501*p_2111_1111 + 0.0415*p_2111_1112 - 0.0534*p_2111_1121 + 0.0482*p_2111_1122 - 0.122*p_2111_1211 + 0.0498*p_2111_1212 + 0.0431*p_2111_1222 - 0.0317*p_2111_2111 + 0.0226*p_2111_2112 - 0.0601*p_2111_2121 + 0.0321*p_2111_2122 + 0.0333*p_2111_2212 - 0.0377*p_2111_2221 + 0.0238*p_2111_2222 - 0.0284*p_2111_3111 + 0.0109*p_2111_3112 - 0.0295*p_2111_3121 + 0.0203*p_2111_3122 - 0.0343*p_2111_3211 + 0.0216*p_2111_3212 - 0.0515*p_2111_3221 + 0.0121*p_2111_3222 - 0.0461*p_2112_1111 + 0.0158*p_2112_1112 - 0.0538*p_2112_1121 + 0.0158*p_2112_1122 - 0.0586*p_2112_1211 + 0.0306*p_2112_1212 - 0.0936*p_2112_1221 + 0.0374*p_2112_1222 - 0.0259*p_2112_2111 + 0.111*p_2112_2112 - 0.0421*p_2112_2121 + 0.0859*p_2112_2122 - 0.0524*p_2112_2211 + 0.0824*p_2112_2212 - 0.0375*p_2112_2221 + 0.0622*p_2112_2222 - 0.0257*p_2112_3111 - 0.129*p_2112_3112 - 0.0418*p_2112_3121 + 0.141*p_2112_3122 - 0.0128*p_2112_3211 - 0.0657*p_2112_3212 - 0.00851*p_2112_3221 + 0.112*p_2112_3222 - 0.0392*p_2121_1111 + 0.0415*p_2121_1112 - 0.0358*p_2121_1121 + 0.0348*p_2121_1122 - 0.398*p_2121_1211 + 0.0364*p_2121_1212 + 0.0694*p_2121_1221 + 0.0431*p_2121_1222 - 0.0284*p_2121_2111 + 0.0183*p_2121_2112 - 0.258*p_2121_2121 + 0.00881*p_2121_2122 + 0.134*p_2121_2211 + 0.00993*p_2121_2212 + 0.0195*p_2121_2222 - 0.0262*p_2121_3111 + 0.00652*p_2121_3112 - 0.025*p_2121_3121 - 0.0029*p_2121_3122 + 0.0911*p_2121_3211 - 0.00171*p_2121_3212 + 0.0173*p_2121_3221 + 0.00776*p_2121_3222 - 0.0505*p_2122_1111 + 0.0184*p_2122_1112 - 0.0428*p_2122_1121 + 0.0184*p_2122_1122 - 0.0535*p_2122_1211 + 0.0375*p_2122_1212 - 0.0186*p_2122_1221 + 0.0307*p_2122_1222 - 0.0162*p_2122_2111 - 0.131*p_2122_2112 - 0.0871*p_2122_2121 - 0.107*p_2122_2122 - 0.0422*p_2122_2211 - 0.0652*p_2122_2212 - 0.0149*p_2122_2221 - 0.045*p_2122_2222 - 0.0161*p_2122_3111 + 0.107*p_2122_3112 - 0.114*p_2122_3121 - 0.163*p_2122_3122 - 0.0432*p_2122_3211 + 0.0789*p_2122_3212 - 0.0987*p_2122_3222 - 0.0502*p_2211_1111 + 0.0416*p_2211_1112 - 0.0535*p_2211_1121 + 0.0482*p_2211_1122 - 0.0312*p_2211_1211 + 0.05*p_2211_1212 - 0.148*p_2211_1221 + 0.0434*p_2211_1222 - 0.0318*p_2211_2111 + 0.0227*p_2211_2112 - 0.0603*p_2211_2121 + 0.0321*p_2211_2122 + 0.0333*p_2211_2212 + 0.0239*p_2211_2222 - 0.0281*p_2211_3111 + 0.011*p_2211_3112 - 0.0294*p_2211_3121 + 0.0203*p_2211_3122 + 0.0216*p_2211_3212 - 0.0663*p_2211_3221 + 0.0123*p_2211_3222 - 0.0462*p_2212_1111 - 0.007*p_2212_1112 - 0.0539*p_2212_1121 - 0.00671*p_2212_1122 - 0.0439*p_2212_1211 - 0.0403*p_2212_1212 - 0.0553*p_2212_1221 - 0.0326*p_2212_1222 - 0.026*p_2212_2111 + 0.155*p_2212_2112 - 0.0423*p_2212_2121 + 0.127*p_2212_2122 - 0.024*p_2212_2211 + 0.219*p_2212_2212 - 0.0133*p_2212_2221 + 0.193*p_2212_2222 - 0.0256*p_2212_3111 - 0.217*p_2212_3112 - 0.0415*p_2212_3121 + 0.189*p_2212_3122 - 0.0625*p_2212_3211 - 0.341*p_2212_3212 - 0.0643*p_2212_3221 + 0.26*p_2212_3222 - 0.0392*p_2221_1111 + 0.0416*p_2221_1112 - 0.0359*p_2221_1121 + 0.0349*p_2221_1122 - 0.0155*p_2221_1211 + 0.0368*p_2221_1212 + 0.0433*p_2221_1222 - 0.0285*p_2221_2111 + 0.0184*p_2221_2112 - 0.259*p_2221_2121 + 0.00894*p_2221_2122 - 0.0146*p_2221_2211 + 0.0102*p_2221_2212 - 0.162*p_2221_2221 + 0.0196*p_2221_2222 - 0.0259*p_2221_3111 + 0.00659*p_2221_3112 - 0.0246*p_2221_3121 - 0.00277*p_2221_3122 - 0.0176*p_2221_3211 - 0.0014*p_2221_3212 + 0.123*p_2221_3221 + 0.00792*p_2221_3222 - 0.0506*p_2222_1111 - 0.00396*p_2222_1112 - 0.0429*p_2222_1121 - 0.00426*p_2222_1122 - 0.0276*p_2222_1211 - 0.0321*p_2222_1212 - 0.0162*p_2222_1221 - 0.0398*p_2222_1222 - 0.0163*p_2222_2111 - 0.221*p_2222_2112 - 0.0872*p_2222_2121 - 0.193*p_2222_2122 - 0.0143*p_2222_2211 - 0.344*p_2222_2212 - 0.0106*p_2222_2221 - 0.317*p_2222_2222 - 0.016*p_2222_3111 + 0.152*p_2222_3112 - 0.114*p_2222_3121 - 0.254*p_2222_3122 - 0.104*p_2222_3211 + 0.218*p_2222_3212 - 0.383*p_2222_3222
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+    0.2499    0.2499    0.2500    0.2500    0.2500    0.2500    0.2501    0.2501
+
+w=2, Spectrum of sum_d Lambda^w_d:
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(80.910848,10.261539,0.207878)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-175.227757,70.145440,2.000000)
+Party: 1, input:3, obs: (azimuth[º],elevation[º],r)=(-100.687731,-5.498109,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(79.440651,-79.979864,0.052227)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(62.697652,-17.246524,0.102548)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(74.878298,-41.467636,2.000000)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(-60.547364,-20.076191,2.000000)
+
+ Best visibility so far: 0.286028
+
+Round 2.
+Visibility given initial measurements and channels: 0.086819
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/plus', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m', 132)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m',132,0)">line 132</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 199)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',199,0)">line 199</a>)
+            summ = summ + det_strategy(lam, coords_cell{1}, coords_cell{nrparties+1}) ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 89)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',89,0)">line 89</a>)
+        [alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+RandomPOVM(4)
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RandomPOVM', 'C:\Program Files\MATLAB\QETLAB-0.9\RandomPOVM.m', 34)" style="font-weight:bold">RandomPOVM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\RandomPOVM.m',34,0)">line 34</a>)
+Phi = RandomSuperoperator([outc,dim],0,1,re);
+} 
+RandomPOVM(dim_in, dim_in);
+{Undefined function or variable 'dim_in'.
+} 
+dim_in = 2
+
+dim_in =
+
+     2
+
+RandomPOVM(dim_in, dim_in);
+a=RandomPOVM(dim_in, dim_in);
+a
+
+a =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {2×2 double}    {2×2 double}
+
+a{1}
+
+ans =
+
+   0.3511 + 0.0000i  -0.0369 - 0.1338i
+  -0.0369 + 0.1338i   0.4933 - 0.0000i
+
+a{2}
+
+ans =
+
+   0.6489 - 0.0000i   0.0369 + 0.1338i
+   0.0369 - 0.1338i   0.5067 + 0.0000i
+
+a{3}
+{Index exceeds array bounds.
+} 
+a=RandomPOVM(2, 4);
+a
+
+a =
+
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {2×2 double}    {2×2 double}    {2×2 double}    {2×2 double}
+
+a{1
+ a{1
+    
+{Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+a{1}
+
+ans =
+
+   0.3044 + 0.0000i   0.0311 - 0.0975i
+   0.0311 + 0.0975i   0.3554 - 0.0000i
+
+a{2}
+
+ans =
+
+   0.2222 + 0.0000i  -0.0221 - 0.0142i
+  -0.0221 + 0.0142i   0.1860 + 0.0000i
+
+a{3}
+
+ans =
+
+   0.2504 - 0.0000i  -0.0227 + 0.1050i
+  -0.0227 - 0.1050i   0.2816 + 0.0000i
+
+a{4}
+
+ans =
+
+   0.2231 - 0.0000i   0.0137 + 0.0067i
+   0.0137 - 0.0067i   0.1770 + 0.0000i
+
+RandomPOVM(2,2);
+giveChannelRAND(2,4)
+
+ans =
+
+  -0.4413 + 0.6027i   0.3311 + 0.2433i
+  -0.2945 - 0.2915i   0.0124 - 0.6461i
+   0.3986 + 0.0420i  -0.1717 + 0.4259i
+  -0.2366 - 0.2318i   0.1555 + 0.4225i
+
+giveChannelRAND(2,4)
+
+ans =
+
+  -0.7112 + 0.0880i  -0.1878 + 0.0939i
+   0.0332 + 0.2862i  -0.6304 + 0.5217i
+  -0.2618 - 0.0709i   0.1260 - 0.0605i
+   0.5409 + 0.1930i  -0.2953 - 0.4239i
+
+giveChannelRAND(2,4)
+
+ans =
+
+  -0.1282 + 0.4186i  -0.3702 + 0.3831i
+   0.4302 - 0.2711i  -0.4981 - 0.3276i
+   0.4352 - 0.4110i   0.1982 + 0.4869i
+   0.3430 - 0.2717i  -0.1185 - 0.2653i
+
+giveChannelRAND(2,4)
+
+ans =
+
+   0.1130 + 0.2499i   0.1014 + 0.4738i
+  -0.2300 - 0.0042i   0.5037 + 0.4352i
+  -0.6746 + 0.0290i   0.3210 + 0.1746i
+  -0.4130 - 0.4953i   0.0365 - 0.4328i
+
+giveChannelRAND(2,4)
+
+ans =
+
+  -0.4058 + 0.4746i   0.3644 - 0.5261i
+  -0.4339 - 0.3315i  -0.0372 - 0.3857i
+  -0.0482 + 0.4720i   0.2951 + 0.2420i
+  -0.1244 + 0.2670i  -0.0826 + 0.5364i
+
+giveChannelRAND(2,4)
+
+ans =
+
+  -0.0354 + 0.2914i  -0.4601 - 0.6756i
+  -0.0481 - 0.2032i   0.1039 - 0.4976i
+  -0.4089 + 0.5466i   0.1603 + 0.0931i
+  -0.5519 - 0.3157i  -0.1958 + 0.0281i
+
+giveChannelRAND(2,4)
+
+ans =
+
+   0.2955 + 0.3391i   0.0759 + 0.1504i
+  -0.4043 - 0.5331i   0.3573 + 0.2107i
+  -0.5218 + 0.1886i  -0.0684 + 0.5294i
+   0.0209 + 0.2043i  -0.6513 + 0.3006i
+
+giveChannelRAND(2,4)
+
+ans =
+
+   0.2887 + 0.2855i   0.4627 + 0.6679i
+   0.1305 - 0.2453i  -0.2424 - 0.3111i
+  -0.3755 + 0.5915i   0.1815 - 0.2981i
+   0.1006 - 0.5069i   0.0191 + 0.2492i
+
+U = giveChannelRAND(2,4)
+
+U =
+
+  -0.2595 - 0.3877i  -0.2678 - 0.4938i
+   0.3163 - 0.4083i  -0.3533 - 0.0137i
+   0.3316 - 0.4848i   0.3416 - 0.0082i
+  -0.3778 - 0.1667i   0.5650 + 0.3514i
+
+dot(U(:,1),U(:,2))
+
+ans =
+
+   0.0000e+00 + 2.7756e-17i
+
+dim_in=2
+
+dim_in =
+
+     2
+
+instr_out=2
+
+instr_out =
+
+     2
+
+povm = RandomPOVM(dim_in, instr_out);
+for i=1:instr_out
+   sqrtAp = sqrt(povm{i}); 
+end
+sqrtAp
+
+sqrtAp =
+
+   0.8710 + 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 + 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+ishermitian(sqrtAp)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+sqrtAp.'
+
+ans =
+
+   0.8710 + 0.0000i   0.2012 + 0.0853i
+   0.2012 - 0.0853i   0.6316 + 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+sqrtAp'
+
+ans =
+
+   0.8710 - 0.0000i   0.2012 - 0.0853i
+   0.2012 + 0.0853i   0.6316 - 0.0000i
+
+    povm = RandomPOVM(dim_in, instr_out);
+    kraus = {};
+    for i=1:instr_out
+       kraus{i} = Uisometry * sqrt(povm{i}); 
+    end
+{Undefined function or variable 'Uisometry'.
+} 
+Uisometry = giveChannelRAND(dim_in, dim_out);
+{Undefined function or variable 'dim_out'.
+} 
+Uisometry = giveChannelRAND(dim_in, dims_out);
+dim_in=2;dim_out=4;instr_in=2;instr_out=2
+
+instr_out =
+
+     2
+
+Uisometry = giveChannelRAND(dim_in, dim_out);
+channels = {{}};
+for w = 1:instr_in
+    povm = RandomPOVM(dim_in, instr_out);
+    kraus = {};
+    for i=1:instr_out
+       kraus{i} = Uisometry * sqrt(povm{i}); 
+    end
+    channel = ChoiMatrix(kraus);
+end
+channel
+
+channel =
+
+   0.2868 + 0.0732i  -0.1155 - 0.0451i  -0.1965 + 0.0438i   0.3026 - 0.0992i   0.1257 + 0.1228i  -0.0415 + 0.0681i  -0.0405 + 0.1165i   0.2614 - 0.1477i
+  -0.0466 + 0.0746i   0.0232 - 0.0287i   0.0053 - 0.0596i   0.0008 + 0.0947i  -0.0461 + 0.0245i  -0.0155 - 0.0179i  -0.0293 - 0.0220i   0.0182 + 0.0874i
+  -0.1062 + 0.0201i   0.0452 - 0.0029i   0.0582 - 0.0449i  -0.0848 + 0.0796i  -0.0606 - 0.0212i   0.0032 - 0.0289i  -0.0046 - 0.0448i  -0.0636 + 0.0893i
+   0.0468 + 0.1503i  -0.0118 - 0.0649i  -0.0746 - 0.0768i   0.1293 + 0.1095i  -0.0206 + 0.0912i  -0.0424 + 0.0002i  -0.0641 + 0.0141i   0.1398 + 0.0773i
+   0.0889 - 0.2913i  -0.0519 + 0.1166i   0.0357 + 0.2041i  -0.0876 - 0.3159i   0.1322 - 0.1234i   0.0680 + 0.0459i   0.1178 + 0.0472i  -0.1394 - 0.2757i
+   0.0793 - 0.0804i  -0.0371 + 0.0294i  -0.0234 + 0.0731i   0.0256 - 0.1187i   0.0646 - 0.0178i   0.0144 + 0.0268i   0.0306 + 0.0358i   0.0016 - 0.1145i
+   0.0928 - 0.0498i  -0.0411 + 0.0160i  -0.0410 + 0.0587i   0.0555 - 0.0988i   0.0625 + 0.0020i   0.0055 + 0.0278i   0.0174 + 0.0403i   0.0330 - 0.1016i
+   0.2368 + 0.1549i  -0.0906 - 0.0766i  -0.1913 - 0.0211i   0.3045 + 0.0039i   0.0758 + 0.1500i  -0.0586 + 0.0488i  -0.0727 + 0.0929i   0.2821 - 0.0528i
+
+eig(channel)
+
+ans =
+
+  -0.0000 - 0.0000i
+   0.9437 - 0.0000i
+  -0.0000 + 0.0000i
+  -0.0000 - 0.0000i
+  -0.0000 + 0.0000i
+   0.0000 - 0.0000i
+   0.0000 + 0.0000i
+   0.0000 + 0.0000i
+
+PartialTrace(channel,2,[2,4])
+
+ans =
+
+   0.4975 + 0.1091i   0.2454 + 0.1374i
+   0.3153 - 0.1993i   0.4462 - 0.1091i
+
+giveLudersInstrument(2,4,2,2)
+
+ans =
+
+  1×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}
+
+c=giveLudersInstrument(2,4,2,2)
+
+c =
+
+  1×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}
+
+c{1}
+
+ans =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {8×8 double}    {8×8 double}
+
+c{1}{1}
+
+ans =
+
+   0.0889 + 0.0174i   0.0786 - 0.0608i  -0.1867 - 0.0380i  -0.2009 + 0.0331i   0.0158 - 0.0139i   0.0867 + 0.1130i  -0.0750 - 0.1062i  -0.1740 - 0.0523i
+  -0.0405 - 0.0038i  -0.0324 + 0.0307i   0.0851 + 0.0086i   0.0883 - 0.0239i  -0.0064 + 0.0069i  -0.0438 - 0.0466i   0.0383 + 0.0441i   0.0801 + 0.0155i
+  -0.0900 + 0.0194i  -0.0490 + 0.0884i   0.1898 - 0.0395i   0.1744 - 0.1117i  -0.0092 + 0.0193i  -0.1265 - 0.0708i   0.1128 + 0.0691i   0.1837 - 0.0210i
+  -0.1266 + 0.0261i  -0.0699 + 0.1235i   0.2668 - 0.0530i   0.2462 - 0.1545i  -0.0132 + 0.0270i  -0.1766 - 0.1010i   0.1574 + 0.0984i   0.2580 - 0.0272i
+   0.0086 + 0.0870i   0.0781 + 0.0557i  -0.0168 - 0.1832i  -0.0866 - 0.1765i   0.0172 + 0.0108i  -0.0804 + 0.1116i   0.0773 - 0.0989i  -0.0001 - 0.1755i
+   0.0362 - 0.1074i  -0.0626 - 0.1075i  -0.0777 + 0.2256i   0.0083 + 0.2548i  -0.0146 - 0.0219i   0.1545 - 0.0892i  -0.1441 + 0.0757i  -0.0934 + 0.2075i
+  -0.0640 - 0.0094i  -0.0540 + 0.0461i   0.1346 + 0.0207i   0.1423 - 0.0306i  -0.0108 + 0.0105i  -0.0658 - 0.0777i   0.0572 + 0.0733i   0.1261 + 0.0313i
+  -0.1362 - 0.0622i  -0.1498 + 0.0676i   0.2856 + 0.1328i   0.3358 + 0.0239i  -0.0308 + 0.0162i  -0.0960 - 0.2151i   0.0798 + 0.1996i   0.2598 + 0.1510i
+
+c=giveLudersInstrument(2,4,2,2)
+{Array indices must be positive integers or logical values.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('giveLudersInstrument', 'C:\Users\Emi\Documents\Code\broadcast2\functions\giveLudersInstrument.m', 9)" style="font-weight:bold">giveLudersInstrument</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\giveLudersInstrument.m',9,0)">line 9</a>)
+       channels{1}{w}{d} = ChoiMatrci({Uisometry * sqrt(povm{i})});
+} 
+c=giveLudersInstrument(2,4,2,2)
+{Undefined function or variable 'ChoiMatrci'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('giveLudersInstrument', 'C:\Users\Emi\Documents\Code\broadcast2\functions\giveLudersInstrument.m', 8)" style="font-weight:bold">giveLudersInstrument</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\giveLudersInstrument.m',8,0)">line 8</a>)
+       channels{1}{w}{d} = ChoiMatrci({Uisometry * sqrt(povm{d})});
+} 
+c=giveLudersInstrument(2,4,2,2)
+
+c =
+
+  1×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}
+
+c{1}
+
+ans =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}    {1×2 cell}
+
+c{2}
+{Index exceeds array bounds.
+} 
+c{1}
+
+ans =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}    {1×2 cell}
+
+c{1}{1}
+
+ans =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {8×8 double}    {8×8 double}
+
+c{1}{1}{1}
+
+ans =
+
+   0.2044 + 0.0000i   0.0586 - 0.0588i   0.0108 + 0.0406i  -0.0113 + 0.1473i   0.0736 + 0.2483i   0.0578 + 0.0490i  -0.0296 + 0.0876i  -0.1683 - 0.0192i
+   0.0586 + 0.0588i   0.0337 + 0.0000i  -0.0086 + 0.0147i  -0.0456 + 0.0390i  -0.0504 + 0.0923i   0.0024 + 0.0307i  -0.0337 + 0.0166i  -0.0427 - 0.0539i
+   0.0108 - 0.0406i  -0.0086 - 0.0147i   0.0086 + 0.0000i   0.0287 + 0.0100i   0.0532 - 0.0015i   0.0128 - 0.0089i   0.0158 + 0.0105i  -0.0127 + 0.0324i
+  -0.0113 - 0.1473i  -0.0456 - 0.0390i   0.0287 - 0.0100i   0.1068 + 0.0000i   0.1749 - 0.0668i   0.0321 - 0.0443i   0.0648 + 0.0165i  -0.0046 + 0.1223i
+   0.0736 - 0.2483i  -0.0504 - 0.0923i   0.0532 + 0.0015i   0.1749 + 0.0668i   0.3282 + 0.0000i   0.0804 - 0.0525i   0.0958 + 0.0675i  -0.0839 + 0.1975i
+   0.0578 - 0.0490i   0.0024 - 0.0307i   0.0128 + 0.0089i   0.0321 + 0.0443i   0.0804 + 0.0525i   0.0281 + 0.0000i   0.0126 + 0.0319i  -0.0522 + 0.0349i
+  -0.0296 - 0.0876i  -0.0337 - 0.0166i   0.0158 - 0.0105i   0.0648 - 0.0165i   0.0958 - 0.0675i   0.0126 - 0.0319i   0.0418 + 0.0000i   0.0162 + 0.0749i
+  -0.1683 + 0.0192i  -0.0427 + 0.0539i  -0.0127 - 0.0324i  -0.0046 - 0.1223i  -0.0839 - 0.1975i  -0.0522 - 0.0349i   0.0162 - 0.0749i   0.1403 + 0.0000i
+
+c{1}{1}{1}+c{1}{1}{2}
+
+ans =
+
+   0.5846 + 0.0000i   0.0371 - 0.2688i  -0.0755 + 0.3894i   0.1874 + 0.2386i   0.4668 + 0.3102i   0.0344 - 0.0090i   0.1198 + 0.4131i  -0.2396 - 0.0140i
+   0.0371 + 0.2688i   0.1509 + 0.0000i  -0.1963 - 0.0526i  -0.1072 + 0.1436i  -0.1067 + 0.3060i   0.0358 + 0.0210i  -0.2219 + 0.0807i  -0.0415 - 0.0936i
+  -0.0755 - 0.3894i  -0.1963 + 0.0526i   0.3481 + 0.0000i   0.0673 - 0.1930i   0.0207 - 0.3762i  -0.0351 + 0.0257i   0.2804 - 0.2005i   0.0083 + 0.0967i
+   0.1874 - 0.2386i  -0.1072 - 0.1436i   0.0673 + 0.1930i   0.2326 + 0.0000i   0.3953 - 0.1288i   0.0060 - 0.0691i   0.2210 + 0.1507i  -0.0406 + 0.1422i
+   0.4668 - 0.3102i  -0.1067 - 0.3060i   0.0207 + 0.3762i   0.3953 + 0.1288i   0.7449 + 0.0000i   0.0467 - 0.1087i   0.3033 + 0.3798i  -0.1569 + 0.2145i
+   0.0344 + 0.0090i   0.0358 - 0.0210i  -0.0351 - 0.0257i   0.0060 + 0.0691i   0.0467 + 0.1087i   0.0384 + 0.0000i  -0.0462 + 0.0347i  -0.0486 + 0.0237i
+   0.1198 - 0.4131i  -0.2219 - 0.0807i   0.2804 + 0.2005i   0.2210 - 0.1507i   0.3033 - 0.3798i  -0.0462 - 0.0347i   0.3792 + 0.0000i  -0.0074 + 0.1381i
+  -0.2396 + 0.0140i  -0.0415 + 0.0936i   0.0083 - 0.0967i  -0.0406 - 0.1422i  -0.1569 - 0.2145i  -0.0486 - 0.0237i  -0.0074 - 0.1381i   0.1538 + 0.0000i
+
+PartialTrace(c{1}{1}{1}+c{1}{1}{2},2,[2,4])
+
+ans =
+
+   1.3162 + 0.0000i   0.7424 + 0.2730i
+   0.7424 - 0.2730i   1.3162 + 0.0000i
+
+c=giveLudersInstrument(2,4,2,2)
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\giveLudersInstrument.m',12,1)">12  </a>end
+povm
+
+povm =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {2×2 double}    {2×2 double}
+
+povm{1}+povm{2}
+
+ans =
+
+   1.0000 + 0.0000i  -0.0000 + 0.0000i
+  -0.0000 - 0.0000i   1.0000 + 0.0000i
+
+instr_out
+
+instr_out =
+
+     2
+
+channels{1}{1}{1}+channels{1}{1}{2}
+
+ans =
+
+   0.4910 + 0.0000i  -0.0431 + 0.1029i  -0.1549 + 0.1541i   0.5476 - 0.0230i   0.3382 - 0.1028i  -0.3256 + 0.2175i   0.1246 - 0.0920i   0.3494 - 0.3367i
+  -0.0431 - 0.1029i   0.1059 + 0.0000i  -0.0180 + 0.0498i  -0.0671 - 0.0666i   0.0188 - 0.1264i   0.0900 + 0.0522i  -0.0322 + 0.0413i  -0.0177 - 0.1110i
+  -0.1549 - 0.1541i  -0.0180 - 0.0498i   0.1597 + 0.0000i  -0.1510 - 0.1958i  -0.2192 - 0.0494i   0.1596 + 0.0251i  -0.0440 - 0.0564i  -0.3079 + 0.0179i
+   0.5476 + 0.0230i  -0.0671 + 0.0666i  -0.1510 + 0.1958i   0.6408 + 0.0000i   0.3326 - 0.1276i  -0.3744 + 0.2177i   0.1776 - 0.1062i   0.3521 - 0.3952i
+   0.3382 + 0.1028i   0.0188 + 0.1264i  -0.2192 + 0.0494i   0.3326 + 0.1276i   0.3669 + 0.0000i  -0.2585 + 0.0969i   0.0560 + 0.0127i   0.4377 - 0.1504i
+  -0.3256 - 0.2175i   0.0900 - 0.0522i   0.1596 - 0.0251i  -0.3744 - 0.2177i  -0.2585 - 0.0969i   0.3155 + 0.0000i  -0.1215 + 0.0175i  -0.3670 + 0.0522i
+   0.1246 + 0.0920i  -0.0322 - 0.0413i  -0.0440 + 0.0564i   0.1776 + 0.1062i   0.0560 - 0.0127i  -0.1215 - 0.0175i   0.0926 + 0.0000i   0.1003 - 0.0799i
+   0.3494 + 0.3367i  -0.0177 + 0.1110i  -0.3079 - 0.0179i   0.3521 + 0.3952i   0.4377 + 0.1504i  -0.3670 - 0.0522i   0.1003 + 0.0799i   0.6225 + 0.0000i
+
+PartialTrace(channels{1}{1}{1}+channels{1}{1}{2},2,[2,4])
+
+ans =
+
+   1.3974 + 0.0000i   0.7363 - 0.5022i
+   0.7363 + 0.5022i   1.3974 + 0.0000i
+
+Uisometry
+
+Uisometry =
+
+   0.2435 - 0.5104i   0.1299 - 0.2973i
+  -0.0656 - 0.3298i  -0.4879 + 0.4643i
+  -0.4106 + 0.3172i   0.3723 - 0.1575i
+   0.0988 - 0.5368i   0.4987 - 0.1701i
+
+Uisometry' * Uisometry
+
+ans =
+
+   1.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 - 0.0000i   1.0000 + 0.0000i
+
+norm(Uisometry(:,1))
+
+ans =
+
+    1.0000
+
+norm(Uisometry(:,2))
+
+ans =
+
+     1
+
+ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})})
+
+ans =
+
+   0.4559 + 0.0000i   0.3488 - 0.1359i   0.3488 + 0.1359i   0.4932 - 0.0000i
+   0.0878 - 0.2255i   0.0000 - 0.1987i   0.1344 - 0.1464i   0.0950 - 0.2440i
+   0.0878 + 0.2255i   0.1344 + 0.1464i   0.0000 + 0.1987i   0.0950 + 0.2440i
+   0.4394 + 0.0000i   0.3362 - 0.1310i   0.3362 + 0.1310i   0.4753 - 0.0000i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,4])
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PermuteSystems', 'C:\Program Files\MATLAB\QETLAB-0.9\PermuteSystems.m', 67)" style="font-weight:bold">PermuteSystems</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PermuteSystems.m',67,0)">line 67</a>)
+The dimensions specified in DIM do not agree with the size of X.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PartialTrace', 'C:\Program Files\MATLAB\QETLAB-0.9\PartialTrace.m', 84)" style="font-weight:bold">PartialTrace</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PartialTrace.m',84,0)">line 84</a>)
+    Xpt = PermuteSystems(X,perm,dim); % permute the subsystems so that we just have to do the partial trace on the second (potentially larger) subsystem
+} 
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+PartialTrace(ChoiMatrix({Uisometry*sqrt(povm{1}),Uisometry*sqrt(povm{2})}),2,[2,4])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+PartialTrace(ChoiMatrix({Uisometry*sqrt(povm{1}),Uisometry*sqrt(povm{2})}),2,[2,4])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+PartialTrace(ChoiMatrix({Uisometry*sqrt(povm{1}),Uisometry*sqrt(povm{2})}),1,[2,4])
+
+ans =
+
+   0.3538 + 0.0452i  -0.1608 + 0.2024i  -0.0810 - 0.0540i   0.3421 - 0.0584i
+  -0.1378 - 0.0639i   0.1233 - 0.0655i   0.0021 + 0.0479i  -0.1496 - 0.0013i
+   0.0002 - 0.0922i   0.0301 + 0.0257i   0.0136 + 0.0194i  -0.0161 - 0.0997i
+   0.4211 + 0.1311i  -0.2473 + 0.1942i  -0.0740 - 0.0723i   0.4407 + 0.0010i
+
+PartialTrace(ChoiMatrix({Uisometry*sqrt(povm{1}),Uisometry*sqrt(povm{2})}),2,[2,4])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+povm{1}+povm{2}
+
+ans =
+
+   1.0000 + 0.0000i  -0.0000 + 0.0000i
+  -0.0000 - 0.0000i   1.0000 + 0.0000i
+
+PartialTrace(ChoiMatrix({Uisometry*sqrt(povm{1})+Uisometry*sqrt(povm{2})}),2,[2,4])
+
+ans =
+
+   2.3093 + 0.0000i   1.6042 - 0.7048i
+   1.6042 + 0.7048i   2.3481 + 0.0000i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1})+sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   2.3093 + 0.0000i   1.6042 - 0.7048i
+   1.6042 + 0.7048i   2.3481 + 0.0000i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1})+sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   2.3093 + 0.0000i   1.6042 - 0.7048i
+   1.6042 + 0.7048i   2.3481 + 0.0000i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+povm{1}+povm{2}
+
+ans =
+
+   1.0000 + 0.0000i  -0.0000 + 0.0000i
+  -0.0000 - 0.0000i   1.0000 + 0.0000i
+
+IsPSD(povm{1})
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+IsPSD(povm{2})
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+Uisometry
+
+Uisometry =
+
+   0.2435 - 0.5104i   0.1299 - 0.2973i
+  -0.0656 - 0.3298i  -0.4879 + 0.4643i
+  -0.4106 + 0.3172i   0.3723 - 0.1575i
+   0.0988 - 0.5368i   0.4987 - 0.1701i
+
+Uisometry' * Uisometry
+
+ans =
+
+   1.0000 + 0.0000i   0.0000 + 0.0000i
+   0.0000 - 0.0000i   1.0000 + 0.0000i
+
+k1=Uisometry * sqrt(povm{1})
+
+k1 =
+
+   0.1020 - 0.5307i   0.3566 - 0.2221i
+   0.0588 + 0.0008i  -0.2685 + 0.2952i
+  -0.3500 + 0.0862i   0.1031 - 0.2467i
+   0.0930 - 0.6854i   0.6426 - 0.1835i
+
+k2=Uisometry * sqrt(povm{2})
+
+k2 =
+
+   0.2343 - 0.3796i   0.0949 - 0.4260i
+  -0.3134 - 0.0651i  -0.3672 + 0.1463i
+  -0.0428 + 0.1670i   0.0994 + 0.1057i
+   0.2883 - 0.2814i   0.2471 - 0.3388i
+
+c=ChoiMatrix({k1,k2})
+
+c =
+
+   0.2253 - 0.0856i   0.0026 + 0.1730i  -0.0930 + 0.0057i   0.1787 - 0.1243i   0.2358 - 0.0069i  -0.1151 + 0.1799i  -0.0460 - 0.0635i   0.2050 - 0.0966i
+   0.0135 + 0.0225i  -0.0185 + 0.0036i  -0.0024 - 0.0099i   0.0167 + 0.0168i   0.0052 + 0.0251i  -0.0215 - 0.0089i   0.0059 - 0.0061i   0.0143 + 0.0201i
+  -0.1147 - 0.1127i   0.1041 - 0.0498i   0.0294 + 0.0548i  -0.1252 - 0.0736i  -0.0699 - 0.1409i   0.1411 + 0.0196i  -0.0257 + 0.0456i  -0.1157 - 0.0973i
+   0.2820 - 0.1253i   0.0155 + 0.2209i  -0.1185 + 0.0138i   0.2197 - 0.1715i   0.3008 - 0.0254i  -0.1344 + 0.2381i  -0.0632 - 0.0779i   0.2552 - 0.1378i
+   0.1678 + 0.0833i  -0.0973 + 0.0928i  -0.0524 - 0.0500i   0.1653 + 0.0363i   0.1284 + 0.1308i  -0.1634 + 0.0294i   0.0120 - 0.0598i   0.1634 + 0.0659i
+  -0.1750 - 0.0328i   0.0649 - 0.1100i   0.0608 + 0.0322i  -0.1605 + 0.0096i  -0.1512 - 0.0864i   0.1418 - 0.0691i   0.0045 + 0.0577i  -0.1664 - 0.0180i
+   0.1178 - 0.0187i  -0.0162 + 0.0841i  -0.0456 - 0.0066i   0.0992 - 0.0421i   0.1149 + 0.0205i  -0.0740 + 0.0755i  -0.0158 - 0.0354i   0.1091 - 0.0260i
+   0.2202 + 0.2010i  -0.1895 + 0.0994i  -0.0582 - 0.0995i   0.2369 + 0.1279i   0.1391 + 0.2564i  -0.2628 - 0.0267i   0.0445 - 0.0861i   0.2209 + 0.1724i
+
+PartialTrace(c,2,[2,4])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+k1=sqrt(povm{1})
+
+k1 =
+
+   0.8398 + 0.0000i   0.1618 + 0.4154i
+   0.1618 - 0.4154i   0.8094 + 0.0000i
+
+k2=sqrt(povm{2})
+
+k2 =
+
+   0.5429 + 0.0000i   0.4154 - 0.1618i
+   0.4154 + 0.1618i   0.5873 + 0.0000i
+
+c=ChoiMatrix({k1,k2})
+
+c =
+
+   0.4559 + 0.0000i   0.3488 - 0.1359i   0.3488 + 0.1359i   0.4932 - 0.0000i
+   0.0878 - 0.2255i   0.0000 - 0.1987i   0.1344 - 0.1464i   0.0950 - 0.2440i
+   0.0878 + 0.2255i   0.1344 + 0.1464i   0.0000 + 0.1987i   0.0950 + 0.2440i
+   0.4394 + 0.0000i   0.3362 - 0.1310i   0.3362 + 0.1310i   0.4753 - 0.0000i
+
+PartialTrace(c,2,[2,2])
+
+ans =
+
+   0.4559 - 0.1987i   0.4438 - 0.1081i
+   0.4240 + 0.0946i   0.4753 + 0.1987i
+
+povm{1}+povm{2}
+
+ans =
+
+   1.0000 + 0.0000i  -0.0000 + 0.0000i
+  -0.0000 - 0.0000i   1.0000 + 0.0000i
+
+IsPSD(povm{1}), IsPSD(povm{2})
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+ChoiMatrix({eye(2)})
+
+ans =
+
+     1     0     0     1
+     0     0     0     0
+     0     0     0     0
+     1     0     0     1
+
+PartialTrace(ChoiMatrix({eye(2)}),2,[2,2])
+
+ans =
+
+     1     0
+     0     1
+
+povm=RandomPOVM(2,2);
+PartialTrace(ChoiMatrix({povm{1},povm{2}}),2,[2,2])
+
+ans =
+
+   0.1795 - 0.0000i  -0.0373 + 0.0114i
+  -0.0373 - 0.0114i   0.2280 + 0.0000i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4450 + 0.1361i   0.2311 + 0.2443i
+   0.2890 - 0.2751i   0.4966 - 0.1361i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4450 + 0.1361i   0.2311 + 0.2443i
+   0.2890 - 0.2751i   0.4966 - 0.1361i
+
+PartialTrace(ChoiMatrix({sqrt(povm{1}),sqrt(povm{2})}),2,[2,2])
+
+ans =
+
+   0.4450 + 0.1361i   0.2311 + 0.2443i
+   0.2890 - 0.2751i   0.4966 - 0.1361i
+
+chan=RandomSuperoperator(2,2)
+
+chan =
+
+   0.2005 + 0.0000i  -0.0418 - 0.1427i   0.1758 - 0.1295i  -0.0531 + 0.0377i
+  -0.0418 + 0.1427i   0.2715 + 0.0000i   0.1357 + 0.1197i  -0.0805 + 0.0208i
+   0.1758 + 0.1295i   0.1357 - 0.1197i   0.3968 + 0.0000i  -0.0569 + 0.0586i
+  -0.0531 - 0.0377i  -0.0805 - 0.0208i  -0.0569 - 0.0586i   0.1311 + 0.0000i
+
+PartialTranspose(chan,2,[2,4])
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PermuteSystems', 'C:\Program Files\MATLAB\QETLAB-0.9\PermuteSystems.m', 67)" style="font-weight:bold">PermuteSystems</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PermuteSystems.m',67,0)">line 67</a>)
+The dimensions specified in DIM do not agree with the size of X.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PartialTranspose', 'C:\Program Files\MATLAB\QETLAB-0.9\PartialTranspose.m', 64)" style="font-weight:bold">PartialTranspose</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PartialTranspose.m',64,0)">line 64</a>)
+Xpt = PermuteSystems(X,perm,dim); % permute the subsystems so that we just have to do the partial transpose on the first (potentially larger) subsystem
+} 
+PartialTrace(chan,2,[2,4])
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PermuteSystems', 'C:\Program Files\MATLAB\QETLAB-0.9\PermuteSystems.m', 67)" style="font-weight:bold">PermuteSystems</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PermuteSystems.m',67,0)">line 67</a>)
+The dimensions specified in DIM do not agree with the size of X.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PartialTrace', 'C:\Program Files\MATLAB\QETLAB-0.9\PartialTrace.m', 84)" style="font-weight:bold">PartialTrace</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PartialTrace.m',84,0)">line 84</a>)
+    Xpt = PermuteSystems(X,perm,dim); % permute the subsystems so that we just have to do the partial trace on the second (potentially larger) subsystem
+} 
+PartialTrace(chan,2,[2,2])
+
+ans =
+
+   0.4721 + 0.0000i   0.0953 - 0.1088i
+   0.0953 + 0.1088i   0.5279 + 0.0000i
+
+PartialTrace(chan,2,[2,2])
+
+ans =
+
+   0.4721 + 0.0000i   0.0953 - 0.1088i
+   0.0953 + 0.1088i   0.5279 + 0.0000i
+
+PartialTrace(chan,1,[2,2])
+
+ans =
+
+   0.5973 + 0.0000i  -0.0988 - 0.0841i
+  -0.0988 + 0.0841i   0.4027 + 0.0000i
+
+PartialTrace(chan,2,[2,2])
+
+ans =
+
+   0.4721 + 0.0000i   0.0953 - 0.1088i
+   0.0953 + 0.1088i   0.5279 + 0.0000i
+
+PartialTrace(chan,2,[2,2])
+
+ans =
+
+   0.4721 + 0.0000i   0.0953 - 0.1088i
+   0.0953 + 0.1088i   0.5279 + 0.0000i
+
+PartialTrace(chan,3,[2,2])
+{Index exceeds array bounds.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PartialTrace', 'C:\Program Files\MATLAB\QETLAB-0.9\PartialTrace.m', 57)" style="font-weight:bold">PartialTrace</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\PartialTrace.m',57,0)">line 57</a>)
+prod_dim_sys = prod(dim(sys));
+} 
+PartialTrace(chan,2,[2,2])
+
+ans =
+
+   0.4721 + 0.0000i   0.0953 - 0.1088i
+   0.0953 + 0.1088i   0.5279 + 0.0000i
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+c=giveLudersInstrument(2,4,2,2)
+
+c =
+
+  1×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}
+
+c{1}
+
+ans =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×2 cell}    {1×2 cell}
+
+c{1}{1}
+
+ans =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {8×8 double}    {8×8 double}
+
+c{1}{1}{1}
+
+ans =
+
+   0.1129 + 0.0000i  -0.1542 + 0.0194i   0.2005 + 0.0524i  -0.0130 - 0.1168i  -0.0012 + 0.0033i  -0.0955 - 0.0868i   0.1542 + 0.1305i   0.0664 + 0.0088i
+  -0.1542 - 0.0194i   0.2139 + 0.0000i  -0.2647 - 0.1060i  -0.0022 + 0.1617i   0.0022 - 0.0043i   0.1155 + 0.1349i  -0.1881 - 0.2046i  -0.0892 - 0.0234i
+   0.2005 - 0.0524i  -0.2647 + 0.1060i   0.3801 + 0.0000i  -0.0774 - 0.2012i  -0.0005 + 0.0065i  -0.2098 - 0.1097i   0.3342 + 0.1600i   0.1220 - 0.0152i
+  -0.0130 + 0.1168i  -0.0022 - 0.1617i  -0.0774 + 0.2012i   0.1223 + 0.0000i  -0.0033 - 0.0016i   0.1008 - 0.0887i  -0.1527 + 0.1444i  -0.0168 + 0.0677i
+  -0.0012 - 0.0033i   0.0022 + 0.0043i  -0.0005 - 0.0065i  -0.0033 + 0.0016i   0.0001 + 0.0000i  -0.0016 + 0.0037i   0.0023 - 0.0059i  -0.0004 - 0.0021i
+  -0.0955 + 0.0868i   0.1155 - 0.1349i  -0.2098 + 0.1097i   0.1008 + 0.0887i  -0.0016 - 0.0037i   0.1475 + 0.0000i  -0.2306 + 0.0082i  -0.0629 + 0.0436i
+   0.1542 - 0.1305i  -0.1881 + 0.2046i   0.3342 - 0.1600i  -0.1527 - 0.1444i   0.0023 + 0.0059i  -0.2306 - 0.0082i   0.3612 + 0.0000i   0.1009 - 0.0647i
+   0.0664 - 0.0088i  -0.0892 + 0.0234i   0.1220 + 0.0152i  -0.0168 - 0.0677i  -0.0004 + 0.0021i  -0.0629 - 0.0436i   0.1009 + 0.0647i   0.0398 + 0.0000i
+
+c{1}{1}{2}
+
+ans =
+
+   0.1205 + 0.0000i  -0.0457 - 0.0514i   0.0290 + 0.1769i  -0.0440 - 0.0620i   0.0233 - 0.1169i  -0.0612 - 0.0655i   0.1867 + 0.1645i  -0.0402 + 0.0719i
+  -0.0457 + 0.0514i   0.0392 + 0.0000i  -0.0864 - 0.0547i   0.0431 + 0.0048i   0.0410 + 0.0543i   0.0511 - 0.0013i  -0.1410 + 0.0172i  -0.0154 - 0.0444i
+   0.0290 - 0.1769i  -0.0864 + 0.0547i   0.2666 + 0.0000i  -0.1015 + 0.0496i  -0.1660 - 0.0623i  -0.1108 + 0.0741i   0.2865 - 0.2344i   0.0958 + 0.0763i
+  -0.0440 + 0.0620i   0.0431 - 0.0048i  -0.1015 - 0.0496i   0.0479 + 0.0000i   0.0516 + 0.0546i   0.0560 - 0.0076i  -0.1527 + 0.0359i  -0.0223 - 0.0469i
+   0.0233 + 0.1169i   0.0410 - 0.0543i  -0.1660 + 0.0623i   0.0516 - 0.0546i   0.1180 + 0.0000i   0.0517 - 0.0720i  -0.1236 + 0.2129i  -0.0775 - 0.0251i
+  -0.0612 + 0.0655i   0.0511 + 0.0013i  -0.1108 - 0.0741i   0.0560 + 0.0076i   0.0517 + 0.0720i   0.0667 + 0.0000i  -0.1842 + 0.0178i  -0.0186 - 0.0584i
+   0.1867 - 0.1645i  -0.1410 - 0.0172i   0.2865 + 0.2344i  -0.1527 - 0.0359i  -0.1236 - 0.2129i  -0.1842 - 0.0178i   0.5140 + 0.0000i   0.0358 + 0.1663i
+  -0.0402 - 0.0719i  -0.0154 + 0.0444i   0.0958 - 0.0763i  -0.0223 + 0.0469i  -0.0775 + 0.0251i  -0.0186 + 0.0584i   0.0358 - 0.1663i   0.0563 + 0.0000i
+
+c{1}{1}{1}+c{1}{1}{2}
+
+ans =
+
+   0.2335 + 0.0000i  -0.1999 - 0.0320i   0.2295 + 0.2293i  -0.0570 - 0.1787i   0.0221 - 0.1136i  -0.1567 - 0.1523i   0.3409 + 0.2950i   0.0262 + 0.0807i
+  -0.1999 + 0.0320i   0.2531 + 0.0000i  -0.3511 - 0.1607i   0.0408 + 0.1664i   0.0432 + 0.0499i   0.1666 + 0.1336i  -0.3291 - 0.1874i  -0.1046 - 0.0678i
+   0.2295 - 0.2293i  -0.3511 + 0.1607i   0.6467 + 0.0000i  -0.1789 - 0.1516i  -0.1665 - 0.0559i  -0.3206 - 0.0356i   0.6207 - 0.0744i   0.2178 + 0.0611i
+  -0.0570 + 0.1787i   0.0408 - 0.1664i  -0.1789 + 0.1516i   0.1702 + 0.0000i   0.0483 + 0.0530i   0.1568 - 0.0963i  -0.3055 + 0.1803i  -0.0390 + 0.0208i
+   0.0221 + 0.1136i   0.0432 - 0.0499i  -0.1665 + 0.0559i   0.0483 - 0.0530i   0.1181 + 0.0000i   0.0501 - 0.0683i  -0.1214 + 0.2071i  -0.0779 - 0.0272i
+  -0.1567 + 0.1523i   0.1666 - 0.1336i  -0.3206 + 0.0356i   0.1568 + 0.0963i   0.0501 + 0.0683i   0.2141 + 0.0000i  -0.4149 + 0.0260i  -0.0815 - 0.0147i
+   0.3409 - 0.2950i  -0.3291 + 0.1874i   0.6207 + 0.0744i  -0.3055 - 0.1803i  -0.1214 - 0.2071i  -0.4149 - 0.0260i   0.8752 + 0.0000i   0.1367 + 0.1015i
+   0.0262 - 0.0807i  -0.1046 + 0.0678i   0.2178 - 0.0611i  -0.0390 - 0.0208i  -0.0779 + 0.0272i  -0.0815 + 0.0147i   0.1367 - 0.1015i   0.0960 + 0.0000i
+
+trace(c{1}{1}{1}+c{1}{1}{2})
+
+ans =
+
+    2.6069
+
+trace(c{1}{1}{1}+c{1}{1}{2})
+
+ans =
+
+    2.6069
+
+trace(RandomSuperoperator(2,4))
+
+ans =
+
+     1
+
+trace(RandomSuperoperator(2,4))
+
+ans =
+
+     1
+
+trace(RandomSuperoperator(2,4))
+
+ans =
+
+     1
+
+trace(RandomSuperoperator(2,4))
+
+ans =
+
+     1
+
+trace(RandomSuperoperator(2,4))
+
+ans =
+
+     1
+
+RandomSuperoperator(2,4)
+
+ans =
+
+   0.3703 + 0.0000i  -0.0006 + 0.0045i   0.0287 - 0.0636i   0.2064 + 0.0827i
+  -0.0006 - 0.0045i   0.2207 + 0.0000i  -0.1363 + 0.0816i  -0.0091 + 0.0591i
+   0.0287 + 0.0636i  -0.1363 - 0.0816i   0.1583 + 0.0000i   0.0654 + 0.0140i
+   0.2064 - 0.0827i  -0.0091 - 0.0591i   0.0654 - 0.0140i   0.2507 + 0.0000i
+
+RandomSuperoperator(2,4)
+
+ans =
+
+   0.4197 + 0.0000i   0.0926 + 0.1985i  -0.0278 - 0.0905i  -0.0986 - 0.1474i
+   0.0926 - 0.1985i   0.1823 + 0.0000i  -0.0245 - 0.0768i  -0.0694 - 0.0160i
+  -0.0278 + 0.0905i  -0.0245 + 0.0768i   0.2542 + 0.0000i   0.0535 - 0.0374i
+  -0.0986 + 0.1474i  -0.0694 + 0.0160i   0.0535 + 0.0374i   0.1438 + 0.0000i
+
+RandomSuperoperator(2,4)
+
+ans =
+
+   0.1311 + 0.0000i  -0.0016 - 0.0808i   0.0071 + 0.0481i   0.0328 - 0.0012i
+  -0.0016 + 0.0808i   0.2789 + 0.0000i   0.0623 - 0.0155i  -0.1267 - 0.1233i
+   0.0071 - 0.0481i   0.0623 + 0.0155i   0.2712 + 0.0000i   0.0440 - 0.0073i
+   0.0328 + 0.0012i  -0.1267 + 0.1233i   0.0440 + 0.0073i   0.3189 + 0.0000i
+
+RandomSuperoperator(2,4)
+
+ans =
+
+   0.3938 + 0.0000i  -0.0659 - 0.0027i   0.0305 - 0.0593i   0.1227 + 0.0659i
+  -0.0659 + 0.0027i   0.1036 + 0.0000i  -0.0907 + 0.0532i  -0.1023 + 0.0530i
+   0.0305 + 0.0593i  -0.0907 - 0.0532i   0.3031 + 0.0000i   0.1471 + 0.0234i
+   0.1227 - 0.0659i  -0.1023 - 0.0530i   0.1471 - 0.0234i   0.1995 + 0.0000i
+
+RandomSuperoperator(4,4)
+
+ans =
+
+  Columns 1 through 8
+
+   0.0832 + 0.0000i   0.0024 - 0.0043i  -0.0024 + 0.0203i  -0.0101 - 0.0231i   0.0213 - 0.0195i  -0.0065 - 0.0038i  -0.0123 - 0.0092i  -0.0035 + 0.0178i
+   0.0024 + 0.0043i   0.0712 + 0.0000i   0.0016 + 0.0027i   0.0211 - 0.0239i  -0.0049 - 0.0283i   0.0146 + 0.0026i   0.0030 + 0.0106i  -0.0104 + 0.0068i
+  -0.0024 - 0.0203i   0.0016 - 0.0027i   0.0539 + 0.0000i  -0.0123 + 0.0060i  -0.0021 - 0.0093i   0.0145 + 0.0108i   0.0076 - 0.0070i  -0.0034 + 0.0038i
+  -0.0101 + 0.0231i   0.0211 + 0.0239i  -0.0123 - 0.0060i   0.0748 + 0.0000i   0.0066 + 0.0197i   0.0006 + 0.0018i  -0.0057 + 0.0049i   0.0033 + 0.0024i
+   0.0213 + 0.0195i  -0.0049 + 0.0283i  -0.0021 + 0.0093i   0.0066 - 0.0197i   0.0589 + 0.0000i  -0.0022 + 0.0112i  -0.0098 + 0.0027i  -0.0119 - 0.0159i
+  -0.0065 + 0.0038i   0.0146 - 0.0026i   0.0145 - 0.0108i   0.0006 - 0.0018i  -0.0022 - 0.0112i   0.0601 + 0.0000i  -0.0131 + 0.0004i  -0.0074 - 0.0045i
+  -0.0123 + 0.0092i   0.0030 - 0.0106i   0.0076 + 0.0070i  -0.0057 - 0.0049i  -0.0098 - 0.0027i  -0.0131 - 0.0004i   0.0599 + 0.0000i   0.0004 + 0.0180i
+  -0.0035 - 0.0178i  -0.0104 - 0.0068i  -0.0034 - 0.0038i   0.0033 - 0.0024i  -0.0119 + 0.0159i  -0.0074 + 0.0045i   0.0004 - 0.0180i   0.0485 + 0.0000i
+  -0.0226 - 0.0005i   0.0199 + 0.0161i  -0.0126 - 0.0100i  -0.0011 + 0.0164i  -0.0029 - 0.0151i   0.0113 + 0.0053i  -0.0060 + 0.0141i  -0.0136 - 0.0071i
+  -0.0177 + 0.0102i   0.0119 + 0.0090i  -0.0088 - 0.0088i   0.0181 + 0.0114i   0.0001 + 0.0109i   0.0010 - 0.0073i   0.0053 + 0.0071i   0.0025 - 0.0139i
+  -0.0072 + 0.0153i  -0.0144 - 0.0010i  -0.0017 - 0.0152i   0.0108 + 0.0139i   0.0025 + 0.0138i   0.0017 - 0.0111i   0.0059 + 0.0217i  -0.0181 + 0.0062i
+   0.0024 - 0.0181i  -0.0124 - 0.0035i   0.0016 + 0.0001i   0.0047 + 0.0144i  -0.0139 + 0.0127i  -0.0175 + 0.0022i   0.0074 + 0.0051i   0.0245 + 0.0045i
+  -0.0087 - 0.0098i  -0.0069 - 0.0060i   0.0068 + 0.0066i  -0.0130 - 0.0148i   0.0086 + 0.0049i   0.0077 - 0.0005i  -0.0114 + 0.0094i  -0.0102 - 0.0140i
+   0.0121 - 0.0014i  -0.0030 - 0.0067i   0.0008 - 0.0034i  -0.0058 - 0.0148i   0.0003 - 0.0038i  -0.0238 + 0.0021i   0.0218 - 0.0044i   0.0061 + 0.0144i
+   0.0059 + 0.0147i  -0.0067 + 0.0037i  -0.0109 + 0.0104i   0.0032 - 0.0074i   0.0049 - 0.0079i  -0.0037 - 0.0232i   0.0148 - 0.0010i  -0.0155 + 0.0014i
+   0.0077 + 0.0065i   0.0036 - 0.0049i   0.0088 + 0.0083i   0.0052 - 0.0185i   0.0095 + 0.0004i  -0.0001 + 0.0142i   0.0200 - 0.0064i  -0.0013 - 0.0039i
+
+  Columns 9 through 16
+
+  -0.0226 + 0.0005i  -0.0177 - 0.0102i  -0.0072 - 0.0153i   0.0024 + 0.0181i  -0.0087 + 0.0098i   0.0121 + 0.0014i   0.0059 - 0.0147i   0.0077 - 0.0065i
+   0.0199 - 0.0161i   0.0119 - 0.0090i  -0.0144 + 0.0010i  -0.0124 + 0.0035i  -0.0069 + 0.0060i  -0.0030 + 0.0067i  -0.0067 - 0.0037i   0.0036 + 0.0049i
+  -0.0126 + 0.0100i  -0.0088 + 0.0088i  -0.0017 + 0.0152i   0.0016 - 0.0001i   0.0068 - 0.0066i   0.0008 + 0.0034i  -0.0109 - 0.0104i   0.0088 - 0.0083i
+  -0.0011 - 0.0164i   0.0181 - 0.0114i   0.0108 - 0.0139i   0.0047 - 0.0144i  -0.0130 + 0.0148i  -0.0058 + 0.0148i   0.0032 + 0.0074i   0.0052 + 0.0185i
+  -0.0029 + 0.0151i   0.0001 - 0.0109i   0.0025 - 0.0138i  -0.0139 - 0.0127i   0.0086 - 0.0049i   0.0003 + 0.0038i   0.0049 + 0.0079i   0.0095 - 0.0004i
+   0.0113 - 0.0053i   0.0010 + 0.0073i   0.0017 + 0.0111i  -0.0175 - 0.0022i   0.0077 + 0.0005i  -0.0238 - 0.0021i  -0.0037 + 0.0232i  -0.0001 - 0.0142i
+  -0.0060 - 0.0141i   0.0053 - 0.0071i   0.0059 - 0.0217i   0.0074 - 0.0051i  -0.0114 - 0.0094i   0.0218 + 0.0044i   0.0148 + 0.0010i   0.0200 + 0.0064i
+  -0.0136 + 0.0071i   0.0025 + 0.0139i  -0.0181 - 0.0062i   0.0245 - 0.0045i  -0.0102 + 0.0140i   0.0061 - 0.0144i  -0.0155 - 0.0014i  -0.0013 + 0.0039i
+   0.0861 + 0.0000i   0.0020 + 0.0122i   0.0086 + 0.0037i  -0.0203 - 0.0007i  -0.0054 - 0.0024i  -0.0004 - 0.0032i   0.0001 - 0.0019i  -0.0271 - 0.0127i
+   0.0020 - 0.0122i   0.0694 + 0.0000i   0.0061 - 0.0126i   0.0091 - 0.0026i   0.0068 + 0.0114i  -0.0091 + 0.0043i  -0.0072 + 0.0138i   0.0052 + 0.0150i
+   0.0086 - 0.0037i   0.0061 + 0.0126i   0.0743 + 0.0000i   0.0022 + 0.0087i  -0.0013 - 0.0038i   0.0006 + 0.0215i   0.0010 + 0.0168i   0.0068 + 0.0028i
+  -0.0203 + 0.0007i   0.0091 + 0.0026i   0.0022 - 0.0087i   0.0491 + 0.0000i  -0.0104 + 0.0094i   0.0139 - 0.0079i  -0.0214 + 0.0012i   0.0043 + 0.0139i
+  -0.0054 + 0.0024i   0.0068 - 0.0114i  -0.0013 + 0.0038i  -0.0104 - 0.0094i   0.0425 + 0.0000i  -0.0067 - 0.0092i   0.0051 + 0.0038i  -0.0058 - 0.0075i
+  -0.0004 + 0.0032i  -0.0091 - 0.0043i   0.0006 - 0.0215i   0.0139 + 0.0079i  -0.0067 + 0.0092i   0.0569 + 0.0000i   0.0086 - 0.0171i   0.0013 - 0.0053i
+   0.0001 + 0.0019i  -0.0072 - 0.0138i   0.0010 - 0.0168i  -0.0214 - 0.0012i   0.0051 - 0.0038i   0.0086 + 0.0171i   0.0680 + 0.0000i  -0.0041 - 0.0173i
+  -0.0271 + 0.0127i   0.0052 - 0.0150i   0.0068 - 0.0028i   0.0043 - 0.0139i  -0.0058 + 0.0075i   0.0013 + 0.0053i  -0.0041 + 0.0173i   0.0434 + 0.0000i
+
+RandomSuperoperator(2,4)
+
+ans =
+
+   0.4200 + 0.0000i  -0.0390 + 0.0885i  -0.0562 - 0.0161i   0.0729 + 0.0758i
+  -0.0390 - 0.0885i   0.2181 + 0.0000i   0.1026 + 0.0303i  -0.0073 - 0.0236i
+  -0.0562 + 0.0161i   0.1026 - 0.0303i   0.1786 + 0.0000i  -0.0620 - 0.0112i
+   0.0729 - 0.0758i  -0.0073 + 0.0236i  -0.0620 + 0.0112i   0.1832 + 0.0000i
+
+RandomSuperoperator([2,4])
+
+ans =
+
+   0.1456 + 0.0000i   0.0311 + 0.0284i   0.0597 - 0.0524i   0.0208 + 0.0766i  -0.0522 + 0.0305i  -0.1124 - 0.0895i  -0.0415 + 0.0220i   0.0561 - 0.0316i
+   0.0311 - 0.0284i   0.1721 + 0.0000i  -0.0641 - 0.0907i  -0.0308 - 0.0506i  -0.0155 + 0.0399i  -0.0039 + 0.0334i   0.0249 - 0.1068i  -0.0760 - 0.0305i
+   0.0597 + 0.0524i  -0.0641 + 0.0907i   0.2604 - 0.0000i   0.1125 + 0.0932i  -0.0166 - 0.0150i  -0.0539 - 0.0968i   0.0244 + 0.1074i   0.0748 - 0.0219i
+   0.0208 - 0.0766i  -0.0308 + 0.0506i   0.1125 - 0.0932i   0.4218 - 0.0000i   0.0517 - 0.0571i   0.0260 + 0.1159i   0.0547 + 0.0012i   0.0317 - 0.1713i
+  -0.0522 - 0.0305i  -0.0155 - 0.0399i  -0.0166 + 0.0150i   0.0517 + 0.0571i   0.1759 - 0.0000i   0.0146 + 0.0371i   0.0059 + 0.0441i   0.0299 + 0.0140i
+  -0.1124 + 0.0895i  -0.0039 - 0.0334i  -0.0539 + 0.0968i   0.0260 - 0.1159i   0.0146 - 0.0371i   0.3446 - 0.0000i  -0.0199 - 0.0778i  -0.0422 + 0.0224i
+  -0.0415 - 0.0220i   0.0249 + 0.1068i   0.0244 - 0.1074i   0.0547 - 0.0012i   0.0059 - 0.0441i  -0.0199 + 0.0778i   0.2837 + 0.0000i   0.0502 - 0.1227i
+   0.0561 + 0.0316i  -0.0760 + 0.0305i   0.0748 + 0.0219i   0.0317 + 0.1713i   0.0299 - 0.0140i  -0.0422 - 0.0224i   0.0502 + 0.1227i   0.1958 - 0.0000i
+
+RandomSuperoperator([2,4])
+
+ans =
+
+   0.2146 + 0.0000i  -0.1162 - 0.0221i  -0.0240 - 0.0109i   0.0503 + 0.0474i   0.0677 - 0.0148i   0.1080 + 0.0090i   0.0571 + 0.0664i   0.0033 + 0.0573i
+  -0.1162 + 0.0221i   0.2844 + 0.0000i  -0.0731 + 0.0886i  -0.0343 + 0.0083i  -0.1047 + 0.0498i  -0.0117 + 0.0579i   0.0497 + 0.0147i   0.0197 - 0.0464i
+  -0.0240 + 0.0109i  -0.0731 - 0.0886i   0.1886 - 0.0000i  -0.0840 - 0.0407i   0.0612 + 0.0555i  -0.0240 - 0.0027i  -0.0786 - 0.0745i   0.0311 + 0.0667i
