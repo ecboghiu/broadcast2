@@ -1,0 +1,40 @@
+Fixing random seed = 212246
+
+Round 1.
+Visibility given initial measurements and channels: 0.070232
+Visibility given initial measurements and channels: 0.108359
+Visibility given initial measurements and channels: 0.198196
+Visibility given initial measurements and channels: 0.082030
+Visibility given initial measurements and channels: 0.000000
+Visibility given initial measurements and channels: 0.102887
+Visibility given initial measurements and channels: 0.129872
+Visibility given initial measurements and channels: 0.007172
+Visibility given initial measurements and channels: 0.063094
+Visibility given initial measurements and channels: 0.166130
+Visibility given initial measurements and channels: 0.030399
+Visibility given initial measurements and channels: 0.186881
+Visibility given initial measurements and channels: 0.043561
+Visibility given initial measurements and channels: 0.210306
+iter=1, partyidx=1, bellineqvalue=0.247224, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.414714, abschangeobjval=0.16749
+iter=3, partyidx=3, bellineqvalue=0.494652, abschangeobjval=0.0799379
+iter=4, channelq=~, bellineqvalue=4.616262, abschangeobjval=4.12161
+iter=5, partyidx=1, bellineqvalue=4.616765, abschangeobjval=0.000502528
+iter=6, partyidx=2, bellineqvalue=4.616765, abschangeobjval=6.78861e-11
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2224', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2224.m', 172)" style="font-weight:bold">INSTR_3221_2224</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2224.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2224', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2224.m', 180)" style="font-weight:bold">INSTR_3221_2224</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2224.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2224', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2224.m', 180)" style="font-weight:bold">INSTR_3221_2224</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2224.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+Result after cleaning numbers: alpha=0.292557, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292557
+iter=1, partyidx=3, bellineqvalue=0.293032, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293032, abschangeobjval=3.89266e-09

@@ -1,0 +1,16 @@
+Fixing random seed = 213569
+
+Round 1.
+Visibility given initial measurements and channels: 0.027145
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.175104
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.039592
+Visibility given initial measurements and channels: 0.125230
+Visibility given initial measurements and channels: 0.101166
+Visibility given initial measurements and channels: 0.066499
+Visibility given initial measurements and channels: 0.061135
+Visibility given initial measurements and channels: 0.038132
+Visibility given initial measurements and channels: 0.144129
+Visibility given initial measurements and channels: 0.152573
+Visibility given initial measurements and channels: 0.037047

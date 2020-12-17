@@ -1,0 +1,7 @@
+Fixing random seed = 214705
+
+Round 1.
+Visibility given initial measurements and channels: 0.210466
+iter=1, partyidx=2, bellineqvalue=0.217871, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.264281, abschangeobjval=0.0464102
+iter=3, channelq=~, bellineqvalue=0.562233, abschangeobjval=0.297952

@@ -9,10 +9,10 @@ addpath(newdir2);
 addpath(newdir3);
 
 %% Fix the scenario
-party_ins = [3,4,4];
+party_ins = [3,2,2];
 party_outs = [2,2,2];
-instr_ins = [1];
-instr_outs = [1];
+instr_ins = [4];
+instr_outs = [2];
 dims_in = [2];
 dims_out = [4];
 ins = [party_ins, instr_ins];

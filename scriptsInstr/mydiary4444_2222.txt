@@ -1,0 +1,3 @@
+Fixing random seed = 215210
+
+Round 1.

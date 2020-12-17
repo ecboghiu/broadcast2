@@ -1,0 +1,246 @@
+Fixing random seed = 210898
+
+Round 1.
+Visibility given initial measurements and channels: 0.000000
+Visibility given initial measurements and channels: 0.091430
+Visibility given initial measurements and channels: 0.167118
+Visibility given initial measurements and channels: 0.127313
+Visibility given initial measurements and channels: 0.160350
+Visibility given initial measurements and channels: 0.244156
+iter=1, channelq=~, bellineqvalue=0.435657, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.435675, abschangeobjval=1.80437e-05
+iter=3, partyidx=2, bellineqvalue=0.435675, abschangeobjval=1.36827e-08
+tentative newalpha=0.287209, sum(bellcoeffs)=-3.753764, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.287209
+iter=1, partyidx=3, bellineqvalue=0.295248, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.295248, abschangeobjval=1.28458e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.209410, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.293041, abschangeobjval=0.000147566
+iter=3, partyidx=3, bellineqvalue=0.293041, abschangeobjval=2.63335e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.389453, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.0732*p_1111_1111 + 0.311*p_1111_1121 - 0.0383*p_1111_1211 - 0.566*p_1111_1221 + 0.133*p_1111_2111 + 0.207*p_1111_2121 - 0.111*p_1111_2211 - 0.181*p_1111_2221 + 0.0725*p_1111_3111 + 0.145*p_1111_3121 - 0.0421*p_1111_3211 - 0.25*p_1111_3221 + 0.379*p_1121_1111 + 0.141*p_1121_1121 - 0.22*p_1121_1211 - 0.258*p_1121_1221 + 0.19*p_1121_2111 + 0.117*p_1121_2121 - 0.168*p_1121_2211 - 0.0985*p_1121_2221 + 0.361*p_1121_3111 + 0.289*p_1121_3121 - 0.208*p_1121_3211 - 0.525*p_1121_3221 + 0.0074*p_1211_1111 + 0.211*p_1211_1121 - 0.0626*p_1211_1211 - 0.375*p_1211_1221 + 0.345*p_1211_2111 - 0.0391*p_1211_2121 - 0.104*p_1211_2211 - 0.337*p_1211_2221 + 0.0313*p_1211_3111 - 0.22*p_1211_3121 - 0.0595*p_1211_3211 - 0.812*p_1211_3221 + 0.975*p_1221_1111 - 0.226*p_1221_1121 + 0.077*p_1221_1211 - 0.86*p_1221_1221 - 0.202*p_1221_2111 - 0.17*p_1221_2121 - 0.192*p_1221_2211 - 0.303*p_1221_2221 + 0.868*p_1221_3111 + 0.233*p_1221_3121 + 0.0467*p_1221_3211 - 0.247*p_1221_3221 + 0.159*p_2111_1111 - 0.0333*p_2111_1121 - 0.148*p_2111_1211 - 0.226*p_2111_1221 + 0.0984*p_2111_2111 + 0.071*p_2111_2121 - 0.0757*p_2111_2211 - 0.0454*p_2111_2221 + 0.159*p_2111_3111 + 0.133*p_2111_3121 - 0.145*p_2111_3211 + 0.0236*p_2111_3221 - 0.0668*p_2121_1111 + 0.125*p_2121_1121 - 0.0492*p_2121_1211 + 0.0286*p_2121_1221 + 0.122*p_2121_2111 + 0.15*p_2121_2121 - 0.101*p_2121_2211 - 0.131*p_2121_2221 - 0.0488*p_2121_3111 - 0.0223*p_2121_3121 - 0.0615*p_2121_3211 - 0.23*p_2121_3221 + 0.153*p_2211_1111 - 0.164*p_2211_1121 - 0.0625*p_2211_1211 - 0.145*p_2211_1221 + 0.105*p_2211_2111 + 0.0305*p_2211_2121 - 0.0691*p_2211_2211 - 0.201*p_2211_2221 + 0.214*p_2211_3111 + 0.279*p_2211_3121 - 0.00463*p_2211_3211 - 0.134*p_2211_3221 - 0.0125*p_2221_1111 + 0.305*p_2221_1121 - 0.204*p_2221_1211 - 0.121*p_2221_1221 - 0.475*p_2221_2111 + 0.0675*p_2221_2121 - 0.125*p_2221_2211 - 0.335*p_2221_2221 - 0.0506*p_2221_3111 - 0.142*p_2221_3121 - 0.212*p_2221_3211 - 0.109*p_2221_3221
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(-107.751849,-3.639071,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-160.951807,-10.611015,0.001628)
+Party: 1, input:3, obs: (azimuth[º],elevation[º],r)=(-18.461038,11.086078,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(-171.546386,-73.413553,0.996510)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-171.546386,-73.256163,0.998574)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(103.908394,66.712086,2.000000)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(82.417308,-21.826330,2.000000)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 2.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.106512
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.200667
+iter=1, partyidx=3, bellineqvalue=0.234417, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.479731, abschangeobjval=0.245314
+iter=3, partyidx=1, bellineqvalue=0.560239, abschangeobjval=0.0805073
+iter=4, partyidx=2, bellineqvalue=0.560239, abschangeobjval=2.86848e-09
+tentative newalpha=0.292323, sum(bellcoeffs)=-3.880614, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292323
+iter=1, partyidx=3, bellineqvalue=0.293130, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293130, abschangeobjval=1.20556e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.435785, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.297488, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.297488, abschangeobjval=8.86075e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.943604, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 3.
+Visibility given initial measurements and channels: 0.043183
+Visibility given initial measurements and channels: 0.124379
+Visibility given initial measurements and channels: 0.113001
+Visibility given initial measurements and channels: 0.061337
+Visibility given initial measurements and channels: 0.007695
+Visibility given initial measurements and channels: 0.114763
+Visibility given initial measurements and channels: 0.000000
+Visibility given initial measurements and channels: 0.043292
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.087883
+Visibility given initial measurements and channels: 0.070017
+Visibility given initial measurements and channels: 0.104674
+Visibility given initial measurements and channels: 0.220691
+iter=1, partyidx=3, bellineqvalue=0.250124, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.385427, abschangeobjval=0.135303
+iter=3, partyidx=1, bellineqvalue=0.396430, abschangeobjval=0.0110031
+iter=4, partyidx=2, bellineqvalue=0.469935, abschangeobjval=0.0735047
+iter=5, partyidx=3, bellineqvalue=0.469935, abschangeobjval=9.92732e-10
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 172)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.293064, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293064, abschangeobjval=1.10098e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 172)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Cleaning didn't help (newalpha=1.000000). Now applying bisection algorithm.
+LP bisection progress: am=0.25 lm=1
+LP bisection progress: am=0.375 lm=0
+LP bisection progress: am=0.3125 lm=0
+LP bisection progress: am=0.28125 lm=1
+LP bisection progress: am=0.296875 lm=0
+LP bisection progress: am=0.289063 lm=1
+LP bisection progress: am=0.292969 lm=0
+LP bisection progress: am=0.291016 lm=1
+LP bisection progress: am=0.291992 lm=1
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+Visibility after optimizing over POVMs and channels: 0.000000
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 4.
+Visibility given initial measurements and channels: 0.142290
+Visibility given initial measurements and channels: 0.236745
+iter=1, partyidx=3, bellineqvalue=0.315858, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.483085, abschangeobjval=0.167226
+iter=3, partyidx=1, bellineqvalue=0.500662, abschangeobjval=0.0175772
+iter=4, partyidx=2, bellineqvalue=0.558617, abschangeobjval=0.0579553
+iter=5, partyidx=3, bellineqvalue=0.558741, abschangeobjval=0.000124188
+iter=6, channelq=~, bellineqvalue=0.558741, abschangeobjval=1.66347e-09
+tentative newalpha=0.422650, sum(bellcoeffs)=-4.618802, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.422650
+iter=1, partyidx=3, bellineqvalue=0.422650, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.422650, abschangeobjval=1.75967e-10
+tentative newalpha=0.422650, sum(bellcoeffs)=-4.618802, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.422650
+New best found. Details:
+
+Bell expression in probability notation:
+0.0723*p_1111_1221 - 0.0573*p_1111_1121 - 0.0561*p_1111_1211 - 0.105*p_1111_1111 - 0.0988*p_1111_2111 - 0.363*p_1111_2121 + 0.114*p_1111_2211 - 0.00603*p_1111_2221 + 0.123*p_1111_3111 + 0.189*p_1111_3121 + 0.0627*p_1111_3211 + 0.125*p_1111_3221 + 0.161*p_1121_1111 - 0.111*p_1121_1121 + 0.0829*p_1121_1211 - 0.27*p_1121_1221 + 0.0293*p_1121_2111 + 0.158*p_1121_2121 - 0.0887*p_1121_2211 - 0.0943*p_1121_2221 - 0.0292*p_1121_3111 - 0.127*p_1121_3121 - 0.115*p_1121_3211 - 0.75*p_1121_3221 - 0.0953*p_1211_1111 - 0.069*p_1211_1121 - 0.0523*p_1211_1211 - 0.248*p_1211_1221 + 0.169*p_1211_2111 + 0.232*p_1211_2121 - 0.124*p_1211_2211 + 0.0429*p_1211_2221 - 0.407*p_1211_3111 - 0.141*p_1211_3121 - 0.0681*p_1211_3211 - 0.394*p_1211_3221 + 0.376*p_1221_1111 - 0.155*p_1221_1121 + 0.277*p_1221_1211 - 0.664*p_1221_1221 - 1.1*p_1221_2111 + 0.114*p_1221_2121 + 0.188*p_1221_2211 + 0.136*p_1221_2221 + 0.633*p_1221_3111 + 0.213*p_1221_3121 + 0.204*p_1221_3211 - 0.222*p_1221_3221 + 0.0738*p_2111_1111 - 0.172*p_2111_1121 + 0.00192*p_2111_1211 - 0.0502*p_2111_1221 + 0.195*p_2111_2111 + 0.218*p_2111_2121 - 0.154*p_2111_2211 - 0.613*p_2111_2221 - 0.171*p_2111_3111 - 0.111*p_2111_3121 - 0.355*p_2111_3211 - 0.017*p_2111_3221 - 0.357*p_2121_1111 + 0.154*p_2121_1121 - 0.317*p_2121_1211 + 0.383*p_2121_1221 - 0.113*p_2121_2111 + 0.0402*p_2121_2121 + 0.079*p_2121_2211 - 0.0024*p_2121_2221 + 0.0146*p_2121_3111 + 0.0266*p_2121_3121 + 0.284*p_2121_3211 - 0.191*p_2121_3221 + 0.0136*p_2211_1111 - 0.113*p_2211_1121 - 0.126*p_2211_1211 - 0.238*p_2211_1221 + 0.422*p_2211_2111 - 0.302*p_2211_2121 + 0.213*p_2211_2211 - 0.0136*p_2211_2221 - 0.129*p_2211_3111 + 0.14*p_2211_3121 - 0.0316*p_2211_3211 + 0.165*p_2211_3221 - 0.212*p_2221_1111 + 0.18*p_2221_1121 - 0.255*p_2221_1211 + 0.121*p_2221_1221 - 0.128*p_2221_2111 + 0.037*p_2221_2121 - 0.195*p_2221_2211 - 0.376*p_2221_2221 + 0.0949*p_2221_3111 - 0.206*p_2221_3121 - 0.0975*p_2221_3211 - 0.117*p_2221_3221
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(144.163122,10.272609,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-109.598957,57.053812,2.000000)
+Party: 1, input:3, obs: (azimuth[º],elevation[º],r)=(-132.078470,-30.918709,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(166.950928,-8.804353,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-68.751169,-74.631105,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(-13.989650,-39.937960,2.000000)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(-125.719228,-52.211234,2.000000)
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.4226
+
+
+Round 5.
+Visibility given initial measurements and channels: 0.109637
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.195210
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.153205
+Visibility given initial measurements and channels: 0.114031
+Visibility given initial measurements and channels: 0.123080
+Visibility given initial measurements and channels: 0.106009
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.201079
+iter=1, channelq=~, bellineqvalue=0.659197, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.680418, abschangeobjval=0.0212204
+iter=3, partyidx=2, bellineqvalue=0.795183, abschangeobjval=0.114766
+iter=4, partyidx=3, bellineqvalue=0.795183, abschangeobjval=3.00228e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 172)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_3221_2221', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m', 180)" style="font-weight:bold">INSTR_3221_2221</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_3221_2221.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.295468, abschangeobjval=0.00257521
+iter=3, channelq=~, bellineqvalue=0.295468, abschangeobjval=5.66491e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.468414, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.4226
+
+
+Round 6.
+Visibility given initial measurements and channels: 0.000391
+Visibility given initial measurements and channels: 0.032689
+Visibility given initial measurements and channels: 0.009251
+Visibility given initial measurements and channels: 0.100899
+Visibility given initial measurements and channels: 0.085095
+Visibility given initial measurements and channels: 0.060958
+Visibility given initial measurements and channels: 0.038569
+Visibility given initial measurements and channels: 0.041439

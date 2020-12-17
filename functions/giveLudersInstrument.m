@@ -4,13 +4,12 @@ Uisometry = giveChannelRAND(dim_in, dim_out);
 channels = {{{}}};
 for w = 1:instr_in
     povm = RandomPOVM(dim_in, instr_out);
+    kraus = cell(instr_out,1);
     for d=1:instr_out
-       channels{1}{w}{d} = ChoiMatrix({Uisometry * sqrt(povm{d})}); 
+       kraus{d} = Uisometry * sqrtm(povm{d}); 
+       channels{1}{w}{d} = ChoiMatrix({kraus{d}}); 
     end
-    %channel = ChoiMatrix(kraus);
-    %channels{1}{w} = channel;
 end
-
 
 end
 
