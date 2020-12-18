@@ -8822,3 +8822,1034 @@ In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INST
 Cleaning didn't help (newalpha=0.000000). Now applying bisection algorithm.
 LP bisection progress: am=0.25 lm=1
 LP bisection progress: am=0.375 lm=0
+LP bisection progress: am=0.3125 lm=0
+LP bisection progress: am=0.28125 lm=1
+LP bisection progress: am=0.296875 lm=0
+LP bisection progress: am=0.289063 lm=1
+LP bisection progress: am=0.292969 lm=0
+LP bisection progress: am=0.291016 lm=1
+LP bisection progress: am=0.291992 lm=1
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+Visibility after optimizing over POVMs and channels: 0.000000
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 152.
+Visibility given initial measurements and channels: 0.256517
+iter=1, channelq=~, bellineqvalue=2.424440, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=2.753566, abschangeobjval=0.329126
+iter=3, partyidx=2, bellineqvalue=2.753566, abschangeobjval=3.19737e-08
+tentative newalpha=0.290291, sum(bellcoeffs)=-19.840533, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.290291
+iter=1, channelq=~, bellineqvalue=0.291046, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.291054, abschangeobjval=8.28494e-06
+iter=3, partyidx=2, bellineqvalue=0.303660, abschangeobjval=0.0126057
+iter=4, partyidx=3, bellineqvalue=0.307509, abschangeobjval=0.00384908
+iter=5, channelq=~, bellineqvalue=0.307509, abschangeobjval=9.94818e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.828388, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=2.72596e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.793631, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 153.
+Visibility given initial measurements and channels: 0.197358
+Visibility given initial measurements and channels: 0.239943
+iter=1, channelq=~, bellineqvalue=1.721717, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.746855, abschangeobjval=0.0251386
+iter=3, partyidx=2, bellineqvalue=1.749600, abschangeobjval=0.0027446
+iter=4, partyidx=3, bellineqvalue=1.749600, abschangeobjval=1.45172e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-9.580331, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.305317, abschangeobjval=0.0124239
+iter=3, channelq=~, bellineqvalue=0.305317, abschangeobjval=3.80705e-07
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.040376, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 154.
+Visibility given initial measurements and channels: 0.236464
+iter=1, partyidx=3, bellineqvalue=0.257381, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.667606, abschangeobjval=0.410225
+iter=3, partyidx=1, bellineqvalue=0.805331, abschangeobjval=0.137725
+iter=4, partyidx=2, bellineqvalue=0.807233, abschangeobjval=0.00190224
+iter=5, partyidx=3, bellineqvalue=0.809773, abschangeobjval=0.00253951
+iter=6, channelq=~, bellineqvalue=0.809774, abschangeobjval=7.16944e-07
+tentative newalpha=0.422650, sum(bellcoeffs)=-5.756487, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.422650
+iter=1, channelq=~, bellineqvalue=0.422650, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.422650, abschangeobjval=1.22205e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.422650, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.422650
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 155.
+Visibility given initial measurements and channels: 0.168452
+Visibility given initial measurements and channels: 0.222670
+iter=1, channelq=~, bellineqvalue=1.518252, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.518453, abschangeobjval=0.000200214
+iter=3, partyidx=2, bellineqvalue=1.518453, abschangeobjval=5.72553e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+Cleaning didn't help (newalpha=1.000000). Now applying bisection algorithm.
+[Warning: Both points are outside the local set!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastSlowLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m', 30)" style="font-weight:bold">BroadcastSlowLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 189)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',189,0)">line 189</a>)] 
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+Visibility after optimizing over POVMs and channels: 0.000000
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 156.
+Visibility given initial measurements and channels: 0.232299
+iter=1, channelq=~, bellineqvalue=1.040205, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.046580, abschangeobjval=0.00637496
+iter=3, partyidx=2, bellineqvalue=1.046580, abschangeobjval=5.11654e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.274091, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.274091
+iter=1, partyidx=1, bellineqvalue=0.274091, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.329143, abschangeobjval=0.0550527
+iter=3, partyidx=3, bellineqvalue=0.361075, abschangeobjval=0.031932
+iter=4, channelq=~, bellineqvalue=0.361075, abschangeobjval=4.54025e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-07).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-06).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-05).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+Cleaning didn't help (newalpha=0.000000). Now applying bisection algorithm.
+LP bisection progress: am=0.75 lm=1
+LP bisection progress: am=0.875 lm=0
+LP bisection progress: am=0.8125 lm=1
+LP bisection progress: am=0.84375 lm=0
+LP bisection progress: am=0.828125 lm=0
+LP bisection progress: am=0.820313 lm=0
+LP bisection progress: am=0.816406 lm=0
+LP bisection progress: am=0.814453 lm=0
+LP bisection progress: am=0.813477 lm=0
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 226)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',226,0)">line 226</a>)] 
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 157.
+Visibility given initial measurements and channels: 0.153134
+Visibility given initial measurements and channels: 0.163241
+Visibility given initial measurements and channels: 0.262745
+iter=1, channelq=~, bellineqvalue=1.006413, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.025945, abschangeobjval=0.019533
+iter=3, partyidx=2, bellineqvalue=1.058604, abschangeobjval=0.0326581
+iter=4, partyidx=3, bellineqvalue=1.058604, abschangeobjval=1.56954e-10
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1.37934e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 158.
+Visibility given initial measurements and channels: 0.169007
+Visibility given initial measurements and channels: 0.275577
+iter=1, partyidx=1, bellineqvalue=0.313928, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.337732, abschangeobjval=0.0238048
+iter=3, partyidx=3, bellineqvalue=0.441731, abschangeobjval=0.103998
+iter=4, channelq=~, bellineqvalue=0.756329, abschangeobjval=0.314598
+iter=5, partyidx=1, bellineqvalue=0.760462, abschangeobjval=0.00413303
+iter=6, partyidx=2, bellineqvalue=0.760592, abschangeobjval=0.000129409
+iter=7, partyidx=3, bellineqvalue=0.760949, abschangeobjval=0.000357843
+iter=8, channelq=~, bellineqvalue=0.760949, abschangeobjval=3.2452e-09
+tentative newalpha=0.422650, sum(bellcoeffs)=-10.164842, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.422650
+iter=1, channelq=~, bellineqvalue=0.422650, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.422650, abschangeobjval=1.10871e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+Result after cleaning numbers: alpha=0.422650, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.422650
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 159.
+Visibility given initial measurements and channels: 0.257163
+iter=1, partyidx=3, bellineqvalue=0.257799, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.336467, abschangeobjval=1.07867
+iter=3, partyidx=1, bellineqvalue=1.472234, abschangeobjval=0.135767
+iter=4, partyidx=2, bellineqvalue=1.564098, abschangeobjval=0.0918636
+iter=5, partyidx=3, bellineqvalue=1.564098, abschangeobjval=1.65446e-08
+tentative newalpha=0.292892, sum(bellcoeffs)=-4.676204, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292892
+iter=1, partyidx=1, bellineqvalue=0.292892, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292892, abschangeobjval=5.52062e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-13.446286, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 160.
+Visibility given initial measurements and channels: 0.179290
+Visibility given initial measurements and channels: 0.229585
+iter=1, channelq=~, bellineqvalue=1.039925, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.093742, abschangeobjval=0.0538172
+iter=3, partyidx=2, bellineqvalue=1.093742, abschangeobjval=3.70311e-08
+tentative newalpha=0.291800, sum(bellcoeffs)=-23.731220, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.291800
+iter=1, partyidx=1, bellineqvalue=0.291886, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.296129, abschangeobjval=0.00424359
+iter=3, partyidx=3, bellineqvalue=0.297611, abschangeobjval=0.00148143
+iter=4, channelq=~, bellineqvalue=0.297611, abschangeobjval=2.70089e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1.81387e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 161.
+Visibility given initial measurements and channels: 0.180158
+Visibility given initial measurements and channels: 0.250458
+iter=1, channelq=~, bellineqvalue=1.743570, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.772490, abschangeobjval=0.0289205
+iter=3, partyidx=2, bellineqvalue=1.772490, abschangeobjval=1.2831e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Result after cleaning numbers: alpha=0.283275, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.283275
+iter=1, partyidx=2, bellineqvalue=0.387825, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.406447, abschangeobjval=0.0186219
+iter=3, channelq=~, bellineqvalue=0.406447, abschangeobjval=3.69437e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.306032, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=1.83947e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.929950, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 162.
+Visibility given initial measurements and channels: 0.139069
+Visibility given initial measurements and channels: 0.224353
+iter=1, partyidx=1, bellineqvalue=0.299679, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.303171, abschangeobjval=0.00349198
+iter=3, partyidx=3, bellineqvalue=0.307851, abschangeobjval=0.0046806
+iter=4, channelq=~, bellineqvalue=1.162195, abschangeobjval=0.854344
+iter=5, partyidx=1, bellineqvalue=1.162206, abschangeobjval=1.0592e-05
+iter=6, partyidx=2, bellineqvalue=1.162276, abschangeobjval=7.06395e-05
+iter=7, partyidx=3, bellineqvalue=1.162276, abschangeobjval=2.4335e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.364799, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.364799, abschangeobjval=3.49797e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 163.
+Visibility given initial measurements and channels: 0.267663
+iter=1, partyidx=2, bellineqvalue=0.276457, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.287277, abschangeobjval=0.0108197
+iter=3, channelq=~, bellineqvalue=1.141495, abschangeobjval=0.854219
+iter=4, partyidx=1, bellineqvalue=1.189001, abschangeobjval=0.0475054
+iter=5, partyidx=2, bellineqvalue=1.189001, abschangeobjval=2.05792e-07
+tentative newalpha=0.292891, sum(bellcoeffs)=-4.162749, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292891
+iter=1, partyidx=1, bellineqvalue=0.292891, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.303326, abschangeobjval=0.0104353
+iter=3, partyidx=3, bellineqvalue=0.303330, abschangeobjval=3.4877e-06
+iter=4, channelq=~, bellineqvalue=0.303330, abschangeobjval=1.64187e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-07).
+[Warning: The visibility-broadcast-LP not solved. Info: "Unknown problem in solver (Turn on 'debug' in sdpsettings) (Reference to
+non-existent field 'sol'.)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-06).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-05).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+Cleaning didn't help (newalpha=0.000000). Now applying bisection algorithm.
+[Warning: Both points are outside the local set!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastSlowLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m', 30)" style="font-weight:bold">BroadcastSlowLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 189)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',189,0)">line 189</a>)] 
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 226)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',226,0)">line 226</a>)] 
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 164.
+Visibility given initial measurements and channels: 0.193913
+Visibility given initial measurements and channels: 0.229888
+iter=1, partyidx=1, bellineqvalue=0.275974, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.279221, abschangeobjval=0.00324709
+iter=3, partyidx=3, bellineqvalue=0.282798, abschangeobjval=0.00357784
+iter=4, channelq=~, bellineqvalue=1.015216, abschangeobjval=0.732418
+iter=5, partyidx=1, bellineqvalue=1.016022, abschangeobjval=0.000806217
+iter=6, partyidx=2, bellineqvalue=1.016022, abschangeobjval=8.59884e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292557, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292557
+iter=1, partyidx=3, bellineqvalue=0.293032, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293032, abschangeobjval=3.1162e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.293452, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.293452, abschangeobjval=1.38338e-10
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 165.
+Visibility given initial measurements and channels: 0.216957
+iter=1, partyidx=3, bellineqvalue=0.217649, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.922073, abschangeobjval=0.704424
+iter=3, partyidx=1, bellineqvalue=0.999153, abschangeobjval=0.0770796
+iter=4, partyidx=2, bellineqvalue=1.066484, abschangeobjval=0.0673312
+iter=5, partyidx=3, bellineqvalue=1.066484, abschangeobjval=3.15941e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.293189, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.293222, abschangeobjval=3.31234e-05
+iter=3, partyidx=2, bellineqvalue=0.293229, abschangeobjval=6.16944e-06
+iter=4, partyidx=3, bellineqvalue=0.301730, abschangeobjval=0.0085012
+iter=5, channelq=~, bellineqvalue=0.301746, abschangeobjval=1.58803e-05
+iter=6, partyidx=1, bellineqvalue=0.301746, abschangeobjval=1.41255e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Cleaning didn't help (newalpha=1.000000). Now applying bisection algorithm.
+LP bisection progress: am=0.75 lm=1
+LP bisection progress: am=0.875 lm=1
+LP bisection progress: am=0.9375 lm=1
+LP bisection progress: am=0.96875 lm=0
+LP bisection progress: am=0.953125 lm=0
+LP bisection progress: am=0.945313 lm=1
+LP bisection progress: am=0.949219 lm=0
+LP bisection progress: am=0.947266 lm=1
+LP bisection progress: am=0.948242 lm=1
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+Visibility after optimizing over POVMs and channels: 0.000000
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 166.
+Visibility given initial measurements and channels: 0.202187
+iter=1, partyidx=1, bellineqvalue=0.273087, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.274655, abschangeobjval=0.00156853
+iter=3, partyidx=3, bellineqvalue=0.292622, abschangeobjval=0.0179672
+iter=4, channelq=~, bellineqvalue=1.183182, abschangeobjval=0.890559
+iter=5, partyidx=1, bellineqvalue=1.184247, abschangeobjval=0.00106512
+iter=6, partyidx=2, bellineqvalue=1.185226, abschangeobjval=0.000978757
+iter=7, partyidx=3, bellineqvalue=1.185226, abschangeobjval=2.70381e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.309497, abschangeobjval=0.0166032
+iter=3, channelq=~, bellineqvalue=0.309496, abschangeobjval=1.88654e-07
+tentative newalpha=0.292893, sum(bellcoeffs)=-8.531127, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 167.
+Visibility given initial measurements and channels: 0.208216
+iter=1, partyidx=2, bellineqvalue=0.305292, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.324606, abschangeobjval=0.0193141
+iter=3, channelq=~, bellineqvalue=2.024625, abschangeobjval=1.70002
+iter=4, partyidx=1, bellineqvalue=2.054997, abschangeobjval=0.0303718
+iter=5, partyidx=2, bellineqvalue=2.055664, abschangeobjval=0.000666982
+iter=6, partyidx=3, bellineqvalue=2.055664, abschangeobjval=6.85085e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Result after cleaning numbers: alpha=0.292894, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292894
+iter=1, partyidx=2, bellineqvalue=0.292894, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.495148, abschangeobjval=0.202254
+iter=3, channelq=~, bellineqvalue=0.495147, abschangeobjval=1.09396e-06
+iter=4, partyidx=1, bellineqvalue=0.495147, abschangeobjval=1.55446e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Result after cleaning numbers: alpha=0.292894, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292894
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 168.
+Visibility given initial measurements and channels: 0.261974
+iter=1, partyidx=1, bellineqvalue=0.271994, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.312162, abschangeobjval=0.0401684
+iter=3, partyidx=3, bellineqvalue=0.317628, abschangeobjval=0.00546635
+iter=4, channelq=~, bellineqvalue=2.029583, abschangeobjval=1.71195
+iter=5, partyidx=1, bellineqvalue=2.030862, abschangeobjval=0.00127932
+iter=6, partyidx=2, bellineqvalue=2.030862, abschangeobjval=1.97342e-07
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292891, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292891
+iter=1, channelq=~, bellineqvalue=0.294431, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.294438, abschangeobjval=6.82721e-06
+iter=3, partyidx=2, bellineqvalue=0.308640, abschangeobjval=0.0142023
+iter=4, partyidx=3, bellineqvalue=0.308644, abschangeobjval=3.48267e-06
+iter=5, channelq=~, bellineqvalue=0.308644, abschangeobjval=9.24028e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-07).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-06).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-05).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+Cleaning didn't help (newalpha=0.000000). Now applying bisection algorithm.
+[Warning: Both points are outside the local set!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastSlowLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m', 30)" style="font-weight:bold">BroadcastSlowLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 189)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',189,0)">line 189</a>)] 
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+[Warning: LP not solved correctly. Trying another set of initial points. LpStatus=1.000000, alpha=0.000000
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 226)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',226,0)">line 226</a>)] 
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 169.
+Visibility given initial measurements and channels: 0.209493
+iter=1, partyidx=2, bellineqvalue=0.226755, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.264543, abschangeobjval=0.0377878
+iter=3, channelq=~, bellineqvalue=1.034618, abschangeobjval=0.770075
+iter=4, partyidx=1, bellineqvalue=1.128593, abschangeobjval=0.0939752
+iter=5, partyidx=2, bellineqvalue=1.128593, abschangeobjval=7.78288e-08
+tentative newalpha=0.291628, sum(bellcoeffs)=-10.786305, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.291628
+iter=1, partyidx=3, bellineqvalue=0.293417, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.294215, abschangeobjval=0.000797508
+iter=3, partyidx=1, bellineqvalue=0.294219, abschangeobjval=4.43924e-06
+iter=4, partyidx=2, bellineqvalue=0.296022, abschangeobjval=0.00180277
+iter=5, partyidx=3, bellineqvalue=0.296022, abschangeobjval=7.28629e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.677847, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=4.81039e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 170.
+Visibility given initial measurements and channels: 0.257972
+iter=1, partyidx=1, bellineqvalue=0.289737, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.293189, abschangeobjval=0.00345139
+iter=3, partyidx=3, bellineqvalue=0.358300, abschangeobjval=0.0651109
+iter=4, channelq=~, bellineqvalue=1.142234, abschangeobjval=0.783934
+iter=5, partyidx=1, bellineqvalue=1.142255, abschangeobjval=2.17456e-05
+iter=6, partyidx=2, bellineqvalue=1.142600, abschangeobjval=0.000344686
+iter=7, partyidx=3, bellineqvalue=1.142600, abschangeobjval=3.98867e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.306025, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.306025, abschangeobjval=1.69188e-07
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-07).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.422650
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.4226    0.4226    0.4226    0.4226
+
+
+Round 171.
+Visibility given initial measurements and channels: 0.221935
+iter=1, partyidx=1, bellineqvalue=0.286088, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.356588, abschangeobjval=0.0705002
+iter=3, partyidx=3, bellineqvalue=0.394136, abschangeobjval=0.0375473
+iter=4, channelq=~, bellineqvalue=0.709743, abschangeobjval=0.315608
+iter=5, partyidx=1, bellineqvalue=0.709938, abschangeobjval=0.00019429
+iter=6, partyidx=2, bellineqvalue=0.709938, abschangeobjval=1.82131e-08
+tentative newalpha=0.292824, sum(bellcoeffs)=-6.512472, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292824
+iter=1, partyidx=1, bellineqvalue=0.292824, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.308201, abschangeobjval=0.0153778
+iter=3, partyidx=3, bellineqvalue=0.308305, abschangeobjval=0.000103514
+iter=4, channelq=~, bellineqvalue=0.308305, abschangeobjval=3.39899e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 172)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',172,0)">line 172</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-09).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 180)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',180,0)">line 180</a>)] 
+LP using clean(probs,1e-08).
+Cleaning didn't help (newalpha=1.000000). Now applying bisection algorithm.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/subsref>subsref1d', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\subsref.m', 255)" style="font-weight:bold">sdpvar/subsref>subsref1d</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\subsref.m',255,0)">line 255</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\subsref.m', 50)" style="font-weight:bold">sdpvar/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\subsref.m',50,0)">line 50</a>)
+                    y = subsref1d(X,Y(1).subs{1},Y);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastSlowLP>SlowLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m', 110)" style="font-weight:bold">BroadcastSlowLP>SlowLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m',110,0)">line 110</a>)
+        q{coords{:}} = qarray(idx);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastSlowLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m', 17)" style="font-weight:bold">BroadcastSlowLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastSlowLP.m',17,0)">line 17</a>)
+[L1, ~] = SlowLP(p1, nr_inputs_per_party, nr_outputs_per_party);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR_4444_2222', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m', 189)" style="font-weight:bold">INSTR_4444_2222</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR_4444_2222.m',189,0)">line 189</a>)
+                [probablybad_newalpha,bellcoeffs] = BroadcastSlowLP( ...
+} 
