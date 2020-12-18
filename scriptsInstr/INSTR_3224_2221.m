@@ -31,7 +31,7 @@ semilla = sum(100*clock);
 %semilla = 216391; % Fix it for debugging
 %semilla = 1;
 %semilla = 1;
-fprintf("Fixing random seed = %g\n", uint32(semilla));
+fprintf("Fixing random seed = %g\n", uint64(semilla));
 rng(semilla,'twister');
 rng 'shuffle'
 

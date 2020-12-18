@@ -47,7 +47,7 @@ localbound = nan;
 
 latest_alpha_meta = 0;
 best_alpha = 0;
-best_everything = {};
+best_everything = cell(1,4);
 best_index = 1;
 meta_iteration = 1;
 while meta_iteration < MAX_ITER_META

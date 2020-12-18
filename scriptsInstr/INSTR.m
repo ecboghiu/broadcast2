@@ -47,7 +47,7 @@ localbound = nan;
 
 latest_alpha_meta = 0;
 best_alpha = 0;
-best_everything = {};
+best_everything = cell(1,6);
 best_index = 1;
 meta_iteration = 1;
 while meta_iteration < MAX_ITER_META
@@ -259,6 +259,8 @@ while meta_iteration < MAX_ITER_META
            best_everything{best_index,2} = best_povm;
            best_everything{best_index,3} = best_channels;
            best_everything{best_index,4} = best_bellcoeffs;
+           best_everything{best_index,5} = iniPovms;
+           best_everything{best_index,6} = iniChannel;
            best_index = best_index + 1;
            
            fprintf("New best found. Details:\n\n");
