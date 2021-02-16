@@ -1,0 +1,907 @@
+{Unrecognized function or variable 'nr_indeqs'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 17)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',17,0)">line 17</a>)
+for ineq_nr=1:nr_indeqs
+} 
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',17,1)">17  </a>for ineq_nr=1:nr_indeqs
+if system_dependent('IsDebugMode')==1, dbquit all; end
+arXiv1112_2626_check
+Local bound: 1.000000
+
+Round 1 of the see-saw.
+
+Warning from <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>appendOptionNames', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 398)" style="font-weight:bold">sdpsettings>appendOptionNames</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',398,0)">line 398</a>)
+<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',398,1)"></a>        evalc(['options = struct(options);']);
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+sdpsettings
+ <strong>sdpsettings</strong> Create/alter solver options structure.
+ 
+    OPTIONS = <strong>sdpsettings</strong> with no input arguments returns
+    setting structure with default values
+ 
+    OPTIONS = <strong>sdpsettings</strong>('NAME1',VALUE1,'NAME2',VALUE2,...) creates a
+    solution options structure OPTIONS in which the named properties have
+    the specified values.  Any unspecified properties have default values.
+    It is sufficient to type only the leading characters that uniquely
+    identify the property.  Case is ignored for property names.
+ 
+    OPTIONS = <strong>sdpsettings</strong>(OLDOPTS,'NAME1',VALUE1,...) alters an existing options
+    structure OLDOPTS.
+ 
+    The OPTIONS structure is a simple struct and can thus easily be
+    manipulated after its creation
+    OPTIONS = sdpsettings;OPTIONS.verbose = 0;
+ 
+ 
+    <strong>sdpsettings</strong> PROPERTIES
+ 
+    GENERAL
+ 
+     solver             - Specify solver [''|sdpt3|sedumi|sdpa|pensdp|penbmi|csdp|dsdp|maxdet|lmilab|cdd|cplex|xpress|mosek|nag|quadprog|linprog|bnb|bmibnb|kypd|mpt|refiner|none ('')]
+     verbose            - Display-level [0|1|2|...(0)] (0 silent, 1 normal, >1 increasingly louder)
+     usex0              - Use the current values obtained from VALUE as initial iterate if solver supports that [0|1 (0)]
+     relax              - Disregard integrality constraint and/or relax nonlinear terms  [0 | 1 (both) 2 (relax integrality) 3 (relax nonlinear terms) (0)]
+ 
+     showprogress       - Show progress of YALMIP (suitable for debugging very large problems) [0|1 (0)]
+     warning            - Shows a warning if a problems occurs when solving a problem (infeasibility, numerical problem etc.) [0|1 (1)]
+     beeponproblem      - Beeps when certain warning/error occurs [ integers -2|-1|1|2|3|4|5|6|7|8|9|10|11]
+ 
+     saveduals          - Dual variables are saved in YALMIP if available [0|1 (1)]
+     saveyalmipmodel    - Keep all data sent to solver interface [0|1 (0)]
+     savesolverinput    - Keep all data sent to solver [0|1 (0)]
+     savesolveroutput   - Keep all data returned from solver [0|1 (0)]
+  
+     removeequalities   - Let YALMIP remove equality constraints [-1|0|1 (0)] (-1:with double inequalities, 0:don't, 1:by QR decomposition, 2:basis from constraints)
+     convertconvexquad  - Convert convex quadratic constraints to second order cones [0|1 (1)]
+     allowmilp          - Allow introduction of binary variables to model nonlinear operators [0 | 1 (0)]
+     expand             - Expand nonlinear operators [0|1 (1)]. Should always be true except in rare debugging cases.
+     plot               - Options when plotting sets
+ 
+     radius             - [Obsolete] Add radius constraint on all primal variables ||x||<radius [double >=0 (inf)]
+     shift              - [Obsolete] Add small perturbation to (try to) enforce strict feasibility [double >=0 (0)]
+     cachesolvers       - [Obsolete] Check for available solvers only first time solvesdp is called [0|1 (0)]
+ 
+    SUM-OF-SQUARES
+ 
+     sos, see help solvesos
+ 
+    BRANCH AND BOUND for mixed-integer convex programs
+ 
+     options.bnb, see help bnb
+ 
+    BRANCH AND BOUND for general nonconvex programs
+ 
+     options.bmibnb, see help bmibnb
+ 
+    ITERATIVE REFINEMENT for linear programs
+ 
+     options.refiner, see help iterative_refinement
+ 
+    EXTERNAL SOLVERS
+ 
+     See solver manuals or simply type ops = sdpsettings;ops.sedumi etc
+
+arXiv1112_2626_check
+Local bound: 1.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+s·p(v=0)=-0.375997 s·p(v=1)=-0.312467 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.73922e-09
+Local maximum: 0.000000
+s·p(v=0)=0.214601 s·p(v=1)=0.191016 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.5638e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.530348 s·p(v=1)=0.179127 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.28959e-08
+Local maximum: 0.000000
+s·p(v=0)=0.512739 s·p(v=1)=0.557642 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.40974e-10
+Local maximum: 0.000000
+s·p(v=0)=0.917309 s·p(v=1)=0.389610 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.97853e-08
+Local maximum: 0.000000
+s·p(v=0)=0.237059 s·p(v=1)=0.598136 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=8.11737e-10
+Local maximum: 0.000000
+s·p(v=0)=0.838241 s·p(v=1)=0.914779 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.7215e-08
+Local maximum: 0.000000
+s·p(v=0)=0.267672 s·p(v=1)=-0.135214 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.20429e-08
+Local maximum: 0.000000
+s·p(v=0)=0.071301 s·p(v=1)=-0.470485 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.84041e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.089162 s·p(v=1)=0.276871 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.9892e-08
+Local maximum: 0.000000
+s·p(v=0)=0.005151 s·p(v=1)=0.313338 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.40824e-08
+Local maximum: 0.000000
+s·p(v=0)=0.388296 s·p(v=1)=0.385746 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=3.2216e-09
+Local maximum: 0.000000
+s·p(v=0)=0.422894 s·p(v=1)=0.652264 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>setup_mosek_options', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 1315)" style="font-weight:bold">sdpsettings>setup_mosek_options</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',1315,0)">line 1315</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 217)" style="font-weight:bold">sdpsettings</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',217,0)">line 217</a>)
+    options.mosek = setup_mosek_options;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 82)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',82,0)">line 82</a>)
+                    sdpsettings('solver','mosek', 'verbose', 0,'dualize', 0, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 84)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',84,0)">line 84</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+final_round_alpha
+
+final_round_alpha =
+
+     []
+
+inner_list_of_alphas
+
+inner_list_of_alphas =
+
+     0     0     0     0     0     0     0     0     0     0     0     0
+
+inner_list_of_povms
+
+inner_list_of_povms =
+
+  1×12 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}    {1×3 cell}
+
+arXiv1112_2626_check
+Local bound: 1.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+s·p(v=0)=-0.375997 s·p(v=1)=-0.312467 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.73922e-09
+Local maximum: 0.000000
+s·p(v=0)=0.214601 s·p(v=1)=0.191016 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.5638e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.530348 s·p(v=1)=0.179127 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.28959e-08
+Local maximum: 0.000000
+s·p(v=0)=0.512739 s·p(v=1)=0.557642 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.40974e-10
+Local maximum: 0.000000
+s·p(v=0)=0.917309 s·p(v=1)=0.389610 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.97853e-08
+Local maximum: 0.000000
+s·p(v=0)=0.237059 s·p(v=1)=0.598136 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=8.11737e-10
+Local maximum: 0.000000
+s·p(v=0)=0.838241 s·p(v=1)=0.914779 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.7215e-08
+Local maximum: 0.000000
+s·p(v=0)=0.267672 s·p(v=1)=-0.135214 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.20429e-08
+Local maximum: 0.000000
+s·p(v=0)=0.071301 s·p(v=1)=-0.470485 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.84041e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.089162 s·p(v=1)=0.276871 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.9892e-08
+Local maximum: 0.000000
+s·p(v=0)=0.005151 s·p(v=1)=0.313338 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.40824e-08
+Local maximum: 0.000000
+s·p(v=0)=0.388296 s·p(v=1)=0.385746 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=3.2216e-09
+Local maximum: 0.000000
+s·p(v=0)=0.422894 s·p(v=1)=0.652264 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=5.09275e-10
+Local maximum: 0.000000
+s·p(v=0)=-0.138120 s·p(v=1)=0.293795 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.65197e-09
+Local maximum: 0.000000
+s·p(v=0)=0.815410 s·p(v=1)=0.744470 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=5.93175e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.981621 s·p(v=1)=-0.066428 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.2103e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.863585 s·p(v=1)=-0.465828 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=4.15952e-09
+Local maximum: 0.000000
+s·p(v=0)=0.697461 s·p(v=1)=-0.663323 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.3254e-09
+Local maximum: 0.000000
+s·p(v=0)=0.101356 s·p(v=1)=0.034003 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.46327e-09
+Local maximum: 0.000000
+s·p(v=0)=0.722379 s·p(v=1)=-0.051187 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=3.87007e-09
+Local maximum: 0.000000
+s·p(v=0)=0.592766 s·p(v=1)=-0.398191 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=2.65947e-10
+Local maximum: 0.000000
+s·p(v=0)=-1.494684 s·p(v=1)=-0.696397 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.04658e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.353522 s·p(v=1)=0.230097 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=5.02175e-10
+Local maximum: 0.000000
+s·p(v=0)=-0.415126 s·p(v=1)=0.021378 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.53865e-08
+Local maximum: 0.000000
+s·p(v=0)=-0.415169 s·p(v=1)=-0.435867 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=3.47887e-09
+Local maximum: 0.000000
+s·p(v=0)=0.614731 s·p(v=1)=0.505138 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.4865e-09
+Local maximum: 0.000000
+s·p(v=0)=0.276606 s·p(v=1)=-0.474857 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=4.15598e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.785136 s·p(v=1)=-0.042656 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=6.80438e-10
+Local maximum: 0.000000
+s·p(v=0)=0.326719 s·p(v=1)=0.547772 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=9.65078e-10
+Local maximum: 0.000000
+s·p(v=0)=-0.631900 s·p(v=1)=0.164035 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=2.60597e-09
+Local maximum: 0.000000
+s·p(v=0)=0.981191 s·p(v=1)=-0.132402 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=2.70146e-09
+Local maximum: 0.000000
+s·p(v=0)=-1.500216 s·p(v=1)=-0.648671 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.88994e-08
+Local maximum: 0.000000
+s·p(v=0)=0.725783 s·p(v=1)=0.541394 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=8.09646e-09
+Local maximum: 0.000000
+s·p(v=0)=0.517649 s·p(v=1)=0.573794 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=6.06075e-09
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/plus', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m', 5)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m',5,0)">line 5</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('visibilityOfBellInequality', 'C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m', 25)" style="font-weight:bold">visibilityOfBellInequality</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m',25,0)">line 25</a>)
+    objective = objective + bellcoeffs(coords_choice{:}) * p_noisy(coords_choice{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 91)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',91,0)">line 91</a>)
+            alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
+} 
+nr_ineqs
+
+nr_ineqs =
+
+     1
+
+bellcoeffs_cell
+
+bellcoeffs_cell =
+
+  1×185 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 11
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 12 through 22
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 23 through 33
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 34 through 44
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 45 through 55
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 56 through 66
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 67 through 77
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 78 through 88
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 89 through 99
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 100 through 110
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 111 through 121
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 122 through 132
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 133 through 143
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 144 through 154
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 155 through 165
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 166 through 176
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 177 through 185
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+size(bellcoeffs_cell)
+
+ans =
+
+     1   185
+
+arXiv1112_2626_check
+Local bound: 1.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+s·p(v=0)=-0.375997 s·p(v=1)=-0.312467 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.73922e-09
+Local maximum: 0.000000
+s·p(v=0)=0.214601 s·p(v=1)=0.191016 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.5638e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.530348 s·p(v=1)=0.179127 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.28959e-08
+Local maximum: 0.000000
+s·p(v=0)=0.512739 s·p(v=1)=0.557642 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.40974e-10
+Local maximum: 0.000000
+s·p(v=0)=0.917309 s·p(v=1)=0.389610 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.97853e-08
+Local maximum: 0.000000
+s·p(v=0)=0.237059 s·p(v=1)=0.598136 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=8.11737e-10
+Local maximum: 0.000000
+s·p(v=0)=0.838241 s·p(v=1)=0.914779 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.7215e-08
+Local maximum: 0.000000
+s·p(v=0)=0.267672 s·p(v=1)=-0.135214 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.20429e-08
+Local maximum: 0.000000
+s·p(v=0)=0.071301 s·p(v=1)=-0.470485 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.84041e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.089162 s·p(v=1)=0.276871 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.9892e-08
+Local maximum: 0.000000
+s·p(v=0)=0.005151 s·p(v=1)=0.313338 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.40824e-08
+Local maximum: 0.000000
+s·p(v=0)=0.388296 s·p(v=1)=0.385746 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=3.2216e-09
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/mtimes', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\mtimes.m', 618)" style="font-weight:bold"> * </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\mtimes.m',618,0)">line 618</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('visibilityOfBellInequality', 'C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m', 25)" style="font-weight:bold">visibilityOfBellInequality</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m',25,0)">line 25</a>)
+    objective = objective + bellcoeffs(coords_choice{:}) * p_noisy(coords_choice{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 91)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',91,0)">line 91</a>)
+            alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
+} 
+nr_ineqs
+
+nr_ineqs =
+
+   185
+
+ineq_nr
+
+ineq_nr =
+
+     1
+
+local_upper_bounds
+
+local_upper_bounds =
+
+  Columns 1 through 31
+
+     1     4     4     4     5     7     7     6     6     6     9     6     9     9     5     4     5     5     9     9     9     5     5     6     5     5     6     7     7     8     9
+
+  Columns 32 through 62
+
+     9     8    12     8     8     6     8     8     9     9     9     9    12     6     6     6     8     9     9     6    10    10    14    10     9     4     6     7     6     7     8
+
+  Columns 63 through 93
+
+     8     8     8     8     8     8     9     9     8    12    14     7     8     8     9     8     9     8    12    12     9    11    12    12    12    12    12     9    10    10     7
+
+  Columns 94 through 124
+
+     6     6     6     6     6     3     6     8     8     8     6     7     7     8     8     9     9     8    11    14     3     6     3     7     8     8    11    12    18    24     9
+
+  Columns 125 through 155
+
+    11    11    11    11    11    10    10    10    12    10    12     8    10    10    10    10    11    11    11    12    13    12    12     8     8    10    11    11    11    11    11
+
+  Columns 156 through 185
+
+    11    10    12    11    11    11    11    11     4     4    11    11    13    13    16    16    16    12    11    11    13    13    13    13    16    16    16    16     4     4
+
+arXiv1112_2626_check
+Local bound: 1.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.69571e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=4.13671e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.11382e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=6.30823e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=4.79725e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=5.07773e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.47424e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.74468e-08
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=8.65796e-10
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=3.63983e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=8.00055e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.86372e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=3.41258e-10
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.77818e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.43384e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=3.47652e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.76376e-08
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=9.38269e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.25785e-08
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.36081e-08
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=9.27823e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.06563e-08
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=4.92811e-09
+error in visibility LP
+Local maximum: 0.000000
+error in visibility LP
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=9.52063e-09
+error in visibility LP
+Local maximum: 0.000000
+error in visibility LP
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=9.81688e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.20815e-09
+Local maximum: 1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=3.01737e-09
+Local maximum: 1.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getavailablesolvers', 'C:\Program Files\MATLAB\YALMIP-master\solvers\getavailablesolvers.m', 12)" style="font-weight:bold">getavailablesolvers</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\solvers\getavailablesolvers.m',12,0)">line 12</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compileinterfacedata', 'C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m', 164)" style="font-weight:bold">compileinterfacedata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m',164,0)">line 164</a>)
+    [solvers,kept,allsolvers] = getavailablesolvers(findallsolvers,options);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m', 249)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m',249,0)">line 249</a>)
+[interfacedata,recoverdata,solver,diagnostic,F,Fremoved,ForiginalQuadratics] = compileinterfacedata(F,[],logdetStruct,h,options,0,solving_parametric);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('visibilityOfBellInequality', 'C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m', 30)" style="font-weight:bold">visibilityOfBellInequality</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m',30,0)">line 30</a>)
+optsol = optimize(constraints, -objective, sdpsettings('solver','mosek','verbose', 0));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 82)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',82,0)">line 82</a>)
+            alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
+} 
+Elegant_visibility
+{Unrecognized function or variable 'ToProbabilityNotationIneqSym'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Elegant_visibility', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\Elegant_visibility.m', 38)" style="font-weight:bold">Elegant_visibility</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\Elegant_visibility.m',38,0)">line 38</a>)
+OurEBIInProb = ToProbabilityNotationIneqSym(OurEBI2,ins,outs);
+} 
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\Elegant_visibility.m',38,1)">38  </a>OurEBIInProb = ToProbabilityNotationIneqSym(OurEBI2,ins,outs);
+if system_dependent('IsDebugMode')==1, dbquit; end
+Chained3322_AS_INI
+Local bound: 8.000000
+
+Round 1 of the see-saw.
+Local bound of the bell inequality: 8.000000
+{Index in position 1 exceeds array bounds (must not exceed 2).
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ndsdpvar/subsref', 'C:\Program Files\MATLAB\YALMIP-master\extras\@ndsdpvar\subsref.m', 35)" style="font-weight:bold">ndsdpvar/subsref</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@ndsdpvar\subsref.m',35,0)">line 35</a>)
+base = subsref(base,refs);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('visibilityOfBellInequality', 'C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m', 25)" style="font-weight:bold">visibilityOfBellInequality</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m',25,0)">line 25</a>)
+    objective = objective + bellcoeffs(coords_choice{:}) * p_noisy(coords_choice{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Chained3322_AS_INI', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\Chained3322_AS_INI.m', 63)" style="font-weight:bold">Chained3322_AS_INI</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\Chained3322_AS_INI.m',63,0)">line 63</a>)
+        alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
+} 
+<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\@ndsdpvar\subsref.m',35,1)">35  </a>base = subsref(base,refs);
+if system_dependent('IsDebugMode')==1, dbquit; end
+Chained3322_visibility
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+{Array dimensions must match for binary array op.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_bell_ineq', 'C:\Users\Emi\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m', 4)" style="font-weight:bold">evaluate_bell_ineq</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',4,0)">line 4</a>)
+	aux = probarray.*bellcoeffs;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 73)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',73,0)">line 73</a>)
+                spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
+} 
+<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',4,1)">4   </a>	aux = probarray.*bellcoeffs;
+if system_dependent('IsDebugMode')==1, dbquit; end
+bellcoeffs_cell
+
+bellcoeffs_cell =
+
+  1×185 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 11
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 12 through 22
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 23 through 33
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 34 through 44
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 45 through 55
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 56 through 66
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 67 through 77
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 78 through 88
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 89 through 99
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 100 through 110
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 111 through 121
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 122 through 132
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 133 through 143
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 144 through 154
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 155 through 165
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 166 through 176
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+  Columns 177 through 185
+
+    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}    {6-D double}
+
+ineq_nr
+
+ineq_nr =
+
+     1
+
+bellcoeffs = bellcoeffs_cell{ineq_nr};
+ins
+
+ins =
+
+     4     3     2
+
+outs
+
+outs =
+
+     2     2     2
+
+arXiv1112_2626_check
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+s·p(v=0)=-0.375997 s·p(v=1)=-0.312467 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.73922e-09
+Local maximum: 0.000000
+s·p(v=0)=0.214601 s·p(v=1)=0.191016 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.5638e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.530348 s·p(v=1)=0.179127 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.28959e-08
+Local maximum: 0.000000
+s·p(v=0)=0.512739 s·p(v=1)=0.557642 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.40974e-10
+Local maximum: 0.000000
+s·p(v=0)=0.917309 s·p(v=1)=0.389610 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.97853e-08
+Local maximum: 0.000000
+s·p(v=0)=0.237059 s·p(v=1)=0.598136 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=8.11737e-10
+Local maximum: 0.000000
+s·p(v=0)=0.838241 s·p(v=1)=0.914779 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.7215e-08
+Local maximum: 0.000000
+s·p(v=0)=0.267672 s·p(v=1)=-0.135214 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.20429e-08
+Local maximum: 0.000000
+s·p(v=0)=0.071301 s·p(v=1)=-0.470485 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.84041e-09
+Local maximum: 0.000000
+s·p(v=0)=-0.089162 s·p(v=1)=0.276871 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.9892e-08
+Local maximum: 0.000000
+s·p(v=0)=0.005151 s·p(v=1)=0.313338 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=2.40824e-08
+Local maximum: 0.000000
+s·p(v=0)=0.388296 s·p(v=1)=0.385746 localbound=1.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=3.2216e-09
+Local maximum: 0.000000
+s·p(v=0)=0.422894 s·p(v=1)=0.652264 localbound=1.000000
+Starting visibility: 1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=5.09275e-10
+Local maximum: 0.000000
+s·p(v=0)=-0.138120 s·p(v=1)=0.293795 localbound=1.000000

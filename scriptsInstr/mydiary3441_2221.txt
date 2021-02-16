@@ -1,0 +1,97 @@
+Fixing random seed = 209612
+
+Round 1.
+Visibility given initial measurements and channels: 0.162580
+Visibility given initial measurements and channels: 0.216173
+iter=1, partyidx=1, bellineqvalue=0.248167, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.301028, abschangeobjval=0.0528612
+iter=3, partyidx=3, bellineqvalue=0.323874, abschangeobjval=0.0228459
+iter=4, channelq=~, bellineqvalue=0.429940, abschangeobjval=0.106066
+iter=5, partyidx=1, bellineqvalue=0.430131, abschangeobjval=0.000190369
+iter=6, partyidx=2, bellineqvalue=0.430226, abschangeobjval=9.57607e-05
+iter=7, partyidx=3, bellineqvalue=0.430226, abschangeobjval=1.08764e-07
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.948497, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292894, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292894, abschangeobjval=1.05022e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.338071, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.0345*p_1111_1111 - 0.0201*p_1111_1121 - 0.0201*p_1111_1131 - 0.0204*p_1111_1141 + 0.0038*p_1111_1211 - 0.00845*p_1111_1221 - 0.00819*p_1111_1231 - 0.00839*p_1111_1241 + 0.00381*p_1111_1311 - 0.00743*p_1111_1321 - 0.00724*p_1111_1331 - 0.00738*p_1111_1341 - 0.0181*p_1111_1411 + 0.0137*p_1111_1421 + 0.0154*p_1111_1431 + 0.0162*p_1111_1441 + 0.0339*p_1111_2111 - 0.0239*p_1111_2121 - 0.0239*p_1111_2131 - 0.0241*p_1111_2141 + 0.00597*p_1111_2211 - 0.0077*p_1111_2221 - 0.00772*p_1111_2231 - 0.00801*p_1111_2241 + 0.00589*p_1111_2311 - 0.00775*p_1111_2321 - 0.00779*p_1111_2331 - 0.00821*p_1111_2341 + 0.0278*p_1111_2411 - 0.0365*p_1111_2421 - 0.0365*p_1111_2431 - 0.0367*p_1111_2441 + 0.0197*p_1111_3111 + 0.00242*p_1111_3121 + 0.00343*p_1111_3131 + 0.00387*p_1111_3141 + 0.00888*p_1111_3211 - 0.0106*p_1111_3221 - 0.0106*p_1111_3231 - 0.0111*p_1111_3241 + 0.00798*p_1111_3311 - 0.0107*p_1111_3331 - 0.0112*p_1111_3341 + 7.8e-4*p_1111_3411 - 0.00992*p_1111_3421 - 0.00996*p_1111_3431 - 0.0105*p_1111_3441 - 0.0558*p_1121_1111 - 0.128*p_1121_1121 - 0.114*p_1121_1131 - 0.104*p_1121_1141 - 0.0125*p_1121_1211 + 0.00297*p_1121_1221 + 0.00266*p_1121_1231 + 0.00224*p_1121_1241 - 0.0133*p_1121_1311 + 4.8e-4*p_1121_1321 + 2.51e-4*p_1121_1331 - 9.51e-5*p_1121_1341 + 0.0708*p_1121_1411 + 0.0425*p_1121_1421 + 0.0407*p_1121_1431 + 0.0392*p_1121_1441 - 0.059*p_1121_2111 - 0.156*p_1121_2121 - 0.142*p_1121_2131 - 0.132*p_1121_2141 - 0.0151*p_1121_2211 - 0.004*p_1121_2221 - 0.00452*p_1121_2231 - 0.00496*p_1121_2241 - 0.0158*p_1121_2311 - 0.0042*p_1121_2321 - 0.0047*p_1121_2331 - 0.00531*p_1121_2341 - 0.0655*p_1121_2411 - 0.175*p_1121_2421 - 0.161*p_1121_2431 - 0.151*p_1121_2441 + 0.00794*p_1121_3111 + 0.0277*p_1121_3121 + 0.0267*p_1121_3131 + 0.0257*p_1121_3141 - 0.022*p_1121_3211 - 0.0332*p_1121_3221 - 0.0321*p_1121_3231 - 0.0322*p_1121_3241 - 0.0213*p_1121_3311 - 0.0177*p_1121_3321 - 0.0275*p_1121_3331 - 0.0276*p_1121_3341 - 0.0133*p_1121_3411 + 0.0119*p_1121_3421 + 0.0101*p_1121_3431 + 0.00802*p_1121_3441 - 0.0263*p_1211_1111 + 0.0383*p_1211_1121 + 0.0382*p_1211_1131 + 0.0376*p_1211_1141 + 0.00442*p_1211_1211 - 0.00887*p_1211_1221 - 0.00889*p_1211_1231 - 0.00918*p_1211_1241 + 0.00442*p_1211_1311 - 0.0074*p_1211_1321 - 0.00743*p_1211_1331 - 0.00786*p_1211_1341 + 0.0263*p_1211_1411 - 0.038*p_1211_1421 - 0.038*p_1211_1431 - 0.0382*p_1211_1441 - 0.0255*p_1211_2111 + 0.034*p_1211_2121 + 0.0339*p_1211_2131 + 0.0332*p_1211_2141 + 0.00247*p_1211_2211 - 0.00611*p_1211_2221 - 0.00621*p_1211_2231 - 0.0066*p_1211_2241 + 0.00255*p_1211_2311 - 0.00664*p_1211_2321 - 0.00672*p_1211_2331 - 0.00702*p_1211_2341 - 0.0193*p_1211_2411 + 0.0162*p_1211_2421 + 0.0176*p_1211_2431 + 0.0182*p_1211_2441 - 0.0103*p_1211_3111 + 0.0156*p_1211_3121 + 0.0131*p_1211_3131 + 0.011*p_1211_3141 + 5.44e-4*p_1211_3211 - 0.00763*p_1211_3221 - 0.00789*p_1211_3231 - 0.00822*p_1211_3241 + 0.00144*p_1211_3311 - 0.00464*p_1211_3321 - 0.00499*p_1211_3331 - 0.0054*p_1211_3341 + 0.00864*p_1211_3411 - 0.0137*p_1211_3421 - 0.0124*p_1211_3431 - 0.0117*p_1211_3441 + 0.0611*p_1221_1111 + 0.135*p_1221_1121 + 0.128*p_1221_1131 + 0.121*p_1221_1141 - 0.0148*p_1221_1211 - 0.00659*p_1221_1221 - 0.00718*p_1221_1231 - 0.00773*p_1221_1241 - 0.014*p_1221_1311 + 9.61e-4*p_1221_1321 + 1.56e-4*p_1221_1331 - 6.84e-4*p_1221_1341 - 0.0655*p_1221_1411 - 0.179*p_1221_1421 - 0.165*p_1221_1431 - 0.155*p_1221_1441 + 0.0559*p_1221_2111 + 0.0987*p_1221_2121 + 0.0921*p_1221_2131 + 0.0865*p_1221_2141 - 0.0205*p_1221_2211 - 0.00865*p_1221_2221 - 0.0086*p_1221_2231 - 0.00884*p_1221_2241 - 0.0198*p_1221_2311 - 0.00807*p_1221_2321 - 0.00803*p_1221_2331 - 0.00823*p_1221_2341 + 0.0624*p_1221_2411 + 0.0304*p_1221_2421 + 0.0289*p_1221_2431 + 0.0276*p_1221_2441 - 0.0207*p_1221_3111 - 0.0441*p_1221_3121 - 0.0416*p_1221_3131 - 0.0399*p_1221_3141 - 0.0255*p_1221_3211 - 0.0149*p_1221_3221 - 0.0147*p_1221_3231 - 0.0148*p_1221_3241 - 0.0262*p_1221_3311 - 0.0178*p_1221_3321 - 0.0175*p_1221_3331 - 0.0175*p_1221_3341 + 5.13e-4*p_1221_3411 + 0.0253*p_1221_3421 + 0.024*p_1221_3431 + 0.0228*p_1221_3441 + 0.00292*p_2111_1111 + 0.024*p_2111_1121 + 0.0266*p_2111_1131 + 0.028*p_2111_1141 + 0.00339*p_2111_1211 - 0.00705*p_2111_1221 - 0.00707*p_2111_1231 - 0.00738*p_2111_1241 + 0.00332*p_2111_1311 - 0.00826*p_2111_1321 - 0.00829*p_2111_1331 - 0.00877*p_2111_1341 + 0.0252*p_2111_1411 - 0.0353*p_2111_1421 - 0.0354*p_2111_1431 - 0.0356*p_2111_1441 + 0.00354*p_2111_2111 + 0.0278*p_2111_2121 + 0.0302*p_2111_2131 + 0.0315*p_2111_2141 + 0.00123*p_2111_2211 - 0.00781*p_2111_2221 - 0.00788*p_2111_2231 - 0.00828*p_2111_2241 + 0.00124*p_2111_2311 - 0.00794*p_2111_2321 - 0.00801*p_2111_2331 - 0.00835*p_2111_2341 - 0.0207*p_2111_2411 + 0.0148*p_2111_2421 + 0.0162*p_2111_2431 + 0.0168*p_2111_2441 + 0.0178*p_2111_3111 + 0.00144*p_2111_3121 + 0.00238*p_2111_3131 + 0.00283*p_2111_3141 - 0.00168*p_2111_3211 - 0.00497*p_2111_3221 - 0.00552*p_2111_3231 - 0.00595*p_2111_3241 - 8.55e-4*p_2111_3311 - 0.00504*p_2111_3321 - 0.00549*p_2111_3331 - 0.00594*p_2111_3341 + 0.00631*p_2111_3411 - 0.0118*p_2111_3421 - 0.0109*p_2111_3431 - 0.0103*p_2111_3441 + 0.0892*p_2121_1111 + 0.0717*p_2121_1121 + 0.0691*p_2121_1131 + 0.0669*p_2121_1141 - 0.012*p_2121_1211 + 0.00575*p_2121_1221 + 0.00556*p_2121_1231 + 0.00525*p_2121_1241 - 0.014*p_2121_1311 - 3.37e-4*p_2121_1321 - 3.49e-4*p_2121_1331 - 7.87e-4*p_2121_1341 - 0.0617*p_2121_1411 - 0.163*p_2121_1421 - 0.148*p_2121_1431 - 0.138*p_2121_1441 + 0.0873*p_2121_2111 + 0.0667*p_2121_2121 + 0.0642*p_2121_2131 + 0.0622*p_2121_2141 - 0.0209*p_2121_2211 - 0.00854*p_2121_2221 - 0.00852*p_2121_2231 - 0.00877*p_2121_2241 - 0.0206*p_2121_2311 - 0.00864*p_2121_2321 - 0.00861*p_2121_2331 - 0.00882*p_2121_2341 + 0.0619*p_2121_2411 + 0.0299*p_2121_2421 + 0.0285*p_2121_2431 + 0.0272*p_2121_2441 + 0.00493*p_2121_3111 + 0.0235*p_2121_3121 + 0.0225*p_2121_3131 + 0.0216*p_2121_3141 - 0.0314*p_2121_3211 - 0.0259*p_2121_3221 - 0.0254*p_2121_3231 - 0.0254*p_2121_3241 - 0.029*p_2121_3311 - 0.0225*p_2121_3321 - 0.0221*p_2121_3331 - 0.0221*p_2121_3341 - 0.00885*p_2121_3411 + 0.0114*p_2121_3421 + 0.0105*p_2121_3431 + 0.00945*p_2121_3441 + 0.00389*p_2211_1111 - 0.00797*p_2211_1121 - 0.0124*p_2211_1131 - 0.0157*p_2211_1141 + 0.00342*p_2211_1211 - 0.00694*p_2211_1221 - 0.00688*p_2211_1231 - 0.00716*p_2211_1241 + 0.0035*p_2211_1311 - 0.00869*p_2211_1321 - 0.00854*p_2211_1331 - 0.00868*p_2211_1341 - 0.0184*p_2211_1411 + 0.016*p_2211_1421 + 0.0175*p_2211_1431 + 0.0181*p_2211_1441 + 0.00307*p_2211_2111 - 0.00365*p_2211_2121 - 0.00844*p_2211_2131 - 0.0119*p_2211_2141 + 0.00537*p_2211_2211 - 0.0097*p_2211_2221 - 0.00972*p_2211_2231 - 0.00998*p_2211_2241 + 0.00536*p_2211_2311 - 0.00946*p_2211_2321 - 0.00949*p_2211_2331 - 0.00986*p_2211_2341 + 0.0273*p_2211_2411 - 0.0382*p_2211_2421 - 0.0382*p_2211_2431 - 0.0385*p_2211_2441 - 0.0122*p_2211_3111 + 0.0147*p_2211_3121 + 0.0121*p_2211_3131 + 0.00994*p_2211_3141 + 0.0073*p_2211_3211 - 0.00819*p_2211_3221 - 0.00822*p_2211_3231 - 0.00865*p_2211_3241 + 0.00648*p_2211_3311 - 0.0115*p_2211_3321 - 0.0119*p_2211_3341 - 6.87e-4*p_2211_3411 - 0.00837*p_2211_3421 - 0.0084*p_2211_3431 - 0.00884*p_2211_3441 - 0.0855*p_2221_1111 - 0.0724*p_2221_1121 - 0.068*p_2221_1131 - 0.0649*p_2221_1141 - 0.0168*p_2221_1211 - 0.00328*p_2221_1221 - 0.00339*p_2221_1231 - 0.00371*p_2221_1241 - 0.0148*p_2221_1311 - 3.16e-4*p_2221_1321 - 4.98e-4*p_2221_1331 - 8.09e-4*p_2221_1341 + 0.0655*p_2221_1411 + 0.0346*p_2221_1421 + 0.0331*p_2221_1431 + 0.0318*p_2221_1441 - 0.0922*p_2221_2111 - 0.0843*p_2221_2121 - 0.0795*p_2221_2131 - 0.0762*p_2221_2141 - 0.0164*p_2221_2211 - 0.0167*p_2221_2221 - 0.016*p_2221_2231 - 0.0158*p_2221_2241 - 0.0167*p_2221_2311 - 0.0152*p_2221_2321 - 0.0145*p_2221_2331 - 0.0144*p_2221_2341 - 0.0667*p_2221_2411 - 0.187*p_2221_2421 - 0.171*p_2221_2431 - 0.16*p_2221_2441 - 0.0237*p_2221_3111 - 0.0483*p_2221_3121 - 0.0458*p_2221_3131 - 0.0441*p_2221_3141 - 0.0177*p_2221_3211 - 0.0137*p_2221_3221 - 0.0133*p_2221_3231 - 0.0136*p_2221_3241 - 0.02*p_2221_3311 - 0.0244*p_2221_3321 - 0.0123*p_2221_3331 - 0.0239*p_2221_3341 - 0.00992*p_2221_3411 + 0.0319*p_2221_3421 + 0.0293*p_2221_3431 + 0.0269*p_2221_3441
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(121.335600,-78.691948,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-85.711993,-10.105487,2.000000)
+Party: 1, input:3, obs: (azimuth[º],elevation[º],r)=(99.064879,-36.238905,0.052994)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(109.046717,7.081591,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(169.264282,-66.136173,1.510145)
+Party: 2, input:3, obs: (azimuth[º],elevation[º],r)=(130.747152,-42.366367,0.387985)
+Party: 2, input:4, obs: (azimuth[º],elevation[º],r)=(-178.927686,-68.071698,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(-139.747148,1.058256,1.004999)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(-139.746578,1.047407,1.001034)
+Party: 3, input:3, obs: (azimuth[º],elevation[º],r)=(-139.792622,0.774060,1.095151)
+Party: 3, input:4, obs: (azimuth[º],elevation[º],r)=(-140.272256,0.591565,1.092311)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 2.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/plus', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m', 233)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m',233,0)">line 233</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 140)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',140,0)">line 140</a>)
+                        summ2 = summ2 + q{lam,y2,z2,w,b,c,d};
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 91)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scriptsInstr\INSTR.m',91,0)">line 91</a>)
+        [alpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+} 
+MAT_EBI_OPTIMIZATION_CLASSICAL
+{Unrecognized function or variable 'ToProbabilityNotationIneqSym'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_EBI_OPTIMIZATION_CLASSICAL', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_EBI_OPTIMIZATION_CLASSICAL.m', 23)" style="font-weight:bold">MAT_EBI_OPTIMIZATION_CLASSICAL</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_EBI_OPTIMIZATION_CLASSICAL.m',23,0)">line 23</a>)
+OurEBIInProb = ToProbabilityNotationIneqSym(OurEBI,ins,outs);
+} 
+MAT_EBI_OPTIMIZATION_QUANTUM
+{Unrecognized function or variable 'ToProbabilityNotationIneqSym'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_EBI_OPTIMIZATION_QUANTUM', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_EBI_OPTIMIZATION_QUANTUM.m', 26)" style="font-weight:bold">MAT_EBI_OPTIMIZATION_QUANTUM</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_EBI_OPTIMIZATION_QUANTUM.m',26,0)">line 26</a>)
+OurEBIInProb = ToProbabilityNotationIneqSym(OurEBI,ins,outs);
+} 
+test_elegant_works
+{Unrecognized function or variable 'ToProbabilityNotationIneqSym'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_elegant_works', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\test_elegant_works.m', 18)" style="font-weight:bold">test_elegant_works</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\test_elegant_works.m',18,0)">line 18</a>)
+EBInProb = ToProbabilityNotationIneqSym(EBI,ins,outs);
+} 
+MAT_JOE_PAPER_CHECK
+{Unrecognized function or variable 'ToProbabilityNotationIneqSym'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_JOE_PAPER_CHECK', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_JOE_PAPER_CHECK.m', 17)" style="font-weight:bold">MAT_JOE_PAPER_CHECK</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_JOE_PAPER_CHECK.m',17,0)">line 17</a>)
+PAPERinprob = ToProbabilityNotationIneqSym(PAPER,ins,outs);
+} 
+MAT_INSTR_11_CASE_CLASSICAL
+{Unrecognized function or variable 'criticalvisibilityInstrumental'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_INSTR_11_CASE_CLASSICAL', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_INSTR_11_CASE_CLASSICAL.m', 24)" style="font-weight:bold">MAT_INSTR_11_CASE_CLASSICAL</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_INSTR_11_CASE_CLASSICAL.m',24,0)">line 24</a>)
+output = criticalvisibilityInstrumental(Pproj, inichannels, ins, outs);
+} 
+Chained3322_AS_INI
+Local bound: 8.000000
+
+Round 1 of the see-saw.
+Local bound of the bell inequality: 8.000000
+{Unrecognized function or variable 'channel'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Chained3322_AS_INI', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\Chained3322_AS_INI.m', 61)" style="font-weight:bold">Chained3322_AS_INI</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\Chained3322_AS_INI.m',61,0)">line 61</a>)
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+} 
+Chained3322_visibility

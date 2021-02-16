@@ -29,7 +29,7 @@ function [finalPproj,finalobj,finalchannel] = SeeSawOverAllParties(bellcoeffs, i
             channel = newchannel;
                         
             abschange = abs(newobjval-objval);
-            fprintf("iter=%d, channelq=%c, bellineqvalue=%f, localbound=%f abschangeobjval=%g\n", iteration, "~", newobjval, localbound, abschange);
+            fprintf("iter=%d, channelq=%c, bellineqvalue=%f, abschangeobjval=%g\n", iteration, "~", newobjval, abschange);
    
             objval = newobjval;
         end

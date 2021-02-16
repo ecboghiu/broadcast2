@@ -8614,3 +8614,334 @@ Scenario =
 
     '2221-2221'
 
+Local bound: 8.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 8.000000
+s·p(v=0)=-0.944214 s·p(v=1)=-0.000000 localbound=8.000000
+Starting visibility: 1.000000
+{Unrecognized function or variable 'localbound'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 32)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',32,0)">line 32</a>)
+            fprintf("iter=%d, channelq=%c, bellineqvalue=%f, localbound=%f abschangeobjval=%g\n", iteration, "~", newobjval, localbound, abschange);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Chained3322_visibility', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\Chained3322_visibility.m', 83)" style="font-weight:bold">Chained3322_visibility</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\Chained3322_visibility.m',83,0)">line 83</a>)
+        [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',32,0)
+test_corr_function
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file 'bellcoeffs1.mat'. No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_corr_function', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\test_corr_function.m', 1)" style="font-weight:bold">test_corr_function</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\test_corr_function.m',1,0)">line 1</a>)
+load bellcoeffs1.mat % load "bellcoefffs"
+} 
+MAT_RUN_COMPLETEROUND
+[Warning: Name is nonexistent or not a directory: C:\Users\embog\OneDrive - ICFO\Projects\Hidden nonlocality\Code\broadcast2] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_RUN_COMPLETEROUND', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m', 1)" style="font-weight:bold">MAT_RUN_COMPLETEROUND</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m',1,0)">line 1</a>)] 
+[Warning: Name is nonexistent or not a directory: C:\Users\embog\OneDrive - ICFO\Projects\Hidden nonlocality\Code\broadcast2\scripts] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_RUN_COMPLETEROUND', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m', 2)" style="font-weight:bold">MAT_RUN_COMPLETEROUND</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m',2,0)">line 2</a>)] 
+
+Round 1 of the see-saw.
+Visibility given initial measurements and channels: 0.004380
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.004380, -0.000000, -0.995619, 0.004380, -0.995619, 1.000000
+Visibility check: 0.004380
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.004380, -0.000000, -0.995619, 0.004380, -0.995619, 1.000000
+Visibility check: 0.004380
+{Unrecognized function or variable 'localbound'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 32)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',32,0)">line 32</a>)
+            fprintf("iter=%d, channelq=%c, bellineqvalue=%f, localbound=%f abschangeobjval=%g\n", iteration, "~", newobjval, localbound, abschange);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_RUN_COMPLETEROUND', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m', 89)" style="font-weight:bold">MAT_RUN_COMPLETEROUND</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m',89,0)">line 89</a>)
+        [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(alpha), POVMs, channel);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',32,0)
+MAT_RUN_COMPLETEROUND
+[Warning: Name is nonexistent or not a directory: C:\Users\embog\OneDrive - ICFO\Projects\Hidden nonlocality\Code\broadcast2] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_RUN_COMPLETEROUND', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m', 1)" style="font-weight:bold">MAT_RUN_COMPLETEROUND</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m',1,0)">line 1</a>)] 
+[Warning: Name is nonexistent or not a directory: C:\Users\embog\OneDrive - ICFO\Projects\Hidden nonlocality\Code\broadcast2\scripts] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MAT_RUN_COMPLETEROUND', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m', 2)" style="font-weight:bold">MAT_RUN_COMPLETEROUND</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\MAT_RUN_COMPLETEROUND.m',2,0)">line 2</a>)] 
+
+Round 1 of the see-saw.
+Visibility given initial measurements and channels: 0.004380
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.004380, -0.000000, -0.995619, 0.004380, -0.995619, 1.000000
+Visibility check: 0.004380
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.004380, -0.000000, -0.995619, 0.004380, -0.995619, 1.000000
+Visibility check: 0.004380
+iter=1, channelq=~, bellineqvalue=0.359321, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.360025, abschangeobjval=0.000704421
+iter=3, partyidx=2, bellineqvalue=0.371900, abschangeobjval=0.0118745
+iter=4, partyidx=3, bellineqvalue=0.389343, abschangeobjval=0.0174433
+iter=5, channelq=~, bellineqvalue=0.400374, abschangeobjval=0.0110308
+iter=6, partyidx=1, bellineqvalue=0.400374, abschangeobjval=7.15914e-09
+Visibility after optimizing over POVMs and channels: 0.289926
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.289926, 0.000000, -0.710074, 0.289926, -0.710074, 1.000000
+Visibility check: 0.289926
+iter=1, channelq=~, bellineqvalue=0.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=1.37101e-08
+Visibility after optimizing over POVMs and channels: 0.289926
+
+Round 2 of the see-saw.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.000000, 0.000000, 0.000000, -0.000000, -0.000000, 0.000000
+Visibility check: 0.000000
+Visibility given initial measurements and channels: 0.040632
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.040632, 0.000000, -0.959368, 0.040632, -0.959368, 1.000000
+Visibility check: 0.040632
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.040632, 0.000000, -0.959368, 0.040632, -0.959368, 1.000000
+Visibility check: 0.040632
+iter=1, channelq=~, bellineqvalue=0.109276, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.111185, abschangeobjval=0.00190891
+iter=3, partyidx=2, bellineqvalue=0.613020, abschangeobjval=0.501835
+iter=4, partyidx=3, bellineqvalue=0.613020, abschangeobjval=3.017e-07
+Visibility after optimizing over POVMs and channels: 0.292893
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292893, -0.000000, -0.707107, 0.292893, -0.707107, 1.000000
+Visibility check: 0.292893
+iter=1, partyidx=3, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=-0.000000, abschangeobjval=4.11679e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+
+Round 3 of the see-saw.
+Visibility given initial measurements and channels: 0.134986
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.134986, -0.000000, -0.865014, 0.134986, -0.865014, 1.000000
+Visibility check: 0.134986
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.134986, -0.000000, -0.865014, 0.134986, -0.865014, 1.000000
+Visibility check: 0.134986
+iter=1, partyidx=1, bellineqvalue=0.138548, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.156921, abschangeobjval=0.0183729
+iter=3, partyidx=3, bellineqvalue=0.185283, abschangeobjval=0.0283624
+iter=4, channelq=~, bellineqvalue=0.383902, abschangeobjval=0.198619
+iter=5, partyidx=1, bellineqvalue=0.383903, abschangeobjval=5.12966e-07
+Visibility after optimizing over POVMs and channels: 0.292892
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292892, -0.000000, -0.707108, 0.292892, -0.707108, 1.000000
+Visibility check: 0.292892
+iter=1, partyidx=3, bellineqvalue=0.000001, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.000001, abschangeobjval=2.18084e-09
+LP not solved correctly. Trying another set of initial points.
+
+Round 4 of the see-saw.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.000000, 0.000000, 0.000000, -0.000000, -0.000000, 0.000000
+Visibility check: 0.000000
+Visibility given initial measurements and channels: 0.228294
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.228294, 0.000000, -0.771706, 0.228294, -0.771706, 1.000000
+Visibility check: 0.228294
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.228294, 0.000000, -0.771706, 0.228294, -0.771706, 1.000000
+Visibility check: 0.228294
+iter=1, channelq=~, bellineqvalue=0.061225, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.112971, abschangeobjval=0.0517458
+iter=3, partyidx=2, bellineqvalue=0.113169, abschangeobjval=0.000198501
+iter=4, partyidx=3, bellineqvalue=0.113169, abschangeobjval=7.54512e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292893, -0.000000, -0.707107, 0.292893, -0.707107, 1.000000
+Visibility check: 0.292893
+iter=1, partyidx=2, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=-0.000000, abschangeobjval=7.13943e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+
+Round 5 of the see-saw.
+Visibility given initial measurements and channels: 0.140498
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.140498, -0.000000, -0.859502, 0.140498, -0.859502, 1.000000
+Visibility check: 0.140498
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.140498, -0.000000, -0.859502, 0.140498, -0.859502, 1.000000
+Visibility check: 0.140498
+iter=1, partyidx=2, bellineqvalue=0.048739, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.122219, abschangeobjval=0.0734801
+iter=3, channelq=~, bellineqvalue=0.244440, abschangeobjval=0.122221
+iter=4, partyidx=1, bellineqvalue=0.244889, abschangeobjval=0.000448948
+iter=5, partyidx=2, bellineqvalue=0.249095, abschangeobjval=0.00420517
+iter=6, partyidx=3, bellineqvalue=0.249564, abschangeobjval=0.000469683
+iter=7, channelq=~, bellineqvalue=0.249617, abschangeobjval=5.26527e-05
+iter=8, partyidx=1, bellineqvalue=0.249617, abschangeobjval=9.3099e-10
+Visibility after optimizing over POVMs and channels: 0.292888
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292888, 0.000000, -0.707112, 0.292888, -0.707112, 1.000000
+Visibility check: 0.292888
+iter=1, channelq=~, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=5.46236e-09
+Visibility after optimizing over POVMs and channels: 0.292888
+
+Round 6 of the see-saw.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): -0.000000, -0.000000, -0.000000, -0.000000, -0.000000, 0.000000
+Visibility check: 0.000007
+Visibility given initial measurements and channels: 0.006405
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.006405, -0.000000, -0.993595, 0.006405, -0.993595, 1.000000
+Visibility check: 0.006405
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.006405, -0.000000, -0.993595, 0.006405, -0.993595, 1.000000
+Visibility check: 0.006405
+iter=1, partyidx=1, bellineqvalue=0.180381, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.339591, abschangeobjval=0.15921
+iter=3, partyidx=3, bellineqvalue=0.519352, abschangeobjval=0.179761
+iter=4, channelq=~, bellineqvalue=0.637110, abschangeobjval=0.117758
+iter=5, partyidx=1, bellineqvalue=0.637950, abschangeobjval=0.000840279
+iter=6, partyidx=2, bellineqvalue=0.637950, abschangeobjval=4.56801e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292893, -0.000000, -0.707107, 0.292893, -0.707107, 1.000000
+Visibility check: 0.292893
+iter=1, channelq=~, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=1.6694e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+
+Round 7 of the see-saw.
+Visibility given initial measurements and channels: 0.109821
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.109821, 0.000000, -0.890179, 0.109821, -0.890179, 1.000000
+Visibility check: 0.109821
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.109821, 0.000000, -0.890179, 0.109821, -0.890179, 1.000000
+Visibility check: 0.109821
+iter=1, partyidx=1, bellineqvalue=0.193192, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.271881, abschangeobjval=0.078689
+iter=3, partyidx=3, bellineqvalue=0.274373, abschangeobjval=0.00249203
+iter=4, channelq=~, bellineqvalue=0.316314, abschangeobjval=0.0419405
+iter=5, partyidx=1, bellineqvalue=0.316688, abschangeobjval=0.000373988
+iter=6, partyidx=2, bellineqvalue=0.316688, abschangeobjval=4.44832e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292893, 0.000000, -0.707107, 0.292893, -0.707107, 1.000000
+Visibility check: 0.292893
+iter=1, channelq=~, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=4.14254e-10
+Visibility after optimizing over POVMs and channels: 0.292893
+
+Round 8 of the see-saw.
+Visibility given initial measurements and channels: 0.019790
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.019790, 0.000000, -0.980210, 0.019790, -0.980210, 1.000000
+Visibility check: 0.019789
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.019790, 0.000000, -0.980210, 0.019790, -0.980210, 1.000000
+Visibility check: 0.019789
+iter=1, partyidx=3, bellineqvalue=0.289600, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.501937, abschangeobjval=0.212337
+iter=3, partyidx=1, bellineqvalue=0.502990, abschangeobjval=0.00105335
+iter=4, partyidx=2, bellineqvalue=0.503102, abschangeobjval=0.00011177
+iter=5, partyidx=3, bellineqvalue=0.503375, abschangeobjval=0.000272879
+iter=6, channelq=~, bellineqvalue=0.503392, abschangeobjval=1.67278e-05
+iter=7, partyidx=1, bellineqvalue=0.503392, abschangeobjval=8.23341e-10
+Visibility after optimizing over POVMs and channels: 0.292893
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292893, 0.000000, -0.707107, 0.292893, -0.707107, 1.000000
+Visibility check: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.000000, abschangeobjval=1.78817e-07
+LP not solved correctly. Trying another set of initial points.
+
+Round 9 of the see-saw.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.000000, 0.000000, 0.000000, -0.000000, -0.000000, 0.000000
+Visibility check: 0.000000
+Visibility given initial measurements and channels: 0.045657
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.045657, 0.000000, -0.954343, 0.045657, -0.954343, 1.000000
+Visibility check: 0.045657
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.045657, 0.000000, -0.954343, 0.045657, -0.954343, 1.000000
+Visibility check: 0.045657
+iter=1, channelq=~, bellineqvalue=0.433923, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.438096, abschangeobjval=0.00417296
+iter=3, partyidx=2, bellineqvalue=0.438096, abschangeobjval=4.46189e-09
+Visibility after optimizing over POVMs and channels: 0.256463
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.256463, -0.000000, -0.743537, 0.256463, -0.743537, 1.000000
+Visibility check: 0.256463
+iter=1, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=-0.000000, abschangeobjval=2.08555e-09
+Visibility after optimizing over POVMs and channels: 0.256463
+
+Round 10 of the see-saw.
+Visibility given initial measurements and channels: 0.158356
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.158356, 0.000000, -0.841644, 0.158356, -0.841644, 1.000000
+Visibility check: 0.158356
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.158356, 0.000000, -0.841644, 0.158356, -0.841644, 1.000000
+Visibility check: 0.158356
+iter=1, partyidx=2, bellineqvalue=0.133443, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.157320, abschangeobjval=0.0238778
+iter=3, channelq=~, bellineqvalue=0.260908, abschangeobjval=0.103588
+iter=4, partyidx=1, bellineqvalue=0.287115, abschangeobjval=0.0262071
+iter=5, partyidx=2, bellineqvalue=0.287115, abschangeobjval=6.68122e-10
+Visibility after optimizing over POVMs and channels: 0.292891
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292891, -0.000000, -0.707109, 0.292891, -0.707109, 1.000000
+Visibility check: 0.292891
+iter=1, channelq=~, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=1.33511e-08
+Visibility after optimizing over POVMs and channels: 0.292891
+
+Round 11 of the see-saw.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.000000, 0.000000, 0.000000, -0.000000, -0.000000, 0.000000
+Visibility check: 0.000000
+Visibility given initial measurements and channels: 0.213226
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.213226, 0.000000, -0.786774, 0.213226, -0.786774, 1.000000
+Visibility check: 0.213226
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.213226, 0.000000, -0.786774, 0.213226, -0.786774, 1.000000
+Visibility check: 0.213226
+iter=1, channelq=~, bellineqvalue=0.099537, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.099697, abschangeobjval=0.000160351
+iter=3, partyidx=2, bellineqvalue=0.100094, abschangeobjval=0.000396982
+iter=4, partyidx=3, bellineqvalue=0.100156, abschangeobjval=6.17422e-05
+iter=5, channelq=~, bellineqvalue=0.100161, abschangeobjval=4.96405e-06
+iter=6, partyidx=1, bellineqvalue=0.100161, abschangeobjval=8.5283e-10
+Visibility after optimizing over POVMs and channels: 0.292891
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292891, -0.000000, -0.707109, 0.292891, -0.707109, 1.000000
+Visibility check: 0.292891
+iter=1, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.000001, abschangeobjval=1.40498e-06
+iter=3, partyidx=3, bellineqvalue=0.000002, abschangeobjval=2.82439e-07
+LP not solved correctly. Trying another set of initial points.
+
+Round 12 of the see-saw.
+Visibility given initial measurements and channels: 0.198153
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.198153, -0.000000, -0.801847, 0.198153, -0.801847, 1.000000
+Visibility check: 0.198153
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.198153, -0.000000, -0.801847, 0.198153, -0.801847, 1.000000
+Visibility check: 0.198153
+iter=1, partyidx=3, bellineqvalue=0.001160, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.144405, abschangeobjval=0.143244
+iter=3, partyidx=1, bellineqvalue=0.145278, abschangeobjval=0.000873185
+iter=4, partyidx=2, bellineqvalue=0.148720, abschangeobjval=0.00344193
+iter=5, partyidx=3, bellineqvalue=0.148720, abschangeobjval=5.27148e-08
+Visibility after optimizing over POVMs and channels: 0.292893
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.292893, -0.000000, -0.707107, 0.292893, -0.707107, 1.000000
+Visibility check: 0.292893
+iter=1, partyidx=1, bellineqvalue=-0.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=-0.000000, abschangeobjval=2.05582e-09
+Visibility after optimizing over POVMs and channels: 0.292893
+
+Round 13 of the see-saw.
+Visibility given initial measurements and channels: -0.000000
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.000000, 0.000000, 0.000000, -0.000000, -0.000000, 0.000000
+Visibility check: 0.000000
+Visibility given initial measurements and channels: 0.219132
+With ini meas/channel: s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.219132, 0.000000, -0.780868, 0.219132, -0.780868, 1.000000
+Visibility check: 0.219132
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.219132, 0.000000, -0.780868, 0.219132, -0.780868, 1.000000
+Visibility check: 0.219132
+iter=1, partyidx=1, bellineqvalue=0.063634, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.080621, abschangeobjval=0.0169871
+iter=3, partyidx=3, bellineqvalue=0.162131, abschangeobjval=0.0815093
+iter=4, channelq=~, bellineqvalue=0.248172, abschangeobjval=0.0860413
+iter=5, partyidx=1, bellineqvalue=0.272069, abschangeobjval=0.0238975
+iter=6, partyidx=2, bellineqvalue=0.275207, abschangeobjval=0.00313755
+iter=7, partyidx=3, bellineqvalue=0.275257, abschangeobjval=5.05743e-05
+iter=8, channelq=~, bellineqvalue=0.275257, abschangeobjval=1.1099e-10
+Visibility after optimizing over POVMs and channels: 0.422650
+s·p(v=0), s·p(v=alpha), s·p(v=1), s·p1, s·p2, s·(p1-p2): 0.422650, 0.000000, -0.577350, 0.422650, -0.577350, 1.000000
+Visibility check: 0.422650
+iter=1, partyidx=2, bellineqvalue=0.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.000000, abschangeobjval=2.43104e-09
+Visibility after optimizing over POVMs and channels: 0.422650
+Local bound: 8.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 8.000000
+s·p(v=0)=-0.944214 s·p(v=1)=-0.000000 localbound=8.000000
+Starting visibility: 1.000000
+iter=1, channelq=~, bellineqvalue=7.729606, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=11.244319, abschangeobjval=3.51471
+iter=3, partyidx=2, bellineqvalue=12.790873, abschangeobjval=1.54655
+iter=4, partyidx=3, bellineqvalue=12.887190, abschangeobjval=0.0963164
+iter=5, channelq=~, bellineqvalue=12.887190, abschangeobjval=1.91931e-08
+Local maximum: 0.379229
+Best of 2: 0.379229
+arXiv1112_2626_check
