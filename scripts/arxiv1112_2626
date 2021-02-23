@@ -46312,3 +46312,1881 @@ help scs_indirect
  
   to warm-start the solver add guesses for (x, y, s) to the data struct
 
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+{Unrecognized function or variable 'localbound'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 83)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',83,0)">line 83</a>)
+            fprintf("s·p(v=0)=%f s·p(v=1)=%f localbound=%f\n", spv0, spv1, localbound);
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',83,0)
+arXiv1112_2626_check
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.353752 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, partyidx=3, bellineqvalue=0.937364, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.345744, abschangeobjval=3.40838
+iter=3, partyidx=1, bellineqvalue=4.769856, abschangeobjval=0.424111
+iter=4, partyidx=2, bellineqvalue=4.779409, abschangeobjval=0.00955274
+iter=5, partyidx=3, bellineqvalue=4.906006, abschangeobjval=0.126598
+iter=6, channelq=~, bellineqvalue=4.959601, abschangeobjval=0.0535946
+iter=7, partyidx=1, bellineqvalue=4.970939, abschangeobjval=0.011338
+iter=8, partyidx=2, bellineqvalue=4.988314, abschangeobjval=0.0173748
+iter=9, partyidx=3, bellineqvalue=4.991162, abschangeobjval=0.00284786
+iter=10, channelq=~, bellineqvalue=4.991443, abschangeobjval=0.000281807
+iter=11, partyidx=1, bellineqvalue=4.997170, abschangeobjval=0.00572702
+iter=12, partyidx=2, bellineqvalue=4.999043, abschangeobjval=0.00187294
+iter=13, partyidx=3, bellineqvalue=4.999060, abschangeobjval=1.69724e-05
+iter=14, channelq=~, bellineqvalue=4.999061, abschangeobjval=4.36248e-07
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.152585 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, channelq=~, bellineqvalue=3.316732, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=3.579484, abschangeobjval=0.262752
+iter=3, partyidx=2, bellineqvalue=4.060375, abschangeobjval=0.480891
+iter=4, partyidx=3, bellineqvalue=4.163623, abschangeobjval=0.103247
+iter=5, channelq=~, bellineqvalue=4.208770, abschangeobjval=0.0451471
+iter=6, partyidx=1, bellineqvalue=4.340467, abschangeobjval=0.131697
+iter=7, partyidx=2, bellineqvalue=5.660312, abschangeobjval=1.31985
+iter=8, partyidx=3, bellineqvalue=5.923557, abschangeobjval=0.263245
+iter=9, channelq=~, bellineqvalue=6.973271, abschangeobjval=1.04971
+iter=10, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.0267289
+iter=11, partyidx=2, bellineqvalue=7.000000, abschangeobjval=8.29787e-09
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.224171 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, partyidx=3, bellineqvalue=0.820237, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=3.236212, abschangeobjval=2.41597
+iter=3, partyidx=1, bellineqvalue=4.781699, abschangeobjval=1.54549
+iter=4, partyidx=2, bellineqvalue=4.794711, abschangeobjval=0.0130124
+iter=5, partyidx=3, bellineqvalue=4.849153, abschangeobjval=0.0544419
+iter=6, channelq=~, bellineqvalue=4.958819, abschangeobjval=0.109666
+iter=7, partyidx=1, bellineqvalue=4.971744, abschangeobjval=0.0129251
+iter=8, partyidx=2, bellineqvalue=4.989955, abschangeobjval=0.0182103
+iter=9, partyidx=3, bellineqvalue=4.991062, abschangeobjval=0.00110709
+iter=10, channelq=~, bellineqvalue=4.991174, abschangeobjval=0.000112122
+iter=11, partyidx=1, bellineqvalue=4.997122, abschangeobjval=0.00594817
+iter=12, partyidx=2, bellineqvalue=4.999057, abschangeobjval=0.00193495
+iter=13, partyidx=3, bellineqvalue=4.999064, abschangeobjval=6.65912e-06
+iter=14, channelq=~, bellineqvalue=4.999064, abschangeobjval=1.52439e-07
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.437232 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, partyidx=3, bellineqvalue=0.912933, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.039736, abschangeobjval=3.1268
+iter=3, partyidx=1, bellineqvalue=4.263164, abschangeobjval=0.223428
+iter=4, partyidx=2, bellineqvalue=4.276927, abschangeobjval=0.0137623
+iter=5, partyidx=3, bellineqvalue=4.298880, abschangeobjval=0.0219538
+iter=6, channelq=~, bellineqvalue=4.312340, abschangeobjval=0.0134595
+iter=7, partyidx=1, bellineqvalue=4.325184, abschangeobjval=0.0128444
+iter=8, partyidx=2, bellineqvalue=4.684761, abschangeobjval=0.359577
+iter=9, partyidx=3, bellineqvalue=4.739732, abschangeobjval=0.0549705
+iter=10, channelq=~, bellineqvalue=5.780805, abschangeobjval=1.04107
+iter=11, partyidx=1, bellineqvalue=7.000000, abschangeobjval=1.2192
+iter=12, partyidx=2, bellineqvalue=7.000000, abschangeobjval=4.73587e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.902164 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, channelq=~, bellineqvalue=3.767720, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=3.829878, abschangeobjval=0.0621586
+iter=3, partyidx=2, bellineqvalue=3.835677, abschangeobjval=0.00579912
+iter=4, partyidx=3, bellineqvalue=4.708207, abschangeobjval=0.87253
+iter=5, channelq=~, bellineqvalue=4.856250, abschangeobjval=0.148043
+iter=6, partyidx=1, bellineqvalue=4.862098, abschangeobjval=0.00584759
+iter=7, partyidx=2, bellineqvalue=4.953785, abschangeobjval=0.0916874
+iter=8, partyidx=3, bellineqvalue=4.953785, abschangeobjval=4.27231e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.056723 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, partyidx=1, bellineqvalue=0.992599, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.001620, abschangeobjval=1.00902
+iter=3, partyidx=3, bellineqvalue=4.042183, abschangeobjval=2.04056
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=2.95782
+iter=5, partyidx=1, bellineqvalue=7.000000, abschangeobjval=5.6804e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.109715 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, channelq=~, bellineqvalue=3.887989, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.021136, abschangeobjval=0.133147
+iter=3, partyidx=2, bellineqvalue=4.134257, abschangeobjval=0.113121
+iter=4, partyidx=3, bellineqvalue=4.201791, abschangeobjval=0.0675339
+iter=5, channelq=~, bellineqvalue=4.270549, abschangeobjval=0.0687579
+iter=6, partyidx=1, bellineqvalue=4.322015, abschangeobjval=0.0514663
+iter=7, partyidx=2, bellineqvalue=4.639713, abschangeobjval=0.317698
+iter=8, partyidx=3, bellineqvalue=4.688896, abschangeobjval=0.0491833
+iter=9, channelq=~, bellineqvalue=5.730648, abschangeobjval=1.04175
+iter=10, partyidx=1, bellineqvalue=7.000000, abschangeobjval=1.26935
+iter=11, partyidx=2, bellineqvalue=7.000000, abschangeobjval=6.50931e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.327167 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, channelq=~, bellineqvalue=4.645003, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.762078, abschangeobjval=0.117075
+iter=3, partyidx=2, bellineqvalue=4.823060, abschangeobjval=0.0609823
+iter=4, partyidx=3, bellineqvalue=4.902452, abschangeobjval=0.079392
+iter=5, channelq=~, bellineqvalue=4.931967, abschangeobjval=0.0295145
+iter=6, partyidx=1, bellineqvalue=4.963541, abschangeobjval=0.0315744
+iter=7, partyidx=2, bellineqvalue=4.985637, abschangeobjval=0.0220964
+iter=8, partyidx=3, bellineqvalue=4.988329, abschangeobjval=0.00269164
+iter=9, channelq=~, bellineqvalue=4.988651, abschangeobjval=0.000322204
+iter=10, partyidx=1, bellineqvalue=4.996146, abschangeobjval=0.00749512
+iter=11, partyidx=2, bellineqvalue=4.998702, abschangeobjval=0.002556
+iter=12, partyidx=3, bellineqvalue=4.998721, abschangeobjval=1.82783e-05
+iter=13, channelq=~, bellineqvalue=4.998721, abschangeobjval=5.64632e-07
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.247159 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, partyidx=1, bellineqvalue=1.322733, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.306650, abschangeobjval=0.983916
+iter=3, partyidx=3, bellineqvalue=4.467754, abschangeobjval=2.1611
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=2.53225
+iter=5, partyidx=1, bellineqvalue=7.000000, abschangeobjval=8.40659e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=2, s·p(v=1)=-0.057742 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.169587 s·p(v=1)=-0.057742 localbound=12.000000
+iter=1, partyidx=2, bellineqvalue=1.216841, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=3.327672, abschangeobjval=2.11083
+iter=3, channelq=~, bellineqvalue=5.406745, abschangeobjval=2.07907
+iter=4, partyidx=1, bellineqvalue=7.350847, abschangeobjval=1.9441
+iter=5, partyidx=2, bellineqvalue=12.000000, abschangeobjval=4.64915
+iter=6, partyidx=3, bellineqvalue=12.000000, abschangeobjval=7.98609e-10
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.462328 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.177630 s·p(v=1)=-0.462328 localbound=12.000000
+iter=1, channelq=~, bellineqvalue=5.093720, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.890653, abschangeobjval=0.796932
+iter=3, partyidx=2, bellineqvalue=6.192996, abschangeobjval=0.302343
+iter=4, partyidx=3, bellineqvalue=6.687873, abschangeobjval=0.494877
+iter=5, channelq=~, bellineqvalue=8.090969, abschangeobjval=1.4031
+iter=6, partyidx=1, bellineqvalue=8.090969, abschangeobjval=2.39395e-09
+Local maximum: 0.000000
+class=2, s·p(v=1)=-0.379156 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.080203 s·p(v=1)=-0.379156 localbound=12.000000
+iter=1, partyidx=1, bellineqvalue=1.825941, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=3.190467, abschangeobjval=1.36453
+iter=3, partyidx=3, bellineqvalue=4.911739, abschangeobjval=1.72127
+iter=4, channelq=~, bellineqvalue=7.219719, abschangeobjval=2.30798
+iter=5, partyidx=1, bellineqvalue=9.183291, abschangeobjval=1.96357
+iter=6, partyidx=2, bellineqvalue=12.000000, abschangeobjval=2.81671
+iter=7, partyidx=3, bellineqvalue=12.000000, abschangeobjval=7.98922e-10
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.621418 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.363349 s·p(v=1)=0.621418 localbound=12.000000
+iter=1, partyidx=3, bellineqvalue=2.197136, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.502595, abschangeobjval=3.30546
+iter=3, partyidx=1, bellineqvalue=6.194820, abschangeobjval=0.692225
+iter=4, partyidx=2, bellineqvalue=12.000000, abschangeobjval=5.80518
+iter=5, partyidx=3, bellineqvalue=12.000000, abschangeobjval=7.95509e-10
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.242035 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.274271 s·p(v=1)=-0.242035 localbound=12.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>setup_mosek_options', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 1315)" style="font-weight:bold">sdpsettings>setup_mosek_options</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',1315,0)">line 1315</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 217)" style="font-weight:bold">sdpsettings</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',217,0)">line 217</a>)
+    options.mosek = setup_mosek_options;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 82)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',82,0)">line 82</a>)
+                    sdpsettings('solver','mosek', 'verbose', 0,'dualize', 0, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 86)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',86,0)">line 86</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+arXiv1112_2626_check
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.469365 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, channelq=~, bellineqvalue=2.988864, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=3.789521, abschangeobjval=0.800658
+iter=3, partyidx=2, bellineqvalue=4.541920, abschangeobjval=0.752398
+iter=4, partyidx=3, bellineqvalue=5.633690, abschangeobjval=1.09177
+iter=5, channelq=~, bellineqvalue=6.946767, abschangeobjval=1.31308
+iter=6, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.0532328
+iter=7, partyidx=2, bellineqvalue=7.000000, abschangeobjval=1.72527e-08
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.173720 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, partyidx=3, bellineqvalue=0.770710, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=3.984584, abschangeobjval=3.21387
+iter=3, partyidx=1, bellineqvalue=4.161545, abschangeobjval=0.176961
+iter=4, partyidx=2, bellineqvalue=4.264112, abschangeobjval=0.102567
+iter=5, partyidx=3, bellineqvalue=4.274801, abschangeobjval=0.0106888
+iter=6, channelq=~, bellineqvalue=4.280400, abschangeobjval=0.00559904
+iter=7, partyidx=1, bellineqvalue=4.304672, abschangeobjval=0.0242714
+iter=8, partyidx=2, bellineqvalue=4.700015, abschangeobjval=0.395344
+iter=9, partyidx=3, bellineqvalue=4.763938, abschangeobjval=0.063923
+iter=10, channelq=~, bellineqvalue=5.807202, abschangeobjval=1.04326
+iter=11, partyidx=1, bellineqvalue=7.000000, abschangeobjval=1.1928
+iter=12, partyidx=2, bellineqvalue=7.000000, abschangeobjval=3.98395e-08
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.124881 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, channelq=~, bellineqvalue=3.178911, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.377969, abschangeobjval=1.19906
+iter=3, partyidx=2, bellineqvalue=4.390310, abschangeobjval=0.012341
+iter=4, partyidx=3, bellineqvalue=4.494471, abschangeobjval=0.104161
+iter=5, channelq=~, bellineqvalue=4.773189, abschangeobjval=0.278718
+iter=6, partyidx=1, bellineqvalue=4.795656, abschangeobjval=0.0224668
+iter=7, partyidx=2, bellineqvalue=4.883932, abschangeobjval=0.0882762
+iter=8, partyidx=3, bellineqvalue=4.924759, abschangeobjval=0.0408278
+iter=9, channelq=~, bellineqvalue=4.936636, abschangeobjval=0.0118766
+iter=10, partyidx=1, bellineqvalue=4.972960, abschangeobjval=0.036324
+iter=11, partyidx=2, bellineqvalue=4.990104, abschangeobjval=0.0171436
+iter=12, partyidx=3, bellineqvalue=4.991248, abschangeobjval=0.00114423
+iter=13, channelq=~, bellineqvalue=4.991376, abschangeobjval=0.000128275
+iter=14, partyidx=1, bellineqvalue=4.997116, abschangeobjval=0.00573992
+iter=15, partyidx=2, bellineqvalue=4.998994, abschangeobjval=0.00187775
+iter=16, partyidx=3, bellineqvalue=4.999001, abschangeobjval=6.915e-06
+iter=17, channelq=~, bellineqvalue=4.999001, abschangeobjval=2.30954e-07
+error in visibility LP
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.432568 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, partyidx=1, bellineqvalue=1.589803, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=3.533643, abschangeobjval=1.94384
+iter=3, partyidx=3, bellineqvalue=7.000000, abschangeobjval=3.46636
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=2.6001e-08
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.280160 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, partyidx=2, bellineqvalue=0.556904, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.824665, abschangeobjval=0.267761
+iter=3, channelq=~, bellineqvalue=3.774461, abschangeobjval=2.9498
+iter=4, partyidx=1, bellineqvalue=4.181057, abschangeobjval=0.406597
+iter=5, partyidx=2, bellineqvalue=4.344367, abschangeobjval=0.16331
+iter=6, partyidx=3, bellineqvalue=4.357940, abschangeobjval=0.0135724
+iter=7, channelq=~, bellineqvalue=5.470194, abschangeobjval=1.11225
+iter=8, partyidx=1, bellineqvalue=6.999998, abschangeobjval=1.5298
+iter=9, partyidx=2, bellineqvalue=6.999998, abschangeobjval=2.41592e-08
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.135309 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, partyidx=3, bellineqvalue=0.375132, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=3.499883, abschangeobjval=3.12475
+iter=3, partyidx=1, bellineqvalue=4.220473, abschangeobjval=0.72059
+iter=4, partyidx=2, bellineqvalue=4.229305, abschangeobjval=0.00883268
+iter=5, partyidx=3, bellineqvalue=4.236589, abschangeobjval=0.00728415
+iter=6, channelq=~, bellineqvalue=4.379707, abschangeobjval=0.143118
+iter=7, partyidx=1, bellineqvalue=4.385057, abschangeobjval=0.00534983
+iter=8, partyidx=2, bellineqvalue=5.220514, abschangeobjval=0.835457
+iter=9, partyidx=3, bellineqvalue=5.356609, abschangeobjval=0.136096
+iter=10, channelq=~, bellineqvalue=6.409339, abschangeobjval=1.05273
+iter=11, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.590661
+iter=12, partyidx=2, bellineqvalue=7.000000, abschangeobjval=5.92412e-09
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.671390 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, partyidx=2, bellineqvalue=0.720187, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.802389, abschangeobjval=0.0822015
+iter=3, channelq=~, bellineqvalue=4.636842, abschangeobjval=3.83445
+iter=4, partyidx=1, bellineqvalue=4.688567, abschangeobjval=0.0517247
+iter=5, partyidx=2, bellineqvalue=4.898717, abschangeobjval=0.21015
+iter=6, partyidx=3, bellineqvalue=4.898719, abschangeobjval=2.41962e-06
+iter=7, channelq=~, bellineqvalue=4.898719, abschangeobjval=4.5542e-08
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.188304 s·p(v=1)=-0.000000 localbound=-7.000000
+iter=1, partyidx=1, bellineqvalue=1.209336, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.488896, abschangeobjval=1.27956
+iter=3, partyidx=3, bellineqvalue=4.228168, abschangeobjval=1.73927
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=2.77183
+iter=5, partyidx=1, bellineqvalue=7.000000, abschangeobjval=3.12791e-07
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=-7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.110886 s·p(v=1)=0.000000 localbound=-7.000000
+iter=1, channelq=~, bellineqvalue=3.408636, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.336278, abschangeobjval=0.927642
+iter=3, partyidx=2, bellineqvalue=4.350569, abschangeobjval=0.0142913
+iter=4, partyidx=3, bellineqvalue=4.427795, abschangeobjval=0.0772261
+iter=5, channelq=~, bellineqvalue=4.651132, abschangeobjval=0.223337
+iter=6, partyidx=1, bellineqvalue=4.663594, abschangeobjval=0.0124628
+iter=7, partyidx=2, bellineqvalue=4.796085, abschangeobjval=0.132491
+iter=8, partyidx=3, bellineqvalue=4.877379, abschangeobjval=0.0812938
+iter=9, channelq=~, bellineqvalue=4.909495, abschangeobjval=0.0321163
+iter=10, partyidx=1, bellineqvalue=4.957289, abschangeobjval=0.0477938
+iter=11, partyidx=2, bellineqvalue=5.316492, abschangeobjval=0.359203
+iter=12, partyidx=3, bellineqvalue=5.328548, abschangeobjval=0.0120562
+iter=13, channelq=~, bellineqvalue=6.319422, abschangeobjval=0.990874
+iter=14, partyidx=1, bellineqvalue=6.999956, abschangeobjval=0.680534
+iter=15, partyidx=2, bellineqvalue=6.999956, abschangeobjval=3.76971e-09
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+Best of 2: 0.000000
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=2, s·p(v=1)=0.062088 localboundBroadcast=-14.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.521863 s·p(v=1)=0.062088 localbound=-14.000000
+iter=1, partyidx=3, bellineqvalue=1.694241, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.727907, abschangeobjval=3.03367
+iter=3, partyidx=1, bellineqvalue=6.431499, abschangeobjval=1.70359
+iter=4, partyidx=2, bellineqvalue=12.000000, abschangeobjval=5.5685
+iter=5, partyidx=3, bellineqvalue=12.000000, abschangeobjval=3.16383e-10
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.019284 localboundBroadcast=-14.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.116785 s·p(v=1)=-0.019284 localbound=-14.000000
+iter=1, partyidx=1, bellineqvalue=2.367269, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.632417, abschangeobjval=0.265147
+iter=3, partyidx=3, bellineqvalue=4.400202, abschangeobjval=1.76778
+iter=4, channelq=~, bellineqvalue=7.534213, abschangeobjval=3.13401
+iter=5, partyidx=1, bellineqvalue=10.245329, abschangeobjval=2.71112
+iter=6, partyidx=2, bellineqvalue=12.000000, abschangeobjval=1.75467
+iter=7, partyidx=3, bellineqvalue=12.000000, abschangeobjval=8.02286e-10
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.008326 localboundBroadcast=-14.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.228352 s·p(v=1)=0.008326 localbound=-14.000000
+iter=1, partyidx=1, bellineqvalue=3.207404, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=5.906957, abschangeobjval=2.69955
+iter=3, partyidx=3, bellineqvalue=10.560141, abschangeobjval=4.65318
+iter=4, channelq=~, bellineqvalue=12.000000, abschangeobjval=1.43986
+iter=5, partyidx=1, bellineqvalue=12.000000, abschangeobjval=1.50061e-10
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.274845 localboundBroadcast=-14.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.017706 s·p(v=1)=-0.274845 localbound=-14.000000
+iter=1, partyidx=2, bellineqvalue=0.422895, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.568096, abschangeobjval=1.1452
+iter=3, channelq=~, bellineqvalue=6.077897, abschangeobjval=4.5098
+iter=4, partyidx=1, bellineqvalue=7.060811, abschangeobjval=0.982914
+iter=5, partyidx=2, bellineqvalue=12.000000, abschangeobjval=4.93919
+iter=6, partyidx=3, bellineqvalue=12.000000, abschangeobjval=8.02936e-10
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.341948 localboundBroadcast=-14.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.685935 s·p(v=1)=0.341948 localbound=-14.000000
+iter=1, partyidx=2, bellineqvalue=1.525749, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=2.642235, abschangeobjval=1.11649
+iter=3, channelq=~, bellineqvalue=5.026263, abschangeobjval=2.38403
+iter=4, partyidx=1, bellineqvalue=6.823238, abschangeobjval=1.79698
+iter=5, partyidx=2, bellineqvalue=12.000000, abschangeobjval=5.17676
+iter=6, partyidx=3, bellineqvalue=12.000000, abschangeobjval=2.87462e-07
+error in visibility LP
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.092804 localboundBroadcast=-14.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.025384 s·p(v=1)=-0.092804 localbound=-14.000000
+iter=1, channelq=~, bellineqvalue=5.189433, abschangeobjval=1.00001e+06
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compileinterfacedata', 'C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m', 119)" style="font-weight:bold">compileinterfacedata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m',119,0)">line 119</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m', 249)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m',249,0)">line 249</a>)
+[interfacedata,recoverdata,solver,diagnostic,F,Fremoved,ForiginalQuadratics] = compileinterfacedata(F,[],logdetStruct,h,options,0,solving_parametric);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 81)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',81,0)">line 81</a>)
+    sol = optimize(constraints, -objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 86)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',86,0)">line 86</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+arXiv1112_2626_check
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.296331 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, partyidx=3, bellineqvalue=0.657146, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.913360, abschangeobjval=4.25621
+iter=3, partyidx=1, bellineqvalue=4.917380, abschangeobjval=0.0040201
+iter=4, partyidx=2, bellineqvalue=4.972001, abschangeobjval=0.0546207
+iter=5, partyidx=3, bellineqvalue=4.972122, abschangeobjval=0.000120647
+iter=6, channelq=~, bellineqvalue=4.972137, abschangeobjval=1.52272e-05
+iter=7, partyidx=1, bellineqvalue=4.990690, abschangeobjval=0.0185527
+iter=8, partyidx=2, bellineqvalue=4.996982, abschangeobjval=0.00629294
+iter=9, partyidx=3, bellineqvalue=4.996984, abschangeobjval=1.18737e-06
+iter=10, channelq=~, bellineqvalue=4.996984, abschangeobjval=9.1671e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.393302 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, partyidx=3, bellineqvalue=0.606889, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.296862, abschangeobjval=3.68997
+iter=3, partyidx=1, bellineqvalue=4.313280, abschangeobjval=0.0164183
+iter=4, partyidx=2, bellineqvalue=4.328223, abschangeobjval=0.0149432
+iter=5, partyidx=3, bellineqvalue=4.370447, abschangeobjval=0.0422241
+iter=6, channelq=~, bellineqvalue=4.390258, abschangeobjval=0.0198102
+iter=7, partyidx=1, bellineqvalue=4.423642, abschangeobjval=0.0333846
+iter=8, partyidx=2, bellineqvalue=4.514173, abschangeobjval=0.0905308
+iter=9, partyidx=3, bellineqvalue=4.539402, abschangeobjval=0.0252295
+iter=10, channelq=~, bellineqvalue=4.782594, abschangeobjval=0.243192
+iter=11, partyidx=1, bellineqvalue=6.078337, abschangeobjval=1.29574
+iter=12, partyidx=2, bellineqvalue=6.078386, abschangeobjval=4.95253e-05
+iter=13, partyidx=3, bellineqvalue=6.418675, abschangeobjval=0.340289
+iter=14, channelq=~, bellineqvalue=7.000000, abschangeobjval=0.581325
+iter=15, partyidx=1, bellineqvalue=7.000000, abschangeobjval=4.06457e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.307470 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, partyidx=2, bellineqvalue=0.481694, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.689477, abschangeobjval=0.207783
+iter=3, channelq=~, bellineqvalue=4.228554, abschangeobjval=3.53908
+iter=4, partyidx=1, bellineqvalue=4.231786, abschangeobjval=0.00323156
+iter=5, partyidx=2, bellineqvalue=4.990802, abschangeobjval=0.759017
+iter=6, partyidx=3, bellineqvalue=4.990803, abschangeobjval=4.23487e-07
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=-0.161232 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, partyidx=2, bellineqvalue=0.669694, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.034557, abschangeobjval=0.364863
+iter=3, channelq=~, bellineqvalue=4.906942, abschangeobjval=3.87238
+iter=4, partyidx=1, bellineqvalue=4.922844, abschangeobjval=0.0159019
+iter=5, partyidx=2, bellineqvalue=4.955356, abschangeobjval=0.0325116
+iter=6, partyidx=3, bellineqvalue=4.979468, abschangeobjval=0.0241119
+iter=7, channelq=~, bellineqvalue=4.982809, abschangeobjval=0.0033412
+iter=8, partyidx=1, bellineqvalue=4.993821, abschangeobjval=0.0110119
+iter=9, partyidx=2, bellineqvalue=4.997924, abschangeobjval=0.00410273
+iter=10, partyidx=3, bellineqvalue=4.998120, abschangeobjval=0.000196297
+iter=11, channelq=~, bellineqvalue=4.998129, abschangeobjval=8.7424e-06
+iter=12, partyidx=1, bellineqvalue=4.999414, abschangeobjval=0.00128548
+iter=13, partyidx=2, bellineqvalue=4.999827, abschangeobjval=0.000413346
+iter=14, partyidx=3, bellineqvalue=4.999827, abschangeobjval=8.24827e-09
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=-0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.090781 s·p(v=1)=-0.000000 localbound=7.000000
+iter=1, channelq=~, bellineqvalue=4.046112, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.300895, abschangeobjval=0.254783
+iter=3, partyidx=2, bellineqvalue=4.302593, abschangeobjval=0.0016989
+iter=4, partyidx=3, bellineqvalue=4.311562, abschangeobjval=0.0089683
+iter=5, channelq=~, bellineqvalue=4.361529, abschangeobjval=0.049967
+iter=6, partyidx=1, bellineqvalue=4.376198, abschangeobjval=0.0146689
+iter=7, partyidx=2, bellineqvalue=4.483870, abschangeobjval=0.107672
+iter=8, partyidx=3, bellineqvalue=4.502095, abschangeobjval=0.0182254
+iter=9, channelq=~, bellineqvalue=4.761931, abschangeobjval=0.259836
+iter=10, partyidx=1, bellineqvalue=6.082535, abschangeobjval=1.3206
+iter=11, partyidx=2, bellineqvalue=6.082563, abschangeobjval=2.82822e-05
+iter=12, partyidx=3, bellineqvalue=6.420526, abschangeobjval=0.337963
+iter=13, channelq=~, bellineqvalue=7.000000, abschangeobjval=0.579474
+iter=14, partyidx=1, bellineqvalue=7.000000, abschangeobjval=3.9506e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.136534 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, partyidx=3, bellineqvalue=0.296264, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.549471, abschangeobjval=4.25321
+iter=3, partyidx=1, bellineqvalue=4.777617, abschangeobjval=0.228146
+iter=4, partyidx=2, bellineqvalue=4.788478, abschangeobjval=0.0108605
+iter=5, partyidx=3, bellineqvalue=4.925983, abschangeobjval=0.137506
+iter=6, channelq=~, bellineqvalue=4.965532, abschangeobjval=0.039549
+iter=7, partyidx=1, bellineqvalue=4.976190, abschangeobjval=0.0106577
+iter=8, partyidx=2, bellineqvalue=4.990644, abschangeobjval=0.0144538
+iter=9, partyidx=3, bellineqvalue=4.993030, abschangeobjval=0.00238663
+iter=10, channelq=~, bellineqvalue=4.993265, abschangeobjval=0.00023445
+iter=11, partyidx=1, bellineqvalue=4.997859, abschangeobjval=0.00459425
+iter=12, partyidx=2, bellineqvalue=4.999362, abschangeobjval=0.00150299
+iter=13, partyidx=3, bellineqvalue=4.999362, abschangeobjval=1.19057e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.764884 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, partyidx=1, bellineqvalue=1.591888, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.121582, abschangeobjval=0.529695
+iter=3, partyidx=3, bellineqvalue=4.515784, abschangeobjval=2.3942
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=2.48422
+iter=5, partyidx=1, bellineqvalue=7.000000, abschangeobjval=7.85828e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.042154 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, partyidx=1, bellineqvalue=1.256111, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.063267, abschangeobjval=0.807156
+iter=3, partyidx=3, bellineqvalue=4.119082, abschangeobjval=2.05581
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=2.88092
+iter=5, partyidx=1, bellineqvalue=7.000000, abschangeobjval=4.09706e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=1, s·p(v=1)=0.000000 localboundBroadcast=7.000000 localboundNS2=1.000000 quantumbound=1.000000
+s·p(v=0)=0.111977 s·p(v=1)=0.000000 localbound=7.000000
+iter=1, channelq=~, bellineqvalue=4.223990, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.284877, abschangeobjval=0.0608877
+iter=3, partyidx=2, bellineqvalue=4.655595, abschangeobjval=0.370718
+iter=4, partyidx=3, bellineqvalue=4.669392, abschangeobjval=0.0137968
+iter=5, channelq=~, bellineqvalue=4.691819, abschangeobjval=0.0224269
+iter=6, partyidx=1, bellineqvalue=4.866213, abschangeobjval=0.174394
+iter=7, partyidx=2, bellineqvalue=4.946011, abschangeobjval=0.0797984
+iter=8, partyidx=3, bellineqvalue=4.953610, abschangeobjval=0.00759828
+iter=9, channelq=~, bellineqvalue=4.956102, abschangeobjval=0.00249235
+iter=10, partyidx=1, bellineqvalue=4.984490, abschangeobjval=0.028388
+iter=11, partyidx=2, bellineqvalue=4.994706, abschangeobjval=0.0102165
+iter=12, partyidx=3, bellineqvalue=4.994850, abschangeobjval=0.000143246
+iter=13, channelq=~, bellineqvalue=4.994863, abschangeobjval=1.35425e-05
+iter=14, partyidx=1, bellineqvalue=4.998285, abschangeobjval=0.00342135
+iter=15, partyidx=2, bellineqvalue=4.999428, abschangeobjval=0.0011437
+iter=16, partyidx=3, bellineqvalue=4.999429, abschangeobjval=7.36507e-07
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=2, s·p(v=1)=-0.189404 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.396040 s·p(v=1)=-0.189404 localbound=12.000000
+iter=1, partyidx=2, bellineqvalue=0.408971, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.867732, abschangeobjval=0.458761
+iter=3, channelq=~, bellineqvalue=4.542900, abschangeobjval=3.67517
+iter=4, partyidx=1, bellineqvalue=4.942180, abschangeobjval=0.39928
+iter=5, partyidx=2, bellineqvalue=6.801127, abschangeobjval=1.85895
+iter=6, partyidx=3, bellineqvalue=6.882868, abschangeobjval=0.0817411
+iter=7, channelq=~, bellineqvalue=7.000007, abschangeobjval=0.117139
+iter=8, partyidx=1, bellineqvalue=7.000007, abschangeobjval=3.03526e-09
+Local maximum: 0.000000
+class=2, s·p(v=1)=-0.026293 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.176129 s·p(v=1)=-0.026293 localbound=12.000000
+iter=1, channelq=~, bellineqvalue=5.205056, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.555335, abschangeobjval=0.350278
+iter=3, partyidx=2, bellineqvalue=5.943204, abschangeobjval=0.387869
+iter=4, partyidx=3, bellineqvalue=5.971218, abschangeobjval=0.0280144
+iter=5, channelq=~, bellineqvalue=6.997193, abschangeobjval=1.02597
+iter=6, partyidx=1, bellineqvalue=6.997193, abschangeobjval=8.99192e-11
+Local maximum: 0.000000
+class=2, s·p(v=1)=-0.172640 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.302874 s·p(v=1)=-0.172640 localbound=12.000000
+iter=1, partyidx=3, bellineqvalue=2.147162, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.567904, abschangeobjval=2.42074
+iter=3, partyidx=1, bellineqvalue=7.007991, abschangeobjval=2.44009
+iter=4, partyidx=2, bellineqvalue=12.000000, abschangeobjval=4.99201
+iter=5, partyidx=3, bellineqvalue=12.000000, abschangeobjval=4.28369e-09
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.045112 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.386853 s·p(v=1)=-0.045112 localbound=12.000000
+iter=1, channelq=~, bellineqvalue=6.225560, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=6.332505, abschangeobjval=0.106945
+iter=3, partyidx=2, bellineqvalue=7.625439, abschangeobjval=1.29293
+iter=4, partyidx=3, bellineqvalue=7.965569, abschangeobjval=0.340129
+iter=5, channelq=~, bellineqvalue=8.000000, abschangeobjval=0.0344314
+iter=6, partyidx=1, bellineqvalue=8.140784, abschangeobjval=0.140784
+iter=7, partyidx=2, bellineqvalue=12.000000, abschangeobjval=3.85922
+iter=8, partyidx=3, bellineqvalue=12.000000, abschangeobjval=3.57784e-09
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.194710 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=0.517780 s·p(v=1)=0.194710 localbound=12.000000
+iter=1, partyidx=2, bellineqvalue=0.761194, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=3.209619, abschangeobjval=2.44842
+iter=3, channelq=~, bellineqvalue=5.338271, abschangeobjval=2.12865
+iter=4, partyidx=1, bellineqvalue=6.733391, abschangeobjval=1.39512
+iter=5, partyidx=2, bellineqvalue=12.000000, abschangeobjval=5.26661
+iter=6, partyidx=3, bellineqvalue=12.000000, abschangeobjval=1.42459e-07
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=-0.223028 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.412563 s·p(v=1)=-0.223028 localbound=12.000000
+iter=1, partyidx=3, bellineqvalue=2.194301, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.838575, abschangeobjval=2.64427
+iter=3, partyidx=1, bellineqvalue=7.089164, abschangeobjval=2.25059
+iter=4, partyidx=2, bellineqvalue=12.000000, abschangeobjval=4.91084
+iter=5, partyidx=3, bellineqvalue=12.000000, abschangeobjval=5.64004e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.821029 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=1.037422 s·p(v=1)=0.821029 localbound=12.000000
+iter=1, partyidx=2, bellineqvalue=1.697142, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=2.646056, abschangeobjval=0.948914
+iter=3, channelq=~, bellineqvalue=5.396804, abschangeobjval=2.75075
+iter=4, partyidx=1, bellineqvalue=6.325480, abschangeobjval=0.928676
+iter=5, partyidx=2, bellineqvalue=12.000000, abschangeobjval=5.67452
+iter=6, partyidx=3, bellineqvalue=12.000000, abschangeobjval=7.57913e-10
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.326270 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.763216 s·p(v=1)=0.326270 localbound=12.000000
+iter=1, partyidx=1, bellineqvalue=3.982493, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=5.908038, abschangeobjval=1.92554
+iter=3, partyidx=3, bellineqvalue=10.497173, abschangeobjval=4.58913
+iter=4, channelq=~, bellineqvalue=12.000000, abschangeobjval=1.50283
+iter=5, partyidx=1, bellineqvalue=12.000000, abschangeobjval=9.73006e-09
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=2, s·p(v=1)=0.229483 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=4.750690
+s·p(v=0)=-0.045552 s·p(v=1)=0.229483 localbound=12.000000
+iter=1, partyidx=2, bellineqvalue=1.193233, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=2.475531, abschangeobjval=1.2823
+iter=3, channelq=~, bellineqvalue=6.015779, abschangeobjval=3.54025
+iter=4, partyidx=1, bellineqvalue=6.169656, abschangeobjval=0.153877
+iter=5, partyidx=2, bellineqvalue=12.000000, abschangeobjval=5.83034
+iter=6, partyidx=3, bellineqvalue=12.000000, abschangeobjval=7.87777e-10
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=3, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=3, s·p(v=1)=-0.418159 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-0.481370 s·p(v=1)=-0.418159 localbound=10.000000
+iter=1, partyidx=3, bellineqvalue=0.249376, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.133441, abschangeobjval=3.88407
+iter=3, partyidx=1, bellineqvalue=4.192946, abschangeobjval=0.0595047
+iter=4, partyidx=2, bellineqvalue=4.394445, abschangeobjval=0.201498
+iter=5, partyidx=3, bellineqvalue=4.394445, abschangeobjval=3.40463e-09
+Local maximum: 0.000000
+class=3, s·p(v=1)=-1.054256 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-1.844628 s·p(v=1)=-1.054256 localbound=10.000000
+iter=1, channelq=~, bellineqvalue=5.360241, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.446291, abschangeobjval=0.08605
+iter=3, partyidx=2, bellineqvalue=6.062105, abschangeobjval=0.615814
+iter=4, partyidx=3, bellineqvalue=6.205341, abschangeobjval=0.143236
+iter=5, channelq=~, bellineqvalue=6.402068, abschangeobjval=0.196727
+iter=6, partyidx=1, bellineqvalue=6.402354, abschangeobjval=0.000285579
+iter=7, partyidx=2, bellineqvalue=6.405584, abschangeobjval=0.00323026
+iter=8, partyidx=3, bellineqvalue=6.551574, abschangeobjval=0.14599
+iter=9, channelq=~, bellineqvalue=6.685453, abschangeobjval=0.133879
+iter=10, partyidx=1, bellineqvalue=6.685457, abschangeobjval=4.52529e-06
+iter=11, partyidx=2, bellineqvalue=6.685475, abschangeobjval=1.79855e-05
+iter=12, partyidx=3, bellineqvalue=6.790086, abschangeobjval=0.104611
+iter=13, channelq=~, bellineqvalue=6.865513, abschangeobjval=0.0754266
+iter=14, partyidx=1, bellineqvalue=6.865513, abschangeobjval=2.26696e-07
+Local maximum: 0.000000
+class=3, s·p(v=1)=-0.756820 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-1.567368 s·p(v=1)=-0.756820 localbound=10.000000
+iter=1, channelq=~, bellineqvalue=4.732416, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.828723, abschangeobjval=0.0963072
+iter=3, partyidx=2, bellineqvalue=6.204499, abschangeobjval=1.37578
+iter=4, partyidx=3, bellineqvalue=6.559231, abschangeobjval=0.354732
+iter=5, channelq=~, bellineqvalue=6.848324, abschangeobjval=0.289092
+iter=6, partyidx=1, bellineqvalue=6.869575, abschangeobjval=0.0212512
+iter=7, partyidx=2, bellineqvalue=6.895017, abschangeobjval=0.0254419
+iter=8, partyidx=3, bellineqvalue=6.933793, abschangeobjval=0.0387762
+iter=9, channelq=~, bellineqvalue=6.961659, abschangeobjval=0.0278657
+iter=10, partyidx=1, bellineqvalue=6.961946, abschangeobjval=0.000287595
+iter=11, partyidx=2, bellineqvalue=6.962495, abschangeobjval=0.000548595
+iter=12, partyidx=3, bellineqvalue=6.977198, abschangeobjval=0.0147032
+iter=13, channelq=~, bellineqvalue=6.986275, abschangeobjval=0.00907665
+iter=14, partyidx=1, bellineqvalue=6.986276, abschangeobjval=1.86146e-06
+iter=15, partyidx=2, bellineqvalue=6.986290, abschangeobjval=1.37086e-05
+iter=16, partyidx=3, bellineqvalue=6.991739, abschangeobjval=0.00544887
+iter=17, channelq=~, bellineqvalue=6.995035, abschangeobjval=0.00329607
+iter=18, partyidx=1, bellineqvalue=6.995035, abschangeobjval=6.08802e-09
+Local maximum: 0.000000
+class=3, s·p(v=1)=-0.481426 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=0.028333 s·p(v=1)=-0.481426 localbound=10.000000
+iter=1, partyidx=1, bellineqvalue=1.596376, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=3.402251, abschangeobjval=1.80588
+iter=3, partyidx=3, bellineqvalue=3.687590, abschangeobjval=0.285339
+iter=4, channelq=~, bellineqvalue=6.941788, abschangeobjval=3.2542
+iter=5, partyidx=1, bellineqvalue=6.977276, abschangeobjval=0.0354884
+iter=6, partyidx=2, bellineqvalue=6.977276, abschangeobjval=5.0216e-08
+Local maximum: 1.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=3, s·p(v=1)=-0.969263 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-1.159187 s·p(v=1)=-0.969263 localbound=10.000000
+iter=1, partyidx=3, bellineqvalue=0.231839, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.452901, abschangeobjval=4.22106
+iter=3, partyidx=1, bellineqvalue=4.543318, abschangeobjval=0.0904167
+iter=4, partyidx=2, bellineqvalue=4.695762, abschangeobjval=0.152444
+iter=5, partyidx=3, bellineqvalue=4.695762, abschangeobjval=2.26964e-09
+Local maximum: 0.000000
+class=3, s·p(v=1)=-1.629158 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-1.475403 s·p(v=1)=-1.629158 localbound=10.000000
+iter=1, partyidx=2, bellineqvalue=0.643135, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.911368, abschangeobjval=1.26823
+iter=3, channelq=~, bellineqvalue=4.000000, abschangeobjval=2.08863
+iter=4, partyidx=1, bellineqvalue=4.000000, abschangeobjval=8.83665e-09
+Local maximum: 0.000000
+class=3, s·p(v=1)=-1.011207 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-2.804218 s·p(v=1)=-1.011207 localbound=10.000000
+iter=1, channelq=~, bellineqvalue=4.634319, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.677930, abschangeobjval=0.043611
+iter=3, partyidx=2, bellineqvalue=5.977108, abschangeobjval=1.29918
+iter=4, partyidx=3, bellineqvalue=6.302312, abschangeobjval=0.325204
+iter=5, channelq=~, bellineqvalue=6.608378, abschangeobjval=0.306066
+iter=6, partyidx=1, bellineqvalue=6.609254, abschangeobjval=0.000876448
+iter=7, partyidx=2, bellineqvalue=6.618816, abschangeobjval=0.00956162
+iter=8, partyidx=3, bellineqvalue=6.739220, abschangeobjval=0.120404
+iter=9, channelq=~, bellineqvalue=6.830564, abschangeobjval=0.0913433
+iter=10, partyidx=1, bellineqvalue=6.830637, abschangeobjval=7.34225e-05
+iter=11, partyidx=2, bellineqvalue=6.830709, abschangeobjval=7.15087e-05
+iter=12, partyidx=3, bellineqvalue=6.892784, abschangeobjval=0.0620757
+iter=13, channelq=~, bellineqvalue=6.933581, abschangeobjval=0.0407962
+iter=14, partyidx=1, bellineqvalue=6.933582, abschangeobjval=1.3507e-06
+iter=15, partyidx=2, bellineqvalue=6.933583, abschangeobjval=1.26251e-06
+iter=16, partyidx=3, bellineqvalue=6.959329, abschangeobjval=0.0257459
+iter=17, channelq=~, bellineqvalue=6.975326, abschangeobjval=0.0159972
+iter=18, partyidx=1, bellineqvalue=6.975326, abschangeobjval=1.15931e-08
+Local maximum: 0.000000
+class=3, s·p(v=1)=-1.214317 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-2.198620 s·p(v=1)=-1.214317 localbound=10.000000
+iter=1, partyidx=3, bellineqvalue=0.465258, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.198611, abschangeobjval=3.73335
+iter=3, partyidx=1, bellineqvalue=4.199832, abschangeobjval=0.00122123
+iter=4, partyidx=2, bellineqvalue=4.661819, abschangeobjval=0.461987
+iter=5, partyidx=3, bellineqvalue=4.661819, abschangeobjval=2.9702e-09
+Local maximum: 0.000000
+class=3, s·p(v=1)=-1.125447 localboundBroadcast=10.000000 localboundNS2=4.000000 quantumbound=4.811930
+s·p(v=0)=-0.083549 s·p(v=1)=-1.125447 localbound=10.000000
+iter=1, partyidx=1, bellineqvalue=0.769324, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.859491, abschangeobjval=2.09017
+iter=3, partyidx=3, bellineqvalue=3.308761, abschangeobjval=0.44927
+iter=4, channelq=~, bellineqvalue=6.952674, abschangeobjval=3.64391
+iter=5, partyidx=1, bellineqvalue=6.981494, abschangeobjval=0.0288195
+iter=6, partyidx=2, bellineqvalue=6.981494, abschangeobjval=9.5255e-08
+Local maximum: 1.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+Best of 2: 1.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=4, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=4, s·p(v=1)=0.118686 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=5.000000
+s·p(v=0)=0.080220 s·p(v=1)=0.118686 localbound=12.000000
+iter=1, channelq=~, bellineqvalue=4.781185, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=5.055320, abschangeobjval=0.274135
+iter=3, partyidx=2, bellineqvalue=5.256374, abschangeobjval=0.201054
+iter=4, partyidx=3, bellineqvalue=6.925293, abschangeobjval=1.66892
+iter=5, channelq=~, bellineqvalue=8.987183, abschangeobjval=2.06189
+iter=6, partyidx=1, bellineqvalue=8.987183, abschangeobjval=1.1028e-07
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=4, s·p(v=1)=-0.421565 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=5.000000
+s·p(v=0)=-0.623698 s·p(v=1)=-0.421565 localbound=12.000000
+iter=1, channelq=~, bellineqvalue=4.584891, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.815598, abschangeobjval=0.230707
+iter=3, partyidx=2, bellineqvalue=4.979918, abschangeobjval=0.16432
+iter=4, partyidx=3, bellineqvalue=5.365976, abschangeobjval=0.386057
+iter=5, channelq=~, bellineqvalue=8.952539, abschangeobjval=3.58656
+iter=6, partyidx=1, bellineqvalue=8.952539, abschangeobjval=2.34535e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=4, s·p(v=1)=0.256612 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=5.000000
+s·p(v=0)=-0.101280 s·p(v=1)=0.256612 localbound=12.000000
+iter=1, partyidx=1, bellineqvalue=2.346149, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.497086, abschangeobjval=2.15094
+iter=3, partyidx=3, bellineqvalue=5.919482, abschangeobjval=1.4224
+iter=4, channelq=~, bellineqvalue=8.000000, abschangeobjval=2.08052
+iter=5, partyidx=1, bellineqvalue=10.159930, abschangeobjval=2.15993
+iter=6, partyidx=2, bellineqvalue=12.000000, abschangeobjval=1.84007
+iter=7, partyidx=3, bellineqvalue=12.000000, abschangeobjval=6.94773e-09
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=4, s·p(v=1)=-0.480323 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=5.000000
+s·p(v=0)=-0.359091 s·p(v=1)=-0.480323 localbound=12.000000
+iter=1, channelq=~, bellineqvalue=4.868434, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=5.132252, abschangeobjval=0.263818
+iter=3, partyidx=2, bellineqvalue=5.384571, abschangeobjval=0.25232
+iter=4, partyidx=3, bellineqvalue=7.773143, abschangeobjval=2.38857
+iter=5, channelq=~, bellineqvalue=8.000000, abschangeobjval=0.226857
+iter=6, partyidx=1, bellineqvalue=9.511594, abschangeobjval=1.51159
+iter=7, partyidx=2, bellineqvalue=11.023023, abschangeobjval=1.51143
+iter=8, partyidx=3, bellineqvalue=12.000000, abschangeobjval=0.976977
+iter=9, channelq=~, bellineqvalue=12.000000, abschangeobjval=7.48798e-08
+Local maximum: 0.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=4, s·p(v=1)=0.337514 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=5.000000
+s·p(v=0)=-0.237755 s·p(v=1)=0.337514 localbound=12.000000
+iter=1, partyidx=2, bellineqvalue=2.630704, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.497242, abschangeobjval=1.86654
+iter=3, channelq=~, bellineqvalue=6.416391, abschangeobjval=1.91915
+iter=4, partyidx=1, bellineqvalue=8.000000, abschangeobjval=1.58361
+iter=5, partyidx=2, bellineqvalue=8.076193, abschangeobjval=0.0761935
+iter=6, partyidx=3, bellineqvalue=8.228610, abschangeobjval=0.152417
+iter=7, channelq=~, bellineqvalue=8.228611, abschangeobjval=2.45437e-08
+Local maximum: 1.000000
+
+WARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND
+class=4, s·p(v=1)=0.008890 localboundBroadcast=12.000000 localboundNS2=4.000000 quantumbound=5.000000
+s·p(v=0)=-0.760176 s·p(v=1)=0.008890 localbound=12.000000
+iter=1, partyidx=1, bellineqvalue=2.794258, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.532509, abschangeobjval=1.73825
+iter=3, partyidx=3, bellineqvalue=6.118361, abschangeobjval=1.58585
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getavailablesolvers', 'C:\Program Files\MATLAB\YALMIP-master\solvers\getavailablesolvers.m', 12)" style="font-weight:bold">getavailablesolvers</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\solvers\getavailablesolvers.m',12,0)">line 12</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compileinterfacedata', 'C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m', 164)" style="font-weight:bold">compileinterfacedata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m',164,0)">line 164</a>)
+    [solvers,kept,allsolvers] = getavailablesolvers(findallsolvers,options);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m', 249)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m',249,0)">line 249</a>)
+[interfacedata,recoverdata,solver,diagnostic,F,Fremoved,ForiginalQuadratics] = compileinterfacedata(F,[],logdetStruct,h,options,0,solving_parametric);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverChannel', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverChannel.m', 75)" style="font-weight:bold">SeeSawOverChannel</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverChannel.m',75,0)">line 75</a>)
+    sol = optimize(constraints, -objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 28)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',28,0)">line 28</a>)
+            [newchannel,newobjval,problemStatus] = SeeSawOverChannel(initialState, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 86)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',86,0)">line 86</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+mat_chsh = fromCorrToBellMat([2,2],[2,2])
+
+ans =
+
+    16     8
+
+     1
+
+     2
+
+     3
+
+     4
+
+     5
+
+     6
+
+     7
+
+     8
+
+
+mat_chsh =
+
+     1    -1     0    -1     1     0     0     0
+     0     0    -1     0     0     1     0     0
+     0     0     0     0     0     0    -1     1
+     0     0     0     0     0     0     0     0
+     1     1     0    -1    -1     0     0     0
+     0     0     1     0     0    -1     0     0
+     0     0     0     0     0     0    -1    -1
+     0     0     0     0     0     0     0     0
+     1    -1     0     1    -1     0     0     0
+     0     0    -1     0     0    -1     0     0
+     0     0     0     0     0     0     1    -1
+     0     0     0     0     0     0     0     0
+     1     1     0     1     1     0     0     0
+     0     0     1     0     0     1     0     0
+     0     0     0     0     0     0     1     1
+     0     0     0     0     0     0     0     0
+
+chsh=[0,0,0,1,1,0,1,-1]
+
+chsh =
+
+     0     0     0     1     1     0     1    -1
+
+chsh=[0,0,0,1,1,0,1,-1]'
+
+chsh =
+
+     0
+     0
+     0
+     1
+     1
+     0
+     1
+    -1
+
+mat_chsh*chsh
+
+ans =
+
+     0
+     0
+    -2
+     0
+    -2
+     0
+     0
+     0
+     0
+     0
+     2
+     0
+     2
+     0
+     0
+     0
+
+bell_chsh=reshape(mat_chsh*chsh,[2,2,2,2])
+
+bell_chsh(:,:,1,1) =
+
+     0    -2
+     0     0
+
+
+bell_chsh(:,:,2,1) =
+
+    -2     0
+     0     0
+
+
+bell_chsh(:,:,1,2) =
+
+     0     2
+     0     0
+
+
+bell_chsh(:,:,2,2) =
+
+     2     0
+     0     0
+
+test_fromCorrToBellMat
+
+ins =
+
+     2     2
+
+
+outs =
+
+     2     2
+
+
+ans =
+
+    16     8
+
+     1
+
+     2
+
+     3
+
+     4
+
+     5
+
+     6
+
+     7
+
+     8
+
+test_fromCorrToBellMat
+
+ans =
+
+    16     8
+
+     1
+
+     2
+
+     3
+
+     4
+
+     5
+
+     6
+
+     7
+
+     8
+
+test_fromCorrToBellMat
+chsh_prob
+
+chsh_prob =
+
+     0
+     0
+    -2
+     0
+    -2
+     0
+     0
+     0
+     0
+     0
+     2
+     0
+     2
+     0
+     0
+     0
+
+test_fromCorrToBellMat
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 30)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',30,0)">line 30</a>)
+assert(mat_chsh*A1 == prob(:), "Incorrect mat");
+} 
+test_fromCorrToBellMat
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 30)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',30,0)">line 30</a>)
+Incorrect mat
+} 
+opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',30,0)
+prob
+
+prob(:,:,1,1) =
+
+     1     0
+     0     0
+
+
+prob(:,:,2,1) =
+
+    -1     0
+     0     0
+
+
+prob(:,:,1,2) =
+
+     1     0
+     0     0
+
+
+prob(:,:,2,2) =
+
+     1     0
+     0     0
+
+mat_chsh*A1
+
+ans =
+
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+test_fromCorrToBellMat
+{Array dimensions must match for binary array op.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+assert(all(mat_chsh*A1 == prob), "Incorrect mat");
+} 
+mat_chsh*A1
+
+ans =
+
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+prob
+
+prob(:,:,1,1) =
+
+     1     0
+     0     0
+
+
+prob(:,:,2,1) =
+
+    -1     0
+     0     0
+
+
+prob(:,:,1,2) =
+
+     1     0
+     0     0
+
+
+prob(:,:,2,2) =
+
+     1     0
+     0     0
+
+test_fromCorrToBellMat
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+Incorrect mat
+} 
+test_fromCorrToBellMat
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+assert(all(mat_chsh*A1 == prob(:)'), "Incorrect mat");
+} 
+prob(:)
+
+ans =
+
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+mat_chsh*A1 
+
+ans =
+
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+test_fromCorrToBellMat
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+assert(all(mat_chsh*A1 == prob(:)'), "Incorrect mat");
+} 
+mat_chsh*A1
+
+ans =
+
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+mat_chsh = fromCorrToBellMat(ins,outs);
+mat_chsh*A1
+
+ans =
+
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+fromCorrToBellMat
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\scripts\fromCorrToBellMat.m', 28)" style="font-weight:bold">fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts\fromCorrToBellMat.m',28,0)">line 28</a>)
+nr_parties = length(ins);
+} 
+test_fromCorrToBellMat
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+assert(all(mat_chsh*A1 == prob(:)'), "Incorrect mat");
+} 
+mat_CHSH
+{Unrecognized function or variable 'mat_CHSH'.
+} 
+mat_chsh
+
+mat_chsh =
+
+     1     1     0     1     1     0     0     0
+     0     0     1     0     0     1     0     0
+     0     0     0     0     0     0     1     1
+     0     0     0     0     0     0     0     0
+     1    -1     0     1    -1     0     0     0
+     0     0    -1     0     0    -1     0     0
+     0     0     0     0     0     0     1    -1
+     0     0     0     0     0     0     0     0
+     1     1     0    -1    -1     0     0     0
+     0     0     1     0     0    -1     0     0
+     0     0     0     0     0     0    -1    -1
+     0     0     0     0     0     0     0     0
+     1    -1     0    -1     1     0     0     0
+     0     0    -1     0     0     1     0     0
+     0     0     0     0     0     0    -1     1
+     0     0     0     0     0     0     0     0
+
+test_fromCorrToBellMat
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+assert(all(mat_chsh*A1 == prob(:)'), "Incorrect mat");
+} 
+mat_chsh
+
+mat_chsh =
+
+     1     0     1     1     0     0     0     0
+     0     1     0     0     1     0     0     0
+     0     0     0     0     0     1     1     0
+     0     0     0     0     0     0     0     1
+    -1     0     1    -1     0     0     0     0
+     0    -1     0     0    -1     0     0     0
+     0     0     0     0     0     1    -1     0
+     0     0     0     0     0     0     0    -1
+     1     0    -1    -1     0     0     0     0
+     0     1     0     0    -1     0     0     0
+     0     0     0     0     0    -1    -1     0
+     0     0     0     0     0     0     0    -1
+    -1     0    -1     1     0     0     0     0
+     0    -1     0     0     1     0     0     0
+     0     0     0     0     0    -1     1     0
+     0     0     0     0     0     0     0     1
+
+mat_chsh*A1
+
+ans =
+
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+
+prob(:)'
+
+ans =
+
+     1     0     0     0    -1     0     0     0     1     0     0     0     1     0     0     0
+
+test_fromCorrToBellMat
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_fromCorrToBellMat', 'C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m', 29)" style="font-weight:bold">test_fromCorrToBellMat</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\tests\test_fromCorrToBellMat.m',29,0)">line 29</a>)
+Incorrect mat
+} 
+prob(:)
+
+ans =
+
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+
+test_fromCorrToBellMat
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+     1
+
+     1
+
+     1
+
+    -1
+
+prob(:)
+
+ans =
+
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+
+mat_chsh*A1
+
+ans =
+
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+    -1
+     0
+     0
+     0
+
+arXiv1112_2626_check

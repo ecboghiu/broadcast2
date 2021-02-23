@@ -22,8 +22,8 @@ for ineq_nr=1:nr_ineqs
     localboundBroadcast = ClassicalOptInequality_fromLPBroadcast(bellcoeffs);
     quantumbound = table3arXiv11122626(ineq_nr, 5);
     
-    if localboundBroadcast > localboundNS2
-       fprintf("\n WARNING: you shouldn't get a broadcast local bound greater than NS2 \n"); 
+    if abs(localboundBroadcast-localboundNS2)>1e-6
+       fprintf("\n WARNING: you shouldn't get a broadcast local bound greater than NS2 %f %f \n", localboundBroadcast, localboundNS2); 
     end
     
     fprintf("\n\n\n This is INEQUALITY nr ineq_nr=%d, localboundNS2=%f\n\n\n", ineq_nr, localboundNS2);
@@ -33,7 +33,7 @@ for ineq_nr=1:nr_ineqs
     final_round_channels = {};
 
     % LOOP PARAMETERS
-    MAX_ITER_OUTER_LOOP = 2;
+    MAX_ITER_OUTER_LOOP = 10;
     ALHPA_TOL_DIST_TO_POINT = 1e-3;
     DELTA_ALPHA_CONVERGENCE_THRESHOLD = 1e-6;
     MAX_ITER_INNER_LOOP = 10;
@@ -77,16 +77,17 @@ for ineq_nr=1:nr_ineqs
 
             spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
             fprintf("class=%d, s·p(v=1)=%f localboundBroadcast=%f localboundNS2=%f quantumbound=%f\n", ineq_nr, spv1, localboundBroadcast, localboundNS2, quantumbound);
-            
-            spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
-            spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
-            fprintf("s·p(v=0)=%f s·p(v=1)=%f localbound=%f\n", spv0, spv1, localbound);
-            
+                        
 
-            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(1-0.68), POVMs, channel);
             assert(checkPOVMsAreGood(POVMs,ins,outs),'Problem with POVMs');
             assert(checkThatChannelIsGood(channel, 2, 4), 'Problem with the channel');
 
+            if finalObj-localboundNS2>1e-3
+               fprintf("Found what we're looking for. Bell value:%f NS2 Bound: %f\n", finalObj, localboundNS2);
+               stop
+            end
+            
             % NOTE ALPHA NOW IS THE VALUE OF THE BELL INEQUALITY
             %alpha = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
             p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);

@@ -1,9 +1,4 @@
-ins = [2,2,2];
-outs = [2,2,2];
-
-from_corr_to_bell_mat(ins, outs)
-
-function bellcoeffs = from_corr_to_bell_mat(ins, outs)
+function change_of_basis_mat = fromCorrToBellMat(ins, outs)
 % We want a change of basis matrix from a vector of numbers in the basis
 % [A1, A2, B1, A1*B1, A2*B1, B2, A1*B2, A2*B2, ...
 %                   C1, A1*C1, A2*C1, B1*C1, A1*B1*C1, A1*B1*C1, B2*C1, A1*B2*C1, A2*B2*C1, ...
@@ -47,25 +42,22 @@ change_of_basis_mat = zeros( numel(bellcoeffs), prod(corrdims)-1);
 
 corr_coords = ind2subv(corrdims, 1:prod(corrdims(:)));
 nr_coords = numel(corr_coords(1,:));
-for idx = 1:size(corr_coords,1)
-    coords = corr_coords(idx,:);
+for idx = 1:(size(corr_coords,1)-1)  % Ignore (1,1,1) as that is a constant, the local bound, so up to size(corr_coords,1)-1
+    coords = corr_coords(idx+1,:);
     coordscell = num2cell(coords);
-    bellcoeffs = zeros(celldims{:});
-    if ~all(coords == ones(1,nr_coords))  % Ignore (1,1,1) as that is a constant, the local bound
-        bellcoeffcontrib = give_bell_vector_from_corr(coords,ins,outs);
-        bellcoeffs = bellcoeffs + bellcoeffcontrib;
-        
+    %if ~all(coords == ones(1,nr_coords)) 
         outputs_slices = ind2subv(outs, 1:prod(outs));
         for out_idx = 1:size(outputs_slices,1) 
             outputs_slice = num2cell(outputs_slices(out_idx,:));
             inputs_slice = coords - 1;
             bell_coefficient = 1;
-            for aux_in = 1:size(inputs_slice,1)
+            for aux_in = 1:size(inputs_slice,2)
                if inputs_slice(aux_in) ~= 0
-                  bell_coefficient = bell_coefficient * (-1)^outputs_slice(aux_in);
+                   disp(bell_coefficient)
+                  bell_coefficient = bell_coefficient * (-1)^(outputs_slice{aux_in}-1);
                end
             end
-            for aux_idx = 1:size(inputs_slice,1)
+            for aux_idx = 1:size(inputs_slice,2)
                if inputs_slice(aux_idx) == 0
                    % To understand this suppose we have A1*B2. Then this
                    % corresponds to coords=(2,3,1). We substract 1
@@ -76,23 +68,15 @@ for idx = 1:size(corr_coords,1)
                    % which I choose to be z=1 just for consistency (we can 
                    % also throw a random number but I feel this might give
                    % some problems if it changes every time).
-                   inputs_slice(aux_idx) = inputs_slice(aux_idx) + 1;
+                   inputs_slice(aux_idx) = 1;
                end
             end
             inputs_slice_cell = num2cell(inputs_slice);
-            bellcoeffs(inputs_slice_cell{:},outputs_slice{:}) = 
+            bellcoeffs(inputs_slice_cell{:},outputs_slice{:}) = bell_coefficient;
         end
-    end
+        change_of_basis_mat(:, idx) = bellcoeffs(:);
+    %end
+    
     bellcoeffs = 0*bellcoeffs;
 end
-end
-
-function prob = from_corr_to_bell_mat(ins, outs)
-dims = [ins, outs];
-
-
-probability = zeros(celldims{:});  % probability called as probability(x,y,z,a,b,c);
-
-prob = 
-
 end
