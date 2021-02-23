@@ -9,15 +9,24 @@ addpath(newdir);
 addpath(newdir2);
 addpath(newdir3);
 
-rng('default');
+rng('shuffle');
 
 load('bellcoeffs_arxiv1112_2626.mat'); % loads 'bellcoeffs_cell','local_upper_bounds','ins','outs'
+load('table3_arXiv1112_2626.mat'); % loads table3arXiv11122626
 
 nr_ineqs = size(bellcoeffs_cell,2);
 results = {};
 for ineq_nr=1:nr_ineqs
     bellcoeffs = bellcoeffs_cell{ineq_nr};
-    local_bound = local_upper_bounds(ineq_nr);
+    localboundNS2 = local_upper_bounds(ineq_nr);
+    localboundBroadcast = ClassicalOptInequality_fromLPBroadcast(bellcoeffs);
+    quantumbound = table3arXiv11122626(ineq_nr, 5);
+    
+    if localboundBroadcast > localboundNS2
+       fprintf("\n WARNING: you shouldn't get a broadcast local bound greater than NS2 \n"); 
+    end
+    
+    fprintf("\n\n\n This is INEQUALITY nr ineq_nr=%d, localboundNS2=%f\n\n\n", ineq_nr, localboundNS2);
 
     final_round_alpha = []; % store the final visibility after a round of 
     final_round_povm = {};
@@ -27,7 +36,7 @@ for ineq_nr=1:nr_ineqs
     MAX_ITER_OUTER_LOOP = 2;
     ALHPA_TOL_DIST_TO_POINT = 1e-3;
     DELTA_ALPHA_CONVERGENCE_THRESHOLD = 1e-6;
-    MAX_ITER_INNER_LOOP = 1000;
+    MAX_ITER_INNER_LOOP = 10;
     ALPHA_STDEV_TOL = 1;
     %%%
 
@@ -39,8 +48,6 @@ for ineq_nr=1:nr_ineqs
     while meta_iteration < MAX_ITER_OUTER_LOOP
         fprintf("\nRound %d of the see-saw.\n", meta_iteration);
 
-        [localbound, LPstatus] = ClassicalOptInequality_fromLPBroadcast(bellcoeffs);
-        fprintf("Local bound of bell inequality: %f\n", localbound);
         % store outputs from the loop
         inner_list_of_alphas = [];
         inner_list_of_povms = {};
@@ -51,45 +58,48 @@ for ineq_nr=1:nr_ineqs
         alpha_stdev = ALPHA_STDEV_TOL-1;
         alpha = 0;
 
-        while ( iteration<MAX_ITER_INNER_LOOP && ...
-                ( abs(alpha-0)<ALHPA_TOL_DIST_TO_POINT || ... % the following two just aim to get a visibility between 0 and 1
-                abs(alpha-1)<ALHPA_TOL_DIST_TO_POINT) )
+        while ( iteration<MAX_ITER_INNER_LOOP )% The following commented out coode is to modify the loop
+            % condiitons such that we get a visibility between 0 and 1 BUT
+            % for the NS2 scenario (arxiv 1112 2626) this in practice seems
+            % very difficult. So we will just skip this.
+            %&& ...
+ %               ( abs(alpha-0)<ALHPA_TOL_DIST_TO_POINT || ... % the following two just aim to get a visibility between 0 and 1
+ %               abs(alpha-1)<ALHPA_TOL_DIST_TO_POINT) )
 
-            spv0=0;
-            spv1=0;
-            % the point of this lopp is to get AT LEAST get a starting point
-            % that isn't worse than just the maximally mixed state
 
-            while abs(spv0-spv1)<1e-3
-                %POVMs = givePprojRAND2(ins,outs);
-                POVMs = givePprojRANDgeneral(ins);
-                %POVMs = givePprojRANDmaxEBI();
-                %POVMs = givePprojDET();
-                %channel = RandomSuperoperator([2,4]);
-                channel = {giveChannelRAND(2,4)};
-                %channel = {give_Joe_U()};
-                %channel = giveChannelAddsIdentity(2,2,"right");
+            POVMs = givePprojRANDgeneral(ins);
+            %POVMs = givePprojRANDmaxEBI();
+            %POVMs = givePprojDET();
+            channel = RandomSuperoperator([2,4]);
+            %channel = {giveChannelRAND(2,4)};
+            %channel = {give_Joe_U()};
+            %channel = giveChannelAddsIdentity(2,2,"right");
 
-                spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
-                spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
-                fprintf("s·p(v=0)=%f s·p(v=1)=%f localbound=%f\n", spv0, spv1, localbound);
-            end
-
-            %p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
-            p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
-            p_uniform = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs);
-            alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
-            fprintf("Starting visibility: %f\n", alpha);
+            spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
+            fprintf("class=%d, s·p(v=1)=%f localboundBroadcast=%f localboundNS2=%f quantumbound=%f\n", ineq_nr, spv1, localboundBroadcast, localboundNS2, quantumbound);
+            
+            spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
+            spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
+            fprintf("s·p(v=0)=%f s·p(v=1)=%f localbound=%f\n", spv0, spv1, localbound);
+            
 
             [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
             assert(checkPOVMsAreGood(POVMs,ins,outs),'Problem with POVMs');
             assert(checkThatChannelIsGood(channel, 2, 4), 'Problem with the channel');
 
+            % NOTE ALPHA NOW IS THE VALUE OF THE BELL INEQUALITY
+            %alpha = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
             p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
             p_uniform   = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs);
-            alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
+            alpha = visibilityOfBellInequality(bellcoeffs, localboundBroadcast, p_entangled, p_uniform);
             fprintf("Local maximum: %f\n", alpha);
 
+            spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
+            if abs(spv1) > quantumbound
+                fprintf("\nWARNING YOU SHOULDNT GO OVER THE QUANTUM BOUND\n");
+            end
+            
+                
             inner_list_of_alphas = [inner_list_of_alphas, alpha];
             inner_list_of_povms{iteration} = POVMs;
             inner_list_of_channels{iteration} = channel;
@@ -115,5 +125,5 @@ for ineq_nr=1:nr_ineqs
     
  
 end
-filename = strcat(ScenarioFilename,'visibility','.mat');
+filename = strcat(ScenarioFilename,'best_arxiv_112_2626','.mat');
 save(filename);

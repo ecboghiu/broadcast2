@@ -25,7 +25,7 @@ function probability_ndarray = ProbMultidimArray(state,povms)
 
         probability_ndarray(ins{:},outs{:}) = real(trace(tensor*state));
     end
-    probability_ndarray = clean(probability_ndarray, 1e-6);
+    %probability_ndarray = clean(probability_ndarray, 1e-6);
 end
 % 
 % function p = prob(state,Pproj,coords)

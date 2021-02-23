@@ -1,0 +1,2170 @@
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 1.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=7.80766e-10
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=6.04241e-10
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=6.32824e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=5.32527e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.54805e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=3.24857e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.01668e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=4.6622e-09
+Local maximum: 0.000000
+Starting visibility: 0.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mskoptimset', 'C:\Program Files\Mosek\9.2\toolbox\R2015a\mskoptimset.m', 36)" style="font-weight:bold">mskoptimset</a> (<a href="matlab: opentoline('C:\Program Files\Mosek\9.2\toolbox\R2015a\mskoptimset.m',36,0)">line 36</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('linprog', 'C:\Program Files\Mosek\9.2\toolbox\R2015a\linprog.m', 41)" style="font-weight:bold">linprog</a> (<a href="matlab: opentoline('C:\Program Files\Mosek\9.2\toolbox\R2015a\linprog.m',41,0)">line 41</a>)
+defaultopt = mskoptimset;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>trytoset', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m', 351)" style="font-weight:bold">sdpsettings>trytoset</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m',351,0)">line 351</a>)
+        evalc(['solverops = ' solver '(''defaults'');']);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>setup_linprog_options', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m', 1330)" style="font-weight:bold">sdpsettings>setup_linprog_options</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m',1330,0)">line 1330</a>)
+    linprog = trytoset('linprog');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m', 187)" style="font-weight:bold">sdpsettings</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m',187,0)">line 187</a>)
+    options.linprog = setup_linprog_options;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 82)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',82,0)">line 82</a>)
+                    sdpsettings('solver','mosek', 'verbose', 0,'dualize', 0, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 90)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',90,0)">line 90</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+Chained3322_visibility
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.070926 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.226557 s·p(v=1)=-0.070926 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=7.70939e-13
+Local maximum: 0.000000
+s·p(v=1)=0.176311 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.301089 s·p(v=1)=0.176311 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.18521e-12
+Local maximum: 0.000000
+s·p(v=1)=-0.108369 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.257431 s·p(v=1)=-0.108369 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=6.33926e-12
+Local maximum: 0.000000
+s·p(v=1)=-0.032003 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.020373 s·p(v=1)=-0.032003 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.28557e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.069779 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.064485 s·p(v=1)=-0.069779 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.207e-10
+Local maximum: 0.000000
+s·p(v=1)=0.170555 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.260033 s·p(v=1)=0.170555 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.33058e-12
+Local maximum: 0.000000
+s·p(v=1)=-0.229962 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.142951 s·p(v=1)=-0.229962 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.90878e-12
+Local maximum: 0.000000
+s·p(v=1)=-0.018204 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.322912 s·p(v=1)=-0.018204 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=1.30172e-08
+Local maximum: 1.000000
+s·p(v=1)=0.061621 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.024093 s·p(v=1)=0.061621 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.15004e-11
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.331898 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.401105 s·p(v=1)=0.331898 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.559989, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.985739, abschangeobjval=0.425751
+iter=3, partyidx=2, bellineqvalue=4.993335, abschangeobjval=0.00759561
+iter=4, partyidx=3, bellineqvalue=4.993572, abschangeobjval=0.000236629
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.00642824
+iter=6, partyidx=1, bellineqvalue=5.000000, abschangeobjval=3.03618e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.374565 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.164907 s·p(v=1)=-0.374565 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.029993, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.929961, abschangeobjval=3.89997
+iter=3, partyidx=1, bellineqvalue=5.952659, abschangeobjval=0.0226975
+iter=4, partyidx=2, bellineqvalue=5.984080, abschangeobjval=0.0314211
+iter=5, partyidx=3, bellineqvalue=5.984080, abschangeobjval=8.71986e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.110763 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.466009 s·p(v=1)=-0.110763 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.535124, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.021809, abschangeobjval=1.48668
+iter=3, channelq=~, bellineqvalue=4.779766, abschangeobjval=0.757957
+iter=4, partyidx=1, bellineqvalue=6.000000, abschangeobjval=1.22023
+iter=5, partyidx=2, bellineqvalue=6.000000, abschangeobjval=6.06235e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.231393 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.178575 s·p(v=1)=-0.231393 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.968538, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=5.081605, abschangeobjval=0.113067
+iter=3, partyidx=2, bellineqvalue=5.086474, abschangeobjval=0.0048686
+iter=4, partyidx=3, bellineqvalue=5.204506, abschangeobjval=0.118032
+iter=5, channelq=~, bellineqvalue=5.285805, abschangeobjval=0.081299
+iter=6, partyidx=1, bellineqvalue=5.327152, abschangeobjval=0.0413472
+iter=7, partyidx=2, bellineqvalue=5.339640, abschangeobjval=0.0124875
+iter=8, partyidx=3, bellineqvalue=5.401773, abschangeobjval=0.0621332
+iter=9, channelq=~, bellineqvalue=5.457492, abschangeobjval=0.055719
+iter=10, partyidx=1, bellineqvalue=5.484690, abschangeobjval=0.0271983
+iter=11, partyidx=2, bellineqvalue=5.500640, abschangeobjval=0.0159499
+iter=12, partyidx=3, bellineqvalue=5.550160, abschangeobjval=0.0495195
+iter=13, channelq=~, bellineqvalue=5.602124, abschangeobjval=0.0519637
+iter=14, partyidx=1, bellineqvalue=5.630758, abschangeobjval=0.0286347
+iter=15, partyidx=2, bellineqvalue=5.650307, abschangeobjval=0.019549
+iter=16, partyidx=3, bellineqvalue=5.697699, abschangeobjval=0.0473917
+iter=17, channelq=~, bellineqvalue=5.748761, abschangeobjval=0.0510618
+iter=18, partyidx=1, bellineqvalue=5.781214, abschangeobjval=0.032453
+iter=19, partyidx=2, bellineqvalue=5.803211, abschangeobjval=0.021997
+iter=20, partyidx=3, bellineqvalue=5.844810, abschangeobjval=0.0415993
+iter=21, channelq=~, bellineqvalue=5.882921, abschangeobjval=0.0381104
+iter=22, partyidx=1, bellineqvalue=5.909999, abschangeobjval=0.0270781
+iter=23, partyidx=2, bellineqvalue=5.925906, abschangeobjval=0.0159077
+iter=24, partyidx=3, bellineqvalue=5.950430, abschangeobjval=0.0245233
+iter=25, channelq=~, bellineqvalue=5.965064, abschangeobjval=0.0146347
+iter=26, partyidx=1, bellineqvalue=5.977626, abschangeobjval=0.012562
+iter=27, partyidx=2, bellineqvalue=5.981813, abschangeobjval=0.00418689
+iter=28, partyidx=3, bellineqvalue=5.990883, abschangeobjval=0.0090692
+iter=29, channelq=~, bellineqvalue=5.992891, abschangeobjval=0.00200884
+iter=30, partyidx=1, bellineqvalue=5.996528, abschangeobjval=0.00363699
+iter=31, partyidx=2, bellineqvalue=5.996605, abschangeobjval=7.66571e-05
+iter=32, partyidx=3, bellineqvalue=5.998825, abschangeobjval=0.00222008
+iter=33, channelq=~, bellineqvalue=5.998853, abschangeobjval=2.76006e-05
+iter=34, partyidx=1, bellineqvalue=5.999604, abschangeobjval=0.000751791
+iter=35, partyidx=2, bellineqvalue=5.999604, abschangeobjval=4.9939e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.218193 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.374127 s·p(v=1)=-0.218193 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.692517, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.971572, abschangeobjval=0.279055
+iter=3, partyidx=2, bellineqvalue=4.999907, abschangeobjval=0.0283351
+iter=4, partyidx=3, bellineqvalue=4.999998, abschangeobjval=9.10942e-05
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=1.6339e-06
+iter=6, partyidx=1, bellineqvalue=5.035617, abschangeobjval=0.0356168
+iter=7, partyidx=2, bellineqvalue=5.045626, abschangeobjval=0.0100093
+iter=8, partyidx=3, bellineqvalue=5.341828, abschangeobjval=0.296202
+iter=9, channelq=~, bellineqvalue=6.000000, abschangeobjval=0.658171
+iter=10, partyidx=1, bellineqvalue=6.000000, abschangeobjval=4.24993e-07
+Local maximum: 0.000000
+s·p(v=1)=0.130559 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.176060 s·p(v=1)=0.130559 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.222479, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.578167, abschangeobjval=2.35569
+iter=3, partyidx=1, bellineqvalue=5.000000, abschangeobjval=0.421833
+iter=4, partyidx=2, bellineqvalue=5.000000, abschangeobjval=1.47422e-08
+Local maximum: 0.000000
+s·p(v=1)=0.151245 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.336807 s·p(v=1)=0.151245 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.370178, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.271631, abschangeobjval=1.90145
+iter=3, partyidx=3, bellineqvalue=4.327846, abschangeobjval=0.056215
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.672154
+iter=5, partyidx=1, bellineqvalue=5.000000, abschangeobjval=7.31451e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.073794 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.095713 s·p(v=1)=-0.073794 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.709360, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.185528, abschangeobjval=1.47617
+iter=3, partyidx=3, bellineqvalue=4.481052, abschangeobjval=0.295524
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.518948
+iter=5, partyidx=1, bellineqvalue=5.010516, abschangeobjval=0.0105162
+iter=6, partyidx=2, bellineqvalue=5.011837, abschangeobjval=0.00132057
+iter=7, partyidx=3, bellineqvalue=5.011847, abschangeobjval=1.03896e-05
+iter=8, channelq=~, bellineqvalue=6.000000, abschangeobjval=0.988153
+iter=9, partyidx=1, bellineqvalue=6.000000, abschangeobjval=2.64162e-11
+Local maximum: 0.000000
+s·p(v=1)=0.434129 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.243412 s·p(v=1)=0.434129 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.912122, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.327446, abschangeobjval=1.41532
+iter=3, partyidx=3, bellineqvalue=4.383400, abschangeobjval=0.0559537
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.6166
+iter=5, partyidx=1, bellineqvalue=5.150588, abschangeobjval=0.150588
+iter=6, partyidx=2, bellineqvalue=5.150588, abschangeobjval=9.42015e-09
+Local maximum: 1.000000
+Best of 2: 1.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=3, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.299959 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.535376 s·p(v=1)=-0.299959 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.043557, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.337744, abschangeobjval=3.29419
+iter=3, partyidx=1, bellineqvalue=5.639546, abschangeobjval=0.301802
+iter=4, partyidx=2, bellineqvalue=5.871582, abschangeobjval=0.232036
+iter=5, partyidx=3, bellineqvalue=5.871582, abschangeobjval=6.19459e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.713045 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.853838 s·p(v=1)=-0.713045 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.554322, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.131339, abschangeobjval=3.57702
+iter=3, partyidx=1, bellineqvalue=5.656278, abschangeobjval=0.52494
+iter=4, partyidx=2, bellineqvalue=5.877960, abschangeobjval=0.221682
+iter=5, partyidx=3, bellineqvalue=5.877960, abschangeobjval=1.95399e-14
+Local maximum: 0.000000
+s·p(v=1)=-0.151918 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.070636 s·p(v=1)=-0.151918 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.586573, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.903294, abschangeobjval=0.316721
+iter=3, partyidx=2, bellineqvalue=4.986894, abschangeobjval=0.0836003
+iter=4, partyidx=3, bellineqvalue=5.000000, abschangeobjval=0.0131056
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=1.65298e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.139323 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.104817 s·p(v=1)=-0.139323 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.013717, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=5.391453, abschangeobjval=1.37774
+iter=3, partyidx=2, bellineqvalue=5.818543, abschangeobjval=0.42709
+iter=4, partyidx=3, bellineqvalue=6.000000, abschangeobjval=0.181457
+iter=5, channelq=~, bellineqvalue=6.000000, abschangeobjval=2.27423e-08
+Local maximum: 0.000000
+s·p(v=1)=0.119538 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.014560 s·p(v=1)=0.119538 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.455484, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.456008, abschangeobjval=0.000523158
+iter=3, partyidx=2, bellineqvalue=5.774548, abschangeobjval=0.31854
+iter=4, partyidx=3, bellineqvalue=5.777661, abschangeobjval=0.00311361
+iter=5, channelq=~, bellineqvalue=5.791980, abschangeobjval=0.014319
+iter=6, partyidx=1, bellineqvalue=5.904547, abschangeobjval=0.112567
+iter=7, partyidx=2, bellineqvalue=5.947816, abschangeobjval=0.0432684
+iter=8, partyidx=3, bellineqvalue=5.958386, abschangeobjval=0.0105703
+iter=9, channelq=~, bellineqvalue=5.961256, abschangeobjval=0.0028702
+iter=10, partyidx=1, bellineqvalue=5.977908, abschangeobjval=0.0166521
+iter=11, partyidx=2, bellineqvalue=5.984578, abschangeobjval=0.00666976
+iter=12, partyidx=3, bellineqvalue=5.986721, abschangeobjval=0.00214332
+iter=13, channelq=~, bellineqvalue=5.989163, abschangeobjval=0.00244124
+iter=14, partyidx=1, bellineqvalue=5.993528, abschangeobjval=0.0043657
+iter=15, partyidx=2, bellineqvalue=5.994762, abschangeobjval=0.00123376
+iter=16, partyidx=3, bellineqvalue=5.995175, abschangeobjval=0.000413336
+iter=17, channelq=~, bellineqvalue=5.996492, abschangeobjval=0.00131624
+iter=18, partyidx=1, bellineqvalue=5.997932, abschangeobjval=0.00144014
+iter=19, partyidx=2, bellineqvalue=5.998130, abschangeobjval=0.000198337
+iter=20, partyidx=3, bellineqvalue=5.998222, abschangeobjval=9.16452e-05
+iter=21, channelq=~, bellineqvalue=5.998818, abschangeobjval=0.000596318
+iter=22, partyidx=1, bellineqvalue=5.999310, abschangeobjval=0.000492397
+iter=23, partyidx=2, bellineqvalue=5.999333, abschangeobjval=2.27862e-05
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\solvesdp.m', 469)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\solvesdp.m',469,0)">line 469</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 81)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',81,0)">line 81</a>)
+    sol = optimize(constraints, -objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 84)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',84,0)">line 84</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+p_entangled
+
+p_entangled(:,:,1,1,1,1) =
+
+   1.0e-13 *
+
+    0.0000    0.2261
+    0.0000    0.0000
+
+
+p_entangled(:,:,2,1,1,1) =
+
+   1.0e-04 *
+
+    0.0000    0.1048
+    0.0000    0.0000
+
+
+p_entangled(:,:,1,2,1,1) =
+
+   1.0e-13 *
+
+    0.0000    0.0000
+    0.0000    0.2261
+
+
+p_entangled(:,:,2,2,1,1) =
+
+   1.0e-04 *
+
+    0.0000    0.0000
+    0.0000    0.1048
+
+
+p_entangled(:,:,1,1,2,1) =
+
+   1.0e-08 *
+
+    0.1191    0.1191
+    0.0000    0.0000
+
+
+p_entangled(:,:,2,1,2,1) =
+
+    0.4998    0.4998
+    0.0000    0.0000
+
+
+p_entangled(:,:,1,2,2,1) =
+
+   1.0e-08 *
+
+    0.0000    0.0000
+    0.1191    0.1191
+
+
+p_entangled(:,:,2,2,2,1) =
+
+    0.0000    0.0000
+    0.4998    0.4998
+
+
+p_entangled(:,:,1,1,1,2) =
+
+   1.0e-04 *
+
+    0.0000    0.2096
+    0.0000    0.0000
+
+
+p_entangled(:,:,2,1,1,2) =
+
+   1.0e-04 *
+
+    0.0000    0.1048
+    0.0000    0.0000
+
+
+p_entangled(:,:,1,2,1,2) =
+
+   1.0e-04 *
+
+    0.0000    0.0000
+    0.0000    0.2096
+
+
+p_entangled(:,:,2,2,1,2) =
+
+   1.0e-04 *
+
+    0.0000    0.0000
+    0.0000    0.1048
+
+
+p_entangled(:,:,1,1,2,2) =
+
+    1.0000    1.0000
+    0.0000    0.0000
+
+
+p_entangled(:,:,2,1,2,2) =
+
+    0.5002    0.5002
+    0.0000    0.0000
+
+
+p_entangled(:,:,1,2,2,2) =
+
+    0.0000    0.0000
+    1.0000    1.0000
+
+
+p_entangled(:,:,2,2,2,2) =
+
+    0.0000    0.0000
+    0.5002    0.5002
+
+reshaped(p_entangled, [2,2,2,2])
+{Unrecognized function or variable 'reshaped'.
+} 
+size(p_entangled)
+
+ans =
+
+     2     2     2     2     2     2
+
+reshape(p_entangled,[8,8])
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    1.0000    0.0000
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    1.0000
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    1.0000    0.0000
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    1.0000
+    0.0000    0.0000    0.4998    0.0000    0.0000    0.0000    0.5002    0.0000
+    0.0000    0.0000    0.0000    0.4998    0.0000    0.0000    0.0000    0.5002
+    0.0000    0.0000    0.4998    0.0000    0.0000    0.0000    0.5002    0.0000
+    0.0000    0.0000    0.0000    0.4998    0.0000    0.0000    0.0000    0.5002
+
+arXiv1112_2626_check
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.151213 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.015888 s·p(v=1)=0.151213 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=6.17063e-09
+Local maximum: 1.000000
+s·p(v=1)=-0.170629 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.103516 s·p(v=1)=-0.170629 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.22282e-09
+Local maximum: 0.000000
+s·p(v=1)=0.188777 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.256023 s·p(v=1)=0.188777 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.0701e-08
+Local maximum: 0.000000
+s·p(v=1)=0.062662 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.137881 s·p(v=1)=0.062662 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.10238e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.235809 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.459334 s·p(v=1)=-0.235809 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=7.42115e-11
+Local maximum: 0.000000
+s·p(v=1)=0.033304 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.013637 s·p(v=1)=0.033304 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.2141e-11
+Local maximum: 0.000000
+s·p(v=1)=0.167853 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.196181 s·p(v=1)=0.167853 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.32592e-13
+Local maximum: 0.000000
+s·p(v=1)=-0.138729 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.504729 s·p(v=1)=-0.138729 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=4.33065e-10
+Local maximum: 0.000000
+s·p(v=1)=0.321813 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.153552 s·p(v=1)=0.321813 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.959e-09
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.339444 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.485121 s·p(v=1)=-0.339444 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.165626, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.298064, abschangeobjval=2.13244
+iter=3, partyidx=3, bellineqvalue=4.407266, abschangeobjval=0.109202
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.592734
+iter=5, partyidx=1, bellineqvalue=5.047592, abschangeobjval=0.0475925
+iter=6, partyidx=2, bellineqvalue=5.047592, abschangeobjval=2.18814e-09
+Local maximum: 1.000000
+s·p(v=1)=0.102139 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.413057 s·p(v=1)=0.102139 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.830995, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.622408, abschangeobjval=1.79141
+iter=3, partyidx=3, bellineqvalue=4.641614, abschangeobjval=0.0192056
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.358386
+iter=5, partyidx=1, bellineqvalue=5.014747, abschangeobjval=0.0147473
+iter=6, partyidx=2, bellineqvalue=5.020067, abschangeobjval=0.00532014
+iter=7, partyidx=3, bellineqvalue=5.025283, abschangeobjval=0.00521542
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/kron', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\kron.m', 69)" style="font-weight:bold">sdpvar/kron</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\kron.m',69,0)">line 69</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverChannel', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverChannel.m', 61)" style="font-weight:bold">SeeSawOverChannel</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverChannel.m',61,0)">line 61</a>)
+    biggerchannel = kron(Phi*Phi',choi);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 28)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',28,0)">line 28</a>)
+            [newchannel,newobjval,problemStatus] = SeeSawOverChannel(initialState, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 84)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',84,0)">line 84</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+arXiv1112_2626_check
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.090729 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.166374 s·p(v=1)=0.090729 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.36909e-11
+Local maximum: 0.000000
+s·p(v=1)=0.070724 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.027573 s·p(v=1)=0.070724 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=9.09273e-14
+Local maximum: 0.000000
+s·p(v=1)=0.215836 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.346569 s·p(v=1)=0.215836 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.2538e-09
+Local maximum: 0.000000
+s·p(v=1)=0.244462 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.215608 s·p(v=1)=0.244462 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.25338e-10
+Local maximum: 1.000000
+s·p(v=1)=-0.192661 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.279329 s·p(v=1)=-0.192661 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=8.25168e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.374376 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.810581 s·p(v=1)=-0.374376 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=3.2727e-09
+Local maximum: 0.000000
+s·p(v=1)=0.163348 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.233016 s·p(v=1)=0.163348 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=3.99444e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.020416 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.001532 s·p(v=1)=-0.020416 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=2.69673e-13
+Local maximum: 0.000000
+s·p(v=1)=-0.803410 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.596072 s·p(v=1)=-0.803410 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.91481e-11
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.339640 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.893666 s·p(v=1)=0.339640 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.117531, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=3.596206, abschangeobjval=1.47868
+iter=3, channelq=~, bellineqvalue=5.577773, abschangeobjval=1.98157
+iter=4, partyidx=1, bellineqvalue=6.000000, abschangeobjval=0.422227
+iter=5, partyidx=2, bellineqvalue=6.000000, abschangeobjval=4.54542e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.774217 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.106184 s·p(v=1)=-0.774217 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.413455, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.000000, abschangeobjval=1.58654
+iter=3, partyidx=3, bellineqvalue=4.000000, abschangeobjval=1.06198e-08
+Local maximum: 0.000000
+s·p(v=1)=0.555209 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.831244 s·p(v=1)=0.555209 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.098240, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.122144, abschangeobjval=0.0239046
+iter=3, partyidx=2, bellineqvalue=5.329798, abschangeobjval=0.207654
+iter=4, partyidx=3, bellineqvalue=5.483093, abschangeobjval=0.153295
+iter=5, channelq=~, bellineqvalue=5.790670, abschangeobjval=0.307577
+iter=6, partyidx=1, bellineqvalue=5.805772, abschangeobjval=0.0151016
+iter=7, partyidx=2, bellineqvalue=5.932978, abschangeobjval=0.127207
+iter=8, partyidx=3, bellineqvalue=5.932978, abschangeobjval=3.34969e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.116072 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.021678 s·p(v=1)=-0.116072 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.220334, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.394104, abschangeobjval=2.17377
+iter=3, partyidx=3, bellineqvalue=4.485850, abschangeobjval=0.0917453
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.51415
+iter=5, partyidx=1, bellineqvalue=5.045449, abschangeobjval=0.0454495
+iter=6, partyidx=2, bellineqvalue=5.045449, abschangeobjval=9.21292e-09
+Local maximum: 1.000000
+s·p(v=1)=0.386435 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.013988 s·p(v=1)=0.386435 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.292181, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.232064, abschangeobjval=1.93988
+iter=3, partyidx=1, bellineqvalue=5.000000, abschangeobjval=0.767936
+iter=4, partyidx=2, bellineqvalue=5.000000, abschangeobjval=1.48893e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.380888 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.000950 s·p(v=1)=-0.380888 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.734070, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.000000, abschangeobjval=1.26593
+iter=3, channelq=~, bellineqvalue=4.000000, abschangeobjval=3.26985e-08
+Local maximum: 1.000000
+s·p(v=1)=0.206739 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.681395 s·p(v=1)=0.206739 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.945821, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.000000, abschangeobjval=2.05418
+iter=3, channelq=~, bellineqvalue=4.000000, abschangeobjval=7.66663e-10
+Local maximum: 1.000000
+s·p(v=1)=-0.014517 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.486448 s·p(v=1)=-0.014517 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.929358, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.186320, abschangeobjval=1.25696
+iter=3, partyidx=3, bellineqvalue=5.000000, abschangeobjval=0.81368
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=9.91127e-11
+Local maximum: 1.000000
+s·p(v=1)=-0.021668 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.053855 s·p(v=1)=-0.021668 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.009981, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.490907, abschangeobjval=2.48093
+iter=3, partyidx=1, bellineqvalue=5.011890, abschangeobjval=0.520983
+iter=4, partyidx=2, bellineqvalue=6.000000, abschangeobjval=0.988109
+iter=5, partyidx=3, bellineqvalue=6.000000, abschangeobjval=4.32206e-08
+Local maximum: 1.000000
+Best of 2: 1.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=3, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.101361 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.264910 s·p(v=1)=0.101361 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.944608, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.918039, abschangeobjval=3.97343
+iter=3, partyidx=1, bellineqvalue=5.940911, abschangeobjval=0.0228722
+iter=4, partyidx=2, bellineqvalue=5.980091, abschangeobjval=0.0391796
+iter=5, partyidx=3, bellineqvalue=5.980091, abschangeobjval=3.03887e-09
+Local maximum: 0.000000
+s·p(v=1)=0.019526 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.322496 s·p(v=1)=0.019526 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.601053, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.367674, abschangeobjval=2.76662
+iter=3, partyidx=3, bellineqvalue=5.000000, abschangeobjval=0.632326
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=1.0626e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.313184 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.321164 s·p(v=1)=-0.313184 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.312389, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.249109, abschangeobjval=1.93672
+iter=3, channelq=~, bellineqvalue=5.820508, abschangeobjval=1.5714
+iter=4, partyidx=1, bellineqvalue=6.000000, abschangeobjval=0.179492
+iter=5, partyidx=2, bellineqvalue=6.000000, abschangeobjval=3.5033e-08
+Local maximum: 0.000000
+s·p(v=1)=0.342116 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.507874 s·p(v=1)=0.342116 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.326248, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.126263, abschangeobjval=2.80002
+iter=3, partyidx=1, bellineqvalue=5.213441, abschangeobjval=0.0871775
+iter=4, partyidx=2, bellineqvalue=5.690580, abschangeobjval=0.477139
+iter=5, partyidx=3, bellineqvalue=5.690580, abschangeobjval=7.05985e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.088404 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.511069 s·p(v=1)=-0.088404 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.963504, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.000000, abschangeobjval=2.0365
+iter=3, partyidx=3, bellineqvalue=4.000000, abschangeobjval=3.60317e-09
+Local maximum: 0.000000
+s·p(v=1)=0.102313 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.166504 s·p(v=1)=0.102313 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.482797, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.948745, abschangeobjval=0.465948
+iter=3, partyidx=2, bellineqvalue=4.992103, abschangeobjval=0.0433588
+iter=4, partyidx=3, bellineqvalue=5.000000, abschangeobjval=0.00789637
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=1.46707e-07
+Local maximum: 0.000000
+s·p(v=1)=-0.606315 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.608705 s·p(v=1)=-0.606315 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.899308, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.000000, abschangeobjval=2.10069
+iter=3, partyidx=3, bellineqvalue=4.000000, abschangeobjval=1.09817e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.055627 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.248835 s·p(v=1)=-0.055627 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.978351, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.460127, abschangeobjval=2.48178
+iter=3, partyidx=1, bellineqvalue=5.523701, abschangeobjval=1.06357
+iter=4, partyidx=2, bellineqvalue=5.826177, abschangeobjval=0.302477
+iter=5, partyidx=3, bellineqvalue=5.826177, abschangeobjval=1.86517e-14
+Local maximum: 0.000000
+s·p(v=1)=-0.205073 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.433411 s·p(v=1)=-0.205073 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.149490, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.281821, abschangeobjval=2.13233
+iter=3, channelq=~, bellineqvalue=5.354937, abschangeobjval=1.07312
+iter=4, partyidx=1, bellineqvalue=6.000000, abschangeobjval=0.645063
+iter=5, partyidx=2, bellineqvalue=6.000000, abschangeobjval=1.41917e-10
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=4, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.176243 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.381594 s·p(v=1)=-0.176243 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.396606, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.840590, abschangeobjval=0.443984
+iter=3, partyidx=2, bellineqvalue=5.850186, abschangeobjval=0.00959618
+iter=4, partyidx=3, bellineqvalue=5.854507, abschangeobjval=0.00432125
+iter=5, channelq=~, bellineqvalue=5.939156, abschangeobjval=0.0846488
+iter=6, partyidx=1, bellineqvalue=5.962696, abschangeobjval=0.0235393
+iter=7, partyidx=2, bellineqvalue=5.971475, abschangeobjval=0.00877968
+iter=8, partyidx=3, bellineqvalue=5.990723, abschangeobjval=0.0192482
+iter=9, channelq=~, bellineqvalue=5.993744, abschangeobjval=0.00302056
+iter=10, partyidx=1, bellineqvalue=5.997833, abschangeobjval=0.0040893
+iter=11, partyidx=2, bellineqvalue=5.999276, abschangeobjval=0.00144246
+iter=12, partyidx=3, bellineqvalue=5.999276, abschangeobjval=3.54116e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.116727 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.148500 s·p(v=1)=-0.116727 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.877940, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.630218, abschangeobjval=2.75228
+iter=3, partyidx=1, bellineqvalue=5.983722, abschangeobjval=1.3535
+iter=4, partyidx=2, bellineqvalue=5.994556, abschangeobjval=0.0108346
+iter=5, partyidx=3, bellineqvalue=5.994556, abschangeobjval=8.52527e-10
+Local maximum: 0.000000
+s·p(v=1)=0.035285 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.061757 s·p(v=1)=0.035285 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.227210, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.143382, abschangeobjval=2.91617
+iter=3, partyidx=1, bellineqvalue=5.213061, abschangeobjval=0.0696794
+iter=4, partyidx=2, bellineqvalue=5.690439, abschangeobjval=0.477378
+iter=5, partyidx=3, bellineqvalue=5.690439, abschangeobjval=1.14831e-08
+Local maximum: 0.000000
+s·p(v=1)=0.264281 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.367209 s·p(v=1)=0.264281 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.071801, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=3.095403, abschangeobjval=0.0236023
+iter=3, partyidx=3, bellineqvalue=4.226270, abschangeobjval=1.13087
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.77373
+iter=5, partyidx=1, bellineqvalue=5.000000, abschangeobjval=1.12296e-08
+Local maximum: 0.000000
+s·p(v=1)=0.197748 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.403728 s·p(v=1)=0.197748 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.565069, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.975440, abschangeobjval=0.410371
+iter=3, partyidx=2, bellineqvalue=4.976879, abschangeobjval=0.00143931
+iter=4, partyidx=3, bellineqvalue=4.996933, abschangeobjval=0.0200542
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.0030667
+iter=6, partyidx=1, bellineqvalue=5.000000, abschangeobjval=2.23959e-08
+Local maximum: 0.000000
+s·p(v=1)=0.145985 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.208193 s·p(v=1)=0.145985 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.483022, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.997147, abschangeobjval=0.514125
+iter=3, partyidx=2, bellineqvalue=4.997233, abschangeobjval=8.58421e-05
+iter=4, partyidx=3, bellineqvalue=4.999466, abschangeobjval=0.0022334
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.000533731
+iter=6, partyidx=1, bellineqvalue=5.000000, abschangeobjval=1.18074e-08
+Local maximum: 0.000000
+s·p(v=1)=0.374437 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.181402 s·p(v=1)=0.374437 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.754991, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=2.639219, abschangeobjval=0.884228
+iter=3, channelq=~, bellineqvalue=4.251820, abschangeobjval=1.6126
+iter=4, partyidx=1, bellineqvalue=5.421621, abschangeobjval=1.1698
+iter=5, partyidx=2, bellineqvalue=6.000000, abschangeobjval=0.578379
+iter=6, partyidx=3, bellineqvalue=6.000000, abschangeobjval=2.99721e-10
+Local maximum: 0.000000
+s·p(v=1)=0.202061 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.895607 s·p(v=1)=0.202061 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.852673, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=3.118405, abschangeobjval=0.265732
+iter=3, partyidx=3, bellineqvalue=4.236685, abschangeobjval=1.11828
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.763315
+iter=5, partyidx=1, bellineqvalue=5.014063, abschangeobjval=0.0140635
+iter=6, partyidx=2, bellineqvalue=6.000000, abschangeobjval=0.985936
+iter=7, partyidx=3, bellineqvalue=6.000000, abschangeobjval=1.79921e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.180815 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.095933 s·p(v=1)=-0.180815 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.831904, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.839178, abschangeobjval=0.00727425
+iter=3, partyidx=3, bellineqvalue=4.452912, abschangeobjval=1.61373
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.547088
+iter=5, partyidx=1, bellineqvalue=5.020761, abschangeobjval=0.0207607
+iter=6, partyidx=2, bellineqvalue=6.000000, abschangeobjval=0.979239
+iter=7, partyidx=3, bellineqvalue=6.000000, abschangeobjval=2.12634e-09
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=5, localboundNS2=5.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.183771 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=0.220809 s·p(v=1)=0.183771 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=3.374922, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.899101, abschangeobjval=3.52418
+iter=3, partyidx=1, bellineqvalue=6.920394, abschangeobjval=0.0212933
+iter=4, partyidx=2, bellineqvalue=6.973087, abschangeobjval=0.0526929
+iter=5, partyidx=3, bellineqvalue=6.973087, abschangeobjval=5.6281e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.296344 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=0.061144 s·p(v=1)=-0.296344 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.949278, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.683702, abschangeobjval=2.73442
+iter=3, partyidx=1, bellineqvalue=6.000000, abschangeobjval=0.316298
+iter=4, partyidx=2, bellineqvalue=6.000000, abschangeobjval=4.04185e-08
+Local maximum: 0.000000
+s·p(v=1)=0.347745 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=0.724218 s·p(v=1)=0.347745 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.765568, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=2.505911, abschangeobjval=0.740342
+iter=3, partyidx=3, bellineqvalue=5.613273, abschangeobjval=3.10736
+iter=4, channelq=~, bellineqvalue=6.706595, abschangeobjval=1.09332
+iter=5, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.293405
+iter=6, partyidx=2, bellineqvalue=7.000000, abschangeobjval=2.74631e-09
+Local maximum: 0.000000
+s·p(v=1)=0.043715 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=0.100567 s·p(v=1)=0.043715 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.674332, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=5.099655, abschangeobjval=3.42532
+iter=3, partyidx=3, bellineqvalue=6.000000, abschangeobjval=0.900345
+iter=4, channelq=~, bellineqvalue=6.000000, abschangeobjval=1.22228e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.375795 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=0.072830 s·p(v=1)=-0.375795 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=0.822170, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=2.802948, abschangeobjval=1.98078
+iter=3, channelq=~, bellineqvalue=6.656798, abschangeobjval=3.85385
+iter=4, partyidx=1, bellineqvalue=6.862749, abschangeobjval=0.205951
+iter=5, partyidx=2, bellineqvalue=6.953133, abschangeobjval=0.0903841
+iter=6, partyidx=3, bellineqvalue=6.953133, abschangeobjval=2.81484e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.262503 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=-0.385951 s·p(v=1)=-0.262503 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.200824, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=5.147517, abschangeobjval=3.94669
+iter=3, channelq=~, bellineqvalue=6.453106, abschangeobjval=1.30559
+iter=4, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.546894
+iter=5, partyidx=2, bellineqvalue=7.000000, abschangeobjval=1.46097e-08
+Local maximum: 0.000000
+s·p(v=1)=0.244723 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=0.310063 s·p(v=1)=0.244723 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.350604, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.354584, abschangeobjval=0.00397982
+iter=3, partyidx=2, bellineqvalue=5.836669, abschangeobjval=0.482085
+iter=4, partyidx=3, bellineqvalue=5.879995, abschangeobjval=0.0433264
+iter=5, channelq=~, bellineqvalue=5.950929, abschangeobjval=0.0709337
+iter=6, partyidx=1, bellineqvalue=6.114045, abschangeobjval=0.163117
+iter=7, partyidx=2, bellineqvalue=6.202118, abschangeobjval=0.0880731
+iter=8, partyidx=3, bellineqvalue=6.237131, abschangeobjval=0.0350128
+iter=9, channelq=~, bellineqvalue=6.366455, abschangeobjval=0.129324
+iter=10, partyidx=1, bellineqvalue=6.509722, abschangeobjval=0.143267
+iter=11, partyidx=2, bellineqvalue=6.581547, abschangeobjval=0.0718248
+iter=12, partyidx=3, bellineqvalue=6.653287, abschangeobjval=0.0717405
+iter=13, channelq=~, bellineqvalue=6.760519, abschangeobjval=0.107231
+iter=14, partyidx=1, bellineqvalue=6.848986, abschangeobjval=0.0884675
+iter=15, partyidx=2, bellineqvalue=6.891147, abschangeobjval=0.0421606
+iter=16, partyidx=3, bellineqvalue=6.935200, abschangeobjval=0.044053
+iter=17, channelq=~, bellineqvalue=6.962984, abschangeobjval=0.0277841
+iter=18, partyidx=1, bellineqvalue=6.985977, abschangeobjval=0.0229932
+iter=19, partyidx=2, bellineqvalue=6.995312, abschangeobjval=0.00933531
+iter=20, partyidx=3, bellineqvalue=6.995312, abschangeobjval=5.26773e-08
+Local maximum: 0.000000
+s·p(v=1)=0.034701 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=1.207301 s·p(v=1)=0.034701 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.206099, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=5.159762, abschangeobjval=2.95366
+iter=3, channelq=~, bellineqvalue=5.990435, abschangeobjval=0.830673
+iter=4, partyidx=1, bellineqvalue=7.000000, abschangeobjval=1.00956
+iter=5, partyidx=2, bellineqvalue=7.000000, abschangeobjval=2.97414e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.407393 localboundBroadcast=7.000000 localboundNS2=5.000000
+s·p(v=0)=-0.549912 s·p(v=1)=-0.407393 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.694346, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=5.000000, abschangeobjval=3.30565
+iter=3, channelq=~, bellineqvalue=5.000000, abschangeobjval=1.20395e-10
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=6, localboundNS2=7.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=1.068698 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.745477 s·p(v=1)=1.068698 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=7.900544, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=7.900775, abschangeobjval=0.000230941
+iter=3, partyidx=2, bellineqvalue=7.930046, abschangeobjval=0.0292713
+iter=4, partyidx=3, bellineqvalue=8.419663, abschangeobjval=0.489616
+iter=5, channelq=~, bellineqvalue=8.554971, abschangeobjval=0.135309
+iter=6, partyidx=1, bellineqvalue=8.570698, abschangeobjval=0.0157265
+iter=7, partyidx=2, bellineqvalue=8.579647, abschangeobjval=0.0089494
+iter=8, partyidx=3, bellineqvalue=8.630480, abschangeobjval=0.0508333
+iter=9, channelq=~, bellineqvalue=8.654265, abschangeobjval=0.0237843
+iter=10, partyidx=1, bellineqvalue=8.660463, abschangeobjval=0.00619789
+iter=11, partyidx=2, bellineqvalue=8.667638, abschangeobjval=0.00717526
+iter=12, partyidx=3, bellineqvalue=8.679698, abschangeobjval=0.01206
+iter=13, channelq=~, bellineqvalue=8.689713, abschangeobjval=0.0100149
+iter=14, partyidx=1, bellineqvalue=8.693429, abschangeobjval=0.003716
+iter=15, partyidx=2, bellineqvalue=8.698506, abschangeobjval=0.005077
+iter=16, partyidx=3, bellineqvalue=8.704167, abschangeobjval=0.00566106
+iter=17, channelq=~, bellineqvalue=8.710621, abschangeobjval=0.00645414
+iter=18, partyidx=1, bellineqvalue=8.713590, abschangeobjval=0.0029687
+iter=19, partyidx=2, bellineqvalue=8.717582, abschangeobjval=0.00399257
+iter=20, partyidx=3, bellineqvalue=8.721652, abschangeobjval=0.00406959
+iter=21, channelq=~, bellineqvalue=8.726990, abschangeobjval=0.00533854
+iter=22, partyidx=1, bellineqvalue=8.729886, abschangeobjval=0.0028958
+iter=23, partyidx=2, bellineqvalue=8.733600, abschangeobjval=0.00371425
+iter=24, partyidx=3, bellineqvalue=8.737409, abschangeobjval=0.00380857
+iter=25, channelq=~, bellineqvalue=8.742740, abschangeobjval=0.00533155
+iter=26, partyidx=1, bellineqvalue=8.746083, abschangeobjval=0.00334267
+iter=27, partyidx=2, bellineqvalue=8.750149, abschangeobjval=0.00406567
+iter=28, partyidx=3, bellineqvalue=8.754426, abschangeobjval=0.00427757
+iter=29, channelq=~, bellineqvalue=8.760612, abschangeobjval=0.00618563
+iter=30, partyidx=1, bellineqvalue=8.765075, abschangeobjval=0.00446335
+iter=31, partyidx=2, bellineqvalue=8.770188, abschangeobjval=0.00511286
+iter=32, partyidx=3, bellineqvalue=8.775701, abschangeobjval=0.00551294
+iter=33, channelq=~, bellineqvalue=8.783731, abschangeobjval=0.00802933
+iter=34, partyidx=1, bellineqvalue=8.790396, abschangeobjval=0.00666576
+iter=35, partyidx=2, bellineqvalue=8.797500, abschangeobjval=0.00710421
+iter=36, partyidx=3, bellineqvalue=8.805301, abschangeobjval=0.0078007
+iter=37, channelq=~, bellineqvalue=8.816311, abschangeobjval=0.0110096
+iter=38, partyidx=1, bellineqvalue=8.826798, abschangeobjval=0.0104874
+iter=39, partyidx=2, bellineqvalue=8.836930, abschangeobjval=0.0101321
+iter=40, partyidx=3, bellineqvalue=8.848144, abschangeobjval=0.0112135
+iter=41, channelq=~, bellineqvalue=8.862415, abschangeobjval=0.0142708
+iter=42, partyidx=1, bellineqvalue=8.877754, abschangeobjval=0.0153396
+iter=43, partyidx=2, bellineqvalue=8.890559, abschangeobjval=0.0128044
+iter=44, partyidx=3, bellineqvalue=8.904582, abschangeobjval=0.0140232
+iter=45, channelq=~, bellineqvalue=8.918747, abschangeobjval=0.0141649
+iter=46, partyidx=1, bellineqvalue=8.935445, abschangeobjval=0.0166987
+iter=47, partyidx=2, bellineqvalue=8.946687, abschangeobjval=0.0112417
+iter=48, partyidx=3, bellineqvalue=8.958543, abschangeobjval=0.0118564
+iter=49, channelq=~, bellineqvalue=8.966542, abschangeobjval=0.00799811
+iter=50, partyidx=1, bellineqvalue=8.977136, abschangeobjval=0.0105941
+iter=51, partyidx=2, bellineqvalue=8.982676, abschangeobjval=0.00554079
+iter=52, partyidx=3, bellineqvalue=8.988189, abschangeobjval=0.00551227
+iter=53, channelq=~, bellineqvalue=8.990429, abschangeobjval=0.0022399
+iter=54, partyidx=1, bellineqvalue=8.994200, abschangeobjval=0.00377109
+iter=55, partyidx=2, bellineqvalue=8.995841, abschangeobjval=0.00164127
+iter=56, partyidx=3, bellineqvalue=8.997550, abschangeobjval=0.00170889
+iter=57, channelq=~, bellineqvalue=8.998049, abschangeobjval=0.000498954
+iter=58, partyidx=1, bellineqvalue=8.999378, abschangeobjval=0.00132898
+iter=59, partyidx=2, bellineqvalue=8.999750, abschangeobjval=0.000372314
+iter=60, partyidx=3, bellineqvalue=8.999750, abschangeobjval=8.19794e-08
+Local maximum: 0.000000
+s·p(v=1)=0.118551 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.768224 s·p(v=1)=0.118551 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=7.478971, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=7.729178, abschangeobjval=0.250207
+iter=3, partyidx=2, bellineqvalue=7.904655, abschangeobjval=0.175477
+iter=4, partyidx=3, bellineqvalue=7.999613, abschangeobjval=0.0949579
+iter=5, channelq=~, bellineqvalue=8.000000, abschangeobjval=0.000386936
+iter=6, partyidx=1, bellineqvalue=8.000000, abschangeobjval=3.87032e-08
+Local maximum: 0.000000
+s·p(v=1)=0.230466 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.238282 s·p(v=1)=0.230466 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=4.059842, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=8.928141, abschangeobjval=4.8683
+iter=3, partyidx=1, bellineqvalue=8.978442, abschangeobjval=0.0503003
+iter=4, partyidx=2, bellineqvalue=8.990720, abschangeobjval=0.0122779
+iter=5, partyidx=3, bellineqvalue=8.990720, abschangeobjval=5.90662e-09
+Local maximum: 0.000000
+s·p(v=1)=0.706587 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.191413 s·p(v=1)=0.706587 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=8.428346, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=8.608386, abschangeobjval=0.18004
+iter=3, partyidx=2, bellineqvalue=8.623435, abschangeobjval=0.0150487
+iter=4, partyidx=3, bellineqvalue=8.688009, abschangeobjval=0.0645741
+iter=5, channelq=~, bellineqvalue=8.708818, abschangeobjval=0.0208095
+iter=6, partyidx=1, bellineqvalue=8.712014, abschangeobjval=0.00319622
+iter=7, partyidx=2, bellineqvalue=8.714469, abschangeobjval=0.0024544
+iter=8, partyidx=3, bellineqvalue=8.720141, abschangeobjval=0.00567259
+iter=9, channelq=~, bellineqvalue=8.725573, abschangeobjval=0.00543165
+iter=10, partyidx=1, bellineqvalue=8.728366, abschangeobjval=0.00279323
+iter=11, partyidx=2, bellineqvalue=8.731647, abschangeobjval=0.00328064
+iter=12, partyidx=3, bellineqvalue=8.735847, abschangeobjval=0.00419976
+iter=13, channelq=~, bellineqvalue=8.741120, abschangeobjval=0.00527375
+iter=14, partyidx=1, bellineqvalue=8.744359, abschangeobjval=0.00323889
+iter=15, partyidx=2, bellineqvalue=8.748235, abschangeobjval=0.00387532
+iter=16, partyidx=3, bellineqvalue=8.752549, abschangeobjval=0.00431388
+iter=17, channelq=~, bellineqvalue=8.758601, abschangeobjval=0.00605207
+iter=18, partyidx=1, bellineqvalue=8.762895, abschangeobjval=0.00429417
+iter=19, partyidx=2, bellineqvalue=8.767821, abschangeobjval=0.00492643
+iter=20, partyidx=3, bellineqvalue=8.773202, abschangeobjval=0.0053809
+iter=21, channelq=~, bellineqvalue=8.780988, abschangeobjval=0.00778602
+iter=22, partyidx=1, bellineqvalue=8.787354, abschangeobjval=0.00636559
+iter=23, partyidx=2, bellineqvalue=8.794186, abschangeobjval=0.00683206
+iter=24, partyidx=3, bellineqvalue=8.801705, abschangeobjval=0.00751958
+iter=25, channelq=~, bellineqvalue=8.812359, abschangeobjval=0.0106541
+iter=26, partyidx=1, bellineqvalue=8.822370, abschangeobjval=0.0100102
+iter=27, partyidx=2, bellineqvalue=8.832155, abschangeobjval=0.0097854
+iter=28, partyidx=3, bellineqvalue=8.842993, abschangeobjval=0.0108377
+iter=29, channelq=~, bellineqvalue=8.856998, abschangeobjval=0.014005
+iter=30, partyidx=1, bellineqvalue=8.871879, abschangeobjval=0.0148811
+iter=31, partyidx=2, bellineqvalue=8.884531, abschangeobjval=0.0126517
+iter=32, partyidx=3, bellineqvalue=8.898419, abschangeobjval=0.0138888
+iter=33, channelq=~, bellineqvalue=8.912899, abschangeobjval=0.0144792
+iter=34, partyidx=1, bellineqvalue=8.929813, abschangeobjval=0.016914
+iter=35, partyidx=2, bellineqvalue=8.941491, abschangeobjval=0.0116786
+iter=36, partyidx=3, bellineqvalue=8.953874, abschangeobjval=0.0123824
+iter=37, channelq=~, bellineqvalue=8.962648, abschangeobjval=0.00877433
+iter=38, partyidx=1, bellineqvalue=8.974076, abschangeobjval=0.011428
+iter=39, partyidx=2, bellineqvalue=8.980203, abschangeobjval=0.00612741
+iter=40, partyidx=3, bellineqvalue=8.986339, abschangeobjval=0.00613593
+iter=41, channelq=~, bellineqvalue=8.988963, abschangeobjval=0.0026235
+iter=42, partyidx=1, bellineqvalue=8.993249, abschangeobjval=0.00428642
+iter=43, partyidx=2, bellineqvalue=8.995140, abschangeobjval=0.00189062
+iter=44, partyidx=3, bellineqvalue=8.997106, abschangeobjval=0.00196634
+iter=45, channelq=~, bellineqvalue=8.997718, abschangeobjval=0.000612029
+iter=46, partyidx=1, bellineqvalue=8.999273, abschangeobjval=0.00155503
+iter=47, partyidx=2, bellineqvalue=8.999708, abschangeobjval=0.000435174
+iter=48, partyidx=3, bellineqvalue=8.999708, abschangeobjval=1.20021e-07
+Local maximum: 0.000000
+s·p(v=1)=0.125603 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.057471 s·p(v=1)=0.125603 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=3.445298, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=7.000000, abschangeobjval=3.5547
+iter=3, channelq=~, bellineqvalue=7.000000, abschangeobjval=3.06982e-09
+Local maximum: 1.000000
+s·p(v=1)=-1.359451 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-1.502789 s·p(v=1)=-1.359451 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=7.245771, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=7.996469, abschangeobjval=0.750698
+iter=3, partyidx=2, bellineqvalue=8.025948, abschangeobjval=0.0294789
+iter=4, partyidx=3, bellineqvalue=8.221905, abschangeobjval=0.195957
+iter=5, channelq=~, bellineqvalue=8.515168, abschangeobjval=0.293263
+iter=6, partyidx=1, bellineqvalue=8.633028, abschangeobjval=0.117859
+iter=7, partyidx=2, bellineqvalue=8.635517, abschangeobjval=0.0024887
+iter=8, partyidx=3, bellineqvalue=8.665023, abschangeobjval=0.0295067
+iter=9, channelq=~, bellineqvalue=8.690067, abschangeobjval=0.0250434
+iter=10, partyidx=1, bellineqvalue=8.696137, abschangeobjval=0.00607038
+iter=11, partyidx=2, bellineqvalue=8.697584, abschangeobjval=0.00144719
+iter=12, partyidx=3, bellineqvalue=8.706417, abschangeobjval=0.00883266
+iter=13, channelq=~, bellineqvalue=8.713124, abschangeobjval=0.00670657
+iter=14, partyidx=1, bellineqvalue=8.715949, abschangeobjval=0.00282592
+iter=15, partyidx=2, bellineqvalue=8.718946, abschangeobjval=0.00299659
+iter=16, partyidx=3, bellineqvalue=8.723791, abschangeobjval=0.00484509
+iter=17, channelq=~, bellineqvalue=8.729047, abschangeobjval=0.00525559
+iter=18, partyidx=1, bellineqvalue=8.731919, abschangeobjval=0.0028724
+iter=19, partyidx=2, bellineqvalue=8.735393, abschangeobjval=0.00347396
+iter=20, partyidx=3, bellineqvalue=8.739448, abschangeobjval=0.00405462
+iter=21, channelq=~, bellineqvalue=8.744823, abschangeobjval=0.00537483
+iter=22, partyidx=1, bellineqvalue=8.748246, abschangeobjval=0.00342353
+iter=23, partyidx=2, bellineqvalue=8.752325, abschangeobjval=0.00407913
+iter=24, partyidx=3, bellineqvalue=8.756777, abschangeobjval=0.00445153
+iter=25, channelq=~, bellineqvalue=8.763127, abschangeobjval=0.00635059
+iter=26, partyidx=1, bellineqvalue=8.767788, abschangeobjval=0.00466095
+iter=27, partyidx=2, bellineqvalue=8.773066, abschangeobjval=0.00527736
+iter=28, partyidx=3, bellineqvalue=8.778820, abschangeobjval=0.00575432
+iter=29, channelq=~, bellineqvalue=8.787156, abschangeobjval=0.00833562
+iter=30, partyidx=1, bellineqvalue=8.794196, abschangeobjval=0.00704052
+iter=31, partyidx=2, bellineqvalue=8.801615, abschangeobjval=0.00741938
+iter=32, partyidx=3, bellineqvalue=8.809793, abschangeobjval=0.00817753
+iter=33, channelq=~, bellineqvalue=8.821230, abschangeobjval=0.0114374
+iter=34, partyidx=1, bellineqvalue=8.832303, abschangeobjval=0.0110728
+iter=35, partyidx=2, bellineqvalue=8.842842, abschangeobjval=0.0105386
+iter=36, partyidx=3, bellineqvalue=8.854509, abschangeobjval=0.0116674
+iter=37, channelq=~, bellineqvalue=8.869055, abschangeobjval=0.014546
+iter=38, partyidx=1, bellineqvalue=8.884893, abschangeobjval=0.0158377
+iter=39, partyidx=2, bellineqvalue=8.897818, abschangeobjval=0.0129248
+iter=40, partyidx=3, bellineqvalue=8.911928, abschangeobjval=0.0141102
+iter=41, channelq=~, bellineqvalue=8.925618, abschangeobjval=0.0136897
+iter=42, partyidx=1, bellineqvalue=8.941931, abschangeobjval=0.0163136
+iter=43, partyidx=2, bellineqvalue=8.952581, abschangeobjval=0.0106496
+iter=44, partyidx=3, bellineqvalue=8.963741, abschangeobjval=0.0111597
+iter=45, channelq=~, bellineqvalue=8.970826, abschangeobjval=0.00708502
+iter=46, partyidx=1, bellineqvalue=8.980419, abschangeobjval=0.00959292
+iter=47, partyidx=2, bellineqvalue=8.985292, abschangeobjval=0.00487316
+iter=48, partyidx=3, bellineqvalue=8.990103, abschangeobjval=0.00481163
+iter=49, channelq=~, bellineqvalue=8.991945, abschangeobjval=0.00184184
+iter=50, partyidx=1, bellineqvalue=8.995169, abschangeobjval=0.0032234
+iter=51, partyidx=2, bellineqvalue=8.996552, abschangeobjval=0.00138314
+iter=52, partyidx=3, bellineqvalue=8.997992, abschangeobjval=0.00144001
+iter=53, channelq=~, bellineqvalue=8.998384, abschangeobjval=0.00039269
+iter=54, partyidx=1, bellineqvalue=8.999484, abschangeobjval=0.00109925
+iter=55, partyidx=2, bellineqvalue=8.999792, abschangeobjval=0.000308856
+iter=56, partyidx=3, bellineqvalue=8.999793, abschangeobjval=2.66545e-08
+Local maximum: 0.000000
+s·p(v=1)=0.366318 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=1.307305 s·p(v=1)=0.366318 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=4.184859, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=6.762524, abschangeobjval=2.57766
+iter=3, partyidx=3, bellineqvalue=7.402395, abschangeobjval=0.639871
+iter=4, channelq=~, bellineqvalue=8.000000, abschangeobjval=0.597605
+iter=5, partyidx=1, bellineqvalue=8.051775, abschangeobjval=0.0517755
+iter=6, partyidx=2, bellineqvalue=8.051783, abschangeobjval=7.83917e-06
+iter=7, partyidx=3, bellineqvalue=8.051806, abschangeobjval=2.28992e-05
+iter=8, channelq=~, bellineqvalue=9.000000, abschangeobjval=0.948194
+iter=9, partyidx=1, bellineqvalue=9.000000, abschangeobjval=5.08926e-12
+Local maximum: 0.000000
+s·p(v=1)=-0.402199 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.662493 s·p(v=1)=-0.402199 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=7.821930, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=8.333628, abschangeobjval=0.511698
+iter=3, partyidx=2, bellineqvalue=8.360150, abschangeobjval=0.026522
+iter=4, partyidx=3, bellineqvalue=8.612714, abschangeobjval=0.252564
+iter=5, channelq=~, bellineqvalue=8.678414, abschangeobjval=0.0656992
+iter=6, partyidx=1, bellineqvalue=8.776904, abschangeobjval=0.0984908
+iter=7, partyidx=2, bellineqvalue=8.778932, abschangeobjval=0.00202757
+iter=8, partyidx=3, bellineqvalue=8.822834, abschangeobjval=0.043902
+iter=9, channelq=~, bellineqvalue=8.848515, abschangeobjval=0.0256808
+iter=10, partyidx=1, bellineqvalue=8.867781, abschangeobjval=0.0192665
+iter=11, partyidx=2, bellineqvalue=8.873597, abschangeobjval=0.00581568
+iter=12, partyidx=3, bellineqvalue=8.896335, abschangeobjval=0.0227381
+iter=13, channelq=~, bellineqvalue=8.911719, abschangeobjval=0.0153838
+iter=14, partyidx=1, bellineqvalue=8.929186, abschangeobjval=0.0174677
+iter=15, partyidx=2, bellineqvalue=8.938252, abschangeobjval=0.00906569
+iter=16, partyidx=3, bellineqvalue=8.953310, abschangeobjval=0.0150578
+iter=17, channelq=~, bellineqvalue=8.962253, abschangeobjval=0.008943
+iter=18, partyidx=1, bellineqvalue=8.973774, abschangeobjval=0.011521
+iter=19, partyidx=2, bellineqvalue=8.979147, abschangeobjval=0.00537348
+iter=20, partyidx=3, bellineqvalue=8.986068, abschangeobjval=0.00692049
+iter=21, channelq=~, bellineqvalue=8.988783, abschangeobjval=0.00271521
+iter=22, partyidx=1, bellineqvalue=8.993111, abschangeobjval=0.00432834
+iter=23, partyidx=2, bellineqvalue=8.994833, abschangeobjval=0.00172205
+iter=24, partyidx=3, bellineqvalue=8.997008, abschangeobjval=0.00217427
+iter=25, channelq=~, bellineqvalue=8.997656, abschangeobjval=0.000648586
+iter=26, partyidx=1, bellineqvalue=8.999362, abschangeobjval=0.00170549
+iter=27, partyidx=2, bellineqvalue=8.999745, abschangeobjval=0.000383272
+iter=28, partyidx=3, bellineqvalue=8.999745, abschangeobjval=1.93034e-07
+Local maximum: 0.000000
+s·p(v=1)=0.237474 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.462866 s·p(v=1)=0.237474 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.978056, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=6.846173, abschangeobjval=2.86812
+iter=3, partyidx=3, bellineqvalue=8.000000, abschangeobjval=1.15383
+iter=4, channelq=~, bellineqvalue=8.000000, abschangeobjval=7.77767e-09
+Local maximum: 1.000000
+Best of 2: 1.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=7, localboundNS2=7.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.319748 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.067238 s·p(v=1)=-0.319748 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=3.446730, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=7.000000, abschangeobjval=3.55327
+iter=3, channelq=~, bellineqvalue=7.000000, abschangeobjval=1.65387e-09
+Local maximum: 1.000000
+s·p(v=1)=0.827904 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.469820 s·p(v=1)=0.827904 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=3.945142, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=8.738567, abschangeobjval=4.79343
+iter=3, partyidx=1, bellineqvalue=8.781113, abschangeobjval=0.0425457
+iter=4, partyidx=2, bellineqvalue=8.908850, abschangeobjval=0.127737
+iter=5, partyidx=3, bellineqvalue=8.908850, abschangeobjval=7.25162e-10
+Local maximum: 0.000000
+s·p(v=1)=0.063817 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.062688 s·p(v=1)=0.063817 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.726779, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=8.326520, abschangeobjval=5.59974
+iter=3, partyidx=1, bellineqvalue=8.326520, abschangeobjval=4.39186e-11
+Local maximum: 0.000000
+s·p(v=1)=-0.449541 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.057900 s·p(v=1)=-0.449541 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.224342, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=5.084134, abschangeobjval=1.85979
+iter=3, partyidx=3, bellineqvalue=8.000000, abschangeobjval=2.91587
+iter=4, channelq=~, bellineqvalue=8.000000, abschangeobjval=1.32788e-08
+Local maximum: 1.000000
+s·p(v=1)=1.003152 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=1.055233 s·p(v=1)=1.003152 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.916472, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=6.712308, abschangeobjval=0.795836
+iter=3, partyidx=2, bellineqvalue=6.748240, abschangeobjval=0.0359323
+iter=4, partyidx=3, bellineqvalue=7.532803, abschangeobjval=0.784563
+iter=5, channelq=~, bellineqvalue=7.798151, abschangeobjval=0.265348
+iter=6, partyidx=1, bellineqvalue=7.808943, abschangeobjval=0.0107925
+iter=7, partyidx=2, bellineqvalue=8.032813, abschangeobjval=0.22387
+iter=8, partyidx=3, bellineqvalue=8.188137, abschangeobjval=0.155324
+iter=9, channelq=~, bellineqvalue=8.312666, abschangeobjval=0.124529
+iter=10, partyidx=1, bellineqvalue=8.381281, abschangeobjval=0.0686146
+iter=11, partyidx=2, bellineqvalue=8.554058, abschangeobjval=0.172777
+iter=12, partyidx=3, bellineqvalue=8.627565, abschangeobjval=0.0735066
+iter=13, channelq=~, bellineqvalue=8.708104, abschangeobjval=0.0805394
+iter=14, partyidx=1, bellineqvalue=8.807514, abschangeobjval=0.0994102
+iter=15, partyidx=2, bellineqvalue=8.894724, abschangeobjval=0.0872091
+iter=16, partyidx=3, bellineqvalue=8.919146, abschangeobjval=0.0244222
+iter=17, channelq=~, bellineqvalue=8.928922, abschangeobjval=0.00977609
+iter=18, partyidx=1, bellineqvalue=8.968214, abschangeobjval=0.039292
+iter=19, partyidx=2, bellineqvalue=8.986615, abschangeobjval=0.0184013
+iter=20, partyidx=3, bellineqvalue=8.987469, abschangeobjval=0.000854336
+iter=21, channelq=~, bellineqvalue=8.987550, abschangeobjval=8.06808e-05
+iter=22, partyidx=1, bellineqvalue=8.995004, abschangeobjval=0.00745383
+iter=23, partyidx=2, bellineqvalue=8.998001, abschangeobjval=0.00299721
+iter=24, partyidx=3, bellineqvalue=8.998001, abschangeobjval=1.06031e-08
+Local maximum: 0.000000
+s·p(v=1)=0.213273 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.344573 s·p(v=1)=0.213273 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=4.244438, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=7.789467, abschangeobjval=3.54503
+iter=3, partyidx=1, bellineqvalue=8.000000, abschangeobjval=0.210533
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=2.49607e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.329419 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.586659 s·p(v=1)=-0.329419 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.786744, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=7.000000, abschangeobjval=4.21326
+iter=3, channelq=~, bellineqvalue=7.000000, abschangeobjval=1.08452e-08
+Local maximum: 1.000000
+s·p(v=1)=0.454112 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=0.403406 s·p(v=1)=0.454112 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=3.507019, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=7.000000, abschangeobjval=3.49298
+iter=3, channelq=~, bellineqvalue=7.000000, abschangeobjval=5.92041e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.068361 localboundBroadcast=9.000000 localboundNS2=7.000000
+s·p(v=0)=-0.111501 s·p(v=1)=-0.068361 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=3.043328, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.326113, abschangeobjval=1.28278
+iter=3, partyidx=1, bellineqvalue=7.000000, abschangeobjval=2.67389
+iter=4, partyidx=2, bellineqvalue=7.000000, abschangeobjval=5.93031e-10
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=8, localboundNS2=6.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.320493 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.535801 s·p(v=1)=-0.320493 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=6.354209, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=6.862573, abschangeobjval=0.508365
+iter=3, partyidx=2, bellineqvalue=6.977490, abschangeobjval=0.114917
+iter=4, partyidx=3, bellineqvalue=7.835538, abschangeobjval=0.858049
+iter=5, channelq=~, bellineqvalue=7.942102, abschangeobjval=0.106564
+iter=6, partyidx=1, bellineqvalue=7.998938, abschangeobjval=0.0568354
+iter=7, partyidx=2, bellineqvalue=7.999574, abschangeobjval=0.000636625
+iter=8, partyidx=3, bellineqvalue=7.999574, abschangeobjval=1.42299e-08
+Local maximum: 0.000000
+s·p(v=1)=0.004600 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.369379 s·p(v=1)=0.004600 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.296614, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.049504, abschangeobjval=4.75289
+iter=3, partyidx=1, bellineqvalue=7.919619, abschangeobjval=1.87012
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.0803808
+iter=5, partyidx=3, bellineqvalue=8.000000, abschangeobjval=1.11781e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.074175 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.579037 s·p(v=1)=-0.074175 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.251319, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.621083, abschangeobjval=1.36976
+iter=3, partyidx=3, bellineqvalue=5.977432, abschangeobjval=1.35635
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=1.02257
+iter=5, partyidx=1, bellineqvalue=7.310042, abschangeobjval=0.310042
+iter=6, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.689958
+iter=7, partyidx=3, bellineqvalue=8.000000, abschangeobjval=6.17214e-09
+Local maximum: 0.000000
+s·p(v=1)=0.310895 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=1.283987 s·p(v=1)=0.310895 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.302260, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.158974, abschangeobjval=3.85671
+iter=3, partyidx=1, bellineqvalue=7.447203, abschangeobjval=1.28823
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.552797
+iter=5, partyidx=3, bellineqvalue=8.000000, abschangeobjval=8.81026e-10
+Local maximum: 1.000000
+s·p(v=1)=0.245358 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.210431 s·p(v=1)=0.245358 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.256944, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.208922, abschangeobjval=1.95198
+iter=3, partyidx=3, bellineqvalue=5.959081, abschangeobjval=1.75016
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=1.04092
+iter=5, partyidx=1, bellineqvalue=7.492918, abschangeobjval=0.492918
+iter=6, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.507082
+iter=7, partyidx=3, bellineqvalue=8.000000, abschangeobjval=3.44849e-09
+Local maximum: 0.000000
+s·p(v=1)=0.183863 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.989997 s·p(v=1)=0.183863 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=3.498876, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=7.116147, abschangeobjval=3.61727
+iter=3, partyidx=1, bellineqvalue=7.116147, abschangeobjval=2.15456e-08
+Local maximum: 0.000000
+s·p(v=1)=0.363132 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.578475 s·p(v=1)=0.363132 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.332940, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.939482, abschangeobjval=4.60654
+iter=3, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.0605177
+iter=4, partyidx=2, bellineqvalue=7.000000, abschangeobjval=3.22106e-09
+Local maximum: 0.000000
+s·p(v=1)=0.305773 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.405919 s·p(v=1)=0.305773 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.186858, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.531146, abschangeobjval=4.34429
+iter=3, partyidx=1, bellineqvalue=7.000000, abschangeobjval=0.468854
+iter=4, partyidx=2, bellineqvalue=7.000000, abschangeobjval=5.70402e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.005247 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.153035 s·p(v=1)=-0.005247 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.836696, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.538377, abschangeobjval=1.70168
+iter=3, partyidx=3, bellineqvalue=6.298478, abschangeobjval=1.7601
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=0.701522
+iter=5, partyidx=1, bellineqvalue=7.000001, abschangeobjval=7.7385e-07
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=9, localboundNS2=6.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.237347 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.830019 s·p(v=1)=-0.237347 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=0.148503, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=7.697952, abschangeobjval=7.54945
+iter=3, partyidx=1, bellineqvalue=7.797933, abschangeobjval=0.0999812
+iter=4, partyidx=2, bellineqvalue=7.916107, abschangeobjval=0.118174
+iter=5, partyidx=3, bellineqvalue=7.916107, abschangeobjval=3.33994e-08
+Local maximum: 0.000000
+s·p(v=1)=0.302781 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.105293 s·p(v=1)=0.302781 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.513383, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.670238, abschangeobjval=0.156855
+iter=3, partyidx=2, bellineqvalue=5.691644, abschangeobjval=0.0214058
+iter=4, partyidx=3, bellineqvalue=5.866299, abschangeobjval=0.174655
+iter=5, channelq=~, bellineqvalue=6.014793, abschangeobjval=0.148495
+iter=6, partyidx=1, bellineqvalue=6.028954, abschangeobjval=0.0141602
+iter=7, partyidx=2, bellineqvalue=6.048234, abschangeobjval=0.0192806
+iter=8, partyidx=3, bellineqvalue=6.080545, abschangeobjval=0.032311
+iter=9, channelq=~, bellineqvalue=6.120264, abschangeobjval=0.0397192
+iter=10, partyidx=1, bellineqvalue=6.139503, abschangeobjval=0.0192384
+iter=11, partyidx=2, bellineqvalue=6.144532, abschangeobjval=0.00502932
+iter=12, partyidx=3, bellineqvalue=6.353885, abschangeobjval=0.209353
+iter=13, channelq=~, bellineqvalue=6.793678, abschangeobjval=0.439793
+iter=14, partyidx=1, bellineqvalue=6.883038, abschangeobjval=0.0893597
+iter=15, partyidx=2, bellineqvalue=7.304343, abschangeobjval=0.421305
+iter=16, partyidx=3, bellineqvalue=7.556487, abschangeobjval=0.252143
+iter=17, channelq=~, bellineqvalue=7.561034, abschangeobjval=0.00454743
+iter=18, partyidx=1, bellineqvalue=8.000000, abschangeobjval=0.438966
+iter=19, partyidx=2, bellineqvalue=8.000000, abschangeobjval=1.08163e-07
+Local maximum: 0.000000
+s·p(v=1)=0.546587 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.066721 s·p(v=1)=0.546587 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.249018, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=7.676615, abschangeobjval=5.4276
+iter=3, partyidx=1, bellineqvalue=7.676615, abschangeobjval=1.90647e-08
+Local maximum: 0.000000
+s·p(v=1)=0.127578 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.649210 s·p(v=1)=0.127578 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=6.085261, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=6.089407, abschangeobjval=0.00414626
+iter=3, partyidx=2, bellineqvalue=6.103658, abschangeobjval=0.0142506
+iter=4, partyidx=3, bellineqvalue=6.114267, abschangeobjval=0.0106095
+iter=5, channelq=~, bellineqvalue=6.119012, abschangeobjval=0.00474492
+iter=6, partyidx=1, bellineqvalue=6.119460, abschangeobjval=0.000447502
+iter=7, partyidx=2, bellineqvalue=6.128409, abschangeobjval=0.00894932
+iter=8, partyidx=3, bellineqvalue=6.133275, abschangeobjval=0.00486563
+iter=9, channelq=~, bellineqvalue=6.136585, abschangeobjval=0.00330997
+iter=10, partyidx=1, bellineqvalue=6.136747, abschangeobjval=0.000162579
+iter=11, partyidx=2, bellineqvalue=6.142293, abschangeobjval=0.00554594
+iter=12, partyidx=3, bellineqvalue=6.144873, abschangeobjval=0.0025796
+iter=13, channelq=~, bellineqvalue=6.149122, abschangeobjval=0.00424905
+iter=14, partyidx=1, bellineqvalue=6.154571, abschangeobjval=0.00544904
+iter=15, partyidx=2, bellineqvalue=6.154698, abschangeobjval=0.000127342
+iter=16, partyidx=3, bellineqvalue=6.178004, abschangeobjval=0.023306
+iter=17, channelq=~, bellineqvalue=6.417175, abschangeobjval=0.239171
+iter=18, partyidx=1, bellineqvalue=6.688616, abschangeobjval=0.271441
+iter=19, partyidx=2, bellineqvalue=7.152618, abschangeobjval=0.464002
+iter=20, partyidx=3, bellineqvalue=7.595677, abschangeobjval=0.443059
+iter=21, channelq=~, bellineqvalue=7.612936, abschangeobjval=0.0172594
+iter=22, partyidx=1, bellineqvalue=8.000000, abschangeobjval=0.387063
+iter=23, partyidx=2, bellineqvalue=8.000000, abschangeobjval=2.04464e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.268349 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.309085 s·p(v=1)=-0.268349 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.111144, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.137489, abschangeobjval=5.02634
+iter=3, partyidx=1, bellineqvalue=7.612294, abschangeobjval=1.47481
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.387706
+iter=5, partyidx=3, bellineqvalue=8.000000, abschangeobjval=9.22284e-12
+Local maximum: 0.000000
+s·p(v=1)=0.187772 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.772539 s·p(v=1)=0.187772 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=3.432211, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.335159, abschangeobjval=2.90295
+iter=3, channelq=~, bellineqvalue=7.430887, abschangeobjval=1.09573
+iter=4, partyidx=1, bellineqvalue=8.000000, abschangeobjval=0.569113
+iter=5, partyidx=2, bellineqvalue=8.000000, abschangeobjval=1.69076e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.242880 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.167473 s·p(v=1)=-0.242880 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=3.098839, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.064316, abschangeobjval=2.96548
+iter=3, channelq=~, bellineqvalue=6.582472, abschangeobjval=0.518156
+iter=4, partyidx=1, bellineqvalue=8.000000, abschangeobjval=1.41753
+iter=5, partyidx=2, bellineqvalue=8.000000, abschangeobjval=1.35612e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.096683 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.138526 s·p(v=1)=-0.096683 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.564619, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.055150, abschangeobjval=4.49053
+iter=3, channelq=~, bellineqvalue=6.429981, abschangeobjval=0.374832
+iter=4, partyidx=1, bellineqvalue=8.000000, abschangeobjval=1.57002
+iter=5, partyidx=2, bellineqvalue=8.000000, abschangeobjval=1.60232e-07
+Local maximum: 0.000000
+s·p(v=1)=0.090321 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.493407 s·p(v=1)=0.090321 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.282500, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.897707, abschangeobjval=1.61521
+iter=3, partyidx=3, bellineqvalue=6.316578, abschangeobjval=1.41887
+iter=4, channelq=~, bellineqvalue=7.000000, abschangeobjval=0.683422
+iter=5, partyidx=1, bellineqvalue=7.000079, abschangeobjval=7.85927e-05
+iter=6, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.999921
+iter=7, partyidx=3, bellineqvalue=8.000000, abschangeobjval=3.02402e-09
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=10, localboundNS2=6.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=-0.015776 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=-0.369258 s·p(v=1)=-0.015776 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.258504, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.000000, abschangeobjval=3.7415
+iter=3, partyidx=1, bellineqvalue=8.000000, abschangeobjval=2
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=3.27554e-09
+Local maximum: 0.000000
+s·p(v=1)=0.323158 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=-0.205204 s·p(v=1)=0.323158 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.644341, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.000000, abschangeobjval=4.35566
+iter=3, partyidx=1, bellineqvalue=8.035124, abschangeobjval=2.03512
+iter=4, partyidx=2, bellineqvalue=10.000000, abschangeobjval=1.96488
+iter=5, partyidx=3, bellineqvalue=10.000000, abschangeobjval=7.25224e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.255659 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=0.593606 s·p(v=1)=-0.255659 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.662244, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.000000, abschangeobjval=4.33776
+iter=3, partyidx=1, bellineqvalue=7.269631, abschangeobjval=1.26963
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=0.730369
+iter=5, partyidx=3, bellineqvalue=8.000000, abschangeobjval=1.69785e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.171300 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=-1.276073 s·p(v=1)=-0.171300 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.041259, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=6.421969, abschangeobjval=4.38071
+iter=3, partyidx=3, bellineqvalue=8.000000, abschangeobjval=1.57803
+iter=4, channelq=~, bellineqvalue=8.000000, abschangeobjval=5.47771e-10
+Local maximum: 1.000000
+s·p(v=1)=-0.171416 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=0.343181 s·p(v=1)=-0.171416 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.215423, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=6.137292, abschangeobjval=0.921869
+iter=3, partyidx=2, bellineqvalue=6.206136, abschangeobjval=0.0688435
+iter=4, partyidx=3, bellineqvalue=6.216478, abschangeobjval=0.0103424
+iter=5, channelq=~, bellineqvalue=6.468337, abschangeobjval=0.251859
+iter=6, partyidx=1, bellineqvalue=6.488374, abschangeobjval=0.0200371
+iter=7, partyidx=2, bellineqvalue=6.489375, abschangeobjval=0.00100136
+iter=8, partyidx=3, bellineqvalue=6.508988, abschangeobjval=0.0196127
+iter=9, channelq=~, bellineqvalue=6.517980, abschangeobjval=0.00899162
+iter=10, partyidx=1, bellineqvalue=6.523746, abschangeobjval=0.00576582
+iter=11, partyidx=2, bellineqvalue=6.523822, abschangeobjval=7.62095e-05
+iter=12, partyidx=3, bellineqvalue=6.525124, abschangeobjval=0.00130175
+iter=13, channelq=~, bellineqvalue=6.526957, abschangeobjval=0.00183388
+iter=14, partyidx=1, bellineqvalue=6.528108, abschangeobjval=0.00115079
+iter=15, partyidx=2, bellineqvalue=6.528122, abschangeobjval=1.42143e-05
+iter=16, partyidx=3, bellineqvalue=6.528212, abschangeobjval=8.93955e-05
+iter=17, channelq=~, bellineqvalue=6.528574, abschangeobjval=0.000362047
+iter=18, partyidx=1, bellineqvalue=6.528768, abschangeobjval=0.000194603
+iter=19, partyidx=2, bellineqvalue=6.528771, abschangeobjval=2.38766e-06
+iter=20, partyidx=3, bellineqvalue=6.528777, abschangeobjval=6.33441e-06
+iter=21, channelq=~, bellineqvalue=6.528840, abschangeobjval=6.27951e-05
+iter=22, partyidx=1, bellineqvalue=6.528871, abschangeobjval=3.06353e-05
+iter=23, partyidx=2, bellineqvalue=6.528871, abschangeobjval=3.35349e-07
+Local maximum: 0.000000
+s·p(v=1)=-0.141996 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=-0.251459 s·p(v=1)=-0.141996 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.076736, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.000000, abschangeobjval=3.92326
+iter=3, partyidx=1, bellineqvalue=8.000000, abschangeobjval=2
+iter=4, partyidx=2, bellineqvalue=8.000000, abschangeobjval=4.32171e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.094711 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=-0.435960 s·p(v=1)=-0.094711 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.190900, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=6.017397, abschangeobjval=3.8265
+iter=3, partyidx=3, bellineqvalue=8.000000, abschangeobjval=1.9826
+iter=4, channelq=~, bellineqvalue=8.000000, abschangeobjval=3.27015e-09
+Local maximum: 1.000000
+s·p(v=1)=0.330561 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=0.793797 s·p(v=1)=0.330561 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.307732, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=6.000000, abschangeobjval=3.69227
+iter=3, partyidx=3, bellineqvalue=6.000000, abschangeobjval=4.49274e-08
+Local maximum: 0.000000
+s·p(v=1)=0.160615 localboundBroadcast=10.000000 localboundNS2=6.000000
+s·p(v=0)=0.336929 s·p(v=1)=0.160615 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=6.010462, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=6.106784, abschangeobjval=0.0963221
+iter=3, partyidx=2, bellineqvalue=6.287911, abschangeobjval=0.181127
+iter=4, partyidx=3, bellineqvalue=6.482305, abschangeobjval=0.194394
+iter=5, channelq=~, bellineqvalue=6.517732, abschangeobjval=0.0354262
+iter=6, partyidx=1, bellineqvalue=6.522320, abschangeobjval=0.00458798
+iter=7, partyidx=2, bellineqvalue=6.522404, abschangeobjval=8.45762e-05
+iter=8, partyidx=3, bellineqvalue=6.525423, abschangeobjval=0.00301878
+iter=9, channelq=~, bellineqvalue=6.526931, abschangeobjval=0.00150793
+iter=10, partyidx=1, bellineqvalue=6.527994, abschangeobjval=0.00106325
+iter=11, partyidx=2, bellineqvalue=6.528061, abschangeobjval=6.62966e-05
+iter=12, partyidx=3, bellineqvalue=6.528218, abschangeobjval=0.000157179
+iter=13, channelq=~, bellineqvalue=6.528607, abschangeobjval=0.000389414
+iter=14, partyidx=1, bellineqvalue=6.528774, abschangeobjval=0.000166449
+iter=15, partyidx=2, bellineqvalue=6.528783, abschangeobjval=8.97223e-06
+iter=16, partyidx=3, bellineqvalue=6.528792, abschangeobjval=9.43355e-06
+iter=17, channelq=~, bellineqvalue=6.528852, abschangeobjval=6.04294e-05
+iter=18, partyidx=1, bellineqvalue=6.528875, abschangeobjval=2.27244e-05
+iter=19, partyidx=2, bellineqvalue=6.528876, abschangeobjval=9.4367e-07
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=11, localboundNS2=9.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.313216 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-0.530056 s·p(v=1)=0.313216 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.566384, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=7.582735, abschangeobjval=4.01635
+iter=3, partyidx=3, bellineqvalue=11.000000, abschangeobjval=3.41727
+iter=4, channelq=~, bellineqvalue=11.000000, abschangeobjval=3.63855e-08
+Local maximum: 1.000000
+s·p(v=1)=0.262270 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=1.815531 s·p(v=1)=0.262270 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=4.462884, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=9.000000, abschangeobjval=4.53712
+iter=3, partyidx=3, bellineqvalue=9.000000, abschangeobjval=9.24089e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.862949 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-0.004802 s·p(v=1)=-0.862949 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.081866, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=9.000000, abschangeobjval=5.91813
+iter=3, partyidx=3, bellineqvalue=9.000000, abschangeobjval=6.02303e-08
+Local maximum: 1.000000
+s·p(v=1)=0.669929 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-0.007387 s·p(v=1)=0.669929 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=10.768240, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=10.851511, abschangeobjval=0.0832715
+iter=3, partyidx=2, bellineqvalue=10.857309, abschangeobjval=0.00579819
+iter=4, partyidx=3, bellineqvalue=11.093092, abschangeobjval=0.235783
+iter=5, channelq=~, bellineqvalue=11.372812, abschangeobjval=0.27972
+iter=6, partyidx=1, bellineqvalue=11.504511, abschangeobjval=0.131699
+iter=7, partyidx=2, bellineqvalue=11.690410, abschangeobjval=0.185899
+iter=8, partyidx=3, bellineqvalue=11.851529, abschangeobjval=0.161119
+iter=9, channelq=~, bellineqvalue=12.231847, abschangeobjval=0.380318
+iter=10, partyidx=1, bellineqvalue=12.417710, abschangeobjval=0.185863
+iter=11, partyidx=2, bellineqvalue=12.678678, abschangeobjval=0.260968
+iter=12, partyidx=3, bellineqvalue=12.783932, abschangeobjval=0.105254
+iter=13, channelq=~, bellineqvalue=12.987285, abschangeobjval=0.203353
+iter=14, partyidx=1, bellineqvalue=12.996456, abschangeobjval=0.00917154
+iter=15, partyidx=2, bellineqvalue=12.996456, abschangeobjval=1.18361e-07
+Local maximum: 0.000000
+s·p(v=1)=-0.558064 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-1.752834 s·p(v=1)=-0.558064 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.958417, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=5.662252, abschangeobjval=2.70384
+iter=3, channelq=~, bellineqvalue=9.000000, abschangeobjval=3.33775
+iter=4, partyidx=1, bellineqvalue=11.156357, abschangeobjval=2.15636
+iter=5, partyidx=2, bellineqvalue=13.000000, abschangeobjval=1.84364
+iter=6, partyidx=3, bellineqvalue=13.000000, abschangeobjval=1.9508e-11
+Local maximum: 0.000000
+s·p(v=1)=-0.568045 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-0.449726 s·p(v=1)=-0.568045 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=10.104209, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=10.104374, abschangeobjval=0.000164925
+iter=3, partyidx=2, bellineqvalue=10.106580, abschangeobjval=0.00220656
+iter=4, partyidx=3, bellineqvalue=10.801329, abschangeobjval=0.694749
+iter=5, channelq=~, bellineqvalue=11.054702, abschangeobjval=0.253373
+iter=6, partyidx=1, bellineqvalue=11.095146, abschangeobjval=0.0404447
+iter=7, partyidx=2, bellineqvalue=11.274315, abschangeobjval=0.179168
+iter=8, partyidx=3, bellineqvalue=11.434936, abschangeobjval=0.160622
+iter=9, channelq=~, bellineqvalue=11.702275, abschangeobjval=0.267339
+iter=10, partyidx=1, bellineqvalue=11.898509, abschangeobjval=0.196234
+iter=11, partyidx=2, bellineqvalue=12.152036, abschangeobjval=0.253527
+iter=12, partyidx=3, bellineqvalue=12.301204, abschangeobjval=0.149168
+iter=13, channelq=~, bellineqvalue=12.665780, abschangeobjval=0.364576
+iter=14, partyidx=1, bellineqvalue=12.773278, abschangeobjval=0.107497
+iter=15, partyidx=2, bellineqvalue=12.925602, abschangeobjval=0.152324
+iter=16, partyidx=3, bellineqvalue=12.967218, abschangeobjval=0.041616
+iter=17, channelq=~, bellineqvalue=12.999284, abschangeobjval=0.0320657
+iter=18, partyidx=1, bellineqvalue=12.999864, abschangeobjval=0.000580317
+iter=19, partyidx=2, bellineqvalue=12.999865, abschangeobjval=7.55115e-07
+Local maximum: 0.000000
+s·p(v=1)=0.116568 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-0.263677 s·p(v=1)=0.116568 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.511917, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=9.000000, abschangeobjval=6.48808
+iter=3, channelq=~, bellineqvalue=9.000000, abschangeobjval=5.76033e-09
+Local maximum: 1.000000
+s·p(v=1)=0.100653 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-1.808803 s·p(v=1)=0.100653 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.953294, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=5.604355, abschangeobjval=2.65106
+iter=3, partyidx=3, bellineqvalue=11.000000, abschangeobjval=5.39564
+iter=4, channelq=~, bellineqvalue=11.000000, abschangeobjval=5.20391e-08
+Local maximum: 1.000000
+s·p(v=1)=-0.212540 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=0.018848 s·p(v=1)=-0.212540 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.181705, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=9.000000, abschangeobjval=5.8183
+iter=3, partyidx=3, bellineqvalue=9.000000, abschangeobjval=4.19878e-08
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=12, localboundNS2=6.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.657922 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.212168 s·p(v=1)=0.657922 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=5.924961, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=5.925230, abschangeobjval=0.00026851
+iter=3, partyidx=2, bellineqvalue=6.287038, abschangeobjval=0.361808
+iter=4, partyidx=3, bellineqvalue=6.287240, abschangeobjval=0.000202621
+iter=5, channelq=~, bellineqvalue=6.393192, abschangeobjval=0.105952
+iter=6, partyidx=1, bellineqvalue=6.398616, abschangeobjval=0.0054241
+iter=7, partyidx=2, bellineqvalue=6.443507, abschangeobjval=0.0448905
+iter=8, partyidx=3, bellineqvalue=6.444068, abschangeobjval=0.000561575
+iter=9, channelq=~, bellineqvalue=6.450024, abschangeobjval=0.00595566
+iter=10, partyidx=1, bellineqvalue=6.451054, abschangeobjval=0.00103031
+iter=11, partyidx=2, bellineqvalue=6.451982, abschangeobjval=0.000927371
+iter=12, partyidx=3, bellineqvalue=6.452788, abschangeobjval=0.00080644
+iter=13, channelq=~, bellineqvalue=6.452939, abschangeobjval=0.000150397
+iter=14, partyidx=1, bellineqvalue=6.453077, abschangeobjval=0.000138216
+iter=15, partyidx=2, bellineqvalue=6.453230, abschangeobjval=0.000152752
+iter=16, partyidx=3, bellineqvalue=6.453623, abschangeobjval=0.000393767
+iter=17, channelq=~, bellineqvalue=6.453633, abschangeobjval=9.30992e-06
+iter=18, partyidx=1, bellineqvalue=6.453651, abschangeobjval=1.85599e-05
+iter=19, partyidx=2, bellineqvalue=6.453862, abschangeobjval=0.000210635
+iter=20, partyidx=3, bellineqvalue=6.453999, abschangeobjval=0.000137314
+iter=21, channelq=~, bellineqvalue=6.454010, abschangeobjval=1.08687e-05
+iter=22, partyidx=1, bellineqvalue=6.454013, abschangeobjval=2.85187e-06
+iter=23, partyidx=2, bellineqvalue=6.454107, abschangeobjval=9.44417e-05
+iter=24, partyidx=3, bellineqvalue=6.454149, abschangeobjval=4.19663e-05
+iter=25, channelq=~, bellineqvalue=6.454154, abschangeobjval=4.86437e-06
+iter=26, partyidx=1, bellineqvalue=6.454155, abschangeobjval=5.05052e-07
+Local maximum: 0.000000
+s·p(v=1)=0.058013 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.314102 s·p(v=1)=0.058013 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.035541, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.000000, abschangeobjval=3.96446
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=1.25165e-09
+Local maximum: 1.000000
+s·p(v=1)=-0.396892 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-1.214432 s·p(v=1)=-0.396892 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.135790, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.439798, abschangeobjval=2.30401
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=1.5602
+iter=4, partyidx=1, bellineqvalue=7.000000, abschangeobjval=1
+iter=5, partyidx=2, bellineqvalue=7.000000, abschangeobjval=1.61465e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.359950 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.093457 s·p(v=1)=-0.359950 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.189919, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.346424, abschangeobjval=2.15651
+iter=3, partyidx=1, bellineqvalue=6.000000, abschangeobjval=1.65358
+iter=4, partyidx=2, bellineqvalue=6.000000, abschangeobjval=4.10875e-08
+Local maximum: 0.000000
+s·p(v=1)=0.011569 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.228552 s·p(v=1)=0.011569 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.670259, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=3.882142, abschangeobjval=2.21188
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=2.11786
+iter=4, partyidx=1, bellineqvalue=7.000000, abschangeobjval=1
+iter=5, partyidx=2, bellineqvalue=7.000000, abschangeobjval=5.63226e-09
+Local maximum: 0.000000
+s·p(v=1)=0.011236 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.068165 s·p(v=1)=0.011236 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.384394, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.000000, abschangeobjval=3.61561
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=1.27849e-09
+Local maximum: 1.000000
+s·p(v=1)=0.619498 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.249466 s·p(v=1)=0.619498 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.594443, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.000000, abschangeobjval=3.40556
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=7.70139e-10
+Local maximum: 0.000000
+s·p(v=1)=-0.308217 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=-0.760729 s·p(v=1)=-0.308217 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.930209, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=6.000000, abschangeobjval=4.06979
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=1.39562e-09
+Local maximum: 0.000000
+s·p(v=1)=0.010571 localboundBroadcast=8.000000 localboundNS2=6.000000
+s·p(v=0)=0.225049 s·p(v=1)=0.010571 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.861653, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.277790, abschangeobjval=2.41614
+iter=3, channelq=~, bellineqvalue=6.000000, abschangeobjval=1.72221
+iter=4, partyidx=1, bellineqvalue=7.999999, abschangeobjval=2
+iter=5, partyidx=2, bellineqvalue=8.000000, abschangeobjval=7.39433e-07
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=13, localboundNS2=9.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.117940 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=0.614223 s·p(v=1)=0.117940 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.846021, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=9.000000, abschangeobjval=6.15398
+iter=3, channelq=~, bellineqvalue=9.000000, abschangeobjval=1.98421e-10
+Local maximum: 1.000000
+s·p(v=1)=-0.037408 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=0.604570 s·p(v=1)=-0.037408 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=3.276117, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=5.572780, abschangeobjval=2.29666
+iter=3, partyidx=3, bellineqvalue=12.000000, abschangeobjval=6.42722
+iter=4, channelq=~, bellineqvalue=12.000000, abschangeobjval=4.5237e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.497315 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=-1.197150 s·p(v=1)=-0.497315 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=3.066890, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=7.447691, abschangeobjval=4.3808
+iter=3, partyidx=1, bellineqvalue=11.168246, abschangeobjval=3.72056
+iter=4, partyidx=2, bellineqvalue=15.000000, abschangeobjval=3.83175
+iter=5, partyidx=3, bellineqvalue=15.000000, abschangeobjval=4.02828e-08
+Local maximum: 0.000000
+s·p(v=1)=-1.048075 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=-1.400138 s·p(v=1)=-1.048075 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.753761, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.853043, abschangeobjval=2.09928
+iter=3, channelq=~, bellineqvalue=9.000000, abschangeobjval=4.14696
+iter=4, partyidx=1, bellineqvalue=15.000000, abschangeobjval=6
+iter=5, partyidx=2, bellineqvalue=15.000000, abschangeobjval=3.48665e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.112476 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=-1.242782 s·p(v=1)=-0.112476 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=4.384428, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=9.000000, abschangeobjval=4.61557
+iter=3, channelq=~, bellineqvalue=9.000000, abschangeobjval=3.74564e-10
+Local maximum: 1.000000
+s·p(v=1)=-0.557041 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=-0.434081 s·p(v=1)=-0.557041 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.476618, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=6.830319, abschangeobjval=4.3537
+iter=3, partyidx=3, bellineqvalue=12.000000, abschangeobjval=5.16968
+iter=4, channelq=~, bellineqvalue=12.000000, abschangeobjval=8.69047e-10
+Local maximum: 1.000000
+s·p(v=1)=0.442324 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=1.083583 s·p(v=1)=0.442324 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.841542, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=6.114671, abschangeobjval=3.27313
+iter=3, partyidx=1, bellineqvalue=9.114671, abschangeobjval=3
+iter=4, partyidx=2, bellineqvalue=12.000000, abschangeobjval=2.88533
+iter=5, partyidx=3, bellineqvalue=12.000000, abschangeobjval=2.62134e-08
+Local maximum: 0.000000
+s·p(v=1)=-0.424054 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=0.363036 s·p(v=1)=-0.424054 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=8.009723, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=8.354972, abschangeobjval=0.345249
+iter=3, partyidx=2, bellineqvalue=8.828183, abschangeobjval=0.473211
+iter=4, partyidx=3, bellineqvalue=8.940252, abschangeobjval=0.112069
+iter=5, channelq=~, bellineqvalue=9.499687, abschangeobjval=0.559435
+iter=6, partyidx=1, bellineqvalue=10.082617, abschangeobjval=0.58293
+iter=7, partyidx=2, bellineqvalue=10.374483, abschangeobjval=0.291865
+iter=8, partyidx=3, bellineqvalue=10.744797, abschangeobjval=0.370314
+iter=9, channelq=~, bellineqvalue=10.940533, abschangeobjval=0.195737
+iter=10, partyidx=1, bellineqvalue=10.971326, abschangeobjval=0.0307929
+iter=11, partyidx=2, bellineqvalue=10.989068, abschangeobjval=0.0177416
+iter=12, partyidx=3, bellineqvalue=10.997869, abschangeobjval=0.00880145
+iter=13, channelq=~, bellineqvalue=10.999746, abschangeobjval=0.00187693
+iter=14, partyidx=1, bellineqvalue=10.999821, abschangeobjval=7.51399e-05
+iter=15, partyidx=2, bellineqvalue=10.999974, abschangeobjval=0.00015262
+iter=16, partyidx=3, bellineqvalue=10.999974, abschangeobjval=2.54642e-09
+Local maximum: 0.000000
+s·p(v=1)=-0.086807 localboundBroadcast=15.000000 localboundNS2=9.000000
+s·p(v=0)=-0.931177 s·p(v=1)=-0.086807 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=3.377294, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=7.400493, abschangeobjval=4.0232
+iter=3, partyidx=1, bellineqvalue=10.481649, abschangeobjval=3.08116
+iter=4, partyidx=2, bellineqvalue=12.000000, abschangeobjval=1.51835
+iter=5, partyidx=3, bellineqvalue=12.000000, abschangeobjval=2.17945e-08
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=14, localboundNS2=9.000000
+
+
+
+Round 1 of the see-saw.
+s·p(v=1)=0.102271 localboundBroadcast=13.000000 localboundNS2=9.000000
+s·p(v=0)=-0.078788 s·p(v=1)=0.102271 localbound=4.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@lmi\lmi.m', 159)" style="font-weight:bold">lmi</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@lmi\lmi.m',159,0)">line 159</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/horzcat', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@lmi\horzcat.m', 27)" style="font-weight:bold">lmi/horzcat</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@lmi\horzcat.m',27,0)">line 27</a>)
+        H = lmi(varargin{i});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 15)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',15,0)">line 15</a>)
+            positivityconstraints = [positivityconstraints, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 84)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',84,0)">line 84</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+arXiv1112_2626_check
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+class=1, s·p(v=1)=0.196294 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.180661 s·p(v=1)=0.196294 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=3.10751e-09
+Local maximum: 0.000000
+class=1, s·p(v=1)=-0.254212 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.510451 s·p(v=1)=-0.254212 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=2.15823e-09
+Local maximum: 0.000000
+class=1, s·p(v=1)=-0.153201 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.114188 s·p(v=1)=-0.153201 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.15235e-09
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.106288 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.068397 s·p(v=1)=0.106288 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.31164e-11
+Local maximum: 0.000000
+class=1, s·p(v=1)=-0.030742 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.163807 s·p(v=1)=-0.030742 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.61209e-11
+Local maximum: 1.000000
+class=1, s·p(v=1)=-0.014626 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=-0.285191 s·p(v=1)=-0.014626 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1.94511e-12
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.306319 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.427913 s·p(v=1)=0.306319 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=8.71771e-10
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.004430 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.051052 s·p(v=1)=0.004430 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=9.94508e-10
+Local maximum: 1.000000
+class=1, s·p(v=1)=0.383827 localboundBroadcast=1.000000 localboundNS2=1.000000
+s·p(v=0)=0.377612 s·p(v=1)=0.383827 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=2.24366e-11
+Local maximum: 1.000000
+Best of 2: 1.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=2, s·p(v=1)=-0.595987 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.285254 s·p(v=1)=-0.595987 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.831097, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=4.995063, abschangeobjval=0.163966
+iter=3, partyidx=2, bellineqvalue=4.999139, abschangeobjval=0.0040756
+iter=4, partyidx=3, bellineqvalue=4.999794, abschangeobjval=0.000655839
+iter=5, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.000205418
+iter=6, partyidx=1, bellineqvalue=5.000000, abschangeobjval=5.50965e-08
+Local maximum: 0.000000
+class=2, s·p(v=1)=0.442367 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.377092 s·p(v=1)=0.442367 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.919232, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.281777, abschangeobjval=1.36254
+iter=3, partyidx=3, bellineqvalue=4.337343, abschangeobjval=0.0555661
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.662657
+iter=5, partyidx=1, bellineqvalue=5.171311, abschangeobjval=0.171312
+iter=6, partyidx=2, bellineqvalue=5.171312, abschangeobjval=8.651e-07
+Local maximum: 1.000000
+class=2, s·p(v=1)=0.156083 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.063020 s·p(v=1)=0.156083 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.617110, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.495412, abschangeobjval=3.8783
+iter=3, partyidx=1, bellineqvalue=5.965978, abschangeobjval=0.470566
+iter=4, partyidx=2, bellineqvalue=5.988581, abschangeobjval=0.0226029
+iter=5, partyidx=3, bellineqvalue=5.988581, abschangeobjval=9.74845e-09
+Local maximum: 0.000000
+class=2, s·p(v=1)=1.037983 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=1.285104 s·p(v=1)=1.037983 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=2.206548, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=5.257001, abschangeobjval=3.05045
+iter=3, partyidx=1, bellineqvalue=5.670075, abschangeobjval=0.413074
+iter=4, partyidx=2, bellineqvalue=5.883198, abschangeobjval=0.213123
+iter=5, partyidx=3, bellineqvalue=5.883198, abschangeobjval=3.45412e-08
+Local maximum: 0.000000
+class=2, s·p(v=1)=-0.881292 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.519259 s·p(v=1)=-0.881292 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=1.415121, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.389980, abschangeobjval=2.97486
+iter=3, partyidx=3, bellineqvalue=5.000000, abschangeobjval=0.61002
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=1.00813e-10
+Local maximum: 0.000000
+class=2, s·p(v=1)=0.549343 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.980570 s·p(v=1)=0.549343 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.645030, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.299261, abschangeobjval=1.65423
+iter=3, partyidx=3, bellineqvalue=4.487352, abschangeobjval=0.18809
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.512648
+iter=5, partyidx=1, bellineqvalue=5.176119, abschangeobjval=0.176119
+iter=6, partyidx=2, bellineqvalue=5.176131, abschangeobjval=1.27957e-05
+iter=7, partyidx=3, bellineqvalue=5.176137, abschangeobjval=5.675e-06
+iter=8, channelq=~, bellineqvalue=6.000000, abschangeobjval=0.823863
+iter=9, partyidx=1, bellineqvalue=6.000000, abschangeobjval=3.97137e-10
+Local maximum: 0.000000
+class=2, s·p(v=1)=-0.137256 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.112092 s·p(v=1)=-0.137256 localbound=4.000000
+iter=1, partyidx=1, bellineqvalue=2.233413, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.216153, abschangeobjval=1.98274
+iter=3, partyidx=3, bellineqvalue=4.333214, abschangeobjval=0.11706
+iter=4, channelq=~, bellineqvalue=5.000000, abschangeobjval=0.666786
+iter=5, partyidx=1, bellineqvalue=5.085792, abschangeobjval=0.0857922
+iter=6, partyidx=2, bellineqvalue=5.126738, abschangeobjval=0.0409461
+iter=7, partyidx=3, bellineqvalue=5.134357, abschangeobjval=0.00761912
+iter=8, channelq=~, bellineqvalue=6.000000, abschangeobjval=0.865643
+iter=9, partyidx=1, bellineqvalue=6.000000, abschangeobjval=1.40854e-09
+Local maximum: 0.000000
+class=2, s·p(v=1)=0.409870 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=1.151197 s·p(v=1)=0.409870 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=3.019445, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=4.173895, abschangeobjval=1.15445
+iter=3, channelq=~, bellineqvalue=4.760670, abschangeobjval=0.586775
+iter=4, partyidx=1, bellineqvalue=6.000000, abschangeobjval=1.23933
+iter=5, partyidx=2, bellineqvalue=6.000000, abschangeobjval=6.10006e-09
+Local maximum: 0.000000
+class=2, s·p(v=1)=-0.147556 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.038177 s·p(v=1)=-0.147556 localbound=4.000000
+iter=1, partyidx=3, bellineqvalue=1.961546, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.551613, abschangeobjval=2.59007
+iter=3, partyidx=1, bellineqvalue=5.722260, abschangeobjval=1.17065
+iter=4, partyidx=2, bellineqvalue=5.902648, abschangeobjval=0.180388
+iter=5, partyidx=3, bellineqvalue=5.902648, abschangeobjval=3.10187e-10
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+ WARNING: you shouldn't get a broadcast local bound greater than NS2 
+
+
+
+ This is INEQUALITY nr ineq_nr=3, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=3, s·p(v=1)=0.081633 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=-0.042431 s·p(v=1)=0.081633 localbound=4.000000
+iter=1, channelq=~, bellineqvalue=4.983629, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=5.082493, abschangeobjval=0.0988637
+iter=3, partyidx=2, bellineqvalue=5.180749, abschangeobjval=0.0982557
+iter=4, partyidx=3, bellineqvalue=5.266343, abschangeobjval=0.0855945
+iter=5, channelq=~, bellineqvalue=5.460117, abschangeobjval=0.193774
+iter=6, partyidx=1, bellineqvalue=5.520277, abschangeobjval=0.0601608
+iter=7, partyidx=2, bellineqvalue=5.631690, abschangeobjval=0.111412
+iter=8, partyidx=3, bellineqvalue=5.642728, abschangeobjval=0.0110385
+iter=9, channelq=~, bellineqvalue=5.765597, abschangeobjval=0.122868
+iter=10, partyidx=1, bellineqvalue=5.808887, abschangeobjval=0.0432903
+iter=11, partyidx=2, bellineqvalue=5.866323, abschangeobjval=0.0574357
+iter=12, partyidx=3, bellineqvalue=5.868647, abschangeobjval=0.00232387
+iter=13, channelq=~, bellineqvalue=5.920569, abschangeobjval=0.0519225
+iter=14, partyidx=1, bellineqvalue=5.942235, abschangeobjval=0.0216655
+iter=15, partyidx=2, bellineqvalue=5.959282, abschangeobjval=0.0170473
+iter=16, partyidx=3, bellineqvalue=5.959833, abschangeobjval=0.000550659
+iter=17, channelq=~, bellineqvalue=5.975165, abschangeobjval=0.0153327
+iter=18, partyidx=1, bellineqvalue=5.984019, abschangeobjval=0.00885344
+iter=19, partyidx=2, bellineqvalue=5.987369, abschangeobjval=0.00335028
+iter=20, partyidx=3, bellineqvalue=5.987580, abschangeobjval=0.000211455
+iter=21, channelq=~, bellineqvalue=5.991819, abschangeobjval=0.0042381
+iter=22, partyidx=1, bellineqvalue=5.995185, abschangeobjval=0.00336646
+iter=23, partyidx=2, bellineqvalue=5.995459, abschangeobjval=0.000274208
+iter=24, partyidx=3, bellineqvalue=5.995582, abschangeobjval=0.000122626
+iter=25, channelq=~, bellineqvalue=5.997200, abschangeobjval=0.00161826
+iter=26, partyidx=1, bellineqvalue=5.998364, abschangeobjval=0.00116362
+iter=27, partyidx=2, bellineqvalue=5.998372, abschangeobjval=7.76509e-06
+iter=28, partyidx=3, bellineqvalue=5.998416, abschangeobjval=4.46767e-05
+iter=29, channelq=~, bellineqvalue=5.999041, abschangeobjval=0.000625131
+iter=30, partyidx=1, bellineqvalue=5.999434, abschangeobjval=0.000392583
+iter=31, partyidx=2, bellineqvalue=5.999434, abschangeobjval=4.85034e-07
+Local maximum: 0.000000
+class=3, s·p(v=1)=0.317938 localboundBroadcast=6.000000 localboundNS2=4.000000
+s·p(v=0)=0.894732 s·p(v=1)=0.317938 localbound=4.000000
+iter=1, partyidx=2, bellineqvalue=2.239333, abschangeobjval=1e+06
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('appendYALMIPvariables', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\appendYALMIPvariables.m', 38)" style="font-weight:bold">appendYALMIPvariables</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\appendYALMIPvariables.m',38,0)">line 38</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\sdpvar.m', 731)" style="font-weight:bold">sdpvar</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\sdpvar.m',731,0)">line 731</a>)
+appendYALMIPvariables(lmi_variables,mt,variabletype,hashed_monoms,current_hash);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 14)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',14,0)">line 14</a>)
+            chosenPartyMeasurements{x}{a} = sdpvar(dimofProjector,dimofProjector,'hermitian','complex');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m', 84)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\arXiv1112_2626_check.m',84,0)">line 84</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+save('table3_arXiv1112_2626.mat','table3arXiv11122626');
+quantumbound = table3arXiv11122626(ineq_nr, 5);
+quantumbound
+
+quantumbound =
+
+    4.8119
+
+table3arXiv11122626(5)
+
+ans =
+
+     5
+
+table3arXiv11122626(5,1)
+
+ans =
+
+     5
+
+ineq_nr
+
+ineq_nr =
+
+     3
+
+arXiv1112_2626_check

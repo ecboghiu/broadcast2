@@ -8945,3 +8945,17 @@ iter=5, channelq=~, bellineqvalue=12.887190, abschangeobjval=1.91931e-08
 Local maximum: 0.379229
 Best of 2: 0.379229
 arXiv1112_2626_check
+Local bound: 8.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 8.000000
+s·p(v=0)=-0.944214 s·p(v=1)=-0.000000 localbound=8.000000
+Starting visibility: 1.000000
+iter=1, channelq=~, bellineqvalue=7.729606, abschangeobjval=1.00001e+06
+iter=2, partyidx=1, bellineqvalue=11.244319, abschangeobjval=3.51471
+iter=3, partyidx=2, bellineqvalue=12.790873, abschangeobjval=1.54655
+iter=4, partyidx=3, bellineqvalue=12.887190, abschangeobjval=0.0963164
+iter=5, channelq=~, bellineqvalue=12.887190, abschangeobjval=1.91931e-08
+Local maximum: 0.379229
+Best of 2: 0.379229
+arXiv1112_2626_check
