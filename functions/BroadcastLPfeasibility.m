@@ -1,18 +1,9 @@
-function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
-    % IMPORTANT alpha is defined as (1-alpha)*p1 + (alpha)*p2
-    % usually p1 is the entangled, and p2 the uniform, so this
-    % program minimizes alpha using this convention
-    % if p1 and p2 are both local then all alpha are good
-    % if p1 and p2 are both nonlocal the program is infeasible
-    % ideally p1 should be nonlocal
-
+function [bellcoeffs,LPstatus] = BroadcastLPfeasibility(prob)
     % IMPORTANT I use the convention where the probabilities are called as
     % p(x,y,z,a,b,c) instead of p(a,b,c,x,y,z)
-    dims_p = size(p1);
+    dims_p = size(prob);
     
     assert(mod(length(dims_p),2) == 0, "The probability array should have equal number of inputs and outputs.");
-    assert(all(size(p1) == size(p2)), "The two probability arrays should have equal dimenisons.");
-    assert( norm(p1(:) - p2(:)) > 1e-6, "The probabilities should not be almost equal."); 
     
     nrparties = length(dims_p)/2;
     
@@ -25,8 +16,6 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
     
     nr_det_points = nroutputsofA^nrinputsofA;
   
-    alpha = sdpvar(1); % alpha will be the visibility
-
     tempdims = [nr_det_points, nr_inputs_per_party(2:end), nr_outputs_per_party(2:end)];
     q_coords = ind2subv(tempdims, 1:prod(tempdims(:)));
     tempdims_cell = num2cell(tempdims);
@@ -39,9 +28,6 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
     
     
     %q = sdpvar(nr_det_points, inputs_cell{2:end}, outputs_cell{2:end});
-    
-    visibility_constraints = [alpha >= 0];
-    %visibility_constraints = [visibility_constraints,alpha <= 1];
     
     positivityconstraints = [];
 	auxsize=size(q);
@@ -133,8 +119,6 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
     %% Probability constraints
     det_strategy = givedetstratA(nr_outputs_per_party(1),nr_inputs_per_party(1));
 
-    noisy_prob = (1-alpha) * p1 + (alpha) * p2;
-    
     probability_constraints = [];
     productstructure = [nr_inputs_per_party, nr_outputs_per_party];
     cartesianproduct_forprobconstraints = ind2subv(productstructure, 1:prod(productstructure(:)));
@@ -146,16 +130,15 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
             summ = summ + det_strategy(lam, coords_cell{1}, coords_cell{nrparties+1}) ... 
                 * q{lam, coords_cell{2:nrparties}, coords_cell{nrparties+2:end}};
         end
-        cleanprob = clean(noisy_prob(coords_cell{:}), 1e-6);
+        cleanprob = clean(prob(coords_cell{:}), 1e-6);
         probability_constraints = [probability_constraints, summ == cleanprob];
     end
     
     %% Solving the SDP
     
-    objective = alpha;
+    objective = 1.0;
             
     constraints = [positivityconstraints, ...
-        visibility_constraints, ...
         probability_constraints, ...
         nonsignalling_constraintsB, ...
         nonsignalling_constraintsC, ...
@@ -163,16 +146,8 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
     optsol = optimize(constraints, objective, ...
         sdpsettings('solver','mosek','verbose',0,'showprogress',0, 'debug', 0, 'warning',0));
     
-%                       'mosek.MSK_DPAR_INTPNT_TOL_INFEAS', 1e-6,...
-%                       'mosek.MSK_DPAR_INTPNT_CO_TOL_INFEAS',1e-6));
-%     optsol = optimize(constraints, objective, ...
-%         sdpsettings('solver','gurobi','verbose',1,'showprogress',1, 'debug', 1, 'warning',1));    
-%   
+
     LPstatus = optsol.problem;
-%     if LPstatus ~= 0
-%         disp(optsol)
-%         error('Check why the problem is not successfully solved.');
-%     end
     
     dimcell = num2cell([nr_inputs_per_party,nr_outputs_per_party]);
     bellcoeffs = zeros(dimcell{:});           
@@ -186,7 +161,4 @@ function [final_alpha,bellcoeffs,LPstatus,dual_alpha] = BroadcastLP(p1,p2)
         bellcoeffs(coords_cell{:}) = -value(dual(probability_constraints(index)));
         index = index + 1;
     end
-    final_alpha = value(alpha);
-    dual_alpha = 0;
-    %fprintf("lam4 · (p1-p2) = %f\n", sum(bellcoeffs .* (p1-p2),'all'));
 end
