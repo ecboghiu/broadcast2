@@ -1,0 +1,125 @@
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000
+
+
+
+Round 1 of the see-saw.
+class=1, s·p(v=1)=0.256931 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1.74126e-11
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.331473 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=3.792e-09
+Local maximum: 1.000000
+class=1, s·p(v=1)=0.086090 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.15196e-10
+Local maximum: 1.000000
+class=1, s·p(v=1)=-0.047354 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.25366e-11
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.038141 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.54232e-12
+Local maximum: 0.000000
+class=1, s·p(v=1)=-0.139388 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1.21569e-13
+Local maximum: 0.000000
+class=1, s·p(v=1)=-0.042692 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=7.18647e-13
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.034580 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, channelq=~, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.000000, abschangeobjval=2.67663e-11
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.088881 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=4.20552e-13
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.309497 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=1, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=1.000000, abschangeobjval=2.85327e-10
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.007428 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=6.19327e-12
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.087418 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=2, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=1.000000, abschangeobjval=8.91321e-11
+Local maximum: 1.000000
+class=1, s·p(v=1)=-0.234834 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.22615e-11
+Local maximum: 0.000000
+class=1, s·p(v=1)=0.371626 localboundBroadcast=1.000000 localboundNS2=1.000000 quantumbound=1.000000
+iter=1, partyidx=3, bellineqvalue=1.000000, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.000000, abschangeobjval=6.28452e-11
+Local maximum: 0.000000
+Best of 2: 0.000000
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000
+
+
+
+Round 1 of the see-saw.
+class=2, s·p(v=1)=-0.700640 localboundBroadcast=4.000000 localboundNS2=4.000000 quantumbound=4.750690
+iter=1, partyidx=1, bellineqvalue=1.887675, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.000000, abschangeobjval=2.11233
+iter=3, partyidx=3, bellineqvalue=4.000000, abschangeobjval=1.89779e-08
+Local maximum: 0.000000
+class=2, s·p(v=1)=0.416099 localboundBroadcast=4.000000 localboundNS2=4.000000 quantumbound=4.750690
+iter=1, partyidx=3, bellineqvalue=2.232618, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.000000, abschangeobjval=1.76738
+iter=3, partyidx=1, bellineqvalue=4.000000, abschangeobjval=1.01476e-08
+Local maximum: 0.000000
+class=2, s·p(v=1)=0.195307 localboundBroadcast=4.000000 localboundNS2=4.000000 quantumbound=4.750690
+iter=1, partyidx=3, bellineqvalue=1.917779, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=4.000000, abschangeobjval=2.08222
+iter=3, partyidx=1, bellineqvalue=4.000000, abschangeobjval=8.83699e-09
+Local maximum: 0.000000
+class=2, s·p(v=1)=0.066132 localboundBroadcast=4.000000 localboundNS2=4.000000 quantumbound=4.750690
+iter=1, partyidx=1, bellineqvalue=2.703378, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=4.000000, abschangeobjval=1.29662
+iter=3, partyidx=3, bellineqvalue=4.000000, abschangeobjval=6.93513e-10
+Local maximum: 1.000000
+class=2, s·p(v=1)=0.014164 localboundBroadcast=4.000000 localboundNS2=4.000000 quantumbound=4.750690
+iter=1, channelq=~, bellineqvalue=3.975702, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=3.984327, abschangeobjval=0.00862571
+iter=3, partyidx=2, bellineqvalue=3.989752, abschangeobjval=0.00542466
+iter=4, partyidx=3, bellineqvalue=3.993396, abschangeobjval=0.00364419
+iter=5, channelq=~, bellineqvalue=3.998630, abschangeobjval=0.00523374
+iter=6, partyidx=1, bellineqvalue=3.999925, abschangeobjval=0.00129505
+iter=7, partyidx=2, bellineqvalue=3.999998, abschangeobjval=7.27954e-05
+iter=8, partyidx=3, bellineqvalue=4.001385, abschangeobjval=0.00138747
+iter=9, channelq=~, bellineqvalue=4.002517, abschangeobjval=0.00113208
+iter=10, partyidx=1, bellineqvalue=4.002601, abschangeobjval=8.36116e-05
+iter=11, partyidx=2, bellineqvalue=4.002707, abschangeobjval=0.000105895
+iter=12, partyidx=3, bellineqvalue=4.003390, abschangeobjval=0.000683014
+iter=13, channelq=~, bellineqvalue=4.003893, abschangeobjval=0.000502955
+iter=14, partyidx=1, bellineqvalue=4.003897, abschangeobjval=4.30258e-06
+iter=15, partyidx=2, bellineqvalue=4.004146, abschangeobjval=0.000249372
+iter=16, partyidx=3, bellineqvalue=4.004507, abschangeobjval=0.000360568
+iter=17, channelq=~, bellineqvalue=4.004872, abschangeobjval=0.000365519
+iter=18, partyidx=1, bellineqvalue=4.004873, abschangeobjval=1.59494e-07
+
+
+
+Found what we're looking for. Bell value:4.004873 NS2 Bound: 4.000000
+
+
+
+[Warning: Found violation!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\r1\arXiv1112_2626_check.m', 88)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\r1\arXiv1112_2626_check.m',88,0)">line 88</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\r1\arXiv1112_2626_check.m', 89)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\r1\arXiv1112_2626_check.m',89,0)">line 89</a>)
+Finishing program.
+} 
+arXiv1112_2626_check
