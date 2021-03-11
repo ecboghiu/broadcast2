@@ -19,6 +19,8 @@ load('table3_arXiv1112_2626.mat'); % loads table3arXiv11122626
 
 nr_ineqs = size(bellcoeffs_cell,2);
 results = {};
+load('up_to_8_before_memory_err_complete_alg.mat');
+nr_ineqs = ineq_nr; 
 for ineq_nr=2:nr_ineqs
     bellcoeffs = bellcoeffs_cell{ineq_nr};
     localboundNS2 = local_upper_bounds(ineq_nr);
