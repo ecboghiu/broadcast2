@@ -16,7 +16,7 @@ load('table3_arXiv1112_2626.mat'); % loads table3arXiv11122626
 
 nr_ineqs = size(bellcoeffs_cell,2);
 results = {};
-for ineq_nr=1:nr_ineqs
+for ineq_nr=3:nr_ineqs
     bellcoeffs = bellcoeffs_cell{ineq_nr};
     localboundNS2 = local_upper_bounds(ineq_nr);
     localboundBroadcast = ClassicalOptInequality_fromLPBroadcast(bellcoeffs);
