@@ -53,7 +53,6 @@ for idx = 1:(size(corr_coords,1)-1)  % Ignore (1,1,1) as that is a constant, the
             bell_coefficient = 1;
             for aux_in = 1:size(inputs_slice,2)
                if inputs_slice(aux_in) ~= 0
-                   disp(bell_coefficient)
                   bell_coefficient = bell_coefficient * (-1)^(outputs_slice{aux_in}-1);
                end
             end

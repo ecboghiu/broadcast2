@@ -9,7 +9,7 @@ addpath(newdir);
 addpath(newdir2);
 addpath(newdir3);
 
-rng('shuffle');
+rng(12312);
 
 load('bellcoeffs_arxiv1112_2626.mat'); % loads 'bellcoeffs_cell','local_upper_bounds','ins','outs'
 load('table3_arXiv1112_2626.mat'); % loads table3arXiv11122626
@@ -33,10 +33,10 @@ for ineq_nr=3:nr_ineqs
     final_round_channels = {};
 
     % LOOP PARAMETERS
-    MAX_ITER_OUTER_LOOP = 10;
+    MAX_ITER_OUTER_LOOP = 2;
     ALHPA_TOL_DIST_TO_POINT = 1e-3;
     DELTA_ALPHA_CONVERGENCE_THRESHOLD = 1e-6;
-    MAX_ITER_INNER_LOOP = 10;
+    MAX_ITER_INNER_LOOP = 15;
     ALPHA_STDEV_TOL = 1;
     %%%
 
@@ -79,13 +79,14 @@ for ineq_nr=3:nr_ineqs
             fprintf("class=%d, s·p(v=1)=%f localboundBroadcast=%f localboundNS2=%f quantumbound=%f\n", ineq_nr, spv1, localboundBroadcast, localboundNS2, quantumbound);
                         
 
-            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(1-0.68), POVMs, channel);
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(1-0.9), POVMs, channel);
             assert(checkPOVMsAreGood(POVMs,ins,outs),'Problem with POVMs');
             assert(checkThatChannelIsGood(channel, 2, 4), 'Problem with the channel');
 
-            if finalObj-localboundNS2>1e-3
-               fprintf("Found what we're looking for. Bell value:%f NS2 Bound: %f\n", finalObj, localboundNS2);
-               stop
+            if finalObj-localboundNS2>1e-6
+               fprintf("\n\n\nFound what we're looking for. Bell value:%f NS2 Bound: %f\n\n\n\n", finalObj, localboundNS2);
+               warning("Found violation!");
+               error("Finishing program.");
             end
             
             % NOTE ALPHA NOW IS THE VALUE OF THE BELL INEQUALITY
