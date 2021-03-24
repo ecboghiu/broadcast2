@@ -1,0 +1,1380 @@
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000 quantumbound=1.000000
+
+
+
+Round 1 of the see-saw.
+Ineq = 1 Iter = 1 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 2 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 3 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 4 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 5 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 6 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 7 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 8 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 9 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 10 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 11 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 12 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 13 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 14 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 15 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 16 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 17 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 18 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 19 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 20 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 21 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 22 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 23 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 24 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 25 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 26 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 27 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 28 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 29 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 30 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 31 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 32 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 33 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 34 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 35 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 36 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 37 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 38 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 39 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 40 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 41 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 42 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 43 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 44 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 45 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 46 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 47 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 48 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 49 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 50 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 51 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 52 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 53 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 54 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 55 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 56 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 57 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 58 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 59 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 60 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 61 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 62 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 63 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 64 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 65 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 66 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 67 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 68 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 69 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 70 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 71 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 72 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 73 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 74 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 75 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 76 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 77 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 78 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 79 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 80 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 81 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 82 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 83 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 84 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 85 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 86 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 87 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 88 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 89 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 90 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 91 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 92 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 93 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 94 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 95 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 96 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 97 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 98 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 99 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Best of 1: 0.000000
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000 quantumbound=4.750690
+
+
+
+Round 1 of the see-saw.
+Ineq = 2 Iter = 1 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 2 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 3 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 4 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+
+
+
+Found what we're looking for. Bell value:4.074008 NS2 Bound: 4.000000
+
+
+
+[Warning: Found violation!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m', 69)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m',69,0)">line 69</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m', 70)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m',70,0)">line 70</a>)
+Finishing program.
+} 
+arXiv1112_2626_check
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000 quantumbound=1.000000
+
+
+
+Round 1 of the see-saw.
+Ineq = 1 Iter = 1 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 2 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 3 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 4 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 5 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 6 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 7 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 8 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 9 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 10 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 11 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 12 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 13 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 14 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 15 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 16 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 17 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 18 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 19 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 20 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 21 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 22 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 23 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 24 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 25 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 26 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 27 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 28 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 29 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 30 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 31 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 32 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 33 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 34 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 35 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 36 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 37 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 38 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 39 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 40 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 41 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 42 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 43 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 44 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 45 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 46 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 47 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 48 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 49 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 50 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 51 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 52 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 53 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 54 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 55 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 56 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 57 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 58 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 59 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 60 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 61 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 62 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 63 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 64 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 65 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 66 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 67 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 68 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 69 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 70 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 71 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 72 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 73 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 74 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 75 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 76 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 77 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 78 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 79 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 80 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 81 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 82 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 83 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 84 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 85 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 86 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 87 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 88 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 89 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 90 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 91 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 92 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 93 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 94 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 95 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 96 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 97 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 98 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 99 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 100 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 101 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 102 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 103 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 104 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 105 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 106 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 107 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 108 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 109 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 110 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 111 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 112 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 113 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 114 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 115 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 116 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 117 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 118 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 119 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 120 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 121 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 122 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 123 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 124 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 125 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 126 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 127 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 128 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 129 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 130 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 131 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 132 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 133 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 134 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 135 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 136 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 137 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 138 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 139 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 140 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 141 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 142 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 143 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 144 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 145 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 146 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 147 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 148 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 149 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 150 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 151 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 152 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 153 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 154 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 155 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 156 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 157 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 158 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 159 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 160 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 161 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 162 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 163 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 164 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 165 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 166 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 167 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 168 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 169 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 170 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 171 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 172 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 173 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 174 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 175 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 176 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 177 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 178 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 179 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 180 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 181 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 182 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 183 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 184 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 185 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 186 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 187 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 188 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 189 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 190 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 191 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 192 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 193 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 194 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 195 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 196 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 197 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 198 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 199 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 200 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 201 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 202 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 203 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 204 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 205 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 206 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 207 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 208 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 209 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 210 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 211 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 212 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 213 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 214 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 215 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 216 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 217 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 218 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 219 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 220 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 221 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 222 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 223 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 224 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimset', 'C:\Program Files\Polyspace\R2020a\toolbox\matlab\optimfun\optimset.m', 177)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('C:\Program Files\Polyspace\R2020a\toolbox\matlab\optimfun\optimset.m',177,0)">line 177</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>trytoset', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 356)" style="font-weight:bold">sdpsettings>trytoset</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',356,0)">line 356</a>)
+    solverops = optimset;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>setup_bintprog_options', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 1337)" style="font-weight:bold">sdpsettings>setup_bintprog_options</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',1337,0)">line 1337</a>)
+    bintprog = trytoset('bintprog');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings', 'C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m', 130)" style="font-weight:bold">sdpsettings</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\sdpsettings.m',130,0)">line 130</a>)
+    options.bintprog = setup_bintprog_options;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverChannel', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverChannel.m', 76)" style="font-weight:bold">SeeSawOverChannel</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverChannel.m',76,0)">line 76</a>)
+                    sdpsettings('solver','mosek','verbose', 0, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 28)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',28,0)">line 28</a>)
+            [newchannel,newobjval,problemStatus] = SeeSawOverChannel(initialState, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m', 65)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m',65,0)">line 65</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(1-0.8), POVMs, channel);
+} 
+arXiv1112_2626_check
+
+
+
+ This is INEQUALITY nr ineq_nr=100, localboundNS2=6.000000 quantumbound=7.308420
+
+
+
+Round 1 of the see-saw.
+Ineq = 100 Iter = 1 Bell value: 5.999860 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 2 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 3 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 4 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 5 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 6 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 7 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 8 Bell value: 4.968879 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 9 Bell value: 5.200101 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 10 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 11 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 12 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 13 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 14 Bell value: 5.198687 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 15 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 16 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 17 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 18 Bell value: 5.874235 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 19 Bell value: 5.874211 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 20 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 21 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 22 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 23 Bell value: 5.470284 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 24 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 25 Bell value: 5.874235 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 26 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 27 Bell value: 5.874229 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 28 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 29 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 30 Bell value: 5.200000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 31 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 32 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 33 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 34 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 35 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 36 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 37 Bell value: 5.874212 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 38 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 39 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 40 Bell value: 5.200000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 41 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 42 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 43 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 44 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 45 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 46 Bell value: 5.967018 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 47 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 48 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 49 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 50 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 51 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 52 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 53 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 54 Bell value: 5.358257 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 55 Bell value: 5.874235 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 56 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 57 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 58 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 59 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 60 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 61 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 62 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 63 Bell value: 5.873568 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 64 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 65 Bell value: 5.874229 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 66 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 67 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 68 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 69 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 70 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 71 Bell value: 5.200080 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 72 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 73 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 74 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 75 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 76 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 77 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 78 Bell value: 5.188922 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 79 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 80 Bell value: 5.145699 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 81 Bell value: 5.874214 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 82 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 83 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 84 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 85 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 86 Bell value: 5.874233 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 87 Bell value: 5.198047 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 88 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 89 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 90 Bell value: 5.807742 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 91 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 92 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 93 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 94 Bell value: 5.874236 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 95 Bell value: 5.874228 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 96 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 97 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 98 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 99 Bell value: 5.200000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 100 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 101 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 102 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 103 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 104 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 105 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 106 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 107 Bell value: 5.200103 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 108 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 109 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 110 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 111 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 112 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 113 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 114 Bell value: 5.999988 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 115 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 116 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 117 Bell value: 5.794146 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 118 Bell value: 5.874124 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 119 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 120 Bell value: 5.872660 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 121 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 122 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 123 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 124 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 125 Bell value: 5.874236 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 126 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 127 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 128 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 129 Bell value: 5.871719 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 130 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 131 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 132 Bell value: 5.999996 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 133 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 134 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 135 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 136 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 137 Bell value: 5.999771 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 138 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 139 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 140 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 141 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 142 Bell value: 5.874228 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 143 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 144 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 145 Bell value: 5.200097 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 146 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 147 Bell value: 5.014138 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 148 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 149 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 150 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 151 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 152 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 153 Bell value: 5.199989 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 154 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 155 Bell value: 5.200101 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 156 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 157 Bell value: 5.200188 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 158 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 159 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 160 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 161 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 162 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 163 Bell value: 5.203341 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 164 Bell value: 5.874016 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 165 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 166 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 167 Bell value: 5.638636 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 168 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 169 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 170 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 171 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 172 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 173 Bell value: 5.874234 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 174 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 175 Bell value: 5.116958 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 176 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 177 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 178 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 179 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 180 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 181 Bell value: 5.999475 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 182 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 183 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 184 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 185 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 186 Bell value: 5.999932 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 187 Bell value: 5.874157 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 188 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 189 Bell value: 5.874236 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 190 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 191 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 192 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 193 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 194 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 195 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 196 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 197 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 198 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 199 Bell value: 5.874232 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 200 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 201 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 202 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 203 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 204 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 205 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 206 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 207 Bell value: 5.874231 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 208 Bell value: 5.874235 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 209 Bell value: 5.200091 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 210 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 211 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 212 Bell value: 5.862993 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 213 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 214 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 215 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 216 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 217 Bell value: 5.999917 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 218 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 219 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 220 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 221 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 222 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 223 Bell value: 5.874017 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 224 Bell value: 5.874227 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 225 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 226 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 227 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 228 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 229 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 230 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 231 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 232 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 233 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 234 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 235 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 236 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 237 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 238 Bell value: 5.874233 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 239 Bell value: 5.200083 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 240 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 241 Bell value: 5.874166 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 242 Bell value: 5.918737 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 243 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 244 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 245 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 246 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 247 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 248 Bell value: 5.999900 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 249 Bell value: 5.999995 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 250 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 251 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 252 Bell value: 5.874235 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 253 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 254 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 255 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 256 Bell value: 5.874228 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 257 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 258 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 259 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 260 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 261 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 262 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 263 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 264 Bell value: 5.874209 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 265 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 266 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 267 Bell value: 5.874236 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 268 Bell value: 5.873962 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 269 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 270 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 271 Bell value: 5.200000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 272 Bell value: 5.874227 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 273 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 274 Bell value: 5.410723 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 275 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 276 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 277 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 278 Bell value: 5.200178 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 279 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 280 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 281 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 282 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 283 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 284 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 285 Bell value: 5.874220 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 286 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 287 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 288 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 289 Bell value: 5.676762 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 290 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 291 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 292 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 293 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 294 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 295 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 296 Bell value: 5.874236 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 297 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 298 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 299 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 300 Bell value: 5.874226 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 301 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 302 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 303 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 304 Bell value: 5.874235 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 305 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 306 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 307 Bell value: 5.999999 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 308 Bell value: 5.874180 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 309 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 310 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 311 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 312 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 313 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 314 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 315 Bell value: 5.874238 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 316 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 317 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 318 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 319 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 320 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 321 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 322 Bell value: 5.874206 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 323 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 324 Bell value: 5.874230 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 325 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 326 Bell value: 5.999999 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 327 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 328 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 329 Bell value: 5.874239 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 330 Bell value: 5.869564 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 331 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 332 Bell value: 5.874020 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 333 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 334 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 335 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 336 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 337 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 338 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 339 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 340 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 341 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 342 Bell value: 5.874221 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 343 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 344 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 345 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 346 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 347 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 348 Bell value: 5.874240 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 349 Bell value: 5.874237 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 350 Bell value: 6.000000 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 351 Bell value: 5.999932 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 352 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 353 Bell value: 5.200137 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 354 Bell value: 5.874226 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 355 Bell value: 5.874241 NS2bound: 6.000000 and quantumbound: 7.308420
+Ineq = 100 Iter = 356 Bell value: 5.874173 NS2bound: 6.000000 and quantumbound: 7.308420
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getavailablesolvers', 'C:\Program Files\MATLAB\YALMIP-master\solvers\getavailablesolvers.m', 12)" style="font-weight:bold">getavailablesolvers</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\solvers\getavailablesolvers.m',12,0)">line 12</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compileinterfacedata', 'C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m', 164)" style="font-weight:bold">compileinterfacedata</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\compileinterfacedata.m',164,0)">line 164</a>)
+    [solvers,kept,allsolvers] = getavailablesolvers(findallsolvers,options);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m', 249)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\solvesdp.m',249,0)">line 249</a>)
+[interfacedata,recoverdata,solver,diagnostic,F,Fremoved,ForiginalQuadratics] = compileinterfacedata(F,[],logdetStruct,h,options,0,solving_parametric);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 81)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',81,0)">line 81</a>)
+    sol = optimize(constraints, -objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m', 65)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\scripts_ns2\arXiv1112_2626_check.m',65,0)">line 65</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(1-0.8), POVMs, channel);
+} 
+    e1 = [1;0];
+    e2 = [0;1];
+
+    e1e1 = Tensor(e1,e1);
+    e1e2 = Tensor(e1,e2);
+    e2e1 = Tensor(e2,e1);
+    e2e2 = Tensor(e2,e2);
+    
+    psi_xi = cos(xi) * e1e1 + sin(xi) * e2e2;
+{Unrecognized function or variable 'xi'.
+} 
+xi=0.3
+
+xi =
+
+    0.3000
+
+e1 = [1;0];
+    e2 = [0;1];
+
+    e1e1 = Tensor(e1,e1);
+    e1e2 = Tensor(e1,e2);
+    e2e1 = Tensor(e2,e1);
+    e2e2 = Tensor(e2,e2);
+    
+    psi_xi = cos(xi) * e1e1 + sin(xi) * e2e2;
+psi_xi
+
+psi_xi =
+
+    0.9553
+         0
+         0
+    0.2955
+
+psi_xi = psi_xi * psi_xi' / norm(psi_xi)
+
+psi_xi =
+
+    0.9127         0         0    0.2823
+         0         0         0         0
+         0         0         0         0
+    0.2823         0         0    0.0873
+
+
+
+
+ This is INEQUALITY nr ineq_nr=1, localboundNS2=1.000000 quantumbound=1.000000
+
+
+
+Round 1 of the see-saw.
+Ineq = 1 Iter = 1 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 2 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 3 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 4 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 5 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 6 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 7 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 8 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 9 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 10 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 11 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 12 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 13 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 14 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 15 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 16 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 17 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 18 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 19 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 20 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 21 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 22 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 23 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 24 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 25 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 26 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 27 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 28 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 29 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 30 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 31 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 32 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 33 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 34 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 35 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 36 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 37 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 38 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 39 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 40 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 41 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 42 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 43 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 44 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 45 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 46 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 47 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 48 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 49 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 50 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 51 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 52 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 53 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 54 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 55 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 56 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 57 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 58 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 59 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 60 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 61 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 62 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 63 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 64 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 65 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 66 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 67 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 68 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 69 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 70 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 71 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 72 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 73 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 74 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 75 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 76 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 77 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 78 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 79 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 80 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 81 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 82 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 83 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 84 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 85 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 86 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 87 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 88 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 89 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 90 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 91 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 92 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 93 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 94 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 95 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 96 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 97 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 98 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 99 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 100 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 101 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 102 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 103 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 104 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 105 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 106 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 107 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 108 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 109 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 110 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 111 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 112 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 113 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 114 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 115 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 116 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 117 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 118 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 119 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 120 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 121 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 122 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 123 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 124 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 125 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 126 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 127 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 128 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 129 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 130 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 131 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 132 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 133 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 134 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 135 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 136 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 137 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 138 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 139 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 140 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 141 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 142 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 143 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 144 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 145 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 146 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 147 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 148 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 149 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 150 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 151 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 152 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 153 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 154 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 155 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 156 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 157 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 158 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 159 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 160 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 161 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 162 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 163 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 164 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 165 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 166 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 167 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 168 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 169 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 170 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 171 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 172 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 173 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 174 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 175 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 176 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 177 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 178 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 179 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 180 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 181 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 182 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 183 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 184 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 185 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 186 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 187 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 188 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 189 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 190 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 191 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 192 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 193 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 194 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 195 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 196 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 197 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 198 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Ineq = 1 Iter = 199 Bell value: 1.000000 NS2bound: 1.000000 and quantumbound: 1.000000
+Best of 1: 0.000000
+
+
+
+ This is INEQUALITY nr ineq_nr=2, localboundNS2=4.000000 quantumbound=4.750690
+
+
+
+Round 1 of the see-saw.
+Ineq = 2 Iter = 1 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 2 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 3 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 4 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 5 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 6 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 7 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 8 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 9 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 10 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 11 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 12 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 13 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 14 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 15 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 16 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 17 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 18 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 19 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 20 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 21 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 22 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 23 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 24 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 25 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 26 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 27 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 28 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 29 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 30 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 31 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 32 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 33 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 34 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 35 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 36 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 37 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 38 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 39 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 40 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 41 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 42 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 43 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 44 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 45 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 46 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 47 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 48 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 49 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 50 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 51 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 52 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 53 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 54 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 55 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 56 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 57 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 58 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 59 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 60 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 61 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 62 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 63 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 64 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 65 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 66 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 67 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 68 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 69 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 70 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 71 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 72 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 73 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 74 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 75 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 76 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 77 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 78 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 79 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 80 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 81 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 82 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 83 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 84 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 85 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 86 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 87 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 88 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 89 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 90 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 91 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 92 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 93 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 94 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 95 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 96 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 97 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 98 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 99 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 100 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 101 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 102 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 103 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 104 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 105 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 106 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 107 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 108 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 109 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 110 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 111 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 112 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 113 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 114 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 115 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 116 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 117 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 118 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 119 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 120 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 121 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 122 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 123 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 124 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 125 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 126 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 127 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 128 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 129 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 130 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 131 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 132 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 133 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 134 Bell value: 3.999999 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 135 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 136 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 137 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 138 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 139 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 140 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 141 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 142 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 143 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 144 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 145 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 146 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 147 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 148 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 149 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 150 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 151 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 152 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 153 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 154 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 155 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 156 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 157 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 158 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 159 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 160 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 161 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 162 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 163 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 164 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 165 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 166 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 167 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 168 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 169 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 170 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 171 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 172 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 173 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 174 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 175 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 176 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 177 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 178 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 179 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 180 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 181 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 182 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 183 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 184 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 185 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 186 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 187 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 188 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 189 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 190 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 191 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 192 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 193 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 194 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 195 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 196 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 197 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 198 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Ineq = 2 Iter = 199 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.750690
+Best of 1: 0.000000
+
+
+
+ This is INEQUALITY nr ineq_nr=3, localboundNS2=4.000000 quantumbound=4.811930
+
+
+
+Round 1 of the see-saw.
+Ineq = 3 Iter = 1 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 2 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 3 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 4 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 5 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 6 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 7 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 8 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 9 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 10 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 11 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 12 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 13 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 14 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 15 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 16 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 17 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 18 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 19 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 20 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 21 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 22 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 23 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 24 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 25 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 26 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 27 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 28 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 29 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 30 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 31 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 32 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 33 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 34 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 35 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 36 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 37 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 38 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 39 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 40 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 41 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 42 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 43 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 44 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 45 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 46 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 47 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 48 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 49 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 50 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 51 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 52 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 53 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 54 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 55 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 56 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 57 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 58 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 59 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 60 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 61 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 62 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 63 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 64 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 65 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 66 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 67 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 68 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 69 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 70 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 71 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 72 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 73 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 74 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 75 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 76 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 77 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 78 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 79 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 80 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 81 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 82 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 83 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 84 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 85 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 86 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 87 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 88 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 89 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 90 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 91 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 92 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 93 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 94 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 95 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 96 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 97 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 98 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 99 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 100 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 101 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 102 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 103 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 104 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 105 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 106 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 107 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 108 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 109 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 110 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 111 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 112 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 113 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 114 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 115 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 116 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 117 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 118 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 119 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 120 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 121 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 122 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 123 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 124 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 125 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 126 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 127 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 128 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+Ineq = 3 Iter = 129 Bell value: 4.000000 NS2bound: 4.000000 and quantumbound: 4.811930
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 56)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',56,0)">line 56</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check', 'C:\Users\Emi\Documents\Code\broadcast2\std_maf_080\arXiv1112_2626_check.m', 65)" style="font-weight:bold">arXiv1112_2626_check</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\std_maf_080\arXiv1112_2626_check.m',65,0)">line 65</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyPartiallyEntangled(1-0.8, 0.1), POVMs, channel);
+} 
+clear all
+arXiv1112_2626_check_vis

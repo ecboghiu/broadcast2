@@ -21,7 +21,7 @@ function [finalPproj,finalobj,finalchannel] = SeeSawOverAllParties(bellcoeffs, i
             
             abschange = abs(newobjval - objval);
             
-            fprintf("iter=%d, partyidx=%d, bellineqvalue=%f, abschangeobjval=%g\n", iteration, partyidx, newobjval, abschange);
+            %fprintf("iter=%d, partyidx=%d, bellineqvalue=%f, abschangeobjval=%g\n", iteration, partyidx, newobjval, abschange);
             objval = newobjval;
         else
             % now we do the channel
@@ -29,7 +29,7 @@ function [finalPproj,finalobj,finalchannel] = SeeSawOverAllParties(bellcoeffs, i
             channel = newchannel;
                         
             abschange = abs(newobjval-objval);
-            fprintf("iter=%d, channelq=%c, bellineqvalue=%f, abschangeobjval=%g\n", iteration, "~", newobjval, abschange);
+            %fprintf("iter=%d, channelq=%c, bellineqvalue=%f, abschangeobjval=%g\n", iteration, "~", newobjval, abschange);
    
             objval = newobjval;
         end

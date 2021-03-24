@@ -1,7 +1,8 @@
-function [eta, bellcoeffs] = BroadcastSlowLPdetectorefficiency(ini_prob,nr_inputs_per_party,nr_outputs_per_party, ETA_CONV_TOLERANCE)
+function [eta, bellcoeffs] = BroadcastSlowLPdetectorefficiency(LP_feas_optimizer,ini_prob,nr_inputs_per_party,nr_outputs_per_party, ETA_CONV_TOLERANCE)
 
 % for this code p1 should be outside the local set and p2 inside
 dims_p = [nr_inputs_per_party(:)', nr_outputs_per_party(:)'];
+aux_dims_detector_eff = num2cell([nr_inputs_per_party, nr_outputs_per_party + 1]);
 aux_cell = num2cell(dims_p);
 eta = 0;
 am = 0;
@@ -9,13 +10,11 @@ bellcoeffs = zeros(aux_cell{:});
 
 nr_parties = length(nr_inputs_per_party);
 
-
-
 p1 = giveDetectorEfficiencydistrib(ini_prob, 1.0 * ones(1,nr_parties), nr_inputs_per_party, nr_outputs_per_party);
 p2 = giveDetectorEfficiencydistrib(ini_prob, 0.0 * ones(1,nr_parties), nr_inputs_per_party, nr_outputs_per_party);
 
-[~, L1] = BroadcastLPfeasibility(p1);%SlowLP(p1, nr_inputs_per_party, nr_outputs_per_party);
-[~, L2] = BroadcastLPfeasibility(p2);%SlowLP(p2, nr_inputs_per_party, nr_outputs_per_party);
+[~, L1] = LP_feas_optimizer(p1);%SlowLP(p1, nr_inputs_per_party, nr_outputs_per_party);
+[~, L2] = LP_feas_optimizer(p2);%SlowLP(p2, nr_inputs_per_party, nr_outputs_per_party);
 if L1 == 0 && L2 == 0
     eta = 0;
     aux_cell = num2cell(dims_p);
@@ -46,7 +45,7 @@ if L1 == 1 && L2 == 0
     l1 = 1;
     l2 = 0;
     noisy_prob = giveDetectorEfficiencydistrib(ini_prob, (1-am) * ones(1,nr_parties), nr_inputs_per_party, nr_outputs_per_party);
-    [~, lm] =  BroadcastLPfeasibility(noisy_prob); %SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party + 1);
+    [~, lm] =  LP_feas_optimizer(noisy_prob); %SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party + 1);
 
 
     precision = 1;
@@ -68,12 +67,13 @@ if L1 == 1 && L2 == 0
         end
         
         noisy_prob = giveDetectorEfficiencydistrib(ini_prob, (1-am) * ones(1,nr_parties), nr_inputs_per_party, nr_outputs_per_party);
-        [bellcoeffs_temp, lm] =  BroadcastLPfeasibility(noisy_prob); %SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party + 1);
+        [~, lm, ~, bellcoeffs_temp] =  LP_feas_optimizer(noisy_prob); %SlowLP(noisy_prob, nr_inputs_per_party, nr_outputs_per_party + 1);
         fprintf("LP bisection progress: am=%g lm=%g\n", am, lm);
         if lm == 0
-            bellcoeffs = bellcoeffs_temp;
+            bellcoeffs_temp1 = bellcoeffs_temp{1};
+            bellcoeffs = reshape(bellcoeffs_temp1(1:prod([aux_dims_detector_eff{:}])),[aux_dims_detector_eff{:}]);  % TODO CHECK CORRECTNESS
         else
-            bellcoeffs = zeros(aux_cell{:});
+            bellcoeffs = zeros(aux_dims_detector_eff{:});
         end
 
         precision = abs(alpha_prev-am);

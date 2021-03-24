@@ -18,8 +18,7 @@ p_noisy = (1-alpha)*p_entangled + alpha*p_uniform;
 % end
 
 objective = 0;
-auxsize=size(bellcoeffs);
-coords = ind2subv(size(bellcoeffs), 1:prod(auxsize(:)));
+coords = ind2subv(size(bellcoeffs), 1:prod(dims(:)));
 for idx = 1:size(coords,1)
     coords_choice = num2cell(coords(idx,:));
     objective = objective + bellcoeffs(coords_choice{:}) * p_noisy(coords_choice{:});
@@ -35,5 +34,8 @@ if optsol.problem ~= 0
 end
 
 visibility = value(alpha);
+
+%list = whos;for i = 1:length(list);if strcmp(list(i).class,'sdpvar');clear(list(i).name);end;end
+yalmip("clear");
 end
 

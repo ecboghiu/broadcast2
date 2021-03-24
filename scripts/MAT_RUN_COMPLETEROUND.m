@@ -101,11 +101,12 @@ while meta_iteration < MAX_ITER_META && latest_alpha_meta < 1-0.6
         if LPstatus ~= 0
             %disp('LP not solved correctly');
             fprintf("LP not solved correctly. Trying another set of initial points.\n");
-            break;
-            %error('Check why infeasible problem.'); 
             list_of_alphas = [list_of_alphas, 0];
             list_of_povms{iteration} = 0;
             list_of_channels{iteration} = 0;
+            break;
+            %error('Check why infeasible problem.'); 
+            
         else
             bellcoeffs = newbellcoeffs;
             alpha = newalpha;
@@ -127,10 +128,17 @@ while meta_iteration < MAX_ITER_META && latest_alpha_meta < 1-0.6
         end
         %alpha = outputcritvis{1} + 0.01;
     end
-    final_round_alpha = [final_round_alpha, list_of_alphas(end)];
-    final_round_povm{length(final_round_alpha)} = list_of_povms{end};
-    final_round_channels{length(final_round_alpha)} = list_of_channels{end};
-    latest_alpha_meta = final_round_alpha(end);
+    if isempty(final_round_alpha)
+        final_round_alpha = [list_of_alphas(1)];
+        final_round_povm{1} = list_of_povms{1};
+        final_round_channels{1} = list_of_channels{1};
+        latest_alpha_meta = final_round_alpha(end);
+    else
+        final_round_alpha = [final_round_alpha, list_of_alphas(end)];
+        final_round_povm{length(final_round_alpha)} = list_of_povms{end};
+        final_round_channels{length(final_round_alpha)} = list_of_channels{end};
+        latest_alpha_meta = final_round_alpha(end);
+    end
     meta_iteration = meta_iteration + 1;
 end
 
