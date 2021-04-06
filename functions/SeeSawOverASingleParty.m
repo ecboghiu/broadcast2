@@ -85,7 +85,7 @@ summ = 0;
 
     if sol.problem ~= 0
        disp(sol);
-       error('Check what problem there is.'); 
+       warning('Check what problem there is.'); 
     end
     %% Return output
     newPovms = povms;
