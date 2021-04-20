@@ -39,29 +39,32 @@ channel = {giveChannelRAND(2,4)};
 bellcoeffs = bellcoeffs_ref;
 state = NoisyWernerState(0.7);
 
-optimizer_objects = optimizer_SeeSaw(dims, 2);
+optimizer_objects = optimizer_Channel(dims, 2);
 
 %%
-optimizer_channel = optimizer_objects{1};
-opt_a = optimizer_objects{2};
-opt_b = optimizer_objects{3};
-opt_c = optimizer_objects{4};
+optimizer_ch = optimizer_objects{1};
+% opt_a = optimizer_objects{2};
+% opt_b = optimizer_objects{3};
+% opt_c = optimizer_objects{4};
+
+bell_operator = give_Bell_operator(bellcoeffs, povms, ins, outs);
 
 ia_povms = give_ia_povms(povms, ins, outs);
 ia_state = give_ia_state(state);
 ia_choi = give_ia_state(ChoiMatrix(channel));
+ia_belloperator = give_ia_state(bell_operator);
 
 %%
 tic
-for i=1:25
+for i=1:50
     [newchannel,newobjval1,~] = SeeSawOverChannel(state, bellcoeffs, povms);
 end
 toc
 fprintf('%f\n', newobjval1);
 
 tic
-for i=1:25
-    output = optimizer_channel([{ia_state}, {bellcoeffs}, ia_povms(:)']);
+for i=1:50
+    output = optimizer_ch([{ia_state}, {bell_operator}]);
 end
 toc
 fprintf('%f\n', output{2});
@@ -76,6 +79,7 @@ end
 toc
 fprintf('%f\n', newobjval2);
     
+out1=opt_ch([{ia_state}, {bellcoeffs}, ia_povms(:)']);
 
 output2 = opt_a([{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(2,:,:),1,[]),reshape(ia_povms(3,:,:),1,[])]);
 output3 = opt_b([{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,[]),reshape(ia_povms(3,:,:),1,[])]);
@@ -87,8 +91,10 @@ output4 = opt_c([{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,
 %                          sdpsettings('solver','mosek'), ...
 %                         [{ia_state}, {bellcoeffs}, ia_povms(:)'], {choi, objective});
 
+
+
 %% funcs
-function opt = optimizer_SeeSaw(dims, inputdimspace)
+function opt = optimizer_Channel(dims, inputdimspace)
     fprintf("Calculating YALMIP's 'optimizer' of the scenario. It can take a while.\n");
     fprintf("Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.\n");
     nrparties = length(dims)/2;
@@ -112,19 +118,19 @@ function opt = optimizer_SeeSaw(dims, inputdimspace)
     state = sdpvar(state_dim,state_dim,'hermitian','complex');
     ia_state = give_ia_state(state);
     
-    aux_cell = num2cell(dims);
-    bellcoeffs = sdpvar(aux_cell{:},'full');
-    
-    povms = cell(nrparties, max(ins), max(outs));
-    ia_povms = cell(nrparties, max(ins), max(outs)); 
-    for party=1:nrparties
-        for in=1:ins(party)
-            for out=1:outs(party)
-                povms{party,in,out} = sdpvar(outs(party),outs(party),'hermitian','complex');
-                ia_povms{party,in,out} = povms{party,in,out}(find(triu(ones(outs(party)))));
-            end
-        end
-    end
+%     aux_cell = num2cell(dims);
+%     bellcoeffs = sdpvar(aux_cell{:},'full');
+%     
+%     povms = cell(nrparties, max(ins), max(outs));
+%     ia_povms = cell(nrparties, max(ins), max(outs)); 
+%     for party=1:nrparties
+%         for in=1:ins(party)
+%             for out=1:outs(party)
+%                 povms{party,in,out} = sdpvar(outs(party),outs(party),'hermitian','complex');
+%                 ia_povms{party,in,out} = povms{party,in,out}(find(triu(ones(outs(party)))));
+%             end
+%         end
+%     end
     choi = sdpvar(choidim,choidim,'hermitian','complex');
     ia_choi = give_ia_state(choi);
 
@@ -163,68 +169,68 @@ function opt = optimizer_SeeSaw(dims, inputdimspace)
     constraints_choi = cell(2);
     constraints_choi{1} = choi >= 0;
     constraints_choi{2} = PartialTrace(choi, 2, [dimB, dimB1*dimB2]) == idB;
-    
-    constraints_povm = cell(nrparties, max(ins));
-    for partyidx=1:nrparties
-        for x=1:ins(partyidx)
-            summ = 0;
-            for a=1:outs(partyidx)
-                summ = summ + povms{party,x,a};
-                constraints_povm{partyidx,x} = [constraints_povm{partyidx,x},  povms{party,x,a} >= 0];
-            end
-            constraints_povm{partyidx,x} = [constraints_povm{partyidx,x}, summ == eye(outs(partyidx))];
-        end
-    end
+%     
+%     constraints_povm = cell(nrparties, max(ins));
+%     for partyidx=1:nrparties
+%         for x=1:ins(partyidx)
+%             summ = 0;
+%             for a=1:outs(partyidx)
+%                 summ = summ + povms{party,x,a};
+%                 constraints_povm{partyidx,x} = [constraints_povm{partyidx,x},  povms{party,x,a} >= 0];
+%             end
+%             constraints_povm{partyidx,x} = [constraints_povm{partyidx,x}, summ == eye(outs(partyidx))];
+%         end
+%     end
     
     fprintf("Calculating Bell operator.\n");
-    tic
-    state_times_BellOperator = 0;
-    for x=1:ins(1)
-        for y=1:ins(2)
-            for z=1:ins(3)
-                for a=1:outs(1)
-                    for b=1:outs(2)
-                        for c=1:outs(3)
-                            fprintf("Progress on calculating symbolically output_state*BellOperator: %d %d %d %d %d %d\n", x, y, z, a, b, c);
-                            term = Tensor(povms{1,x,a}, ...
-                                            povms{2,y,b},...
-                                            povms{3,z,c});
-                            state_times_BellOperator = state_times_BellOperator + output_state*bellcoeffs(x,y,z,a,b,c)*term;
-                        end
-                    end
-                end
-            end
-        end        
-    end
-    toc
-    
+%     tic
+%     state_times_BellOperator = 0;
+%     for x=1:ins(1)
+%         for y=1:ins(2)
+%             for z=1:ins(3)
+%                 for a=1:outs(1)
+%                     for b=1:outs(2)
+%                         for c=1:outs(3)
+%                             fprintf("Progress on calculating symbolically output_state*BellOperator: %d %d %d %d %d %d\n", x, y, z, a, b, c);
+%                             term = Tensor(povms{1,x,a}, ...
+%                                             povms{2,y,b},...
+%                                             povms{3,z,c});
+%                             state_times_BellOperator = state_times_BellOperator + output_state*bellcoeffs(x,y,z,a,b,c)*term;
+%                         end
+%                     end
+%                 end
+%             end
+%         end        
+%     end
+%     toc
+    BellOperator = sdpvar(dimA*dimB1*dimB2,dimA*dimB1*dimB2,'full','complex');
     
     
     fprintf("Calculating the objective. \n");
-    objective = real(trace(state_times_BellOperator));
+    objective = real(trace(BellOperator*output_state));
     
 
     
     fprintf("Calculating optimizer object\n");
     opt_choi = optimizer([constraints_choi{:}], -objective, ...
                          sdpsettings('solver','mosek'), ...
-                        [{ia_state}, {bellcoeffs}, ia_povms(:)'], ...
+                        [{ia_state}, {BellOperator}], ...
                         {choi, objective});
+% 
+%     opt_povm_A = optimizer([constraints_povm{1,:,:}], -objective, ...
+%                          sdpsettings('solver','mosek'), ...
+%                         [{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(2,:,:),1,[]),reshape(ia_povms(3,:,:),1,[])], ...
+%                         [{objective}, povms(:)']);
+%     opt_povm_B = optimizer([constraints_povm{2,:,:}], -objective, ...
+%                          sdpsettings('solver','mosek'), ...
+%                         [{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,[]),reshape(ia_povms(3,:,:),1,[])], ...
+%                         [{objective}, povms(:)']);
+%     opt_povm_C = optimizer([constraints_povm{3,:,:}], -objective, ...
+%                          sdpsettings('solver','mosek'), ...
+%                         [{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,[]),reshape(ia_povms(2,:,:),1,[])], ...
+%                         [{objective}, povms(:)']);
 
-    opt_povm_A = optimizer([constraints_povm{1,:,:}], -objective, ...
-                         sdpsettings('solver','mosek'), ...
-                        [{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(2,:,:),1,[]),reshape(ia_povms(3,:,:),1,[])], ...
-                        [{objective}, povms(:)']);
-    opt_povm_B = optimizer([constraints_povm{2,:,:}], -objective, ...
-                         sdpsettings('solver','mosek'), ...
-                        [{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,[]),reshape(ia_povms(3,:,:),1,[])], ...
-                        [{objective}, povms(:)']);
-    opt_povm_C = optimizer([constraints_povm{3,:,:}], -objective, ...
-                         sdpsettings('solver','mosek'), ...
-                        [{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,[]),reshape(ia_povms(2,:,:),1,[])], ...
-                        [{objective}, povms(:)']);
-
-    opt = {opt_choi, opt_povm_A, opt_povm_B, opt_povm_C};
+    opt = {opt_choi};
                     
 % %     sol = optimize(constraints, -objective, ...
 % %                     sdpsettings('solver','mosek','verbose', 0, ...
@@ -241,6 +247,26 @@ function opt = optimizer_SeeSaw(dims, inputdimspace)
     
     %list = whos;for i = 1:length(list);if strcmp(list(i).class,'sdpvar');clear(list(i).name);end;end
     %yalmip("clear");
+end
+
+function [belloperator] = give_Bell_operator(bellcoeffs, povms, ins, outs)
+belloperator = zeros(prod(outs(:)),prod(outs(:)));
+for x=1:ins(1)
+    for y=1:ins(2)
+        for z=1:ins(3)
+            for a=1:outs(1)
+                for b=1:outs(2)
+                    for c=1:outs(3)
+                        term = Tensor(povms{1}{x}{a}, ...
+                                        povms{2}{y}{b},...
+                                        povms{3}{z}{c});
+                        belloperator = belloperator + bellcoeffs(x,y,z,a,b,c)*term;
+                    end
+                end
+            end
+        end
+    end        
+end
 end
 
 function [a_r, a_i] = give_r_i(a)
