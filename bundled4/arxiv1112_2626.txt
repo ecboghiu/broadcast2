@@ -1,0 +1,163 @@
+
+
+
+ Inequality number = 30
+
+
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.973762 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:0/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.858761 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:1/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.625988 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:2/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.447420 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:3/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.493446 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:4/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=4.045423 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:5/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=4.003041 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:6/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.999999 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:7/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=6.711879 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:8/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=7.999999 Bell·p_unif=5.122342 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:9/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.946823 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:10/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=5.697167 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:11/50
+Vis of ineq given random ini = 0.009430. vis_state=0.000000 Bell·p_ent=8.031687 Bell·p_unif=4.671589 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:12/50
+
+Found good initial condition. Bell value:8.031687 NS2Bound: 8.000000 alpha=0.009430 state_vis=0.000000
+Given this point, optimize the visibility of the inequality.
+
+Visibility of ineq 30/185 after optimizing = 0.009429. vis_state=0.000000  Bellvalue=8.031688 Bell·p_ent=8.031688 Bell·p_unif=4.670935 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009425. vis_state=0.000000  Bellvalue=8.031692 Bell·p_ent=8.031692 Bell·p_unif=4.669186 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009387. vis_state=0.000000  Bellvalue=8.031712 Bell·p_ent=8.031712 Bell·p_unif=4.653648 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009351. vis_state=0.000000  Bellvalue=8.031730 Bell·p_ent=8.031730 Bell·p_unif=4.638634 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009316. vis_state=0.000000  Bellvalue=8.031747 Bell·p_ent=8.031747 Bell·p_unif=4.624025 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009282. vis_state=0.000000  Bellvalue=8.031764 Bell·p_ent=8.031764 Bell·p_unif=4.609792 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009281. vis_state=0.000000  Bellvalue=8.031764 Bell·p_ent=8.031764 Bell·p_unif=4.609264 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009281. vis_state=0.000000  Bellvalue=8.031764 Bell·p_ent=8.031764 Bell·p_unif=4.609128 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009281. Update state vis from 0.000000 to -0.000719. DeltaVis=-0.000719
+Current best state visibility p = 0.000000
+Visibility of ineq 30/185 after optimizing = 0.009970. vis_state=-0.000719  Bellvalue=8.034231 Bell·p_ent=8.034231 Bell·p_unif=4.600960 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009917. vis_state=-0.000719  Bellvalue=8.034273 Bell·p_ent=8.034273 Bell·p_unif=4.578344 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009866. vis_state=-0.000719  Bellvalue=8.034312 Bell·p_ent=8.034312 Bell·p_unif=4.556448 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009816. vis_state=-0.000719  Bellvalue=8.034349 Bell·p_ent=8.034349 Bell·p_unif=4.535129 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009811. vis_state=-0.000719  Bellvalue=8.034353 Bell·p_ent=8.034353 Bell·p_unif=4.532731 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009806. vis_state=-0.000719  Bellvalue=8.034356 Bell·p_ent=8.034356 Bell·p_unif=4.530770 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009802. vis_state=-0.000719  Bellvalue=8.034359 Bell·p_ent=8.034359 Bell·p_unif=4.528978 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009798. vis_state=-0.000719  Bellvalue=8.034361 Bell·p_ent=8.034361 Bell·p_unif=4.527330 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009797. vis_state=-0.000719  Bellvalue=8.034361 Bell·p_ent=8.034361 Bell·p_unif=4.527140 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009797. Update state vis from -0.000719 to -0.000922. DeltaVis=-0.000203
+Current best state visibility p = 0.000000
+Visibility of ineq 30/185 after optimizing = 0.009945. vis_state=-0.000922  Bellvalue=8.035111 Bell·p_ent=8.035111 Bell·p_unif=4.504696 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009895. vis_state=-0.000922  Bellvalue=8.035152 Bell·p_ent=8.035152 Bell·p_unif=4.482688 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009846. vis_state=-0.000922  Bellvalue=8.035191 Bell·p_ent=8.035191 Bell·p_unif=4.461202 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009841. vis_state=-0.000922  Bellvalue=8.035194 Bell·p_ent=8.035194 Bell·p_unif=4.459141 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009841. vis_state=-0.000922  Bellvalue=8.035194 Bell·p_ent=8.035194 Bell·p_unif=4.458896 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009841. Update state vis from -0.000922 to -0.001081. DeltaVis=-0.000159
+Current best state visibility p = 0.000000
+Visibility of ineq 30/185 after optimizing = 0.009993. vis_state=-0.001081  Bellvalue=8.035763 Bell·p_ent=8.035763 Bell·p_unif=4.457101 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009989. vis_state=-0.001081  Bellvalue=8.035765 Bell·p_ent=8.035765 Bell·p_unif=4.455256 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009938. vis_state=-0.001081  Bellvalue=8.035810 Bell·p_ent=8.035810 Bell·p_unif=4.432487 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009889. vis_state=-0.001081  Bellvalue=8.035852 Bell·p_ent=8.035852 Bell·p_unif=4.410397 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009841. vis_state=-0.001081  Bellvalue=8.035891 Bell·p_ent=8.035891 Bell·p_unif=4.388797 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009795. vis_state=-0.001081  Bellvalue=8.035930 Bell·p_ent=8.035930 Bell·p_unif=4.367653 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009749. vis_state=-0.001081  Bellvalue=8.035966 Bell·p_ent=8.035966 Bell·p_unif=4.346945 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009705. vis_state=-0.001081  Bellvalue=8.036001 Bell·p_ent=8.036001 Bell·p_unif=4.326658 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009701. vis_state=-0.001081  Bellvalue=8.036003 Bell·p_ent=8.036003 Bell·p_unif=4.324680 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009658. vis_state=-0.001081  Bellvalue=8.036037 Bell·p_ent=8.036037 Bell·p_unif=4.304874 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009617. vis_state=-0.001081  Bellvalue=8.036069 Bell·p_ent=8.036069 Bell·p_unif=4.285575 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009616. vis_state=-0.001081  Bellvalue=8.036069 Bell·p_ent=8.036069 Bell·p_unif=4.285032 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009612. vis_state=-0.001081  Bellvalue=8.036071 Bell·p_ent=8.036071 Bell·p_unif=4.283439 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009609. vis_state=-0.001081  Bellvalue=8.036073 Bell·p_ent=8.036073 Bell·p_unif=4.281913 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009570. vis_state=-0.001081  Bellvalue=8.036103 Bell·p_ent=8.036103 Bell·p_unif=4.263407 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009568. vis_state=-0.001081  Bellvalue=8.036103 Bell·p_ent=8.036103 Bell·p_unif=4.262841 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009565. vis_state=-0.001081  Bellvalue=8.036105 Bell·p_ent=8.036105 Bell·p_unif=4.261475 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009562. vis_state=-0.001081  Bellvalue=8.036106 Bell·p_ent=8.036106 Bell·p_unif=4.260243 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009524. vis_state=-0.001081  Bellvalue=8.036135 Bell·p_ent=8.036135 Bell·p_unif=4.242250 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009488. vis_state=-0.001081  Bellvalue=8.036162 Bell·p_ent=8.036162 Bell·p_unif=4.224691 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009487. vis_state=-0.001081  Bellvalue=8.036162 Bell·p_ent=8.036162 Bell·p_unif=4.224240 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009450. vis_state=-0.001081  Bellvalue=8.036189 Bell·p_ent=8.036189 Bell·p_unif=4.206868 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009415. vis_state=-0.001081  Bellvalue=8.036214 Bell·p_ent=8.036214 Bell·p_unif=4.189963 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009412. vis_state=-0.001081  Bellvalue=8.036215 Bell·p_ent=8.036215 Bell·p_unif=4.188510 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009378. vis_state=-0.001081  Bellvalue=8.036239 Bell·p_ent=8.036239 Bell·p_unif=4.171962 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009377. vis_state=-0.001081  Bellvalue=8.036239 Bell·p_ent=8.036239 Bell·p_unif=4.171563 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009377. Update state vis from -0.001081 to -0.001704. DeltaVis=-0.000623
+Current best state visibility p = 0.000000
+Visibility of ineq 30/185 after optimizing = 0.009975. vis_state=-0.001704  Bellvalue=8.038647 Bell·p_ent=8.038647 Bell·p_unif=4.164425 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009926. vis_state=-0.001704  Bellvalue=8.038696 Bell·p_ent=8.038696 Bell·p_unif=4.140402 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009879. vis_state=-0.001704  Bellvalue=8.038742 Bell·p_ent=8.038742 Bell·p_unif=4.117044 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009877. vis_state=-0.001704  Bellvalue=8.038742 Bell·p_ent=8.038742 Bell·p_unif=4.116457 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009831. vis_state=-0.001704  Bellvalue=8.038787 Bell·p_ent=8.038787 Bell·p_unif=4.093446 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009826. vis_state=-0.001704  Bellvalue=8.038790 Bell·p_ent=8.038790 Bell·p_unif=4.091059 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009821. vis_state=-0.001704  Bellvalue=8.038792 Bell·p_ent=8.038792 Bell·p_unif=4.089056 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009821. vis_state=-0.001704  Bellvalue=8.038792 Bell·p_ent=8.038792 Bell·p_unif=4.088903 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009821. Update state vis from -0.001704 to -0.001883. DeltaVis=-0.000179
+Current best state visibility p = 0.000000
+Visibility of ineq 30/185 after optimizing = 0.009990. vis_state=-0.001883  Bellvalue=8.039500 Bell·p_ent=8.039500 Bell·p_unif=4.085380 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009989. vis_state=-0.001883  Bellvalue=8.039500 Bell·p_ent=8.039500 Bell·p_unif=4.085205 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009989. Update state vis from -0.001883 to -0.001894. DeltaVis=-0.000011
+Current best state visibility p = 0.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/kron', 'C:\Program Files\MATLAB\YALMIP-master\@sdpvar\kron.m', 44)" style="font-weight:bold">sdpvar/kron</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\kron.m',44,0)">line 44</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Tensor', 'C:\Program Files\MATLAB\QETLAB-0.9\Tensor.m', 62)" style="font-weight:bold">Tensor</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\QETLAB-0.9\Tensor.m',62,0)">line 62</a>)
+        krn = kron(krn,varargin{j-1});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 56)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',56,0)">line 56</a>)
+                               term = Tensor(chosenPartyMeasurements{x}{a}, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check_vis', 'C:\Users\Emi\Documents\Code\broadcast2\bundled4\arXiv1112_2626_check_vis.m', 76)" style="font-weight:bold">arXiv1112_2626_check_vis</a> (<a href="matlab: opentoline('C:\Users\Emi\Documents\Code\broadcast2\bundled4\arXiv1112_2626_check_vis.m',76,0)">line 76</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyPartiallyEntangled(visibility, CONST_CHI), POVMs, channel);
+} 
+arXiv1112_2626_check_vis
+
+
+
+ Inequality number = 30
+
+
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.841664 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:0/50
+Vis of ineq given random ini = 0.000102. vis_state=0.000000 Bell·p_ent=8.000818 Bell·p_unif=-0.027405 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:1/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=7.748621 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:2/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=7.999999 Bell·p_unif=7.942968 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:3/50
+Vis of ineq given random ini = 0.000000. vis_state=0.000000 Bell·p_ent=8.000000 Bell·p_unif=6.767277 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:4/50
+Vis of ineq given random ini = 0.009486. vis_state=0.000000 Bell·p_ent=8.031658 Bell·p_unif=4.694469 bound_l=8.000000 bound_q=8.525610 Ineq.nr.:30/185 Ini.iter.:5/50
+
+Found good initial condition. Bell value:8.031658 NS2Bound: 8.000000 alpha=0.009486 state_vis=0.000000
+Given this point, optimize the visibility of the inequality.
+
+Visibility of ineq 30/185 after optimizing = 0.009447. vis_state=0.000000  Bellvalue=8.031679 Bell·p_ent=8.031679 Bell·p_unif=4.678438 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009409. vis_state=0.000000  Bellvalue=8.031699 Bell·p_ent=8.031699 Bell·p_unif=4.662793 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009372. vis_state=0.000000  Bellvalue=8.031718 Bell·p_ent=8.031718 Bell·p_unif=4.647527 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009337. vis_state=0.000000  Bellvalue=8.031736 Bell·p_ent=8.031736 Bell·p_unif=4.632630 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009302. vis_state=0.000000  Bellvalue=8.031753 Bell·p_ent=8.031753 Bell·p_unif=4.618095 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009298. vis_state=0.000000  Bellvalue=8.031756 Bell·p_ent=8.031756 Bell·p_unif=4.616293 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009294. vis_state=0.000000  Bellvalue=8.031758 Bell·p_ent=8.031758 Bell·p_unif=4.614801 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009291. vis_state=0.000000  Bellvalue=8.031760 Bell·p_ent=8.031760 Bell·p_unif=4.613436 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009258. vis_state=0.000000  Bellvalue=8.031776 Bell·p_ent=8.031776 Bell·p_unif=4.599648 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009227. vis_state=0.000000  Bellvalue=8.031791 Bell·p_ent=8.031791 Bell·p_unif=4.586288 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009196. vis_state=0.000000  Bellvalue=8.031805 Bell·p_ent=8.031805 Bell·p_unif=4.573253 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009195. vis_state=0.000000  Bellvalue=8.031805 Bell·p_ent=8.031805 Bell·p_unif=4.572808 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009165. vis_state=0.000000  Bellvalue=8.031819 Bell·p_ent=8.031819 Bell·p_unif=4.559928 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009136. vis_state=0.000000  Bellvalue=8.031832 Bell·p_ent=8.031832 Bell·p_unif=4.547470 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009135. vis_state=0.000000  Bellvalue=8.031832 Bell·p_ent=8.031832 Bell·p_unif=4.547056 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009134. vis_state=0.000000  Bellvalue=8.031832 Bell·p_ent=8.031832 Bell·p_unif=4.546959 bound_l=8.000000 bound_q=8.525610
+Ineq vis converged to: 0.009134. Update state vis from 0.000000 to -0.000866. DeltaVis=-0.000866
+Current best state visibility p = 0.000000
+Visibility of ineq 30/185 after optimizing = 0.009937. vis_state=-0.000866  Bellvalue=8.034877 Bell·p_ent=8.034877 Bell·p_unif=4.524907 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009885. vis_state=-0.000866  Bellvalue=8.034918 Bell·p_ent=8.034918 Bell·p_unif=4.502450 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009835. vis_state=-0.000866  Bellvalue=8.034957 Bell·p_ent=8.034957 Bell·p_unif=4.480589 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009829. vis_state=-0.000866  Bellvalue=8.034961 Bell·p_ent=8.034961 Bell·p_unif=4.478136 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009825. vis_state=-0.000866  Bellvalue=8.034965 Bell·p_ent=8.034965 Bell·p_unif=4.476126 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009777. vis_state=-0.000866  Bellvalue=8.035002 Bell·p_ent=8.035002 Bell·p_unif=4.455156 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009732. vis_state=-0.000866  Bellvalue=8.035036 Bell·p_ent=8.035036 Bell·p_unif=4.434811 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009687. vis_state=-0.000866  Bellvalue=8.035069 Bell·p_ent=8.035069 Bell·p_unif=4.414945 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009683. vis_state=-0.000866  Bellvalue=8.035072 Bell·p_ent=8.035072 Bell·p_unif=4.412915 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009640. vis_state=-0.000866  Bellvalue=8.035104 Bell·p_ent=8.035104 Bell·p_unif=4.393552 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009635. vis_state=-0.000866  Bellvalue=8.035106 Bell·p_ent=8.035106 Bell·p_unif=4.391675 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009632. vis_state=-0.000866  Bellvalue=8.035107 Bell·p_ent=8.035107 Bell·p_unif=4.390140 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009629. vis_state=-0.000866  Bellvalue=8.035109 Bell·p_ent=8.035109 Bell·p_unif=4.388822 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009626. vis_state=-0.000866  Bellvalue=8.035110 Bell·p_ent=8.035110 Bell·p_unif=4.387660 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009587. vis_state=-0.000866  Bellvalue=8.035139 Bell·p_ent=8.035139 Bell·p_unif=4.369971 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009549. vis_state=-0.000866  Bellvalue=8.035166 Bell·p_ent=8.035166 Bell·p_unif=4.352346 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009547. vis_state=-0.000866  Bellvalue=8.035167 Bell·p_ent=8.035167 Bell·p_unif=4.351826 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009509. vis_state=-0.000866  Bellvalue=8.035194 Bell·p_ent=8.035194 Bell·p_unif=4.334252 bound_l=8.000000 bound_q=8.525610
+Visibility of ineq 30/185 after optimizing = 0.009506. vis_state=-0.000866  Bellvalue=8.035195 Bell·p_ent=8.035195 Bell·p_unif=4.332810 bound_l=8.000000 bound_q=8.525610
+<a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m',177,1)">177 </a>        end

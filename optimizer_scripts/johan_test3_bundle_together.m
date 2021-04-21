@@ -39,7 +39,7 @@ channel = {giveChannelRAND(2,4)};
 bellcoeffs = bellcoeffs_ref;
 state = NoisyWernerState(0.7);
 
-optimizer_objects = optimizer_Channel(dims, 2);
+optimizer_objects = optimizer_Channel(ins, outs, 2);
 
 %%
 optimizer_ch = optimizer_objects{1};
@@ -94,12 +94,10 @@ output4 = opt_c([{ia_state}, {bellcoeffs}, {ia_choi}, reshape(ia_povms(1,:,:),1,
 
 
 %% funcs
-function opt = optimizer_Channel(dims, inputdimspace)
+function opt = optimizer_Channel(ins, outs, inputdimspace)
     fprintf("Calculating YALMIP's 'optimizer' of the scenario. It can take a while.\n");
     fprintf("Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.\n");
-    nrparties = length(dims)/2;
-    ins = dims(1:nrparties);
-    outs = dims(nrparties+1:end);
+    nrparties = length(ins);
 
     dimA = outs(1);
     dimB = inputdimspace;
@@ -138,33 +136,40 @@ function opt = optimizer_Channel(dims, inputdimspace)
     state_small = state; %ini_state(alpha);
     state_small_reshaped = reshape(state_small, dimA,dimB,dimA,dimB);
     
+    %%
    % TODO change this to a cleaner form, check that it gives the same
-    state_sum = 0;
-    for i=1:dimA
-        for j=1:dimB
-            for k=1:dimA
-                for l=1:dimB
-                    %scnd = PartialTrace( choi * Tensor( ketbra(j,l,dimB).', idB1B2),...
-                    %                    1, [dimB,dimB1*dimB2] );
-                    state_sum = state_sum + state_small_reshaped(i,j,k,l) * ...
-                                    kron(ketbra(i,k,dimA), ApplyMap(ketbra(j,l,dimB), choi));
-                end
-            end
-        end
-    end
-    output_state = state_sum;
-  
-% %     biggerstate = kron( state.', eye(dimA*dimB1*dimB2) );
-% %     Phi = auxPHI(dimA);
-% %     biggerchannel = kron(Phi*Phi',choi);
-% %     % after previous line tensor spaces are A x A x B x B1 x B2, we need
-% %     % to swap the 2nd and 3rd
-% %     swapop=Tensor(eye(dimA),SwapOperator(2),eye(dimB1*dimB2)); % This ends up being a big matrix!
-% %     biggerchannel = swapop * biggerchannel * swapop';
-% %     output_state = PartialTrace(biggerchannel*biggerstate, [1,2], [dimA,dimB,dimA,dimB1,dimB2]);
-% %     %state = AppleMap(inistate, biggerchannel);  % either this or the
-% %                                                 % previous line work well
-    
+% %     state_sum = 0;
+% %     for i=1:dimA
+% %         for j=1:dimB
+% %             for k=1:dimA
+% %                 for l=1:dimB
+% %                     %scnd = PartialTrace( choi * Tensor( ketbra(j,l,dimB).', idB1B2),...
+% %                     %                    1, [dimB,dimB1*dimB2] );
+% %                     state_sum = state_sum + state_small_reshaped(i,j,k,l) * ...
+% %                                     kron(ketbra(i,k,dimA), ApplyMap(ketbra(j,l,dimB), choi));
+% %                 end
+% %             end
+% %         end
+% %     end
+% %     output_state = state_sum;
+    %%
+%     biggerstate = kron( state.', eye(dimA*dimB1*dimB2) );
+%     Phi = auxPHI(dimA);
+%     biggerchannel = kron(Phi*Phi',choi);
+%     % after previous line tensor spaces are A x A x B x B1 x B2, we need
+%     % to swap the 2nd and 3rd
+%     swapop=Tensor(eye(dimA),SwapOperator(2),eye(dimB1*dimB2)); % This ends up being a big matrix!
+%     biggerchannel = swapop * biggerchannel * swapop';
+%     output_state = PartialTrace(biggerchannel*biggerstate, [1,2], [dimA,dimB,dimA,dimB1,dimB2]);
+%     %state = AppleMap(inistate, biggerchannel);  % either this or the
+%                                                 % previous line work well
+    %%
+    biggerstate = Tensor(state.', eye(dimB1*dimB2) );
+    biggerchannel = kron(eye(dimA), choi);
+    output_state = PartialTrace(biggerchannel*biggerstate, 2, [dimA,dimB,dimB1,dimB2]);
+
+                                                
+    %%
     fprintf("Adding constraints. \n");  
     constraints_choi = cell(2);
     constraints_choi{1} = choi >= 0;
@@ -247,6 +252,92 @@ function opt = optimizer_Channel(dims, inputdimspace)
     
     %list = whos;for i = 1:length(list);if strcmp(list(i).class,'sdpvar');clear(list(i).name);end;end
     %yalmip("clear");
+end
+
+function opt = optimizer_povm_ALice(ins, outs, partial_products)
+    fprintf("Calculating YALMIP's 'optimizer' of the scenario. It can take a while.\n");
+    fprintf("Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.\n");
+    nrparties = length(ins);
+
+    dimA = outs(1);
+    dimB = inputdimspace;
+    dimB1 = outs(2);
+    dimB2 = outs(3);
+    
+    final_state_dim = dimA*dimB1*dimB2;
+    final_state = sdpvar(final_state_dim,final_state_dim,'hermitian','complex');
+    ia_state = give_ia_state(final_state);
+    
+    aux_cell = num2cell(dims);
+    bellcoeffs = sdpvar(aux_cell{:},'full');
+    
+    povms_alice = cell(ins(1), outs(1));
+    
+    for x=1:ins(1)
+        for a=1:outs(1)
+            povms_alice{x,a} = sdpvar(outs(1),outs(1),'hermitian','complex');
+            ia_povms{x,a} = povms_alice{x,a}(find(triu(ones(outs(1)))));
+        end
+    end
+    ia_povms = cell(ins(2), ins(3), outs(2), outs(3));
+    for y=1:ins(2)
+        for z=1:ins(3)
+            for b=1:outs(2)
+                for c=1:outs(3)
+                    dimen = outs(2)*outs(3);
+                    partial_products{y,z,b,c} = sdpvar(dimen, dimen, 'hermitian', 'complex');
+                    ia_povms{y,z,b,c} = partial_products{y,z,b,c}(find(triu(ones(dimen)))));
+                end
+            end
+        end
+    end
+
+    party_idx = 1;
+    constraints_povm = [];
+    for x=1:ins(partyidx)
+        summ = 0;
+        for a=1:outs(partyidx)
+            summ = summ + povms_alice{x,a};
+            constraints_povm = [constraints_povm,  povms{party,x,a} >= 0];
+        end
+        constraints_povm = [constraints_povm, summ == eye(outs(partyidx))];
+    end
+
+    
+    fprintf("Calculating Bell operator.\n");
+    tic
+    state_times_BellOperator = 0;
+    for x=1:ins(1)
+        for y=1:ins(2)
+            for z=1:ins(3)
+                for a=1:outs(1)
+                    for b=1:outs(2)
+                        for c=1:outs(3)
+                            fprintf("Progress on calculating symbolically output_state*BellOperator: %d %d %d %d %d %d\n", x, y, z, a, b, c);
+                            term = Tensor(povms{1,x,a}, partial_products{y,z,b,c});
+                            state_times_BellOperator = state_times_BellOperator + output_state*bellcoeffs(x,y,z,a,b,c)*term;
+                        end
+                    end
+                end
+            end
+        end
+    end
+    toc
+    
+    
+    fprintf("Calculating the objective. \n");
+    objective = real(trace(final_state*BellOperator));
+    
+
+    
+    fprintf("Calculating optimizer object\n");
+    
+    opt_povm_A = optimizer(constraints_povm, -objective, ...
+                         sdpsettings('solver','mosek'), ...
+                        [{ia_state}, {bellcoeffs}, ia_povms(:)'], ...
+                        [{objective}, povms(:)']);
+
+    opt = {opt_povm_A};
 end
 
 function [belloperator] = give_Bell_operator(bellcoeffs, povms, ins, outs)
