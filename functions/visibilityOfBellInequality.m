@@ -34,8 +34,5 @@ if optsol.problem ~= 0
 end
 
 visibility = value(alpha);
-
-%list = whos;for i = 1:length(list);if strcmp(list(i).class,'sdpvar');clear(list(i).name);end;end
-yalmip("clear");
 end
 

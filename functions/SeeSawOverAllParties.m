@@ -1,7 +1,7 @@
 function [finalPproj,finalobj,finalchannel] = SeeSawOverAllParties(bellcoeffs, initialState, initialPovms, initialChannel)
 
     ABS_TOL   = 1e-6;
-    MAX_ITER  = 1000;
+    MAX_ITER  = 200;
     abschange = 1e6;
     objval    = -1e6;
 

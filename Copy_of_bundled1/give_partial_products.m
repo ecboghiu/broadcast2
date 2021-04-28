@@ -1,10 +1,10 @@
-function [partial_products] = give_partial_products(povms, bellcoeffs, ins, outs)
+function [partial_products] = give_partial_products(povms, bellcoeffs, party, ins, outs)
 
 nrparties = length(ins);
-partial_products=cell(3,1);
 
-for party_to_ignore=1:nrparties
-    partial_products{party_to_ignore} = cell(ins(party_to_ignore), outs(party_to_ignore));
+%for party_to_ignore=1:nrparties
+party_to_ignore = party;
+    partial_products = cell(ins(party_to_ignore), outs(party_to_ignore));
     allbutone = logical(ones(nrparties,1)); 
     allbutone(party_to_ignore) = false;
     ins_without_party_to_ignore = ins(allbutone);
@@ -13,7 +13,7 @@ for party_to_ignore=1:nrparties
     dimen = prod(outs_without_party_to_ignore);
     for x=1:ins(party_to_ignore)
         for a=1:outs(party_to_ignore)
-            partial_products{party_to_ignore}{x,a} = 0;
+            partial_products{x,a} = 0;
             for y=1:ins_without_party_to_ignore(1)
                 for z=1:ins_without_party_to_ignore(2)
                     for b=1:outs_without_party_to_ignore(1)
@@ -27,7 +27,7 @@ for party_to_ignore=1:nrparties
                             else
                                error('more than 3 parties not supported'); 
                             end
-                            partial_products{party_to_ignore}{x,a} = partial_products{party_to_ignore}{x,a} + term;
+                            partial_products{x,a} = partial_products{x,a} + term;
                         end
                     end
                 end
@@ -35,6 +35,6 @@ for party_to_ignore=1:nrparties
         end
     end
     
-end
+%end
 
 end

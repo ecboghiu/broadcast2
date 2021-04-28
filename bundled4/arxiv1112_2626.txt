@@ -161,3 +161,5 @@ Visibility of ineq 30/185 after optimizing = 0.009547. vis_state=-0.000866  Bell
 Visibility of ineq 30/185 after optimizing = 0.009509. vis_state=-0.000866  Bellvalue=8.035194 Bell·p_ent=8.035194 Bell·p_unif=4.334252 bound_l=8.000000 bound_q=8.525610
 Visibility of ineq 30/185 after optimizing = 0.009506. vis_state=-0.000866  Bellvalue=8.035195 Bell·p_ent=8.035195 Bell·p_unif=4.332810 bound_l=8.000000 bound_q=8.525610
 <a href="matlab: opentoline('C:\Program Files\MATLAB\YALMIP-master\@sdpvar\plus.m',177,1)">177 </a>        end
+com.mathworks.mde.profiler.ProfilerRunner.initInstance();
+if system_dependent('IsDebugMode')==1, dbquit; end
