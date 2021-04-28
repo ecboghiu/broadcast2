@@ -1,0 +1,297 @@
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+
+
+
+ Inequality number = 10
+
+
+Vis of ineq given random ini = 0.022382. vis_state=0.000000 Bell·p_ent=6.083578 Bell·p_unif=2.349448 bound_l=6.000000 bound_q=6.825070 Ineq.nr.:10/185 Ini.iter.:0/10
+
+Found good initial condition. Bell value:6.083578 NS2Bound: 6.000000 alpha=0.022382 state_vis=0.000000
+Given this point, optimize the visibility of the inequality.
+
+Visibility of ineq 10/185 after optimizing = 0.022381. vis_state=0.000000  Bellvalue=6.083578 Bell·p_ent=6.083578 Bell·p_unif=2.349272 bound_l=6.000000 bound_q=6.825070
+Visibility of ineq 10/185 after optimizing = 0.022529. vis_state=0.000000  Bellvalue=6.083887 Bell·p_ent=6.083887 Bell·p_unif=2.360303 bound_l=6.000000 bound_q=6.825070
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/mtimes', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\mtimes.m', 4)" style="font-weight:bold"> * </a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\mtimes.m',4,0)">line 4</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 70)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',70,0)">line 70</a>)
+                            summ = summ + term*bellcoeffs(x,y,z,a,b,c);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check_vis', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m', 116)" style="font-weight:bold">arXiv1112_2626_check_vis</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m',116,0)">line 116</a>)
+                [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyPartiallyEntangled(visibility, CONST_CHI), POVMs, channel);
+} 
+arXiv1112_2626_check_vis
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+
+
+
+ Inequality number = 10
+
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('blkdiag', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\elmat\blkdiag.m', 36)" style="font-weight:bold">blkdiag</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\elmat\blkdiag.m',36,0)">line 36</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('appendYALMIPvariables', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\appendYALMIPvariables.m', 28)" style="font-weight:bold">appendYALMIPvariables</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\appendYALMIPvariables.m',28,0)">line 28</a>)
+        mt=blkdiag(mt,newmt);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\sdpvar.m', 731)" style="font-weight:bold">sdpvar</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\sdpvar.m',731,0)">line 731</a>)
+appendYALMIPvariables(lmi_variables,mt,variabletype,hashed_monoms,current_hash);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 14)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',14,0)">line 14</a>)
+            chosenPartyMeasurements{x}{a} = sdpvar(dimofProjector,dimofProjector,'hermitian','complex');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check_vis', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m', 86)" style="font-weight:bold">arXiv1112_2626_check_vis</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m',86,0)">line 86</a>)
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyPartiallyEntangled(visibility, CONST_CHI), POVMs, channel);
+} 
+arXiv1112_2626_check_vis
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+
+
+
+ Inequality number = 10
+
+
+Vis of ineq given random ini = 1.000000. vis_state=0.000000 Bell·p_ent=6.000000 Bell·p_unif=6.000000 bound_l=6.000000 bound_q=6.825070 Ineq.nr.:10/185 Ini.iter.:0/10
+Vis of ineq given random ini = 0.081510. vis_state=0.000000 Bell·p_ent=6.117684 Bell·p_unif=4.673873 bound_l=6.000000 bound_q=6.825070 Ineq.nr.:10/185 Ini.iter.:1/10
+
+Found good initial condition. Bell value:6.117684 NS2Bound: 6.000000 alpha=0.081510 state_vis=0.000000
+Given this point, optimize the visibility of the inequality.
+
+Visibility of ineq 10/185 after optimizing = 0.081412. vis_state=0.000000  Bellvalue=6.117694 Bell·p_ent=6.117694 Bell·p_unif=4.672032 bound_l=6.000000 bound_q=6.825070
+Visibility of ineq 10/185 after optimizing = 0.081312. vis_state=0.000000  Bellvalue=6.117703 Bell·p_ent=6.117703 Bell·p_unif=4.670156 bound_l=6.000000 bound_q=6.825070
+Visibility of ineq 10/185 after optimizing = 0.081312. vis_state=0.000000  Bellvalue=6.117703 Bell·p_ent=6.117703 Bell·p_unif=4.670148 bound_l=6.000000 bound_q=6.825070
+Ineq vis converged to: 0.081312. Update state vis from 0.000000 to 0.071312. DeltaVis=0.071312
+Current best state visibility p = 0.071312
+Visibility of ineq 10/185 after optimizing = 0.038477. vis_state=0.071312  Bellvalue=6.033191 Bell·p_ent=6.033191 Bell·p_unif=5.170561 bound_l=6.000000 bound_q=6.825070
+Visibility of ineq 10/185 after optimizing = 0.038477. vis_state=0.071312  Bellvalue=6.033191 Bell·p_ent=6.033191 Bell·p_unif=5.170564 bound_l=6.000000 bound_q=6.825070
+Ineq vis converged to: 0.038477. Update state vis from 0.071312 to 0.099789. DeltaVis=0.028477
+Current best state visibility p = 0.099789
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings>setup_core_options', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m', 424)" style="font-weight:bold">sdpsettings>setup_core_options</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m',424,0)">line 424</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpsettings', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m', 83)" style="font-weight:bold">sdpsettings</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\sdpsettings.m',83,0)">line 83</a>)
+    options = setup_core_options;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 82)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',82,0)">line 82</a>)
+                    sdpsettings('solver','mosek', 'verbose', 0,'dualize', 0, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check_vis', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m', 116)" style="font-weight:bold">arXiv1112_2626_check_vis</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m',116,0)">line 116</a>)
+                [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyPartiallyEntangled(visibility, CONST_CHI), POVMs, channel);
+} 
+[POVMs,finalObj,channel] = optimizer_channel([{ia_state}, {bell_operator}]);
+{Unrecognized function or variable 'ia_state'.
+} 
+belloperator=give_Bell_operator(bellcoeffs, POVMs, ins, outs);
+            state = NoisyWernerState(0);
+            ia_state = give_ia_state(state);
+            [POVMs,finalObj,channel] = optimizer_channel([{ia_state}, {bell_operator}]);
+{Unrecognized function or variable 'bell_operator'.
+} 
+            belloperator=give_Bell_operator(bellcoeffs, POVMs, ins, outs);
+            state = NoisyWernerState(0);
+            ia_state = give_ia_state(state);
+            [POVMs,finalObj,channel] = optimizer_channel([{ia_state}, {belloperator}]);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/value', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\value.m', 39)" style="font-weight:bold">sdpvar/value</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\value.m',39,0)">line 39</a>)
+Index exceeds array bounds.
+
+'optimizer_channel' appears to be both a function and a variable. If this is unintentional, use 'clear optimizer_channel' to remove the variable 'optimizer_channel' from the workspace.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/double', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\double.m', 9)" style="font-weight:bold">sdpvar/double</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\double.m',9,0)">line 9</a>)
+        sys = double(value(varargin{:}));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m', 370)" style="font-weight:bold">optimizer/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m',370,0)">line 370</a>)
+                u = [u reshape(double(self.output.expression),self.dimout)];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m', 9)" style="font-weight:bold">optimizer/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m',9,0)">line 9</a>)
+    [varargout{1:nargout}] = subsref(self,subs);
+} 
+optimizer_channel = optimizer_channel(ins, outs, 2);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m', 130)" style="font-weight:bold">optimizer/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m',130,0)">line 130</a>)
+The number of cell elements in input does not match OPTIMIZER declaration
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m', 9)" style="font-weight:bold">optimizer/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m',9,0)">line 9</a>)
+    [varargout{1:nargout}] = subsref(self,subs);
+} 
+optimizer_ch = optimizer_channel(ins, outs, 2);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m', 130)" style="font-weight:bold">optimizer/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m',130,0)">line 130</a>)
+The number of cell elements in input does not match OPTIMIZER declaration
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer/subsref', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m', 9)" style="font-weight:bold">optimizer/subsref</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@optimizer\subsref.m',9,0)">line 9</a>)
+    [varargout{1:nargout}] = subsref(self,subs);
+} 
+arXiv1112_2626_check_vis
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+
+
+
+ Inequality number = 10
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sparse')" style="font-weight:bold">sparse</a>
+Input matrix must be double or logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('kron', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\ops\kron.m', 38)" style="font-weight:bold">kron</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\ops\kron.m',38,0)">line 38</a>)
+   K = matlab.internal.sparse.kronSparse(sparse(A), sparse(B));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PartialMap>@(x)kron(kron(speye(prod_dim_r1),x),speye(prod_dim_r2))', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PartialMap.m', 65)" style="font-weight:bold">PartialMap>@(x)kron(kron(speye(prod_dim_r1),x),speye(prod_dim_r2))</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PartialMap.m',65,0)">line 65</a>)
+        Phi = cellfun(@(x) kron(kron(speye(prod_dim_r1),x),speye(prod_dim_r2)),Phi,'UniformOutput',false);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PartialMap', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PartialMap.m', 65)" style="font-weight:bold">PartialMap</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PartialMap.m',65,0)">line 65</a>)
+        Phi = cellfun(@(x) kron(kron(speye(prod_dim_r1),x),speye(prod_dim_r2)),Phi,'UniformOutput',false);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ChoiMatrix', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\ChoiMatrix.m', 44)" style="font-weight:bold">ChoiMatrix</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\ChoiMatrix.m',44,0)">line 44</a>)
+C = PartialMap(MaxEntangled(da(1),1,0)*MaxEntangled(da(2),1,0).',Phi,sys,[da(1),da(1);da(2),da(2)]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('final_state', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\final_state.m', 13)" style="font-weight:bold">final_state</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\final_state.m',13,0)">line 13</a>)
+    biggerchannel = kron(Phi*Phi',ChoiMatrix(channel));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('arXiv1112_2626_check_vis', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m', 92)" style="font-weight:bold">arXiv1112_2626_check_vis</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m',92,0)">line 92</a>)
+            p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(INITIAL_VISIBILITY, CONST_CHI), channel), POVMs);
+} 
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\Copy_of_bundled1\arXiv1112_2626_check_vis.m',92,0)
+tic
+optimizer_ch = optimizer_channel(ins, outs, 2);
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+toc
+Elapsed time is 0.964036 seconds.
+
+fprintf("Loop time improvement for using 'optimizer' with channel.\n");
+Loop time improvement for using 'optimizer' with channel.
+tic
+for i=1:25
+    [newchannel,newobjval1,~] = SeeSawOverChannel(state, bellcoeffs, povms);
+end
+{Unrecognized function or variable 'povms'.
+} 
+test_optimizer_code
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Elapsed time is 0.877498 seconds.
+Loop time improvement for using 'optimizer' with channel.
+Elapsed time is 1.747457 seconds.
+3.376624
+Elapsed time is 0.377038 seconds.
+3.376624
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('yalmip', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\yalmip.m', 100)" style="font-weight:bold">yalmip</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\yalmip.m',100,0)">line 100</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/mtimes', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\mtimes.m', 93)" style="font-weight:bold"> * </a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\mtimes.m',93,0)">line 93</a>)
+            [mt,oldvariabletype,mt_hash,hash] = yalmip('monomtable');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/kron', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\kron.m', 20)" style="font-weight:bold">sdpvar/kron</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\kron.m',20,0)">line 20</a>)
+            this_row = [this_row subsref(X,s)*Y];
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimizer_povm_party', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\optimizer_povm_party.m', 55)" style="font-weight:bold">optimizer_povm_party</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\optimizer_povm_party.m',55,0)">line 55</a>)
+               BellOperator = BellOperator + kron(partial_products{x,a}, povms_party{x,a});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_optimizer_code', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\test_optimizer_code.m', 68)" style="font-weight:bold">test_optimizer_code</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\test_optimizer_code.m',68,0)">line 68</a>)
+optimizer_c = optimizer_povm_party(3, ins, outs);
+} 
+output = optimizer_ch([{ia_state}, {bell_operator}]);
+output
+
+output =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {8×8 double}    {[3.3766]}
+
+output{1}
+
+ans =
+
+   0.2449 + 0.0000i  -0.2743 - 0.0302i   0.2553 - 0.0877i   0.1654 - 0.0926i   0.1357 - 0.2654i  -0.0649 - 0.1251i   0.0781 + 0.1314i  -0.3109 + 0.1273i
+  -0.2743 + 0.0302i   0.3110 + 0.0000i  -0.2751 + 0.1297i  -0.1738 + 0.1241i  -0.1192 + 0.3140i   0.0881 + 0.1321i  -0.1036 - 0.1376i   0.3326 - 0.1809i
+   0.2553 + 0.0877i  -0.2751 - 0.1297i   0.2974 + 0.0000i   0.2055 - 0.0373i   0.2364 - 0.2280i  -0.0228 - 0.1536i   0.0343 + 0.1649i  -0.3696 + 0.0213i
+   0.1654 + 0.0926i  -0.1738 - 0.1241i   0.2055 + 0.0373i   0.1467 + 0.0000i   0.1919 - 0.1279i   0.0035 - 0.1090i   0.0030 + 0.1182i  -0.2581 - 0.0316i
+   0.1357 + 0.2654i  -0.1192 - 0.3140i   0.2364 + 0.2280i   0.1919 + 0.1279i   0.3627 + 0.0000i   0.0996 - 0.1396i  -0.0991 + 0.1574i  -0.3101 - 0.2664i
+  -0.0649 + 0.1251i   0.0881 - 0.1321i  -0.0228 + 0.1536i   0.0035 + 0.1090i   0.0996 + 0.1396i   0.0811 + 0.0000i  -0.0878 + 0.0050i   0.0174 - 0.1925i
+   0.0781 - 0.1314i  -0.1036 + 0.1376i   0.0343 - 0.1649i   0.0030 - 0.1182i  -0.0991 - 0.1574i  -0.0878 - 0.0050i   0.0954 + 0.0000i  -0.0308 + 0.2074i
+  -0.3109 - 0.1273i   0.3326 + 0.1809i  -0.3696 - 0.0213i  -0.2581 + 0.0316i  -0.3101 + 0.2664i   0.0174 + 0.1925i  -0.0308 - 0.2074i   0.4609 + 0.0000i
+
+test_optimizer_code
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Elapsed time is 0.974662 seconds.
+Loop time improvement for using 'optimizer' with channel.
+Elapsed time is 1.722357 seconds.
+3.056006
+Elapsed time is 0.372045 seconds.
+3.056006
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_optimizer_code', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\test_optimizer_code.m', 63)" style="font-weight:bold">test_optimizer_code</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\test_optimizer_code.m',63,0)">line 63</a>)
+There should be the same output
+} 
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\test_optimizer_code.m',63,0)
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\test_optimizer_code.m',63,0)
+test_optimizer_code
+Calculating YALMIP's 'optimizer' for optimization over channels. It can take a while depending on the size of the problem.
+Elapsed time is 0.843896 seconds.
+Loop time improvement for using 'optimizer' with channel.
+Elapsed time is 1.788313 seconds.
+3.310945
+Elapsed time is 0.355125 seconds.
+3.310945
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Calculating YALMIP's 'optimizer' of the scenario. It can take a while.
+Set 'OPTIMIZER_FLAG' to false to avoid 'optimizer' for debugging purposes.
+Loop time improvement for using 'optimizer' with the POVM optimization.
+For Alice
+Elapsed time is 1.276982 seconds.
+1.504385
+Elapsed time is 0.150730 seconds.
+1.504385
+For Bob
+Elapsed time is 1.260290 seconds.
+0.898421
+Elapsed time is 0.148100 seconds.
+0.898421
+For Charlie
+Elapsed time is 1.203183 seconds.
+1.479743
+Elapsed time is 0.153165 seconds.
+1.479743
+Timing over LP
+Optimizer NS2 LPElapsed time is 4.844872 seconds.
+Elapsed time is 0.148333 seconds.
+alpha=0.096060 0.096060
+give_partial_products
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('give_partial_products', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\give_partial_products.m', 3)" style="font-weight:bold">give_partial_products</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\optimizer_scripts\give_partial_products.m',3,0)">line 3</a>)
+nrparties = length(ins);
+} 
