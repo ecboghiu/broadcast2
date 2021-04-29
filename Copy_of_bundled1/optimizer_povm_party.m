@@ -1,5 +1,5 @@
 function opt = optimizer_povm_party(partyidx, ins, outs)
-    fprintf("Calculating YALMIP's 'optimizer' of the scenario. It can take a while.\n");
+    fprintf("Calculating YALMIP's 'optimizer' for the POVM of party %d. It can take a while.\n", partyidx);
     nrparties = length(ins);
 
     dimA = outs(1);
