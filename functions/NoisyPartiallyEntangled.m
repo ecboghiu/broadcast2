@@ -14,5 +14,6 @@ function state = NoisyPartiallyEntangled(p,xi)
     rhoB = PartialTrace(psi_xi, 1, [2,2]);
     
     state = (1-p) * psi_xi + p * kron(eye(2)/2, rhoB);
+    %state = (1-p) * psi_xi + p * kron(rhoA, eye(2)/2);
 end
 

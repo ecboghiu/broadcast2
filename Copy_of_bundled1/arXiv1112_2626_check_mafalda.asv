@@ -45,7 +45,7 @@ for ineq_nr=2:10
     MAX_ITER_VIS_OPT_LOOP = 50; % given good initial condition, loop for trying to optimize the visibility
     
     INITIAL_VISIBILITY = 0;  % !! I'm using the convention of (1-p)psi+p*id instead of p*psi+(1-p)*id
-    CONST_CHI = 0.01;  % For the partially entangled states
+    CONST_CHI = 0.1;  % For the partially entangled states
     
     ALHPA_TOL_DIST_TO_POINT = 1e-4; % Util for excluding "bad" points such 
                                     % as visibility=0 or visibility=1 (if 
@@ -81,7 +81,7 @@ for ineq_nr=2:10
             aux1 = bellcoeffs.*p_entangled; aux2 = bellcoeffs.*p_uniform;
             fprintf("Vis of ineq given random ini = %f. vis_state=%f Bell·p_ent=%f Bell·p_unif=%f bound_l=%f bound_q=%f Ineq.nr.:%d/%d Ini.iter.:%d/%d\n", ...
                 alpha, state_visibility, sum(aux1(:)), sum(aux2(:)), localboundNS2, quantumbound, ineq_nr, NR_OF_INEQS, alpha_iteration, ALPHA_INI_ITER);
-            if abs(alpha-0)> ALHPA_TOL_DIST_TO_POINT && abs(alpha-1)> ALHPA_TOL_DIST_TO_POINT
+            if abs(alpha-0)> ALHPA_TOL_DIST_TO_POINT && abs(alpha-1)> ALHPA_TOL_DIST_TO_POINT && alpha < 0.1
                 fprintf("\nFound good initial condition. Bell value:%f NS2Bound:%f alpha= %f state_vis=%f\n", finalObj, localboundNS2, alpha, state_visibility);
                 break;
             end
@@ -129,7 +129,7 @@ for ineq_nr=2:10
                     % of the inequality visibility
                     old_visibility = state_visibility;
                     %fprintf("Ineq vis converged to: %f. Update state vis from %f to %f. DeltaVis=%f\n", ineq_visibility, state_visibility, state_visibility + ineq_visibility - DELTA_STATE_VIS,ineq_visibility - DELTA_STATE_VIS);
-                    state_visibility = state_visibility + ineq_visibility - state_visibility*ineq_visibility - DELTA_STATE_VIS; % remember I use the opposite convention for visibility
+                    state_visibility = state_visibility + ineq_visibility - state_visibility* - DELTA_STATE_VIS; % remember I use the opposite convention for visibility
                     AbsDeltaStateVis = abs(state_visibility-old_visibility);
                 else
                     % if we are here we are at the beginning of the loop
@@ -140,7 +140,7 @@ for ineq_nr=2:10
                     % negative values
                     old_visibility = state_visibility;
                     %fprintf("Ineq vis converged to: %f. Update state vis from %f to %f. DeltaVis=%f\n", ineq_visibility, state_visibility, state_visibility + ineq_visibility,ineq_visibility);
-                    state_visibility = state_visibility + ineq_visibility - state_visibility*ineq_visibility; % remember I use the opposite convention for visibility
+                    state_visibility = state_visibility + ineq_visibility; % remember I use the opposite convention for visibility
                     AbsDeltaStateVis = abs(state_visibility-old_visibility);
                 end
                 if state_visibility > 0.3
@@ -152,8 +152,10 @@ for ineq_nr=2:10
 
                 iter_vis_opt_loop = iter_vis_opt_loop + 1;
             end
-            aux1 = bellcoeffs .* ProbMultidimArray(final_state(NoisyPartiallyEntangled(0, CONST_CHI), channel), POVMs);
-            fprintf("State visibility converged to %f. Ineq. value with no state noise: %f (max quantum: %f). Starting a new iteration.\n\n", state_visibility, sum(aux1(:)), quantumbound);
+            p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(0, CONST_CHI), channel), POVMs);
+            p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
+            ineq_visibility = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
+            fprintf("State visibility converged to %f. Ineq. visibility with no state noise: %f (max quantum: %f). Starting a new iteration.\n\n", state_visibility, ineq_visibility, quantumbound);
         end
         iteration_big_loop = iteration_big_loop + 1;
     end
