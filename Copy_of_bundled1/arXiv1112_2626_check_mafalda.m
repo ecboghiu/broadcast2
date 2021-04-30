@@ -152,8 +152,8 @@ for ineq_nr=2:10
 
                 iter_vis_opt_loop = iter_vis_opt_loop + 1;
             end
-            aux1 = bellcoeffs .* ProbMultidimArray(final_state(NoisyPartiallyEntangled(0, CONST_CHI), channel), POVMs);
-            fprintf("State visibility converged to %f. Ineq. value with no state noise: %f (max quantum: %f). Starting a new iteration.\n\n", state_visibility, sum(aux1(:)), quantumbound);
+            [~,finalObj,~] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyPartiallyEntangled(0, CONST_CHI), POVMs, channel, ins, outs);
+            fprintf("State visibility converged to %f. Ineq. value with no state noise: %f (max quantum: %f). Starting a new iteration.\n\n", state_visibility, finalObj, quantumbound);
         end
         iteration_big_loop = iteration_big_loop + 1;
     end
@@ -182,16 +182,18 @@ oldObj = -1e6;
 newObj = 0;
 
 iteration = 1;
-while deltaObj > CONVERGENCE_TOL && iteration <= MAX_NR_ITERATIONS   
+while deltaObj > CONVERGENCE_TOL && iteration <= MAX_NR_ITERATIONS 
+    oldObj = newObj;
     %% Channel
     belloperator = give_Bell_operator(bellcoeffs, POVMs, ins, outs);
     state = state_AB;
     ia_state = give_ia_state(state);
 
-    output = optimizer_ch([{ia_state}, {belloperator}]);
+    %output = optimizer_ch([{ia_state}, {belloperator}]);
+    output = optimizer_ch({ia_state,belloperator});
     channel = output{1};
-    oldObj = newObj;
-    newObj = output{2};
+    
+%     newObj = output{2};
 
     %% Do the POVMs
     output_state = final_state(state, channel);
@@ -200,9 +202,9 @@ while deltaObj > CONVERGENCE_TOL && iteration <= MAX_NR_ITERATIONS
     %% Alice
     partial_products_for_a = give_partial_products(POVMs, bellcoeffs, 1, ins, outs);
     output = optimizer_a([{ia_output_state}, partial_products_for_a(:)']);
-    oldObj = newObj;
-    newObj = output{1};
-    deltaObj = abs(newObj-oldObj);
+%     oldObj = newObj;
+%     newObj = output{1};
+%     deltaObj = abs(newObj-oldObj);
     povm_alice = reshape({output{2:end}},[ins(1),outs(1)]);
     for x=1:ins(1)
         for a=1:outs(1)
@@ -213,9 +215,9 @@ while deltaObj > CONVERGENCE_TOL && iteration <= MAX_NR_ITERATIONS
     %% Bob
     partial_products_for_b = give_partial_products(POVMs, bellcoeffs, 2, ins, outs);
     output = optimizer_b([{ia_output_state}, partial_products_for_b(:)']);
-    oldObj = newObj;
-    newObj = output{1};
-    deltaObj = abs(newObj-oldObj);
+%     oldObj = newObj;
+%     newObj = output{1};
+%     deltaObj = abs(newObj-oldObj);
     povm_bob = reshape({output{2:end}},[ins(2),outs(2)]);
     for y=1:ins(2)
         for b=1:outs(2)
@@ -226,20 +228,21 @@ while deltaObj > CONVERGENCE_TOL && iteration <= MAX_NR_ITERATIONS
     %% Charlie
     partial_products_for_c = give_partial_products(POVMs, bellcoeffs, 3, ins, outs);
     output = optimizer_c([{ia_output_state}, partial_products_for_c(:)']);
-    oldObj = newObj;
-    newObj = output{1};
-    deltaObj = abs(newObj-oldObj);
+    
     povm_charlie = reshape({output{2:end}},[ins(3),outs(3)]);
     for z=1:ins(3)
         for c=1:outs(3)
             POVMs{3}{z}{c} = povm_charlie{z,c};  % Update the POVMs
         end
     end
+    
+    newObj = output{1};
+    deltaObj = abs(newObj-oldObj);
 
-iteration = iteration + 1;
-if iteration == MAX_NR_ITERATIONS
-   warning("Hit maximum number of iterations. Returning last value as converged."); 
+    iteration = iteration + 1;
 end
+if iteration > MAX_NR_ITERATIONS
+   warning("Hit maximum number of iterations. Returning last value as converged."); 
 end
 
 end

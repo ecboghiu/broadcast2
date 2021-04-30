@@ -71,10 +71,10 @@ for ineq_nr=2:10
             channel = {giveChannelRAND(2,4)};  % Random isometry
             
             %[POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyPartiallyEntangled(visibility, CONST_CHI), POVMs, channel);
-            [POVMs,finalObj,channel] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyPartiallyEntangled(state_visibility, CONST_CHI), POVMs, channel, ins, outs);
+            [POVMs,finalObj,channel] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyWernerState(state_visibility), POVMs, channel, ins, outs);
             
-            p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(INITIAL_VISIBILITY, CONST_CHI), channel), POVMs);
-            p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
+            p_entangled = ProbMultidimArray(final_state(NoisyWernerState(INITIAL_VISIBILITY), channel), POVMs);
+            p_uniform   = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs);
             alpha = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
             
             aux1 = bellcoeffs.*p_entangled; aux2 = bellcoeffs.*p_uniform;
@@ -103,27 +103,11 @@ for ineq_nr=2:10
                 % something
                 
                 fprintf("state_visibility=%f\n", state_visibility);
-                [POVMs,finalObj,channel] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyPartiallyEntangled(state_visibility, CONST_CHI), POVMs, channel, ins, outs);
-                p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(state_visibility, CONST_CHI), channel), POVMs);
-                p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
+                [POVMs,finalObj,channel] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyWernerState(state_visibility), POVMs, channel, ins, outs);
+                p_entangled = ProbMultidimArray(final_state(NoisyWernerState(state_visibility), channel), POVMs);
+                p_uniform   = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs);
                 ineq_visibility = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
                 if abs(ineq_visibility-1)<ALHPA_TOL_DIST_TO_POINT
-%                    while abs(ineq_visibility-1)<ALHPA_TOL_DIST_TO_POINT
-%                         
-%                         noise = 1e-6;
-%                         channel_noise = (1-noise) * channel + noise * channel;
-%                         for party=1:nrparties
-%                             for x=1:ins(party)
-%                                 for a=1:outs(party)
-%                                     POVMs{party}{x}{a} = (1-noise) * POVMs{party}{x}{a} + noise * POVMs{party}{x}{a};
-%                                 end
-%                             end
-%                         end
-%                         p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(state_visibility, CONST_CHI), channel), POVMs);
-%                         p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
-%                         ineq_visibility = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
-%                         fprintf("In the loop, ineq_visibility=%f\n", ineq_visibility);
-%                    end
                     warning("Getting visibility=1 which means that we are stuck in a weird optimum.\n Restarting with a different initial condition..");
                     break;
                 end
@@ -135,7 +119,7 @@ for ineq_nr=2:10
                 if state_visibility + ineq_visibility - DELTA_STATE_VIS > 0
                     old_visibility = state_visibility;
                     fprintf("Ineq vis converged to: %f. Update state vis from %f to %f. DeltaVis=%f\n", ineq_visibility, state_visibility, state_visibility + ineq_visibility - DELTA_STATE_VIS,ineq_visibility - DELTA_STATE_VIS);
-                    state_visibility = state_visibility + ineq_visibility - DELTA_STATE_VIS; % remember I use the opposite convention for visibility
+                    state_visibility = state_visibility + ineq_visibility - state_visibility*ineq_visbility - DELTA_STATE_VIS; % remember I use the opposite convention for visibility
                     AbsDeltaStateVis = abs(state_visibility-old_visibility);
                 else
                     % if we are here we are at the beginning of the loop
@@ -146,7 +130,7 @@ for ineq_nr=2:10
                     % negative values
                     old_visibility = state_visibility;
                     fprintf("Ineq vis converged to: %f. Update state vis from %f to %f. DeltaVis=%f\n", ineq_visibility, state_visibility, state_visibility + ineq_visibility,ineq_visibility);
-                    state_visibility = state_visibility + ineq_visibility; % remember I use the opposite convention for visibility
+                    state_visibility = state_visibility + ineq_visibility - state_visibility*ineq_visbility; % remember I use the opposite convention for visibility
                     AbsDeltaStateVis = abs(state_visibility-old_visibility);
                 end
                 
