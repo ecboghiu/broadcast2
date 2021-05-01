@@ -9,10 +9,6 @@ newdir2 = strcat(newdir,filesep,'functions',filesep);
 addpath(newdir);
 addpath(newdir2);
 
-%% Set seed
-rng('shuffle','twister');
-fprintf("rng info:\n\n");
-disp(rng);
 
 %% Scenario settings
 load('bellcoeffs_arxiv1112_2626.mat'); % loads 'bellcoeffs_cell','local_upper_bounds','ins','outs'
@@ -31,8 +27,16 @@ optimizer_objects = {optimizer_ch, optimizer_a, optimizer_b, optimizer_c};
 
 %% 
 NR_OF_INEQS = size(bellcoeffs_cell,2);
-results_per_ineq = cell(1,NR_OF_INEQS);
-for ineq_nr=2:10
+results_per_ineq = cell(NR_OF_INEQS, 3);
+results_within_loop = cell(1,3);
+
+tic
+for ineq_nr=1:NR_OF_INEQS
+    %% Set seed randomly so that we can reproduce the statistics within one big loop
+    rng('shuffle','twister');
+    fprintf("rng info:\n\n");
+    disp(rng);
+    
     bellcoeffs = bellcoeffs_cell{ineq_nr};
     localboundNS2 = local_upper_bounds(ineq_nr);
     quantumbound = table3arXiv11122626(ineq_nr, 5);
@@ -40,8 +44,8 @@ for ineq_nr=2:10
     fprintf("\n\n\tInequality number = %d\n\n\n", ineq_nr);
     
     %% Loop parameters
-    ALPHA_INI_ITER = 10; % How many initial conditions to try for the initial point
-    MAX_ITER_BIG_LOOP = 10; % How many times to try the whole process
+    ALPHA_INI_ITER = 50; % How many initial conditions to try for the initial point
+    MAX_ITER_BIG_LOOP = 10; % 4How many times to try the whole process
     MAX_ITER_VIS_OPT_LOOP = 50; % given good initial condition, loop for trying to optimize the visibility
     
     INITIAL_VISIBILITY = 0;  % !! I'm using the convention of (1-p)psi+p*id instead of p*psi+(1-p)*id
@@ -51,23 +55,34 @@ for ineq_nr=2:10
                                     % as visibility=0 or visibility=1 (if 
                                     % its zero, then most likely its an infeasibility)
     ALPHA_CONVERGENCE_THRESHOLD = 1e-6;
-    VISIBILITY_CONVERGENCE_THRESHOLD = 1e-3;
+    VISIBILITY_CONVERGENCE_THRESHOLD = 1e-6;
     
     DELTA_STATE_VIS = 0.0;  % when updating the state visibility to that 
                              % of the ineq visibility, we go slightly 
                              % below and this controls that
 
+    % Calculate the best per inequality
+    best_visibility = 0;
+    best_visibility_iter = 1;
+    best_POVMS = givePprojRANDgeneral(ins);
+    best_channel = {giveChannelRAND(2,4)};
+    best_visisibility_ineq_nr = 1;
+    results_within_loop = cell(1);
+    
     iteration_big_loop = 1;
     while iteration_big_loop <= MAX_ITER_BIG_LOOP 
+        
+        
         alpha=0;
         alpha_iteration=1;
         LPstatus = 0;
-
+        results_within_loop = cell(1);
+        
         state_visibility = INITIAL_VISIBILITY;
         %% FIND A GOOD INITIAL POINT
-        fprintf("Looking for a good initial condition.\n");
+        fprintf("\nNext iteration of big loop.\nLooking for a good initial condition.\n");
         while (abs(alpha-0)<ALHPA_TOL_DIST_TO_POINT || abs(alpha-1)<ALHPA_TOL_DIST_TO_POINT) && (alpha_iteration <= ALPHA_INI_ITER)
-            fprintf("Initial condition search iter: %d\n", alpha_iteration);
+            %fprintf("Initial condition search iter: %d\n", alpha_iteration);
             POVMs = givePprojRANDgeneral(ins);  % Random projective measurements
             channel = {giveChannelRAND(2,4)};  % Random isometry
             
@@ -79,10 +94,10 @@ for ineq_nr=2:10
             alpha = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
             
             aux1 = bellcoeffs.*p_entangled; aux2 = bellcoeffs.*p_uniform;
-            fprintf("Vis of ineq given random ini = %f. vis_state=%f Bell·p_ent=%f Bell·p_unif=%f bound_l=%f bound_q=%f Ineq.nr.:%d/%d Ini.iter.:%d/%d\n", ...
-                alpha, state_visibility, sum(aux1(:)), sum(aux2(:)), localboundNS2, quantumbound, ineq_nr, NR_OF_INEQS, alpha_iteration, ALPHA_INI_ITER);
+            fprintf("Ineq.nr.:%d/%d Big.loop:%d/%d Ini.iter.:%d/%d Vis of ineq given random ini = %f. vis_state=%f Bell·p_ent=%f Bell·p_unif=%f bound_l=%f bound_q=%f \n", ...
+                ineq_nr, NR_OF_INEQS, iteration_big_loop, MAX_ITER_BIG_LOOP, alpha_iteration, ALPHA_INI_ITER, alpha, state_visibility, sum(aux1(:)), sum(aux2(:)), localboundNS2, quantumbound);
             if abs(alpha-0)> ALHPA_TOL_DIST_TO_POINT && abs(alpha-1)> ALHPA_TOL_DIST_TO_POINT
-                fprintf("\nFound good initial condition. Bell value:%f NS2Bound:%f alpha= %f state_vis=%f\n", finalObj, localboundNS2, alpha, state_visibility);
+                fprintf("   Found good initial condition. Bell value:%f NS2Bound:%f alpha= %f state_vis=%f\n", finalObj, localboundNS2, alpha, state_visibility);
                 break;
             end
             alpha_iteration = alpha_iteration + 1;
@@ -91,7 +106,7 @@ for ineq_nr=2:10
            warning("Couldn't find a good initial point before hitting the maximum number of iterations. Going to a different inequality.")
            break;
         else
-            fprintf("Given this point, optimize the visibility of the inequality.\n\n");
+            fprintf("   Given this point, optimize the visibility of the inequality.\n");
             %% OPTIMIZE OVER THE VISIBILITY
             iter_vis_opt_loop = 1;
             old_visibility = -1;
@@ -116,8 +131,8 @@ for ineq_nr=2:10
                     p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(state_visibility, CONST_CHI), channel), POVMs);
                     p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
                     ineq_visibility = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
-                    if abs(ineq_visibility-1)<ALHPA_TOL_DIST_TO_POINT
-                        warning("Getting visibility=1 which means that probably both probabilities are inside the local set. Restarting with a different initial condition..");
+                    if abs(ineq_visibility-1)<ALHPA_TOL_DIST_TO_POINT || ineq_visibility > 1
+                        warning("Getting visibility=1 which means that probably both probabilities are inside the local set. Restarting with a different initial condition.");
                         break;
                     end
                 end
@@ -143,27 +158,64 @@ for ineq_nr=2:10
                     state_visibility = state_visibility + ineq_visibility - state_visibility*ineq_visibility; % remember I use the opposite convention for visibility
                     AbsDeltaStateVis = abs(state_visibility-old_visibility);
                 end
-                if state_visibility > 0.3
-                   disp(1);
-                end
                 
-                fprintf("Ineq vis after optimizing: %f with vis_state=%f. Updating vis_state from %f to %f. (Bellvalue=%f bound_l=%f bound_q=%f). Vis_iter=%d. Ineq %d/%d\n", ...
-                 ineq_visibility, old_visibility, old_visibility, state_visibility, finalObj, localboundNS2, quantumbound, iter_vis_opt_loop, ineq_nr, NR_OF_INEQS);
+                fprintf("Ineq.nr.:%d/%d Big.loop.:%d/%d Vis_iter=%d Ineq vis after optimizing: %f with vis_state=%f. Updating vis_state from %f to %f. (Bellvalue=%f bound_l=%f bound_q=%f).\n", ...
+                 ineq_nr, NR_OF_INEQS, iteration_big_loop, MAX_ITER_BIG_LOOP, iter_vis_opt_loop, ineq_visibility, old_visibility, old_visibility, state_visibility, finalObj, localboundNS2, quantumbound);
 
                 iter_vis_opt_loop = iter_vis_opt_loop + 1;
             end
-            [~,finalObj,~] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyPartiallyEntangled(0, CONST_CHI), POVMs, channel, ins, outs);
-            fprintf("State visibility converged to %f. Ineq. value with no state noise: %f (max quantum: %f). Starting a new iteration.\n\n", state_visibility, finalObj, quantumbound);
+            if iter_vis_opt_loop <= MAX_ITER_VIS_OPT_LOOP
+                [~,finalObj,~] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyPartiallyEntangled(0, CONST_CHI), POVMs, channel, ins, outs);
+                fprintf("State visibility converged to %f. Ineq. value with no state noise: %f (max quantum: %f). Starting a new iteration.\n", state_visibility, finalObj, quantumbound);
+            else
+               warning("State visibility didn't converge within the maximum iterations. Trying another initial condition.\n"); 
+            end
         end
+        if state_visibility > best_visibility
+            fprintf("\n\tNew best visibility found! p=%f\n\n", state_visibility);
+            best_visibility = state_visibility;
+            best_visibility_iter = iteration_big_loop;
+            best_POVMS = POVMs;
+            best_channel = channel;
+            best_visisibility_ineq_nr = ineq_nr;
+        end
+        results_within_loop{iteration_big_loop, 1} = state_visibility;
+        
+
         iteration_big_loop = iteration_big_loop + 1;
     end
+    all_vis_for_ineq = [results_within_loop{:,1}];
+    promedio = mean(all_vis_for_ineq);
+    desviacion = sqrt(var(all_vis_for_ineq));
+    
+    results_per_ineq{ineq_nr, 1} = best_visibility;
+    results_per_ineq{ineq_nr, 2} = best_channel;
+    results_per_ineq{ineq_nr, 3} = best_POVMS;
+    results_per_ineq{ineq_nr, 4} = promedio;
+    results_per_ineq{ineq_nr, 6} = desviacion; 
+    
+    all_vis = [results_per_ineq{:,1}];
+    wheremax = all_vis == max(all_vis);
+    auxints = 1:length(all_vis);
+    position_max = auxints(wheremax); % this might be degenerate i just take the first
+    value_max = all_vis(wheremax);
+    
+    
+    
+    fprintf("\n\t Starting new inequality. Current best is state_visibility=%f for inequality %d.\n\n", value_max(1), position_max(1));
+    
 
+    % Save to file
+    fprintf("Saving current workspace to file.\n");
+    ScenarioFilename = 'scenario';
+    filename = strcat(ScenarioFilename,'best_arxiv_1112_2626','.mat');
+    save(filename);
+    
 end
+toc
 
-% Save to file
-ScenarioFilename = 'scenario';
-filename = strcat(ScenarioFilename,'best_arxiv_112_2626','.mat');
-save(filename);
+
+plot([ results_per_ineq{:,1}])
 
 function [POVMs,newObj,channel] = optimizer_seesaw(optimizer_objects, bellcoeffs, state_AB, POVMs, channel, ins, outs)
 
