@@ -91,7 +91,7 @@ for ineq_nr=1:NR_OF_INEQS
             
             p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(INITIAL_VISIBILITY, CONST_CHI), channel), POVMs);
             p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
-            alpha = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
+            [alpha, LPstatus]= visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
             
             aux1 = bellcoeffs.*p_entangled; aux2 = bellcoeffs.*p_uniform;
             fprintf("Ineq.nr.:%d/%d Big.loop:%d/%d Ini.iter.:%d/%d Vis of ineq given random ini = %f. vis_state=%f Bell·p_ent=%f Bell·p_unif=%f bound_l=%f bound_q=%f \n", ...
@@ -115,7 +115,7 @@ for ineq_nr=1:NR_OF_INEQS
                 [POVMs,finalObj,channel] = optimizer_seesaw(optimizer_objects, bellcoeffs, NoisyPartiallyEntangled(state_visibility, CONST_CHI), POVMs, channel, ins, outs);
                 p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(state_visibility, CONST_CHI), channel), POVMs);
                 p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
-                ineq_visibility = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
+                [ineq_visibility, LPstatus]= visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
                 if abs(ineq_visibility-1)<ALHPA_TOL_DIST_TO_POINT
                     % try to add a bit of white noise to see if the
                     % situation improves
@@ -130,7 +130,7 @@ for ineq_nr=1:NR_OF_INEQS
                     end
                     p_entangled = ProbMultidimArray(final_state(NoisyPartiallyEntangled(state_visibility, CONST_CHI), channel), POVMs);
                     p_uniform   = ProbMultidimArray(final_state(NoisyPartiallyEntangled(1, CONST_CHI), channel), POVMs);
-                    ineq_visibility = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
+                    [ineq_visibility, LPstatus] = visibilityOfBellInequality(bellcoeffs, localboundNS2, p_entangled, p_uniform);
                     if abs(ineq_visibility-1)<ALHPA_TOL_DIST_TO_POINT || ineq_visibility > 1
                         warning("Getting visibility=1 which means that probably both probabilities are inside the local set. Restarting with a different initial condition.");
                         break;
