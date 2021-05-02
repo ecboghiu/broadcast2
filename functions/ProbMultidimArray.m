@@ -1,12 +1,13 @@
-function probability_ndarray = ProbMultidimArray(state,povms)
+function probability_ndarray = ProbMultidimArray(state,povms, inputs_per_party, outputs_per_party)
     % povms is called as povms{party}{input}{output}
-    nrparties = max(size(povms));
-    inputs_per_party = zeros(1,nrparties);
-    outputs_per_party = zeros(1,nrparties);
-    for p=1:nrparties
-        inputs_per_party(p) = max(size(povms{p}));
-        outputs_per_party(p) = max(size(povms{p}{1}));
-    end
+% %     nrparties = max(size(povms));
+% %     inputs_per_party = zeros(1,nrparties);
+% %     outputs_per_party = zeros(1,nrparties);
+% %     for p=1:nrparties
+% %         inputs_per_party(p) = max(size(povms{p}));
+% %         outputs_per_party(p) = max(size(povms{p}{1}));
+% %     end
+    nrparties = length(inputs_per_party);
     
     % Define a zero multidim where to place the probability distribution
     dims = num2cell([inputs_per_party,outputs_per_party]);
