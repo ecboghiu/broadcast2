@@ -5484,3 +5484,278 @@ ans =
   -0.0000 - 0.0000i
    0.1098 + 0.0000i
 
+Fixing random seed = 215687
+
+Round 1.
+Visibility given initial measurements and channels: 0.199158
+Visibility given initial measurements and channels: 0.001452
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.214211
+iter=1, partyidx=3, bellineqvalue=0.243162, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.754563, abschangeobjval=1.5114
+iter=3, partyidx=1, bellineqvalue=1.945060, abschangeobjval=0.190497
+iter=4, partyidx=2, bellineqvalue=2.080062, abschangeobjval=0.135002
+iter=5, partyidx=3, bellineqvalue=2.080062, abschangeobjval=7.12812e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.143153, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=3.03452e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.000313, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.25*p_1112_2211 - 0.284*p_1112_1211 - 8.63e-4*p_1112_1221 - 0.137*p_1112_2121 - 0.0341*p_1112_1121 - 0.153*p_1112_2221 + 0.0806*p_1112_3121 + 0.23*p_1112_3211 - 0.148*p_1112_3221 - 0.0726*p_1122_1111 - 0.0418*p_1122_1121 - 0.175*p_1122_1211 - 0.342*p_1122_2111 - 0.207*p_1122_2121 - 0.268*p_1122_2211 - 0.116*p_1122_2221 + 0.109*p_1122_3111 + 0.0234*p_1122_3121 - 0.247*p_1122_3211 - 0.1*p_1122_3221 - 0.0666*p_1212_1121 + 0.13*p_1212_1211 - 0.117*p_1212_1221 + 0.053*p_1212_2121 - 0.149*p_1212_2211 + 0.119*p_1212_2221 - 0.176*p_1212_3121 - 0.0348*p_1212_3211 + 0.142*p_1212_3221 - 0.236*p_1222_1121 - 0.15*p_1222_1221 + 0.146*p_1222_2111 + 0.0877*p_1222_2121 + 0.124*p_1222_2211 + 0.447*p_1222_2221 - 0.352*p_1222_3111 - 0.177*p_1222_3121 + 0.129*p_1222_3211 - 0.0178*p_1222_3221 - 0.0274*p_2112_1121 - 0.222*p_2112_1211 - 0.0667*p_2112_1221 + 0.0693*p_2112_2121 + 0.0852*p_2112_2221 - 0.147*p_2112_3121 + 0.0791*p_2112_3221 - 0.0756*p_2122_1111 - 0.0513*p_2122_1121 - 0.113*p_2122_1211 - 0.0497*p_2122_1221 + 0.182*p_2122_2111 + 0.108*p_2122_2121 + 0.152*p_2122_2211 + 0.0621*p_2122_2221 - 0.267*p_2122_3111 - 0.121*p_2122_3121 + 0.128*p_2122_3211 + 0.0446*p_2122_3221 - 0.0629*p_2212_1121 + 0.00687*p_2212_1221 + 0.349*p_2212_2111 - 0.186*p_2212_2121 - 0.236*p_2212_2221 - 0.249*p_2212_3111 + 0.041*p_2212_3121 - 0.259*p_2212_3221 - 0.248*p_2222_1121 - 0.127*p_2222_1211 - 0.0102*p_2222_1221 - 0.275*p_2222_2111 - 0.0908*p_2222_2121 - 0.252*p_2222_2211 - 0.0175*p_2222_2221 + 0.218*p_2222_3111 + 0.172*p_2222_3121 - 0.257*p_2222_3211 - 0.551*p_2222_3221
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(148.097486,22.040147,0.006976)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(134.695584,-19.790509,2.000000)
+Party: 1, input:3, obs: (azimuth[º],elevation[º],r)=(177.671005,63.811343,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(-19.272674,-45.800594,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-176.300268,-41.838374,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(-136.762063,-79.199980,0.941790)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(43.240870,72.551682,0.001153)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 2.
+Visibility given initial measurements and channels: 0.152203
+Visibility given initial measurements and channels: 0.031048
+Visibility given initial measurements and channels: 0.103675
+Visibility given initial measurements and channels: 0.076140
+Visibility given initial measurements and channels: 0.119284
+BlochAllObs(chiresults{4,6}{1})
+{Brace indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BlochAllObs', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BlochAllObs.m', 18)" style="font-weight:bold">BlochAllObs</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BlochAllObs.m',18,0)">line 18</a>)
+           allbloch = BlochComponents(povms{party}{x}{1}-povms{party}{x}{2});
+} 
+plot_chidep_ineq16_POVM
+BlochAllObs(chiresults{4,6}{1})
+{Brace indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BlochAllObs', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BlochAllObs.m', 18)" style="font-weight:bold">BlochAllObs</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BlochAllObs.m',18,0)">line 18</a>)
+           allbloch = BlochComponents(povms{party}{x}{1}-povms{party}{x}{2});
+} 
+load('chi_dependence_ineq16_POVM.mat')
+BlochAllObs(chiresults{4,6}{1})
+{Brace indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BlochAllObs', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BlochAllObs.m', 18)" style="font-weight:bold">BlochAllObs</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BlochAllObs.m',18,0)">line 18</a>)
+           allbloch = BlochComponents(povms{party}{x}{1}-povms{party}{x}{2});
+} 
+BlochAllObs(chiresults{4,6})
+plot_chidep_ineq16_POVM
+chiresults{4,4}
+
+ans =
+
+    0.1832
+
+chiresults{4,5}
+
+ans =
+
+   0.0547 + 0.0000i  -0.0356 + 0.0035i  -0.1774 + 0.0619i   0.1116 - 0.0515i   0.0878 + 0.0800i   0.1454 + 0.1089i   0.0305 + 0.0138i   0.0484 + 0.0167i
+  -0.0356 - 0.0035i   0.0234 + 0.0000i   0.1195 - 0.0290i  -0.0760 + 0.0264i  -0.0521 - 0.0578i  -0.0878 - 0.0802i  -0.0190 - 0.0110i  -0.0305 - 0.0140i
+  -0.1774 - 0.0619i   0.1195 + 0.0290i   0.6459 + 0.0000i  -0.4203 + 0.0406i  -0.1942 - 0.3591i  -0.3485 - 0.5180i  -0.0832 - 0.0794i  -0.1383 - 0.1090i
+   0.1116 + 0.0515i  -0.0760 - 0.0264i  -0.4203 - 0.0406i   0.2760 + 0.0000i   0.1038 + 0.2459i   0.1942 + 0.3590i   0.0491 + 0.0569i   0.0831 + 0.0796i
+   0.0878 - 0.0800i  -0.0521 + 0.0578i  -0.1942 + 0.3591i   0.1038 - 0.2459i   0.2619 + 0.0000i   0.3903 - 0.0377i   0.0566 - 0.0181i   0.1099 - 0.0480i
+   0.1454 - 0.1089i  -0.0878 + 0.0802i  -0.3485 + 0.5180i   0.1942 - 0.3590i   0.3903 + 0.0377i   0.6051 + 0.0000i   0.1168 - 0.0257i   0.1568 - 0.0502i
+   0.0305 - 0.0138i  -0.0190 + 0.0110i  -0.0832 + 0.0794i   0.0491 - 0.0569i   0.0566 + 0.0181i   0.1168 + 0.0257i   0.0656 + 0.0000i   0.0019 + 0.0010i
+   0.0484 - 0.0167i  -0.0305 + 0.0140i  -0.1383 + 0.1090i   0.0831 - 0.0796i   0.1099 + 0.0480i   0.1568 + 0.0502i   0.0019 - 0.0010i   0.0674 + 0.0000i
+
+ch=chiresults{4,5}; kr=KrausOperators(ch,[2,4]);
+kr
+
+kr =
+
+  7×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {4×2 double}
+    {4×2 double}
+    {4×2 double}
+    {4×2 double}
+    {4×2 double}
+    {4×2 double}
+    {4×2 double}
+
+kr{1}
+
+ans =
+
+   0.2211 + 0.0762i   0.4664 - 0.2013i
+  -0.1391 - 0.0638i   0.7396 - 0.2376i
+  -0.6310 - 0.4977i   0.1424 - 0.0134i
+   0.3793 + 0.3635i   0.2191 + 0.0000i
+
+kr{2}
+
+ans =
+
+  -0.0000 - 0.0001i   0.0554 - 0.0279i
+   0.0000 + 0.0001i  -0.0379 + 0.0136i
+   0.0000 + 0.0004i  -0.2106 + 0.0286i
+   0.0000 - 0.0003i   0.1391 + 0.0000i
+
+kr{3}
+
+ans =
+
+   1.0e-03 *
+
+   0.2850 + 0.0329i  -0.5454 + 0.3429i
+  -0.1825 - 0.0415i  -0.8234 + 0.5458i
+  -0.8831 - 0.4283i  -0.2825 + 0.0137i
+   0.5423 + 0.3434i  -0.4200 + 0.0000i
+
+kr{4}
+
+ans =
+
+   0.0000 + 0.0000i   0.0012 - 0.0004i
+  -0.0000 - 0.0000i  -0.0008 + 0.0003i
+  -0.0000 + 0.0000i   0.0004 + 0.0000i
+   0.0000 - 0.0000i  -0.0003 + 0.0000i
+
+eig(ch)
+
+ans =
+
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0700
+    1.9300
+
+kr{1}
+
+ans =
+
+   0.2211 + 0.0762i   0.4664 - 0.2013i
+  -0.1391 - 0.0638i   0.7396 - 0.2376i
+  -0.6310 - 0.4977i   0.1424 - 0.0134i
+   0.3793 + 0.3635i   0.2191 + 0.0000i
+
+eig(ch)
+
+ans =
+
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0000
+    0.0700
+    1.9300
+
+kr{1}
+
+ans =
+
+   0.2211 + 0.0762i   0.4664 - 0.2013i
+  -0.1391 - 0.0638i   0.7396 - 0.2376i
+  -0.6310 - 0.4977i   0.1424 - 0.0134i
+   0.3793 + 0.3635i   0.2191 + 0.0000i
+
+kr{2}
+
+ans =
+
+  -0.0000 - 0.0001i   0.0554 - 0.0279i
+   0.0000 + 0.0001i  -0.0379 + 0.0136i
+   0.0000 + 0.0004i  -0.2106 + 0.0286i
+   0.0000 - 0.0003i   0.1391 + 0.0000i
+
+eig(chiresults{4,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0700    1.9300
+
+eig(chiresults{3,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0811    1.9189
+
+eig(chiresults{2,5})'
+
+ans =
+
+   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0001    0.0785    1.9214
+
+eig(chiresults{6,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0158    1.9842
+
+eig(chiresults{7,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0146    1.9854
+
+eig(chiresults{8,5})'
+
+ans =
+
+   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0046    1.9954
+
+eig(chiresults{20,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+eig(chiresults{15,5})'
+
+ans =
+
+   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0002    1.9998
+
+eig(chiresults{6,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0158    1.9842
+
+eig(chiresults{50,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+eig(chiresults{20,5})'
+
+ans =
+
+    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+save('chiresults.mat','chiresults');
+try open('BlochAllObs'); catch edit('BlochAllObs'); end
+plot_chidep_ineq16_POVM
+check_povm_state
+p_crit=0.183247 and p_onewaysteerability=0.056726 (we want p_crit > p_onewaysteerability)
+check_povm_state
+p_crit=0.183247 and p_onewaysteerability=0.056726 (we want p_crit > p_onewaysteerability)
+localboundNS2
+
+localboundNS2 =
+
+     4
+
+arXiv1112_2626_check_povm

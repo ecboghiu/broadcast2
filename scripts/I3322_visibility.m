@@ -68,15 +68,17 @@ while meta_iteration < MAX_ITER_OUTER_LOOP
             channel = {giveChannelRAND(2,4)};
             %channel = {give_Joe_U()};
             %channel = giveChannelAddsIdentity(2,2,"right");
+            
+            [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
 
-            spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
-            spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs);
+            spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
+            spv1 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(1), channel), POVMs, ins, outs);
             fprintf("s·p(v=0)=%f s·p(v=1)=%f localbound=%f\n", spv0, spv1, localbound);
         %end
         
         %p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
-        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
-        p_uniform = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs);
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
+        p_uniform = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs, ins, outs);
         alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
         fprintf("Starting visibility: %f\n", alpha);
 
@@ -84,8 +86,8 @@ while meta_iteration < MAX_ITER_OUTER_LOOP
         assert(checkPOVMsAreGood(POVMs,ins,outs),'Problem with POVMs');
         assert(checkThatChannelIsGood(channel, 2, 4), 'Problem with the channel');
 
-        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
-        p_uniform   = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs);
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
+        p_uniform   = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs, ins, outs);
         alpha = visibilityOfBellInequality(bellcoeffs, localbound, p_entangled, p_uniform);
         fprintf("Local maximum: %f\n", alpha);
 
@@ -112,7 +114,7 @@ fprintf("Best of %d: %f\n", MAX_ITER_OUTER_LOOP, best_alpha);
 
 filename = strcat(ScenarioFilename,'visibility','.mat');
 save(filename)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %save 'data_optimal0.577Standard'

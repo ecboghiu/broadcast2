@@ -8959,3 +8959,481 @@ iter=5, channelq=~, bellineqvalue=12.887190, abschangeobjval=1.91931e-08
 Local maximum: 0.379229
 Best of 2: 0.379229
 arXiv1112_2626_check
+LBoundOurEBI: 0.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 0.000000
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ProbMultidimArray', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m', 10)" style="font-weight:bold">ProbMultidimArray</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m',10,0)">line 10</a>)
+    nrparties = length(inputs_per_party);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_bell_ineq', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m', 3)" style="font-weight:bold">evaluate_bell_ineq</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',3,0)">line 3</a>)
+    probarray = ProbMultidimArray(finalstate, povms);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 72)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',72,0)">line 72</a>)
+            spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
+} 
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',72,0)
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m',10,0)
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',3,0)
+I3322_visibility
+LBoundOurEBI: 0.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 0.000000
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ProbMultidimArray', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m', 10)" style="font-weight:bold">ProbMultidimArray</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m',10,0)">line 10</a>)
+    nrparties = length(inputs_per_party);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_bell_ineq', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m', 3)" style="font-weight:bold">evaluate_bell_ineq</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',3,0)">line 3</a>)
+    probarray = ProbMultidimArray(finalstate, povms);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 72)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',72,0)">line 72</a>)
+            spv0 = evaluate_bell_ineq(bellcoeffs, 0, final_state(NoisyWernerState(0), channel), POVMs);
+} 
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',3,0)
+matlab.internal.language.introspective.errorDocCallback('evaluate_bell_ineq', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m', 3)
+matlab.internal.language.introspective.errorDocCallback('evaluate_bell_ineq', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m', 3)
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\evaluate_bell_ineq.m',3,0)
+matlab.internal.language.introspective.errorDocCallback('ProbMultidimArray', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m', 10)
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m',10,0)
+opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',72,0)
+I3322_visibility
+LBoundOurEBI: 0.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 0.000000
+s·p(v=0)=-1.811042 s·p(v=1)=-1.147061 localbound=0.000000
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ProbMultidimArray', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m', 10)" style="font-weight:bold">ProbMultidimArray</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m',10,0)">line 10</a>)
+    nrparties = length(inputs_per_party);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 78)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',78,0)">line 78</a>)
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+} 
+I3322_visibility
+LBoundOurEBI: 16.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 16.000000
+s·p(v=0)=3.816224 s·p(v=1)=-1.055120 localbound=16.000000
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ProbMultidimArray', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m', 10)" style="font-weight:bold">ProbMultidimArray</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArray.m',10,0)">line 10</a>)
+    nrparties = length(inputs_per_party);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 78)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',78,0)">line 78</a>)
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+} 
+I3322_visibility
+LBoundOurEBI: 16.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 16.000000
+s·p(v=0)=3.816224 s·p(v=1)=-1.055120 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=0.702043 s·p(v=1)=-0.000086 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-0.522447 s·p(v=1)=-0.232547 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-1.328884 s·p(v=1)=0.755765 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-3.236807 s·p(v=1)=-0.381183 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=0.943368 s·p(v=1)=0.623370 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-2.181895 s·p(v=1)=0.096496 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=0.593321 s·p(v=1)=0.722720 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-2.661428 s·p(v=1)=-0.825246 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=1.250266 s·p(v=1)=0.852603 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=0.076428 s·p(v=1)=-0.132819 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-2.221803 s·p(v=1)=0.030351 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-1.454243 s·p(v=1)=-0.214449 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=1.952402 s·p(v=1)=-0.180068 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-4.204172 s·p(v=1)=-0.000715 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=-2.414884 s·p(v=1)=0.252328 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=2.197498 s·p(v=1)=0.967754 localbound=16.000000
+Starting visibility: 0.000000
+[Warning: The probability distributions are too close. tol: 0.000001] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('visibilityOfBellInequality', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m', 53)" style="font-weight:bold">visibilityOfBellInequality</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m',53,0)">line 53</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 89)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',89,0)">line 89</a>)] 
+Local maximum: 0.000000
+s·p(v=0)=-1.185965 s·p(v=1)=1.010695 localbound=16.000000
+Starting visibility: 0.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/clean', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\clean.m', 9)" style="font-weight:bold">sdpvar/clean</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\clean.m',9,0)">line 9</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/kron', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\kron.m', 75)" style="font-weight:bold">sdpvar/kron</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\kron.m',75,0)">line 75</a>)
+y = clean(y);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Tensor', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\Tensor.m', 62)" style="font-weight:bold">Tensor</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\Tensor.m',62,0)">line 62</a>)
+        krn = kron(krn,varargin{j-1});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASingleParty', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m', 60)" style="font-weight:bold">SeeSawOverASingleParty</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASingleParty.m',60,0)">line 60</a>)
+                               term = Tensor(povms{1}{x}{a}, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 19)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',19,0)">line 19</a>)
+            [newPproj,newobjval,problemStatus] = SeeSawOverASingleParty(partyidx, output_state, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 83)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',83,0)">line 83</a>)
+        [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 
+I3322_visibility
+LBoundOurEBI: 16.000000
+
+Round 1 of the see-saw.
+Local bound of bell inequality: 16.000000
+s·p(v=0)=11.986356 s·p(v=1)=0.003692 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.438298 s·p(v=1)=1.255048 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.874534 s·p(v=1)=0.023825 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.753778 s·p(v=1)=0.014206 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.825784 s·p(v=1)=0.035137 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.524278 s·p(v=1)=0.346698 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.454327 s·p(v=1)=0.026970 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.971180 s·p(v=1)=1.976885 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.753379 s·p(v=1)=0.239233 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.724175 s·p(v=1)=0.023211 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.921241 s·p(v=1)=0.024211 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.953440 s·p(v=1)=0.337774 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.723300 s·p(v=1)=0.023063 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.766348 s·p(v=1)=0.002209 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=15.782773 s·p(v=1)=15.727966 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.557865 s·p(v=1)=0.013332 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.174425 s·p(v=1)=0.004485 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.786247 s·p(v=1)=0.029857 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=8.832681 s·p(v=1)=0.972277 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.922805 s·p(v=1)=0.001007 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.731089 s·p(v=1)=0.000768 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.290003 s·p(v=1)=0.044532 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.676395 s·p(v=1)=0.007154 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.945343 s·p(v=1)=0.000546 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.999948 s·p(v=1)=3.380697 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.865356 s·p(v=1)=0.184311 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.610078 s·p(v=1)=0.014861 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.874804 s·p(v=1)=0.000274 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.816801 s·p(v=1)=0.036013 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=12.000000 s·p(v=1)=0.000000 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.861050 s·p(v=1)=0.000374 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.859434 s·p(v=1)=0.000075 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=8.615749 s·p(v=1)=2.792025 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.511956 s·p(v=1)=0.002733 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.197306 s·p(v=1)=0.189498 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.858113 s·p(v=1)=0.000983 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.732473 s·p(v=1)=0.059991 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.447677 s·p(v=1)=2.013831 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.873957 s·p(v=1)=0.015301 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.040812 s·p(v=1)=0.325808 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.556352 s·p(v=1)=0.124152 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.972541 s·p(v=1)=0.003206 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.983791 s·p(v=1)=0.000782 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.812070 s·p(v=1)=0.000346 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.757191 s·p(v=1)=0.113609 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.640872 s·p(v=1)=0.020370 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=8.000000 s·p(v=1)=5.482829 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.999986 s·p(v=1)=2.962479 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.804505 s·p(v=1)=0.547475 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.333445 s·p(v=1)=0.351101 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.631937 s·p(v=1)=0.027159 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.977602 s·p(v=1)=0.080583 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.699509 s·p(v=1)=0.000368 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.594822 s·p(v=1)=0.107975 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.828415 s·p(v=1)=0.002728 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.999475 s·p(v=1)=0.006802 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.585146 s·p(v=1)=0.057354 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.588964 s·p(v=1)=0.032783 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.995326 s·p(v=1)=0.000004 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.820838 s·p(v=1)=0.027686 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.057614 s·p(v=1)=4.070703 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.980138 s·p(v=1)=0.000109 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.787317 s·p(v=1)=0.029459 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.922286 s·p(v=1)=0.000056 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.448350 s·p(v=1)=2.007587 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.983297 s·p(v=1)=0.007068 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.413836 s·p(v=1)=0.000000 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.958451 s·p(v=1)=0.018744 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.417557 s·p(v=1)=-0.000000 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.833218 s·p(v=1)=0.276928 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.879089 s·p(v=1)=0.013363 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.626592 s·p(v=1)=0.372277 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.987199 s·p(v=1)=0.006025 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.263229 s·p(v=1)=0.380087 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.974014 s·p(v=1)=0.003572 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.998313 s·p(v=1)=0.001038 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.665588 s·p(v=1)=0.032305 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.534647 s·p(v=1)=11.397481 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.735655 s·p(v=1)=0.058335 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.748896 s·p(v=1)=0.038407 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.785013 s·p(v=1)=0.009072 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=9.467906 s·p(v=1)=-0.000000 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.132569 s·p(v=1)=0.055840 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.729136 s·p(v=1)=0.577579 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=8.000000 s·p(v=1)=4.000009 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.249102 s·p(v=1)=0.075026 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.839221 s·p(v=1)=0.002151 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.995458 s·p(v=1)=0.002818 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=8.865029 s·p(v=1)=4.164427 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.377655 s·p(v=1)=0.057925 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.782256 s·p(v=1)=0.019079 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.997730 s·p(v=1)=1.975524 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.870711 s·p(v=1)=6.485676 localbound=16.000000
+Starting visibility: 0.000000
+[Warning: The Bell values of the probability distributions are too close. tol: 0.000001] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('visibilityOfBellInequality', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m', 55)" style="font-weight:bold">visibilityOfBellInequality</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\visibilityOfBellInequality.m',55,0)">line 55</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 91)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',91,0)">line 91</a>)] 
+Local maximum: 0.000000
+s·p(v=0)=11.840241 s·p(v=1)=0.003825 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.994352 s·p(v=1)=0.000403 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.825118 s·p(v=1)=0.000385 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=10.731551 s·p(v=1)=0.006293 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=8.468571 s·p(v=1)=2.883942 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.391128 s·p(v=1)=0.009233 localbound=16.000000
+Starting visibility: 0.000000
+Local maximum: 0.000000
+s·p(v=0)=11.930627 s·p(v=1)=0.008117 localbound=16.000000
+Starting visibility: 0.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lmi/categorizeproblem', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@lmi\categorizeproblem.m', 121)" style="font-weight:bold">lmi/categorizeproblem</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\@lmi\categorizeproblem.m',121,0)">line 121</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compileinterfacedata', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\compileinterfacedata.m', 278)" style="font-weight:bold">compileinterfacedata</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\compileinterfacedata.m',278,0)">line 278</a>)
+[ProblemClass,integer_variables,binary_variables,parametric_variables,uncertain_variables,semicont_variables,quad_info] =
+categorizeproblem(F,logdetStruct,h,options.relax,parametric,evaluation_based,F_vars,exponential_cone);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solvesdp', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\solvesdp.m', 249)" style="font-weight:bold">solvesdp</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\solvesdp.m',249,0)">line 249</a>)
+[interfacedata,recoverdata,solver,diagnostic,F,Fremoved,ForiginalQuadratics] =
+compileinterfacedata(F,[],logdetStruct,h,options,0,solving_parametric);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimize', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\optimize.m', 31)" style="font-weight:bold">optimize</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\extras\optimize.m',31,0)">line 31</a>)
+[varargout{1:nargout}] = solvesdp(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverChannel', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverChannel.m', 75)" style="font-weight:bold">SeeSawOverChannel</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverChannel.m',75,0)">line 75</a>)
+    sol = optimize(constraints, -objective, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllParties', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m', 28)" style="font-weight:bold">SeeSawOverAllParties</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllParties.m',28,0)">line 28</a>)
+            [newchannel,newobjval,problemStatus] = SeeSawOverChannel(initialState, bellcoeffs, povms);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('I3322_visibility', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m', 85)" style="font-weight:bold">I3322_visibility</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scripts\I3322_visibility.m',85,0)">line 85</a>)
+        [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
+} 

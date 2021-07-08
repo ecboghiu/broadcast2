@@ -1,8 +1,8 @@
 load('059value.mat');
 
-p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), best_povm, best_channels);
-p_uniform = ProbMultidimArrayInstrumental(NoisyWernerState(1), best_povm, best_channels);
-[newalpha, bellcoeffs, LPstatus, dual_alpha] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
+p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), best_povm, best_channels, ins, outs);
+p_uniform = ProbMultidimArrayInstrumental(NoisyWernerState(1), best_povm, best_channels, ins, outs);
+[newalpha, bellcoeffs, LPstatus] = BroadcastInstrumentLP(p_entangled, p_uniform, ins, outs);
 
 bell_in_prob = dispBellCoeffsINSTR(bellcoeffs, ins, outs);
 

@@ -19,7 +19,7 @@ function projs = givePprojDET()
     A1 = sig1;
     A2 = sig2;
 
-    phi = atan(1/sqrt(2));
+    phi = atan2(1,sqrt(2));
     B0 = cos(phi) * sig1 + sin(phi) * sig2;
     B1 = cos(phi) * sig1 - sin(phi) * sig2;
 

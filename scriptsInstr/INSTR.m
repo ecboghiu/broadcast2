@@ -9,10 +9,10 @@ addpath(newdir2);
 addpath(newdir3);
 
 %% Fix the scenario
-party_ins = [3,4,4];
+party_ins = [2,2,2];
 party_outs = [2,2,2];
-instr_ins = [1];
-instr_outs = [1];
+instr_ins = [2];
+instr_outs = [2];
 dims_in = [2];
 dims_out = [4];
 ins = [party_ins, instr_ins];
@@ -38,6 +38,8 @@ rng 'shuffle'
 %% How many total rounds
 MAX_ITER_META = 1000;
 
+%% misc
+mat = fromBellToCorrMat_INSTR(ins,outs);
 
 %% The MAIN loop
 final_round_alpha = [];
@@ -59,7 +61,7 @@ while meta_iteration < MAX_ITER_META
     ALHPA_TOL_DIST_TO_1 = 1e-3;
     LPstatus = 0;
     %% Loop through initial conditions until they are good
-    while abs(alpha-0)<ALHPA_TOL_DIST_TO_1 || abs(alpha-1)<ALHPA_TOL_DIST_TO_1 || alpha < 0.2 || LPstatus~=0 
+    while abs(alpha-0)<ALHPA_TOL_DIST_TO_1 || abs(alpha-1)<ALHPA_TOL_DIST_TO_1 || alpha < 0.1 || LPstatus~=0 
         %% Initialize the POVMs.
         %iniPovms = givePprojRAND2();  % This uses QETLAB's RandomPOVM()
         iniPovms = givePprojRANDgeneral(party_ins);  % This generates random directions -as 
@@ -297,9 +299,19 @@ while meta_iteration < MAX_ITER_META
         fprintf("Other visibilities:\n");
         disp([best_everything{:,1}]);
         save(strcat('matlabworkspace_',Scenario,'.mat'));
+        
+%         bell = best_everything{best_index,4};
+%         new_bell = bellcoeffs(:)' * mat';
+%         new_bell_corr = ToCorrelatorNotationINSTR_sym(new_bell, ins, outs);
+%         disp(new_bell_corr);
+%         outputs_slices = ind2subv(outs, 1:prod(outs));
+%         inputs_slices = ind2subv(ins, 1:prod(ins));
     end
     
     meta_iteration = meta_iteration + 1;
 end
+
+
+
 
 save(strcat('matlabworkspace_',Scenario,'.mat'));

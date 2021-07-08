@@ -11,7 +11,7 @@ function change_of_basis_mat = fromCorrToBellMat(ins, outs)
 % instead of the traditional 
 % 000, 001, 010, 011, etc.
 % This happens when using ind2subv.
-% We should ignore the element (1,1,1) as that has no correspondente in 
+% We should ignore the element (1,1,1) as that has no correspondence in 
 % p(abc|xyz).
 
 % For the MATLAB behaviour of counting from left to right instead of right
@@ -44,7 +44,7 @@ corr_coords = ind2subv(corrdims, 1:prod(corrdims(:)));
 nr_coords = numel(corr_coords(1,:));
 for idx = 1:(size(corr_coords,1)-1)  % Ignore (1,1,1) as that is a constant, the local bound, so up to size(corr_coords,1)-1
     coords = corr_coords(idx+1,:);
-    coordscell = num2cell(coords);
+    %coordscell = num2cell(coords);
     %if ~all(coords == ones(1,nr_coords)) 
         outputs_slices = ind2subv(outs, 1:prod(outs));
         for out_idx = 1:size(outputs_slices,1) 

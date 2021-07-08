@@ -60,27 +60,35 @@ aux_correlator_array = zeros(corrdims_cell{:});
 prob_size_idx = 1;
 for out_idx = 1:size(outputs_slices,1)
     outputs = outputs_slices(out_idx,:);
-    outputs_slice = num2cell(outputs);
+    %outputs_slice = num2cell(outputs);
     for in_idx = 1:size(inputs_slices,1)
        inputs_slice = num2cell(inputs_slices(in_idx,:));
        
        aux_correlator_array = 0*aux_correlator_array;
        for corr_idx = 1:(size(corr_coords,1))  % first element(1,1,1) corresponds to a constant
+                                               % TODO What about w=2?
            coords = corr_coords(corr_idx,:);
-           coordscell = num2cell(coords);  
-           if all(coords == ones(1,nr_coords))
+           coordscell = num2cell(coords); % this containts w as well, coords = [x y z w2 w] so actually 2 entries correspond to constant value
+           x = coords(1);
+           y = coords(2);
+           z = coords(3);
+           w2 = coords(4);
+           w = coords(5);
+ 
+           if all([x,y,z,w2,w] == [1, 1, 1, 1, 1])
                aux_correlator_array(coordscell{:}) = 1; % multiply by 1/16 at the end
            else
                % find which of [x,y,z,w2] are different from 1
                % note that w is never different from 1 in this convention
                % remember that everything is displaced by 1, so if x,y,z
-               % are 1 this means Ax=Id, By=Id and so on
+               % are 1 this means Ax=Id, By=Id, Cz=Id
                x = coords(1);
                y = coords(2);
                z = coords(3);
                w2 = coords(4);
                w = coords(5);
-               which_are_not_1 = ~([x,y,z,w2]==1);
+               
+               which_are_not_1 = [x,y,z,w2]~=1 ;
                % Now from the ones which are not 1 compare with (x,y,z,w)
                % form prob(abcd|xyzw)
                ins_corr = [[x,y,z]-1,w];
@@ -91,13 +99,14 @@ for out_idx = 1:size(outputs_slices,1)
                   % if not, then set the coefficient
                   % example: abd<AxBywDw>
                   % we need to set aux_correlator_array(x,y,1,w2=1,w)=abd.
-                  aux_correlator_array(coordscell{:}) = prod((-1).^outputs(which_are_not_1));
+                  aux_correlator_array(coordscell{:}) = prod((-1).^(outputs(which_are_not_1)-1));
                end       
            end
        end
-       prob_size_idx = prob_size_idx + 1;
        change_of_basis_mat(:, prob_size_idx) = 1/16*aux_correlator_array(:);
        aux_correlator_array = 0*aux_correlator_array;
+       
+       prob_size_idx = prob_size_idx + 1;
     end
 end
 

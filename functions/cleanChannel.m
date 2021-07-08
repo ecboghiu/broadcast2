@@ -1,5 +1,5 @@
 function out = cleanChannel(channel, d1, d2)
-if ~IsPSD(channel)
+if IsPSD(channel)
     Cm = ChoiMatrix(channel);  % input must be in choi form
 
     % d1 = in
@@ -18,9 +18,9 @@ if ~IsPSD(channel)
         out = Cprimeprime;
     end
 
-    assert(norm(PartialTrace(out,2,[d1,d2])-eye(d1),'fro')<1e-12,"Choi matrix condition not satisfied");
+    assert(norm(PartialTrace(out,2,[d1,d2])-eye(d1),'fro')<1e-12, "Choi matrix condition not satisfied");
     assert(IsPSD(out),"Choi matrix not positive");
-    fprintf("after cleaning: %f smallest_eig=%f\n", norm(out-channel, 'fro'), smallesteig);
+    %fprintf("after cleaning: %g smallest_eig=%g\n", norm(out-channel, 'fro'), smallesteig);
     
 else
     out=channel;

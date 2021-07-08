@@ -8,20 +8,24 @@ addpath(newdir);
 addpath(newdir2);
 addpath(newdir3);
 
-%load('best_for_sqrt3.mat');
-%[newalpha, newbellcoeffs, LPstatus, dual_alpha] = BroadcastLP(p_entangled, p_uniform);
 
 ins = [3,2,2];
 outs = [2,2,2];
 nr_parties = length(ins);
 
+load('best_for_sqrt3.mat');
+p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
+p_uniform   = ProbMultidimArray(final_state(NoisyWernerState(1), channel), POVMs, ins, outs);
+[newalpha, newbellcoeffs, LPstatus, dual_alpha] = BroadcastLP(p_entangled, p_uniform);
 
-%for eta=flip(0.545:0.05:0.9)
+
+
+% for eta=flip(0.545:0.05:0.9)
 %    efficiencies = eta*[1,1,1];
 %    p_dec_eff = giveDetectorEfficiencydistrib(p_entangled, efficiencies, ins, outs);
 %    [bellcoeffs, LPstatus] = BroadcastLPfeasibility(p_dec_eff);
 %    fprintf("detection efficiency: %f LPstatus= %d (1 is infeasible, 0 feasible)\n", eta, LPstatus);
-%end
+% end
 
 MAX_ITER_OUTER_LOOP = 10;
 MAX_ITER_INNER_LOOP = 10;
@@ -36,7 +40,7 @@ yalmip_optimizer = BroadcastLPfeasibility_optimizer(ins,outs+1);
 %% Start with a good point
 channel = {give_Joe_U()}; %best_channels{1};
 POVMs = givePprojDET(); %best_povm{1};
-p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs , ins, outs);
 [eta, bellcoeffs] = BroadcastSlowLPdetectorefficiency(yalmip_optimizer,p_entangled,ins,outs,ETA_CONVERGENCE_TOL);
 
 
@@ -49,7 +53,7 @@ while outer_iteration <= MAX_ITER_OUTER_LOOP
     while inner_iteration < MAX_ITER_INNER_LOOP && change_eta > ETA_CONVERGENCE_TOL && abs(eta)>1e-2 && abs(eta-1)>1e-2
         old_eta = eta;
         [POVMs,finalObj,channel] = SeeSawOverAllParties(bellcoeffs, NoisyWernerState(0), POVMs, channel);
-        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
         [new_eta, bellcoeffs] = BroadcastSlowLPdetectorefficiency(yalmip_optimizer,p_entangled,ins,outs,ETA_CONVERGENCE_TOL);
         change_eta = abs(new_eta-old_eta);
         fprintf("for inner_iteration=%d eta=%f",inner_iteration, new_eta);
@@ -64,7 +68,7 @@ while outer_iteration <= MAX_ITER_OUTER_LOOP
     while abs(eta)<1e-2 && abs(eta-1)<1e-2
         POVMs = givePprojRANDgeneral(ins);
         channel = RandomSuperoperator([2,4]);
-        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+        p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
         [eta, bellcoeffs] = BroadcastSlowLPdetectorefficiency(yalmip_optimizer,p_entangled,ins,outs,ETA_CONVERGENCE_TOL);
         fprintf("Detector efficiency given the initial conditions: %f\n", eta);
     end

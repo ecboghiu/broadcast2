@@ -39,8 +39,8 @@ while meta_iteration < MAX_ITER_META && latest_alpha_meta < 1-0.6
         iniChannel = {giveChannelRAND(2,4)};  % An isometry
         %iniChannel = {give_Joe_U()};  % The optimal choice from the paper
 
-        assert(checkPOVMsAreGood(iniPovms,ins,outs),'Problem with POVMs');
-        assert(checkThatChannelIsGood(iniChannel, 2, 4), 'Problem with the channel');
+        %assert(checkPOVMsAreGood(iniPovms,ins,outs),'Problem with POVMs');
+        %assert(checkThatChannelIsGood(iniChannel, 2, 4), 'Problem with the channel');
         
         %% Run the LP with broadcast-local constraints.
         p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), iniChannel), iniPovms);

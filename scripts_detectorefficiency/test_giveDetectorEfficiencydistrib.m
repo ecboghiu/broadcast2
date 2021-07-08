@@ -18,7 +18,7 @@ outs = [2,2,2];
 nr_parties = length(ins);
 efficiencies = [1,1,1];
 
-p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs);
+p_entangled = ProbMultidimArray(final_state(NoisyWernerState(0), channel), POVMs, ins, outs);
 
 %% Check normalization
 efficiencies = rand(1,3);

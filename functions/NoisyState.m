@@ -8,6 +8,10 @@ if strcmp(state_family_name, 'partially_entangled')
     state = NoisyPartiallyEntangled(noise, chi, id_on);
 elseif strcmp(state_family_name, 'werner')
     state = NoisyWernerState(noise);
+elseif strcmp(state_family_name, 'pent_povm')
+    chi = params.CONST_CHI;
+    id_on = params.IDENTITY_PLACEMENT;
+    state = PartiallyEntangledPOVM(noise, chi, id_on);
 else
    error("Invalid input name"); 
 end

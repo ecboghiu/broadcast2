@@ -1,0 +1,1260 @@
+Fixing random seed = 207719
+
+Round 1.
+Visibility given initial measurements and channels: 0.139194
+Visibility given initial measurements and channels: 0.039880
+Visibility given initial measurements and channels: 0.147746
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.067216
+Visibility given initial measurements and channels: 0.017377
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.129893
+Visibility given initial measurements and channels: 0.115711
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.162878
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.006844
+Visibility given initial measurements and channels: 0.046701
+Visibility given initial measurements and channels: -0.000000
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PermuteSystems', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PermuteSystems.m', 45)" style="font-weight:bold">PermuteSystems</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PermuteSystems.m',45,0)">line 45</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PermuteSystems', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PermuteSystems.m', 93)" style="font-weight:bold">PermuteSystems</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\PermuteSystems.m',93,0)">line 93</a>)
+row_perm = PermuteSystems(1:dX(1),perm,dim(1,:),0,inv_perm);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Swap', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\Swap.m', 62)" style="font-weight:bold">Swap</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\Swap.m',62,0)">line 62</a>)
+SX = PermuteSystems(X,perm,dim,row_only);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ApplyMap', 'C:\Users\eboghiu\MATLAB external\QETLAB-0.9\ApplyMap.m', 38)" style="font-weight:bold">ApplyMap</a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\QETLAB-0.9\ApplyMap.m',38,0)">line 38</a>)
+    PhiX = kron(reshape(X,1,prod(sX)),speye(sNX(1)))*reshape(Swap(Phi.',[1,2],[sX(2) sNX(2);sX(1) sNX(1)],1).',sNX(1)*prod(sX),sNX(2));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ApplyMapToBipartition', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ApplyMapToBipartition.m', 50)" style="font-weight:bold">ApplyMapToBipartition</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ApplyMapToBipartition.m',50,0)">line 50</a>)
+                                        kron( ketbra(i,k,dimA), ApplyMap(ketbra(j,l,dimB),choi));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ProbMultidimArrayInstrumental', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArrayInstrumental.m', 44)" style="font-weight:bold">ProbMultidimArrayInstrumental</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\ProbMultidimArrayInstrumental.m',44,0)">line 44</a>)
+        state_w_d = ApplyMapToBipartition(inistate,lambda_w_d{instr}{w}{d},"right");
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 91)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',91,0)">line 91</a>)
+        p_entangled = ProbMultidimArrayInstrumental(NoisyWernerState(0), iniPovms, iniChannel, ins, outs);
+} 
+INSTR
+Instrumental scenario = xyzw-abcd (w instrument input, d instrument output) = 2222_2222
+Fixing random seed = 209688
+
+Round 1.
+Visibility given initial measurements and channels: 0.139646
+iter=1, partyidx=3, bellineqvalue=0.230561, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.020917, abschangeobjval=0.790356
+iter=3, partyidx=1, bellineqvalue=1.140773, abschangeobjval=0.119857
+iter=4, partyidx=2, bellineqvalue=1.209542, abschangeobjval=0.068769
+iter=5, partyidx=3, bellineqvalue=1.209542, abschangeobjval=3.62846e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.696906, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=9.18203e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.164462, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.00628*p_1111_1111 - 0.00655*p_1111_1112 - 0.0145*p_1111_1121 + 0.0304*p_1111_1122 + 0.00458*p_1111_1211 + 0.0521*p_1111_1212 - 0.0148*p_1111_1221 - 0.00644*p_1111_1222 - 8.21e-4*p_1111_2111 + 0.975*p_1111_2112 - 0.0137*p_1111_2121 - 0.185*p_1111_2122 - 0.00252*p_1111_2211 + 0.0279*p_1111_2212 - 0.0139*p_1111_2221 - 0.923*p_1111_2222 + 0.00628*p_1112_1111 - 0.00421*p_1112_1112 - 0.0145*p_1112_1121 - 0.0176*p_1112_1122 + 0.00458*p_1112_1211 - 0.0173*p_1112_1212 - 0.0148*p_1112_1221 - 0.023*p_1112_1222 - 8.21e-4*p_1112_2111 + 0.0101*p_1112_2112 - 0.0137*p_1112_2121 - 0.0051*p_1112_2122 - 0.00252*p_1112_2211 - 0.00474*p_1112_2212 - 0.0139*p_1112_2221 - 0.00961*p_1112_2222 + 0.00856*p_1121_1111 + 0.152*p_1121_1112 - 0.00285*p_1121_1121 - 0.0788*p_1121_1122 + 0.00616*p_1121_1211 - 0.0108*p_1121_1212 - 0.00667*p_1121_1221 - 0.19*p_1121_1222 - 0.00241*p_1121_2111 + 0.856*p_1121_2112 - 0.0218*p_1121_2121 + 0.169*p_1121_2122 - 0.00481*p_1121_2211 + 0.0512*p_1121_2212 - 0.0256*p_1121_2221 - 0.898*p_1121_2222 + 0.00856*p_1122_1111 - 0.026*p_1122_1112 - 0.00285*p_1122_1121 - 0.0125*p_1122_1122 + 0.00616*p_1122_1211 - 0.0324*p_1122_1212 - 0.00667*p_1122_1221 - 0.0267*p_1122_1222 - 0.00241*p_1122_2111 - 0.0079*p_1122_2112 - 0.0218*p_1122_2121 + 0.00726*p_1122_2122 - 0.00481*p_1122_2211 - 0.0249*p_1122_2212 - 0.0256*p_1122_2221 - 0.0201*p_1122_2222 + 0.00628*p_1211_1111 + 0.21*p_1211_1112 - 0.0145*p_1211_1121 - 0.301*p_1211_1122 + 0.00458*p_1211_1211 + 0.0898*p_1211_1212 - 0.0148*p_1211_1221 - 0.264*p_1211_1222 - 8.21e-4*p_1211_2111 + 1.03*p_1211_2112 - 0.0137*p_1211_2121 - 0.102*p_1211_2122 - 0.00252*p_1211_2211 - 0.551*p_1211_2212 - 0.0139*p_1211_2221 - 0.286*p_1211_2222 + 0.00628*p_1212_1111 - 0.0303*p_1212_1112 - 0.0145*p_1212_1121 - 0.0283*p_1212_1122 + 0.00458*p_1212_1211 - 0.0173*p_1212_1212 - 0.0148*p_1212_1221 - 0.023*p_1212_1222 - 8.21e-4*p_1212_2111 - 0.0195*p_1212_2112 - 0.0137*p_1212_2121 - 0.0141*p_1212_2122 - 0.00252*p_1212_2211 - 0.00474*p_1212_2212 - 0.0139*p_1212_2221 - 0.00961*p_1212_2222 + 0.00856*p_1221_1111 + 0.687*p_1221_1112 - 0.00285*p_1221_1121 + 0.282*p_1221_1122 + 0.00617*p_1221_1211 + 0.0149*p_1221_1212 - 0.00667*p_1221_1221 - 1.0*p_1221_1222 - 0.00241*p_1221_2111 + 0.596*p_1221_2112 - 0.0218*p_1221_2121 - 0.467*p_1221_2122 - 0.00481*p_1221_2211 - 0.571*p_1221_2212 - 0.0256*p_1221_2221 - 0.926*p_1221_2222 + 0.00856*p_1222_1111 - 0.0389*p_1222_1112 - 0.00285*p_1222_1121 - 0.0408*p_1222_1122 + 0.00617*p_1222_1211 - 0.0324*p_1222_1212 - 0.00667*p_1222_1221 - 0.0267*p_1222_1222 - 0.00241*p_1222_2111 - 0.0419*p_1222_2112 - 0.0218*p_1222_2121 - 0.0474*p_1222_2122 - 0.00481*p_1222_2211 - 0.0249*p_1222_2212 - 0.0256*p_1222_2221 - 0.0201*p_1222_2222 + 0.00575*p_2111_1111 - 0.0861*p_2111_1112 - 0.015*p_2111_1121 + 0.00405*p_2111_1211 + 0.0892*p_2111_1212 - 0.0153*p_2111_1221 + 0.0745*p_2111_1222 - 0.0061*p_2111_2111 - 0.209*p_2111_2112 - 0.0189*p_2111_2121 + 0.0261*p_2111_2122 - 0.0078*p_2111_2211 - 0.0417*p_2111_2212 - 0.0192*p_2111_2221 + 0.00575*p_2112_1111 + 0.0128*p_2112_1112 - 0.015*p_2112_1121 - 0.00203*p_2112_1122 + 0.00405*p_2112_1211 - 0.00217*p_2112_1212 - 0.0153*p_2112_1221 - 0.00657*p_2112_1222 - 0.0061*p_2112_2111 - 0.00146*p_2112_2112 - 0.0189*p_2112_2121 - 0.0146*p_2112_2122 - 0.0078*p_2112_2211 - 0.0147*p_2112_2212 - 0.0192*p_2112_2221 - 0.02*p_2112_2222 + 0.00803*p_2121_1111 + 0.0212*p_2121_1112 - 0.00338*p_2121_1121 - 0.0344*p_2121_1122 + 0.00564*p_2121_1211 + 0.0777*p_2121_1212 - 0.0072*p_2121_1221 - 0.19*p_2121_1222 - 0.00768*p_2121_2111 - 0.296*p_2121_2112 - 0.027*p_2121_2121 - 0.331*p_2121_2122 - 0.0101*p_2121_2211 - 0.106*p_2121_2212 - 0.0309*p_2121_2221 - 0.505*p_2121_2222 + 0.00803*p_2122_1111 - 0.00547*p_2122_1112 - 0.00338*p_2122_1121 + 0.00937*p_2122_1122 + 0.00564*p_2122_1211 - 0.0227*p_2122_1212 - 0.0072*p_2122_1221 - 0.0183*p_2122_1222 - 0.00768*p_2122_2111 - 0.0235*p_2122_2112 - 0.027*p_2122_2121 - 0.0104*p_2122_2122 - 0.0101*p_2122_2211 - 0.0301*p_2122_2212 - 0.0309*p_2122_2221 - 0.0249*p_2122_2222 + 0.00575*p_2211_1111 - 0.528*p_2211_1112 - 0.015*p_2211_1121 + 0.187*p_2211_1122 + 0.00405*p_2211_1211 + 0.554*p_2211_1212 - 0.0153*p_2211_1221 - 0.45*p_2211_1222 - 0.0061*p_2211_2111 + 0.258*p_2211_2112 - 0.0189*p_2211_2121 - 0.199*p_2211_2122 - 0.0078*p_2211_2211 + 0.145*p_2211_2212 - 0.0192*p_2211_2221 + 0.0221*p_2211_2222 + 0.00575*p_2212_1111 - 0.0171*p_2212_1112 - 0.015*p_2212_1121 - 0.0111*p_2212_1122 + 0.00405*p_2212_1211 - 0.00217*p_2212_1212 - 0.0153*p_2212_1221 - 0.00657*p_2212_1222 - 0.0061*p_2212_2111 - 0.0279*p_2212_2112 - 0.0189*p_2212_2121 - 0.0253*p_2212_2122 - 0.0078*p_2212_2211 - 0.0147*p_2212_2212 - 0.0192*p_2212_2221 - 0.02*p_2212_2222 + 0.00803*p_2221_1111 - 0.158*p_2221_1112 - 0.00338*p_2221_1121 - 0.397*p_2221_1122 + 0.00564*p_2221_1211 + 0.586*p_2221_1212 - 0.0072*p_2221_1221 - 0.0484*p_2221_1222 - 0.00768*p_2221_2111 - 0.0913*p_2221_2112 - 0.027*p_2221_2121 + 0.00563*p_2221_2122 - 0.0101*p_2221_2211 + 0.0922*p_2221_2212 - 0.0309*p_2221_2221 + 0.0838*p_2221_2222 + 0.00803*p_2222_1111 - 0.0398*p_2222_1112 - 0.00338*p_2222_1121 - 0.0459*p_2222_1122 + 0.00564*p_2222_1211 - 0.0227*p_2222_1212 - 0.0072*p_2222_1221 - 0.0183*p_2222_1222 - 0.00768*p_2222_2111 - 0.0368*p_2222_2112 - 0.027*p_2222_2121 - 0.0394*p_2222_2122 - 0.0101*p_2222_2211 - 0.0301*p_2222_2212 - 0.0309*p_2222_2221 - 0.0249*p_2222_2222
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500
+
+w=2, Spectrum of sum_d Lambda^w_d:
+   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(110.083379,-20.635475,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-161.716654,4.768324,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(-8.491847,18.057008,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-123.546178,52.415081,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(134.351979,70.217266,0.005092)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(-45.648021,4.571901,0.269726)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 2.
+Visibility given initial measurements and channels: 0.170404
+iter=1, partyidx=1, bellineqvalue=0.306353, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.381243, abschangeobjval=0.0748898
+iter=3, partyidx=3, bellineqvalue=0.399953, abschangeobjval=0.0187104
+iter=4, channelq=~, bellineqvalue=2.293583, abschangeobjval=1.89363
+iter=5, partyidx=1, bellineqvalue=2.293610, abschangeobjval=2.75023e-05
+iter=6, partyidx=2, bellineqvalue=2.293610, abschangeobjval=1.92681e-08
+tentative newalpha=0.292632, sum(bellcoeffs)=-5.624994, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292632
+iter=1, partyidx=2, bellineqvalue=0.294606, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.294977, abschangeobjval=0.000371264
+iter=3, channelq=~, bellineqvalue=0.294977, abschangeobjval=6.26869e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.529787, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=3.46243e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.080170, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 3.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.015636
+Visibility given initial measurements and channels: 0.036514
+Visibility given initial measurements and channels: 0.124252
+iter=1, partyidx=1, bellineqvalue=0.248181, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292245, abschangeobjval=0.0440642
+iter=3, partyidx=3, bellineqvalue=0.388389, abschangeobjval=0.0961439
+iter=4, channelq=~, bellineqvalue=1.093934, abschangeobjval=0.705546
+iter=5, partyidx=1, bellineqvalue=1.095109, abschangeobjval=0.00117444
+iter=6, partyidx=2, bellineqvalue=1.095109, abschangeobjval=5.26025e-09
+tentative newalpha=0.292843, sum(bellcoeffs)=-3.579510, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292843
+iter=1, channelq=~, bellineqvalue=0.292843, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292843, abschangeobjval=1.6317e-08
+tentative newalpha=0.292843, sum(bellcoeffs)=-5.584198, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292843
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 4.
+Visibility given initial measurements and channels: 0.150657
+iter=1, partyidx=3, bellineqvalue=0.254198, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=2.679853, abschangeobjval=2.42566
+iter=3, partyidx=1, bellineqvalue=2.680365, abschangeobjval=0.000511944
+iter=4, partyidx=2, bellineqvalue=3.222452, abschangeobjval=0.542086
+iter=5, partyidx=3, bellineqvalue=3.222452, abschangeobjval=3.08319e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.726752, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=5.44808e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.147407, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 5.
+Visibility given initial measurements and channels: 0.196263
+iter=1, channelq=~, bellineqvalue=2.362245, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=2.454216, abschangeobjval=0.0919711
+iter=3, partyidx=2, bellineqvalue=2.661750, abschangeobjval=0.207534
+iter=4, partyidx=3, bellineqvalue=2.661750, abschangeobjval=1.08256e-07
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.711625, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.293469, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293469, abschangeobjval=2.46151e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.628321, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929
+
+
+Round 6.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.182248
+iter=1, partyidx=2, bellineqvalue=0.207209, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.248655, abschangeobjval=0.0414463
+iter=3, channelq=~, bellineqvalue=0.751918, abschangeobjval=0.503263
+iter=4, partyidx=1, bellineqvalue=0.824056, abschangeobjval=0.0721382
+iter=5, partyidx=2, bellineqvalue=0.830784, abschangeobjval=0.00672795
+iter=6, partyidx=3, bellineqvalue=0.830784, abschangeobjval=7.16304e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.827078, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=2.59721e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.470549, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.0843*p_1111_1112 - 0.287*p_1111_1121 + 0.0723*p_1111_1122 - 0.0096*p_1111_1211 + 0.0709*p_1111_1212 + 0.103*p_1111_1221 + 0.0693*p_1111_1222 - 1.02*p_1111_2111 + 0.159*p_1111_2112 + 0.0606*p_1111_2121 + 0.143*p_1111_2122 + 0.263*p_1111_2211 + 0.144*p_1111_2212 - 0.103*p_1111_2221 + 0.137*p_1111_2222 - 0.0767*p_1112_1111 - 0.343*p_1112_1112 - 0.339*p_1112_1121 + 0.946*p_1112_1122 + 0.179*p_1112_1211 + 0.448*p_1112_1212 + 0.0491*p_1112_1221 - 2.34*p_1112_1222 - 1.02*p_1112_2111 + 0.974*p_1112_2112 + 0.866*p_1112_2122 + 0.211*p_1112_2211 - 0.127*p_1112_2212 - 0.846*p_1112_2222 + 0.111*p_1121_1111 + 0.0691*p_1121_1112 - 0.227*p_1121_1121 + 0.0811*p_1121_1122 + 0.0244*p_1121_1211 + 0.0525*p_1121_1212 + 0.0541*p_1121_1222 - 0.959*p_1121_2111 + 0.135*p_1121_2112 + 0.151*p_1121_2122 + 0.0584*p_1121_2211 + 0.126*p_1121_2212 + 0.133*p_1121_2222 - 0.0426*p_1122_1111 + 0.021*p_1122_1112 - 0.138*p_1122_1121 - 0.0259*p_1122_1122 + 0.168*p_1122_1211 - 0.064*p_1122_1212 - 0.0918*p_1122_1222 - 1.06*p_1122_2111 + 1.51*p_1122_2112 - 0.0371*p_1122_2121 - 0.0801*p_1122_2122 + 0.232*p_1122_2211 - 0.525*p_1122_2212 - 0.114*p_1122_2221 - 0.071*p_1122_2222 + 0.0575*p_1211_1112 - 0.0819*p_1211_1121 + 0.0663*p_1211_1122 + 0.149*p_1211_1211 + 0.0709*p_1211_1212 + 0.0353*p_1211_1221 + 0.0693*p_1211_1222 + 0.129*p_1211_2112 - 1.16*p_1211_2121 + 0.13*p_1211_2122 + 0.144*p_1211_2212 + 0.0685*p_1211_2221 + 0.137*p_1211_2222 + 0.349*p_1212_1112 - 0.407*p_1212_1121 + 0.0899*p_1212_1122 + 0.225*p_1212_1211 - 0.0669*p_1212_1212 - 0.467*p_1212_1222 - 0.977*p_1212_2111 + 1.59*p_1212_2112 - 0.0465*p_1212_2121 + 0.415*p_1212_2122 - 0.0306*p_1212_2211 + 0.518*p_1212_2212 + 0.245*p_1212_2221 - 1.43*p_1212_2222 + 0.036*p_1221_1112 + 0.0271*p_1221_1122 - 0.021*p_1221_1211 + 0.0525*p_1221_1212 + 0.03*p_1221_1221 + 0.0541*p_1221_1222 + 0.17*p_1221_2111 + 0.117*p_1221_2112 - 1.24*p_1221_2121 + 0.115*p_1221_2122 + 0.126*p_1221_2212 + 0.0739*p_1221_2221 + 0.133*p_1221_2222 - 0.0153*p_1222_1111 + 1.82*p_1222_1112 - 0.29*p_1222_1121 - 1.18*p_1222_1122 + 0.214*p_1222_1211 - 0.242*p_1222_1212 + 0.0659*p_1222_1222 - 0.972*p_1222_2111 + 1.02*p_1222_2112 - 0.165*p_1222_2122 - 0.00973*p_1222_2211 - 0.207*p_1222_2212 + 0.0813*p_1222_2221 - 0.245*p_1222_2222 + 0.0231*p_2111_1112 - 0.205*p_2111_1121 + 0.00321*p_2111_1122 + 0.00626*p_2111_1212 + 0.195*p_2111_1221 - 0.00464*p_2111_1222 - 0.0513*p_2111_2112 - 0.0675*p_2111_2122 + 0.103*p_2111_2211 - 0.0665*p_2111_2212 - 0.072*p_2111_2222 - 0.0397*p_2112_1111 - 0.395*p_2112_1112 - 0.698*p_2112_1122 + 0.036*p_2112_1211 + 0.214*p_2112_1212 + 0.82*p_2112_1222 - 0.349*p_2112_2112 - 0.0178*p_2112_2121 - 0.61*p_2112_2122 + 0.177*p_2112_2212 + 0.114*p_2112_2221 + 0.749*p_2112_2222 + 0.128*p_2121_1111 - 0.00403*p_2121_1112 - 0.153*p_2121_1121 + 0.0158*p_2121_1122 + 0.0165*p_2121_1211 - 0.0139*p_2121_1212 + 0.1*p_2121_1221 - 0.00305*p_2121_1222 - 0.0698*p_2121_2112 - 0.0537*p_2121_2122 - 0.042*p_2121_2211 - 0.0872*p_2121_2212 + 0.042*p_2121_2221 - 0.0818*p_2121_2222 + 0.0195*p_2122_1111 - 1.21*p_2122_1112 + 0.115*p_2122_1121 + 0.223*p_2122_1122 - 1.18e-10*p_2122_1211 + 0.892*p_2122_1212 + 0.0366*p_2122_1221 - 0.159*p_2122_1222 - 0.0232*p_2122_2111 + 0.0639*p_2122_2112 - 0.101*p_2122_2121 + 0.278*p_2122_2122 - 0.0985*p_2122_2212 + 0.0462*p_2122_2221 - 0.251*p_2122_2222 - 0.0106*p_2211_1112 - 0.0125*p_2211_1122 + 0.287*p_2211_1211 + 0.00626*p_2211_1212 - 0.00464*p_2211_1222 - 0.111*p_2211_2111 - 0.0818*p_2211_2112 - 0.0945*p_2211_2121 - 0.0764*p_2211_2122 - 0.0665*p_2211_2212 + 0.0113*p_2211_2221 - 0.072*p_2211_2222 - 0.303*p_2212_1112 - 0.0313*p_2212_1121 - 2.36*p_2212_1122 + 0.036*p_2212_1211 - 0.403*p_2212_1212 - 0.00294*p_2212_1221 + 1.38*p_2212_1222 - 0.0262*p_2212_2111 + 0.613*p_2212_2112 + 7.11e-4*p_2212_2122 - 0.0303*p_2212_2212 + 0.117*p_2212_2221 - 0.396*p_2212_2222 + 0.0175*p_2221_1111 - 0.0239*p_2221_1112 + 0.074*p_2221_1121 - 0.0219*p_2221_1122 + 0.0989*p_2221_1211 - 0.0139*p_2221_1212 + 0.00252*p_2221_1221 - 0.00305*p_2221_1222 - 0.105*p_2221_2112 - 0.116*p_2221_2121 - 0.11*p_2221_2122 + 0.0594*p_2221_2211 - 0.0872*p_2221_2212 - 0.0439*p_2221_2221 - 0.0818*p_2221_2222 + 0.0098*p_2222_1111 - 0.0243*p_2222_1112 - 0.374*p_2222_1122 - 1.23e-10*p_2222_1211 + 0.601*p_2222_1212 + 0.0828*p_2222_1221 + 0.00812*p_2222_1222 - 0.0674*p_2222_2112 - 0.209*p_2222_2122 - 0.644*p_2222_2212 + 0.319*p_2222_2222
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+    0.2498    0.2498    0.2500    0.2500    0.2500    0.2500    0.2502    0.2502
+
+w=2, Spectrum of sum_d Lambda^w_d:
+   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000    0.0000    2.0000
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(-142.443383,-70.652834,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(11.769474,-17.544869,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(45.978694,37.429328,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-17.237092,-30.496864,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(65.455711,58.362796,0.014702)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(65.838358,60.301827,0.685191)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929
+
+
+Round 7.
+Visibility given initial measurements and channels: 0.058359
+Visibility given initial measurements and channels: 0.241830
+iter=1, partyidx=2, bellineqvalue=0.384935, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.437825, abschangeobjval=0.0528906
+iter=3, channelq=~, bellineqvalue=1.647976, abschangeobjval=1.21015
+iter=4, partyidx=1, bellineqvalue=1.648048, abschangeobjval=7.13386e-05
+iter=5, partyidx=2, bellineqvalue=1.648048, abschangeobjval=4.09778e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.720935, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292900, abschangeobjval=6.48153e-06
+iter=3, partyidx=3, bellineqvalue=0.292900, abschangeobjval=2.83411e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.334998, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929
+
+
+Round 8.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.012465
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.129431
+iter=1, partyidx=3, bellineqvalue=0.137007, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.747789, abschangeobjval=0.610782
+iter=3, partyidx=1, bellineqvalue=0.869372, abschangeobjval=0.121583
+iter=4, partyidx=2, bellineqvalue=0.870843, abschangeobjval=0.00147157
+iter=5, partyidx=3, bellineqvalue=0.870843, abschangeobjval=1.0469e-07
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.872101, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=4.12931e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.933091, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929
+
+
+Round 9.
+Visibility given initial measurements and channels: 0.089915
+Visibility given initial measurements and channels: 0.160807
+iter=1, partyidx=2, bellineqvalue=0.177492, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.254413, abschangeobjval=0.0769202
+iter=3, channelq=~, bellineqvalue=1.764959, abschangeobjval=1.51055
+iter=4, partyidx=1, bellineqvalue=1.765082, abschangeobjval=0.000123725
+iter=5, partyidx=2, bellineqvalue=1.765082, abschangeobjval=1.77181e-08
+tentative newalpha=0.292885, sum(bellcoeffs)=-3.663251, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292885
+iter=1, partyidx=2, bellineqvalue=0.296195, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.296207, abschangeobjval=1.22204e-05
+iter=3, channelq=~, bellineqvalue=0.296207, abschangeobjval=2.88108e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.685289, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.292893, abschangeobjval=2.27869e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.977602, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929
+
+
+Round 10.
+Visibility given initial measurements and channels: 0.170307
+iter=1, partyidx=1, bellineqvalue=0.298387, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.299675, abschangeobjval=0.00128813
+iter=3, partyidx=3, bellineqvalue=0.323170, abschangeobjval=0.023495
+iter=4, channelq=~, bellineqvalue=1.202669, abschangeobjval=0.879499
+iter=5, partyidx=1, bellineqvalue=1.202771, abschangeobjval=0.000101578
+iter=6, partyidx=2, bellineqvalue=1.205932, abschangeobjval=0.00316136
+iter=7, partyidx=3, bellineqvalue=1.205932, abschangeobjval=7.7844e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.117118, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.302915, abschangeobjval=0.0100222
+iter=3, channelq=~, bellineqvalue=0.302915, abschangeobjval=5.93666e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.554493, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929
+
+
+Round 11.
+Visibility given initial measurements and channels: 0.169149
+iter=1, partyidx=3, bellineqvalue=0.236281, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.062884, abschangeobjval=0.826603
+iter=3, partyidx=1, bellineqvalue=1.062930, abschangeobjval=4.62145e-05
+iter=4, partyidx=2, bellineqvalue=1.062930, abschangeobjval=1.71653e-08
+tentative newalpha=0.290896, sum(bellcoeffs)=-3.677008, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.290896
+iter=1, partyidx=1, bellineqvalue=0.290896, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.299980, abschangeobjval=0.00908363
+iter=3, partyidx=3, bellineqvalue=0.302892, abschangeobjval=0.00291264
+iter=4, channelq=~, bellineqvalue=0.302892, abschangeobjval=2.92345e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.399958, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=6.1258e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.292812, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929
+
+
+Round 12.
+Visibility given initial measurements and channels: 0.041157
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.064271
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.022035
+Visibility given initial measurements and channels: 0.043639
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.001259
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.062607
+Visibility given initial measurements and channels: 0.056359
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.115420
+iter=1, partyidx=2, bellineqvalue=0.287432, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.400870, abschangeobjval=0.113438
+iter=3, channelq=~, bellineqvalue=1.052252, abschangeobjval=0.651381
+iter=4, partyidx=1, bellineqvalue=1.078227, abschangeobjval=0.0259752
+iter=5, partyidx=2, bellineqvalue=1.078539, abschangeobjval=0.000312559
+iter=6, partyidx=3, bellineqvalue=1.078539, abschangeobjval=4.07142e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.702889, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.293540, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293540, abschangeobjval=3.73686e-11
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.178743, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.0668*p_1111_1111 - 0.0292*p_1111_1112 - 1.1*p_1111_1121 - 0.0361*p_1111_1122 + 0.0832*p_1111_1211 - 0.0292*p_1111_1212 + 0.156*p_1111_1221 - 0.0402*p_1111_1222 - 0.126*p_1111_2111 - 0.00678*p_1111_2112 + 1.37*p_1111_2121 - 0.00215*p_1111_2122 - 0.0836*p_1111_2211 - 0.00682*p_1111_2212 - 0.924*p_1111_2221 - 0.00627*p_1111_2222 + 0.212*p_1112_1111 - 0.0292*p_1112_1112 + 0.0109*p_1112_1121 - 0.0361*p_1112_1122 - 0.0982*p_1112_1211 - 0.0292*p_1112_1212 + 0.0194*p_1112_1221 - 0.0402*p_1112_1222 - 0.164*p_1112_2111 - 0.00678*p_1112_2112 + 0.00413*p_1112_2121 - 0.00215*p_1112_2122 + 0.0637*p_1112_2211 - 0.00682*p_1112_2212 + 0.0151*p_1112_2221 - 0.00627*p_1112_2222 - 0.127*p_1121_1111 - 0.0341*p_1121_1112 - 0.0728*p_1121_1121 - 0.0336*p_1121_1122 + 0.217*p_1121_1211 - 0.0396*p_1121_1212 - 0.0853*p_1121_1221 - 0.035*p_1121_1222 + 0.463*p_1121_2111 + 0.00358*p_1121_2112 + 0.298*p_1121_2121 - 0.00736*p_1121_2122 - 1.32*p_1121_2211 - 0.00189*p_1121_2212 - 0.0965*p_1121_2221 - 0.00874*p_1121_2222 + 0.0106*p_1122_1111 - 0.0341*p_1122_1112 - 2.96e-4*p_1122_1121 - 0.0336*p_1122_1122 + 0.0161*p_1122_1211 - 0.0396*p_1122_1212 - 0.0033*p_1122_1221 - 0.035*p_1122_1222 - 1.09e-4*p_1122_2111 + 0.00358*p_1122_2112 - 0.00426*p_1122_2121 - 0.00736*p_1122_2122 + 0.00178*p_1122_2211 - 0.00189*p_1122_2212 - 0.0133*p_1122_2221 - 0.00874*p_1122_2222 + 0.0399*p_1211_1111 - 0.0292*p_1211_1112 - 0.194*p_1211_1121 - 0.0361*p_1211_1122 + 0.0234*p_1211_1211 - 0.0292*p_1211_1212 + 0.636*p_1211_1221 - 0.0402*p_1211_1222 + 0.0156*p_1211_2111 - 0.00678*p_1211_2112 + 0.352*p_1211_2121 - 0.00215*p_1211_2122 - 0.0265*p_1211_2211 - 0.00682*p_1211_2212 - 0.699*p_1211_2221 - 0.00627*p_1211_2222 + 0.206*p_1212_1111 - 0.0292*p_1212_1112 + 0.0166*p_1212_1121 - 0.0361*p_1212_1122 - 0.0755*p_1212_1211 - 0.0292*p_1212_1212 + 0.0081*p_1212_1221 - 0.0402*p_1212_1222 - 0.173*p_1212_2111 - 0.00678*p_1212_2112 + 0.0188*p_1212_2121 - 0.00215*p_1212_2122 + 0.0596*p_1212_2211 - 0.00682*p_1212_2212 + 0.0078*p_1212_2221 - 0.00627*p_1212_2222 + 0.222*p_1221_1111 - 0.0341*p_1221_1112 + 0.037*p_1221_1121 - 0.0336*p_1221_1122 + 0.0647*p_1221_1211 - 0.0396*p_1221_1212 + 0.0495*p_1221_1221 - 0.035*p_1221_1222 + 0.229*p_1221_2111 + 0.00358*p_1221_2112 + 0.0736*p_1221_2121 - 0.00736*p_1221_2122 - 0.454*p_1221_2211 - 0.00189*p_1221_2212 - 0.0651*p_1221_2221 - 0.00874*p_1221_2222 + 0.00775*p_1222_1111 - 0.0341*p_1222_1112 - 0.00883*p_1222_1121 - 0.0336*p_1222_1122 + 0.00226*p_1222_1211 - 0.0396*p_1222_1212 - 0.00582*p_1222_1221 - 0.035*p_1222_1222 - 0.015*p_1222_2111 + 0.00358*p_1222_2112 - 0.0338*p_1222_2121 - 0.00736*p_1222_2122 - 0.0169*p_1222_2211 - 0.00189*p_1222_2212 - 0.0247*p_1222_2221 - 0.00874*p_1222_2222 - 0.046*p_2111_1111 - 0.0152*p_2111_1112 - 0.313*p_2111_1121 - 0.0221*p_2111_1122 - 0.0454*p_2111_1211 - 0.0153*p_2111_1212 + 0.26*p_2111_1221 - 0.0262*p_2111_1222 + 0.147*p_2111_2111 - 0.0375*p_2111_2112 - 0.194*p_2111_2121 - 0.0328*p_2111_2122 + 0.121*p_2111_2211 - 0.0375*p_2111_2212 + 0.276*p_2111_2221 - 0.037*p_2111_2222 + 0.164*p_2112_1111 - 0.0152*p_2112_1112 + 0.00963*p_2112_1121 - 0.0221*p_2112_1122 - 0.0123*p_2112_1211 - 0.0153*p_2112_1212 + 0.0206*p_2112_1221 - 0.0262*p_2112_1222 - 0.0375*p_2112_2112 + 0.0164*p_2112_2121 - 0.0328*p_2112_2122 - 0.0375*p_2112_2212 + 0.0249*p_2112_2221 - 0.037*p_2112_2222 + 0.569*p_2121_1111 - 0.0202*p_2121_1112 + 0.228*p_2121_1121 - 0.0196*p_2121_1122 - 0.0122*p_2121_1211 - 0.0256*p_2121_1212 - 0.0334*p_2121_1221 - 0.021*p_2121_1222 - 0.471*p_2121_2111 - 0.0271*p_2121_2112 - 0.143*p_2121_2121 - 0.038*p_2121_2122 + 0.108*p_2121_2211 - 0.0326*p_2121_2212 - 0.0222*p_2121_2221 - 0.0394*p_2121_2222 + 0.0109*p_2122_1111 - 0.0202*p_2122_1112 + 0.00121*p_2122_1121 - 0.0196*p_2122_1122 + 0.0128*p_2122_1211 - 0.0256*p_2122_1212 - 0.00785*p_2122_1221 - 0.021*p_2122_1222 + 0.0216*p_2122_2111 - 0.0271*p_2122_2112 + 0.00518*p_2122_2121 - 0.038*p_2122_2122 + 0.0271*p_2122_2211 - 0.0326*p_2122_2212 + 0.00218*p_2122_2221 - 0.0394*p_2122_2222 - 0.053*p_2211_1111 - 0.0152*p_2211_1112 - 0.126*p_2211_1121 - 0.0221*p_2211_1122 - 0.0536*p_2211_1211 - 0.0153*p_2211_1212 - 0.0146*p_2211_1221 - 0.0262*p_2211_1222 - 0.0287*p_2211_2111 - 0.0375*p_2211_2112 - 0.188*p_2211_2121 - 0.0328*p_2211_2122 - 0.00361*p_2211_2211 - 0.0375*p_2211_2212 - 0.0112*p_2211_2221 - 0.037*p_2211_2222 + 0.144*p_2212_1111 - 0.0152*p_2212_1112 + 0.0243*p_2212_1121 - 0.0221*p_2212_1122 + 0.00644*p_2212_1211 - 0.0153*p_2212_1212 + 0.0133*p_2212_1221 - 0.0262*p_2212_1222 - 0.0375*p_2212_2112 + 0.0221*p_2212_2121 - 0.0328*p_2212_2122 - 0.0375*p_2212_2212 + 0.0136*p_2212_2221 - 0.037*p_2212_2222 + 0.223*p_2221_1111 - 0.0202*p_2221_1112 + 0.157*p_2221_1121 - 0.0196*p_2221_1122 - 0.824*p_2221_1211 - 0.0256*p_2221_1212 - 0.115*p_2221_1221 - 0.021*p_2221_1222 - 0.318*p_2221_2111 - 0.0271*p_2221_2112 + 0.121*p_2221_2121 - 0.038*p_2221_2122 + 0.068*p_2221_2211 - 0.0326*p_2221_2212 + 0.0355*p_2221_2221 - 0.0394*p_2221_2222 - 0.00404*p_2222_1111 - 0.0202*p_2222_1112 - 0.0283*p_2222_1121 - 0.0196*p_2222_1122 - 0.00597*p_2222_1211 - 0.0256*p_2222_1212 - 0.0193*p_2222_1221 - 0.021*p_2222_1222 + 0.0187*p_2222_2111 - 0.0271*p_2222_2112 - 0.00338*p_2222_2121 - 0.038*p_2222_2122 + 0.0132*p_2222_2211 - 0.0326*p_2222_2212 - 3.8e-4*p_2222_2221 - 0.0394*p_2222_2222
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    2.0000
+
+w=2, Spectrum of sum_d Lambda^w_d:
+    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(112.911038,0.964641,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-160.519808,-74.286246,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(79.532723,39.736346,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-145.615471,40.318205,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(3.544607,-78.514044,0.025675)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(-176.455393,78.508279,1.008119)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929
+
+
+Round 13.
+Visibility given initial measurements and channels: 0.162181
+iter=1, channelq=~, bellineqvalue=0.834132, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.878304, abschangeobjval=0.0441723
+iter=3, partyidx=2, bellineqvalue=0.878304, abschangeobjval=4.91882e-09
+tentative newalpha=0.282490, sum(bellcoeffs)=-3.894100, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.282490
+iter=1, channelq=~, bellineqvalue=0.282490, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.282490, abschangeobjval=3.4356e-09
+tentative newalpha=0.282490, sum(bellcoeffs)=-7.402919, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.282490
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929
+
+
+Round 14.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.094401
+Visibility given initial measurements and channels: 0.054798
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.106955
+iter=1, partyidx=1, bellineqvalue=0.252938, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.259860, abschangeobjval=0.00692178
+iter=3, partyidx=3, bellineqvalue=0.365048, abschangeobjval=0.105188
+iter=4, channelq=~, bellineqvalue=1.730137, abschangeobjval=1.36509
+iter=5, partyidx=1, bellineqvalue=1.741975, abschangeobjval=0.0118389
+iter=6, partyidx=2, bellineqvalue=1.753856, abschangeobjval=0.0118806
+iter=7, partyidx=3, bellineqvalue=1.753856, abschangeobjval=3.20607e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.710592, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.300447, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.300447, abschangeobjval=2.25668e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.009284, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929
+
+
+Round 15.
+Visibility given initial measurements and channels: 0.068007
+Visibility given initial measurements and channels: 0.120404
+iter=1, channelq=~, bellineqvalue=1.541443, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.952735, abschangeobjval=0.411292
+iter=3, partyidx=2, bellineqvalue=1.952735, abschangeobjval=6.27065e-09
+tentative newalpha=0.290405, sum(bellcoeffs)=-4.157049, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.290405
+iter=1, partyidx=2, bellineqvalue=0.305554, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.309256, abschangeobjval=0.00370234
+iter=3, channelq=~, bellineqvalue=0.309256, abschangeobjval=2.15383e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.932342, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=5.93418e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.305356, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929
+
+
+Round 16.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.047660
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.046166
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.186499
+iter=1, partyidx=1, bellineqvalue=0.239402, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.248670, abschangeobjval=0.00926775
+iter=3, partyidx=3, bellineqvalue=0.350587, abschangeobjval=0.101917
+iter=4, channelq=~, bellineqvalue=1.095213, abschangeobjval=0.744627
+iter=5, partyidx=1, bellineqvalue=1.095213, abschangeobjval=9.68047e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.800626, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1.82176e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-6.062572, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929
+
+
+Round 17.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.130242
+iter=1, partyidx=2, bellineqvalue=0.345567, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.352556, abschangeobjval=0.00698885
+iter=3, channelq=~, bellineqvalue=1.284423, abschangeobjval=0.931867
+iter=4, partyidx=1, bellineqvalue=1.298137, abschangeobjval=0.0137144
+iter=5, partyidx=2, bellineqvalue=1.298143, abschangeobjval=6.00431e-06
+iter=6, partyidx=3, bellineqvalue=1.298143, abschangeobjval=3.28355e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.781256, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.295354, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.295354, abschangeobjval=1.47451e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.417957, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+1.18*p_1111_1211 - 0.0262*p_1111_1112 - 0.778*p_1111_1121 - 0.00157*p_1111_1122 - 0.349*p_1111_1111 - 0.0205*p_1111_1212 + 0.0243*p_1111_1221 - 0.0123*p_1111_1222 - 1.04*p_1111_2111 - 0.0011*p_1111_2112 - 0.358*p_1111_2121 - 0.22*p_1111_2122 - 0.198*p_1111_2211 - 0.0436*p_1111_2212 + 0.436*p_1111_2221 + 0.0654*p_1112_1111 - 0.0274*p_1112_1112 + 0.0441*p_1112_1121 - 0.0543*p_1112_1122 + 0.0432*p_1112_1211 - 0.0126*p_1112_1212 + 0.0651*p_1112_1221 - 0.0317*p_1112_1222 + 0.0354*p_1112_2111 - 0.00476*p_1112_2112 + 0.0169*p_1112_2121 - 0.122*p_1112_2122 + 0.0143*p_1112_2211 - 0.0227*p_1112_2212 + 0.041*p_1112_2221 - 0.0502*p_1112_2222 + 0.0422*p_1121_1111 - 0.0355*p_1121_1112 - 0.0801*p_1121_1121 - 0.0459*p_1121_1122 + 0.291*p_1121_1211 - 0.0282*p_1121_1212 - 0.131*p_1121_1221 - 0.0497*p_1121_1222 - 0.174*p_1121_2111 - 0.0126*p_1121_2112 + 0.0529*p_1121_2121 - 0.0688*p_1121_2122 + 0.0652*p_1121_2211 - 0.0151*p_1121_2212 - 0.0676*p_1121_2221 - 0.0699*p_1121_2222 + 0.0189*p_1122_1111 - 0.0471*p_1122_1112 + 0.0402*p_1122_1121 - 0.0753*p_1122_1122 + 0.0397*p_1122_1211 - 0.0185*p_1122_1212 + 0.0178*p_1122_1221 - 0.0382*p_1122_1222 - 0.0047*p_1122_2111 + 0.00962*p_1122_2112 + 0.0138*p_1122_2121 - 0.0502*p_1122_2122 + 0.0177*p_1122_2211 - 0.0115*p_1122_2212 - 0.00905*p_1122_2221 - 0.0946*p_1122_2222 - 0.373*p_1211_1111 - 0.0176*p_1211_1112 - 0.272*p_1211_1121 - 0.0226*p_1211_1122 - 0.142*p_1211_1211 - 0.0205*p_1211_1212 + 0.36*p_1211_1221 - 0.0122*p_1211_1222 + 0.0647*p_1211_2111 - 0.533*p_1211_2121 - 0.209*p_1211_2122 + 0.59*p_1211_2211 - 0.0436*p_1211_2212 + 0.63*p_1211_2221 - 1.15e-4*p_1211_2222 + 0.0496*p_1212_1111 + 0.0597*p_1212_1121 - 0.2*p_1212_1122 + 0.0718*p_1212_1211 - 0.0109*p_1212_1212 + 0.0388*p_1212_1221 - 0.0622*p_1212_1222 + 0.0195*p_1212_2111 + 0.00712*p_1212_2112 + 0.0329*p_1212_2121 - 0.0152*p_1212_2122 + 0.0406*p_1212_2211 + 0.00871*p_1212_2221 - 0.0441*p_1212_2222 + 0.125*p_1221_1111 - 0.021*p_1221_1112 - 8.5e-4*p_1221_1121 - 0.0534*p_1221_1122 - 0.124*p_1221_1211 - 0.0282*p_1221_1212 + 0.0504*p_1221_1221 - 0.0497*p_1221_1222 + 0.189*p_1221_2111 - 0.0175*p_1221_2112 - 0.145*p_1221_2121 - 0.071*p_1221_2122 - 0.05*p_1221_2211 - 0.015*p_1221_2212 + 0.281*p_1221_2221 - 0.07*p_1221_2222 + 8.38e-4*p_1222_1111 + 0.0067*p_1222_1112 - 0.0093*p_1222_1121 - 0.149*p_1222_1122 - 0.0199*p_1222_1211 - 0.0219*p_1222_1212 + 0.0131*p_1222_1221 - 0.0256*p_1222_1222 - 0.0229*p_1222_2111 - 0.00485*p_1222_2112 - 0.0363*p_1222_2121 - 0.0159*p_1222_2122 - 0.0453*p_1222_2211 + 0.0162*p_1222_2212 - 0.0134*p_1222_2221 - 0.132*p_1222_2222 + 0.676*p_2111_1111 + 0.0336*p_2111_1112 + 0.357*p_2111_1121 + 0.0231*p_2111_1122 - 0.0654*p_2111_1211 + 0.0312*p_2111_1212 - 1.06*p_2111_1221 + 0.0188*p_2111_1222 + 0.144*p_2111_2111 - 0.00769*p_2111_2112 + 0.175*p_2111_2121 - 0.0807*p_2111_2211 + 0.00217*p_2111_2212 + 0.00892*p_2111_2221 - 0.255*p_2111_2222 - 0.0249*p_2112_1111 + 0.0312*p_2112_1112 - 0.0254*p_2112_1121 + 0.00523*p_2112_1122 - 0.0217*p_2112_1211 + 0.0165*p_2112_1212 + 2.94e-4*p_2112_1221 - 0.0117*p_2112_1222 + 0.00515*p_2112_2111 - 0.0628*p_2112_2112 + 0.00185*p_2112_2121 - 0.0559*p_2112_2122 + 0.00715*p_2112_2211 - 0.00457*p_2112_2212 + 0.0243*p_2112_2221 - 0.0722*p_2112_2222 + 0.0505*p_2121_1111 + 0.0235*p_2121_1112 - 0.0293*p_2121_1121 - 0.0212*p_2121_1122 + 0.0658*p_2121_1211 + 0.0242*p_2121_1212 - 0.132*p_2121_1221 - 0.0185*p_2121_1222 + 0.266*p_2121_2111 + 5.27e-4*p_2121_2112 - 0.162*p_2121_2121 - 0.174*p_2121_2122 + 0.292*p_2121_2211 + 0.011*p_2121_2212 - 0.196*p_2121_2221 - 0.0396*p_2122_1111 + 0.0171*p_2122_1112 - 0.0391*p_2122_1121 - 0.012*p_2122_1122 - 0.0247*p_2122_1211 + 0.00496*p_2122_1212 - 0.0468*p_2122_1221 - 0.0219*p_2122_1222 - 0.016*p_2122_2111 - 0.0396*p_2122_2112 - 0.0127*p_2122_2121 - 0.0388*p_2122_2122 - 0.00272*p_2122_2211 - 0.00219*p_2122_2212 - 0.0199*p_2122_2221 - 0.0618*p_2122_2222 - 0.0839*p_2211_1111 + 0.0292*p_2211_1112 + 0.185*p_2211_1121 + 0.015*p_2211_1122 - 0.37*p_2211_1211 + 0.0312*p_2211_1212 - 0.325*p_2211_1221 + 0.0189*p_2211_1222 - 0.0393*p_2211_2111 + 0.0192*p_2211_2112 - 0.124*p_2211_2121 - 0.0144*p_2211_2122 - 0.16*p_2211_2211 + 0.0022*p_2211_2212 - 0.343*p_2211_2221 - 0.256*p_2211_2222 - 0.029*p_2212_1111 - 0.027*p_2212_1112 - 0.0162*p_2212_1121 - 0.0553*p_2212_1122 - 0.0322*p_2212_1211 + 0.0142*p_2212_1212 - 0.0419*p_2212_1221 - 0.0381*p_2212_1222 + 0.00106*p_2212_2111 + 0.0106*p_2212_2121 - 9.37e-4*p_2212_2211 - 0.048*p_2212_2212 - 0.0118*p_2212_2221 + 0.0387*p_2221_1111 + 0.025*p_2221_1112 - 0.178*p_2221_1121 - 0.0158*p_2221_1122 + 0.0234*p_2221_1211 + 0.0243*p_2221_1212 - 0.0185*p_2221_1222 - 0.0246*p_2221_2111 + 0.0215*p_2221_2112 - 0.0339*p_2221_2121 - 0.202*p_2221_2122 - 0.0502*p_2221_2211 + 0.011*p_2221_2212 + 0.0558*p_2221_2221 - 6.84e-5*p_2221_2222 - 0.0437*p_2222_1111 - 0.0146*p_2222_1112 - 0.0565*p_2222_1121 - 0.0586*p_2222_1211 - 0.00244*p_2222_1212 - 0.0489*p_2222_1221 - 0.00525*p_2222_1222 - 0.0199*p_2222_2111 - 0.00315*p_2222_2112 - 0.0295*p_2222_2121 - 0.0555*p_2222_2122 - 0.0332*p_2222_2211 - 0.0406*p_2222_2212 - 0.0223*p_2222_2221 - 0.0326*p_2222_2222
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000    0.0000    2.0000
+
+w=2, Spectrum of sum_d Lambda^w_d:
+    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500    0.2500
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(49.912268,62.722665,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(17.142864,-23.443151,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(121.554499,15.485395,2.000000)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-76.108873,73.792060,2.000000)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(79.460521,45.904686,0.034615)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(79.460523,45.875495,0.831007)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929
+
+
+Round 18.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.087734
+Visibility given initial measurements and channels: 0.071971
+Visibility given initial measurements and channels: 0.072785
+Visibility given initial measurements and channels: 0.172191
+iter=1, partyidx=1, bellineqvalue=0.332689, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.336994, abschangeobjval=0.00430471
+iter=3, partyidx=3, bellineqvalue=0.340604, abschangeobjval=0.0036102
+iter=4, channelq=~, bellineqvalue=1.173717, abschangeobjval=0.833113
+iter=5, partyidx=1, bellineqvalue=1.173753, abschangeobjval=3.545e-05
+iter=6, partyidx=2, bellineqvalue=1.173753, abschangeobjval=8.47683e-10
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-10).
+Result after cleaning numbers: alpha=0.292889, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292889
+iter=1, partyidx=2, bellineqvalue=0.293934, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.293940, abschangeobjval=6.21123e-06
+iter=3, channelq=~, bellineqvalue=0.293940, abschangeobjval=1.15983e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-12.195155, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=7.13785e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-6.247134, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+New best found. Details:
+
+Bell expression in probability notation:
+0.0369*p_1111_1112 - 0.416*p_1111_1111 - 3.29*p_1111_1121 - 0.0939*p_1111_1122 - 3.44*p_1111_1211 - 0.107*p_1111_1212 - 0.154*p_1111_1221 - 0.0125*p_1111_1222 + 2.91*p_1111_2111 - 0.107*p_1111_2112 + 0.36*p_1111_2121 + 0.0762*p_1111_2122 + 1.12*p_1111_2211 - 0.0269*p_1111_2212 + 1.72*p_1111_2221 + 0.0193*p_1111_2222 - 0.0138*p_1112_1111 - 0.0304*p_1112_1112 - 0.0123*p_1112_1121 - 0.0178*p_1112_1122 - 0.0124*p_1112_1211 - 0.0767*p_1112_1212 + 0.0103*p_1112_1221 - 0.00876*p_1112_1222 + 0.0186*p_1112_2111 - 0.0543*p_1112_2112 + 0.00838*p_1112_2121 + 0.00986*p_1112_2122 + 0.00831*p_1112_2211 - 0.0402*p_1112_2212 + 0.0454*p_1112_2221 + 0.00297*p_1112_2222 + 4.54*p_1121_1111 - 0.0162*p_1121_1112 - 0.293*p_1121_1121 - 0.0991*p_1121_1122 + 0.478*p_1121_1211 - 0.145*p_1121_1212 + 1.8*p_1121_1221 - 0.00565*p_1121_1222 - 2.11*p_1121_2111 - 0.0289*p_1121_2112 - 0.817*p_1121_2121 + 0.0785*p_1121_2122 - 2.75*p_1121_2211 - 0.0142*p_1121_2212 - 0.645*p_1121_2221 + 0.0153*p_1121_2222 - 0.0175*p_1122_1111 - 0.0165*p_1122_1112 - 0.019*p_1122_1121 - 0.00774*p_1122_1122 - 0.00378*p_1122_1211 - 0.0707*p_1122_1212 - 0.0264*p_1122_1221 - 0.00403*p_1122_1222 + 0.00206*p_1122_2111 - 0.0637*p_1122_2112 + 0.0123*p_1122_2121 + 0.00658*p_1122_2122 + 0.025*p_1122_2211 - 0.0506*p_1122_2212 - 0.0121*p_1122_2221 - 0.00855*p_1122_2222 + 0.287*p_1211_1111 - 0.0436*p_1211_1112 + 0.134*p_1211_1121 + 0.00378*p_1211_1122 - 0.148*p_1211_1211 - 0.0845*p_1211_1212 - 0.171*p_1211_1221 - 0.00684*p_1211_1222 + 0.11*p_1211_2111 - 0.0268*p_1211_2112 - 0.231*p_1211_2121 - 0.0215*p_1211_2122 - 0.165*p_1211_2211 + 0.00271*p_1211_2212 + 0.281*p_1211_2221 - 0.0386*p_1211_2222 - 0.0175*p_1212_1111 - 0.0512*p_1212_1112 - 0.00368*p_1212_1121 + 0.00899*p_1212_1122 - 0.0189*p_1212_1211 - 0.00547*p_1212_1212 - 0.0262*p_1212_1221 - 0.0364*p_1212_1222 + 0.00202*p_1212_2111 - 0.0423*p_1212_2112 + 0.025*p_1212_2121 - 0.00807*p_1212_2122 + 0.0123*p_1212_2211 - 0.0657*p_1212_2212 - 0.012*p_1212_2221 - 0.0151*p_1212_2222 + 0.254*p_1221_1111 - 0.0253*p_1221_1112 + 0.407*p_1221_1121 - 0.00317*p_1221_1122 - 0.283*p_1221_1211 - 0.0698*p_1221_1212 - 0.431*p_1221_1221 + 0.00109*p_1221_1222 + 0.0509*p_1221_2111 - 0.0198*p_1221_2112 + 0.392*p_1221_2121 - 0.0174*p_1221_2122 + 0.0245*p_1221_2211 - 0.0372*p_1221_2212 - 0.422*p_1221_2221 - 0.0437*p_1221_2222 - 0.0214*p_1222_1111 - 0.0442*p_1222_1112 - 0.0351*p_1222_1121 - 0.00473*p_1222_1122 - 0.0351*p_1222_1211 - 0.0205*p_1222_1212 - 0.0277*p_1222_1221 - 0.0417*p_1222_1222 - 0.0147*p_1222_2111 - 0.0449*p_1222_2112 - 0.0377*p_1222_2121 + 0.0124*p_1222_2122 - 0.0376*p_1222_2211 - 0.055*p_1222_2212 - 0.0134*p_1222_2221 - 0.0166*p_1222_2222 - 4.17*p_2111_1111 - 0.0387*p_2111_1112 + 0.172*p_2111_1121 - 0.0104*p_2111_1122 - 0.675*p_2111_1211 - 0.0352*p_2111_1212 - 1.2*p_2111_1221 - 0.114*p_2111_1222 + 1.98*p_2111_2111 - 0.0239*p_2111_2112 + 1.35*p_2111_2121 + 0.0231*p_2111_2122 + 1.72*p_2111_2211 - 0.0203*p_2111_2212 + 1.02*p_2111_2221 + 0.0209*p_2111_2222 + 0.0185*p_2112_1111 - 0.0299*p_2112_1112 + 0.00849*p_2112_1121 - 0.0143*p_2112_1122 + 0.00844*p_2112_1211 - 0.0273*p_2112_1212 + 0.0441*p_2112_1221 - 0.0839*p_2112_1222 - 0.0139*p_2112_2111 - 0.0172*p_2112_2112 - 0.0122*p_2112_2121 - 0.00846*p_2112_2122 - 0.0123*p_2112_2211 - 0.0146*p_2112_2212 + 0.00906*p_2112_2221 - 0.00294*p_2112_2222 + 0.364*p_2121_1111 - 0.133*p_2121_1112 + 2.63*p_2121_1121 - 0.00981*p_2121_1122 + 2.25*p_2121_1211 - 0.032*p_2121_1212 - 0.112*p_2121_1221 - 0.113*p_2121_1222 - 1.94*p_2121_2111 + 0.0313*p_2121_2112 - 1.38*p_2121_2121 + 0.0191*p_2121_2122 - 1.83*p_2121_2211 + 0.0155*p_2121_2212 - 1.2*p_2121_2221 + 0.0232*p_2121_2222 + 0.00212*p_2122_1111 - 0.0205*p_2122_1112 + 0.0121*p_2122_1121 - 0.0178*p_2122_1122 + 0.024*p_2122_1211 - 0.017*p_2122_1212 - 0.0117*p_2122_1221 - 0.0655*p_2122_1222 - 0.0175*p_2122_2111 - 0.0256*p_2122_2112 - 0.0192*p_2122_2121 - 0.02*p_2122_2122 - 0.00471*p_2122_2211 - 0.026*p_2122_2212 - 0.026*p_2122_2221 - 0.00621*p_2122_2222 - 0.399*p_2211_1111 - 0.0122*p_2211_1112 - 0.364*p_2211_1121 - 0.0197*p_2211_1122 + 0.852*p_2211_1211 - 0.0844*p_2211_1212 - 0.0366*p_2211_1222 - 0.223*p_2211_2111 - 0.00717*p_2211_2112 + 0.00164*p_2211_2121 - 0.0108*p_2211_2122 + 0.0172*p_2211_2211 + 4.58e-5*p_2211_2221 - 0.0277*p_2211_2222 + 0.00203*p_2212_1111 - 0.0196*p_2212_1112 + 0.024*p_2212_1121 - 0.0186*p_2212_1122 + 0.0121*p_2212_1211 - 0.0342*p_2212_1212 - 0.0116*p_2212_1221 - 0.0335*p_2212_1222 - 0.0174*p_2212_2111 - 0.0157*p_2212_2112 - 0.0047*p_2212_2121 - 0.0159*p_2212_2122 - 0.0191*p_2212_2211 - 0.0303*p_2212_2212 - 0.0259*p_2212_2221 - 0.0308*p_2212_2222 - 0.0568*p_2221_1111 - 0.0351*p_2221_1112 - 0.0924*p_2221_1121 - 0.021*p_2221_1122 + 0.281*p_2221_1211 - 0.0286*p_2221_1212 - 0.582*p_2221_1221 - 0.0344*p_2221_1222 + 0.146*p_2221_2111 - 0.0233*p_2221_2112 - 0.0781*p_2221_2121 - 0.013*p_2221_2122 - 0.0264*p_2221_2211 - 0.0168*p_2221_2212 - 0.00923*p_2221_2221 - 0.0265*p_2221_2222 - 0.0142*p_2222_1111 - 0.0171*p_2222_1112 - 0.0362*p_2222_1121 - 0.0459*p_2222_1122 - 0.0361*p_2222_1211 - 0.0448*p_2222_1212 - 0.0124*p_2222_1221 - 0.0251*p_2222_1222 - 0.0209*p_2222_2111 - 0.0172*p_2222_2112 - 0.0337*p_2222_2121 - 0.00368*p_2222_2122 - 0.0336*p_2222_2211 - 0.0207*p_2222_2212 - 0.0268*p_2222_2221 - 0.0241*p_2222_2222
+ 
+Instrument channels in Krauss form:
+Instrument 1. dims_in=2, dims_out=4
+w=1, Spectrum of sum_d Lambda^w_d:
+   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000    2.0000
+
+w=2, Spectrum of sum_d Lambda^w_d:
+    0.2480    0.2481    0.2491    0.2494    0.2507    0.2508    0.2515    0.2523
+
+POVMS (imporant: display info only good for qubits)
+Party: 1, input:1, obs: (azimuth[º],elevation[º],r)=(61.624235,34.155697,2.000000)
+Party: 1, input:2, obs: (azimuth[º],elevation[º],r)=(-57.703342,35.834108,2.000000)
+Party: 2, input:1, obs: (azimuth[º],elevation[º],r)=(-48.893177,-70.817630,0.997855)
+Party: 2, input:2, obs: (azimuth[º],elevation[º],r)=(-48.893177,-70.798124,0.999428)
+Party: 3, input:1, obs: (azimuth[º],elevation[º],r)=(-4.480033,17.747590,2.000000)
+Party: 3, input:2, obs: (azimuth[º],elevation[º],r)=(-42.870677,-67.795026,2.000000)
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 19.
+Visibility given initial measurements and channels: 0.023707
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.012053
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.168121
+iter=1, partyidx=1, bellineqvalue=0.273211, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.276565, abschangeobjval=0.00335405
+iter=3, partyidx=3, bellineqvalue=0.293563, abschangeobjval=0.0169982
+iter=4, channelq=~, bellineqvalue=0.911402, abschangeobjval=0.617839
+iter=5, partyidx=1, bellineqvalue=0.916264, abschangeobjval=0.00486203
+iter=6, partyidx=2, bellineqvalue=0.916910, abschangeobjval=0.000645535
+iter=7, partyidx=3, bellineqvalue=0.916910, abschangeobjval=1.74541e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.795686, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.293242, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293242, abschangeobjval=3.74679e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.312469, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 20.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.210131
+iter=1, partyidx=3, bellineqvalue=0.285180, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.333596, abschangeobjval=1.04842
+iter=3, partyidx=1, bellineqvalue=1.411382, abschangeobjval=0.0777856
+iter=4, partyidx=2, bellineqvalue=1.411382, abschangeobjval=9.63282e-09
+tentative newalpha=0.292844, sum(bellcoeffs)=-3.549508, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292844
+iter=1, partyidx=2, bellineqvalue=0.302573, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.302645, abschangeobjval=7.25921e-05
+iter=3, channelq=~, bellineqvalue=0.302645, abschangeobjval=4.94573e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.742767, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1.5542e-08
+tentative newalpha=0.000000, sum(bellcoeffs)=-107.687332, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.000000
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 21.
+Visibility given initial measurements and channels: 0.120646
+iter=1, channelq=~, bellineqvalue=1.009742, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.017295, abschangeobjval=0.00755318
+iter=3, partyidx=2, bellineqvalue=1.024593, abschangeobjval=0.00729773
+iter=4, partyidx=3, bellineqvalue=1.024593, abschangeobjval=8.83331e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.683362, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1.73331e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.757896, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 22.
+Visibility given initial measurements and channels: 0.244898
+iter=1, partyidx=2, bellineqvalue=0.281438, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.285002, abschangeobjval=0.0035642
+iter=3, channelq=~, bellineqvalue=0.820893, abschangeobjval=0.53589
+iter=4, partyidx=1, bellineqvalue=0.871806, abschangeobjval=0.0509131
+iter=5, partyidx=2, bellineqvalue=0.871973, abschangeobjval=0.000167333
+iter=6, partyidx=3, bellineqvalue=0.871973, abschangeobjval=4.26187e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.907239, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.295375, abschangeobjval=0.00248166
+iter=3, channelq=~, bellineqvalue=0.295375, abschangeobjval=2.07662e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.678436, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 23.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.139948
+iter=1, partyidx=1, bellineqvalue=0.208094, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.311131, abschangeobjval=0.103037
+iter=3, partyidx=3, bellineqvalue=0.341484, abschangeobjval=0.0303527
+iter=4, channelq=~, bellineqvalue=0.940029, abschangeobjval=0.598545
+iter=5, partyidx=1, bellineqvalue=0.941700, abschangeobjval=0.00167111
+iter=6, partyidx=2, bellineqvalue=0.949606, abschangeobjval=0.00790598
+iter=7, partyidx=3, bellineqvalue=0.954821, abschangeobjval=0.00521424
+iter=8, channelq=~, bellineqvalue=0.955440, abschangeobjval=0.000619168
+iter=9, partyidx=1, bellineqvalue=0.955440, abschangeobjval=3.33646e-10
+tentative newalpha=0.292881, sum(bellcoeffs)=-22.041731, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292881
+iter=1, partyidx=1, bellineqvalue=0.292881, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292888, abschangeobjval=6.65071e-06
+iter=3, partyidx=3, bellineqvalue=0.292895, abschangeobjval=6.99691e-06
+iter=4, channelq=~, bellineqvalue=0.292898, abschangeobjval=2.88335e-06
+iter=5, partyidx=1, bellineqvalue=0.292898, abschangeobjval=4.61985e-10
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=4.02627e-10
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 24.
+Visibility given initial measurements and channels: 0.004414
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.108523
+iter=1, channelq=~, bellineqvalue=1.315293, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.320466, abschangeobjval=0.00517363
+iter=3, partyidx=2, bellineqvalue=1.320466, abschangeobjval=6.87281e-10
+tentative newalpha=0.292884, sum(bellcoeffs)=-3.663720, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292884
+iter=1, partyidx=3, bellineqvalue=0.292897, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292897, abschangeobjval=9.49472e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.280668, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=9.57051e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-9.272779, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 25.
+Visibility given initial measurements and channels: 0.042878
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.070087
+Visibility given initial measurements and channels: 0.078687
+Visibility given initial measurements and channels: 0.045853
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.090160
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.137167
+iter=1, partyidx=3, bellineqvalue=0.221621, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.967840, abschangeobjval=0.746219
+iter=3, partyidx=1, bellineqvalue=1.478144, abschangeobjval=0.510303
+iter=4, partyidx=2, bellineqvalue=1.483549, abschangeobjval=0.00540542
+iter=5, partyidx=3, bellineqvalue=1.483549, abschangeobjval=4.26914e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.726882, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.299662, abschangeobjval=0.00676849
+iter=3, channelq=~, bellineqvalue=0.299662, abschangeobjval=2.72145e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.847368, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 26.
+Visibility given initial measurements and channels: 0.209439
+iter=1, partyidx=3, bellineqvalue=0.232219, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.548100, abschangeobjval=0.315881
+iter=3, partyidx=1, bellineqvalue=0.636440, abschangeobjval=0.0883403
+iter=4, partyidx=2, bellineqvalue=0.637960, abschangeobjval=0.00151963
+iter=5, partyidx=3, bellineqvalue=0.637960, abschangeobjval=7.57281e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.687049, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.294074, abschangeobjval=0.00118093
+iter=3, channelq=~, bellineqvalue=0.294074, abschangeobjval=6.16895e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.487200, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 27.
+Visibility given initial measurements and channels: 0.103028
+iter=1, channelq=~, bellineqvalue=0.981740, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.985272, abschangeobjval=0.00353223
+iter=3, partyidx=2, bellineqvalue=0.985373, abschangeobjval=0.000100541
+iter=4, partyidx=3, bellineqvalue=0.985406, abschangeobjval=3.32577e-05
+iter=5, channelq=~, bellineqvalue=0.985410, abschangeobjval=4.51812e-06
+iter=6, partyidx=1, bellineqvalue=0.985410, abschangeobjval=1.6782e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-50.302796, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1.10458e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-8.113485, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 28.
+Visibility given initial measurements and channels: 0.072478
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.241600
+iter=1, partyidx=2, bellineqvalue=0.284092, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.309060, abschangeobjval=0.0249683
+iter=3, channelq=~, bellineqvalue=1.272885, abschangeobjval=0.963825
+iter=4, partyidx=1, bellineqvalue=1.342648, abschangeobjval=0.0697626
+iter=5, partyidx=2, bellineqvalue=1.342648, abschangeobjval=5.45298e-09
+tentative newalpha=0.292748, sum(bellcoeffs)=-3.700405, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292748
+iter=1, channelq=~, bellineqvalue=0.292748, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292748, abschangeobjval=1.43108e-08
+tentative newalpha=0.292748, sum(bellcoeffs)=-7.142541, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292748
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 29.
+Visibility given initial measurements and channels: 0.003553
+Visibility given initial measurements and channels: 0.065980
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.057078
+Visibility given initial measurements and channels: 0.150540
+iter=1, channelq=~, bellineqvalue=1.261325, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.268938, abschangeobjval=0.00761259
+iter=3, partyidx=2, bellineqvalue=1.268938, abschangeobjval=2.86079e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.290559, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.290559
+iter=1, partyidx=3, bellineqvalue=0.293860, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293861, abschangeobjval=1.20948e-06
+iter=3, partyidx=1, bellineqvalue=0.293861, abschangeobjval=4.15386e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.910869, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=4.22884e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.047001, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 30.
+Visibility given initial measurements and channels: 0.107186
+iter=1, partyidx=1, bellineqvalue=0.265253, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.315899, abschangeobjval=0.0506458
+iter=3, partyidx=3, bellineqvalue=0.363401, abschangeobjval=0.0475017
+iter=4, channelq=~, bellineqvalue=1.145265, abschangeobjval=0.781864
+iter=5, partyidx=1, bellineqvalue=1.145798, abschangeobjval=0.000533311
+iter=6, partyidx=2, bellineqvalue=1.145868, abschangeobjval=7.03904e-05
+iter=7, partyidx=3, bellineqvalue=1.145868, abschangeobjval=1.33424e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.830377, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1.11279e-08
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-10).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-09).
+Result after cleaning numbers: alpha=0.292893, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 31.
+Visibility given initial measurements and channels: 0.162900
+iter=1, partyidx=1, bellineqvalue=0.216364, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.264384, abschangeobjval=0.0480199
+iter=3, partyidx=3, bellineqvalue=0.365560, abschangeobjval=0.101175
+iter=4, channelq=~, bellineqvalue=1.243764, abschangeobjval=0.878204
+iter=5, partyidx=1, bellineqvalue=1.244683, abschangeobjval=0.00091963
+iter=6, partyidx=2, bellineqvalue=1.244683, abschangeobjval=7.16168e-09
+tentative newalpha=0.292746, sum(bellcoeffs)=-7.094775, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292746
+iter=1, partyidx=2, bellineqvalue=0.322929, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.323160, abschangeobjval=0.00023033
+iter=3, channelq=~, bellineqvalue=0.323160, abschangeobjval=8.8621e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.332712, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=2.55917e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.336863, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 32.
+Visibility given initial measurements and channels: 0.000000
+Visibility given initial measurements and channels: 0.066908
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.066535
+Visibility given initial measurements and channels: 0.087916
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.049488
+Visibility given initial measurements and channels: 0.067091
+Visibility given initial measurements and channels: 0.035636
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.200721
+iter=1, partyidx=2, bellineqvalue=0.222763, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.260784, abschangeobjval=0.0380211
+iter=3, channelq=~, bellineqvalue=1.604012, abschangeobjval=1.34323
+iter=4, partyidx=1, bellineqvalue=1.709895, abschangeobjval=0.105883
+iter=5, partyidx=2, bellineqvalue=1.709895, abschangeobjval=8.4132e-09
+tentative newalpha=0.292551, sum(bellcoeffs)=-3.670492, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292551
+iter=1, partyidx=3, bellineqvalue=0.293035, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.293035, abschangeobjval=3.12814e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.556664, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.292893, abschangeobjval=2.9832e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.599447, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 33.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.059403
+Visibility given initial measurements and channels: 0.010960
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.193769
+iter=1, partyidx=3, bellineqvalue=0.260217, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.103462, abschangeobjval=0.843245
+iter=3, partyidx=1, bellineqvalue=1.163145, abschangeobjval=0.0596831
+iter=4, partyidx=2, bellineqvalue=1.199753, abschangeobjval=0.0366074
+iter=5, partyidx=3, bellineqvalue=1.199753, abschangeobjval=5.52692e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.712402, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=2.2941e-09
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 174)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',174,0)">line 174</a>)] 
+tentative newalpha=0.000000, sum(bellcoeffs)=0.000000, LPstatus=1.000000
+LP using clean(probs,1e-12).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-11).
+[Warning: The visibility-broadcast-LP not solved. Info: "Infeasible problem (MOSEK)"] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BroadcastInstrumentLP', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m', 224)" style="font-weight:bold">BroadcastInstrumentLP</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\BroadcastInstrumentLP.m',224,0)">line 224</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 182)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',182,0)">line 182</a>)] 
+LP using clean(probs,1e-10).
+Cleaning didn't help (newalpha=1.000000). Now applying bisection algorithm.
+LP bisection progress: am=0.25 lm=1
+LP bisection progress: am=0.375 lm=0
+LP bisection progress: am=0.3125 lm=0
+LP bisection progress: am=0.28125 lm=1
+LP bisection progress: am=0.296875 lm=0
+LP bisection progress: am=0.289063 lm=1
+LP bisection progress: am=0.292969 lm=0
+LP bisection progress: am=0.291016 lm=1
+LP bisection progress: am=0.291992 lm=1
+Bisection still buggy, so we ignore this visibility. For debugging purposes only.
+Visibility after optimizing over POVMs and channels: 0.000000
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 34.
+Visibility given initial measurements and channels: 0.145066
+iter=1, partyidx=3, bellineqvalue=0.294380, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=1.490361, abschangeobjval=1.19598
+iter=3, partyidx=1, bellineqvalue=1.550686, abschangeobjval=0.0603248
+iter=4, partyidx=2, bellineqvalue=1.551338, abschangeobjval=0.000652467
+iter=5, partyidx=3, bellineqvalue=1.551338, abschangeobjval=7.00057e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.764234, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.296528, abschangeobjval=0.00363506
+iter=3, channelq=~, bellineqvalue=0.296528, abschangeobjval=4.84572e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.817027, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 35.
+Visibility given initial measurements and channels: 0.001504
+Visibility given initial measurements and channels: 0.042422
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.042170
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.073583
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.214616
+iter=1, partyidx=1, bellineqvalue=0.299361, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.304827, abschangeobjval=0.00546643
+iter=3, partyidx=3, bellineqvalue=0.332705, abschangeobjval=0.0278782
+iter=4, channelq=~, bellineqvalue=0.912644, abschangeobjval=0.579939
+iter=5, partyidx=1, bellineqvalue=0.912739, abschangeobjval=9.45139e-05
+iter=6, partyidx=2, bellineqvalue=0.912841, abschangeobjval=0.000102229
+iter=7, partyidx=3, bellineqvalue=0.912841, abschangeobjval=7.97264e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.458943, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=4.53522e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.773318, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 36.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.179813
+iter=1, channelq=~, bellineqvalue=0.602222, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.621512, abschangeobjval=0.0192902
+iter=3, partyidx=2, bellineqvalue=0.628054, abschangeobjval=0.00654131
+iter=4, partyidx=3, bellineqvalue=0.628054, abschangeobjval=6.06866e-10
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.797036, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.295367, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.295367, abschangeobjval=1.5468e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.276985, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 37.
+Visibility given initial measurements and channels: 0.193677
+iter=1, channelq=~, bellineqvalue=0.612474, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.627580, abschangeobjval=0.0151062
+iter=3, partyidx=2, bellineqvalue=0.628918, abschangeobjval=0.00133772
+iter=4, partyidx=3, bellineqvalue=0.628918, abschangeobjval=4.00748e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-3.578779, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=3, bellineqvalue=0.296517, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.296517, abschangeobjval=1.95072e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-10.569631, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 38.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.085187
+Visibility given initial measurements and channels: 0.067114
+Visibility given initial measurements and channels: 0.217804
+iter=1, partyidx=1, bellineqvalue=0.287043, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292425, abschangeobjval=0.00538156
+iter=3, partyidx=3, bellineqvalue=0.302371, abschangeobjval=0.00994659
+iter=4, channelq=~, bellineqvalue=2.870681, abschangeobjval=2.56831
+iter=5, partyidx=1, bellineqvalue=2.871796, abschangeobjval=0.00111458
+iter=6, partyidx=2, bellineqvalue=2.871796, abschangeobjval=8.77728e-09
+tentative newalpha=0.292892, sum(bellcoeffs)=-3.728831, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292892
+iter=1, partyidx=2, bellineqvalue=0.297059, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.297061, abschangeobjval=1.7049e-06
+iter=3, channelq=~, bellineqvalue=0.297061, abschangeobjval=2.40801e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.503872, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=1, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.292893, abschangeobjval=2.02308e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.086280, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 39.
+Visibility given initial measurements and channels: 0.219559
+iter=1, channelq=~, bellineqvalue=3.367066, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=3.471460, abschangeobjval=0.104395
+iter=3, partyidx=2, bellineqvalue=3.471460, abschangeobjval=7.16279e-10
+tentative newalpha=0.291159, sum(bellcoeffs)=-4.075560, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.291159
+iter=1, partyidx=1, bellineqvalue=0.291159, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.296695, abschangeobjval=0.00553629
+iter=3, partyidx=3, bellineqvalue=0.299195, abschangeobjval=0.0024997
+iter=4, channelq=~, bellineqvalue=0.299195, abschangeobjval=1.08557e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.941054, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.292893, abschangeobjval=1.98826e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.620326, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 40.
+Visibility given initial measurements and channels: 0.031787
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.004933
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.133132
+iter=1, partyidx=2, bellineqvalue=0.204859, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.231213, abschangeobjval=0.0263544
+iter=3, channelq=~, bellineqvalue=1.228676, abschangeobjval=0.997463
+iter=4, partyidx=1, bellineqvalue=1.295005, abschangeobjval=0.0663285
+iter=5, partyidx=2, bellineqvalue=1.314183, abschangeobjval=0.0191785
+iter=6, partyidx=3, bellineqvalue=1.314183, abschangeobjval=3.43223e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.905976, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.315498, abschangeobjval=0.0226049
+iter=3, channelq=~, bellineqvalue=0.315498, abschangeobjval=1.77787e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.411410, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 41.
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.180015
+iter=1, channelq=~, bellineqvalue=2.133868, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=2.300584, abschangeobjval=0.166716
+iter=3, partyidx=2, bellineqvalue=2.300584, abschangeobjval=2.04432e-08
+tentative newalpha=0.274977, sum(bellcoeffs)=-4.297442, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.274977
+iter=1, partyidx=1, bellineqvalue=0.274977, abschangeobjval=1e+06
+iter=2, partyidx=2, bellineqvalue=0.287573, abschangeobjval=0.0125955
+iter=3, partyidx=3, bellineqvalue=0.314070, abschangeobjval=0.0264976
+iter=4, channelq=~, bellineqvalue=0.314070, abschangeobjval=7.87544e-09
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.856403, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, partyidx=2, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=3, bellineqvalue=0.292893, abschangeobjval=2.35046e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-5.221789, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 42.
+Visibility given initial measurements and channels: 0.178620
+iter=1, channelq=~, bellineqvalue=1.612164, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=1.905283, abschangeobjval=0.293119
+iter=3, partyidx=2, bellineqvalue=1.905283, abschangeobjval=5.85457e-08
+tentative newalpha=0.277132, sum(bellcoeffs)=-3.779598, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.277132
+iter=1, partyidx=3, bellineqvalue=0.299422, abschangeobjval=1e+06
+iter=2, channelq=~, bellineqvalue=0.299436, abschangeobjval=1.44309e-05
+iter=3, partyidx=1, bellineqvalue=0.299436, abschangeobjval=5.17368e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.591061, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+iter=1, channelq=~, bellineqvalue=0.292893, abschangeobjval=1e+06
+iter=2, partyidx=1, bellineqvalue=0.292893, abschangeobjval=3.69894e-08
+tentative newalpha=0.292893, sum(bellcoeffs)=-4.871288, LPstatus=0.000000
+Visibility after optimizing over POVMs and channels: 0.292893
+
+ Best visibility so far: 0.292893
+Other visibilities:
+    0.2929    0.2929    0.2929    0.2929    0.2929
+
+
+Round 43.
+Visibility given initial measurements and channels: 0.049266
+Visibility given initial measurements and channels: -0.000000
+Visibility given initial measurements and channels: 0.079640
+Visibility given initial measurements and channels: 0.110348
+iter=1, partyidx=1, bellineqvalue=0.207894, abschangeobjval=1e+06
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sdpvar/plus', 'C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\plus.m', 283)" style="font-weight:bold"> + </a> (<a href="matlab: opentoline('C:\Users\eboghiu\MATLAB external\YALMIP-master\@sdpvar\plus.m',283,0)">line 283</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverASinglePartyInstrumental', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASinglePartyInstrumental.m', 84)" style="font-weight:bold">SeeSawOverASinglePartyInstrumental</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverASinglePartyInstrumental.m',84,0)">line 84</a>)
+                                summ = summ + bellcoeffs(x,y,z,w,a,b,c,d)*measterm*state;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SeeSawOverAllPartiesInstrumental', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllPartiesInstrumental.m', 24)" style="font-weight:bold">SeeSawOverAllPartiesInstrumental</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\functions\SeeSawOverAllPartiesInstrumental.m',24,0)">line 24</a>)
+            [povms,newobjval,problemStatus] = SeeSawOverASinglePartyInstrumental(partyidx, initialState, bellcoeffs, povms, channels, ins, outs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('INSTR', 'C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m', 147)" style="font-weight:bold">INSTR</a> (<a href="matlab: opentoline('C:\Users\eboghiu\OneDrive - ICFO\Documents\Code\broadcast2\scriptsInstr\INSTR.m',147,0)">line 147</a>)
+        [POVMs,finalObj,channels] = SeeSawOverAllPartiesInstrumental(bellcoeffs, NoisyWernerState(0), POVMs, channels, ins, outs);
+} 
